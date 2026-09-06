@@ -349,6 +349,7 @@ export { default as Item_Liandry } from './Item_Liandry';
 export { default as Item_Ludens } from './Item_Ludens';
 export { default as Item_Shadowflame } from './Item_Shadowflame';
 export { default as Item_Cryptbloom } from './Item_Cryptbloom';
+export { default as Item_Serylda } from './Item_Serylda';
 
 export { default as Vladimir_Q } from './Vladimir_Q';
 export { default as Vladimir_W } from './Vladimir_W';

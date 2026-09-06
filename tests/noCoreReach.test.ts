@@ -473,7 +473,12 @@ describe("the pack's tests speak only published core surfaces", () => {
     // `@moba2d/core/testing` and `@moba2d/core/testing/spell`, both already
     // on `ALLOWED_CORE_SUBPATHS`, so the population count moves and the
     // offender count below does not.
-    expect(files.length).toBe(136);
+    //
+    // 137, not 136, the lethality shelf of the same day:
+    // `tests/spells/Item_lethality.test.ts` drives the rows that stand on Dao
+    // Hung Tàn. Same two published surfaces, so again the population moves
+    // and the offender count does not.
+    expect(files.length).toBe(137);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {

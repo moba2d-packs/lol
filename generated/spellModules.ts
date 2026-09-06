@@ -163,6 +163,7 @@ export const spellModules: Record<string, () => Promise<SpellModule>> = {
   "Item_Runaan": () => import('../spells/Item_Runaan'),
   "Item_Rylai": () => import('../spells/Item_Rylai'),
   "Item_SerpentsFang": () => import('../spells/Item_SerpentsFang'),
+  "Item_Serylda": () => import('../spells/Item_Serylda'),
   "Item_Shadowflame": () => import('../spells/Item_Shadowflame'),
   "Item_Sheen": () => import('../spells/Item_Sheen'),
   "Item_Shieldbow": () => import('../spells/Item_Shieldbow'),

@@ -1252,6 +1252,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_Serylda": {
+    name: "Thương Phục Hận Serylda (Item_Serylda)",
+    description: "Nội tại: sát thương vật lý gây ra làm chậm 30% trong 1 giây các mục tiêu còn dưới 50% máu tối đa",
+    iconKey: "item_seryldas_grudge",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_Shadowflame": {
     name: "Ngọn Lửa Hắc Hóa (Item_Shadowflame)",
     description: "Nội tại: khi mục tiêu còn dưới 35% máu tối đa, sát thương phép của bạn gây thêm 20% lượng vừa gây ra",

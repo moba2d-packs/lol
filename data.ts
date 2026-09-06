@@ -2363,6 +2363,22 @@ const itemEntries = (): Record<string, ItemDef> => ({
     // the flat one belongs to boots (see the note at the top of this table).
     stats: { attackDamage: 14, armorPenetration: 0.2, speedPercent: 0.08 },
   },
+  seryldas_grudge: {
+    id: 'seryldas_grudge',
+    name: 'Thương Phục Hận Serylda',
+    icon: 'item_seryldas_grudge',
+    cost: 1700,
+    buildsFrom: ['serrated_dirk', 'caulfields_warhammer'],
+    // 19 công is exactly what the parts grant, which is the floor the
+    // "never a downgrade" rule allows — and the ceiling this shelf may use.
+    // A pure attack-damage row joins the best attack six at 22.
+    description:
+      'Nội tại: sát thương vật lý của bạn làm chậm <span class="buff">30%</span> trong ' +
+      '<span class="time">1 giây</span> các mục tiêu còn dưới <span class="buff">50%</span> ' +
+      'máu tối đa.',
+    stats: { attackDamage: 19, armorPenetration: 0.25, abilityHaste: 10 },
+    passive: 'Item_Serylda',
+  },
 });
 
 /**
