@@ -2288,6 +2288,21 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { abilityPower: 1.3, abilityHaste: 15 },
     passive: 'Item_Ludens',
   },
+  shadowflame: {
+    id: 'shadowflame',
+    name: 'Ngọn Lửa Hắc Hóa',
+    icon: 'item_shadowflame',
+    cost: 1600,
+    buildsFrom: ['blighting_jewel'],
+    // 25% xuyên phép, deliberately under Gậy Hư Vô's 35% — that number is the
+    // ceiling the whole magic-resist wall is priced against, and a second row
+    // matching it would make the wall mean less.
+    description:
+      'Nội tại: khi mục tiêu còn dưới <span class="buff">35%</span> máu tối đa, sát thương phép ' +
+      'của bạn gây thêm <span class="buff">20%</span> lượng vừa gây ra.',
+    stats: { abilityPower: 1.3, magicPenetration: 0.25 },
+    passive: 'Item_Shadowflame',
+  },
 });
 
 /**

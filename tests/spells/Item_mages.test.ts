@@ -9,6 +9,10 @@ import {
   type TestGame,
 } from '@moba2d/core/testing/spell';
 import Item_Rylai, { RYLAI_SLOW_MS, RYLAI_SLOW_PERCENT } from '../../spells/Item_Rylai';
+import Item_Shadowflame, {
+  SHADOWFLAME_BONUS,
+  SHADOWFLAME_THRESHOLD,
+} from '../../spells/Item_Shadowflame';
 import Item_Ludens, {
   LUDENS_COOLDOWN_MS,
   LUDENS_PRIMARY_DAMAGE,
@@ -322,5 +326,105 @@ describe('Vọng Âm Luden', () => {
     victim.takeDamage(5, holder, 'PHYSICAL');
 
     expect(onVictim).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('Ngọn Lửa Hắc Hóa', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+  });
+
+  /** Put `unit` on `share` of its own maximum health. */
+  const wound = (unit: ReturnType<typeof createUnit>, share: number): void => {
+    unit.stats.health.baseValue = unit.stats.maxHealth.value * share;
+  };
+
+  it('adds nothing while the target is above the line', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 200, 'red');
+    expect(pressSpell(new Item_Shadowflame(holder))).toBe(true);
+    wound(victim, 0.9);
+
+    const hurt = vi.spyOn(victim, 'takeDamage');
+    victim.takeDamage(10, holder, 'MAGIC');
+
+    expect(hurt.mock.calls.map(call => call[0])).toEqual([10]);
+  });
+
+  it('follows a magic hit that leaves the target under the line', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 200, 'red');
+    pressSpell(new Item_Shadowflame(holder));
+    wound(victim, SHADOWFLAME_THRESHOLD / 2);
+
+    const hurt = vi.spyOn(victim, 'takeDamage');
+    victim.takeDamage(10, holder, 'MAGIC');
+
+    expect(hurt.mock.calls.map(call => call[0])).toEqual([10, 10 * SHADOWFLAME_BONUS]);
+    expect(hurt.mock.calls[1][2]).toBe('MAGIC');
+    expect(hurt.mock.calls[1][1]).toBe(holder);
+  });
+
+  /**
+   * The share comes off what **landed**, not off what was swung: an
+   * amplification that ignored a shield or a resistance would be a bigger
+   * item than the one on the card.
+   */
+  it('takes its share of what landed, not of what was swung', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 200, 'red');
+    pressSpell(new Item_Shadowflame(holder));
+    // A big pool so the probe survives the hit, and a real wall so what
+    // lands is visibly less than what was swung. The curve itself is core's;
+    // all this asserts is that the follow-up follows the smaller number.
+    victim.stats.maxHealth.baseValue = 1_000;
+    victim.stats.magicResist.baseValue = 100;
+    victim.stats.health.baseValue = 1_000 * (SHADOWFLAME_THRESHOLD / 2);
+
+    const hurt = vi.spyOn(victim, 'takeDamage');
+    victim.takeDamage(40, holder, 'MAGIC');
+    const [swung, followUp] = hurt.mock.calls.map(call => call[0]);
+
+    expect(swung).toBe(40);
+    expect(followUp).toBeGreaterThan(0);
+    expect(followUp, 'the follow-up ignored the wall the hit went through').toBeLessThan(
+      40 * SHADOWFLAME_BONUS
+    );
+  });
+
+  it('leaves a physical hit, and an ally, alone', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 200, 'red');
+    const ally = createUnit(game, 260);
+    pressSpell(new Item_Shadowflame(holder));
+    wound(victim, 0.1);
+    wound(ally, 0.1);
+
+    const onVictim = vi.spyOn(victim, 'takeDamage');
+    const onAlly = vi.spyOn(ally, 'takeDamage');
+    victim.takeDamage(10, holder, 'PHYSICAL');
+    ally.takeDamage(10, holder, 'MAGIC');
+
+    expect(onVictim).toHaveBeenCalledTimes(1);
+    expect(onAlly).toHaveBeenCalledTimes(1);
+  });
+
+  /**
+   * The follow-up is itself magic damage from the wearer, so it re-enters the
+   * hook that fired it — and this item has no cooldown to close the loop, so
+   * the latch is the only thing that does.
+   */
+  it('does not follow up its own follow-up', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 200, 'red');
+    pressSpell(new Item_Shadowflame(holder));
+    wound(victim, 0.3);
+
+    const hurt = vi.spyOn(victim, 'takeDamage');
+    victim.takeDamage(4, holder, 'MAGIC');
+
+    expect(hurt).toHaveBeenCalledTimes(2);
   });
 });

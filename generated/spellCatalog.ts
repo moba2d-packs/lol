@@ -1244,6 +1244,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_Shadowflame": {
+    name: "Ngọn Lửa Hắc Hóa (Item_Shadowflame)",
+    description: "Nội tại: khi mục tiêu còn dưới 35% máu tối đa, sát thương phép của bạn gây thêm 20% lượng vừa gây ra",
+    iconKey: "item_shadowflame",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_Sheen": {
     name: "Thủy Kiếm (Item_Sheen)",
     description: "Nội tại: sau khi dùng chiêu, đòn đánh kế tiếp gây thêm sát thương vật lý bằng 50% công cơ bản (hồi 1.5 giây)",
