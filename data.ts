@@ -2447,6 +2447,32 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { maxHealth: 55, armor: 40, abilityHaste: 10 },
     passive: 'Item_UnendingDespair',
   },
+  anathemas_chains: {
+    id: 'anathemas_chains',
+    name: 'Găng Xích Thù Hận',
+    icon: 'item_anathemas_chains',
+    cost: 1650,
+    buildsFrom: ['kindlegem', 'ruby_crystal'],
+    // The only defensive row bought against a *person* rather than a damage
+    // type. `modifyIncomingDamage` is told the attacker, so this is honest
+    // arithmetic — it is the *source spell* that hook is never told, which is
+    // the note above about Lời Thề Hiệp Sĩ and Dạ Kiếm.
+    //
+    // **55 máu, not the 80 a 1650-gold tank row would normally carry, and it
+    // is Đai Khổng Lồ that had to leave the recipe to allow it.**
+    // `roleProfiles.test.ts` measures the shop's best six `maxHealth` items
+    // against a full marksman build and holds the tank to a four-to-six
+    // second window; that band has about eight points of headroom left
+    // (5.93s of 6 today). Anything above 62 here displaces the sixth-best
+    // health row and pushes the tank out of the window this pack was tuned
+    // to — 80 measured 6.17s. The item's identity is the reduction, not the
+    // bar behind it.
+    description:
+      'Kích hoạt: đánh dấu một tướng địch làm Kẻ Thù — bạn nhận ít hơn ' +
+      '<span class="buff">25%</span> sát thương từ chúng, cho đến khi đánh dấu mục tiêu khác.',
+    stats: { maxHealth: 55, abilityHaste: 20, tenacity: 0.2 },
+    active: 'Item_Anathema',
+  },
 });
 
 /**

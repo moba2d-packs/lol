@@ -8,6 +8,10 @@ import {
   pressSpell,
   type TestGame,
 } from '@moba2d/core/testing/spell';
+import Item_Anathema, {
+  Item_Anathema_Nemesis,
+  ANATHEMA_REDUCTION,
+} from '../../spells/Item_Anathema';
 import Item_UnendingDespair, {
   Item_UnendingDespair_Cloak,
   DESPAIR_BASE_PER_TICK,
@@ -221,5 +225,109 @@ describe('Áo Choàng Diệt Vong', () => {
 
     cloak.update();
     expect(onNear).toHaveBeenCalledTimes(1);
+  });
+});
+
+describe('Găng Xích Thù Hận', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+    vi.stubGlobal('deltaTime', 100);
+  });
+
+  const champion = (x: number, teamId: string) =>
+    new Champion({ game, position: createVector(x, 0), teamId } as never);
+
+  const markedBy = (holder: { buffs: AnyBuff[] }): Item_Anathema_Nemesis | undefined =>
+    live(holder).find(buff => buff instanceof Item_Anathema_Nemesis) as
+      | Item_Anathema_Nemesis
+      | undefined;
+
+  it('names one enemy champion and takes a quarter off their damage', () => {
+    const holder = champion(0, 'blue');
+    const nemesis = champion(120, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, nemesis]);
+
+    expect(pressSpell(new Item_Anathema(holder), { target: nemesis })).toBe(true);
+    expect(markedBy(holder)?.nemesis).toBe(nemesis);
+
+    const before = holder.stats.health.baseValue;
+    holder.takeDamage(20, nemesis, 'PHYSICAL');
+
+    expect(before - holder.stats.health.baseValue).toBe(
+      Math.round(20 * (1 - ANATHEMA_REDUCTION))
+    );
+  });
+
+  it('leaves everybody else hitting for full', () => {
+    const holder = champion(0, 'blue');
+    const nemesis = champion(120, 'red');
+    const bystander = champion(200, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, nemesis, bystander]);
+    pressSpell(new Item_Anathema(holder), { target: nemesis });
+
+    const before = holder.stats.health.baseValue;
+    holder.takeDamage(20, bystander, 'PHYSICAL');
+
+    expect(before - holder.stats.health.baseValue).toBe(20);
+  });
+
+  it('moves the grudge rather than collecting them', () => {
+    const holder = champion(0, 'blue');
+    const first = champion(120, 'red');
+    const second = champion(200, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, first, second]);
+    const chains = new Item_Anathema(holder);
+
+    pressSpell(chains, { target: first });
+    // The item's own cooldown is real; a second press has to come off a
+    // second purchase's spell instance, which is what a re-mark is.
+    pressSpell(new Item_Anathema(holder), { target: second });
+
+    expect(live(holder).filter(buff => buff instanceof Item_Anathema_Nemesis)).toHaveLength(1);
+    expect(markedBy(holder)?.nemesis).toBe(second);
+
+    const before = holder.stats.health.baseValue;
+    holder.takeDamage(20, first, 'PHYSICAL');
+    expect(before - holder.stats.health.baseValue).toBe(20);
+  });
+
+  it('drops the mark when the nemesis dies, rather than pointing at a corpse', () => {
+    const holder = champion(0, 'blue');
+    const nemesis = champion(120, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, nemesis]);
+    pressSpell(new Item_Anathema(holder), { target: nemesis });
+    const grudge = markedBy(holder) as Item_Anathema_Nemesis;
+
+    nemesis.takeDamage(10_000, holder, 'PHYSICAL');
+    grudge.update();
+
+    expect(grudge.toRemove).toBe(true);
+    expect(markedBy(holder)).toBeUndefined();
+  });
+
+  /**
+   * The AGENTS.md trap this row is the shop's only exposure to: a UNIT spell
+   * that forgets `targetTeam: 'ENEMY'` falls back to `'ANY'`, and the
+   * nearest-target resolver hands back the caster — the gauntlet would mark
+   * its own wearer and make them 25% harder for themselves to hurt.
+   */
+  it('never resolves its own wearer as the nemesis', () => {
+    const holder = champion(0, 'blue');
+    const ally = champion(30, 'blue');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, ally]);
+
+    // No target named and nothing hostile anywhere near the cursor.
+    pressSpell(new Item_Anathema(holder));
+
+    const grudge = markedBy(holder);
+    expect(grudge?.nemesis ?? null).not.toBe(holder);
+    expect(grudge?.nemesis ?? null).not.toBe(ally);
   });
 });

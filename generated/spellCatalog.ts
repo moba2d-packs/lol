@@ -900,6 +900,14 @@ export const spellCatalog = {
     manaCost: 40,
     specCoolDownMs: 9000,
   },
+  "Item_Anathema": {
+    name: "Găng Xích Thù Hận (Item_Anathema)",
+    description: "Kích hoạt: đánh dấu một tướng địch làm Kẻ Thù — bạn nhận ít hơn 25% sát thương từ chúng, cho đến khi đánh dấu mục tiêu khác (hồi lại sau 20 giây)",
+    iconKey: "item_anathemas_chains",
+    coolDownMs: 20000,
+    manaCost: 0,
+    specCoolDownMs: 20000,
+  },
   "Item_Ardent": {
     name: "Lư Hương Sôi Sục (Item_Ardent)",
     description: "Kích hoạt: bản thân và đồng minh xung quanh tăng 25% tốc đánh và đòn đánh gây thêm 2 sát thương trong 5 giây",

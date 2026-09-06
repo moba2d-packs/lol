@@ -119,6 +119,7 @@ export const spellModules: Record<string, () => Promise<SpellModule>> = {
   "Irelia_Q": () => import('../spells/Irelia_Q'),
   "Irelia_R": () => import('../spells/Irelia_R'),
   "Irelia_W": () => import('../spells/Irelia_W'),
+  "Item_Anathema": () => import('../spells/Item_Anathema'),
   "Item_Ardent": () => import('../spells/Item_Ardent'),
   "Item_Banshee": () => import('../spells/Item_Banshee'),
   "Item_BlackCleaver": () => import('../spells/Item_BlackCleaver'),

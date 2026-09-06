@@ -354,6 +354,7 @@ export { default as Item_Voltaic } from './Item_Voltaic';
 export { default as Item_ProfaneHydra } from './Item_ProfaneHydra';
 export { default as Item_Terminus } from './Item_Terminus';
 export { default as Item_UnendingDespair } from './Item_UnendingDespair';
+export { default as Item_Anathema } from './Item_Anathema';
 
 export { default as Vladimir_Q } from './Vladimir_Q';
 export { default as Vladimir_W } from './Vladimir_W';
