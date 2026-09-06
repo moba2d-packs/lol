@@ -404,3 +404,8 @@ export { default as MissFortune_Q } from './MissFortune_Q';
 export { default as MissFortune_W } from './MissFortune_W';
 export { default as MissFortune_E } from './MissFortune_E';
 export { default as MissFortune_R } from './MissFortune_R';
+
+export { default as Mordekaiser_Q } from './Mordekaiser_Q';
+export { default as Mordekaiser_W } from './Mordekaiser_W';
+export { default as Mordekaiser_E } from './Mordekaiser_E';
+export { default as Mordekaiser_R } from './Mordekaiser_R';

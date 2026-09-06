@@ -286,6 +286,13 @@ const ROSTER: {
     spells: ['MissFortune_Q', 'MissFortune_W', 'MissFortune_E', 'MissFortune_R'],
   },
   {
+    name: 'Mordekaiser',
+    attack: ATTACK.BRUISER,
+    image: 'champ_mordekaiser',
+
+    spells: ['Mordekaiser_Q', 'Mordekaiser_W', 'Mordekaiser_E', 'Mordekaiser_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',
