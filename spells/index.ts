@@ -344,6 +344,7 @@ export { default as Item_Ardent } from './Item_Ardent';
 export { default as Item_Moonstone } from './Item_Moonstone';
 export { default as Item_Zeke } from './Item_Zeke';
 export { default as Item_GuardianAngel } from './Item_GuardianAngel';
+export { default as Item_Rylai } from './Item_Rylai';
 
 export { default as Vladimir_Q } from './Vladimir_Q';
 export { default as Vladimir_W } from './Vladimir_W';

@@ -2215,6 +2215,46 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { attackDamage: 10, armor: 40 },
     passive: 'Item_GuardianAngel',
   },
+
+  // ---- The mage shelf (2026-09-06) -------------------------------------
+  //
+  // **Gậy Bùng Nổ first**, because it is the rung the whole branch was
+  // missing: a mage climbed from Sách Cũ's 400 gold straight to Máy Chuyển
+  // Pha Hextech's 900, so a first back was either too cheap to feel or a
+  // whole item away. Four of the rows on this shelf build out of it.
+  //
+  // The shelf is deliberately ability-heavy, and the reason is a measurement
+  // rather than a taste. `tests/balanceReport.test.ts` had the shop at an
+  // attack:ability per-gold ratio of **2.062** against its own hard `< 2.1`
+  // ceiling — 0.038 of headroom nobody had noticed, since the note in that
+  // file still claimed 1.81. Every row here that sells ability power or
+  // ability haste walks that number back down; none of the attack rows is
+  // strong enough to enter the best attack six, which stays byte-identical.
+  //
+  // Two guardrails that follow from the same measurement, for whoever
+  // retunes these: a pure attack-damage row joins the best attack six at
+  // **AD 22**, and **no row here may carry crit chance or crit damage** —
+  // crit multiplies with what the existing six already hold, which is how
+  // the ratio reached 2.06 in the first place.
+  blasting_wand: {
+    id: 'blasting_wand',
+    name: 'Gậy Bùng Nổ',
+    icon: 'item_blasting_wand',
+    cost: 700,
+    stats: { abilityPower: 0.85 },
+  },
+  rylais_crystal_scepter: {
+    id: 'rylais_crystal_scepter',
+    name: 'Trượng Pha Lê Rylai',
+    icon: 'item_rylais_crystal_scepter',
+    cost: 1550,
+    buildsFrom: ['blasting_wand', 'ruby_crystal'],
+    description:
+      'Nội tại: sát thương phép bạn gây ra làm chậm mục tiêu <span class="buff">30%</span> ' +
+      'trong <span class="time">1 giây</span>.',
+    stats: { abilityPower: 1.1, maxHealth: 50 },
+    passive: 'Item_Rylai',
+  },
 });
 
 /**

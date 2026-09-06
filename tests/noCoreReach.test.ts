@@ -466,7 +466,14 @@ describe("the pack's tests speak only published core surfaces", () => {
     // `tests/spells/Jax.test.ts`, `tests/spells/Lucian.test.ts`,
     // `tests/spells/MissFortune.test.ts`, `tests/spells/Mordekaiser.test.ts`,
     // `tests/spells/Xerath.test.ts`.
-    expect(files.length).toBe(135);
+    //
+    // 136, not 135, the mage shelf of 2026-09-06:
+    // `tests/spells/Item_mages.test.ts` drives the item passives that hang
+    // off a caster's own magic damage. It reaches core only through
+    // `@moba2d/core/testing` and `@moba2d/core/testing/spell`, both already
+    // on `ALLOWED_CORE_SUBPATHS`, so the population count moves and the
+    // offender count below does not.
+    expect(files.length).toBe(136);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {

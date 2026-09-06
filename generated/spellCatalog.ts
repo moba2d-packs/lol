@@ -1212,6 +1212,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_Rylai": {
+    name: "Trượng Pha Lê Rylai (Item_Rylai)",
+    description: "Nội tại: sát thương phép gây ra làm chậm mục tiêu 30% trong 1 giây",
+    iconKey: "item_rylais_crystal_scepter",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_SerpentsFang": {
     name: "Kiếm Ác Xà (Item_SerpentsFang)",
     description: "Nội tại: sát thương vật lý gây ra làm Rạn Khiên — lá chắn mục tiêu nhận được trong 3 giây sau đó chỉ còn 50% giá trị",

@@ -158,6 +158,7 @@ export const spellModules: Record<string, () => Promise<SpellModule>> = {
   "Item_Redemption": () => import('../spells/Item_Redemption'),
   "Item_RuinedKing": () => import('../spells/Item_RuinedKing'),
   "Item_Runaan": () => import('../spells/Item_Runaan'),
+  "Item_Rylai": () => import('../spells/Item_Rylai'),
   "Item_SerpentsFang": () => import('../spells/Item_SerpentsFang'),
   "Item_Sheen": () => import('../spells/Item_Sheen'),
   "Item_Shieldbow": () => import('../spells/Item_Shieldbow'),

@@ -5,7 +5,7 @@
   "sources": [
     {
       "contentHash": "40037938de2dd163890f9b78d51f3a137150fdd0f359473ceb9f5d024704950a",
-      "fetchedAt": "2026-09-05T15:49:52.603Z",
+      "fetchedAt": "2026-09-06T15:02:57.178Z",
       "localAssetKey": "item_abyssal_mask",
       "localPath": "assets/images/items/abyssal_mask.png",
       "riotItemId": 8020,
@@ -14,7 +14,7 @@
     },
     {
       "contentHash": "5b6d009e518f50c73db3b4a7442d3bff0928fb2ea527babd77140ce817562e8a",
-      "fetchedAt": "2026-09-05T15:49:51.664Z",
+      "fetchedAt": "2026-09-06T15:02:55.257Z",
       "localAssetKey": "item_amplifying_tome",
       "localPath": "assets/images/items/amplifying_tome.png",
       "riotItemId": 1052,
@@ -22,8 +22,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1052.png"
     },
     {
+      "contentHash": "92f9e6cd56572ab4e8a6c0fd6c9d7303ad1fdfd9cd7983a047fc918fe4e60ab2",
+      "fetchedAt": "2026-09-06T15:03:26.965Z",
+      "localAssetKey": "item_anathemas_chains",
+      "localPath": "assets/images/items/anathemas_chains.png",
+      "riotItemId": 8001,
+      "sourceHash": "92f9e6cd56572ab4e8a6c0fd6c9d7303ad1fdfd9cd7983a047fc918fe4e60ab2",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/8001.png"
+    },
+    {
       "contentHash": "6d6343084dea99e0fc925cad386e1cd75d80cb35ec9d8d270360b7246ba8b0db",
-      "fetchedAt": "2026-09-05T15:50:10.138Z",
+      "fetchedAt": "2026-09-06T15:03:19.743Z",
       "localAssetKey": "item_ardent_censer",
       "localPath": "assets/images/items/ardent_censer.png",
       "riotItemId": 3504,
@@ -32,7 +41,7 @@
     },
     {
       "contentHash": "bc16dd00557e1cfbdca45e8531a2c1d3e0cd924a2f0cd7f866725feebf4d3ce7",
-      "fetchedAt": "2026-09-05T15:50:00.955Z",
+      "fetchedAt": "2026-09-06T15:03:09.420Z",
       "localAssetKey": "item_banshees_veil",
       "localPath": "assets/images/items/banshees_veil.png",
       "riotItemId": 3102,
@@ -41,7 +50,7 @@
     },
     {
       "contentHash": "81089b0f6e9514f812189ee9b664e44045933c812ef3a62c0732cc2655397264",
-      "fetchedAt": "2026-09-05T15:49:38.546Z",
+      "fetchedAt": "2026-09-06T15:02:38.235Z",
       "localAssetKey": "item_berserkers_greaves",
       "localPath": "assets/images/items/berserkers_greaves.png",
       "riotItemId": 3006,
@@ -50,7 +59,7 @@
     },
     {
       "contentHash": "fcb008f805d2bfeb63b3ea183d833fd63c2ef13b04c9ae2d67bc6ddfa3e77989",
-      "fetchedAt": "2026-09-05T15:50:06.936Z",
+      "fetchedAt": "2026-09-06T15:03:15.622Z",
       "localAssetKey": "item_black_cleaver",
       "localPath": "assets/images/items/black_cleaver.png",
       "riotItemId": 3071,
@@ -59,7 +68,7 @@
     },
     {
       "contentHash": "626dbfdca488a6e42602dd6e8a28e9b65b26992a6cdc805f0d6c1ab0de3b7627",
-      "fetchedAt": "2026-09-05T15:49:41.333Z",
+      "fetchedAt": "2026-09-06T15:02:41.439Z",
       "localAssetKey": "item_blade_of_the_ruined_king",
       "localPath": "assets/images/items/blade_of_the_ruined_king.png",
       "riotItemId": 3153,
@@ -67,8 +76,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3153.png"
     },
     {
+      "contentHash": "dda8735a84bbbd8b2f9a8776c70d86b8c1448b6e585735386fef398c1914e02f",
+      "fetchedAt": "2026-09-06T15:03:22.460Z",
+      "localAssetKey": "item_blasting_wand",
+      "localPath": "assets/images/items/blasting_wand.png",
+      "riotItemId": 1026,
+      "sourceHash": "dda8735a84bbbd8b2f9a8776c70d86b8c1448b6e585735386fef398c1914e02f",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1026.png"
+    },
+    {
       "contentHash": "9062147d29126e835433413975b87cb03794c37b5a4d88d2b37df0d4f48feec1",
-      "fetchedAt": "2026-09-05T15:49:55.923Z",
+      "fetchedAt": "2026-09-06T15:03:01.299Z",
       "localAssetKey": "item_blighting_jewel",
       "localPath": "assets/images/items/blighting_jewel.png",
       "riotItemId": 4630,
@@ -77,7 +95,7 @@
     },
     {
       "contentHash": "adcf226cf9ca11cf22c840d56e94a5a240212f4503fca8b90ad3463b87b28180",
-      "fetchedAt": "2026-09-05T15:49:50.852Z",
+      "fetchedAt": "2026-09-06T15:02:54.566Z",
       "localAssetKey": "item_bloodthirster",
       "localPath": "assets/images/items/bloodthirster.png",
       "riotItemId": 3072,
@@ -86,7 +104,7 @@
     },
     {
       "contentHash": "f2b2a8ba7ae715c8906d3037d38778aa545f3d0740091640484aa3d126396ad0",
-      "fetchedAt": "2026-09-05T15:49:35.419Z",
+      "fetchedAt": "2026-09-06T15:02:35.840Z",
       "localAssetKey": "item_boots",
       "localPath": "assets/images/items/boots.png",
       "riotItemId": 1001,
@@ -95,7 +113,7 @@
     },
     {
       "contentHash": "e5bad621f9035b7cd2f8263955fb2a807df0a7e7ce78ca1b18dface9fe8aff6d",
-      "fetchedAt": "2026-09-05T15:49:53.920Z",
+      "fetchedAt": "2026-09-06T15:02:59.155Z",
       "localAssetKey": "item_bramble_vest",
       "localPath": "assets/images/items/bramble_vest.png",
       "riotItemId": 3076,
@@ -104,7 +122,7 @@
     },
     {
       "contentHash": "eb7ceda45c22ca6e7a59ed997d97426ec737c58d6fcd58340b22e690add0b0cd",
-      "fetchedAt": "2026-09-05T15:50:06.235Z",
+      "fetchedAt": "2026-09-06T15:03:15.475Z",
       "localAssetKey": "item_caulfields_warhammer",
       "localPath": "assets/images/items/caulfields_warhammer.png",
       "riotItemId": 3133,
@@ -113,7 +131,7 @@
     },
     {
       "contentHash": "57cb7021e404edd06245d002a49abc61f827cbf006a1b35f2aa0fa32375c86c2",
-      "fetchedAt": "2026-09-05T15:49:58.281Z",
+      "fetchedAt": "2026-09-06T15:03:05.501Z",
       "localAssetKey": "item_chain_vest",
       "localPath": "assets/images/items/chain_vest.png",
       "riotItemId": 1031,
@@ -122,7 +140,7 @@
     },
     {
       "contentHash": "154d82cbe62b29139b632f557ee867808c5ec8818c6c93606f1effe6c9765b25",
-      "fetchedAt": "2026-09-05T15:49:53.306Z",
+      "fetchedAt": "2026-09-06T15:02:58.519Z",
       "localAssetKey": "item_chempunk_chainsword",
       "localPath": "assets/images/items/chempunk_chainsword.png",
       "riotItemId": 6609,
@@ -131,7 +149,7 @@
     },
     {
       "contentHash": "3b89234b2be140f17b06a92297abdc54ce23e6034b6b80335d612fac3d20720d",
-      "fetchedAt": "2026-09-05T15:49:33.431Z",
+      "fetchedAt": "2026-09-06T15:02:34.967Z",
       "localAssetKey": "item_cloth_armor",
       "localPath": "assets/images/items/cloth_armor.png",
       "riotItemId": 1029,
@@ -139,8 +157,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/1029.png"
     },
     {
+      "contentHash": "2afa6d8305d989a42b90a36f05f423cacfd813a2c95a641833435cf9b886f3bd",
+      "fetchedAt": "2026-09-06T15:03:23.584Z",
+      "localAssetKey": "item_cryptbloom",
+      "localPath": "assets/images/items/cryptbloom.png",
+      "riotItemId": 3137,
+      "sourceHash": "2afa6d8305d989a42b90a36f05f423cacfd813a2c95a641833435cf9b886f3bd",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3137.png"
+    },
+    {
       "contentHash": "928a40c105d5d985c5cf542d254502b8018d59d2921d3126e0b4a3de708e98d2",
-      "fetchedAt": "2026-09-05T15:49:49.504Z",
+      "fetchedAt": "2026-09-06T15:02:53.859Z",
       "localAssetKey": "item_dead_mans_plate",
       "localPath": "assets/images/items/dead_mans_plate.png",
       "riotItemId": 3742,
@@ -149,7 +176,7 @@
     },
     {
       "contentHash": "c8a184ab56104583bdab3ca387eae205f9b07d09acf3488c7292459c05ed997d",
-      "fetchedAt": "2026-09-05T15:49:50.924Z",
+      "fetchedAt": "2026-09-06T15:02:54.624Z",
       "localAssetKey": "item_deaths_dance",
       "localPath": "assets/images/items/deaths_dance.png",
       "riotItemId": 6333,
@@ -158,7 +185,7 @@
     },
     {
       "contentHash": "7d1e40c297b66b1a95b879d09948047cc1ff8ecf71f563ae251230c9d2c595f5",
-      "fetchedAt": "2026-09-05T15:49:45.224Z",
+      "fetchedAt": "2026-09-06T15:02:46.876Z",
       "localAssetKey": "item_divine_sunderer",
       "localPath": "assets/images/items/divine_sunderer.png",
       "riotItemId": 6632,
@@ -167,7 +194,7 @@
     },
     {
       "contentHash": "b3d2c76a2ccc7c8c10c823edc0a05b63f24f921d8ed5aeea1bc32da48b495648",
-      "fetchedAt": "2026-09-05T15:49:47.329Z",
+      "fetchedAt": "2026-09-06T15:02:50.462Z",
       "localAssetKey": "item_dusk_and_dawn",
       "localPath": "assets/images/items/dusk_and_dawn.png",
       "riotItemId": 2510,
@@ -176,7 +203,7 @@
     },
     {
       "contentHash": "6648a9367e07b71c37395817c76ad81f738fc6529b1179c3e68bbbebef62ca39",
-      "fetchedAt": "2026-09-05T15:49:45.842Z",
+      "fetchedAt": "2026-09-06T15:02:47.510Z",
       "localAssetKey": "item_essence_reaver",
       "localPath": "assets/images/items/essence_reaver.png",
       "riotItemId": 3508,
@@ -185,7 +212,7 @@
     },
     {
       "contentHash": "89cef206ee3198b14e24b76ff6127ff17e679ffcdb49928912712e98b5b25f12",
-      "fetchedAt": "2026-09-05T15:49:48.889Z",
+      "fetchedAt": "2026-09-06T15:02:53.166Z",
       "localAssetKey": "item_everfrost",
       "localPath": "assets/images/items/everfrost.png",
       "riotItemId": 6656,
@@ -194,7 +221,7 @@
     },
     {
       "contentHash": "23d5eaab8c6f8919b166bd2f194154f6b31c7694305dd54259ea6152f3f9dd4f",
-      "fetchedAt": "2026-09-05T15:49:53.213Z",
+      "fetchedAt": "2026-09-06T15:02:57.816Z",
       "localAssetKey": "item_executioners_calling",
       "localPath": "assets/images/items/executioners_calling.png",
       "riotItemId": 3123,
@@ -202,8 +229,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3123.png"
     },
     {
+      "contentHash": "b331247e3881effceb46e456e3c8d1a097cbaf306a29d7ae039d588f5268a37b",
+      "fetchedAt": "2026-09-06T15:03:28.238Z",
+      "localAssetKey": "item_experimental_hexplate",
+      "localPath": "assets/images/items/experimental_hexplate.png",
+      "riotItemId": 3073,
+      "sourceHash": "b331247e3881effceb46e456e3c8d1a097cbaf306a29d7ae039d588f5268a37b",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3073.png"
+    },
+    {
       "contentHash": "996b797b03f1236c106f146edc6059e90d1763ee5c36bdb5d9d10ec78ef270f1",
-      "fetchedAt": "2026-09-05T15:50:00.757Z",
+      "fetchedAt": "2026-09-06T15:03:08.106Z",
       "localAssetKey": "item_force_of_nature",
       "localPath": "assets/images/items/force_of_nature.png",
       "riotItemId": 4401,
@@ -212,7 +248,7 @@
     },
     {
       "contentHash": "4537939220e5b70732757fac28ce5d5acd98d8e732e2929ffc71126b73d7dbea",
-      "fetchedAt": "2026-09-05T15:49:57.601Z",
+      "fetchedAt": "2026-09-06T15:03:04.801Z",
       "localAssetKey": "item_frozen_heart",
       "localPath": "assets/images/items/frozen_heart.png",
       "riotItemId": 3110,
@@ -221,7 +257,7 @@
     },
     {
       "contentHash": "84cd00f1f964d304651e316ac053597e046a76b6e2aa20c69cebbb9d405d9f53",
-      "fetchedAt": "2026-09-05T15:50:01.577Z",
+      "fetchedAt": "2026-09-06T15:03:10.060Z",
       "localAssetKey": "item_gargoyle_stoneplate",
       "localPath": "assets/images/items/gargoyle_stoneplate.png",
       "riotItemId": 3193,
@@ -230,7 +266,7 @@
     },
     {
       "contentHash": "6ab06d2a886760e535c8de8e8244ef626fff71a5d6adb9fd853006ff99d41351",
-      "fetchedAt": "2026-09-05T15:49:59.502Z",
+      "fetchedAt": "2026-09-06T15:03:06.785Z",
       "localAssetKey": "item_giants_belt",
       "localPath": "assets/images/items/giants_belt.png",
       "riotItemId": 1011,
@@ -239,7 +275,7 @@
     },
     {
       "contentHash": "2b0333182d1b97b1b7717b2f7b999dc7147722159605887cf6c1216a55df1743",
-      "fetchedAt": "2026-09-05T15:50:11.284Z",
+      "fetchedAt": "2026-09-06T15:03:21.169Z",
       "localAssetKey": "item_guardian_angel",
       "localPath": "assets/images/items/guardian_angel.png",
       "riotItemId": 3026,
@@ -248,7 +284,7 @@
     },
     {
       "contentHash": "992b513c8d19a32f31ce53b133dfcbe6b97d0a75490b20974ad8ad384200e8c1",
-      "fetchedAt": "2026-09-05T15:49:43.287Z",
+      "fetchedAt": "2026-09-06T15:02:44.163Z",
       "localAssetKey": "item_guinsoos_rageblade",
       "localPath": "assets/images/items/guinsoos_rageblade.png",
       "riotItemId": 3124,
@@ -257,7 +293,7 @@
     },
     {
       "contentHash": "796faf56bfab2e6ed207341fe99b9f2537505831e603f0b8dc0d5cab2884b04a",
-      "fetchedAt": "2026-09-05T15:50:03.511Z",
+      "fetchedAt": "2026-09-06T15:03:11.686Z",
       "localAssetKey": "item_heartsteel",
       "localPath": "assets/images/items/heartsteel.png",
       "riotItemId": 3084,
@@ -266,7 +302,7 @@
     },
     {
       "contentHash": "2a944b610cd5ee9a200f678c275b8bcd7510924b686b073ded405a971b2ce40c",
-      "fetchedAt": "2026-09-05T15:49:51.737Z",
+      "fetchedAt": "2026-09-06T15:02:55.893Z",
       "localAssetKey": "item_hextech_alternator",
       "localPath": "assets/images/items/hextech_alternator.png",
       "riotItemId": 3145,
@@ -275,7 +311,7 @@
     },
     {
       "contentHash": "40d29308726560c6ed3cb44c7eb7b386207f5ec72f7f4850750dc7f6d34f312a",
-      "fetchedAt": "2026-09-05T15:50:02.201Z",
+      "fetchedAt": "2026-09-06T15:03:10.681Z",
       "localAssetKey": "item_hollow_radiance",
       "localPath": "assets/images/items/hollow_radiance.png",
       "riotItemId": 6664,
@@ -284,7 +320,7 @@
     },
     {
       "contentHash": "ffdc0e07aa8a2632d90e9d3b34127f143d70b0018fc5cf3a2b3351d9de3d5666",
-      "fetchedAt": "2026-09-05T15:50:07.830Z",
+      "fetchedAt": "2026-09-06T15:03:17.587Z",
       "localAssetKey": "item_hullbreaker",
       "localPath": "assets/images/items/hullbreaker.png",
       "riotItemId": 3181,
@@ -293,7 +329,7 @@
     },
     {
       "contentHash": "d6822f855aba1ca531f3bb79f4075b081e463e907cdc85ac7aa80ebbaf39d971",
-      "fetchedAt": "2026-09-05T15:50:04.120Z",
+      "fetchedAt": "2026-09-06T15:03:12.314Z",
       "localAssetKey": "item_iceborn_gauntlet",
       "localPath": "assets/images/items/iceborn_gauntlet.png",
       "riotItemId": 6662,
@@ -302,7 +338,7 @@
     },
     {
       "contentHash": "d35f6fe229db6ed47fcb29bb5d84ade96fac8695a5b2e81340a55eae7440ccb6",
-      "fetchedAt": "2026-09-05T15:50:08.915Z",
+      "fetchedAt": "2026-09-06T15:03:19.024Z",
       "localAssetKey": "item_immortal_shieldbow",
       "localPath": "assets/images/items/immortal_shieldbow.png",
       "riotItemId": 6673,
@@ -310,8 +346,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6673.png"
     },
     {
+      "contentHash": "1908ec5520165189e10fbf4835063db3671550401c4ff8b7de3a1367dde51433",
+      "fetchedAt": "2026-09-06T15:03:27.585Z",
+      "localAssetKey": "item_imperial_mandate",
+      "localPath": "assets/images/items/imperial_mandate.png",
+      "riotItemId": 4005,
+      "sourceHash": "1908ec5520165189e10fbf4835063db3671550401c4ff8b7de3a1367dde51433",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4005.png"
+    },
+    {
       "contentHash": "39382e1bef39a48d14e6d37e52e9d02068df9153ca60c2bcca033dd276fae5df",
-      "fetchedAt": "2026-09-05T15:49:39.939Z",
+      "fetchedAt": "2026-09-06T15:02:40.175Z",
       "localAssetKey": "item_infinity_edge",
       "localPath": "assets/images/items/infinity_edge.png",
       "riotItemId": 3031,
@@ -320,7 +365,7 @@
     },
     {
       "contentHash": "744196dc3e1f9d21441dbc1cda3f6b7f521f22be367e25c85b09685626437951",
-      "fetchedAt": "2026-09-05T15:49:56.320Z",
+      "fetchedAt": "2026-09-06T15:03:02.161Z",
       "localAssetKey": "item_ionian_boots_of_lucidity",
       "localPath": "assets/images/items/ionian_boots_of_lucidity.png",
       "riotItemId": 3158,
@@ -329,7 +374,7 @@
     },
     {
       "contentHash": "8843a46c315cfa93134ea400708628d39ddd7a8ec206642e644cba5c8bdfe71e",
-      "fetchedAt": "2026-09-05T15:50:00.771Z",
+      "fetchedAt": "2026-09-06T15:03:08.750Z",
       "localAssetKey": "item_kaenic_rookern",
       "localPath": "assets/images/items/kaenic_rookern.png",
       "riotItemId": 2504,
@@ -338,7 +383,7 @@
     },
     {
       "contentHash": "a0f2d23087b2777dbfd91ca48193457aac4b05bc29de6a311479ef4cb223bfa7",
-      "fetchedAt": "2026-09-05T15:50:06.307Z",
+      "fetchedAt": "2026-09-06T15:03:15.565Z",
       "localAssetKey": "item_kindlegem",
       "localPath": "assets/images/items/kindlegem.png",
       "riotItemId": 3067,
@@ -347,7 +392,7 @@
     },
     {
       "contentHash": "a0a6990103df12899a7113e6c532f06b7ce6112233992ea5c7e8999d204ee8f8",
-      "fetchedAt": "2026-09-05T15:49:44.388Z",
+      "fetchedAt": "2026-09-06T15:02:44.885Z",
       "localAssetKey": "item_kraken_slayer",
       "localPath": "assets/images/items/kraken_slayer.png",
       "riotItemId": 6672,
@@ -356,7 +401,7 @@
     },
     {
       "contentHash": "aff693b4ce1f2c625e6de6f8c358d8172a903da7e439d3a053a510c079326038",
-      "fetchedAt": "2026-09-05T15:49:55.232Z",
+      "fetchedAt": "2026-09-06T15:03:00.510Z",
       "localAssetKey": "item_last_whisper",
       "localPath": "assets/images/items/last_whisper.png",
       "riotItemId": 3035,
@@ -364,8 +409,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3035.png"
     },
     {
+      "contentHash": "ee67ae7a25f9e1d31d6d2c9e2f4360e061f52ac001bfe4cddc8a353b01d9de8e",
+      "fetchedAt": "2026-09-06T15:03:22.646Z",
+      "localAssetKey": "item_liandrys_torment",
+      "localPath": "assets/images/items/liandrys_torment.png",
+      "riotItemId": 6653,
+      "sourceHash": "ee67ae7a25f9e1d31d6d2c9e2f4360e061f52ac001bfe4cddc8a353b01d9de8e",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6653.png"
+    },
+    {
       "contentHash": "740f8fa8fb9c8dafad517f13e5a70816335f461e06ba2c140d0811b433ee95ec",
-      "fetchedAt": "2026-09-05T15:49:45.912Z",
+      "fetchedAt": "2026-09-06T15:02:48.186Z",
       "localAssetKey": "item_lich_bane",
       "localPath": "assets/images/items/lich_bane.png",
       "riotItemId": 3100,
@@ -374,7 +428,7 @@
     },
     {
       "contentHash": "c4db34bc5eac5723f688b2830c45fe0a1c23249bb865a6782634639ae3fd9401",
-      "fetchedAt": "2026-09-05T15:49:48.019Z",
+      "fetchedAt": "2026-09-06T15:02:51.736Z",
       "localAssetKey": "item_locket_of_the_iron_solari",
       "localPath": "assets/images/items/locket_of_the_iron_solari.png",
       "riotItemId": 3190,
@@ -383,7 +437,7 @@
     },
     {
       "contentHash": "c57b71ae65b3b38241f8ed97fe6fb5ae78db5a82002be392d91ebb6f5ffde8af",
-      "fetchedAt": "2026-09-05T15:49:32.801Z",
+      "fetchedAt": "2026-09-06T15:02:34.771Z",
       "localAssetKey": "item_long_sword",
       "localPath": "assets/images/items/long_sword.png",
       "riotItemId": 1036,
@@ -392,7 +446,7 @@
     },
     {
       "contentHash": "f98e1b868adc0fd6c1a6875ac4536d7217d9f584b56704e3a5f4b541577faa17",
-      "fetchedAt": "2026-09-05T15:49:55.300Z",
+      "fetchedAt": "2026-09-06T15:03:00.605Z",
       "localAssetKey": "item_lord_dominiks_regards",
       "localPath": "assets/images/items/lord_dominiks_regards.png",
       "riotItemId": 3036,
@@ -400,8 +454,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3036.png"
     },
     {
+      "contentHash": "4db05b7a2a461db8c6b4cff7053653f755ed2d0442e2133d1c4131a77d832a7b",
+      "fetchedAt": "2026-09-06T15:03:23.340Z",
+      "localAssetKey": "item_ludens_echo",
+      "localPath": "assets/images/items/ludens_echo.png",
+      "riotItemId": 6655,
+      "sourceHash": "4db05b7a2a461db8c6b4cff7053653f755ed2d0442e2133d1c4131a77d832a7b",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6655.png"
+    },
+    {
       "contentHash": "54eb3c587ce27a2f864c9bc1f2884ab74283171a63f5246e6182518ec924a927",
-      "fetchedAt": "2026-09-05T15:50:04.191Z",
+      "fetchedAt": "2026-09-06T15:03:12.937Z",
       "localAssetKey": "item_maw_of_malmortius",
       "localPath": "assets/images/items/maw_of_malmortius.png",
       "riotItemId": 3156,
@@ -410,7 +473,7 @@
     },
     {
       "contentHash": "ce2d494abe20df23461fad8509e4d260ffb5909f56f459610348bbc0bff8688a",
-      "fetchedAt": "2026-09-05T15:49:56.248Z",
+      "fetchedAt": "2026-09-06T15:03:02.063Z",
       "localAssetKey": "item_mercurys_treads",
       "localPath": "assets/images/items/mercurys_treads.png",
       "riotItemId": 3111,
@@ -419,7 +482,7 @@
     },
     {
       "contentHash": "396262e4c06106a8dc6eb0fb0e3250f12a60ae5ae2f6f522e82c846674b406a1",
-      "fetchedAt": "2026-09-05T15:49:37.932Z",
+      "fetchedAt": "2026-09-06T15:02:38.141Z",
       "localAssetKey": "item_mikaels_blessing",
       "localPath": "assets/images/items/mikaels_blessing.png",
       "riotItemId": 3222,
@@ -428,7 +491,7 @@
     },
     {
       "contentHash": "f5a382478693c85f98c57c97a43fc69d894a8978439d850af7fce1ea933ccb4d",
-      "fetchedAt": "2026-09-05T15:50:10.215Z",
+      "fetchedAt": "2026-09-06T15:03:20.387Z",
       "localAssetKey": "item_moonstone_renewer",
       "localPath": "assets/images/items/moonstone_renewer.png",
       "riotItemId": 6617,
@@ -437,7 +500,7 @@
     },
     {
       "contentHash": "b8dc734613f5a098a2b01faba4ad778b9c0d63ac5dd3736d631b79dc6fd85381",
-      "fetchedAt": "2026-09-05T15:49:54.600Z",
+      "fetchedAt": "2026-09-06T15:02:59.877Z",
       "localAssetKey": "item_morellonomicon",
       "localPath": "assets/images/items/morellonomicon.png",
       "riotItemId": 3165,
@@ -446,7 +509,7 @@
     },
     {
       "contentHash": "c7fd35cb42b1c2b4b242730ec662b75594e807a93255e8399f1f4b447d3a3a1c",
-      "fetchedAt": "2026-09-05T15:49:53.290Z",
+      "fetchedAt": "2026-09-06T15:02:57.876Z",
       "localAssetKey": "item_mortal_reminder",
       "localPath": "assets/images/items/mortal_reminder.png",
       "riotItemId": 3033,
@@ -455,7 +518,7 @@
     },
     {
       "contentHash": "65e508502ed720f39416fbf2dd71aaddda9bf1fd2252da7bf99ea94503582385",
-      "fetchedAt": "2026-09-05T15:49:44.398Z",
+      "fetchedAt": "2026-09-06T15:02:45.512Z",
       "localAssetKey": "item_nashors_tooth",
       "localPath": "assets/images/items/nashors_tooth.png",
       "riotItemId": 3115,
@@ -464,7 +527,7 @@
     },
     {
       "contentHash": "7bc85ad84e604670ad6e2de16cf64ba5bede9005b48ff69b6ec79f4dd1c52c3a",
-      "fetchedAt": "2026-09-05T15:50:09.530Z",
+      "fetchedAt": "2026-09-06T15:03:19.113Z",
       "localAssetKey": "item_navori_flickerblade",
       "localPath": "assets/images/items/navori_flickerblade.png",
       "riotItemId": 6675,
@@ -473,7 +536,7 @@
     },
     {
       "contentHash": "4b63c85bcdca48ed074d0411f5c83274fee3e81553946ae4f0a9f0eae0e4f3aa",
-      "fetchedAt": "2026-09-05T15:49:58.891Z",
+      "fetchedAt": "2026-09-06T15:03:06.133Z",
       "localAssetKey": "item_negatron_cloak",
       "localPath": "assets/images/items/negatron_cloak.png",
       "riotItemId": 1057,
@@ -482,7 +545,7 @@
     },
     {
       "contentHash": "07e375e152ba901b1f7acc2ba4c05e9c7f2f21544aba928dfec42d3e36236b03",
-      "fetchedAt": "2026-09-05T15:49:34.041Z",
+      "fetchedAt": "2026-09-06T15:02:35.126Z",
       "localAssetKey": "item_null_magic_mantle",
       "localPath": "assets/images/items/null_magic_mantle.png",
       "riotItemId": 1033,
@@ -491,7 +554,7 @@
     },
     {
       "contentHash": "8446613ded24b9caf452ab94d4b24af5a9a21aab36dffc90ddb4a4d6b757fd12",
-      "fetchedAt": "2026-09-05T15:49:53.992Z",
+      "fetchedAt": "2026-09-06T15:02:59.250Z",
       "localAssetKey": "item_oblivion_orb",
       "localPath": "assets/images/items/oblivion_orb.png",
       "riotItemId": 3916,
@@ -499,8 +562,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3916.png"
     },
     {
+      "contentHash": "6ebca8b3b6c059ec8bb85872896aa0dd3d42341075496fe5288309fcce090688",
+      "fetchedAt": "2026-09-06T15:03:24.860Z",
+      "localAssetKey": "item_opportunity",
+      "localPath": "assets/images/items/opportunity.png",
+      "riotItemId": 6701,
+      "sourceHash": "6ebca8b3b6c059ec8bb85872896aa0dd3d42341075496fe5288309fcce090688",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6701.png"
+    },
+    {
       "contentHash": "ef03e1b8dc15170957306727eab5aba36b96cad62fbef130faa2f43c97740758",
-      "fetchedAt": "2026-09-05T15:50:05.598Z",
+      "fetchedAt": "2026-09-06T15:03:14.833Z",
       "localAssetKey": "item_phage",
       "localPath": "assets/images/items/phage.png",
       "riotItemId": 3044,
@@ -509,7 +581,7 @@
     },
     {
       "contentHash": "57855bf33e4dcda6412d8976aa3c033d0561212356159c29d5e5bb71f157bdd4",
-      "fetchedAt": "2026-09-05T15:50:07.842Z",
+      "fetchedAt": "2026-09-06T15:03:17.677Z",
       "localAssetKey": "item_phantom_dancer",
       "localPath": "assets/images/items/phantom_dancer.png",
       "riotItemId": 3046,
@@ -518,7 +590,7 @@
     },
     {
       "contentHash": "22bc8d6451e5a100d06dd80b1c97600e991db20a2f9fd1eb8da151afc23881a1",
-      "fetchedAt": "2026-09-05T15:49:56.179Z",
+      "fetchedAt": "2026-09-06T15:03:02.005Z",
       "localAssetKey": "item_plated_steelcaps",
       "localPath": "assets/images/items/plated_steelcaps.png",
       "riotItemId": 3047,
@@ -526,8 +598,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3047.png"
     },
     {
+      "contentHash": "a1875209dadbae4f311dcf89a9c1ef35fef4167008cd62d206596259a9255213",
+      "fetchedAt": "2026-09-06T15:03:25.013Z",
+      "localAssetKey": "item_profane_hydra",
+      "localPath": "assets/images/items/profane_hydra.png",
+      "riotItemId": 6698,
+      "sourceHash": "a1875209dadbae4f311dcf89a9c1ef35fef4167008cd62d206596259a9255213",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6698.png"
+    },
+    {
       "contentHash": "16cedabad67792f551e8893a34338f7981b3b52c444a23035846fcab954a299f",
-      "fetchedAt": "2026-09-05T15:49:40.575Z",
+      "fetchedAt": "2026-09-06T15:02:40.806Z",
       "localAssetKey": "item_quicksilver_sash",
       "localPath": "assets/images/items/quicksilver_sash.png",
       "riotItemId": 3140,
@@ -536,7 +617,7 @@
     },
     {
       "contentHash": "ad77331bb9a325db9536f5614f3ca3516e24279406123f2892eb33ee419d369b",
-      "fetchedAt": "2026-09-05T15:49:56.523Z",
+      "fetchedAt": "2026-09-06T15:03:02.813Z",
       "localAssetKey": "item_rabadons_deathcap",
       "localPath": "assets/images/items/rabadons_deathcap.png",
       "riotItemId": 3089,
@@ -545,7 +626,7 @@
     },
     {
       "contentHash": "27557f63894cae0d592781dcb962baf9e1bce490bbda25798b0019119ea460a3",
-      "fetchedAt": "2026-09-05T15:50:02.886Z",
+      "fetchedAt": "2026-09-06T15:03:10.777Z",
       "localAssetKey": "item_randuins_omen",
       "localPath": "assets/images/items/randuins_omen.png",
       "riotItemId": 3143,
@@ -554,7 +635,7 @@
     },
     {
       "contentHash": "3dfdf53bfe8ae4158aeffc37f55926d5bc030a5091f6dd259659a070a18e9495",
-      "fetchedAt": "2026-09-05T15:50:08.283Z",
+      "fetchedAt": "2026-09-06T15:03:18.962Z",
       "localAssetKey": "item_rapid_firecannon",
       "localPath": "assets/images/items/rapid_firecannon.png",
       "riotItemId": 3094,
@@ -563,7 +644,7 @@
     },
     {
       "contentHash": "f0ef39de611e6183590bdc39821f084906883924f769d44e54e850f9ecf969e7",
-      "fetchedAt": "2026-09-05T15:49:45.986Z",
+      "fetchedAt": "2026-09-06T15:02:48.823Z",
       "localAssetKey": "item_ravenous_hydra",
       "localPath": "assets/images/items/ravenous_hydra.png",
       "riotItemId": 3074,
@@ -572,7 +653,7 @@
     },
     {
       "contentHash": "14b0096f1ecda8179ad0b067afee0fa4a39d80e70df4798c3eb3943f62b17a5c",
-      "fetchedAt": "2026-09-05T15:49:36.055Z",
+      "fetchedAt": "2026-09-06T15:02:36.484Z",
       "localAssetKey": "item_recurve_bow",
       "localPath": "assets/images/items/recurve_bow.png",
       "riotItemId": 1043,
@@ -581,7 +662,7 @@
     },
     {
       "contentHash": "fbc31dabb6edcb7f7a56ad06e6dbe807a3acd109e642dbd2a7bffe482567d4e7",
-      "fetchedAt": "2026-09-05T15:50:04.865Z",
+      "fetchedAt": "2026-09-06T15:03:14.205Z",
       "localAssetKey": "item_redemption",
       "localPath": "assets/images/items/redemption.png",
       "riotItemId": 3107,
@@ -590,7 +671,7 @@
     },
     {
       "contentHash": "d2d7a6cf2723109b2105dc3f4e9942cbd72ad5d2635a7cca3ae9e999d43d22e6",
-      "fetchedAt": "2026-09-05T15:49:52.344Z",
+      "fetchedAt": "2026-09-06T15:02:56.529Z",
       "localAssetKey": "item_riftmaker",
       "localPath": "assets/images/items/riftmaker.png",
       "riotItemId": 4633,
@@ -599,7 +680,7 @@
     },
     {
       "contentHash": "90f702e7d757914c96e546ae4076b624800dafc140edffac70733f104684b412",
-      "fetchedAt": "2026-09-05T15:49:34.794Z",
+      "fetchedAt": "2026-09-06T15:02:35.217Z",
       "localAssetKey": "item_ruby_crystal",
       "localPath": "assets/images/items/ruby_crystal.png",
       "riotItemId": 1028,
@@ -608,7 +689,7 @@
     },
     {
       "contentHash": "4e0b97a24c3937d2ca4d6bbb9757ea8a39e8b38af9ed3abeab23506cf4b71e6f",
-      "fetchedAt": "2026-09-05T15:49:47.054Z",
+      "fetchedAt": "2026-09-06T15:02:49.824Z",
       "localAssetKey": "item_runaans_hurricane",
       "localPath": "assets/images/items/runaans_hurricane.png",
       "riotItemId": 3085,
@@ -616,8 +697,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3085.png"
     },
     {
+      "contentHash": "483193bf9a72fd12ca64c23f5bb15d3a676dcabc17791ba119c1a9305336304c",
+      "fetchedAt": "2026-09-06T15:03:22.551Z",
+      "localAssetKey": "item_rylais_crystal_scepter",
+      "localPath": "assets/images/items/rylais_crystal_scepter.png",
+      "riotItemId": 3116,
+      "sourceHash": "483193bf9a72fd12ca64c23f5bb15d3a676dcabc17791ba119c1a9305336304c",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3116.png"
+    },
+    {
       "contentHash": "19f0404aacb3dccffa8bf0a4d28b0c9f624859eba51da42602b2d916c9582bbb",
-      "fetchedAt": "2026-09-05T15:49:57.668Z",
+      "fetchedAt": "2026-09-06T15:03:04.857Z",
       "localAssetKey": "item_serpents_fang",
       "localPath": "assets/images/items/serpents_fang.png",
       "riotItemId": 6695,
@@ -625,8 +715,35 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6695.png"
     },
     {
+      "contentHash": "888376bfc419937c8c43fe193fbe90866403e965ae30f79a47da102631a59b0b",
+      "fetchedAt": "2026-09-06T15:03:21.814Z",
+      "localAssetKey": "item_serrated_dirk",
+      "localPath": "assets/images/items/serrated_dirk.png",
+      "riotItemId": 3134,
+      "sourceHash": "888376bfc419937c8c43fe193fbe90866403e965ae30f79a47da102631a59b0b",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3134.png"
+    },
+    {
+      "contentHash": "7cb272a3832e4933377ea9d6bf47c29a75177f6e7a7f04d2bfb6f526604db68a",
+      "fetchedAt": "2026-09-06T15:03:24.213Z",
+      "localAssetKey": "item_seryldas_grudge",
+      "localPath": "assets/images/items/seryldas_grudge.png",
+      "riotItemId": 6694,
+      "sourceHash": "7cb272a3832e4933377ea9d6bf47c29a75177f6e7a7f04d2bfb6f526604db68a",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6694.png"
+    },
+    {
+      "contentHash": "f03fb411e12c597bfb88a747a00e9f47ae39019eee398833ee933c51f47fb597",
+      "fetchedAt": "2026-09-06T15:03:23.431Z",
+      "localAssetKey": "item_shadowflame",
+      "localPath": "assets/images/items/shadowflame.png",
+      "riotItemId": 4645,
+      "sourceHash": "f03fb411e12c597bfb88a747a00e9f47ae39019eee398833ee933c51f47fb597",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/4645.png"
+    },
+    {
       "contentHash": "8e4f9dcf809b9e093c6883ae0c232c66abfa527a92899180dc9a4d6c44499c6a",
-      "fetchedAt": "2026-09-05T15:49:42.643Z",
+      "fetchedAt": "2026-09-06T15:02:42.874Z",
       "localAssetKey": "item_sheen",
       "localPath": "assets/images/items/sheen.png",
       "riotItemId": 3057,
@@ -635,7 +752,7 @@
     },
     {
       "contentHash": "071c2de0d632f1aef35c4891a71c9d1968acb4aa0dd91567bb7760bbfbf1467a",
-      "fetchedAt": "2026-09-05T15:49:48.635Z",
+      "fetchedAt": "2026-09-06T15:02:52.441Z",
       "localAssetKey": "item_shurelyas_battlesong",
       "localPath": "assets/images/items/shurelyas_battlesong.png",
       "riotItemId": 2065,
@@ -644,7 +761,7 @@
     },
     {
       "contentHash": "3a3371d57adaa587e8449e91c520c6ac26cc7934cc5e67a0903d03036bc7109b",
-      "fetchedAt": "2026-09-05T15:50:04.853Z",
+      "fetchedAt": "2026-09-06T15:03:13.567Z",
       "localAssetKey": "item_silvermere_dawn",
       "localPath": "assets/images/items/silvermere_dawn.png",
       "riotItemId": 6035,
@@ -653,7 +770,7 @@
     },
     {
       "contentHash": "0204f61a81aa9c3ef318dd27ed272e8c83e12009ce37a23d7c6193f9d991261b",
-      "fetchedAt": "2026-09-05T15:49:37.315Z",
+      "fetchedAt": "2026-09-06T15:02:37.410Z",
       "localAssetKey": "item_sorcerers_shoes",
       "localPath": "assets/images/items/sorcerers_shoes.png",
       "riotItemId": 3020,
@@ -662,7 +779,7 @@
     },
     {
       "contentHash": "7a772149749e4ccea18d557d8efa22a9eb7500547acaac271729e6c75cd16cae",
-      "fetchedAt": "2026-09-05T15:50:07.205Z",
+      "fetchedAt": "2026-09-06T15:03:16.322Z",
       "localAssetKey": "item_spear_of_shojin",
       "localPath": "assets/images/items/spear_of_shojin.png",
       "riotItemId": 3161,
@@ -671,7 +788,7 @@
     },
     {
       "contentHash": "4135b0c27adf0dc4e9b0df2c138a5b8d06c1e3c85ffa959b6663936bcd19ccf6",
-      "fetchedAt": "2026-09-05T15:50:00.128Z",
+      "fetchedAt": "2026-09-06T15:03:07.415Z",
       "localAssetKey": "item_spectres_cowl",
       "localPath": "assets/images/items/spectres_cowl.png",
       "riotItemId": 3211,
@@ -680,7 +797,7 @@
     },
     {
       "contentHash": "2e42844fe60ba038f5a3402abb4d1e42578acb032ad934c6e5cf883a7df92421",
-      "fetchedAt": "2026-09-05T15:49:56.847Z",
+      "fetchedAt": "2026-09-06T15:03:04.104Z",
       "localAssetKey": "item_spirit_visage",
       "localPath": "assets/images/items/spirit_visage.png",
       "riotItemId": 3065,
@@ -689,7 +806,7 @@
     },
     {
       "contentHash": "e8c9687a8ab8c29c8cbc7fc593334cc0df3f92aad85138a5ac821345e88d45e0",
-      "fetchedAt": "2026-09-05T15:49:47.953Z",
+      "fetchedAt": "2026-09-06T15:02:51.085Z",
       "localAssetKey": "item_statikk_shiv",
       "localPath": "assets/images/items/statikk_shiv.png",
       "riotItemId": 3087,
@@ -698,7 +815,7 @@
     },
     {
       "contentHash": "06e444682b4f1608863d43397031669de276fde2abf7c8ec1f9dedbb01905bce",
-      "fetchedAt": "2026-09-05T15:49:56.595Z",
+      "fetchedAt": "2026-09-06T15:03:03.449Z",
       "localAssetKey": "item_steraks_gage",
       "localPath": "assets/images/items/steraks_gage.png",
       "riotItemId": 3053,
@@ -707,7 +824,7 @@
     },
     {
       "contentHash": "f24121688bf9d5f1e31b47a0d432d82416cda050667633af8f5b7688570acf98",
-      "fetchedAt": "2026-09-05T15:50:07.819Z",
+      "fetchedAt": "2026-09-06T15:03:16.952Z",
       "localAssetKey": "item_stridebreaker",
       "localPath": "assets/images/items/stridebreaker.png",
       "riotItemId": 6631,
@@ -716,7 +833,7 @@
     },
     {
       "contentHash": "01e91cbbc8d8fd28c531c6c1b1563fda3941f78e9424cf486e3ba28a0a6fdbae",
-      "fetchedAt": "2026-09-05T15:50:07.134Z",
+      "fetchedAt": "2026-09-06T15:03:15.676Z",
       "localAssetKey": "item_sundered_sky",
       "localPath": "assets/images/items/sundered_sky.png",
       "riotItemId": 6610,
@@ -725,7 +842,7 @@
     },
     {
       "contentHash": "58468a9b834718c2081c267cfc07db7ca039d3e5b6306cb3682747ea477f0f56",
-      "fetchedAt": "2026-09-05T15:50:02.898Z",
+      "fetchedAt": "2026-09-06T15:03:11.412Z",
       "localAssetKey": "item_sunfire_aegis",
       "localPath": "assets/images/items/sunfire_aegis.png",
       "riotItemId": 3068,
@@ -733,8 +850,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3068.png"
     },
     {
+      "contentHash": "13fe6236782227704cc5a6b201ca373b5051ba20c98d585a20bb0d070790a6c3",
+      "fetchedAt": "2026-09-06T15:03:25.652Z",
+      "localAssetKey": "item_terminus",
+      "localPath": "assets/images/items/terminus.png",
+      "riotItemId": 3302,
+      "sourceHash": "13fe6236782227704cc5a6b201ca373b5051ba20c98d585a20bb0d070790a6c3",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3302.png"
+    },
+    {
       "contentHash": "bd508ff37ad33c14f1c4237be6d3ed964878506f3c77773c849bd96924e35942",
-      "fetchedAt": "2026-09-05T15:50:08.212Z",
+      "fetchedAt": "2026-09-06T15:03:18.334Z",
       "localAssetKey": "item_the_collector",
       "localPath": "assets/images/items/the_collector.png",
       "riotItemId": 6676,
@@ -743,7 +869,7 @@
     },
     {
       "contentHash": "a94887d0c8711631ef0257eff8afea080c92c0d3360e816282d7c4975df49e41",
-      "fetchedAt": "2026-09-05T15:49:39.183Z",
+      "fetchedAt": "2026-09-06T15:02:39.527Z",
       "localAssetKey": "item_thornmail",
       "localPath": "assets/images/items/thornmail.png",
       "riotItemId": 3075,
@@ -752,7 +878,7 @@
     },
     {
       "contentHash": "70f3d871814a43b48b62c1e02579effe1a2481cc23ac61498cd2cfa1dff4fff4",
-      "fetchedAt": "2026-09-05T15:49:42.655Z",
+      "fetchedAt": "2026-09-06T15:02:43.520Z",
       "localAssetKey": "item_tiamat",
       "localPath": "assets/images/items/tiamat.png",
       "riotItemId": 3077,
@@ -761,7 +887,7 @@
     },
     {
       "contentHash": "588f9f08142f169b3707317ab2ecae8816fff1cc91bc21322a27363b00327fe8",
-      "fetchedAt": "2026-09-05T15:49:46.429Z",
+      "fetchedAt": "2026-09-06T15:02:49.475Z",
       "localAssetKey": "item_titanic_hydra",
       "localPath": "assets/images/items/titanic_hydra.png",
       "riotItemId": 3748,
@@ -770,7 +896,7 @@
     },
     {
       "contentHash": "532961a6899aad1d50f5a4b4432d208c9cc6cfff4a18a606cdb60db218f24ff0",
-      "fetchedAt": "2026-09-05T15:49:44.471Z",
+      "fetchedAt": "2026-09-06T15:02:46.227Z",
       "localAssetKey": "item_trinity_force",
       "localPath": "assets/images/items/trinity_force.png",
       "riotItemId": 3078,
@@ -778,8 +904,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3078.png"
     },
     {
+      "contentHash": "757093b592b3021d98087148306638e8f0fc9cf38484c869c9628502caf63a7a",
+      "fetchedAt": "2026-09-06T15:03:26.298Z",
+      "localAssetKey": "item_unending_despair",
+      "localPath": "assets/images/items/unending_despair.png",
+      "riotItemId": 2502,
+      "sourceHash": "757093b592b3021d98087148306638e8f0fc9cf38484c869c9628502caf63a7a",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/2502.png"
+    },
+    {
       "contentHash": "11f2467174e0faea759b8425cbf5e262164d50b9982265bf2c76c7955162199f",
-      "fetchedAt": "2026-09-05T15:49:50.241Z",
+      "fetchedAt": "2026-09-06T15:02:54.509Z",
       "localAssetKey": "item_vampiric_scepter",
       "localPath": "assets/images/items/vampiric_scepter.png",
       "riotItemId": 1053,
@@ -788,7 +923,7 @@
     },
     {
       "contentHash": "86f541cb0cbbca43574e9f79119e8d958ab225201c64a59cb95f8e3652de2688",
-      "fetchedAt": "2026-09-05T15:49:56.110Z",
+      "fetchedAt": "2026-09-06T15:03:01.945Z",
       "localAssetKey": "item_void_staff",
       "localPath": "assets/images/items/void_staff.png",
       "riotItemId": 3135,
@@ -796,8 +931,17 @@
       "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/3135.png"
     },
     {
+      "contentHash": "ba79a0064a5a8d6360d90e5d850b53309e92df55a984ca86066cef320985ab82",
+      "fetchedAt": "2026-09-06T15:03:24.920Z",
+      "localAssetKey": "item_voltaic_cyclosword",
+      "localPath": "assets/images/items/voltaic_cyclosword.png",
+      "riotItemId": 6699,
+      "sourceHash": "ba79a0064a5a8d6360d90e5d850b53309e92df55a984ca86066cef320985ab82",
+      "sourceUrl": "https://ddragon.leagueoflegends.com/cdn/16.16.1/img/item/6699.png"
+    },
+    {
       "contentHash": "642f3290afef9f937ab0cab22e290661250e277f1f1491945ed54d58dabf5f19",
-      "fetchedAt": "2026-09-05T15:49:38.557Z",
+      "fetchedAt": "2026-09-06T15:02:38.879Z",
       "localAssetKey": "item_warmogs_armor",
       "localPath": "assets/images/items/warmogs_armor.png",
       "riotItemId": 3083,
@@ -806,7 +950,7 @@
     },
     {
       "contentHash": "69828a8b884514368a79069f199d88545bc6c5efe80a153655f3e3782bf038eb",
-      "fetchedAt": "2026-09-05T15:50:11.065Z",
+      "fetchedAt": "2026-09-06T15:03:21.113Z",
       "localAssetKey": "item_watchful_wardstone",
       "localPath": "assets/images/items/watchful_wardstone.png",
       "riotItemId": 4638,
@@ -815,7 +959,7 @@
     },
     {
       "contentHash": "11fcb66bbf80316ccd5fdd96239d84e9ad5144ff0575bbb2fe8c9db1d2dd5bfe",
-      "fetchedAt": "2026-09-05T15:49:43.894Z",
+      "fetchedAt": "2026-09-06T15:02:44.257Z",
       "localAssetKey": "item_wits_end",
       "localPath": "assets/images/items/wits_end.png",
       "riotItemId": 3091,
@@ -824,7 +968,7 @@
     },
     {
       "contentHash": "7367b7078ad4a0096f7068c9c4a6b5e37ba748f8367ef33e6abdde1b74776bbd",
-      "fetchedAt": "2026-09-05T15:49:42.023Z",
+      "fetchedAt": "2026-09-06T15:02:42.172Z",
       "localAssetKey": "item_youmuus_ghostblade",
       "localPath": "assets/images/items/youmuus_ghostblade.png",
       "riotItemId": 3142,
@@ -833,7 +977,7 @@
     },
     {
       "contentHash": "c51146040b42ff44987e6268373c9e84daa6d59e9639efc0bf2a45c5d8cae5a0",
-      "fetchedAt": "2026-09-05T15:49:36.682Z",
+      "fetchedAt": "2026-09-06T15:02:36.762Z",
       "localAssetKey": "item_zeal",
       "localPath": "assets/images/items/zeal.png",
       "riotItemId": 3086,
@@ -842,7 +986,7 @@
     },
     {
       "contentHash": "733b2b6a739691811c803911d5e41886c26bf52238ef85a8808cc3ee7081fb73",
-      "fetchedAt": "2026-09-05T15:50:10.284Z",
+      "fetchedAt": "2026-09-06T15:03:20.481Z",
       "localAssetKey": "item_zekes_convergence",
       "localPath": "assets/images/items/zekes_convergence.png",
       "riotItemId": 3050,
@@ -851,7 +995,7 @@
     },
     {
       "contentHash": "fc0908ad8621e96ad635b5bac67e09f663ec80735efd732b10f07d8c498443aa",
-      "fetchedAt": "2026-09-05T15:49:41.402Z",
+      "fetchedAt": "2026-09-06T15:02:41.527Z",
       "localAssetKey": "item_zhonyas_hourglass",
       "localPath": "assets/images/items/zhonyas_hourglass.png",
       "riotItemId": 3157,

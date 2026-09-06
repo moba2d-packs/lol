@@ -196,6 +196,34 @@ export const ITEMS = [
   { local: 'zekes_convergence', riot: 3050 },
   { local: 'watchful_wardstone', riot: 4638 },
   { local: 'guardian_angel', riot: 3026 },
+  // The mage, lethality and utility shelf, 2026-09-06. Two components the
+  // shop had no rung for at all — a lethality one (Dao Hung Tàn) and the
+  // ability-power step between Sách Cũ and Máy Chuyển Pha Hextech (Gậy Bùng
+  // Nổ) — and fourteen finished rows on top of them. Every id below was
+  // checked against 16.16.1's own vi_VN item.json before being written down:
+  // Terminus is 3302 there, Anathema's Chains 8001, Unending Despair 2502,
+  // and Luden's is still filed as 'Vọng Âm Luden' on this patch.
+  //
+  // The whole shelf's art is fetched here in one go rather than a row at a
+  // time as the items land: `importAll` rewrites the entire ledger on every
+  // run (every `fetchedAt`, all 111 of them), so fourteen imports would be
+  // fourteen full-file diffs recording nothing but fourteen clock readings.
+  { local: 'serrated_dirk', riot: 3134 },
+  { local: 'blasting_wand', riot: 1026 },
+  { local: 'rylais_crystal_scepter', riot: 3116 },
+  { local: 'liandrys_torment', riot: 6653 },
+  { local: 'ludens_echo', riot: 6655 },
+  { local: 'shadowflame', riot: 4645 },
+  { local: 'cryptbloom', riot: 3137 },
+  { local: 'seryldas_grudge', riot: 6694 },
+  { local: 'opportunity', riot: 6701 },
+  { local: 'voltaic_cyclosword', riot: 6699 },
+  { local: 'profane_hydra', riot: 6698 },
+  { local: 'terminus', riot: 3302 },
+  { local: 'unending_despair', riot: 2502 },
+  { local: 'anathemas_chains', riot: 8001 },
+  { local: 'imperial_mandate', riot: 4005 },
+  { local: 'experimental_hexplate', riot: 3073 },
 ];
 
 const sha256 = buffer => createHash('sha256').update(buffer).digest('hex');

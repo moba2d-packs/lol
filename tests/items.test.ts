@@ -10,7 +10,7 @@ import { assetManifest } from '../generated/assetManifest';
 const api = buildTestApi();
 
 /**
- * The shop this pack ships: ninety-five items, fifty-four spells behind them, and the
+ * The shop this pack ships: ninety-seven items, fifty-five spells behind them, and the
  * one thing about them that is easy to get wrong in a way nothing complains
  * about.
  *
@@ -28,7 +28,7 @@ const api = buildTestApi();
  * rather than four spells that do not exist.
  */
 
-/** The fifty-four, by name. Not derived from a prefix the code under test also uses. */
+/** The fifty-five, by name. Not derived from a prefix the code under test also uses. */
 const ITEM_SPELL_IDS = [
   'Item_Thornmail',
   'Item_Zhonyas',
@@ -95,6 +95,7 @@ const ITEM_SPELL_IDS = [
   'Item_Moonstone',
   'Item_Zeke',
   'Item_GuardianAngel',
+  'Item_Rylai',
 ] as const;
 
 /**
@@ -682,6 +683,14 @@ const SPEC: Record<
     passive: 'Item_GuardianAngel',
     buildsFrom: ['chain_vest', 'long_sword'],
   },
+  blasting_wand: { name: 'Gậy Bùng Nổ', cost: 700, stats: { abilityPower: 0.85 } },
+  rylais_crystal_scepter: {
+    name: 'Trượng Pha Lê Rylai',
+    cost: 1550,
+    stats: { abilityPower: 1.1, maxHealth: 50 },
+    passive: 'Item_Rylai',
+    buildsFrom: ['blasting_wand', 'ruby_crystal'],
+  },
 };
 
 describe('no Item_ spell leaks into spellDisplay', () => {
@@ -713,7 +722,7 @@ describe('no Item_ spell leaks into spellDisplay', () => {
 describe('the item set', () => {
   const items = data.items ?? {};
 
-  it('ships exactly the ninety-five specified, keyed by their own id', () => {
+  it('ships exactly the ninety-seven specified, keyed by their own id', () => {
     expect(Object.keys(items).sort()).toEqual(Object.keys(SPEC).sort());
   });
 
@@ -730,7 +739,7 @@ describe('the item set', () => {
     }
   });
 
-  it('reaches its spells only through passive/active, and only the fifty-four', () => {
+  it('reaches its spells only through passive/active, and only the fifty-five', () => {
     const named = new Set<string>();
     for (const def of Object.values(items)) {
       if (def.passive) named.add(def.passive);
@@ -845,7 +854,7 @@ describe('the item set', () => {
     const registry = new PackRegistry();
     registry.install(pack);
 
-    expect(registry.items()).toHaveLength(95);
+    expect(registry.items()).toHaveLength(97);
     const thornmail = registry.item('lol:thornmail');
     expect(thornmail?.passive).toBe('lol:Item_Thornmail');
     expect(thornmail?.icon).toBe('lol:item_thornmail');
@@ -898,6 +907,7 @@ describe('the build paths', () => {
     'phage',
     'caulfields_warhammer',
     'kindlegem',
+    'blasting_wand',
   ];
 
   const finished = Object.values(items).filter(def => !COMPONENTS.includes(def.id));

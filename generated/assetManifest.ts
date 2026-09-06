@@ -78,571 +78,587 @@ import asset75Url from '../assets/images/champions/zed.png?url';
 import asset76Url from '../assets/images/champions/ziggs.png?url';
 import asset77Url from '../assets/images/items/abyssal_mask.png?url';
 import asset78Url from '../assets/images/items/amplifying_tome.png?url';
-import asset79Url from '../assets/images/items/ardent_censer.png?url';
-import asset80Url from '../assets/images/items/banshees_veil.png?url';
-import asset81Url from '../assets/images/items/berserkers_greaves.png?url';
-import asset82Url from '../assets/images/items/black_cleaver.png?url';
-import asset83Url from '../assets/images/items/blade_of_the_ruined_king.png?url';
-import asset84Url from '../assets/images/items/blighting_jewel.png?url';
-import asset85Url from '../assets/images/items/bloodthirster.png?url';
-import asset86Url from '../assets/images/items/boots.png?url';
-import asset87Url from '../assets/images/items/bramble_vest.png?url';
-import asset88Url from '../assets/images/items/caulfields_warhammer.png?url';
-import asset89Url from '../assets/images/items/chain_vest.png?url';
-import asset90Url from '../assets/images/items/chempunk_chainsword.png?url';
-import asset91Url from '../assets/images/items/cloth_armor.png?url';
-import asset92Url from '../assets/images/items/dead_mans_plate.png?url';
-import asset93Url from '../assets/images/items/deaths_dance.png?url';
-import asset94Url from '../assets/images/items/divine_sunderer.png?url';
-import asset95Url from '../assets/images/items/dusk_and_dawn.png?url';
-import asset96Url from '../assets/images/items/essence_reaver.png?url';
-import asset97Url from '../assets/images/items/everfrost.png?url';
-import asset98Url from '../assets/images/items/executioners_calling.png?url';
-import asset99Url from '../assets/images/items/force_of_nature.png?url';
-import asset100Url from '../assets/images/items/frozen_heart.png?url';
-import asset101Url from '../assets/images/items/gargoyle_stoneplate.png?url';
-import asset102Url from '../assets/images/items/giants_belt.png?url';
-import asset103Url from '../assets/images/items/guardian_angel.png?url';
-import asset104Url from '../assets/images/items/guinsoos_rageblade.png?url';
-import asset105Url from '../assets/images/items/heartsteel.png?url';
-import asset106Url from '../assets/images/items/hextech_alternator.png?url';
-import asset107Url from '../assets/images/items/hollow_radiance.png?url';
-import asset108Url from '../assets/images/items/hullbreaker.png?url';
-import asset109Url from '../assets/images/items/iceborn_gauntlet.png?url';
-import asset110Url from '../assets/images/items/immortal_shieldbow.png?url';
-import asset111Url from '../assets/images/items/infinity_edge.png?url';
-import asset112Url from '../assets/images/items/ionian_boots_of_lucidity.png?url';
-import asset113Url from '../assets/images/items/kaenic_rookern.png?url';
-import asset114Url from '../assets/images/items/kindlegem.png?url';
-import asset115Url from '../assets/images/items/kraken_slayer.png?url';
-import asset116Url from '../assets/images/items/last_whisper.png?url';
-import asset117Url from '../assets/images/items/lich_bane.png?url';
-import asset118Url from '../assets/images/items/locket_of_the_iron_solari.png?url';
-import asset119Url from '../assets/images/items/long_sword.png?url';
-import asset120Url from '../assets/images/items/lord_dominiks_regards.png?url';
-import asset121Url from '../assets/images/items/maw_of_malmortius.png?url';
-import asset122Url from '../assets/images/items/mercurys_treads.png?url';
-import asset123Url from '../assets/images/items/mikaels_blessing.png?url';
-import asset124Url from '../assets/images/items/moonstone_renewer.png?url';
-import asset125Url from '../assets/images/items/morellonomicon.png?url';
-import asset126Url from '../assets/images/items/mortal_reminder.png?url';
-import asset127Url from '../assets/images/items/nashors_tooth.png?url';
-import asset128Url from '../assets/images/items/navori_flickerblade.png?url';
-import asset129Url from '../assets/images/items/negatron_cloak.png?url';
-import asset130Url from '../assets/images/items/null_magic_mantle.png?url';
-import asset131Url from '../assets/images/items/oblivion_orb.png?url';
-import asset132Url from '../assets/images/items/phage.png?url';
-import asset133Url from '../assets/images/items/phantom_dancer.png?url';
-import asset134Url from '../assets/images/items/plated_steelcaps.png?url';
-import asset135Url from '../assets/images/items/quicksilver_sash.png?url';
-import asset136Url from '../assets/images/items/rabadons_deathcap.png?url';
-import asset137Url from '../assets/images/items/randuins_omen.png?url';
-import asset138Url from '../assets/images/items/rapid_firecannon.png?url';
-import asset139Url from '../assets/images/items/ravenous_hydra.png?url';
-import asset140Url from '../assets/images/items/recurve_bow.png?url';
-import asset141Url from '../assets/images/items/redemption.png?url';
-import asset142Url from '../assets/images/items/riftmaker.png?url';
-import asset143Url from '../assets/images/items/ruby_crystal.png?url';
-import asset144Url from '../assets/images/items/runaans_hurricane.png?url';
-import asset145Url from '../assets/images/items/serpents_fang.png?url';
-import asset146Url from '../assets/images/items/sheen.png?url';
-import asset147Url from '../assets/images/items/shurelyas_battlesong.png?url';
-import asset148Url from '../assets/images/items/silvermere_dawn.png?url';
-import asset149Url from '../assets/images/items/sorcerers_shoes.png?url';
-import asset150Url from '../assets/images/items/spear_of_shojin.png?url';
-import asset151Url from '../assets/images/items/spectres_cowl.png?url';
-import asset152Url from '../assets/images/items/spirit_visage.png?url';
-import asset153Url from '../assets/images/items/statikk_shiv.png?url';
-import asset154Url from '../assets/images/items/steraks_gage.png?url';
-import asset155Url from '../assets/images/items/stridebreaker.png?url';
-import asset156Url from '../assets/images/items/sundered_sky.png?url';
-import asset157Url from '../assets/images/items/sunfire_aegis.png?url';
-import asset158Url from '../assets/images/items/the_collector.png?url';
-import asset159Url from '../assets/images/items/thornmail.png?url';
-import asset160Url from '../assets/images/items/tiamat.png?url';
-import asset161Url from '../assets/images/items/titanic_hydra.png?url';
-import asset162Url from '../assets/images/items/trinity_force.png?url';
-import asset163Url from '../assets/images/items/vampiric_scepter.png?url';
-import asset164Url from '../assets/images/items/void_staff.png?url';
-import asset165Url from '../assets/images/items/warmogs_armor.png?url';
-import asset166Url from '../assets/images/items/watchful_wardstone.png?url';
-import asset167Url from '../assets/images/items/wits_end.png?url';
-import asset168Url from '../assets/images/items/youmuus_ghostblade.png?url';
-import asset169Url from '../assets/images/items/zeal.png?url';
-import asset170Url from '../assets/images/items/zekes_convergence.png?url';
-import asset171Url from '../assets/images/items/zhonyas_hourglass.png?url';
-import asset172Url from '../assets/images/monsters/Ancient_Krug.png?url';
-import asset173Url from '../assets/images/monsters/Baron_Nashor.png?url';
-import asset174Url from '../assets/images/monsters/Blue_Sentinel.png?url';
-import asset175Url from '../assets/images/monsters/Chemtech_Drake.webp?url';
-import asset176Url from '../assets/images/monsters/Cloud_Drake.webp?url';
-import asset177Url from '../assets/images/monsters/Crimson_Raptor.png?url';
-import asset178Url from '../assets/images/monsters/Elder_Dragon.webp?url';
-import asset179Url from '../assets/images/monsters/Greater_Murk_Wolf.png?url';
-import asset180Url from '../assets/images/monsters/Gromp.png?url';
-import asset181Url from '../assets/images/monsters/Hextech_Drake.webp?url';
-import asset182Url from '../assets/images/monsters/Infernal_Drake.webp?url';
-import asset183Url from '../assets/images/monsters/Mountain_Drake.webp?url';
-import asset184Url from '../assets/images/monsters/Murk_Wolf.png?url';
-import asset185Url from '../assets/images/monsters/Ocean_Drake.webp?url';
-import asset186Url from '../assets/images/monsters/Raptor.png?url';
-import asset187Url from '../assets/images/monsters/Red_Brambleback.png?url';
-import asset188Url from '../assets/images/monsters/Rift_Scuttle.png?url';
-import asset189Url from '../assets/images/monsters/Vilemaw.webp?url';
-import asset190Url from '../assets/images/objects/yasuo_q3.png?url';
-import asset191Url from '../assets/images/spells/aatrox_e.png?url';
-import asset192Url from '../assets/images/spells/aatrox_i.png?url';
-import asset193Url from '../assets/images/spells/aatrox_q.png?url';
-import asset194Url from '../assets/images/spells/aatrox_q2.png?url';
-import asset195Url from '../assets/images/spells/aatrox_q3.png?url';
-import asset196Url from '../assets/images/spells/aatrox_r.png?url';
-import asset197Url from '../assets/images/spells/aatrox_w.png?url';
-import asset198Url from '../assets/images/spells/ahri_e.png?url';
-import asset199Url from '../assets/images/spells/ahri_i.png?url';
-import asset200Url from '../assets/images/spells/ahri_q.png?url';
-import asset201Url from '../assets/images/spells/ahri_r.png?url';
-import asset202Url from '../assets/images/spells/ahri_w.png?url';
-import asset203Url from '../assets/images/spells/akali_e.png?url';
-import asset204Url from '../assets/images/spells/akali_e2.png?url';
-import asset205Url from '../assets/images/spells/akali_i.png?url';
-import asset206Url from '../assets/images/spells/akali_q.png?url';
-import asset207Url from '../assets/images/spells/akali_q2.png?url';
-import asset208Url from '../assets/images/spells/akali_r.png?url';
-import asset209Url from '../assets/images/spells/akali_r2.png?url';
-import asset210Url from '../assets/images/spells/akali_w.png?url';
-import asset211Url from '../assets/images/spells/alistar_e.png?url';
-import asset212Url from '../assets/images/spells/alistar_q.png?url';
-import asset213Url from '../assets/images/spells/alistar_r.png?url';
-import asset214Url from '../assets/images/spells/alistar_w.png?url';
-import asset215Url from '../assets/images/spells/amumu_e.png?url';
-import asset216Url from '../assets/images/spells/amumu_q.png?url';
-import asset217Url from '../assets/images/spells/amumu_r.png?url';
-import asset218Url from '../assets/images/spells/amumu_w.png?url';
-import asset219Url from '../assets/images/spells/anivia_e.png?url';
-import asset220Url from '../assets/images/spells/anivia_q.png?url';
-import asset221Url from '../assets/images/spells/anivia_r.png?url';
-import asset222Url from '../assets/images/spells/anivia_w.png?url';
-import asset223Url from '../assets/images/spells/annie_e.png?url';
-import asset224Url from '../assets/images/spells/annie_i.png?url';
-import asset225Url from '../assets/images/spells/annie_q.png?url';
-import asset226Url from '../assets/images/spells/annie_r.png?url';
-import asset227Url from '../assets/images/spells/annie_r2.png?url';
-import asset228Url from '../assets/images/spells/annie_w.png?url';
-import asset229Url from '../assets/images/spells/ashe_e.png?url';
-import asset230Url from '../assets/images/spells/ashe_i.png?url';
-import asset231Url from '../assets/images/spells/ashe_i2.png?url';
-import asset232Url from '../assets/images/spells/ashe_q.png?url';
-import asset233Url from '../assets/images/spells/ashe_q2.png?url';
-import asset234Url from '../assets/images/spells/ashe_r.png?url';
-import asset235Url from '../assets/images/spells/ashe_w.png?url';
-import asset236Url from '../assets/images/spells/blitzcrank_e.png?url';
-import asset237Url from '../assets/images/spells/blitzcrank_i.png?url';
-import asset238Url from '../assets/images/spells/blitzcrank_i2.png?url';
-import asset239Url from '../assets/images/spells/blitzcrank_internal.png?url';
-import asset240Url from '../assets/images/spells/blitzcrank_q.png?url';
-import asset241Url from '../assets/images/spells/blitzcrank_r.png?url';
-import asset242Url from '../assets/images/spells/blitzcrank_w.png?url';
-import asset243Url from '../assets/images/spells/brand_e.png?url';
-import asset244Url from '../assets/images/spells/brand_i.png?url';
-import asset245Url from '../assets/images/spells/brand_i2.png?url';
-import asset246Url from '../assets/images/spells/brand_q.png?url';
-import asset247Url from '../assets/images/spells/brand_r.png?url';
-import asset248Url from '../assets/images/spells/brand_w.png?url';
-import asset249Url from '../assets/images/spells/braum_e.png?url';
-import asset250Url from '../assets/images/spells/braum_i.png?url';
-import asset251Url from '../assets/images/spells/braum_q.png?url';
-import asset252Url from '../assets/images/spells/braum_r.png?url';
-import asset253Url from '../assets/images/spells/braum_w.png?url';
-import asset254Url from '../assets/images/spells/caitlyn_e.png?url';
-import asset255Url from '../assets/images/spells/caitlyn_i.png?url';
-import asset256Url from '../assets/images/spells/caitlyn_q.png?url';
-import asset257Url from '../assets/images/spells/caitlyn_r.png?url';
-import asset258Url from '../assets/images/spells/caitlyn_w.png?url';
-import asset259Url from '../assets/images/spells/camille_e.png?url';
-import asset260Url from '../assets/images/spells/camille_e2.png?url';
-import asset261Url from '../assets/images/spells/camille_i.png?url';
-import asset262Url from '../assets/images/spells/camille_q.png?url';
-import asset263Url from '../assets/images/spells/camille_q2.png?url';
-import asset264Url from '../assets/images/spells/camille_q3.png?url';
-import asset265Url from '../assets/images/spells/camille_r.png?url';
-import asset266Url from '../assets/images/spells/camille_w.png?url';
-import asset267Url from '../assets/images/spells/cassiopeia_e.png?url';
-import asset268Url from '../assets/images/spells/cassiopeia_q.png?url';
-import asset269Url from '../assets/images/spells/cassiopeia_r.png?url';
-import asset270Url from '../assets/images/spells/cassiopeia_w.png?url';
-import asset271Url from '../assets/images/spells/chogath_e.png?url';
-import asset272Url from '../assets/images/spells/chogath_q.png?url';
-import asset273Url from '../assets/images/spells/chogath_r.png?url';
-import asset274Url from '../assets/images/spells/chogath_w.png?url';
-import asset275Url from '../assets/images/spells/darius_e.png?url';
-import asset276Url from '../assets/images/spells/darius_i.png?url';
-import asset277Url from '../assets/images/spells/darius_q.png?url';
-import asset278Url from '../assets/images/spells/darius_r.png?url';
-import asset279Url from '../assets/images/spells/darius_w.png?url';
-import asset280Url from '../assets/images/spells/diana_e.png?url';
-import asset281Url from '../assets/images/spells/diana_i.png?url';
-import asset282Url from '../assets/images/spells/diana_q.png?url';
-import asset283Url from '../assets/images/spells/diana_r.png?url';
-import asset284Url from '../assets/images/spells/diana_w.png?url';
-import asset285Url from '../assets/images/spells/draven_e.png?url';
-import asset286Url from '../assets/images/spells/draven_i.png?url';
-import asset287Url from '../assets/images/spells/draven_q.png?url';
-import asset288Url from '../assets/images/spells/draven_r.png?url';
-import asset289Url from '../assets/images/spells/draven_r2.png?url';
-import asset290Url from '../assets/images/spells/draven_w.png?url';
-import asset291Url from '../assets/images/spells/drmundo_e.png?url';
-import asset292Url from '../assets/images/spells/drmundo_i.png?url';
-import asset293Url from '../assets/images/spells/drmundo_q.png?url';
-import asset294Url from '../assets/images/spells/drmundo_r.png?url';
-import asset295Url from '../assets/images/spells/drmundo_w.png?url';
-import asset296Url from '../assets/images/spells/ekko_e.png?url';
-import asset297Url from '../assets/images/spells/ekko_i.png?url';
-import asset298Url from '../assets/images/spells/ekko_q.png?url';
-import asset299Url from '../assets/images/spells/ekko_r.png?url';
-import asset300Url from '../assets/images/spells/ekko_w.png?url';
-import asset301Url from '../assets/images/spells/ezreal_e.png?url';
-import asset302Url from '../assets/images/spells/ezreal_i.png?url';
-import asset303Url from '../assets/images/spells/ezreal_q.png?url';
-import asset304Url from '../assets/images/spells/ezreal_r.png?url';
-import asset305Url from '../assets/images/spells/ezreal_w.png?url';
-import asset306Url from '../assets/images/spells/fiora_e.png?url';
-import asset307Url from '../assets/images/spells/fiora_i.png?url';
-import asset308Url from '../assets/images/spells/fiora_i2.png?url';
-import asset309Url from '../assets/images/spells/fiora_q.png?url';
-import asset310Url from '../assets/images/spells/fiora_r.png?url';
-import asset311Url from '../assets/images/spells/fiora_r2.png?url';
-import asset312Url from '../assets/images/spells/fiora_w.png?url';
-import asset313Url from '../assets/images/spells/fizz_e.png?url';
-import asset314Url from '../assets/images/spells/fizz_e2.png?url';
-import asset315Url from '../assets/images/spells/fizz_i.png?url';
-import asset316Url from '../assets/images/spells/fizz_q.png?url';
-import asset317Url from '../assets/images/spells/fizz_r.png?url';
-import asset318Url from '../assets/images/spells/fizz_w.png?url';
-import asset319Url from '../assets/images/spells/flash.png?url';
-import asset320Url from '../assets/images/spells/garen_e.png?url';
-import asset321Url from '../assets/images/spells/garen_e2.png?url';
-import asset322Url from '../assets/images/spells/garen_q.png?url';
-import asset323Url from '../assets/images/spells/garen_r.png?url';
-import asset324Url from '../assets/images/spells/garen_w.png?url';
-import asset325Url from '../assets/images/spells/ghost.png?url';
-import asset326Url from '../assets/images/spells/graves_e.png?url';
-import asset327Url from '../assets/images/spells/graves_q.png?url';
-import asset328Url from '../assets/images/spells/graves_r.png?url';
-import asset329Url from '../assets/images/spells/graves_w.png?url';
-import asset330Url from '../assets/images/spells/heal.png?url';
-import asset331Url from '../assets/images/spells/ignite.png?url';
-import asset332Url from '../assets/images/spells/irelia_e.png?url';
-import asset333Url from '../assets/images/spells/irelia_i.png?url';
-import asset334Url from '../assets/images/spells/irelia_q.png?url';
-import asset335Url from '../assets/images/spells/irelia_r.png?url';
-import asset336Url from '../assets/images/spells/irelia_w.png?url';
-import asset337Url from '../assets/images/spells/janna_e.png?url';
-import asset338Url from '../assets/images/spells/janna_q.png?url';
-import asset339Url from '../assets/images/spells/janna_r.png?url';
-import asset340Url from '../assets/images/spells/janna_w.png?url';
-import asset341Url from '../assets/images/spells/jarvaniv_e.png?url';
-import asset342Url from '../assets/images/spells/jarvaniv_i.png?url';
-import asset343Url from '../assets/images/spells/jarvaniv_q.png?url';
-import asset344Url from '../assets/images/spells/jarvaniv_r.png?url';
-import asset345Url from '../assets/images/spells/jarvaniv_w.png?url';
-import asset346Url from '../assets/images/spells/jax_e.png?url';
-import asset347Url from '../assets/images/spells/jax_i.png?url';
-import asset348Url from '../assets/images/spells/jax_q.png?url';
-import asset349Url from '../assets/images/spells/jax_r.png?url';
-import asset350Url from '../assets/images/spells/jax_w.png?url';
-import asset351Url from '../assets/images/spells/jhin_e.png?url';
-import asset352Url from '../assets/images/spells/jhin_i.png?url';
-import asset353Url from '../assets/images/spells/jhin_q.png?url';
-import asset354Url from '../assets/images/spells/jhin_r.png?url';
-import asset355Url from '../assets/images/spells/jhin_r2.png?url';
-import asset356Url from '../assets/images/spells/jhin_r3.png?url';
-import asset357Url from '../assets/images/spells/jhin_w.png?url';
-import asset358Url from '../assets/images/spells/jhin_w2.png?url';
-import asset359Url from '../assets/images/spells/jinx_e.png?url';
-import asset360Url from '../assets/images/spells/jinx_e2.png?url';
-import asset361Url from '../assets/images/spells/jinx_i.png?url';
-import asset362Url from '../assets/images/spells/jinx_q.png?url';
-import asset363Url from '../assets/images/spells/jinx_q2.png?url';
-import asset364Url from '../assets/images/spells/jinx_q3.png?url';
-import asset365Url from '../assets/images/spells/jinx_q4.png?url';
-import asset366Url from '../assets/images/spells/jinx_r.png?url';
-import asset367Url from '../assets/images/spells/jinx_w.png?url';
-import asset368Url from '../assets/images/spells/katarina_e.png?url';
-import asset369Url from '../assets/images/spells/katarina_i.png?url';
-import asset370Url from '../assets/images/spells/katarina_i2.png?url';
-import asset371Url from '../assets/images/spells/katarina_q.png?url';
-import asset372Url from '../assets/images/spells/katarina_r.png?url';
-import asset373Url from '../assets/images/spells/katarina_w.png?url';
-import asset374Url from '../assets/images/spells/kogmaw_e.png?url';
-import asset375Url from '../assets/images/spells/kogmaw_i.png?url';
-import asset376Url from '../assets/images/spells/kogmaw_q.png?url';
-import asset377Url from '../assets/images/spells/kogmaw_r.png?url';
-import asset378Url from '../assets/images/spells/kogmaw_w.png?url';
-import asset379Url from '../assets/images/spells/leblanc_e.png?url';
-import asset380Url from '../assets/images/spells/leblanc_i.png?url';
-import asset381Url from '../assets/images/spells/leblanc_q.png?url';
-import asset382Url from '../assets/images/spells/leblanc_r.png?url';
-import asset383Url from '../assets/images/spells/leblanc_r2.png?url';
-import asset384Url from '../assets/images/spells/leblanc_r3.png?url';
-import asset385Url from '../assets/images/spells/leblanc_r4.png?url';
-import asset386Url from '../assets/images/spells/leblanc_w.png?url';
-import asset387Url from '../assets/images/spells/leblanc_w1.png?url';
-import asset388Url from '../assets/images/spells/leblanc_w2.png?url';
-import asset389Url from '../assets/images/spells/leesin_e.png?url';
-import asset390Url from '../assets/images/spells/leesin_e2.png?url';
-import asset391Url from '../assets/images/spells/leesin_i.png?url';
-import asset392Url from '../assets/images/spells/leesin_q.png?url';
-import asset393Url from '../assets/images/spells/leesin_q1.png?url';
-import asset394Url from '../assets/images/spells/leesin_q2.png?url';
-import asset395Url from '../assets/images/spells/leesin_r.png?url';
-import asset396Url from '../assets/images/spells/leesin_w.png?url';
-import asset397Url from '../assets/images/spells/leesin_w2.png?url';
-import asset398Url from '../assets/images/spells/lissandra_e.png?url';
-import asset399Url from '../assets/images/spells/lissandra_i.png?url';
-import asset400Url from '../assets/images/spells/lissandra_q.png?url';
-import asset401Url from '../assets/images/spells/lissandra_r.png?url';
-import asset402Url from '../assets/images/spells/lissandra_w.png?url';
-import asset403Url from '../assets/images/spells/lucian_e.png?url';
-import asset404Url from '../assets/images/spells/lucian_i.png?url';
-import asset405Url from '../assets/images/spells/lucian_q.png?url';
-import asset406Url from '../assets/images/spells/lucian_r.png?url';
-import asset407Url from '../assets/images/spells/lucian_w.png?url';
-import asset408Url from '../assets/images/spells/lucian_w2.png?url';
-import asset409Url from '../assets/images/spells/lucian_w3.png?url';
-import asset410Url from '../assets/images/spells/lux_e.png?url';
-import asset411Url from '../assets/images/spells/lux_q.png?url';
-import asset412Url from '../assets/images/spells/lux_r.png?url';
-import asset413Url from '../assets/images/spells/lux_w.png?url';
-import asset414Url from '../assets/images/spells/malphite_e.png?url';
-import asset415Url from '../assets/images/spells/malphite_q.png?url';
-import asset416Url from '../assets/images/spells/malphite_r.png?url';
-import asset417Url from '../assets/images/spells/malphite_w.png?url';
-import asset418Url from '../assets/images/spells/malzahar_e.png?url';
-import asset419Url from '../assets/images/spells/malzahar_q.png?url';
-import asset420Url from '../assets/images/spells/malzahar_r.png?url';
-import asset421Url from '../assets/images/spells/malzahar_w.png?url';
-import asset422Url from '../assets/images/spells/masteryi_e.png?url';
-import asset423Url from '../assets/images/spells/masteryi_i.png?url';
-import asset424Url from '../assets/images/spells/masteryi_q.png?url';
-import asset425Url from '../assets/images/spells/masteryi_r.png?url';
-import asset426Url from '../assets/images/spells/masteryi_w.png?url';
-import asset427Url from '../assets/images/spells/missfortune_e.png?url';
-import asset428Url from '../assets/images/spells/missfortune_i.png?url';
-import asset429Url from '../assets/images/spells/missfortune_q.png?url';
-import asset430Url from '../assets/images/spells/missfortune_r.png?url';
-import asset431Url from '../assets/images/spells/missfortune_w.png?url';
-import asset432Url from '../assets/images/spells/missfortune_w2.png?url';
-import asset433Url from '../assets/images/spells/missfortune_w3.png?url';
-import asset434Url from '../assets/images/spells/mordekaiser_e.png?url';
-import asset435Url from '../assets/images/spells/mordekaiser_i.png?url';
-import asset436Url from '../assets/images/spells/mordekaiser_q.png?url';
-import asset437Url from '../assets/images/spells/mordekaiser_r.png?url';
-import asset438Url from '../assets/images/spells/mordekaiser_w.png?url';
-import asset439Url from '../assets/images/spells/mordekaiser_w2.png?url';
-import asset440Url from '../assets/images/spells/morgana_e.png?url';
-import asset441Url from '../assets/images/spells/morgana_q.png?url';
-import asset442Url from '../assets/images/spells/morgana_r.png?url';
-import asset443Url from '../assets/images/spells/morgana_w.png?url';
-import asset444Url from '../assets/images/spells/nasus_e.png?url';
-import asset445Url from '../assets/images/spells/nasus_q.png?url';
-import asset446Url from '../assets/images/spells/nasus_r.png?url';
-import asset447Url from '../assets/images/spells/nasus_w.png?url';
-import asset448Url from '../assets/images/spells/nautilus_e.png?url';
-import asset449Url from '../assets/images/spells/nautilus_i.png?url';
-import asset450Url from '../assets/images/spells/nautilus_q.png?url';
-import asset451Url from '../assets/images/spells/nautilus_r.png?url';
-import asset452Url from '../assets/images/spells/nautilus_r2.png?url';
-import asset453Url from '../assets/images/spells/nautilus_w.png?url';
-import asset454Url from '../assets/images/spells/nocturne_e.png?url';
-import asset455Url from '../assets/images/spells/nocturne_q.png?url';
-import asset456Url from '../assets/images/spells/nocturne_r.png?url';
-import asset457Url from '../assets/images/spells/nocturne_w.png?url';
-import asset458Url from '../assets/images/spells/olaf_e.png?url';
-import asset459Url from '../assets/images/spells/olaf_q.png?url';
-import asset460Url from '../assets/images/spells/olaf_r.png?url';
-import asset461Url from '../assets/images/spells/olaf_w.png?url';
-import asset462Url from '../assets/images/spells/old/blitzcrank_e.png?url';
-import asset463Url from '../assets/images/spells/old/blitzcrank_internal.png?url';
-import asset464Url from '../assets/images/spells/old/blitzcrank_q.png?url';
-import asset465Url from '../assets/images/spells/old/blitzcrank_r.png?url';
-import asset466Url from '../assets/images/spells/old/blitzcrank_w.png?url';
-import asset467Url from '../assets/images/spells/old/leesin_e.png?url';
-import asset468Url from '../assets/images/spells/old/leesin_q1.png?url';
-import asset469Url from '../assets/images/spells/old/leesin_q2.png?url';
-import asset470Url from '../assets/images/spells/old/leesin_r.png?url';
-import asset471Url from '../assets/images/spells/old/malphite_r.png?url';
-import asset472Url from '../assets/images/spells/old/olaf_q.png?url';
-import asset473Url from '../assets/images/spells/old/zed_w.png?url';
-import asset474Url from '../assets/images/spells/old/zed_w2.png?url';
-import asset475Url from '../assets/images/spells/orianna_e.png?url';
-import asset476Url from '../assets/images/spells/orianna_i.png?url';
-import asset477Url from '../assets/images/spells/orianna_i2.png?url';
-import asset478Url from '../assets/images/spells/orianna_q.png?url';
-import asset479Url from '../assets/images/spells/orianna_r.png?url';
-import asset480Url from '../assets/images/spells/orianna_w.png?url';
-import asset481Url from '../assets/images/spells/pantheon_e.png?url';
-import asset482Url from '../assets/images/spells/pantheon_q.png?url';
-import asset483Url from '../assets/images/spells/pantheon_r.png?url';
-import asset484Url from '../assets/images/spells/pantheon_w.png?url';
-import asset485Url from '../assets/images/spells/pyke_e.png?url';
-import asset486Url from '../assets/images/spells/pyke_i.png?url';
-import asset487Url from '../assets/images/spells/pyke_q.png?url';
-import asset488Url from '../assets/images/spells/pyke_r.png?url';
-import asset489Url from '../assets/images/spells/pyke_r2.png?url';
-import asset490Url from '../assets/images/spells/pyke_w.png?url';
-import asset491Url from '../assets/images/spells/rammus_e.png?url';
-import asset492Url from '../assets/images/spells/rammus_q.png?url';
-import asset493Url from '../assets/images/spells/rammus_r.png?url';
-import asset494Url from '../assets/images/spells/rammus_w.png?url';
-import asset495Url from '../assets/images/spells/renekton_e.png?url';
-import asset496Url from '../assets/images/spells/renekton_i.png?url';
-import asset497Url from '../assets/images/spells/renekton_q.png?url';
-import asset498Url from '../assets/images/spells/renekton_r.png?url';
-import asset499Url from '../assets/images/spells/renekton_w.png?url';
-import asset500Url from '../assets/images/spells/riven_e.png?url';
-import asset501Url from '../assets/images/spells/riven_i.png?url';
-import asset502Url from '../assets/images/spells/riven_q.png?url';
-import asset503Url from '../assets/images/spells/riven_r.png?url';
-import asset504Url from '../assets/images/spells/riven_r2.png?url';
-import asset505Url from '../assets/images/spells/riven_w.png?url';
-import asset506Url from '../assets/images/spells/sett_e.png?url';
-import asset507Url from '../assets/images/spells/sett_i.png?url';
-import asset508Url from '../assets/images/spells/sett_q.png?url';
-import asset509Url from '../assets/images/spells/sett_q2.png?url';
-import asset510Url from '../assets/images/spells/sett_r.png?url';
-import asset511Url from '../assets/images/spells/sett_w.png?url';
-import asset512Url from '../assets/images/spells/shaco_e.png?url';
-import asset513Url from '../assets/images/spells/shaco_i.png?url';
-import asset514Url from '../assets/images/spells/shaco_q.png?url';
-import asset515Url from '../assets/images/spells/shaco_r.png?url';
-import asset516Url from '../assets/images/spells/shaco_r2.png?url';
-import asset517Url from '../assets/images/spells/shaco_w.png?url';
-import asset518Url from '../assets/images/spells/shen_e.png?url';
-import asset519Url from '../assets/images/spells/shen_i.png?url';
-import asset520Url from '../assets/images/spells/shen_q.png?url';
-import asset521Url from '../assets/images/spells/shen_q2.png?url';
-import asset522Url from '../assets/images/spells/shen_q3.png?url';
-import asset523Url from '../assets/images/spells/shen_r.png?url';
-import asset524Url from '../assets/images/spells/shen_r2.png?url';
-import asset525Url from '../assets/images/spells/shen_w.png?url';
-import asset526Url from '../assets/images/spells/singed_e.png?url';
-import asset527Url from '../assets/images/spells/singed_q.png?url';
-import asset528Url from '../assets/images/spells/singed_r.png?url';
-import asset529Url from '../assets/images/spells/singed_w.png?url';
-import asset530Url from '../assets/images/spells/soraka_e.png?url';
-import asset531Url from '../assets/images/spells/soraka_i.png?url';
-import asset532Url from '../assets/images/spells/soraka_q.png?url';
-import asset533Url from '../assets/images/spells/soraka_r.png?url';
-import asset534Url from '../assets/images/spells/soraka_w.png?url';
-import asset535Url from '../assets/images/spells/stealthward.png?url';
-import asset536Url from '../assets/images/spells/syndra_e.png?url';
-import asset537Url from '../assets/images/spells/syndra_i.png?url';
-import asset538Url from '../assets/images/spells/syndra_q.png?url';
-import asset539Url from '../assets/images/spells/syndra_r.png?url';
-import asset540Url from '../assets/images/spells/syndra_w.png?url';
-import asset541Url from '../assets/images/spells/syndra_w2.png?url';
-import asset542Url from '../assets/images/spells/teemo_e.png?url';
-import asset543Url from '../assets/images/spells/teemo_q.png?url';
-import asset544Url from '../assets/images/spells/teemo_r.png?url';
-import asset545Url from '../assets/images/spells/teemo_w.png?url';
-import asset546Url from '../assets/images/spells/thresh_e.gif?url';
-import asset547Url from '../assets/images/spells/thresh_e2.gif?url';
-import asset548Url from '../assets/images/spells/thresh_e3.gif?url';
-import asset549Url from '../assets/images/spells/thresh_e4.gif?url';
-import asset550Url from '../assets/images/spells/thresh_e5.gif?url';
-import asset551Url from '../assets/images/spells/thresh_i.png?url';
-import asset552Url from '../assets/images/spells/thresh_q.png?url';
-import asset553Url from '../assets/images/spells/thresh_q2.png?url';
-import asset554Url from '../assets/images/spells/thresh_r.png?url';
-import asset555Url from '../assets/images/spells/thresh_w.png?url';
-import asset556Url from '../assets/images/spells/trundle_e.png?url';
-import asset557Url from '../assets/images/spells/trundle_i.png?url';
-import asset558Url from '../assets/images/spells/trundle_q.png?url';
-import asset559Url from '../assets/images/spells/trundle_r.png?url';
-import asset560Url from '../assets/images/spells/trundle_w.png?url';
-import asset561Url from '../assets/images/spells/tryndamere_e.png?url';
-import asset562Url from '../assets/images/spells/tryndamere_i.png?url';
-import asset563Url from '../assets/images/spells/tryndamere_q.png?url';
-import asset564Url from '../assets/images/spells/tryndamere_r.png?url';
-import asset565Url from '../assets/images/spells/tryndamere_w.png?url';
-import asset566Url from '../assets/images/spells/twistedfate_e.png?url';
-import asset567Url from '../assets/images/spells/twistedfate_i.png?url';
-import asset568Url from '../assets/images/spells/twistedfate_q.png?url';
-import asset569Url from '../assets/images/spells/twistedfate_r.png?url';
-import asset570Url from '../assets/images/spells/twistedfate_r2.png?url';
-import asset571Url from '../assets/images/spells/twistedfate_w.png?url';
-import asset572Url from '../assets/images/spells/twistedfate_w2.png?url';
-import asset573Url from '../assets/images/spells/twistedfate_w3.png?url';
-import asset574Url from '../assets/images/spells/twistedfate_w4.png?url';
-import asset575Url from '../assets/images/spells/twitch_e.png?url';
-import asset576Url from '../assets/images/spells/twitch_i.png?url';
-import asset577Url from '../assets/images/spells/twitch_q.png?url';
-import asset578Url from '../assets/images/spells/twitch_q2.png?url';
-import asset579Url from '../assets/images/spells/twitch_q3.png?url';
-import asset580Url from '../assets/images/spells/twitch_r.png?url';
-import asset581Url from '../assets/images/spells/twitch_w.png?url';
-import asset582Url from '../assets/images/spells/varus_e.png?url';
-import asset583Url from '../assets/images/spells/varus_q.png?url';
-import asset584Url from '../assets/images/spells/varus_r.png?url';
-import asset585Url from '../assets/images/spells/varus_w.png?url';
-import asset586Url from '../assets/images/spells/vayne_e.png?url';
-import asset587Url from '../assets/images/spells/vayne_i.png?url';
-import asset588Url from '../assets/images/spells/vayne_q.png?url';
-import asset589Url from '../assets/images/spells/vayne_r.png?url';
-import asset590Url from '../assets/images/spells/vayne_w.png?url';
-import asset591Url from '../assets/images/spells/veigar_e.png?url';
-import asset592Url from '../assets/images/spells/veigar_q.png?url';
-import asset593Url from '../assets/images/spells/veigar_r.png?url';
-import asset594Url from '../assets/images/spells/veigar_w.png?url';
-import asset595Url from '../assets/images/spells/vi_e.png?url';
-import asset596Url from '../assets/images/spells/vi_e2.png?url';
-import asset597Url from '../assets/images/spells/vi_i.png?url';
-import asset598Url from '../assets/images/spells/vi_q.png?url';
-import asset599Url from '../assets/images/spells/vi_r.png?url';
-import asset600Url from '../assets/images/spells/vi_w.png?url';
-import asset601Url from '../assets/images/spells/vi_w2.png?url';
-import asset602Url from '../assets/images/spells/vladimir_e.png?url';
-import asset603Url from '../assets/images/spells/vladimir_i.png?url';
-import asset604Url from '../assets/images/spells/vladimir_q.png?url';
-import asset605Url from '../assets/images/spells/vladimir_q2.png?url';
-import asset606Url from '../assets/images/spells/vladimir_r.png?url';
-import asset607Url from '../assets/images/spells/vladimir_w.png?url';
-import asset608Url from '../assets/images/spells/warwick_e.png?url';
-import asset609Url from '../assets/images/spells/warwick_q.png?url';
-import asset610Url from '../assets/images/spells/warwick_r.png?url';
-import asset611Url from '../assets/images/spells/warwick_w.png?url';
-import asset612Url from '../assets/images/spells/xerath_e.png?url';
-import asset613Url from '../assets/images/spells/xerath_i.png?url';
-import asset614Url from '../assets/images/spells/xerath_q.png?url';
-import asset615Url from '../assets/images/spells/xerath_r.png?url';
-import asset616Url from '../assets/images/spells/xerath_w.png?url';
-import asset617Url from '../assets/images/spells/xinzhao_e.png?url';
-import asset618Url from '../assets/images/spells/xinzhao_i.png?url';
-import asset619Url from '../assets/images/spells/xinzhao_i2.png?url';
-import asset620Url from '../assets/images/spells/xinzhao_q.png?url';
-import asset621Url from '../assets/images/spells/xinzhao_r.png?url';
-import asset622Url from '../assets/images/spells/xinzhao_w.png?url';
-import asset623Url from '../assets/images/spells/yasuo_e.png?url';
-import asset624Url from '../assets/images/spells/yasuo_i.png?url';
-import asset625Url from '../assets/images/spells/yasuo_q.png?url';
-import asset626Url from '../assets/images/spells/yasuo_q1.png?url';
-import asset627Url from '../assets/images/spells/yasuo_q2.png?url';
-import asset628Url from '../assets/images/spells/yasuo_q3.png?url';
-import asset629Url from '../assets/images/spells/yasuo_r.png?url';
-import asset630Url from '../assets/images/spells/yasuo_w.png?url';
-import asset631Url from '../assets/images/spells/zed_e.png?url';
-import asset632Url from '../assets/images/spells/zed_i.png?url';
-import asset633Url from '../assets/images/spells/zed_q.png?url';
-import asset634Url from '../assets/images/spells/zed_r.png?url';
-import asset635Url from '../assets/images/spells/zed_r1.png?url';
-import asset636Url from '../assets/images/spells/zed_r2.png?url';
-import asset637Url from '../assets/images/spells/zed_w.png?url';
-import asset638Url from '../assets/images/spells/zed_w2.png?url';
-import asset639Url from '../assets/images/spells/ziggs_e.png?url';
-import asset640Url from '../assets/images/spells/ziggs_i.png?url';
-import asset641Url from '../assets/images/spells/ziggs_q.png?url';
-import asset642Url from '../assets/images/spells/ziggs_r.png?url';
-import asset643Url from '../assets/images/spells/ziggs_w.png?url';
+import asset79Url from '../assets/images/items/anathemas_chains.png?url';
+import asset80Url from '../assets/images/items/ardent_censer.png?url';
+import asset81Url from '../assets/images/items/banshees_veil.png?url';
+import asset82Url from '../assets/images/items/berserkers_greaves.png?url';
+import asset83Url from '../assets/images/items/black_cleaver.png?url';
+import asset84Url from '../assets/images/items/blade_of_the_ruined_king.png?url';
+import asset85Url from '../assets/images/items/blasting_wand.png?url';
+import asset86Url from '../assets/images/items/blighting_jewel.png?url';
+import asset87Url from '../assets/images/items/bloodthirster.png?url';
+import asset88Url from '../assets/images/items/boots.png?url';
+import asset89Url from '../assets/images/items/bramble_vest.png?url';
+import asset90Url from '../assets/images/items/caulfields_warhammer.png?url';
+import asset91Url from '../assets/images/items/chain_vest.png?url';
+import asset92Url from '../assets/images/items/chempunk_chainsword.png?url';
+import asset93Url from '../assets/images/items/cloth_armor.png?url';
+import asset94Url from '../assets/images/items/cryptbloom.png?url';
+import asset95Url from '../assets/images/items/dead_mans_plate.png?url';
+import asset96Url from '../assets/images/items/deaths_dance.png?url';
+import asset97Url from '../assets/images/items/divine_sunderer.png?url';
+import asset98Url from '../assets/images/items/dusk_and_dawn.png?url';
+import asset99Url from '../assets/images/items/essence_reaver.png?url';
+import asset100Url from '../assets/images/items/everfrost.png?url';
+import asset101Url from '../assets/images/items/executioners_calling.png?url';
+import asset102Url from '../assets/images/items/experimental_hexplate.png?url';
+import asset103Url from '../assets/images/items/force_of_nature.png?url';
+import asset104Url from '../assets/images/items/frozen_heart.png?url';
+import asset105Url from '../assets/images/items/gargoyle_stoneplate.png?url';
+import asset106Url from '../assets/images/items/giants_belt.png?url';
+import asset107Url from '../assets/images/items/guardian_angel.png?url';
+import asset108Url from '../assets/images/items/guinsoos_rageblade.png?url';
+import asset109Url from '../assets/images/items/heartsteel.png?url';
+import asset110Url from '../assets/images/items/hextech_alternator.png?url';
+import asset111Url from '../assets/images/items/hollow_radiance.png?url';
+import asset112Url from '../assets/images/items/hullbreaker.png?url';
+import asset113Url from '../assets/images/items/iceborn_gauntlet.png?url';
+import asset114Url from '../assets/images/items/immortal_shieldbow.png?url';
+import asset115Url from '../assets/images/items/imperial_mandate.png?url';
+import asset116Url from '../assets/images/items/infinity_edge.png?url';
+import asset117Url from '../assets/images/items/ionian_boots_of_lucidity.png?url';
+import asset118Url from '../assets/images/items/kaenic_rookern.png?url';
+import asset119Url from '../assets/images/items/kindlegem.png?url';
+import asset120Url from '../assets/images/items/kraken_slayer.png?url';
+import asset121Url from '../assets/images/items/last_whisper.png?url';
+import asset122Url from '../assets/images/items/liandrys_torment.png?url';
+import asset123Url from '../assets/images/items/lich_bane.png?url';
+import asset124Url from '../assets/images/items/locket_of_the_iron_solari.png?url';
+import asset125Url from '../assets/images/items/long_sword.png?url';
+import asset126Url from '../assets/images/items/lord_dominiks_regards.png?url';
+import asset127Url from '../assets/images/items/ludens_echo.png?url';
+import asset128Url from '../assets/images/items/maw_of_malmortius.png?url';
+import asset129Url from '../assets/images/items/mercurys_treads.png?url';
+import asset130Url from '../assets/images/items/mikaels_blessing.png?url';
+import asset131Url from '../assets/images/items/moonstone_renewer.png?url';
+import asset132Url from '../assets/images/items/morellonomicon.png?url';
+import asset133Url from '../assets/images/items/mortal_reminder.png?url';
+import asset134Url from '../assets/images/items/nashors_tooth.png?url';
+import asset135Url from '../assets/images/items/navori_flickerblade.png?url';
+import asset136Url from '../assets/images/items/negatron_cloak.png?url';
+import asset137Url from '../assets/images/items/null_magic_mantle.png?url';
+import asset138Url from '../assets/images/items/oblivion_orb.png?url';
+import asset139Url from '../assets/images/items/opportunity.png?url';
+import asset140Url from '../assets/images/items/phage.png?url';
+import asset141Url from '../assets/images/items/phantom_dancer.png?url';
+import asset142Url from '../assets/images/items/plated_steelcaps.png?url';
+import asset143Url from '../assets/images/items/profane_hydra.png?url';
+import asset144Url from '../assets/images/items/quicksilver_sash.png?url';
+import asset145Url from '../assets/images/items/rabadons_deathcap.png?url';
+import asset146Url from '../assets/images/items/randuins_omen.png?url';
+import asset147Url from '../assets/images/items/rapid_firecannon.png?url';
+import asset148Url from '../assets/images/items/ravenous_hydra.png?url';
+import asset149Url from '../assets/images/items/recurve_bow.png?url';
+import asset150Url from '../assets/images/items/redemption.png?url';
+import asset151Url from '../assets/images/items/riftmaker.png?url';
+import asset152Url from '../assets/images/items/ruby_crystal.png?url';
+import asset153Url from '../assets/images/items/runaans_hurricane.png?url';
+import asset154Url from '../assets/images/items/rylais_crystal_scepter.png?url';
+import asset155Url from '../assets/images/items/serpents_fang.png?url';
+import asset156Url from '../assets/images/items/serrated_dirk.png?url';
+import asset157Url from '../assets/images/items/seryldas_grudge.png?url';
+import asset158Url from '../assets/images/items/shadowflame.png?url';
+import asset159Url from '../assets/images/items/sheen.png?url';
+import asset160Url from '../assets/images/items/shurelyas_battlesong.png?url';
+import asset161Url from '../assets/images/items/silvermere_dawn.png?url';
+import asset162Url from '../assets/images/items/sorcerers_shoes.png?url';
+import asset163Url from '../assets/images/items/spear_of_shojin.png?url';
+import asset164Url from '../assets/images/items/spectres_cowl.png?url';
+import asset165Url from '../assets/images/items/spirit_visage.png?url';
+import asset166Url from '../assets/images/items/statikk_shiv.png?url';
+import asset167Url from '../assets/images/items/steraks_gage.png?url';
+import asset168Url from '../assets/images/items/stridebreaker.png?url';
+import asset169Url from '../assets/images/items/sundered_sky.png?url';
+import asset170Url from '../assets/images/items/sunfire_aegis.png?url';
+import asset171Url from '../assets/images/items/terminus.png?url';
+import asset172Url from '../assets/images/items/the_collector.png?url';
+import asset173Url from '../assets/images/items/thornmail.png?url';
+import asset174Url from '../assets/images/items/tiamat.png?url';
+import asset175Url from '../assets/images/items/titanic_hydra.png?url';
+import asset176Url from '../assets/images/items/trinity_force.png?url';
+import asset177Url from '../assets/images/items/unending_despair.png?url';
+import asset178Url from '../assets/images/items/vampiric_scepter.png?url';
+import asset179Url from '../assets/images/items/void_staff.png?url';
+import asset180Url from '../assets/images/items/voltaic_cyclosword.png?url';
+import asset181Url from '../assets/images/items/warmogs_armor.png?url';
+import asset182Url from '../assets/images/items/watchful_wardstone.png?url';
+import asset183Url from '../assets/images/items/wits_end.png?url';
+import asset184Url from '../assets/images/items/youmuus_ghostblade.png?url';
+import asset185Url from '../assets/images/items/zeal.png?url';
+import asset186Url from '../assets/images/items/zekes_convergence.png?url';
+import asset187Url from '../assets/images/items/zhonyas_hourglass.png?url';
+import asset188Url from '../assets/images/monsters/Ancient_Krug.png?url';
+import asset189Url from '../assets/images/monsters/Baron_Nashor.png?url';
+import asset190Url from '../assets/images/monsters/Blue_Sentinel.png?url';
+import asset191Url from '../assets/images/monsters/Chemtech_Drake.webp?url';
+import asset192Url from '../assets/images/monsters/Cloud_Drake.webp?url';
+import asset193Url from '../assets/images/monsters/Crimson_Raptor.png?url';
+import asset194Url from '../assets/images/monsters/Elder_Dragon.webp?url';
+import asset195Url from '../assets/images/monsters/Greater_Murk_Wolf.png?url';
+import asset196Url from '../assets/images/monsters/Gromp.png?url';
+import asset197Url from '../assets/images/monsters/Hextech_Drake.webp?url';
+import asset198Url from '../assets/images/monsters/Infernal_Drake.webp?url';
+import asset199Url from '../assets/images/monsters/Mountain_Drake.webp?url';
+import asset200Url from '../assets/images/monsters/Murk_Wolf.png?url';
+import asset201Url from '../assets/images/monsters/Ocean_Drake.webp?url';
+import asset202Url from '../assets/images/monsters/Raptor.png?url';
+import asset203Url from '../assets/images/monsters/Red_Brambleback.png?url';
+import asset204Url from '../assets/images/monsters/Rift_Scuttle.png?url';
+import asset205Url from '../assets/images/monsters/Vilemaw.webp?url';
+import asset206Url from '../assets/images/objects/yasuo_q3.png?url';
+import asset207Url from '../assets/images/spells/aatrox_e.png?url';
+import asset208Url from '../assets/images/spells/aatrox_i.png?url';
+import asset209Url from '../assets/images/spells/aatrox_q.png?url';
+import asset210Url from '../assets/images/spells/aatrox_q2.png?url';
+import asset211Url from '../assets/images/spells/aatrox_q3.png?url';
+import asset212Url from '../assets/images/spells/aatrox_r.png?url';
+import asset213Url from '../assets/images/spells/aatrox_w.png?url';
+import asset214Url from '../assets/images/spells/ahri_e.png?url';
+import asset215Url from '../assets/images/spells/ahri_i.png?url';
+import asset216Url from '../assets/images/spells/ahri_q.png?url';
+import asset217Url from '../assets/images/spells/ahri_r.png?url';
+import asset218Url from '../assets/images/spells/ahri_w.png?url';
+import asset219Url from '../assets/images/spells/akali_e.png?url';
+import asset220Url from '../assets/images/spells/akali_e2.png?url';
+import asset221Url from '../assets/images/spells/akali_i.png?url';
+import asset222Url from '../assets/images/spells/akali_q.png?url';
+import asset223Url from '../assets/images/spells/akali_q2.png?url';
+import asset224Url from '../assets/images/spells/akali_r.png?url';
+import asset225Url from '../assets/images/spells/akali_r2.png?url';
+import asset226Url from '../assets/images/spells/akali_w.png?url';
+import asset227Url from '../assets/images/spells/alistar_e.png?url';
+import asset228Url from '../assets/images/spells/alistar_q.png?url';
+import asset229Url from '../assets/images/spells/alistar_r.png?url';
+import asset230Url from '../assets/images/spells/alistar_w.png?url';
+import asset231Url from '../assets/images/spells/amumu_e.png?url';
+import asset232Url from '../assets/images/spells/amumu_q.png?url';
+import asset233Url from '../assets/images/spells/amumu_r.png?url';
+import asset234Url from '../assets/images/spells/amumu_w.png?url';
+import asset235Url from '../assets/images/spells/anivia_e.png?url';
+import asset236Url from '../assets/images/spells/anivia_q.png?url';
+import asset237Url from '../assets/images/spells/anivia_r.png?url';
+import asset238Url from '../assets/images/spells/anivia_w.png?url';
+import asset239Url from '../assets/images/spells/annie_e.png?url';
+import asset240Url from '../assets/images/spells/annie_i.png?url';
+import asset241Url from '../assets/images/spells/annie_q.png?url';
+import asset242Url from '../assets/images/spells/annie_r.png?url';
+import asset243Url from '../assets/images/spells/annie_r2.png?url';
+import asset244Url from '../assets/images/spells/annie_w.png?url';
+import asset245Url from '../assets/images/spells/ashe_e.png?url';
+import asset246Url from '../assets/images/spells/ashe_i.png?url';
+import asset247Url from '../assets/images/spells/ashe_i2.png?url';
+import asset248Url from '../assets/images/spells/ashe_q.png?url';
+import asset249Url from '../assets/images/spells/ashe_q2.png?url';
+import asset250Url from '../assets/images/spells/ashe_r.png?url';
+import asset251Url from '../assets/images/spells/ashe_w.png?url';
+import asset252Url from '../assets/images/spells/blitzcrank_e.png?url';
+import asset253Url from '../assets/images/spells/blitzcrank_i.png?url';
+import asset254Url from '../assets/images/spells/blitzcrank_i2.png?url';
+import asset255Url from '../assets/images/spells/blitzcrank_internal.png?url';
+import asset256Url from '../assets/images/spells/blitzcrank_q.png?url';
+import asset257Url from '../assets/images/spells/blitzcrank_r.png?url';
+import asset258Url from '../assets/images/spells/blitzcrank_w.png?url';
+import asset259Url from '../assets/images/spells/brand_e.png?url';
+import asset260Url from '../assets/images/spells/brand_i.png?url';
+import asset261Url from '../assets/images/spells/brand_i2.png?url';
+import asset262Url from '../assets/images/spells/brand_q.png?url';
+import asset263Url from '../assets/images/spells/brand_r.png?url';
+import asset264Url from '../assets/images/spells/brand_w.png?url';
+import asset265Url from '../assets/images/spells/braum_e.png?url';
+import asset266Url from '../assets/images/spells/braum_i.png?url';
+import asset267Url from '../assets/images/spells/braum_q.png?url';
+import asset268Url from '../assets/images/spells/braum_r.png?url';
+import asset269Url from '../assets/images/spells/braum_w.png?url';
+import asset270Url from '../assets/images/spells/caitlyn_e.png?url';
+import asset271Url from '../assets/images/spells/caitlyn_i.png?url';
+import asset272Url from '../assets/images/spells/caitlyn_q.png?url';
+import asset273Url from '../assets/images/spells/caitlyn_r.png?url';
+import asset274Url from '../assets/images/spells/caitlyn_w.png?url';
+import asset275Url from '../assets/images/spells/camille_e.png?url';
+import asset276Url from '../assets/images/spells/camille_e2.png?url';
+import asset277Url from '../assets/images/spells/camille_i.png?url';
+import asset278Url from '../assets/images/spells/camille_q.png?url';
+import asset279Url from '../assets/images/spells/camille_q2.png?url';
+import asset280Url from '../assets/images/spells/camille_q3.png?url';
+import asset281Url from '../assets/images/spells/camille_r.png?url';
+import asset282Url from '../assets/images/spells/camille_w.png?url';
+import asset283Url from '../assets/images/spells/cassiopeia_e.png?url';
+import asset284Url from '../assets/images/spells/cassiopeia_q.png?url';
+import asset285Url from '../assets/images/spells/cassiopeia_r.png?url';
+import asset286Url from '../assets/images/spells/cassiopeia_w.png?url';
+import asset287Url from '../assets/images/spells/chogath_e.png?url';
+import asset288Url from '../assets/images/spells/chogath_q.png?url';
+import asset289Url from '../assets/images/spells/chogath_r.png?url';
+import asset290Url from '../assets/images/spells/chogath_w.png?url';
+import asset291Url from '../assets/images/spells/darius_e.png?url';
+import asset292Url from '../assets/images/spells/darius_i.png?url';
+import asset293Url from '../assets/images/spells/darius_q.png?url';
+import asset294Url from '../assets/images/spells/darius_r.png?url';
+import asset295Url from '../assets/images/spells/darius_w.png?url';
+import asset296Url from '../assets/images/spells/diana_e.png?url';
+import asset297Url from '../assets/images/spells/diana_i.png?url';
+import asset298Url from '../assets/images/spells/diana_q.png?url';
+import asset299Url from '../assets/images/spells/diana_r.png?url';
+import asset300Url from '../assets/images/spells/diana_w.png?url';
+import asset301Url from '../assets/images/spells/draven_e.png?url';
+import asset302Url from '../assets/images/spells/draven_i.png?url';
+import asset303Url from '../assets/images/spells/draven_q.png?url';
+import asset304Url from '../assets/images/spells/draven_r.png?url';
+import asset305Url from '../assets/images/spells/draven_r2.png?url';
+import asset306Url from '../assets/images/spells/draven_w.png?url';
+import asset307Url from '../assets/images/spells/drmundo_e.png?url';
+import asset308Url from '../assets/images/spells/drmundo_i.png?url';
+import asset309Url from '../assets/images/spells/drmundo_q.png?url';
+import asset310Url from '../assets/images/spells/drmundo_r.png?url';
+import asset311Url from '../assets/images/spells/drmundo_w.png?url';
+import asset312Url from '../assets/images/spells/ekko_e.png?url';
+import asset313Url from '../assets/images/spells/ekko_i.png?url';
+import asset314Url from '../assets/images/spells/ekko_q.png?url';
+import asset315Url from '../assets/images/spells/ekko_r.png?url';
+import asset316Url from '../assets/images/spells/ekko_w.png?url';
+import asset317Url from '../assets/images/spells/ezreal_e.png?url';
+import asset318Url from '../assets/images/spells/ezreal_i.png?url';
+import asset319Url from '../assets/images/spells/ezreal_q.png?url';
+import asset320Url from '../assets/images/spells/ezreal_r.png?url';
+import asset321Url from '../assets/images/spells/ezreal_w.png?url';
+import asset322Url from '../assets/images/spells/fiora_e.png?url';
+import asset323Url from '../assets/images/spells/fiora_i.png?url';
+import asset324Url from '../assets/images/spells/fiora_i2.png?url';
+import asset325Url from '../assets/images/spells/fiora_q.png?url';
+import asset326Url from '../assets/images/spells/fiora_r.png?url';
+import asset327Url from '../assets/images/spells/fiora_r2.png?url';
+import asset328Url from '../assets/images/spells/fiora_w.png?url';
+import asset329Url from '../assets/images/spells/fizz_e.png?url';
+import asset330Url from '../assets/images/spells/fizz_e2.png?url';
+import asset331Url from '../assets/images/spells/fizz_i.png?url';
+import asset332Url from '../assets/images/spells/fizz_q.png?url';
+import asset333Url from '../assets/images/spells/fizz_r.png?url';
+import asset334Url from '../assets/images/spells/fizz_w.png?url';
+import asset335Url from '../assets/images/spells/flash.png?url';
+import asset336Url from '../assets/images/spells/garen_e.png?url';
+import asset337Url from '../assets/images/spells/garen_e2.png?url';
+import asset338Url from '../assets/images/spells/garen_q.png?url';
+import asset339Url from '../assets/images/spells/garen_r.png?url';
+import asset340Url from '../assets/images/spells/garen_w.png?url';
+import asset341Url from '../assets/images/spells/ghost.png?url';
+import asset342Url from '../assets/images/spells/graves_e.png?url';
+import asset343Url from '../assets/images/spells/graves_q.png?url';
+import asset344Url from '../assets/images/spells/graves_r.png?url';
+import asset345Url from '../assets/images/spells/graves_w.png?url';
+import asset346Url from '../assets/images/spells/heal.png?url';
+import asset347Url from '../assets/images/spells/ignite.png?url';
+import asset348Url from '../assets/images/spells/irelia_e.png?url';
+import asset349Url from '../assets/images/spells/irelia_i.png?url';
+import asset350Url from '../assets/images/spells/irelia_q.png?url';
+import asset351Url from '../assets/images/spells/irelia_r.png?url';
+import asset352Url from '../assets/images/spells/irelia_w.png?url';
+import asset353Url from '../assets/images/spells/janna_e.png?url';
+import asset354Url from '../assets/images/spells/janna_q.png?url';
+import asset355Url from '../assets/images/spells/janna_r.png?url';
+import asset356Url from '../assets/images/spells/janna_w.png?url';
+import asset357Url from '../assets/images/spells/jarvaniv_e.png?url';
+import asset358Url from '../assets/images/spells/jarvaniv_i.png?url';
+import asset359Url from '../assets/images/spells/jarvaniv_q.png?url';
+import asset360Url from '../assets/images/spells/jarvaniv_r.png?url';
+import asset361Url from '../assets/images/spells/jarvaniv_w.png?url';
+import asset362Url from '../assets/images/spells/jax_e.png?url';
+import asset363Url from '../assets/images/spells/jax_i.png?url';
+import asset364Url from '../assets/images/spells/jax_q.png?url';
+import asset365Url from '../assets/images/spells/jax_r.png?url';
+import asset366Url from '../assets/images/spells/jax_w.png?url';
+import asset367Url from '../assets/images/spells/jhin_e.png?url';
+import asset368Url from '../assets/images/spells/jhin_i.png?url';
+import asset369Url from '../assets/images/spells/jhin_q.png?url';
+import asset370Url from '../assets/images/spells/jhin_r.png?url';
+import asset371Url from '../assets/images/spells/jhin_r2.png?url';
+import asset372Url from '../assets/images/spells/jhin_r3.png?url';
+import asset373Url from '../assets/images/spells/jhin_w.png?url';
+import asset374Url from '../assets/images/spells/jhin_w2.png?url';
+import asset375Url from '../assets/images/spells/jinx_e.png?url';
+import asset376Url from '../assets/images/spells/jinx_e2.png?url';
+import asset377Url from '../assets/images/spells/jinx_i.png?url';
+import asset378Url from '../assets/images/spells/jinx_q.png?url';
+import asset379Url from '../assets/images/spells/jinx_q2.png?url';
+import asset380Url from '../assets/images/spells/jinx_q3.png?url';
+import asset381Url from '../assets/images/spells/jinx_q4.png?url';
+import asset382Url from '../assets/images/spells/jinx_r.png?url';
+import asset383Url from '../assets/images/spells/jinx_w.png?url';
+import asset384Url from '../assets/images/spells/katarina_e.png?url';
+import asset385Url from '../assets/images/spells/katarina_i.png?url';
+import asset386Url from '../assets/images/spells/katarina_i2.png?url';
+import asset387Url from '../assets/images/spells/katarina_q.png?url';
+import asset388Url from '../assets/images/spells/katarina_r.png?url';
+import asset389Url from '../assets/images/spells/katarina_w.png?url';
+import asset390Url from '../assets/images/spells/kogmaw_e.png?url';
+import asset391Url from '../assets/images/spells/kogmaw_i.png?url';
+import asset392Url from '../assets/images/spells/kogmaw_q.png?url';
+import asset393Url from '../assets/images/spells/kogmaw_r.png?url';
+import asset394Url from '../assets/images/spells/kogmaw_w.png?url';
+import asset395Url from '../assets/images/spells/leblanc_e.png?url';
+import asset396Url from '../assets/images/spells/leblanc_i.png?url';
+import asset397Url from '../assets/images/spells/leblanc_q.png?url';
+import asset398Url from '../assets/images/spells/leblanc_r.png?url';
+import asset399Url from '../assets/images/spells/leblanc_r2.png?url';
+import asset400Url from '../assets/images/spells/leblanc_r3.png?url';
+import asset401Url from '../assets/images/spells/leblanc_r4.png?url';
+import asset402Url from '../assets/images/spells/leblanc_w.png?url';
+import asset403Url from '../assets/images/spells/leblanc_w1.png?url';
+import asset404Url from '../assets/images/spells/leblanc_w2.png?url';
+import asset405Url from '../assets/images/spells/leesin_e.png?url';
+import asset406Url from '../assets/images/spells/leesin_e2.png?url';
+import asset407Url from '../assets/images/spells/leesin_i.png?url';
+import asset408Url from '../assets/images/spells/leesin_q.png?url';
+import asset409Url from '../assets/images/spells/leesin_q1.png?url';
+import asset410Url from '../assets/images/spells/leesin_q2.png?url';
+import asset411Url from '../assets/images/spells/leesin_r.png?url';
+import asset412Url from '../assets/images/spells/leesin_w.png?url';
+import asset413Url from '../assets/images/spells/leesin_w2.png?url';
+import asset414Url from '../assets/images/spells/lissandra_e.png?url';
+import asset415Url from '../assets/images/spells/lissandra_i.png?url';
+import asset416Url from '../assets/images/spells/lissandra_q.png?url';
+import asset417Url from '../assets/images/spells/lissandra_r.png?url';
+import asset418Url from '../assets/images/spells/lissandra_w.png?url';
+import asset419Url from '../assets/images/spells/lucian_e.png?url';
+import asset420Url from '../assets/images/spells/lucian_i.png?url';
+import asset421Url from '../assets/images/spells/lucian_q.png?url';
+import asset422Url from '../assets/images/spells/lucian_r.png?url';
+import asset423Url from '../assets/images/spells/lucian_w.png?url';
+import asset424Url from '../assets/images/spells/lucian_w2.png?url';
+import asset425Url from '../assets/images/spells/lucian_w3.png?url';
+import asset426Url from '../assets/images/spells/lux_e.png?url';
+import asset427Url from '../assets/images/spells/lux_q.png?url';
+import asset428Url from '../assets/images/spells/lux_r.png?url';
+import asset429Url from '../assets/images/spells/lux_w.png?url';
+import asset430Url from '../assets/images/spells/malphite_e.png?url';
+import asset431Url from '../assets/images/spells/malphite_q.png?url';
+import asset432Url from '../assets/images/spells/malphite_r.png?url';
+import asset433Url from '../assets/images/spells/malphite_w.png?url';
+import asset434Url from '../assets/images/spells/malzahar_e.png?url';
+import asset435Url from '../assets/images/spells/malzahar_q.png?url';
+import asset436Url from '../assets/images/spells/malzahar_r.png?url';
+import asset437Url from '../assets/images/spells/malzahar_w.png?url';
+import asset438Url from '../assets/images/spells/masteryi_e.png?url';
+import asset439Url from '../assets/images/spells/masteryi_i.png?url';
+import asset440Url from '../assets/images/spells/masteryi_q.png?url';
+import asset441Url from '../assets/images/spells/masteryi_r.png?url';
+import asset442Url from '../assets/images/spells/masteryi_w.png?url';
+import asset443Url from '../assets/images/spells/missfortune_e.png?url';
+import asset444Url from '../assets/images/spells/missfortune_i.png?url';
+import asset445Url from '../assets/images/spells/missfortune_q.png?url';
+import asset446Url from '../assets/images/spells/missfortune_r.png?url';
+import asset447Url from '../assets/images/spells/missfortune_w.png?url';
+import asset448Url from '../assets/images/spells/missfortune_w2.png?url';
+import asset449Url from '../assets/images/spells/missfortune_w3.png?url';
+import asset450Url from '../assets/images/spells/mordekaiser_e.png?url';
+import asset451Url from '../assets/images/spells/mordekaiser_i.png?url';
+import asset452Url from '../assets/images/spells/mordekaiser_q.png?url';
+import asset453Url from '../assets/images/spells/mordekaiser_r.png?url';
+import asset454Url from '../assets/images/spells/mordekaiser_w.png?url';
+import asset455Url from '../assets/images/spells/mordekaiser_w2.png?url';
+import asset456Url from '../assets/images/spells/morgana_e.png?url';
+import asset457Url from '../assets/images/spells/morgana_q.png?url';
+import asset458Url from '../assets/images/spells/morgana_r.png?url';
+import asset459Url from '../assets/images/spells/morgana_w.png?url';
+import asset460Url from '../assets/images/spells/nasus_e.png?url';
+import asset461Url from '../assets/images/spells/nasus_q.png?url';
+import asset462Url from '../assets/images/spells/nasus_r.png?url';
+import asset463Url from '../assets/images/spells/nasus_w.png?url';
+import asset464Url from '../assets/images/spells/nautilus_e.png?url';
+import asset465Url from '../assets/images/spells/nautilus_i.png?url';
+import asset466Url from '../assets/images/spells/nautilus_q.png?url';
+import asset467Url from '../assets/images/spells/nautilus_r.png?url';
+import asset468Url from '../assets/images/spells/nautilus_r2.png?url';
+import asset469Url from '../assets/images/spells/nautilus_w.png?url';
+import asset470Url from '../assets/images/spells/nocturne_e.png?url';
+import asset471Url from '../assets/images/spells/nocturne_q.png?url';
+import asset472Url from '../assets/images/spells/nocturne_r.png?url';
+import asset473Url from '../assets/images/spells/nocturne_w.png?url';
+import asset474Url from '../assets/images/spells/olaf_e.png?url';
+import asset475Url from '../assets/images/spells/olaf_q.png?url';
+import asset476Url from '../assets/images/spells/olaf_r.png?url';
+import asset477Url from '../assets/images/spells/olaf_w.png?url';
+import asset478Url from '../assets/images/spells/old/blitzcrank_e.png?url';
+import asset479Url from '../assets/images/spells/old/blitzcrank_internal.png?url';
+import asset480Url from '../assets/images/spells/old/blitzcrank_q.png?url';
+import asset481Url from '../assets/images/spells/old/blitzcrank_r.png?url';
+import asset482Url from '../assets/images/spells/old/blitzcrank_w.png?url';
+import asset483Url from '../assets/images/spells/old/leesin_e.png?url';
+import asset484Url from '../assets/images/spells/old/leesin_q1.png?url';
+import asset485Url from '../assets/images/spells/old/leesin_q2.png?url';
+import asset486Url from '../assets/images/spells/old/leesin_r.png?url';
+import asset487Url from '../assets/images/spells/old/malphite_r.png?url';
+import asset488Url from '../assets/images/spells/old/olaf_q.png?url';
+import asset489Url from '../assets/images/spells/old/zed_w.png?url';
+import asset490Url from '../assets/images/spells/old/zed_w2.png?url';
+import asset491Url from '../assets/images/spells/orianna_e.png?url';
+import asset492Url from '../assets/images/spells/orianna_i.png?url';
+import asset493Url from '../assets/images/spells/orianna_i2.png?url';
+import asset494Url from '../assets/images/spells/orianna_q.png?url';
+import asset495Url from '../assets/images/spells/orianna_r.png?url';
+import asset496Url from '../assets/images/spells/orianna_w.png?url';
+import asset497Url from '../assets/images/spells/pantheon_e.png?url';
+import asset498Url from '../assets/images/spells/pantheon_q.png?url';
+import asset499Url from '../assets/images/spells/pantheon_r.png?url';
+import asset500Url from '../assets/images/spells/pantheon_w.png?url';
+import asset501Url from '../assets/images/spells/pyke_e.png?url';
+import asset502Url from '../assets/images/spells/pyke_i.png?url';
+import asset503Url from '../assets/images/spells/pyke_q.png?url';
+import asset504Url from '../assets/images/spells/pyke_r.png?url';
+import asset505Url from '../assets/images/spells/pyke_r2.png?url';
+import asset506Url from '../assets/images/spells/pyke_w.png?url';
+import asset507Url from '../assets/images/spells/rammus_e.png?url';
+import asset508Url from '../assets/images/spells/rammus_q.png?url';
+import asset509Url from '../assets/images/spells/rammus_r.png?url';
+import asset510Url from '../assets/images/spells/rammus_w.png?url';
+import asset511Url from '../assets/images/spells/renekton_e.png?url';
+import asset512Url from '../assets/images/spells/renekton_i.png?url';
+import asset513Url from '../assets/images/spells/renekton_q.png?url';
+import asset514Url from '../assets/images/spells/renekton_r.png?url';
+import asset515Url from '../assets/images/spells/renekton_w.png?url';
+import asset516Url from '../assets/images/spells/riven_e.png?url';
+import asset517Url from '../assets/images/spells/riven_i.png?url';
+import asset518Url from '../assets/images/spells/riven_q.png?url';
+import asset519Url from '../assets/images/spells/riven_r.png?url';
+import asset520Url from '../assets/images/spells/riven_r2.png?url';
+import asset521Url from '../assets/images/spells/riven_w.png?url';
+import asset522Url from '../assets/images/spells/sett_e.png?url';
+import asset523Url from '../assets/images/spells/sett_i.png?url';
+import asset524Url from '../assets/images/spells/sett_q.png?url';
+import asset525Url from '../assets/images/spells/sett_q2.png?url';
+import asset526Url from '../assets/images/spells/sett_r.png?url';
+import asset527Url from '../assets/images/spells/sett_w.png?url';
+import asset528Url from '../assets/images/spells/shaco_e.png?url';
+import asset529Url from '../assets/images/spells/shaco_i.png?url';
+import asset530Url from '../assets/images/spells/shaco_q.png?url';
+import asset531Url from '../assets/images/spells/shaco_r.png?url';
+import asset532Url from '../assets/images/spells/shaco_r2.png?url';
+import asset533Url from '../assets/images/spells/shaco_w.png?url';
+import asset534Url from '../assets/images/spells/shen_e.png?url';
+import asset535Url from '../assets/images/spells/shen_i.png?url';
+import asset536Url from '../assets/images/spells/shen_q.png?url';
+import asset537Url from '../assets/images/spells/shen_q2.png?url';
+import asset538Url from '../assets/images/spells/shen_q3.png?url';
+import asset539Url from '../assets/images/spells/shen_r.png?url';
+import asset540Url from '../assets/images/spells/shen_r2.png?url';
+import asset541Url from '../assets/images/spells/shen_w.png?url';
+import asset542Url from '../assets/images/spells/singed_e.png?url';
+import asset543Url from '../assets/images/spells/singed_q.png?url';
+import asset544Url from '../assets/images/spells/singed_r.png?url';
+import asset545Url from '../assets/images/spells/singed_w.png?url';
+import asset546Url from '../assets/images/spells/soraka_e.png?url';
+import asset547Url from '../assets/images/spells/soraka_i.png?url';
+import asset548Url from '../assets/images/spells/soraka_q.png?url';
+import asset549Url from '../assets/images/spells/soraka_r.png?url';
+import asset550Url from '../assets/images/spells/soraka_w.png?url';
+import asset551Url from '../assets/images/spells/stealthward.png?url';
+import asset552Url from '../assets/images/spells/syndra_e.png?url';
+import asset553Url from '../assets/images/spells/syndra_i.png?url';
+import asset554Url from '../assets/images/spells/syndra_q.png?url';
+import asset555Url from '../assets/images/spells/syndra_r.png?url';
+import asset556Url from '../assets/images/spells/syndra_w.png?url';
+import asset557Url from '../assets/images/spells/syndra_w2.png?url';
+import asset558Url from '../assets/images/spells/teemo_e.png?url';
+import asset559Url from '../assets/images/spells/teemo_q.png?url';
+import asset560Url from '../assets/images/spells/teemo_r.png?url';
+import asset561Url from '../assets/images/spells/teemo_w.png?url';
+import asset562Url from '../assets/images/spells/thresh_e.gif?url';
+import asset563Url from '../assets/images/spells/thresh_e2.gif?url';
+import asset564Url from '../assets/images/spells/thresh_e3.gif?url';
+import asset565Url from '../assets/images/spells/thresh_e4.gif?url';
+import asset566Url from '../assets/images/spells/thresh_e5.gif?url';
+import asset567Url from '../assets/images/spells/thresh_i.png?url';
+import asset568Url from '../assets/images/spells/thresh_q.png?url';
+import asset569Url from '../assets/images/spells/thresh_q2.png?url';
+import asset570Url from '../assets/images/spells/thresh_r.png?url';
+import asset571Url from '../assets/images/spells/thresh_w.png?url';
+import asset572Url from '../assets/images/spells/trundle_e.png?url';
+import asset573Url from '../assets/images/spells/trundle_i.png?url';
+import asset574Url from '../assets/images/spells/trundle_q.png?url';
+import asset575Url from '../assets/images/spells/trundle_r.png?url';
+import asset576Url from '../assets/images/spells/trundle_w.png?url';
+import asset577Url from '../assets/images/spells/tryndamere_e.png?url';
+import asset578Url from '../assets/images/spells/tryndamere_i.png?url';
+import asset579Url from '../assets/images/spells/tryndamere_q.png?url';
+import asset580Url from '../assets/images/spells/tryndamere_r.png?url';
+import asset581Url from '../assets/images/spells/tryndamere_w.png?url';
+import asset582Url from '../assets/images/spells/twistedfate_e.png?url';
+import asset583Url from '../assets/images/spells/twistedfate_i.png?url';
+import asset584Url from '../assets/images/spells/twistedfate_q.png?url';
+import asset585Url from '../assets/images/spells/twistedfate_r.png?url';
+import asset586Url from '../assets/images/spells/twistedfate_r2.png?url';
+import asset587Url from '../assets/images/spells/twistedfate_w.png?url';
+import asset588Url from '../assets/images/spells/twistedfate_w2.png?url';
+import asset589Url from '../assets/images/spells/twistedfate_w3.png?url';
+import asset590Url from '../assets/images/spells/twistedfate_w4.png?url';
+import asset591Url from '../assets/images/spells/twitch_e.png?url';
+import asset592Url from '../assets/images/spells/twitch_i.png?url';
+import asset593Url from '../assets/images/spells/twitch_q.png?url';
+import asset594Url from '../assets/images/spells/twitch_q2.png?url';
+import asset595Url from '../assets/images/spells/twitch_q3.png?url';
+import asset596Url from '../assets/images/spells/twitch_r.png?url';
+import asset597Url from '../assets/images/spells/twitch_w.png?url';
+import asset598Url from '../assets/images/spells/varus_e.png?url';
+import asset599Url from '../assets/images/spells/varus_q.png?url';
+import asset600Url from '../assets/images/spells/varus_r.png?url';
+import asset601Url from '../assets/images/spells/varus_w.png?url';
+import asset602Url from '../assets/images/spells/vayne_e.png?url';
+import asset603Url from '../assets/images/spells/vayne_i.png?url';
+import asset604Url from '../assets/images/spells/vayne_q.png?url';
+import asset605Url from '../assets/images/spells/vayne_r.png?url';
+import asset606Url from '../assets/images/spells/vayne_w.png?url';
+import asset607Url from '../assets/images/spells/veigar_e.png?url';
+import asset608Url from '../assets/images/spells/veigar_q.png?url';
+import asset609Url from '../assets/images/spells/veigar_r.png?url';
+import asset610Url from '../assets/images/spells/veigar_w.png?url';
+import asset611Url from '../assets/images/spells/vi_e.png?url';
+import asset612Url from '../assets/images/spells/vi_e2.png?url';
+import asset613Url from '../assets/images/spells/vi_i.png?url';
+import asset614Url from '../assets/images/spells/vi_q.png?url';
+import asset615Url from '../assets/images/spells/vi_r.png?url';
+import asset616Url from '../assets/images/spells/vi_w.png?url';
+import asset617Url from '../assets/images/spells/vi_w2.png?url';
+import asset618Url from '../assets/images/spells/vladimir_e.png?url';
+import asset619Url from '../assets/images/spells/vladimir_i.png?url';
+import asset620Url from '../assets/images/spells/vladimir_q.png?url';
+import asset621Url from '../assets/images/spells/vladimir_q2.png?url';
+import asset622Url from '../assets/images/spells/vladimir_r.png?url';
+import asset623Url from '../assets/images/spells/vladimir_w.png?url';
+import asset624Url from '../assets/images/spells/warwick_e.png?url';
+import asset625Url from '../assets/images/spells/warwick_q.png?url';
+import asset626Url from '../assets/images/spells/warwick_r.png?url';
+import asset627Url from '../assets/images/spells/warwick_w.png?url';
+import asset628Url from '../assets/images/spells/xerath_e.png?url';
+import asset629Url from '../assets/images/spells/xerath_i.png?url';
+import asset630Url from '../assets/images/spells/xerath_q.png?url';
+import asset631Url from '../assets/images/spells/xerath_r.png?url';
+import asset632Url from '../assets/images/spells/xerath_w.png?url';
+import asset633Url from '../assets/images/spells/xinzhao_e.png?url';
+import asset634Url from '../assets/images/spells/xinzhao_i.png?url';
+import asset635Url from '../assets/images/spells/xinzhao_i2.png?url';
+import asset636Url from '../assets/images/spells/xinzhao_q.png?url';
+import asset637Url from '../assets/images/spells/xinzhao_r.png?url';
+import asset638Url from '../assets/images/spells/xinzhao_w.png?url';
+import asset639Url from '../assets/images/spells/yasuo_e.png?url';
+import asset640Url from '../assets/images/spells/yasuo_i.png?url';
+import asset641Url from '../assets/images/spells/yasuo_q.png?url';
+import asset642Url from '../assets/images/spells/yasuo_q1.png?url';
+import asset643Url from '../assets/images/spells/yasuo_q2.png?url';
+import asset644Url from '../assets/images/spells/yasuo_q3.png?url';
+import asset645Url from '../assets/images/spells/yasuo_r.png?url';
+import asset646Url from '../assets/images/spells/yasuo_w.png?url';
+import asset647Url from '../assets/images/spells/zed_e.png?url';
+import asset648Url from '../assets/images/spells/zed_i.png?url';
+import asset649Url from '../assets/images/spells/zed_q.png?url';
+import asset650Url from '../assets/images/spells/zed_r.png?url';
+import asset651Url from '../assets/images/spells/zed_r1.png?url';
+import asset652Url from '../assets/images/spells/zed_r2.png?url';
+import asset653Url from '../assets/images/spells/zed_w.png?url';
+import asset654Url from '../assets/images/spells/zed_w2.png?url';
+import asset655Url from '../assets/images/spells/ziggs_e.png?url';
+import asset656Url from '../assets/images/spells/ziggs_i.png?url';
+import asset657Url from '../assets/images/spells/ziggs_q.png?url';
+import asset658Url from '../assets/images/spells/ziggs_r.png?url';
+import asset659Url from '../assets/images/spells/ziggs_w.png?url';
 
 export type AssetKind = 'image' | 'json' | 'audio' | 'url';
 
@@ -726,571 +742,587 @@ export const assetManifest = {
   "champ_ziggs": { kind: 'image', url: asset76Url, path: "assets/images/champions/ziggs.png" },
   "item_abyssal_mask": { kind: 'image', url: asset77Url, path: "assets/images/items/abyssal_mask.png" },
   "item_amplifying_tome": { kind: 'image', url: asset78Url, path: "assets/images/items/amplifying_tome.png" },
-  "item_ardent_censer": { kind: 'image', url: asset79Url, path: "assets/images/items/ardent_censer.png" },
-  "item_banshees_veil": { kind: 'image', url: asset80Url, path: "assets/images/items/banshees_veil.png" },
-  "item_berserkers_greaves": { kind: 'image', url: asset81Url, path: "assets/images/items/berserkers_greaves.png" },
-  "item_black_cleaver": { kind: 'image', url: asset82Url, path: "assets/images/items/black_cleaver.png" },
-  "item_blade_of_the_ruined_king": { kind: 'image', url: asset83Url, path: "assets/images/items/blade_of_the_ruined_king.png" },
-  "item_blighting_jewel": { kind: 'image', url: asset84Url, path: "assets/images/items/blighting_jewel.png" },
-  "item_bloodthirster": { kind: 'image', url: asset85Url, path: "assets/images/items/bloodthirster.png" },
-  "item_boots": { kind: 'image', url: asset86Url, path: "assets/images/items/boots.png" },
-  "item_bramble_vest": { kind: 'image', url: asset87Url, path: "assets/images/items/bramble_vest.png" },
-  "item_caulfields_warhammer": { kind: 'image', url: asset88Url, path: "assets/images/items/caulfields_warhammer.png" },
-  "item_chain_vest": { kind: 'image', url: asset89Url, path: "assets/images/items/chain_vest.png" },
-  "item_chempunk_chainsword": { kind: 'image', url: asset90Url, path: "assets/images/items/chempunk_chainsword.png" },
-  "item_cloth_armor": { kind: 'image', url: asset91Url, path: "assets/images/items/cloth_armor.png" },
-  "item_dead_mans_plate": { kind: 'image', url: asset92Url, path: "assets/images/items/dead_mans_plate.png" },
-  "item_deaths_dance": { kind: 'image', url: asset93Url, path: "assets/images/items/deaths_dance.png" },
-  "item_divine_sunderer": { kind: 'image', url: asset94Url, path: "assets/images/items/divine_sunderer.png" },
-  "item_dusk_and_dawn": { kind: 'image', url: asset95Url, path: "assets/images/items/dusk_and_dawn.png" },
-  "item_essence_reaver": { kind: 'image', url: asset96Url, path: "assets/images/items/essence_reaver.png" },
-  "item_everfrost": { kind: 'image', url: asset97Url, path: "assets/images/items/everfrost.png" },
-  "item_executioners_calling": { kind: 'image', url: asset98Url, path: "assets/images/items/executioners_calling.png" },
-  "item_force_of_nature": { kind: 'image', url: asset99Url, path: "assets/images/items/force_of_nature.png" },
-  "item_frozen_heart": { kind: 'image', url: asset100Url, path: "assets/images/items/frozen_heart.png" },
-  "item_gargoyle_stoneplate": { kind: 'image', url: asset101Url, path: "assets/images/items/gargoyle_stoneplate.png" },
-  "item_giants_belt": { kind: 'image', url: asset102Url, path: "assets/images/items/giants_belt.png" },
-  "item_guardian_angel": { kind: 'image', url: asset103Url, path: "assets/images/items/guardian_angel.png" },
-  "item_guinsoos_rageblade": { kind: 'image', url: asset104Url, path: "assets/images/items/guinsoos_rageblade.png" },
-  "item_heartsteel": { kind: 'image', url: asset105Url, path: "assets/images/items/heartsteel.png" },
-  "item_hextech_alternator": { kind: 'image', url: asset106Url, path: "assets/images/items/hextech_alternator.png" },
-  "item_hollow_radiance": { kind: 'image', url: asset107Url, path: "assets/images/items/hollow_radiance.png" },
-  "item_hullbreaker": { kind: 'image', url: asset108Url, path: "assets/images/items/hullbreaker.png" },
-  "item_iceborn_gauntlet": { kind: 'image', url: asset109Url, path: "assets/images/items/iceborn_gauntlet.png" },
-  "item_immortal_shieldbow": { kind: 'image', url: asset110Url, path: "assets/images/items/immortal_shieldbow.png" },
-  "item_infinity_edge": { kind: 'image', url: asset111Url, path: "assets/images/items/infinity_edge.png" },
-  "item_ionian_boots_of_lucidity": { kind: 'image', url: asset112Url, path: "assets/images/items/ionian_boots_of_lucidity.png" },
-  "item_kaenic_rookern": { kind: 'image', url: asset113Url, path: "assets/images/items/kaenic_rookern.png" },
-  "item_kindlegem": { kind: 'image', url: asset114Url, path: "assets/images/items/kindlegem.png" },
-  "item_kraken_slayer": { kind: 'image', url: asset115Url, path: "assets/images/items/kraken_slayer.png" },
-  "item_last_whisper": { kind: 'image', url: asset116Url, path: "assets/images/items/last_whisper.png" },
-  "item_lich_bane": { kind: 'image', url: asset117Url, path: "assets/images/items/lich_bane.png" },
-  "item_locket_of_the_iron_solari": { kind: 'image', url: asset118Url, path: "assets/images/items/locket_of_the_iron_solari.png" },
-  "item_long_sword": { kind: 'image', url: asset119Url, path: "assets/images/items/long_sword.png" },
-  "item_lord_dominiks_regards": { kind: 'image', url: asset120Url, path: "assets/images/items/lord_dominiks_regards.png" },
-  "item_maw_of_malmortius": { kind: 'image', url: asset121Url, path: "assets/images/items/maw_of_malmortius.png" },
-  "item_mercurys_treads": { kind: 'image', url: asset122Url, path: "assets/images/items/mercurys_treads.png" },
-  "item_mikaels_blessing": { kind: 'image', url: asset123Url, path: "assets/images/items/mikaels_blessing.png" },
-  "item_moonstone_renewer": { kind: 'image', url: asset124Url, path: "assets/images/items/moonstone_renewer.png" },
-  "item_morellonomicon": { kind: 'image', url: asset125Url, path: "assets/images/items/morellonomicon.png" },
-  "item_mortal_reminder": { kind: 'image', url: asset126Url, path: "assets/images/items/mortal_reminder.png" },
-  "item_nashors_tooth": { kind: 'image', url: asset127Url, path: "assets/images/items/nashors_tooth.png" },
-  "item_navori_flickerblade": { kind: 'image', url: asset128Url, path: "assets/images/items/navori_flickerblade.png" },
-  "item_negatron_cloak": { kind: 'image', url: asset129Url, path: "assets/images/items/negatron_cloak.png" },
-  "item_null_magic_mantle": { kind: 'image', url: asset130Url, path: "assets/images/items/null_magic_mantle.png" },
-  "item_oblivion_orb": { kind: 'image', url: asset131Url, path: "assets/images/items/oblivion_orb.png" },
-  "item_phage": { kind: 'image', url: asset132Url, path: "assets/images/items/phage.png" },
-  "item_phantom_dancer": { kind: 'image', url: asset133Url, path: "assets/images/items/phantom_dancer.png" },
-  "item_plated_steelcaps": { kind: 'image', url: asset134Url, path: "assets/images/items/plated_steelcaps.png" },
-  "item_quicksilver_sash": { kind: 'image', url: asset135Url, path: "assets/images/items/quicksilver_sash.png" },
-  "item_rabadons_deathcap": { kind: 'image', url: asset136Url, path: "assets/images/items/rabadons_deathcap.png" },
-  "item_randuins_omen": { kind: 'image', url: asset137Url, path: "assets/images/items/randuins_omen.png" },
-  "item_rapid_firecannon": { kind: 'image', url: asset138Url, path: "assets/images/items/rapid_firecannon.png" },
-  "item_ravenous_hydra": { kind: 'image', url: asset139Url, path: "assets/images/items/ravenous_hydra.png" },
-  "item_recurve_bow": { kind: 'image', url: asset140Url, path: "assets/images/items/recurve_bow.png" },
-  "item_redemption": { kind: 'image', url: asset141Url, path: "assets/images/items/redemption.png" },
-  "item_riftmaker": { kind: 'image', url: asset142Url, path: "assets/images/items/riftmaker.png" },
-  "item_ruby_crystal": { kind: 'image', url: asset143Url, path: "assets/images/items/ruby_crystal.png" },
-  "item_runaans_hurricane": { kind: 'image', url: asset144Url, path: "assets/images/items/runaans_hurricane.png" },
-  "item_serpents_fang": { kind: 'image', url: asset145Url, path: "assets/images/items/serpents_fang.png" },
-  "item_sheen": { kind: 'image', url: asset146Url, path: "assets/images/items/sheen.png" },
-  "item_shurelyas_battlesong": { kind: 'image', url: asset147Url, path: "assets/images/items/shurelyas_battlesong.png" },
-  "item_silvermere_dawn": { kind: 'image', url: asset148Url, path: "assets/images/items/silvermere_dawn.png" },
-  "item_sorcerers_shoes": { kind: 'image', url: asset149Url, path: "assets/images/items/sorcerers_shoes.png" },
-  "item_spear_of_shojin": { kind: 'image', url: asset150Url, path: "assets/images/items/spear_of_shojin.png" },
-  "item_spectres_cowl": { kind: 'image', url: asset151Url, path: "assets/images/items/spectres_cowl.png" },
-  "item_spirit_visage": { kind: 'image', url: asset152Url, path: "assets/images/items/spirit_visage.png" },
-  "item_statikk_shiv": { kind: 'image', url: asset153Url, path: "assets/images/items/statikk_shiv.png" },
-  "item_steraks_gage": { kind: 'image', url: asset154Url, path: "assets/images/items/steraks_gage.png" },
-  "item_stridebreaker": { kind: 'image', url: asset155Url, path: "assets/images/items/stridebreaker.png" },
-  "item_sundered_sky": { kind: 'image', url: asset156Url, path: "assets/images/items/sundered_sky.png" },
-  "item_sunfire_aegis": { kind: 'image', url: asset157Url, path: "assets/images/items/sunfire_aegis.png" },
-  "item_the_collector": { kind: 'image', url: asset158Url, path: "assets/images/items/the_collector.png" },
-  "item_thornmail": { kind: 'image', url: asset159Url, path: "assets/images/items/thornmail.png" },
-  "item_tiamat": { kind: 'image', url: asset160Url, path: "assets/images/items/tiamat.png" },
-  "item_titanic_hydra": { kind: 'image', url: asset161Url, path: "assets/images/items/titanic_hydra.png" },
-  "item_trinity_force": { kind: 'image', url: asset162Url, path: "assets/images/items/trinity_force.png" },
-  "item_vampiric_scepter": { kind: 'image', url: asset163Url, path: "assets/images/items/vampiric_scepter.png" },
-  "item_void_staff": { kind: 'image', url: asset164Url, path: "assets/images/items/void_staff.png" },
-  "item_warmogs_armor": { kind: 'image', url: asset165Url, path: "assets/images/items/warmogs_armor.png" },
-  "item_watchful_wardstone": { kind: 'image', url: asset166Url, path: "assets/images/items/watchful_wardstone.png" },
-  "item_wits_end": { kind: 'image', url: asset167Url, path: "assets/images/items/wits_end.png" },
-  "item_youmuus_ghostblade": { kind: 'image', url: asset168Url, path: "assets/images/items/youmuus_ghostblade.png" },
-  "item_zeal": { kind: 'image', url: asset169Url, path: "assets/images/items/zeal.png" },
-  "item_zekes_convergence": { kind: 'image', url: asset170Url, path: "assets/images/items/zekes_convergence.png" },
-  "item_zhonyas_hourglass": { kind: 'image', url: asset171Url, path: "assets/images/items/zhonyas_hourglass.png" },
-  "monster_Ancient_Krug": { kind: 'image', url: asset172Url, path: "assets/images/monsters/Ancient_Krug.png" },
-  "monster_Baron_Nashor": { kind: 'image', url: asset173Url, path: "assets/images/monsters/Baron_Nashor.png" },
-  "monster_Blue_Sentinel": { kind: 'image', url: asset174Url, path: "assets/images/monsters/Blue_Sentinel.png" },
-  "monster_Chemtech_Drake": { kind: 'image', url: asset175Url, path: "assets/images/monsters/Chemtech_Drake.webp" },
-  "monster_Cloud_Drake": { kind: 'image', url: asset176Url, path: "assets/images/monsters/Cloud_Drake.webp" },
-  "monster_Crimson_Raptor": { kind: 'image', url: asset177Url, path: "assets/images/monsters/Crimson_Raptor.png" },
-  "monster_Elder_Dragon": { kind: 'image', url: asset178Url, path: "assets/images/monsters/Elder_Dragon.webp" },
-  "monster_Greater_Murk_Wolf": { kind: 'image', url: asset179Url, path: "assets/images/monsters/Greater_Murk_Wolf.png" },
-  "monster_Gromp": { kind: 'image', url: asset180Url, path: "assets/images/monsters/Gromp.png" },
-  "monster_Hextech_Drake": { kind: 'image', url: asset181Url, path: "assets/images/monsters/Hextech_Drake.webp" },
-  "monster_Infernal_Drake": { kind: 'image', url: asset182Url, path: "assets/images/monsters/Infernal_Drake.webp" },
-  "monster_Mountain_Drake": { kind: 'image', url: asset183Url, path: "assets/images/monsters/Mountain_Drake.webp" },
-  "monster_Murk_Wolf": { kind: 'image', url: asset184Url, path: "assets/images/monsters/Murk_Wolf.png" },
-  "monster_Ocean_Drake": { kind: 'image', url: asset185Url, path: "assets/images/monsters/Ocean_Drake.webp" },
-  "monster_Raptor": { kind: 'image', url: asset186Url, path: "assets/images/monsters/Raptor.png" },
-  "monster_Red_Brambleback": { kind: 'image', url: asset187Url, path: "assets/images/monsters/Red_Brambleback.png" },
-  "monster_Rift_Scuttle": { kind: 'image', url: asset188Url, path: "assets/images/monsters/Rift_Scuttle.png" },
-  "monster_Vilemaw": { kind: 'image', url: asset189Url, path: "assets/images/monsters/Vilemaw.webp" },
-  "obj_yasuo_q3": { kind: 'image', url: asset190Url, path: "assets/images/objects/yasuo_q3.png" },
-  "spell_aatrox_e": { kind: 'image', url: asset191Url, path: "assets/images/spells/aatrox_e.png" },
-  "spell_aatrox_i": { kind: 'image', url: asset192Url, path: "assets/images/spells/aatrox_i.png" },
-  "spell_aatrox_q": { kind: 'image', url: asset193Url, path: "assets/images/spells/aatrox_q.png" },
-  "spell_aatrox_q2": { kind: 'image', url: asset194Url, path: "assets/images/spells/aatrox_q2.png" },
-  "spell_aatrox_q3": { kind: 'image', url: asset195Url, path: "assets/images/spells/aatrox_q3.png" },
-  "spell_aatrox_r": { kind: 'image', url: asset196Url, path: "assets/images/spells/aatrox_r.png" },
-  "spell_aatrox_w": { kind: 'image', url: asset197Url, path: "assets/images/spells/aatrox_w.png" },
-  "spell_ahri_e": { kind: 'image', url: asset198Url, path: "assets/images/spells/ahri_e.png" },
-  "spell_ahri_i": { kind: 'image', url: asset199Url, path: "assets/images/spells/ahri_i.png" },
-  "spell_ahri_q": { kind: 'image', url: asset200Url, path: "assets/images/spells/ahri_q.png" },
-  "spell_ahri_r": { kind: 'image', url: asset201Url, path: "assets/images/spells/ahri_r.png" },
-  "spell_ahri_w": { kind: 'image', url: asset202Url, path: "assets/images/spells/ahri_w.png" },
-  "spell_akali_e": { kind: 'image', url: asset203Url, path: "assets/images/spells/akali_e.png" },
-  "spell_akali_e2": { kind: 'image', url: asset204Url, path: "assets/images/spells/akali_e2.png" },
-  "spell_akali_i": { kind: 'image', url: asset205Url, path: "assets/images/spells/akali_i.png" },
-  "spell_akali_q": { kind: 'image', url: asset206Url, path: "assets/images/spells/akali_q.png" },
-  "spell_akali_q2": { kind: 'image', url: asset207Url, path: "assets/images/spells/akali_q2.png" },
-  "spell_akali_r": { kind: 'image', url: asset208Url, path: "assets/images/spells/akali_r.png" },
-  "spell_akali_r2": { kind: 'image', url: asset209Url, path: "assets/images/spells/akali_r2.png" },
-  "spell_akali_w": { kind: 'image', url: asset210Url, path: "assets/images/spells/akali_w.png" },
-  "spell_alistar_e": { kind: 'image', url: asset211Url, path: "assets/images/spells/alistar_e.png" },
-  "spell_alistar_q": { kind: 'image', url: asset212Url, path: "assets/images/spells/alistar_q.png" },
-  "spell_alistar_r": { kind: 'image', url: asset213Url, path: "assets/images/spells/alistar_r.png" },
-  "spell_alistar_w": { kind: 'image', url: asset214Url, path: "assets/images/spells/alistar_w.png" },
-  "spell_amumu_e": { kind: 'image', url: asset215Url, path: "assets/images/spells/amumu_e.png" },
-  "spell_amumu_q": { kind: 'image', url: asset216Url, path: "assets/images/spells/amumu_q.png" },
-  "spell_amumu_r": { kind: 'image', url: asset217Url, path: "assets/images/spells/amumu_r.png" },
-  "spell_amumu_w": { kind: 'image', url: asset218Url, path: "assets/images/spells/amumu_w.png" },
-  "spell_anivia_e": { kind: 'image', url: asset219Url, path: "assets/images/spells/anivia_e.png" },
-  "spell_anivia_q": { kind: 'image', url: asset220Url, path: "assets/images/spells/anivia_q.png" },
-  "spell_anivia_r": { kind: 'image', url: asset221Url, path: "assets/images/spells/anivia_r.png" },
-  "spell_anivia_w": { kind: 'image', url: asset222Url, path: "assets/images/spells/anivia_w.png" },
-  "spell_annie_e": { kind: 'image', url: asset223Url, path: "assets/images/spells/annie_e.png" },
-  "spell_annie_i": { kind: 'image', url: asset224Url, path: "assets/images/spells/annie_i.png" },
-  "spell_annie_q": { kind: 'image', url: asset225Url, path: "assets/images/spells/annie_q.png" },
-  "spell_annie_r": { kind: 'image', url: asset226Url, path: "assets/images/spells/annie_r.png" },
-  "spell_annie_r2": { kind: 'image', url: asset227Url, path: "assets/images/spells/annie_r2.png" },
-  "spell_annie_w": { kind: 'image', url: asset228Url, path: "assets/images/spells/annie_w.png" },
-  "spell_ashe_e": { kind: 'image', url: asset229Url, path: "assets/images/spells/ashe_e.png" },
-  "spell_ashe_i": { kind: 'image', url: asset230Url, path: "assets/images/spells/ashe_i.png" },
-  "spell_ashe_i2": { kind: 'image', url: asset231Url, path: "assets/images/spells/ashe_i2.png" },
-  "spell_ashe_q": { kind: 'image', url: asset232Url, path: "assets/images/spells/ashe_q.png" },
-  "spell_ashe_q2": { kind: 'image', url: asset233Url, path: "assets/images/spells/ashe_q2.png" },
-  "spell_ashe_r": { kind: 'image', url: asset234Url, path: "assets/images/spells/ashe_r.png" },
-  "spell_ashe_w": { kind: 'image', url: asset235Url, path: "assets/images/spells/ashe_w.png" },
-  "spell_blitzcrank_e": { kind: 'image', url: asset236Url, path: "assets/images/spells/blitzcrank_e.png" },
-  "spell_blitzcrank_i": { kind: 'image', url: asset237Url, path: "assets/images/spells/blitzcrank_i.png" },
-  "spell_blitzcrank_i2": { kind: 'image', url: asset238Url, path: "assets/images/spells/blitzcrank_i2.png" },
-  "spell_blitzcrank_internal": { kind: 'image', url: asset239Url, path: "assets/images/spells/blitzcrank_internal.png" },
-  "spell_blitzcrank_q": { kind: 'image', url: asset240Url, path: "assets/images/spells/blitzcrank_q.png" },
-  "spell_blitzcrank_r": { kind: 'image', url: asset241Url, path: "assets/images/spells/blitzcrank_r.png" },
-  "spell_blitzcrank_w": { kind: 'image', url: asset242Url, path: "assets/images/spells/blitzcrank_w.png" },
-  "spell_brand_e": { kind: 'image', url: asset243Url, path: "assets/images/spells/brand_e.png" },
-  "spell_brand_i": { kind: 'image', url: asset244Url, path: "assets/images/spells/brand_i.png" },
-  "spell_brand_i2": { kind: 'image', url: asset245Url, path: "assets/images/spells/brand_i2.png" },
-  "spell_brand_q": { kind: 'image', url: asset246Url, path: "assets/images/spells/brand_q.png" },
-  "spell_brand_r": { kind: 'image', url: asset247Url, path: "assets/images/spells/brand_r.png" },
-  "spell_brand_w": { kind: 'image', url: asset248Url, path: "assets/images/spells/brand_w.png" },
-  "spell_braum_e": { kind: 'image', url: asset249Url, path: "assets/images/spells/braum_e.png" },
-  "spell_braum_i": { kind: 'image', url: asset250Url, path: "assets/images/spells/braum_i.png" },
-  "spell_braum_q": { kind: 'image', url: asset251Url, path: "assets/images/spells/braum_q.png" },
-  "spell_braum_r": { kind: 'image', url: asset252Url, path: "assets/images/spells/braum_r.png" },
-  "spell_braum_w": { kind: 'image', url: asset253Url, path: "assets/images/spells/braum_w.png" },
-  "spell_caitlyn_e": { kind: 'image', url: asset254Url, path: "assets/images/spells/caitlyn_e.png" },
-  "spell_caitlyn_i": { kind: 'image', url: asset255Url, path: "assets/images/spells/caitlyn_i.png" },
-  "spell_caitlyn_q": { kind: 'image', url: asset256Url, path: "assets/images/spells/caitlyn_q.png" },
-  "spell_caitlyn_r": { kind: 'image', url: asset257Url, path: "assets/images/spells/caitlyn_r.png" },
-  "spell_caitlyn_w": { kind: 'image', url: asset258Url, path: "assets/images/spells/caitlyn_w.png" },
-  "spell_camille_e": { kind: 'image', url: asset259Url, path: "assets/images/spells/camille_e.png" },
-  "spell_camille_e2": { kind: 'image', url: asset260Url, path: "assets/images/spells/camille_e2.png" },
-  "spell_camille_i": { kind: 'image', url: asset261Url, path: "assets/images/spells/camille_i.png" },
-  "spell_camille_q": { kind: 'image', url: asset262Url, path: "assets/images/spells/camille_q.png" },
-  "spell_camille_q2": { kind: 'image', url: asset263Url, path: "assets/images/spells/camille_q2.png" },
-  "spell_camille_q3": { kind: 'image', url: asset264Url, path: "assets/images/spells/camille_q3.png" },
-  "spell_camille_r": { kind: 'image', url: asset265Url, path: "assets/images/spells/camille_r.png" },
-  "spell_camille_w": { kind: 'image', url: asset266Url, path: "assets/images/spells/camille_w.png" },
-  "spell_cassiopeia_e": { kind: 'image', url: asset267Url, path: "assets/images/spells/cassiopeia_e.png" },
-  "spell_cassiopeia_q": { kind: 'image', url: asset268Url, path: "assets/images/spells/cassiopeia_q.png" },
-  "spell_cassiopeia_r": { kind: 'image', url: asset269Url, path: "assets/images/spells/cassiopeia_r.png" },
-  "spell_cassiopeia_w": { kind: 'image', url: asset270Url, path: "assets/images/spells/cassiopeia_w.png" },
-  "spell_chogath_e": { kind: 'image', url: asset271Url, path: "assets/images/spells/chogath_e.png" },
-  "spell_chogath_q": { kind: 'image', url: asset272Url, path: "assets/images/spells/chogath_q.png" },
-  "spell_chogath_r": { kind: 'image', url: asset273Url, path: "assets/images/spells/chogath_r.png" },
-  "spell_chogath_w": { kind: 'image', url: asset274Url, path: "assets/images/spells/chogath_w.png" },
-  "spell_darius_e": { kind: 'image', url: asset275Url, path: "assets/images/spells/darius_e.png" },
-  "spell_darius_i": { kind: 'image', url: asset276Url, path: "assets/images/spells/darius_i.png" },
-  "spell_darius_q": { kind: 'image', url: asset277Url, path: "assets/images/spells/darius_q.png" },
-  "spell_darius_r": { kind: 'image', url: asset278Url, path: "assets/images/spells/darius_r.png" },
-  "spell_darius_w": { kind: 'image', url: asset279Url, path: "assets/images/spells/darius_w.png" },
-  "spell_diana_e": { kind: 'image', url: asset280Url, path: "assets/images/spells/diana_e.png" },
-  "spell_diana_i": { kind: 'image', url: asset281Url, path: "assets/images/spells/diana_i.png" },
-  "spell_diana_q": { kind: 'image', url: asset282Url, path: "assets/images/spells/diana_q.png" },
-  "spell_diana_r": { kind: 'image', url: asset283Url, path: "assets/images/spells/diana_r.png" },
-  "spell_diana_w": { kind: 'image', url: asset284Url, path: "assets/images/spells/diana_w.png" },
-  "spell_draven_e": { kind: 'image', url: asset285Url, path: "assets/images/spells/draven_e.png" },
-  "spell_draven_i": { kind: 'image', url: asset286Url, path: "assets/images/spells/draven_i.png" },
-  "spell_draven_q": { kind: 'image', url: asset287Url, path: "assets/images/spells/draven_q.png" },
-  "spell_draven_r": { kind: 'image', url: asset288Url, path: "assets/images/spells/draven_r.png" },
-  "spell_draven_r2": { kind: 'image', url: asset289Url, path: "assets/images/spells/draven_r2.png" },
-  "spell_draven_w": { kind: 'image', url: asset290Url, path: "assets/images/spells/draven_w.png" },
-  "spell_drmundo_e": { kind: 'image', url: asset291Url, path: "assets/images/spells/drmundo_e.png" },
-  "spell_drmundo_i": { kind: 'image', url: asset292Url, path: "assets/images/spells/drmundo_i.png" },
-  "spell_drmundo_q": { kind: 'image', url: asset293Url, path: "assets/images/spells/drmundo_q.png" },
-  "spell_drmundo_r": { kind: 'image', url: asset294Url, path: "assets/images/spells/drmundo_r.png" },
-  "spell_drmundo_w": { kind: 'image', url: asset295Url, path: "assets/images/spells/drmundo_w.png" },
-  "spell_ekko_e": { kind: 'image', url: asset296Url, path: "assets/images/spells/ekko_e.png" },
-  "spell_ekko_i": { kind: 'image', url: asset297Url, path: "assets/images/spells/ekko_i.png" },
-  "spell_ekko_q": { kind: 'image', url: asset298Url, path: "assets/images/spells/ekko_q.png" },
-  "spell_ekko_r": { kind: 'image', url: asset299Url, path: "assets/images/spells/ekko_r.png" },
-  "spell_ekko_w": { kind: 'image', url: asset300Url, path: "assets/images/spells/ekko_w.png" },
-  "spell_ezreal_e": { kind: 'image', url: asset301Url, path: "assets/images/spells/ezreal_e.png" },
-  "spell_ezreal_i": { kind: 'image', url: asset302Url, path: "assets/images/spells/ezreal_i.png" },
-  "spell_ezreal_q": { kind: 'image', url: asset303Url, path: "assets/images/spells/ezreal_q.png" },
-  "spell_ezreal_r": { kind: 'image', url: asset304Url, path: "assets/images/spells/ezreal_r.png" },
-  "spell_ezreal_w": { kind: 'image', url: asset305Url, path: "assets/images/spells/ezreal_w.png" },
-  "spell_fiora_e": { kind: 'image', url: asset306Url, path: "assets/images/spells/fiora_e.png" },
-  "spell_fiora_i": { kind: 'image', url: asset307Url, path: "assets/images/spells/fiora_i.png" },
-  "spell_fiora_i2": { kind: 'image', url: asset308Url, path: "assets/images/spells/fiora_i2.png" },
-  "spell_fiora_q": { kind: 'image', url: asset309Url, path: "assets/images/spells/fiora_q.png" },
-  "spell_fiora_r": { kind: 'image', url: asset310Url, path: "assets/images/spells/fiora_r.png" },
-  "spell_fiora_r2": { kind: 'image', url: asset311Url, path: "assets/images/spells/fiora_r2.png" },
-  "spell_fiora_w": { kind: 'image', url: asset312Url, path: "assets/images/spells/fiora_w.png" },
-  "spell_fizz_e": { kind: 'image', url: asset313Url, path: "assets/images/spells/fizz_e.png" },
-  "spell_fizz_e2": { kind: 'image', url: asset314Url, path: "assets/images/spells/fizz_e2.png" },
-  "spell_fizz_i": { kind: 'image', url: asset315Url, path: "assets/images/spells/fizz_i.png" },
-  "spell_fizz_q": { kind: 'image', url: asset316Url, path: "assets/images/spells/fizz_q.png" },
-  "spell_fizz_r": { kind: 'image', url: asset317Url, path: "assets/images/spells/fizz_r.png" },
-  "spell_fizz_w": { kind: 'image', url: asset318Url, path: "assets/images/spells/fizz_w.png" },
-  "spell_flash": { kind: 'image', url: asset319Url, path: "assets/images/spells/flash.png" },
-  "spell_garen_e": { kind: 'image', url: asset320Url, path: "assets/images/spells/garen_e.png" },
-  "spell_garen_e2": { kind: 'image', url: asset321Url, path: "assets/images/spells/garen_e2.png" },
-  "spell_garen_q": { kind: 'image', url: asset322Url, path: "assets/images/spells/garen_q.png" },
-  "spell_garen_r": { kind: 'image', url: asset323Url, path: "assets/images/spells/garen_r.png" },
-  "spell_garen_w": { kind: 'image', url: asset324Url, path: "assets/images/spells/garen_w.png" },
-  "spell_ghost": { kind: 'image', url: asset325Url, path: "assets/images/spells/ghost.png" },
-  "spell_graves_e": { kind: 'image', url: asset326Url, path: "assets/images/spells/graves_e.png" },
-  "spell_graves_q": { kind: 'image', url: asset327Url, path: "assets/images/spells/graves_q.png" },
-  "spell_graves_r": { kind: 'image', url: asset328Url, path: "assets/images/spells/graves_r.png" },
-  "spell_graves_w": { kind: 'image', url: asset329Url, path: "assets/images/spells/graves_w.png" },
-  "spell_heal": { kind: 'image', url: asset330Url, path: "assets/images/spells/heal.png" },
-  "spell_ignite": { kind: 'image', url: asset331Url, path: "assets/images/spells/ignite.png" },
-  "spell_irelia_e": { kind: 'image', url: asset332Url, path: "assets/images/spells/irelia_e.png" },
-  "spell_irelia_i": { kind: 'image', url: asset333Url, path: "assets/images/spells/irelia_i.png" },
-  "spell_irelia_q": { kind: 'image', url: asset334Url, path: "assets/images/spells/irelia_q.png" },
-  "spell_irelia_r": { kind: 'image', url: asset335Url, path: "assets/images/spells/irelia_r.png" },
-  "spell_irelia_w": { kind: 'image', url: asset336Url, path: "assets/images/spells/irelia_w.png" },
-  "spell_janna_e": { kind: 'image', url: asset337Url, path: "assets/images/spells/janna_e.png" },
-  "spell_janna_q": { kind: 'image', url: asset338Url, path: "assets/images/spells/janna_q.png" },
-  "spell_janna_r": { kind: 'image', url: asset339Url, path: "assets/images/spells/janna_r.png" },
-  "spell_janna_w": { kind: 'image', url: asset340Url, path: "assets/images/spells/janna_w.png" },
-  "spell_jarvaniv_e": { kind: 'image', url: asset341Url, path: "assets/images/spells/jarvaniv_e.png" },
-  "spell_jarvaniv_i": { kind: 'image', url: asset342Url, path: "assets/images/spells/jarvaniv_i.png" },
-  "spell_jarvaniv_q": { kind: 'image', url: asset343Url, path: "assets/images/spells/jarvaniv_q.png" },
-  "spell_jarvaniv_r": { kind: 'image', url: asset344Url, path: "assets/images/spells/jarvaniv_r.png" },
-  "spell_jarvaniv_w": { kind: 'image', url: asset345Url, path: "assets/images/spells/jarvaniv_w.png" },
-  "spell_jax_e": { kind: 'image', url: asset346Url, path: "assets/images/spells/jax_e.png" },
-  "spell_jax_i": { kind: 'image', url: asset347Url, path: "assets/images/spells/jax_i.png" },
-  "spell_jax_q": { kind: 'image', url: asset348Url, path: "assets/images/spells/jax_q.png" },
-  "spell_jax_r": { kind: 'image', url: asset349Url, path: "assets/images/spells/jax_r.png" },
-  "spell_jax_w": { kind: 'image', url: asset350Url, path: "assets/images/spells/jax_w.png" },
-  "spell_jhin_e": { kind: 'image', url: asset351Url, path: "assets/images/spells/jhin_e.png" },
-  "spell_jhin_i": { kind: 'image', url: asset352Url, path: "assets/images/spells/jhin_i.png" },
-  "spell_jhin_q": { kind: 'image', url: asset353Url, path: "assets/images/spells/jhin_q.png" },
-  "spell_jhin_r": { kind: 'image', url: asset354Url, path: "assets/images/spells/jhin_r.png" },
-  "spell_jhin_r2": { kind: 'image', url: asset355Url, path: "assets/images/spells/jhin_r2.png" },
-  "spell_jhin_r3": { kind: 'image', url: asset356Url, path: "assets/images/spells/jhin_r3.png" },
-  "spell_jhin_w": { kind: 'image', url: asset357Url, path: "assets/images/spells/jhin_w.png" },
-  "spell_jhin_w2": { kind: 'image', url: asset358Url, path: "assets/images/spells/jhin_w2.png" },
-  "spell_jinx_e": { kind: 'image', url: asset359Url, path: "assets/images/spells/jinx_e.png" },
-  "spell_jinx_e2": { kind: 'image', url: asset360Url, path: "assets/images/spells/jinx_e2.png" },
-  "spell_jinx_i": { kind: 'image', url: asset361Url, path: "assets/images/spells/jinx_i.png" },
-  "spell_jinx_q": { kind: 'image', url: asset362Url, path: "assets/images/spells/jinx_q.png" },
-  "spell_jinx_q2": { kind: 'image', url: asset363Url, path: "assets/images/spells/jinx_q2.png" },
-  "spell_jinx_q3": { kind: 'image', url: asset364Url, path: "assets/images/spells/jinx_q3.png" },
-  "spell_jinx_q4": { kind: 'image', url: asset365Url, path: "assets/images/spells/jinx_q4.png" },
-  "spell_jinx_r": { kind: 'image', url: asset366Url, path: "assets/images/spells/jinx_r.png" },
-  "spell_jinx_w": { kind: 'image', url: asset367Url, path: "assets/images/spells/jinx_w.png" },
-  "spell_katarina_e": { kind: 'image', url: asset368Url, path: "assets/images/spells/katarina_e.png" },
-  "spell_katarina_i": { kind: 'image', url: asset369Url, path: "assets/images/spells/katarina_i.png" },
-  "spell_katarina_i2": { kind: 'image', url: asset370Url, path: "assets/images/spells/katarina_i2.png" },
-  "spell_katarina_q": { kind: 'image', url: asset371Url, path: "assets/images/spells/katarina_q.png" },
-  "spell_katarina_r": { kind: 'image', url: asset372Url, path: "assets/images/spells/katarina_r.png" },
-  "spell_katarina_w": { kind: 'image', url: asset373Url, path: "assets/images/spells/katarina_w.png" },
-  "spell_kogmaw_e": { kind: 'image', url: asset374Url, path: "assets/images/spells/kogmaw_e.png" },
-  "spell_kogmaw_i": { kind: 'image', url: asset375Url, path: "assets/images/spells/kogmaw_i.png" },
-  "spell_kogmaw_q": { kind: 'image', url: asset376Url, path: "assets/images/spells/kogmaw_q.png" },
-  "spell_kogmaw_r": { kind: 'image', url: asset377Url, path: "assets/images/spells/kogmaw_r.png" },
-  "spell_kogmaw_w": { kind: 'image', url: asset378Url, path: "assets/images/spells/kogmaw_w.png" },
-  "spell_leblanc_e": { kind: 'image', url: asset379Url, path: "assets/images/spells/leblanc_e.png" },
-  "spell_leblanc_i": { kind: 'image', url: asset380Url, path: "assets/images/spells/leblanc_i.png" },
-  "spell_leblanc_q": { kind: 'image', url: asset381Url, path: "assets/images/spells/leblanc_q.png" },
-  "spell_leblanc_r": { kind: 'image', url: asset382Url, path: "assets/images/spells/leblanc_r.png" },
-  "spell_leblanc_r2": { kind: 'image', url: asset383Url, path: "assets/images/spells/leblanc_r2.png" },
-  "spell_leblanc_r3": { kind: 'image', url: asset384Url, path: "assets/images/spells/leblanc_r3.png" },
-  "spell_leblanc_r4": { kind: 'image', url: asset385Url, path: "assets/images/spells/leblanc_r4.png" },
-  "spell_leblanc_w": { kind: 'image', url: asset386Url, path: "assets/images/spells/leblanc_w.png" },
-  "spell_leblanc_w1": { kind: 'image', url: asset387Url, path: "assets/images/spells/leblanc_w1.png" },
-  "spell_leblanc_w2": { kind: 'image', url: asset388Url, path: "assets/images/spells/leblanc_w2.png" },
-  "spell_leesin_e": { kind: 'image', url: asset389Url, path: "assets/images/spells/leesin_e.png" },
-  "spell_leesin_e2": { kind: 'image', url: asset390Url, path: "assets/images/spells/leesin_e2.png" },
-  "spell_leesin_i": { kind: 'image', url: asset391Url, path: "assets/images/spells/leesin_i.png" },
-  "spell_leesin_q": { kind: 'image', url: asset392Url, path: "assets/images/spells/leesin_q.png" },
-  "spell_leesin_q1": { kind: 'image', url: asset393Url, path: "assets/images/spells/leesin_q1.png" },
-  "spell_leesin_q2": { kind: 'image', url: asset394Url, path: "assets/images/spells/leesin_q2.png" },
-  "spell_leesin_r": { kind: 'image', url: asset395Url, path: "assets/images/spells/leesin_r.png" },
-  "spell_leesin_w": { kind: 'image', url: asset396Url, path: "assets/images/spells/leesin_w.png" },
-  "spell_leesin_w2": { kind: 'image', url: asset397Url, path: "assets/images/spells/leesin_w2.png" },
-  "spell_lissandra_e": { kind: 'image', url: asset398Url, path: "assets/images/spells/lissandra_e.png" },
-  "spell_lissandra_i": { kind: 'image', url: asset399Url, path: "assets/images/spells/lissandra_i.png" },
-  "spell_lissandra_q": { kind: 'image', url: asset400Url, path: "assets/images/spells/lissandra_q.png" },
-  "spell_lissandra_r": { kind: 'image', url: asset401Url, path: "assets/images/spells/lissandra_r.png" },
-  "spell_lissandra_w": { kind: 'image', url: asset402Url, path: "assets/images/spells/lissandra_w.png" },
-  "spell_lucian_e": { kind: 'image', url: asset403Url, path: "assets/images/spells/lucian_e.png" },
-  "spell_lucian_i": { kind: 'image', url: asset404Url, path: "assets/images/spells/lucian_i.png" },
-  "spell_lucian_q": { kind: 'image', url: asset405Url, path: "assets/images/spells/lucian_q.png" },
-  "spell_lucian_r": { kind: 'image', url: asset406Url, path: "assets/images/spells/lucian_r.png" },
-  "spell_lucian_w": { kind: 'image', url: asset407Url, path: "assets/images/spells/lucian_w.png" },
-  "spell_lucian_w2": { kind: 'image', url: asset408Url, path: "assets/images/spells/lucian_w2.png" },
-  "spell_lucian_w3": { kind: 'image', url: asset409Url, path: "assets/images/spells/lucian_w3.png" },
-  "spell_lux_e": { kind: 'image', url: asset410Url, path: "assets/images/spells/lux_e.png" },
-  "spell_lux_q": { kind: 'image', url: asset411Url, path: "assets/images/spells/lux_q.png" },
-  "spell_lux_r": { kind: 'image', url: asset412Url, path: "assets/images/spells/lux_r.png" },
-  "spell_lux_w": { kind: 'image', url: asset413Url, path: "assets/images/spells/lux_w.png" },
-  "spell_malphite_e": { kind: 'image', url: asset414Url, path: "assets/images/spells/malphite_e.png" },
-  "spell_malphite_q": { kind: 'image', url: asset415Url, path: "assets/images/spells/malphite_q.png" },
-  "spell_malphite_r": { kind: 'image', url: asset416Url, path: "assets/images/spells/malphite_r.png" },
-  "spell_malphite_w": { kind: 'image', url: asset417Url, path: "assets/images/spells/malphite_w.png" },
-  "spell_malzahar_e": { kind: 'image', url: asset418Url, path: "assets/images/spells/malzahar_e.png" },
-  "spell_malzahar_q": { kind: 'image', url: asset419Url, path: "assets/images/spells/malzahar_q.png" },
-  "spell_malzahar_r": { kind: 'image', url: asset420Url, path: "assets/images/spells/malzahar_r.png" },
-  "spell_malzahar_w": { kind: 'image', url: asset421Url, path: "assets/images/spells/malzahar_w.png" },
-  "spell_masteryi_e": { kind: 'image', url: asset422Url, path: "assets/images/spells/masteryi_e.png" },
-  "spell_masteryi_i": { kind: 'image', url: asset423Url, path: "assets/images/spells/masteryi_i.png" },
-  "spell_masteryi_q": { kind: 'image', url: asset424Url, path: "assets/images/spells/masteryi_q.png" },
-  "spell_masteryi_r": { kind: 'image', url: asset425Url, path: "assets/images/spells/masteryi_r.png" },
-  "spell_masteryi_w": { kind: 'image', url: asset426Url, path: "assets/images/spells/masteryi_w.png" },
-  "spell_missfortune_e": { kind: 'image', url: asset427Url, path: "assets/images/spells/missfortune_e.png" },
-  "spell_missfortune_i": { kind: 'image', url: asset428Url, path: "assets/images/spells/missfortune_i.png" },
-  "spell_missfortune_q": { kind: 'image', url: asset429Url, path: "assets/images/spells/missfortune_q.png" },
-  "spell_missfortune_r": { kind: 'image', url: asset430Url, path: "assets/images/spells/missfortune_r.png" },
-  "spell_missfortune_w": { kind: 'image', url: asset431Url, path: "assets/images/spells/missfortune_w.png" },
-  "spell_missfortune_w2": { kind: 'image', url: asset432Url, path: "assets/images/spells/missfortune_w2.png" },
-  "spell_missfortune_w3": { kind: 'image', url: asset433Url, path: "assets/images/spells/missfortune_w3.png" },
-  "spell_mordekaiser_e": { kind: 'image', url: asset434Url, path: "assets/images/spells/mordekaiser_e.png" },
-  "spell_mordekaiser_i": { kind: 'image', url: asset435Url, path: "assets/images/spells/mordekaiser_i.png" },
-  "spell_mordekaiser_q": { kind: 'image', url: asset436Url, path: "assets/images/spells/mordekaiser_q.png" },
-  "spell_mordekaiser_r": { kind: 'image', url: asset437Url, path: "assets/images/spells/mordekaiser_r.png" },
-  "spell_mordekaiser_w": { kind: 'image', url: asset438Url, path: "assets/images/spells/mordekaiser_w.png" },
-  "spell_mordekaiser_w2": { kind: 'image', url: asset439Url, path: "assets/images/spells/mordekaiser_w2.png" },
-  "spell_morgana_e": { kind: 'image', url: asset440Url, path: "assets/images/spells/morgana_e.png" },
-  "spell_morgana_q": { kind: 'image', url: asset441Url, path: "assets/images/spells/morgana_q.png" },
-  "spell_morgana_r": { kind: 'image', url: asset442Url, path: "assets/images/spells/morgana_r.png" },
-  "spell_morgana_w": { kind: 'image', url: asset443Url, path: "assets/images/spells/morgana_w.png" },
-  "spell_nasus_e": { kind: 'image', url: asset444Url, path: "assets/images/spells/nasus_e.png" },
-  "spell_nasus_q": { kind: 'image', url: asset445Url, path: "assets/images/spells/nasus_q.png" },
-  "spell_nasus_r": { kind: 'image', url: asset446Url, path: "assets/images/spells/nasus_r.png" },
-  "spell_nasus_w": { kind: 'image', url: asset447Url, path: "assets/images/spells/nasus_w.png" },
-  "spell_nautilus_e": { kind: 'image', url: asset448Url, path: "assets/images/spells/nautilus_e.png" },
-  "spell_nautilus_i": { kind: 'image', url: asset449Url, path: "assets/images/spells/nautilus_i.png" },
-  "spell_nautilus_q": { kind: 'image', url: asset450Url, path: "assets/images/spells/nautilus_q.png" },
-  "spell_nautilus_r": { kind: 'image', url: asset451Url, path: "assets/images/spells/nautilus_r.png" },
-  "spell_nautilus_r2": { kind: 'image', url: asset452Url, path: "assets/images/spells/nautilus_r2.png" },
-  "spell_nautilus_w": { kind: 'image', url: asset453Url, path: "assets/images/spells/nautilus_w.png" },
-  "spell_nocturne_e": { kind: 'image', url: asset454Url, path: "assets/images/spells/nocturne_e.png" },
-  "spell_nocturne_q": { kind: 'image', url: asset455Url, path: "assets/images/spells/nocturne_q.png" },
-  "spell_nocturne_r": { kind: 'image', url: asset456Url, path: "assets/images/spells/nocturne_r.png" },
-  "spell_nocturne_w": { kind: 'image', url: asset457Url, path: "assets/images/spells/nocturne_w.png" },
-  "spell_olaf_e": { kind: 'image', url: asset458Url, path: "assets/images/spells/olaf_e.png" },
-  "spell_olaf_q": { kind: 'image', url: asset459Url, path: "assets/images/spells/olaf_q.png" },
-  "spell_olaf_r": { kind: 'image', url: asset460Url, path: "assets/images/spells/olaf_r.png" },
-  "spell_olaf_w": { kind: 'image', url: asset461Url, path: "assets/images/spells/olaf_w.png" },
-  "spell_old_blitzcrank_e": { kind: 'image', url: asset462Url, path: "assets/images/spells/old/blitzcrank_e.png" },
-  "spell_old_blitzcrank_internal": { kind: 'image', url: asset463Url, path: "assets/images/spells/old/blitzcrank_internal.png" },
-  "spell_old_blitzcrank_q": { kind: 'image', url: asset464Url, path: "assets/images/spells/old/blitzcrank_q.png" },
-  "spell_old_blitzcrank_r": { kind: 'image', url: asset465Url, path: "assets/images/spells/old/blitzcrank_r.png" },
-  "spell_old_blitzcrank_w": { kind: 'image', url: asset466Url, path: "assets/images/spells/old/blitzcrank_w.png" },
-  "spell_old_leesin_e": { kind: 'image', url: asset467Url, path: "assets/images/spells/old/leesin_e.png" },
-  "spell_old_leesin_q1": { kind: 'image', url: asset468Url, path: "assets/images/spells/old/leesin_q1.png" },
-  "spell_old_leesin_q2": { kind: 'image', url: asset469Url, path: "assets/images/spells/old/leesin_q2.png" },
-  "spell_old_leesin_r": { kind: 'image', url: asset470Url, path: "assets/images/spells/old/leesin_r.png" },
-  "spell_old_malphite_r": { kind: 'image', url: asset471Url, path: "assets/images/spells/old/malphite_r.png" },
-  "spell_old_olaf_q": { kind: 'image', url: asset472Url, path: "assets/images/spells/old/olaf_q.png" },
-  "spell_old_zed_w": { kind: 'image', url: asset473Url, path: "assets/images/spells/old/zed_w.png" },
-  "spell_old_zed_w2": { kind: 'image', url: asset474Url, path: "assets/images/spells/old/zed_w2.png" },
-  "spell_orianna_e": { kind: 'image', url: asset475Url, path: "assets/images/spells/orianna_e.png" },
-  "spell_orianna_i": { kind: 'image', url: asset476Url, path: "assets/images/spells/orianna_i.png" },
-  "spell_orianna_i2": { kind: 'image', url: asset477Url, path: "assets/images/spells/orianna_i2.png" },
-  "spell_orianna_q": { kind: 'image', url: asset478Url, path: "assets/images/spells/orianna_q.png" },
-  "spell_orianna_r": { kind: 'image', url: asset479Url, path: "assets/images/spells/orianna_r.png" },
-  "spell_orianna_w": { kind: 'image', url: asset480Url, path: "assets/images/spells/orianna_w.png" },
-  "spell_pantheon_e": { kind: 'image', url: asset481Url, path: "assets/images/spells/pantheon_e.png" },
-  "spell_pantheon_q": { kind: 'image', url: asset482Url, path: "assets/images/spells/pantheon_q.png" },
-  "spell_pantheon_r": { kind: 'image', url: asset483Url, path: "assets/images/spells/pantheon_r.png" },
-  "spell_pantheon_w": { kind: 'image', url: asset484Url, path: "assets/images/spells/pantheon_w.png" },
-  "spell_pyke_e": { kind: 'image', url: asset485Url, path: "assets/images/spells/pyke_e.png" },
-  "spell_pyke_i": { kind: 'image', url: asset486Url, path: "assets/images/spells/pyke_i.png" },
-  "spell_pyke_q": { kind: 'image', url: asset487Url, path: "assets/images/spells/pyke_q.png" },
-  "spell_pyke_r": { kind: 'image', url: asset488Url, path: "assets/images/spells/pyke_r.png" },
-  "spell_pyke_r2": { kind: 'image', url: asset489Url, path: "assets/images/spells/pyke_r2.png" },
-  "spell_pyke_w": { kind: 'image', url: asset490Url, path: "assets/images/spells/pyke_w.png" },
-  "spell_rammus_e": { kind: 'image', url: asset491Url, path: "assets/images/spells/rammus_e.png" },
-  "spell_rammus_q": { kind: 'image', url: asset492Url, path: "assets/images/spells/rammus_q.png" },
-  "spell_rammus_r": { kind: 'image', url: asset493Url, path: "assets/images/spells/rammus_r.png" },
-  "spell_rammus_w": { kind: 'image', url: asset494Url, path: "assets/images/spells/rammus_w.png" },
-  "spell_renekton_e": { kind: 'image', url: asset495Url, path: "assets/images/spells/renekton_e.png" },
-  "spell_renekton_i": { kind: 'image', url: asset496Url, path: "assets/images/spells/renekton_i.png" },
-  "spell_renekton_q": { kind: 'image', url: asset497Url, path: "assets/images/spells/renekton_q.png" },
-  "spell_renekton_r": { kind: 'image', url: asset498Url, path: "assets/images/spells/renekton_r.png" },
-  "spell_renekton_w": { kind: 'image', url: asset499Url, path: "assets/images/spells/renekton_w.png" },
-  "spell_riven_e": { kind: 'image', url: asset500Url, path: "assets/images/spells/riven_e.png" },
-  "spell_riven_i": { kind: 'image', url: asset501Url, path: "assets/images/spells/riven_i.png" },
-  "spell_riven_q": { kind: 'image', url: asset502Url, path: "assets/images/spells/riven_q.png" },
-  "spell_riven_r": { kind: 'image', url: asset503Url, path: "assets/images/spells/riven_r.png" },
-  "spell_riven_r2": { kind: 'image', url: asset504Url, path: "assets/images/spells/riven_r2.png" },
-  "spell_riven_w": { kind: 'image', url: asset505Url, path: "assets/images/spells/riven_w.png" },
-  "spell_sett_e": { kind: 'image', url: asset506Url, path: "assets/images/spells/sett_e.png" },
-  "spell_sett_i": { kind: 'image', url: asset507Url, path: "assets/images/spells/sett_i.png" },
-  "spell_sett_q": { kind: 'image', url: asset508Url, path: "assets/images/spells/sett_q.png" },
-  "spell_sett_q2": { kind: 'image', url: asset509Url, path: "assets/images/spells/sett_q2.png" },
-  "spell_sett_r": { kind: 'image', url: asset510Url, path: "assets/images/spells/sett_r.png" },
-  "spell_sett_w": { kind: 'image', url: asset511Url, path: "assets/images/spells/sett_w.png" },
-  "spell_shaco_e": { kind: 'image', url: asset512Url, path: "assets/images/spells/shaco_e.png" },
-  "spell_shaco_i": { kind: 'image', url: asset513Url, path: "assets/images/spells/shaco_i.png" },
-  "spell_shaco_q": { kind: 'image', url: asset514Url, path: "assets/images/spells/shaco_q.png" },
-  "spell_shaco_r": { kind: 'image', url: asset515Url, path: "assets/images/spells/shaco_r.png" },
-  "spell_shaco_r2": { kind: 'image', url: asset516Url, path: "assets/images/spells/shaco_r2.png" },
-  "spell_shaco_w": { kind: 'image', url: asset517Url, path: "assets/images/spells/shaco_w.png" },
-  "spell_shen_e": { kind: 'image', url: asset518Url, path: "assets/images/spells/shen_e.png" },
-  "spell_shen_i": { kind: 'image', url: asset519Url, path: "assets/images/spells/shen_i.png" },
-  "spell_shen_q": { kind: 'image', url: asset520Url, path: "assets/images/spells/shen_q.png" },
-  "spell_shen_q2": { kind: 'image', url: asset521Url, path: "assets/images/spells/shen_q2.png" },
-  "spell_shen_q3": { kind: 'image', url: asset522Url, path: "assets/images/spells/shen_q3.png" },
-  "spell_shen_r": { kind: 'image', url: asset523Url, path: "assets/images/spells/shen_r.png" },
-  "spell_shen_r2": { kind: 'image', url: asset524Url, path: "assets/images/spells/shen_r2.png" },
-  "spell_shen_w": { kind: 'image', url: asset525Url, path: "assets/images/spells/shen_w.png" },
-  "spell_singed_e": { kind: 'image', url: asset526Url, path: "assets/images/spells/singed_e.png" },
-  "spell_singed_q": { kind: 'image', url: asset527Url, path: "assets/images/spells/singed_q.png" },
-  "spell_singed_r": { kind: 'image', url: asset528Url, path: "assets/images/spells/singed_r.png" },
-  "spell_singed_w": { kind: 'image', url: asset529Url, path: "assets/images/spells/singed_w.png" },
-  "spell_soraka_e": { kind: 'image', url: asset530Url, path: "assets/images/spells/soraka_e.png" },
-  "spell_soraka_i": { kind: 'image', url: asset531Url, path: "assets/images/spells/soraka_i.png" },
-  "spell_soraka_q": { kind: 'image', url: asset532Url, path: "assets/images/spells/soraka_q.png" },
-  "spell_soraka_r": { kind: 'image', url: asset533Url, path: "assets/images/spells/soraka_r.png" },
-  "spell_soraka_w": { kind: 'image', url: asset534Url, path: "assets/images/spells/soraka_w.png" },
-  "spell_stealthward": { kind: 'image', url: asset535Url, path: "assets/images/spells/stealthward.png" },
-  "spell_syndra_e": { kind: 'image', url: asset536Url, path: "assets/images/spells/syndra_e.png" },
-  "spell_syndra_i": { kind: 'image', url: asset537Url, path: "assets/images/spells/syndra_i.png" },
-  "spell_syndra_q": { kind: 'image', url: asset538Url, path: "assets/images/spells/syndra_q.png" },
-  "spell_syndra_r": { kind: 'image', url: asset539Url, path: "assets/images/spells/syndra_r.png" },
-  "spell_syndra_w": { kind: 'image', url: asset540Url, path: "assets/images/spells/syndra_w.png" },
-  "spell_syndra_w2": { kind: 'image', url: asset541Url, path: "assets/images/spells/syndra_w2.png" },
-  "spell_teemo_e": { kind: 'image', url: asset542Url, path: "assets/images/spells/teemo_e.png" },
-  "spell_teemo_q": { kind: 'image', url: asset543Url, path: "assets/images/spells/teemo_q.png" },
-  "spell_teemo_r": { kind: 'image', url: asset544Url, path: "assets/images/spells/teemo_r.png" },
-  "spell_teemo_w": { kind: 'image', url: asset545Url, path: "assets/images/spells/teemo_w.png" },
-  "spell_thresh_e": { kind: 'image', url: asset546Url, path: "assets/images/spells/thresh_e.gif" },
-  "spell_thresh_e2": { kind: 'image', url: asset547Url, path: "assets/images/spells/thresh_e2.gif" },
-  "spell_thresh_e3": { kind: 'image', url: asset548Url, path: "assets/images/spells/thresh_e3.gif" },
-  "spell_thresh_e4": { kind: 'image', url: asset549Url, path: "assets/images/spells/thresh_e4.gif" },
-  "spell_thresh_e5": { kind: 'image', url: asset550Url, path: "assets/images/spells/thresh_e5.gif" },
-  "spell_thresh_i": { kind: 'image', url: asset551Url, path: "assets/images/spells/thresh_i.png" },
-  "spell_thresh_q": { kind: 'image', url: asset552Url, path: "assets/images/spells/thresh_q.png" },
-  "spell_thresh_q2": { kind: 'image', url: asset553Url, path: "assets/images/spells/thresh_q2.png" },
-  "spell_thresh_r": { kind: 'image', url: asset554Url, path: "assets/images/spells/thresh_r.png" },
-  "spell_thresh_w": { kind: 'image', url: asset555Url, path: "assets/images/spells/thresh_w.png" },
-  "spell_trundle_e": { kind: 'image', url: asset556Url, path: "assets/images/spells/trundle_e.png" },
-  "spell_trundle_i": { kind: 'image', url: asset557Url, path: "assets/images/spells/trundle_i.png" },
-  "spell_trundle_q": { kind: 'image', url: asset558Url, path: "assets/images/spells/trundle_q.png" },
-  "spell_trundle_r": { kind: 'image', url: asset559Url, path: "assets/images/spells/trundle_r.png" },
-  "spell_trundle_w": { kind: 'image', url: asset560Url, path: "assets/images/spells/trundle_w.png" },
-  "spell_tryndamere_e": { kind: 'image', url: asset561Url, path: "assets/images/spells/tryndamere_e.png" },
-  "spell_tryndamere_i": { kind: 'image', url: asset562Url, path: "assets/images/spells/tryndamere_i.png" },
-  "spell_tryndamere_q": { kind: 'image', url: asset563Url, path: "assets/images/spells/tryndamere_q.png" },
-  "spell_tryndamere_r": { kind: 'image', url: asset564Url, path: "assets/images/spells/tryndamere_r.png" },
-  "spell_tryndamere_w": { kind: 'image', url: asset565Url, path: "assets/images/spells/tryndamere_w.png" },
-  "spell_twistedfate_e": { kind: 'image', url: asset566Url, path: "assets/images/spells/twistedfate_e.png" },
-  "spell_twistedfate_i": { kind: 'image', url: asset567Url, path: "assets/images/spells/twistedfate_i.png" },
-  "spell_twistedfate_q": { kind: 'image', url: asset568Url, path: "assets/images/spells/twistedfate_q.png" },
-  "spell_twistedfate_r": { kind: 'image', url: asset569Url, path: "assets/images/spells/twistedfate_r.png" },
-  "spell_twistedfate_r2": { kind: 'image', url: asset570Url, path: "assets/images/spells/twistedfate_r2.png" },
-  "spell_twistedfate_w": { kind: 'image', url: asset571Url, path: "assets/images/spells/twistedfate_w.png" },
-  "spell_twistedfate_w2": { kind: 'image', url: asset572Url, path: "assets/images/spells/twistedfate_w2.png" },
-  "spell_twistedfate_w3": { kind: 'image', url: asset573Url, path: "assets/images/spells/twistedfate_w3.png" },
-  "spell_twistedfate_w4": { kind: 'image', url: asset574Url, path: "assets/images/spells/twistedfate_w4.png" },
-  "spell_twitch_e": { kind: 'image', url: asset575Url, path: "assets/images/spells/twitch_e.png" },
-  "spell_twitch_i": { kind: 'image', url: asset576Url, path: "assets/images/spells/twitch_i.png" },
-  "spell_twitch_q": { kind: 'image', url: asset577Url, path: "assets/images/spells/twitch_q.png" },
-  "spell_twitch_q2": { kind: 'image', url: asset578Url, path: "assets/images/spells/twitch_q2.png" },
-  "spell_twitch_q3": { kind: 'image', url: asset579Url, path: "assets/images/spells/twitch_q3.png" },
-  "spell_twitch_r": { kind: 'image', url: asset580Url, path: "assets/images/spells/twitch_r.png" },
-  "spell_twitch_w": { kind: 'image', url: asset581Url, path: "assets/images/spells/twitch_w.png" },
-  "spell_varus_e": { kind: 'image', url: asset582Url, path: "assets/images/spells/varus_e.png" },
-  "spell_varus_q": { kind: 'image', url: asset583Url, path: "assets/images/spells/varus_q.png" },
-  "spell_varus_r": { kind: 'image', url: asset584Url, path: "assets/images/spells/varus_r.png" },
-  "spell_varus_w": { kind: 'image', url: asset585Url, path: "assets/images/spells/varus_w.png" },
-  "spell_vayne_e": { kind: 'image', url: asset586Url, path: "assets/images/spells/vayne_e.png" },
-  "spell_vayne_i": { kind: 'image', url: asset587Url, path: "assets/images/spells/vayne_i.png" },
-  "spell_vayne_q": { kind: 'image', url: asset588Url, path: "assets/images/spells/vayne_q.png" },
-  "spell_vayne_r": { kind: 'image', url: asset589Url, path: "assets/images/spells/vayne_r.png" },
-  "spell_vayne_w": { kind: 'image', url: asset590Url, path: "assets/images/spells/vayne_w.png" },
-  "spell_veigar_e": { kind: 'image', url: asset591Url, path: "assets/images/spells/veigar_e.png" },
-  "spell_veigar_q": { kind: 'image', url: asset592Url, path: "assets/images/spells/veigar_q.png" },
-  "spell_veigar_r": { kind: 'image', url: asset593Url, path: "assets/images/spells/veigar_r.png" },
-  "spell_veigar_w": { kind: 'image', url: asset594Url, path: "assets/images/spells/veigar_w.png" },
-  "spell_vi_e": { kind: 'image', url: asset595Url, path: "assets/images/spells/vi_e.png" },
-  "spell_vi_e2": { kind: 'image', url: asset596Url, path: "assets/images/spells/vi_e2.png" },
-  "spell_vi_i": { kind: 'image', url: asset597Url, path: "assets/images/spells/vi_i.png" },
-  "spell_vi_q": { kind: 'image', url: asset598Url, path: "assets/images/spells/vi_q.png" },
-  "spell_vi_r": { kind: 'image', url: asset599Url, path: "assets/images/spells/vi_r.png" },
-  "spell_vi_w": { kind: 'image', url: asset600Url, path: "assets/images/spells/vi_w.png" },
-  "spell_vi_w2": { kind: 'image', url: asset601Url, path: "assets/images/spells/vi_w2.png" },
-  "spell_vladimir_e": { kind: 'image', url: asset602Url, path: "assets/images/spells/vladimir_e.png" },
-  "spell_vladimir_i": { kind: 'image', url: asset603Url, path: "assets/images/spells/vladimir_i.png" },
-  "spell_vladimir_q": { kind: 'image', url: asset604Url, path: "assets/images/spells/vladimir_q.png" },
-  "spell_vladimir_q2": { kind: 'image', url: asset605Url, path: "assets/images/spells/vladimir_q2.png" },
-  "spell_vladimir_r": { kind: 'image', url: asset606Url, path: "assets/images/spells/vladimir_r.png" },
-  "spell_vladimir_w": { kind: 'image', url: asset607Url, path: "assets/images/spells/vladimir_w.png" },
-  "spell_warwick_e": { kind: 'image', url: asset608Url, path: "assets/images/spells/warwick_e.png" },
-  "spell_warwick_q": { kind: 'image', url: asset609Url, path: "assets/images/spells/warwick_q.png" },
-  "spell_warwick_r": { kind: 'image', url: asset610Url, path: "assets/images/spells/warwick_r.png" },
-  "spell_warwick_w": { kind: 'image', url: asset611Url, path: "assets/images/spells/warwick_w.png" },
-  "spell_xerath_e": { kind: 'image', url: asset612Url, path: "assets/images/spells/xerath_e.png" },
-  "spell_xerath_i": { kind: 'image', url: asset613Url, path: "assets/images/spells/xerath_i.png" },
-  "spell_xerath_q": { kind: 'image', url: asset614Url, path: "assets/images/spells/xerath_q.png" },
-  "spell_xerath_r": { kind: 'image', url: asset615Url, path: "assets/images/spells/xerath_r.png" },
-  "spell_xerath_w": { kind: 'image', url: asset616Url, path: "assets/images/spells/xerath_w.png" },
-  "spell_xinzhao_e": { kind: 'image', url: asset617Url, path: "assets/images/spells/xinzhao_e.png" },
-  "spell_xinzhao_i": { kind: 'image', url: asset618Url, path: "assets/images/spells/xinzhao_i.png" },
-  "spell_xinzhao_i2": { kind: 'image', url: asset619Url, path: "assets/images/spells/xinzhao_i2.png" },
-  "spell_xinzhao_q": { kind: 'image', url: asset620Url, path: "assets/images/spells/xinzhao_q.png" },
-  "spell_xinzhao_r": { kind: 'image', url: asset621Url, path: "assets/images/spells/xinzhao_r.png" },
-  "spell_xinzhao_w": { kind: 'image', url: asset622Url, path: "assets/images/spells/xinzhao_w.png" },
-  "spell_yasuo_e": { kind: 'image', url: asset623Url, path: "assets/images/spells/yasuo_e.png" },
-  "spell_yasuo_i": { kind: 'image', url: asset624Url, path: "assets/images/spells/yasuo_i.png" },
-  "spell_yasuo_q": { kind: 'image', url: asset625Url, path: "assets/images/spells/yasuo_q.png" },
-  "spell_yasuo_q1": { kind: 'image', url: asset626Url, path: "assets/images/spells/yasuo_q1.png" },
-  "spell_yasuo_q2": { kind: 'image', url: asset627Url, path: "assets/images/spells/yasuo_q2.png" },
-  "spell_yasuo_q3": { kind: 'image', url: asset628Url, path: "assets/images/spells/yasuo_q3.png" },
-  "spell_yasuo_r": { kind: 'image', url: asset629Url, path: "assets/images/spells/yasuo_r.png" },
-  "spell_yasuo_w": { kind: 'image', url: asset630Url, path: "assets/images/spells/yasuo_w.png" },
-  "spell_zed_e": { kind: 'image', url: asset631Url, path: "assets/images/spells/zed_e.png" },
-  "spell_zed_i": { kind: 'image', url: asset632Url, path: "assets/images/spells/zed_i.png" },
-  "spell_zed_q": { kind: 'image', url: asset633Url, path: "assets/images/spells/zed_q.png" },
-  "spell_zed_r": { kind: 'image', url: asset634Url, path: "assets/images/spells/zed_r.png" },
-  "spell_zed_r1": { kind: 'image', url: asset635Url, path: "assets/images/spells/zed_r1.png" },
-  "spell_zed_r2": { kind: 'image', url: asset636Url, path: "assets/images/spells/zed_r2.png" },
-  "spell_zed_w": { kind: 'image', url: asset637Url, path: "assets/images/spells/zed_w.png" },
-  "spell_zed_w2": { kind: 'image', url: asset638Url, path: "assets/images/spells/zed_w2.png" },
-  "spell_ziggs_e": { kind: 'image', url: asset639Url, path: "assets/images/spells/ziggs_e.png" },
-  "spell_ziggs_i": { kind: 'image', url: asset640Url, path: "assets/images/spells/ziggs_i.png" },
-  "spell_ziggs_q": { kind: 'image', url: asset641Url, path: "assets/images/spells/ziggs_q.png" },
-  "spell_ziggs_r": { kind: 'image', url: asset642Url, path: "assets/images/spells/ziggs_r.png" },
-  "spell_ziggs_w": { kind: 'image', url: asset643Url, path: "assets/images/spells/ziggs_w.png" },
+  "item_anathemas_chains": { kind: 'image', url: asset79Url, path: "assets/images/items/anathemas_chains.png" },
+  "item_ardent_censer": { kind: 'image', url: asset80Url, path: "assets/images/items/ardent_censer.png" },
+  "item_banshees_veil": { kind: 'image', url: asset81Url, path: "assets/images/items/banshees_veil.png" },
+  "item_berserkers_greaves": { kind: 'image', url: asset82Url, path: "assets/images/items/berserkers_greaves.png" },
+  "item_black_cleaver": { kind: 'image', url: asset83Url, path: "assets/images/items/black_cleaver.png" },
+  "item_blade_of_the_ruined_king": { kind: 'image', url: asset84Url, path: "assets/images/items/blade_of_the_ruined_king.png" },
+  "item_blasting_wand": { kind: 'image', url: asset85Url, path: "assets/images/items/blasting_wand.png" },
+  "item_blighting_jewel": { kind: 'image', url: asset86Url, path: "assets/images/items/blighting_jewel.png" },
+  "item_bloodthirster": { kind: 'image', url: asset87Url, path: "assets/images/items/bloodthirster.png" },
+  "item_boots": { kind: 'image', url: asset88Url, path: "assets/images/items/boots.png" },
+  "item_bramble_vest": { kind: 'image', url: asset89Url, path: "assets/images/items/bramble_vest.png" },
+  "item_caulfields_warhammer": { kind: 'image', url: asset90Url, path: "assets/images/items/caulfields_warhammer.png" },
+  "item_chain_vest": { kind: 'image', url: asset91Url, path: "assets/images/items/chain_vest.png" },
+  "item_chempunk_chainsword": { kind: 'image', url: asset92Url, path: "assets/images/items/chempunk_chainsword.png" },
+  "item_cloth_armor": { kind: 'image', url: asset93Url, path: "assets/images/items/cloth_armor.png" },
+  "item_cryptbloom": { kind: 'image', url: asset94Url, path: "assets/images/items/cryptbloom.png" },
+  "item_dead_mans_plate": { kind: 'image', url: asset95Url, path: "assets/images/items/dead_mans_plate.png" },
+  "item_deaths_dance": { kind: 'image', url: asset96Url, path: "assets/images/items/deaths_dance.png" },
+  "item_divine_sunderer": { kind: 'image', url: asset97Url, path: "assets/images/items/divine_sunderer.png" },
+  "item_dusk_and_dawn": { kind: 'image', url: asset98Url, path: "assets/images/items/dusk_and_dawn.png" },
+  "item_essence_reaver": { kind: 'image', url: asset99Url, path: "assets/images/items/essence_reaver.png" },
+  "item_everfrost": { kind: 'image', url: asset100Url, path: "assets/images/items/everfrost.png" },
+  "item_executioners_calling": { kind: 'image', url: asset101Url, path: "assets/images/items/executioners_calling.png" },
+  "item_experimental_hexplate": { kind: 'image', url: asset102Url, path: "assets/images/items/experimental_hexplate.png" },
+  "item_force_of_nature": { kind: 'image', url: asset103Url, path: "assets/images/items/force_of_nature.png" },
+  "item_frozen_heart": { kind: 'image', url: asset104Url, path: "assets/images/items/frozen_heart.png" },
+  "item_gargoyle_stoneplate": { kind: 'image', url: asset105Url, path: "assets/images/items/gargoyle_stoneplate.png" },
+  "item_giants_belt": { kind: 'image', url: asset106Url, path: "assets/images/items/giants_belt.png" },
+  "item_guardian_angel": { kind: 'image', url: asset107Url, path: "assets/images/items/guardian_angel.png" },
+  "item_guinsoos_rageblade": { kind: 'image', url: asset108Url, path: "assets/images/items/guinsoos_rageblade.png" },
+  "item_heartsteel": { kind: 'image', url: asset109Url, path: "assets/images/items/heartsteel.png" },
+  "item_hextech_alternator": { kind: 'image', url: asset110Url, path: "assets/images/items/hextech_alternator.png" },
+  "item_hollow_radiance": { kind: 'image', url: asset111Url, path: "assets/images/items/hollow_radiance.png" },
+  "item_hullbreaker": { kind: 'image', url: asset112Url, path: "assets/images/items/hullbreaker.png" },
+  "item_iceborn_gauntlet": { kind: 'image', url: asset113Url, path: "assets/images/items/iceborn_gauntlet.png" },
+  "item_immortal_shieldbow": { kind: 'image', url: asset114Url, path: "assets/images/items/immortal_shieldbow.png" },
+  "item_imperial_mandate": { kind: 'image', url: asset115Url, path: "assets/images/items/imperial_mandate.png" },
+  "item_infinity_edge": { kind: 'image', url: asset116Url, path: "assets/images/items/infinity_edge.png" },
+  "item_ionian_boots_of_lucidity": { kind: 'image', url: asset117Url, path: "assets/images/items/ionian_boots_of_lucidity.png" },
+  "item_kaenic_rookern": { kind: 'image', url: asset118Url, path: "assets/images/items/kaenic_rookern.png" },
+  "item_kindlegem": { kind: 'image', url: asset119Url, path: "assets/images/items/kindlegem.png" },
+  "item_kraken_slayer": { kind: 'image', url: asset120Url, path: "assets/images/items/kraken_slayer.png" },
+  "item_last_whisper": { kind: 'image', url: asset121Url, path: "assets/images/items/last_whisper.png" },
+  "item_liandrys_torment": { kind: 'image', url: asset122Url, path: "assets/images/items/liandrys_torment.png" },
+  "item_lich_bane": { kind: 'image', url: asset123Url, path: "assets/images/items/lich_bane.png" },
+  "item_locket_of_the_iron_solari": { kind: 'image', url: asset124Url, path: "assets/images/items/locket_of_the_iron_solari.png" },
+  "item_long_sword": { kind: 'image', url: asset125Url, path: "assets/images/items/long_sword.png" },
+  "item_lord_dominiks_regards": { kind: 'image', url: asset126Url, path: "assets/images/items/lord_dominiks_regards.png" },
+  "item_ludens_echo": { kind: 'image', url: asset127Url, path: "assets/images/items/ludens_echo.png" },
+  "item_maw_of_malmortius": { kind: 'image', url: asset128Url, path: "assets/images/items/maw_of_malmortius.png" },
+  "item_mercurys_treads": { kind: 'image', url: asset129Url, path: "assets/images/items/mercurys_treads.png" },
+  "item_mikaels_blessing": { kind: 'image', url: asset130Url, path: "assets/images/items/mikaels_blessing.png" },
+  "item_moonstone_renewer": { kind: 'image', url: asset131Url, path: "assets/images/items/moonstone_renewer.png" },
+  "item_morellonomicon": { kind: 'image', url: asset132Url, path: "assets/images/items/morellonomicon.png" },
+  "item_mortal_reminder": { kind: 'image', url: asset133Url, path: "assets/images/items/mortal_reminder.png" },
+  "item_nashors_tooth": { kind: 'image', url: asset134Url, path: "assets/images/items/nashors_tooth.png" },
+  "item_navori_flickerblade": { kind: 'image', url: asset135Url, path: "assets/images/items/navori_flickerblade.png" },
+  "item_negatron_cloak": { kind: 'image', url: asset136Url, path: "assets/images/items/negatron_cloak.png" },
+  "item_null_magic_mantle": { kind: 'image', url: asset137Url, path: "assets/images/items/null_magic_mantle.png" },
+  "item_oblivion_orb": { kind: 'image', url: asset138Url, path: "assets/images/items/oblivion_orb.png" },
+  "item_opportunity": { kind: 'image', url: asset139Url, path: "assets/images/items/opportunity.png" },
+  "item_phage": { kind: 'image', url: asset140Url, path: "assets/images/items/phage.png" },
+  "item_phantom_dancer": { kind: 'image', url: asset141Url, path: "assets/images/items/phantom_dancer.png" },
+  "item_plated_steelcaps": { kind: 'image', url: asset142Url, path: "assets/images/items/plated_steelcaps.png" },
+  "item_profane_hydra": { kind: 'image', url: asset143Url, path: "assets/images/items/profane_hydra.png" },
+  "item_quicksilver_sash": { kind: 'image', url: asset144Url, path: "assets/images/items/quicksilver_sash.png" },
+  "item_rabadons_deathcap": { kind: 'image', url: asset145Url, path: "assets/images/items/rabadons_deathcap.png" },
+  "item_randuins_omen": { kind: 'image', url: asset146Url, path: "assets/images/items/randuins_omen.png" },
+  "item_rapid_firecannon": { kind: 'image', url: asset147Url, path: "assets/images/items/rapid_firecannon.png" },
+  "item_ravenous_hydra": { kind: 'image', url: asset148Url, path: "assets/images/items/ravenous_hydra.png" },
+  "item_recurve_bow": { kind: 'image', url: asset149Url, path: "assets/images/items/recurve_bow.png" },
+  "item_redemption": { kind: 'image', url: asset150Url, path: "assets/images/items/redemption.png" },
+  "item_riftmaker": { kind: 'image', url: asset151Url, path: "assets/images/items/riftmaker.png" },
+  "item_ruby_crystal": { kind: 'image', url: asset152Url, path: "assets/images/items/ruby_crystal.png" },
+  "item_runaans_hurricane": { kind: 'image', url: asset153Url, path: "assets/images/items/runaans_hurricane.png" },
+  "item_rylais_crystal_scepter": { kind: 'image', url: asset154Url, path: "assets/images/items/rylais_crystal_scepter.png" },
+  "item_serpents_fang": { kind: 'image', url: asset155Url, path: "assets/images/items/serpents_fang.png" },
+  "item_serrated_dirk": { kind: 'image', url: asset156Url, path: "assets/images/items/serrated_dirk.png" },
+  "item_seryldas_grudge": { kind: 'image', url: asset157Url, path: "assets/images/items/seryldas_grudge.png" },
+  "item_shadowflame": { kind: 'image', url: asset158Url, path: "assets/images/items/shadowflame.png" },
+  "item_sheen": { kind: 'image', url: asset159Url, path: "assets/images/items/sheen.png" },
+  "item_shurelyas_battlesong": { kind: 'image', url: asset160Url, path: "assets/images/items/shurelyas_battlesong.png" },
+  "item_silvermere_dawn": { kind: 'image', url: asset161Url, path: "assets/images/items/silvermere_dawn.png" },
+  "item_sorcerers_shoes": { kind: 'image', url: asset162Url, path: "assets/images/items/sorcerers_shoes.png" },
+  "item_spear_of_shojin": { kind: 'image', url: asset163Url, path: "assets/images/items/spear_of_shojin.png" },
+  "item_spectres_cowl": { kind: 'image', url: asset164Url, path: "assets/images/items/spectres_cowl.png" },
+  "item_spirit_visage": { kind: 'image', url: asset165Url, path: "assets/images/items/spirit_visage.png" },
+  "item_statikk_shiv": { kind: 'image', url: asset166Url, path: "assets/images/items/statikk_shiv.png" },
+  "item_steraks_gage": { kind: 'image', url: asset167Url, path: "assets/images/items/steraks_gage.png" },
+  "item_stridebreaker": { kind: 'image', url: asset168Url, path: "assets/images/items/stridebreaker.png" },
+  "item_sundered_sky": { kind: 'image', url: asset169Url, path: "assets/images/items/sundered_sky.png" },
+  "item_sunfire_aegis": { kind: 'image', url: asset170Url, path: "assets/images/items/sunfire_aegis.png" },
+  "item_terminus": { kind: 'image', url: asset171Url, path: "assets/images/items/terminus.png" },
+  "item_the_collector": { kind: 'image', url: asset172Url, path: "assets/images/items/the_collector.png" },
+  "item_thornmail": { kind: 'image', url: asset173Url, path: "assets/images/items/thornmail.png" },
+  "item_tiamat": { kind: 'image', url: asset174Url, path: "assets/images/items/tiamat.png" },
+  "item_titanic_hydra": { kind: 'image', url: asset175Url, path: "assets/images/items/titanic_hydra.png" },
+  "item_trinity_force": { kind: 'image', url: asset176Url, path: "assets/images/items/trinity_force.png" },
+  "item_unending_despair": { kind: 'image', url: asset177Url, path: "assets/images/items/unending_despair.png" },
+  "item_vampiric_scepter": { kind: 'image', url: asset178Url, path: "assets/images/items/vampiric_scepter.png" },
+  "item_void_staff": { kind: 'image', url: asset179Url, path: "assets/images/items/void_staff.png" },
+  "item_voltaic_cyclosword": { kind: 'image', url: asset180Url, path: "assets/images/items/voltaic_cyclosword.png" },
+  "item_warmogs_armor": { kind: 'image', url: asset181Url, path: "assets/images/items/warmogs_armor.png" },
+  "item_watchful_wardstone": { kind: 'image', url: asset182Url, path: "assets/images/items/watchful_wardstone.png" },
+  "item_wits_end": { kind: 'image', url: asset183Url, path: "assets/images/items/wits_end.png" },
+  "item_youmuus_ghostblade": { kind: 'image', url: asset184Url, path: "assets/images/items/youmuus_ghostblade.png" },
+  "item_zeal": { kind: 'image', url: asset185Url, path: "assets/images/items/zeal.png" },
+  "item_zekes_convergence": { kind: 'image', url: asset186Url, path: "assets/images/items/zekes_convergence.png" },
+  "item_zhonyas_hourglass": { kind: 'image', url: asset187Url, path: "assets/images/items/zhonyas_hourglass.png" },
+  "monster_Ancient_Krug": { kind: 'image', url: asset188Url, path: "assets/images/monsters/Ancient_Krug.png" },
+  "monster_Baron_Nashor": { kind: 'image', url: asset189Url, path: "assets/images/monsters/Baron_Nashor.png" },
+  "monster_Blue_Sentinel": { kind: 'image', url: asset190Url, path: "assets/images/monsters/Blue_Sentinel.png" },
+  "monster_Chemtech_Drake": { kind: 'image', url: asset191Url, path: "assets/images/monsters/Chemtech_Drake.webp" },
+  "monster_Cloud_Drake": { kind: 'image', url: asset192Url, path: "assets/images/monsters/Cloud_Drake.webp" },
+  "monster_Crimson_Raptor": { kind: 'image', url: asset193Url, path: "assets/images/monsters/Crimson_Raptor.png" },
+  "monster_Elder_Dragon": { kind: 'image', url: asset194Url, path: "assets/images/monsters/Elder_Dragon.webp" },
+  "monster_Greater_Murk_Wolf": { kind: 'image', url: asset195Url, path: "assets/images/monsters/Greater_Murk_Wolf.png" },
+  "monster_Gromp": { kind: 'image', url: asset196Url, path: "assets/images/monsters/Gromp.png" },
+  "monster_Hextech_Drake": { kind: 'image', url: asset197Url, path: "assets/images/monsters/Hextech_Drake.webp" },
+  "monster_Infernal_Drake": { kind: 'image', url: asset198Url, path: "assets/images/monsters/Infernal_Drake.webp" },
+  "monster_Mountain_Drake": { kind: 'image', url: asset199Url, path: "assets/images/monsters/Mountain_Drake.webp" },
+  "monster_Murk_Wolf": { kind: 'image', url: asset200Url, path: "assets/images/monsters/Murk_Wolf.png" },
+  "monster_Ocean_Drake": { kind: 'image', url: asset201Url, path: "assets/images/monsters/Ocean_Drake.webp" },
+  "monster_Raptor": { kind: 'image', url: asset202Url, path: "assets/images/monsters/Raptor.png" },
+  "monster_Red_Brambleback": { kind: 'image', url: asset203Url, path: "assets/images/monsters/Red_Brambleback.png" },
+  "monster_Rift_Scuttle": { kind: 'image', url: asset204Url, path: "assets/images/monsters/Rift_Scuttle.png" },
+  "monster_Vilemaw": { kind: 'image', url: asset205Url, path: "assets/images/monsters/Vilemaw.webp" },
+  "obj_yasuo_q3": { kind: 'image', url: asset206Url, path: "assets/images/objects/yasuo_q3.png" },
+  "spell_aatrox_e": { kind: 'image', url: asset207Url, path: "assets/images/spells/aatrox_e.png" },
+  "spell_aatrox_i": { kind: 'image', url: asset208Url, path: "assets/images/spells/aatrox_i.png" },
+  "spell_aatrox_q": { kind: 'image', url: asset209Url, path: "assets/images/spells/aatrox_q.png" },
+  "spell_aatrox_q2": { kind: 'image', url: asset210Url, path: "assets/images/spells/aatrox_q2.png" },
+  "spell_aatrox_q3": { kind: 'image', url: asset211Url, path: "assets/images/spells/aatrox_q3.png" },
+  "spell_aatrox_r": { kind: 'image', url: asset212Url, path: "assets/images/spells/aatrox_r.png" },
+  "spell_aatrox_w": { kind: 'image', url: asset213Url, path: "assets/images/spells/aatrox_w.png" },
+  "spell_ahri_e": { kind: 'image', url: asset214Url, path: "assets/images/spells/ahri_e.png" },
+  "spell_ahri_i": { kind: 'image', url: asset215Url, path: "assets/images/spells/ahri_i.png" },
+  "spell_ahri_q": { kind: 'image', url: asset216Url, path: "assets/images/spells/ahri_q.png" },
+  "spell_ahri_r": { kind: 'image', url: asset217Url, path: "assets/images/spells/ahri_r.png" },
+  "spell_ahri_w": { kind: 'image', url: asset218Url, path: "assets/images/spells/ahri_w.png" },
+  "spell_akali_e": { kind: 'image', url: asset219Url, path: "assets/images/spells/akali_e.png" },
+  "spell_akali_e2": { kind: 'image', url: asset220Url, path: "assets/images/spells/akali_e2.png" },
+  "spell_akali_i": { kind: 'image', url: asset221Url, path: "assets/images/spells/akali_i.png" },
+  "spell_akali_q": { kind: 'image', url: asset222Url, path: "assets/images/spells/akali_q.png" },
+  "spell_akali_q2": { kind: 'image', url: asset223Url, path: "assets/images/spells/akali_q2.png" },
+  "spell_akali_r": { kind: 'image', url: asset224Url, path: "assets/images/spells/akali_r.png" },
+  "spell_akali_r2": { kind: 'image', url: asset225Url, path: "assets/images/spells/akali_r2.png" },
+  "spell_akali_w": { kind: 'image', url: asset226Url, path: "assets/images/spells/akali_w.png" },
+  "spell_alistar_e": { kind: 'image', url: asset227Url, path: "assets/images/spells/alistar_e.png" },
+  "spell_alistar_q": { kind: 'image', url: asset228Url, path: "assets/images/spells/alistar_q.png" },
+  "spell_alistar_r": { kind: 'image', url: asset229Url, path: "assets/images/spells/alistar_r.png" },
+  "spell_alistar_w": { kind: 'image', url: asset230Url, path: "assets/images/spells/alistar_w.png" },
+  "spell_amumu_e": { kind: 'image', url: asset231Url, path: "assets/images/spells/amumu_e.png" },
+  "spell_amumu_q": { kind: 'image', url: asset232Url, path: "assets/images/spells/amumu_q.png" },
+  "spell_amumu_r": { kind: 'image', url: asset233Url, path: "assets/images/spells/amumu_r.png" },
+  "spell_amumu_w": { kind: 'image', url: asset234Url, path: "assets/images/spells/amumu_w.png" },
+  "spell_anivia_e": { kind: 'image', url: asset235Url, path: "assets/images/spells/anivia_e.png" },
+  "spell_anivia_q": { kind: 'image', url: asset236Url, path: "assets/images/spells/anivia_q.png" },
+  "spell_anivia_r": { kind: 'image', url: asset237Url, path: "assets/images/spells/anivia_r.png" },
+  "spell_anivia_w": { kind: 'image', url: asset238Url, path: "assets/images/spells/anivia_w.png" },
+  "spell_annie_e": { kind: 'image', url: asset239Url, path: "assets/images/spells/annie_e.png" },
+  "spell_annie_i": { kind: 'image', url: asset240Url, path: "assets/images/spells/annie_i.png" },
+  "spell_annie_q": { kind: 'image', url: asset241Url, path: "assets/images/spells/annie_q.png" },
+  "spell_annie_r": { kind: 'image', url: asset242Url, path: "assets/images/spells/annie_r.png" },
+  "spell_annie_r2": { kind: 'image', url: asset243Url, path: "assets/images/spells/annie_r2.png" },
+  "spell_annie_w": { kind: 'image', url: asset244Url, path: "assets/images/spells/annie_w.png" },
+  "spell_ashe_e": { kind: 'image', url: asset245Url, path: "assets/images/spells/ashe_e.png" },
+  "spell_ashe_i": { kind: 'image', url: asset246Url, path: "assets/images/spells/ashe_i.png" },
+  "spell_ashe_i2": { kind: 'image', url: asset247Url, path: "assets/images/spells/ashe_i2.png" },
+  "spell_ashe_q": { kind: 'image', url: asset248Url, path: "assets/images/spells/ashe_q.png" },
+  "spell_ashe_q2": { kind: 'image', url: asset249Url, path: "assets/images/spells/ashe_q2.png" },
+  "spell_ashe_r": { kind: 'image', url: asset250Url, path: "assets/images/spells/ashe_r.png" },
+  "spell_ashe_w": { kind: 'image', url: asset251Url, path: "assets/images/spells/ashe_w.png" },
+  "spell_blitzcrank_e": { kind: 'image', url: asset252Url, path: "assets/images/spells/blitzcrank_e.png" },
+  "spell_blitzcrank_i": { kind: 'image', url: asset253Url, path: "assets/images/spells/blitzcrank_i.png" },
+  "spell_blitzcrank_i2": { kind: 'image', url: asset254Url, path: "assets/images/spells/blitzcrank_i2.png" },
+  "spell_blitzcrank_internal": { kind: 'image', url: asset255Url, path: "assets/images/spells/blitzcrank_internal.png" },
+  "spell_blitzcrank_q": { kind: 'image', url: asset256Url, path: "assets/images/spells/blitzcrank_q.png" },
+  "spell_blitzcrank_r": { kind: 'image', url: asset257Url, path: "assets/images/spells/blitzcrank_r.png" },
+  "spell_blitzcrank_w": { kind: 'image', url: asset258Url, path: "assets/images/spells/blitzcrank_w.png" },
+  "spell_brand_e": { kind: 'image', url: asset259Url, path: "assets/images/spells/brand_e.png" },
+  "spell_brand_i": { kind: 'image', url: asset260Url, path: "assets/images/spells/brand_i.png" },
+  "spell_brand_i2": { kind: 'image', url: asset261Url, path: "assets/images/spells/brand_i2.png" },
+  "spell_brand_q": { kind: 'image', url: asset262Url, path: "assets/images/spells/brand_q.png" },
+  "spell_brand_r": { kind: 'image', url: asset263Url, path: "assets/images/spells/brand_r.png" },
+  "spell_brand_w": { kind: 'image', url: asset264Url, path: "assets/images/spells/brand_w.png" },
+  "spell_braum_e": { kind: 'image', url: asset265Url, path: "assets/images/spells/braum_e.png" },
+  "spell_braum_i": { kind: 'image', url: asset266Url, path: "assets/images/spells/braum_i.png" },
+  "spell_braum_q": { kind: 'image', url: asset267Url, path: "assets/images/spells/braum_q.png" },
+  "spell_braum_r": { kind: 'image', url: asset268Url, path: "assets/images/spells/braum_r.png" },
+  "spell_braum_w": { kind: 'image', url: asset269Url, path: "assets/images/spells/braum_w.png" },
+  "spell_caitlyn_e": { kind: 'image', url: asset270Url, path: "assets/images/spells/caitlyn_e.png" },
+  "spell_caitlyn_i": { kind: 'image', url: asset271Url, path: "assets/images/spells/caitlyn_i.png" },
+  "spell_caitlyn_q": { kind: 'image', url: asset272Url, path: "assets/images/spells/caitlyn_q.png" },
+  "spell_caitlyn_r": { kind: 'image', url: asset273Url, path: "assets/images/spells/caitlyn_r.png" },
+  "spell_caitlyn_w": { kind: 'image', url: asset274Url, path: "assets/images/spells/caitlyn_w.png" },
+  "spell_camille_e": { kind: 'image', url: asset275Url, path: "assets/images/spells/camille_e.png" },
+  "spell_camille_e2": { kind: 'image', url: asset276Url, path: "assets/images/spells/camille_e2.png" },
+  "spell_camille_i": { kind: 'image', url: asset277Url, path: "assets/images/spells/camille_i.png" },
+  "spell_camille_q": { kind: 'image', url: asset278Url, path: "assets/images/spells/camille_q.png" },
+  "spell_camille_q2": { kind: 'image', url: asset279Url, path: "assets/images/spells/camille_q2.png" },
+  "spell_camille_q3": { kind: 'image', url: asset280Url, path: "assets/images/spells/camille_q3.png" },
+  "spell_camille_r": { kind: 'image', url: asset281Url, path: "assets/images/spells/camille_r.png" },
+  "spell_camille_w": { kind: 'image', url: asset282Url, path: "assets/images/spells/camille_w.png" },
+  "spell_cassiopeia_e": { kind: 'image', url: asset283Url, path: "assets/images/spells/cassiopeia_e.png" },
+  "spell_cassiopeia_q": { kind: 'image', url: asset284Url, path: "assets/images/spells/cassiopeia_q.png" },
+  "spell_cassiopeia_r": { kind: 'image', url: asset285Url, path: "assets/images/spells/cassiopeia_r.png" },
+  "spell_cassiopeia_w": { kind: 'image', url: asset286Url, path: "assets/images/spells/cassiopeia_w.png" },
+  "spell_chogath_e": { kind: 'image', url: asset287Url, path: "assets/images/spells/chogath_e.png" },
+  "spell_chogath_q": { kind: 'image', url: asset288Url, path: "assets/images/spells/chogath_q.png" },
+  "spell_chogath_r": { kind: 'image', url: asset289Url, path: "assets/images/spells/chogath_r.png" },
+  "spell_chogath_w": { kind: 'image', url: asset290Url, path: "assets/images/spells/chogath_w.png" },
+  "spell_darius_e": { kind: 'image', url: asset291Url, path: "assets/images/spells/darius_e.png" },
+  "spell_darius_i": { kind: 'image', url: asset292Url, path: "assets/images/spells/darius_i.png" },
+  "spell_darius_q": { kind: 'image', url: asset293Url, path: "assets/images/spells/darius_q.png" },
+  "spell_darius_r": { kind: 'image', url: asset294Url, path: "assets/images/spells/darius_r.png" },
+  "spell_darius_w": { kind: 'image', url: asset295Url, path: "assets/images/spells/darius_w.png" },
+  "spell_diana_e": { kind: 'image', url: asset296Url, path: "assets/images/spells/diana_e.png" },
+  "spell_diana_i": { kind: 'image', url: asset297Url, path: "assets/images/spells/diana_i.png" },
+  "spell_diana_q": { kind: 'image', url: asset298Url, path: "assets/images/spells/diana_q.png" },
+  "spell_diana_r": { kind: 'image', url: asset299Url, path: "assets/images/spells/diana_r.png" },
+  "spell_diana_w": { kind: 'image', url: asset300Url, path: "assets/images/spells/diana_w.png" },
+  "spell_draven_e": { kind: 'image', url: asset301Url, path: "assets/images/spells/draven_e.png" },
+  "spell_draven_i": { kind: 'image', url: asset302Url, path: "assets/images/spells/draven_i.png" },
+  "spell_draven_q": { kind: 'image', url: asset303Url, path: "assets/images/spells/draven_q.png" },
+  "spell_draven_r": { kind: 'image', url: asset304Url, path: "assets/images/spells/draven_r.png" },
+  "spell_draven_r2": { kind: 'image', url: asset305Url, path: "assets/images/spells/draven_r2.png" },
+  "spell_draven_w": { kind: 'image', url: asset306Url, path: "assets/images/spells/draven_w.png" },
+  "spell_drmundo_e": { kind: 'image', url: asset307Url, path: "assets/images/spells/drmundo_e.png" },
+  "spell_drmundo_i": { kind: 'image', url: asset308Url, path: "assets/images/spells/drmundo_i.png" },
+  "spell_drmundo_q": { kind: 'image', url: asset309Url, path: "assets/images/spells/drmundo_q.png" },
+  "spell_drmundo_r": { kind: 'image', url: asset310Url, path: "assets/images/spells/drmundo_r.png" },
+  "spell_drmundo_w": { kind: 'image', url: asset311Url, path: "assets/images/spells/drmundo_w.png" },
+  "spell_ekko_e": { kind: 'image', url: asset312Url, path: "assets/images/spells/ekko_e.png" },
+  "spell_ekko_i": { kind: 'image', url: asset313Url, path: "assets/images/spells/ekko_i.png" },
+  "spell_ekko_q": { kind: 'image', url: asset314Url, path: "assets/images/spells/ekko_q.png" },
+  "spell_ekko_r": { kind: 'image', url: asset315Url, path: "assets/images/spells/ekko_r.png" },
+  "spell_ekko_w": { kind: 'image', url: asset316Url, path: "assets/images/spells/ekko_w.png" },
+  "spell_ezreal_e": { kind: 'image', url: asset317Url, path: "assets/images/spells/ezreal_e.png" },
+  "spell_ezreal_i": { kind: 'image', url: asset318Url, path: "assets/images/spells/ezreal_i.png" },
+  "spell_ezreal_q": { kind: 'image', url: asset319Url, path: "assets/images/spells/ezreal_q.png" },
+  "spell_ezreal_r": { kind: 'image', url: asset320Url, path: "assets/images/spells/ezreal_r.png" },
+  "spell_ezreal_w": { kind: 'image', url: asset321Url, path: "assets/images/spells/ezreal_w.png" },
+  "spell_fiora_e": { kind: 'image', url: asset322Url, path: "assets/images/spells/fiora_e.png" },
+  "spell_fiora_i": { kind: 'image', url: asset323Url, path: "assets/images/spells/fiora_i.png" },
+  "spell_fiora_i2": { kind: 'image', url: asset324Url, path: "assets/images/spells/fiora_i2.png" },
+  "spell_fiora_q": { kind: 'image', url: asset325Url, path: "assets/images/spells/fiora_q.png" },
+  "spell_fiora_r": { kind: 'image', url: asset326Url, path: "assets/images/spells/fiora_r.png" },
+  "spell_fiora_r2": { kind: 'image', url: asset327Url, path: "assets/images/spells/fiora_r2.png" },
+  "spell_fiora_w": { kind: 'image', url: asset328Url, path: "assets/images/spells/fiora_w.png" },
+  "spell_fizz_e": { kind: 'image', url: asset329Url, path: "assets/images/spells/fizz_e.png" },
+  "spell_fizz_e2": { kind: 'image', url: asset330Url, path: "assets/images/spells/fizz_e2.png" },
+  "spell_fizz_i": { kind: 'image', url: asset331Url, path: "assets/images/spells/fizz_i.png" },
+  "spell_fizz_q": { kind: 'image', url: asset332Url, path: "assets/images/spells/fizz_q.png" },
+  "spell_fizz_r": { kind: 'image', url: asset333Url, path: "assets/images/spells/fizz_r.png" },
+  "spell_fizz_w": { kind: 'image', url: asset334Url, path: "assets/images/spells/fizz_w.png" },
+  "spell_flash": { kind: 'image', url: asset335Url, path: "assets/images/spells/flash.png" },
+  "spell_garen_e": { kind: 'image', url: asset336Url, path: "assets/images/spells/garen_e.png" },
+  "spell_garen_e2": { kind: 'image', url: asset337Url, path: "assets/images/spells/garen_e2.png" },
+  "spell_garen_q": { kind: 'image', url: asset338Url, path: "assets/images/spells/garen_q.png" },
+  "spell_garen_r": { kind: 'image', url: asset339Url, path: "assets/images/spells/garen_r.png" },
+  "spell_garen_w": { kind: 'image', url: asset340Url, path: "assets/images/spells/garen_w.png" },
+  "spell_ghost": { kind: 'image', url: asset341Url, path: "assets/images/spells/ghost.png" },
+  "spell_graves_e": { kind: 'image', url: asset342Url, path: "assets/images/spells/graves_e.png" },
+  "spell_graves_q": { kind: 'image', url: asset343Url, path: "assets/images/spells/graves_q.png" },
+  "spell_graves_r": { kind: 'image', url: asset344Url, path: "assets/images/spells/graves_r.png" },
+  "spell_graves_w": { kind: 'image', url: asset345Url, path: "assets/images/spells/graves_w.png" },
+  "spell_heal": { kind: 'image', url: asset346Url, path: "assets/images/spells/heal.png" },
+  "spell_ignite": { kind: 'image', url: asset347Url, path: "assets/images/spells/ignite.png" },
+  "spell_irelia_e": { kind: 'image', url: asset348Url, path: "assets/images/spells/irelia_e.png" },
+  "spell_irelia_i": { kind: 'image', url: asset349Url, path: "assets/images/spells/irelia_i.png" },
+  "spell_irelia_q": { kind: 'image', url: asset350Url, path: "assets/images/spells/irelia_q.png" },
+  "spell_irelia_r": { kind: 'image', url: asset351Url, path: "assets/images/spells/irelia_r.png" },
+  "spell_irelia_w": { kind: 'image', url: asset352Url, path: "assets/images/spells/irelia_w.png" },
+  "spell_janna_e": { kind: 'image', url: asset353Url, path: "assets/images/spells/janna_e.png" },
+  "spell_janna_q": { kind: 'image', url: asset354Url, path: "assets/images/spells/janna_q.png" },
+  "spell_janna_r": { kind: 'image', url: asset355Url, path: "assets/images/spells/janna_r.png" },
+  "spell_janna_w": { kind: 'image', url: asset356Url, path: "assets/images/spells/janna_w.png" },
+  "spell_jarvaniv_e": { kind: 'image', url: asset357Url, path: "assets/images/spells/jarvaniv_e.png" },
+  "spell_jarvaniv_i": { kind: 'image', url: asset358Url, path: "assets/images/spells/jarvaniv_i.png" },
+  "spell_jarvaniv_q": { kind: 'image', url: asset359Url, path: "assets/images/spells/jarvaniv_q.png" },
+  "spell_jarvaniv_r": { kind: 'image', url: asset360Url, path: "assets/images/spells/jarvaniv_r.png" },
+  "spell_jarvaniv_w": { kind: 'image', url: asset361Url, path: "assets/images/spells/jarvaniv_w.png" },
+  "spell_jax_e": { kind: 'image', url: asset362Url, path: "assets/images/spells/jax_e.png" },
+  "spell_jax_i": { kind: 'image', url: asset363Url, path: "assets/images/spells/jax_i.png" },
+  "spell_jax_q": { kind: 'image', url: asset364Url, path: "assets/images/spells/jax_q.png" },
+  "spell_jax_r": { kind: 'image', url: asset365Url, path: "assets/images/spells/jax_r.png" },
+  "spell_jax_w": { kind: 'image', url: asset366Url, path: "assets/images/spells/jax_w.png" },
+  "spell_jhin_e": { kind: 'image', url: asset367Url, path: "assets/images/spells/jhin_e.png" },
+  "spell_jhin_i": { kind: 'image', url: asset368Url, path: "assets/images/spells/jhin_i.png" },
+  "spell_jhin_q": { kind: 'image', url: asset369Url, path: "assets/images/spells/jhin_q.png" },
+  "spell_jhin_r": { kind: 'image', url: asset370Url, path: "assets/images/spells/jhin_r.png" },
+  "spell_jhin_r2": { kind: 'image', url: asset371Url, path: "assets/images/spells/jhin_r2.png" },
+  "spell_jhin_r3": { kind: 'image', url: asset372Url, path: "assets/images/spells/jhin_r3.png" },
+  "spell_jhin_w": { kind: 'image', url: asset373Url, path: "assets/images/spells/jhin_w.png" },
+  "spell_jhin_w2": { kind: 'image', url: asset374Url, path: "assets/images/spells/jhin_w2.png" },
+  "spell_jinx_e": { kind: 'image', url: asset375Url, path: "assets/images/spells/jinx_e.png" },
+  "spell_jinx_e2": { kind: 'image', url: asset376Url, path: "assets/images/spells/jinx_e2.png" },
+  "spell_jinx_i": { kind: 'image', url: asset377Url, path: "assets/images/spells/jinx_i.png" },
+  "spell_jinx_q": { kind: 'image', url: asset378Url, path: "assets/images/spells/jinx_q.png" },
+  "spell_jinx_q2": { kind: 'image', url: asset379Url, path: "assets/images/spells/jinx_q2.png" },
+  "spell_jinx_q3": { kind: 'image', url: asset380Url, path: "assets/images/spells/jinx_q3.png" },
+  "spell_jinx_q4": { kind: 'image', url: asset381Url, path: "assets/images/spells/jinx_q4.png" },
+  "spell_jinx_r": { kind: 'image', url: asset382Url, path: "assets/images/spells/jinx_r.png" },
+  "spell_jinx_w": { kind: 'image', url: asset383Url, path: "assets/images/spells/jinx_w.png" },
+  "spell_katarina_e": { kind: 'image', url: asset384Url, path: "assets/images/spells/katarina_e.png" },
+  "spell_katarina_i": { kind: 'image', url: asset385Url, path: "assets/images/spells/katarina_i.png" },
+  "spell_katarina_i2": { kind: 'image', url: asset386Url, path: "assets/images/spells/katarina_i2.png" },
+  "spell_katarina_q": { kind: 'image', url: asset387Url, path: "assets/images/spells/katarina_q.png" },
+  "spell_katarina_r": { kind: 'image', url: asset388Url, path: "assets/images/spells/katarina_r.png" },
+  "spell_katarina_w": { kind: 'image', url: asset389Url, path: "assets/images/spells/katarina_w.png" },
+  "spell_kogmaw_e": { kind: 'image', url: asset390Url, path: "assets/images/spells/kogmaw_e.png" },
+  "spell_kogmaw_i": { kind: 'image', url: asset391Url, path: "assets/images/spells/kogmaw_i.png" },
+  "spell_kogmaw_q": { kind: 'image', url: asset392Url, path: "assets/images/spells/kogmaw_q.png" },
+  "spell_kogmaw_r": { kind: 'image', url: asset393Url, path: "assets/images/spells/kogmaw_r.png" },
+  "spell_kogmaw_w": { kind: 'image', url: asset394Url, path: "assets/images/spells/kogmaw_w.png" },
+  "spell_leblanc_e": { kind: 'image', url: asset395Url, path: "assets/images/spells/leblanc_e.png" },
+  "spell_leblanc_i": { kind: 'image', url: asset396Url, path: "assets/images/spells/leblanc_i.png" },
+  "spell_leblanc_q": { kind: 'image', url: asset397Url, path: "assets/images/spells/leblanc_q.png" },
+  "spell_leblanc_r": { kind: 'image', url: asset398Url, path: "assets/images/spells/leblanc_r.png" },
+  "spell_leblanc_r2": { kind: 'image', url: asset399Url, path: "assets/images/spells/leblanc_r2.png" },
+  "spell_leblanc_r3": { kind: 'image', url: asset400Url, path: "assets/images/spells/leblanc_r3.png" },
+  "spell_leblanc_r4": { kind: 'image', url: asset401Url, path: "assets/images/spells/leblanc_r4.png" },
+  "spell_leblanc_w": { kind: 'image', url: asset402Url, path: "assets/images/spells/leblanc_w.png" },
+  "spell_leblanc_w1": { kind: 'image', url: asset403Url, path: "assets/images/spells/leblanc_w1.png" },
+  "spell_leblanc_w2": { kind: 'image', url: asset404Url, path: "assets/images/spells/leblanc_w2.png" },
+  "spell_leesin_e": { kind: 'image', url: asset405Url, path: "assets/images/spells/leesin_e.png" },
+  "spell_leesin_e2": { kind: 'image', url: asset406Url, path: "assets/images/spells/leesin_e2.png" },
+  "spell_leesin_i": { kind: 'image', url: asset407Url, path: "assets/images/spells/leesin_i.png" },
+  "spell_leesin_q": { kind: 'image', url: asset408Url, path: "assets/images/spells/leesin_q.png" },
+  "spell_leesin_q1": { kind: 'image', url: asset409Url, path: "assets/images/spells/leesin_q1.png" },
+  "spell_leesin_q2": { kind: 'image', url: asset410Url, path: "assets/images/spells/leesin_q2.png" },
+  "spell_leesin_r": { kind: 'image', url: asset411Url, path: "assets/images/spells/leesin_r.png" },
+  "spell_leesin_w": { kind: 'image', url: asset412Url, path: "assets/images/spells/leesin_w.png" },
+  "spell_leesin_w2": { kind: 'image', url: asset413Url, path: "assets/images/spells/leesin_w2.png" },
+  "spell_lissandra_e": { kind: 'image', url: asset414Url, path: "assets/images/spells/lissandra_e.png" },
+  "spell_lissandra_i": { kind: 'image', url: asset415Url, path: "assets/images/spells/lissandra_i.png" },
+  "spell_lissandra_q": { kind: 'image', url: asset416Url, path: "assets/images/spells/lissandra_q.png" },
+  "spell_lissandra_r": { kind: 'image', url: asset417Url, path: "assets/images/spells/lissandra_r.png" },
+  "spell_lissandra_w": { kind: 'image', url: asset418Url, path: "assets/images/spells/lissandra_w.png" },
+  "spell_lucian_e": { kind: 'image', url: asset419Url, path: "assets/images/spells/lucian_e.png" },
+  "spell_lucian_i": { kind: 'image', url: asset420Url, path: "assets/images/spells/lucian_i.png" },
+  "spell_lucian_q": { kind: 'image', url: asset421Url, path: "assets/images/spells/lucian_q.png" },
+  "spell_lucian_r": { kind: 'image', url: asset422Url, path: "assets/images/spells/lucian_r.png" },
+  "spell_lucian_w": { kind: 'image', url: asset423Url, path: "assets/images/spells/lucian_w.png" },
+  "spell_lucian_w2": { kind: 'image', url: asset424Url, path: "assets/images/spells/lucian_w2.png" },
+  "spell_lucian_w3": { kind: 'image', url: asset425Url, path: "assets/images/spells/lucian_w3.png" },
+  "spell_lux_e": { kind: 'image', url: asset426Url, path: "assets/images/spells/lux_e.png" },
+  "spell_lux_q": { kind: 'image', url: asset427Url, path: "assets/images/spells/lux_q.png" },
+  "spell_lux_r": { kind: 'image', url: asset428Url, path: "assets/images/spells/lux_r.png" },
+  "spell_lux_w": { kind: 'image', url: asset429Url, path: "assets/images/spells/lux_w.png" },
+  "spell_malphite_e": { kind: 'image', url: asset430Url, path: "assets/images/spells/malphite_e.png" },
+  "spell_malphite_q": { kind: 'image', url: asset431Url, path: "assets/images/spells/malphite_q.png" },
+  "spell_malphite_r": { kind: 'image', url: asset432Url, path: "assets/images/spells/malphite_r.png" },
+  "spell_malphite_w": { kind: 'image', url: asset433Url, path: "assets/images/spells/malphite_w.png" },
+  "spell_malzahar_e": { kind: 'image', url: asset434Url, path: "assets/images/spells/malzahar_e.png" },
+  "spell_malzahar_q": { kind: 'image', url: asset435Url, path: "assets/images/spells/malzahar_q.png" },
+  "spell_malzahar_r": { kind: 'image', url: asset436Url, path: "assets/images/spells/malzahar_r.png" },
+  "spell_malzahar_w": { kind: 'image', url: asset437Url, path: "assets/images/spells/malzahar_w.png" },
+  "spell_masteryi_e": { kind: 'image', url: asset438Url, path: "assets/images/spells/masteryi_e.png" },
+  "spell_masteryi_i": { kind: 'image', url: asset439Url, path: "assets/images/spells/masteryi_i.png" },
+  "spell_masteryi_q": { kind: 'image', url: asset440Url, path: "assets/images/spells/masteryi_q.png" },
+  "spell_masteryi_r": { kind: 'image', url: asset441Url, path: "assets/images/spells/masteryi_r.png" },
+  "spell_masteryi_w": { kind: 'image', url: asset442Url, path: "assets/images/spells/masteryi_w.png" },
+  "spell_missfortune_e": { kind: 'image', url: asset443Url, path: "assets/images/spells/missfortune_e.png" },
+  "spell_missfortune_i": { kind: 'image', url: asset444Url, path: "assets/images/spells/missfortune_i.png" },
+  "spell_missfortune_q": { kind: 'image', url: asset445Url, path: "assets/images/spells/missfortune_q.png" },
+  "spell_missfortune_r": { kind: 'image', url: asset446Url, path: "assets/images/spells/missfortune_r.png" },
+  "spell_missfortune_w": { kind: 'image', url: asset447Url, path: "assets/images/spells/missfortune_w.png" },
+  "spell_missfortune_w2": { kind: 'image', url: asset448Url, path: "assets/images/spells/missfortune_w2.png" },
+  "spell_missfortune_w3": { kind: 'image', url: asset449Url, path: "assets/images/spells/missfortune_w3.png" },
+  "spell_mordekaiser_e": { kind: 'image', url: asset450Url, path: "assets/images/spells/mordekaiser_e.png" },
+  "spell_mordekaiser_i": { kind: 'image', url: asset451Url, path: "assets/images/spells/mordekaiser_i.png" },
+  "spell_mordekaiser_q": { kind: 'image', url: asset452Url, path: "assets/images/spells/mordekaiser_q.png" },
+  "spell_mordekaiser_r": { kind: 'image', url: asset453Url, path: "assets/images/spells/mordekaiser_r.png" },
+  "spell_mordekaiser_w": { kind: 'image', url: asset454Url, path: "assets/images/spells/mordekaiser_w.png" },
+  "spell_mordekaiser_w2": { kind: 'image', url: asset455Url, path: "assets/images/spells/mordekaiser_w2.png" },
+  "spell_morgana_e": { kind: 'image', url: asset456Url, path: "assets/images/spells/morgana_e.png" },
+  "spell_morgana_q": { kind: 'image', url: asset457Url, path: "assets/images/spells/morgana_q.png" },
+  "spell_morgana_r": { kind: 'image', url: asset458Url, path: "assets/images/spells/morgana_r.png" },
+  "spell_morgana_w": { kind: 'image', url: asset459Url, path: "assets/images/spells/morgana_w.png" },
+  "spell_nasus_e": { kind: 'image', url: asset460Url, path: "assets/images/spells/nasus_e.png" },
+  "spell_nasus_q": { kind: 'image', url: asset461Url, path: "assets/images/spells/nasus_q.png" },
+  "spell_nasus_r": { kind: 'image', url: asset462Url, path: "assets/images/spells/nasus_r.png" },
+  "spell_nasus_w": { kind: 'image', url: asset463Url, path: "assets/images/spells/nasus_w.png" },
+  "spell_nautilus_e": { kind: 'image', url: asset464Url, path: "assets/images/spells/nautilus_e.png" },
+  "spell_nautilus_i": { kind: 'image', url: asset465Url, path: "assets/images/spells/nautilus_i.png" },
+  "spell_nautilus_q": { kind: 'image', url: asset466Url, path: "assets/images/spells/nautilus_q.png" },
+  "spell_nautilus_r": { kind: 'image', url: asset467Url, path: "assets/images/spells/nautilus_r.png" },
+  "spell_nautilus_r2": { kind: 'image', url: asset468Url, path: "assets/images/spells/nautilus_r2.png" },
+  "spell_nautilus_w": { kind: 'image', url: asset469Url, path: "assets/images/spells/nautilus_w.png" },
+  "spell_nocturne_e": { kind: 'image', url: asset470Url, path: "assets/images/spells/nocturne_e.png" },
+  "spell_nocturne_q": { kind: 'image', url: asset471Url, path: "assets/images/spells/nocturne_q.png" },
+  "spell_nocturne_r": { kind: 'image', url: asset472Url, path: "assets/images/spells/nocturne_r.png" },
+  "spell_nocturne_w": { kind: 'image', url: asset473Url, path: "assets/images/spells/nocturne_w.png" },
+  "spell_olaf_e": { kind: 'image', url: asset474Url, path: "assets/images/spells/olaf_e.png" },
+  "spell_olaf_q": { kind: 'image', url: asset475Url, path: "assets/images/spells/olaf_q.png" },
+  "spell_olaf_r": { kind: 'image', url: asset476Url, path: "assets/images/spells/olaf_r.png" },
+  "spell_olaf_w": { kind: 'image', url: asset477Url, path: "assets/images/spells/olaf_w.png" },
+  "spell_old_blitzcrank_e": { kind: 'image', url: asset478Url, path: "assets/images/spells/old/blitzcrank_e.png" },
+  "spell_old_blitzcrank_internal": { kind: 'image', url: asset479Url, path: "assets/images/spells/old/blitzcrank_internal.png" },
+  "spell_old_blitzcrank_q": { kind: 'image', url: asset480Url, path: "assets/images/spells/old/blitzcrank_q.png" },
+  "spell_old_blitzcrank_r": { kind: 'image', url: asset481Url, path: "assets/images/spells/old/blitzcrank_r.png" },
+  "spell_old_blitzcrank_w": { kind: 'image', url: asset482Url, path: "assets/images/spells/old/blitzcrank_w.png" },
+  "spell_old_leesin_e": { kind: 'image', url: asset483Url, path: "assets/images/spells/old/leesin_e.png" },
+  "spell_old_leesin_q1": { kind: 'image', url: asset484Url, path: "assets/images/spells/old/leesin_q1.png" },
+  "spell_old_leesin_q2": { kind: 'image', url: asset485Url, path: "assets/images/spells/old/leesin_q2.png" },
+  "spell_old_leesin_r": { kind: 'image', url: asset486Url, path: "assets/images/spells/old/leesin_r.png" },
+  "spell_old_malphite_r": { kind: 'image', url: asset487Url, path: "assets/images/spells/old/malphite_r.png" },
+  "spell_old_olaf_q": { kind: 'image', url: asset488Url, path: "assets/images/spells/old/olaf_q.png" },
+  "spell_old_zed_w": { kind: 'image', url: asset489Url, path: "assets/images/spells/old/zed_w.png" },
+  "spell_old_zed_w2": { kind: 'image', url: asset490Url, path: "assets/images/spells/old/zed_w2.png" },
+  "spell_orianna_e": { kind: 'image', url: asset491Url, path: "assets/images/spells/orianna_e.png" },
+  "spell_orianna_i": { kind: 'image', url: asset492Url, path: "assets/images/spells/orianna_i.png" },
+  "spell_orianna_i2": { kind: 'image', url: asset493Url, path: "assets/images/spells/orianna_i2.png" },
+  "spell_orianna_q": { kind: 'image', url: asset494Url, path: "assets/images/spells/orianna_q.png" },
+  "spell_orianna_r": { kind: 'image', url: asset495Url, path: "assets/images/spells/orianna_r.png" },
+  "spell_orianna_w": { kind: 'image', url: asset496Url, path: "assets/images/spells/orianna_w.png" },
+  "spell_pantheon_e": { kind: 'image', url: asset497Url, path: "assets/images/spells/pantheon_e.png" },
+  "spell_pantheon_q": { kind: 'image', url: asset498Url, path: "assets/images/spells/pantheon_q.png" },
+  "spell_pantheon_r": { kind: 'image', url: asset499Url, path: "assets/images/spells/pantheon_r.png" },
+  "spell_pantheon_w": { kind: 'image', url: asset500Url, path: "assets/images/spells/pantheon_w.png" },
+  "spell_pyke_e": { kind: 'image', url: asset501Url, path: "assets/images/spells/pyke_e.png" },
+  "spell_pyke_i": { kind: 'image', url: asset502Url, path: "assets/images/spells/pyke_i.png" },
+  "spell_pyke_q": { kind: 'image', url: asset503Url, path: "assets/images/spells/pyke_q.png" },
+  "spell_pyke_r": { kind: 'image', url: asset504Url, path: "assets/images/spells/pyke_r.png" },
+  "spell_pyke_r2": { kind: 'image', url: asset505Url, path: "assets/images/spells/pyke_r2.png" },
+  "spell_pyke_w": { kind: 'image', url: asset506Url, path: "assets/images/spells/pyke_w.png" },
+  "spell_rammus_e": { kind: 'image', url: asset507Url, path: "assets/images/spells/rammus_e.png" },
+  "spell_rammus_q": { kind: 'image', url: asset508Url, path: "assets/images/spells/rammus_q.png" },
+  "spell_rammus_r": { kind: 'image', url: asset509Url, path: "assets/images/spells/rammus_r.png" },
+  "spell_rammus_w": { kind: 'image', url: asset510Url, path: "assets/images/spells/rammus_w.png" },
+  "spell_renekton_e": { kind: 'image', url: asset511Url, path: "assets/images/spells/renekton_e.png" },
+  "spell_renekton_i": { kind: 'image', url: asset512Url, path: "assets/images/spells/renekton_i.png" },
+  "spell_renekton_q": { kind: 'image', url: asset513Url, path: "assets/images/spells/renekton_q.png" },
+  "spell_renekton_r": { kind: 'image', url: asset514Url, path: "assets/images/spells/renekton_r.png" },
+  "spell_renekton_w": { kind: 'image', url: asset515Url, path: "assets/images/spells/renekton_w.png" },
+  "spell_riven_e": { kind: 'image', url: asset516Url, path: "assets/images/spells/riven_e.png" },
+  "spell_riven_i": { kind: 'image', url: asset517Url, path: "assets/images/spells/riven_i.png" },
+  "spell_riven_q": { kind: 'image', url: asset518Url, path: "assets/images/spells/riven_q.png" },
+  "spell_riven_r": { kind: 'image', url: asset519Url, path: "assets/images/spells/riven_r.png" },
+  "spell_riven_r2": { kind: 'image', url: asset520Url, path: "assets/images/spells/riven_r2.png" },
+  "spell_riven_w": { kind: 'image', url: asset521Url, path: "assets/images/spells/riven_w.png" },
+  "spell_sett_e": { kind: 'image', url: asset522Url, path: "assets/images/spells/sett_e.png" },
+  "spell_sett_i": { kind: 'image', url: asset523Url, path: "assets/images/spells/sett_i.png" },
+  "spell_sett_q": { kind: 'image', url: asset524Url, path: "assets/images/spells/sett_q.png" },
+  "spell_sett_q2": { kind: 'image', url: asset525Url, path: "assets/images/spells/sett_q2.png" },
+  "spell_sett_r": { kind: 'image', url: asset526Url, path: "assets/images/spells/sett_r.png" },
+  "spell_sett_w": { kind: 'image', url: asset527Url, path: "assets/images/spells/sett_w.png" },
+  "spell_shaco_e": { kind: 'image', url: asset528Url, path: "assets/images/spells/shaco_e.png" },
+  "spell_shaco_i": { kind: 'image', url: asset529Url, path: "assets/images/spells/shaco_i.png" },
+  "spell_shaco_q": { kind: 'image', url: asset530Url, path: "assets/images/spells/shaco_q.png" },
+  "spell_shaco_r": { kind: 'image', url: asset531Url, path: "assets/images/spells/shaco_r.png" },
+  "spell_shaco_r2": { kind: 'image', url: asset532Url, path: "assets/images/spells/shaco_r2.png" },
+  "spell_shaco_w": { kind: 'image', url: asset533Url, path: "assets/images/spells/shaco_w.png" },
+  "spell_shen_e": { kind: 'image', url: asset534Url, path: "assets/images/spells/shen_e.png" },
+  "spell_shen_i": { kind: 'image', url: asset535Url, path: "assets/images/spells/shen_i.png" },
+  "spell_shen_q": { kind: 'image', url: asset536Url, path: "assets/images/spells/shen_q.png" },
+  "spell_shen_q2": { kind: 'image', url: asset537Url, path: "assets/images/spells/shen_q2.png" },
+  "spell_shen_q3": { kind: 'image', url: asset538Url, path: "assets/images/spells/shen_q3.png" },
+  "spell_shen_r": { kind: 'image', url: asset539Url, path: "assets/images/spells/shen_r.png" },
+  "spell_shen_r2": { kind: 'image', url: asset540Url, path: "assets/images/spells/shen_r2.png" },
+  "spell_shen_w": { kind: 'image', url: asset541Url, path: "assets/images/spells/shen_w.png" },
+  "spell_singed_e": { kind: 'image', url: asset542Url, path: "assets/images/spells/singed_e.png" },
+  "spell_singed_q": { kind: 'image', url: asset543Url, path: "assets/images/spells/singed_q.png" },
+  "spell_singed_r": { kind: 'image', url: asset544Url, path: "assets/images/spells/singed_r.png" },
+  "spell_singed_w": { kind: 'image', url: asset545Url, path: "assets/images/spells/singed_w.png" },
+  "spell_soraka_e": { kind: 'image', url: asset546Url, path: "assets/images/spells/soraka_e.png" },
+  "spell_soraka_i": { kind: 'image', url: asset547Url, path: "assets/images/spells/soraka_i.png" },
+  "spell_soraka_q": { kind: 'image', url: asset548Url, path: "assets/images/spells/soraka_q.png" },
+  "spell_soraka_r": { kind: 'image', url: asset549Url, path: "assets/images/spells/soraka_r.png" },
+  "spell_soraka_w": { kind: 'image', url: asset550Url, path: "assets/images/spells/soraka_w.png" },
+  "spell_stealthward": { kind: 'image', url: asset551Url, path: "assets/images/spells/stealthward.png" },
+  "spell_syndra_e": { kind: 'image', url: asset552Url, path: "assets/images/spells/syndra_e.png" },
+  "spell_syndra_i": { kind: 'image', url: asset553Url, path: "assets/images/spells/syndra_i.png" },
+  "spell_syndra_q": { kind: 'image', url: asset554Url, path: "assets/images/spells/syndra_q.png" },
+  "spell_syndra_r": { kind: 'image', url: asset555Url, path: "assets/images/spells/syndra_r.png" },
+  "spell_syndra_w": { kind: 'image', url: asset556Url, path: "assets/images/spells/syndra_w.png" },
+  "spell_syndra_w2": { kind: 'image', url: asset557Url, path: "assets/images/spells/syndra_w2.png" },
+  "spell_teemo_e": { kind: 'image', url: asset558Url, path: "assets/images/spells/teemo_e.png" },
+  "spell_teemo_q": { kind: 'image', url: asset559Url, path: "assets/images/spells/teemo_q.png" },
+  "spell_teemo_r": { kind: 'image', url: asset560Url, path: "assets/images/spells/teemo_r.png" },
+  "spell_teemo_w": { kind: 'image', url: asset561Url, path: "assets/images/spells/teemo_w.png" },
+  "spell_thresh_e": { kind: 'image', url: asset562Url, path: "assets/images/spells/thresh_e.gif" },
+  "spell_thresh_e2": { kind: 'image', url: asset563Url, path: "assets/images/spells/thresh_e2.gif" },
+  "spell_thresh_e3": { kind: 'image', url: asset564Url, path: "assets/images/spells/thresh_e3.gif" },
+  "spell_thresh_e4": { kind: 'image', url: asset565Url, path: "assets/images/spells/thresh_e4.gif" },
+  "spell_thresh_e5": { kind: 'image', url: asset566Url, path: "assets/images/spells/thresh_e5.gif" },
+  "spell_thresh_i": { kind: 'image', url: asset567Url, path: "assets/images/spells/thresh_i.png" },
+  "spell_thresh_q": { kind: 'image', url: asset568Url, path: "assets/images/spells/thresh_q.png" },
+  "spell_thresh_q2": { kind: 'image', url: asset569Url, path: "assets/images/spells/thresh_q2.png" },
+  "spell_thresh_r": { kind: 'image', url: asset570Url, path: "assets/images/spells/thresh_r.png" },
+  "spell_thresh_w": { kind: 'image', url: asset571Url, path: "assets/images/spells/thresh_w.png" },
+  "spell_trundle_e": { kind: 'image', url: asset572Url, path: "assets/images/spells/trundle_e.png" },
+  "spell_trundle_i": { kind: 'image', url: asset573Url, path: "assets/images/spells/trundle_i.png" },
+  "spell_trundle_q": { kind: 'image', url: asset574Url, path: "assets/images/spells/trundle_q.png" },
+  "spell_trundle_r": { kind: 'image', url: asset575Url, path: "assets/images/spells/trundle_r.png" },
+  "spell_trundle_w": { kind: 'image', url: asset576Url, path: "assets/images/spells/trundle_w.png" },
+  "spell_tryndamere_e": { kind: 'image', url: asset577Url, path: "assets/images/spells/tryndamere_e.png" },
+  "spell_tryndamere_i": { kind: 'image', url: asset578Url, path: "assets/images/spells/tryndamere_i.png" },
+  "spell_tryndamere_q": { kind: 'image', url: asset579Url, path: "assets/images/spells/tryndamere_q.png" },
+  "spell_tryndamere_r": { kind: 'image', url: asset580Url, path: "assets/images/spells/tryndamere_r.png" },
+  "spell_tryndamere_w": { kind: 'image', url: asset581Url, path: "assets/images/spells/tryndamere_w.png" },
+  "spell_twistedfate_e": { kind: 'image', url: asset582Url, path: "assets/images/spells/twistedfate_e.png" },
+  "spell_twistedfate_i": { kind: 'image', url: asset583Url, path: "assets/images/spells/twistedfate_i.png" },
+  "spell_twistedfate_q": { kind: 'image', url: asset584Url, path: "assets/images/spells/twistedfate_q.png" },
+  "spell_twistedfate_r": { kind: 'image', url: asset585Url, path: "assets/images/spells/twistedfate_r.png" },
+  "spell_twistedfate_r2": { kind: 'image', url: asset586Url, path: "assets/images/spells/twistedfate_r2.png" },
+  "spell_twistedfate_w": { kind: 'image', url: asset587Url, path: "assets/images/spells/twistedfate_w.png" },
+  "spell_twistedfate_w2": { kind: 'image', url: asset588Url, path: "assets/images/spells/twistedfate_w2.png" },
+  "spell_twistedfate_w3": { kind: 'image', url: asset589Url, path: "assets/images/spells/twistedfate_w3.png" },
+  "spell_twistedfate_w4": { kind: 'image', url: asset590Url, path: "assets/images/spells/twistedfate_w4.png" },
+  "spell_twitch_e": { kind: 'image', url: asset591Url, path: "assets/images/spells/twitch_e.png" },
+  "spell_twitch_i": { kind: 'image', url: asset592Url, path: "assets/images/spells/twitch_i.png" },
+  "spell_twitch_q": { kind: 'image', url: asset593Url, path: "assets/images/spells/twitch_q.png" },
+  "spell_twitch_q2": { kind: 'image', url: asset594Url, path: "assets/images/spells/twitch_q2.png" },
+  "spell_twitch_q3": { kind: 'image', url: asset595Url, path: "assets/images/spells/twitch_q3.png" },
+  "spell_twitch_r": { kind: 'image', url: asset596Url, path: "assets/images/spells/twitch_r.png" },
+  "spell_twitch_w": { kind: 'image', url: asset597Url, path: "assets/images/spells/twitch_w.png" },
+  "spell_varus_e": { kind: 'image', url: asset598Url, path: "assets/images/spells/varus_e.png" },
+  "spell_varus_q": { kind: 'image', url: asset599Url, path: "assets/images/spells/varus_q.png" },
+  "spell_varus_r": { kind: 'image', url: asset600Url, path: "assets/images/spells/varus_r.png" },
+  "spell_varus_w": { kind: 'image', url: asset601Url, path: "assets/images/spells/varus_w.png" },
+  "spell_vayne_e": { kind: 'image', url: asset602Url, path: "assets/images/spells/vayne_e.png" },
+  "spell_vayne_i": { kind: 'image', url: asset603Url, path: "assets/images/spells/vayne_i.png" },
+  "spell_vayne_q": { kind: 'image', url: asset604Url, path: "assets/images/spells/vayne_q.png" },
+  "spell_vayne_r": { kind: 'image', url: asset605Url, path: "assets/images/spells/vayne_r.png" },
+  "spell_vayne_w": { kind: 'image', url: asset606Url, path: "assets/images/spells/vayne_w.png" },
+  "spell_veigar_e": { kind: 'image', url: asset607Url, path: "assets/images/spells/veigar_e.png" },
+  "spell_veigar_q": { kind: 'image', url: asset608Url, path: "assets/images/spells/veigar_q.png" },
+  "spell_veigar_r": { kind: 'image', url: asset609Url, path: "assets/images/spells/veigar_r.png" },
+  "spell_veigar_w": { kind: 'image', url: asset610Url, path: "assets/images/spells/veigar_w.png" },
+  "spell_vi_e": { kind: 'image', url: asset611Url, path: "assets/images/spells/vi_e.png" },
+  "spell_vi_e2": { kind: 'image', url: asset612Url, path: "assets/images/spells/vi_e2.png" },
+  "spell_vi_i": { kind: 'image', url: asset613Url, path: "assets/images/spells/vi_i.png" },
+  "spell_vi_q": { kind: 'image', url: asset614Url, path: "assets/images/spells/vi_q.png" },
+  "spell_vi_r": { kind: 'image', url: asset615Url, path: "assets/images/spells/vi_r.png" },
+  "spell_vi_w": { kind: 'image', url: asset616Url, path: "assets/images/spells/vi_w.png" },
+  "spell_vi_w2": { kind: 'image', url: asset617Url, path: "assets/images/spells/vi_w2.png" },
+  "spell_vladimir_e": { kind: 'image', url: asset618Url, path: "assets/images/spells/vladimir_e.png" },
+  "spell_vladimir_i": { kind: 'image', url: asset619Url, path: "assets/images/spells/vladimir_i.png" },
+  "spell_vladimir_q": { kind: 'image', url: asset620Url, path: "assets/images/spells/vladimir_q.png" },
+  "spell_vladimir_q2": { kind: 'image', url: asset621Url, path: "assets/images/spells/vladimir_q2.png" },
+  "spell_vladimir_r": { kind: 'image', url: asset622Url, path: "assets/images/spells/vladimir_r.png" },
+  "spell_vladimir_w": { kind: 'image', url: asset623Url, path: "assets/images/spells/vladimir_w.png" },
+  "spell_warwick_e": { kind: 'image', url: asset624Url, path: "assets/images/spells/warwick_e.png" },
+  "spell_warwick_q": { kind: 'image', url: asset625Url, path: "assets/images/spells/warwick_q.png" },
+  "spell_warwick_r": { kind: 'image', url: asset626Url, path: "assets/images/spells/warwick_r.png" },
+  "spell_warwick_w": { kind: 'image', url: asset627Url, path: "assets/images/spells/warwick_w.png" },
+  "spell_xerath_e": { kind: 'image', url: asset628Url, path: "assets/images/spells/xerath_e.png" },
+  "spell_xerath_i": { kind: 'image', url: asset629Url, path: "assets/images/spells/xerath_i.png" },
+  "spell_xerath_q": { kind: 'image', url: asset630Url, path: "assets/images/spells/xerath_q.png" },
+  "spell_xerath_r": { kind: 'image', url: asset631Url, path: "assets/images/spells/xerath_r.png" },
+  "spell_xerath_w": { kind: 'image', url: asset632Url, path: "assets/images/spells/xerath_w.png" },
+  "spell_xinzhao_e": { kind: 'image', url: asset633Url, path: "assets/images/spells/xinzhao_e.png" },
+  "spell_xinzhao_i": { kind: 'image', url: asset634Url, path: "assets/images/spells/xinzhao_i.png" },
+  "spell_xinzhao_i2": { kind: 'image', url: asset635Url, path: "assets/images/spells/xinzhao_i2.png" },
+  "spell_xinzhao_q": { kind: 'image', url: asset636Url, path: "assets/images/spells/xinzhao_q.png" },
+  "spell_xinzhao_r": { kind: 'image', url: asset637Url, path: "assets/images/spells/xinzhao_r.png" },
+  "spell_xinzhao_w": { kind: 'image', url: asset638Url, path: "assets/images/spells/xinzhao_w.png" },
+  "spell_yasuo_e": { kind: 'image', url: asset639Url, path: "assets/images/spells/yasuo_e.png" },
+  "spell_yasuo_i": { kind: 'image', url: asset640Url, path: "assets/images/spells/yasuo_i.png" },
+  "spell_yasuo_q": { kind: 'image', url: asset641Url, path: "assets/images/spells/yasuo_q.png" },
+  "spell_yasuo_q1": { kind: 'image', url: asset642Url, path: "assets/images/spells/yasuo_q1.png" },
+  "spell_yasuo_q2": { kind: 'image', url: asset643Url, path: "assets/images/spells/yasuo_q2.png" },
+  "spell_yasuo_q3": { kind: 'image', url: asset644Url, path: "assets/images/spells/yasuo_q3.png" },
+  "spell_yasuo_r": { kind: 'image', url: asset645Url, path: "assets/images/spells/yasuo_r.png" },
+  "spell_yasuo_w": { kind: 'image', url: asset646Url, path: "assets/images/spells/yasuo_w.png" },
+  "spell_zed_e": { kind: 'image', url: asset647Url, path: "assets/images/spells/zed_e.png" },
+  "spell_zed_i": { kind: 'image', url: asset648Url, path: "assets/images/spells/zed_i.png" },
+  "spell_zed_q": { kind: 'image', url: asset649Url, path: "assets/images/spells/zed_q.png" },
+  "spell_zed_r": { kind: 'image', url: asset650Url, path: "assets/images/spells/zed_r.png" },
+  "spell_zed_r1": { kind: 'image', url: asset651Url, path: "assets/images/spells/zed_r1.png" },
+  "spell_zed_r2": { kind: 'image', url: asset652Url, path: "assets/images/spells/zed_r2.png" },
+  "spell_zed_w": { kind: 'image', url: asset653Url, path: "assets/images/spells/zed_w.png" },
+  "spell_zed_w2": { kind: 'image', url: asset654Url, path: "assets/images/spells/zed_w2.png" },
+  "spell_ziggs_e": { kind: 'image', url: asset655Url, path: "assets/images/spells/ziggs_e.png" },
+  "spell_ziggs_i": { kind: 'image', url: asset656Url, path: "assets/images/spells/ziggs_i.png" },
+  "spell_ziggs_q": { kind: 'image', url: asset657Url, path: "assets/images/spells/ziggs_q.png" },
+  "spell_ziggs_r": { kind: 'image', url: asset658Url, path: "assets/images/spells/ziggs_r.png" },
+  "spell_ziggs_w": { kind: 'image', url: asset659Url, path: "assets/images/spells/ziggs_w.png" },
 } as const;
 
 export type AssetKey = keyof typeof assetManifest;
