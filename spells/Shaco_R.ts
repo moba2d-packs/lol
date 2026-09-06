@@ -1,3 +1,4 @@
+import type { Champion } from '@moba2d/core/content/types';
 import { Shaco_W_Box } from './Shaco_W';
 import { ATTACK_DAMAGE, ATTACK_RANGE } from './Shaco_W';
 import { api } from '../packApi';
@@ -83,6 +84,67 @@ export class Shaco_R_Clone extends Pet {
   /** The clone is a copy of Shaco, so it fights at his reach rather than a pet's. */
   aggroRadius = 500;
 
+  /**
+   * It wears the champion frame, not the summon badge — see
+   * `Pet.disguisedAsChampion`. A decoy under a narrow pet bar with a lifetime
+   * clock ticking under its feet is a decoy nobody has ever been fooled by:
+   * the enemy reads the bar before they read the body.
+   */
+  disguisedAsChampion = true;
+
+  constructor(options: ConstructorParameters<typeof Pet>[0]) {
+    super(options);
+    this.shacoR_wearOwnersNumbers();
+  }
+
+  /** The score box on the champion frame. A decoy prints its owner's number. */
+  get score(): number {
+    // `?? 0` for a summoner that is not a champion — nothing in the game
+    // summons this but Shaco, but the frame prints whatever it is handed and
+    // `String(undefined)` would print it.
+    return (this.ownerUnit as Champion).score ?? 0;
+  }
+
+  /**
+   * The frame is only half the disguise; the numbers drawn inside it are the
+   * other half, and only this spell knows whose they should be.
+   *
+   * A champion bar is drawn from `maxHealth` (which decides how many tick
+   * marks rule it — two on a stock pet's 100, twelve on a champion who has
+   * bought health), from current health, from the mana pool, and from `score`.
+   * A stock pet has 100 health and a score of zero whatever its summoner is
+   * carrying, so before this an enemy could tell the two apart from across the
+   * screen without ever looking at the bodies.
+   *
+   * Current health rather than a full pool, deliberately: a fresh full bar
+   * beside a Shaco at a third of his is its own tell, and *which of these two
+   * hurt Shacos is the real one* is the question the ultimate exists to ask.
+   */
+  private shacoR_wearOwnersNumbers(): void {
+    const source = this.ownerUnit as Champion;
+    // `.value` on the way in, `baseValue` on the way out: the clone is a
+    // snapshot of what the champion *is* at the moment of the cast, items
+    // included, and it owns no inventory for those modifiers to hang off.
+    this.stats.maxHealth.baseValue = source.stats.maxHealth.value;
+    this.stats.health.baseValue = Math.min(source.stats.health.value, this.stats.maxHealth.value);
+    // The pool, which is what the frame draws the strip's width from. Not the
+    // needle: core's only sanctioned way for a pack to move a unit's current
+    // mana is `restoreMana`, which grants and never bills (the `mana-spend`
+    // seam is what says so), and a decoy that never casts anything has nothing
+    // to spend from a full one anyway.
+    this.stats.maxMana.baseValue = source.stats.maxMana.value;
+    this.stats.size.baseValue = source.stats.size.value;
+    this.stats.speed.baseValue = source.stats.speed.value;
+    // The attack profile travels too. A decoy that lobs bolts at 300 while the
+    // champion it copies swings a dagger in someone's face is spotted on its
+    // first swing — `attackRange` alone is what decides melee or ranged.
+    this.stats.attackDamage.baseValue = source.stats.attackDamage.value;
+    this.stats.attackSpeed.baseValue = source.stats.attackSpeed.value;
+    this.stats.attackRange.baseValue = source.stats.attackRange.value;
+    this.attackBoltUnitsPerSecond = source.attackBoltUnitsPerSecond;
+    this.name = source.name;
+  }
+
   update() {
     super.update();
     if (this.toRemove) return;
@@ -95,19 +157,37 @@ export class Shaco_R_Clone extends Pet {
     }
   }
 
-  draw() {
-    super.draw();
+  draw(...options: Parameters<InstanceType<typeof Pet>['draw']>) {
+    // Forwarded, not dropped: at mobile zoom every champion on screen wears
+    // the compact frame, and a decoy that kept the full one because its own
+    // `draw()` swallowed the argument would be the only wide bar in the fight.
+    super.draw(...options);
     if (this.toRemove) return;
 
-    // draw circle if clone too far away from owner
-    if (this.ownerUnit != this.game.player) return;
+    // The one thing the enemy must never see and the one thing the caster
+    // cannot do without: which of the two identical Shacos on screen is the
+    // puppet. Drawn only in the client of the player who cast it, the same way
+    // the buried box paints an owner-only hint of itself.
+    //
+    // It replaces a ring of `shacoR_maxRange * 2` — two thousand units wide,
+    // centred on the clone rather than on the tether's actual anchor, so it
+    // marked no boundary that existed and covered a quarter of the map doing
+    // it. The tether is still worth showing, so it moved into this marker: the
+    // ring tightens and brightens as the clone nears the range that snaps it
+    // back, which is the only part of the old drawing that meant anything.
+    if (this.ownerUnit !== this.game.player) return;
     const distance = this.position.dist(this.ownerUnit.position);
-    if (distance > this.shacoR_maxRange / 2) {
-      const alpha = map(distance, this.shacoR_maxRange / 2, this.shacoR_maxRange, 0, 255);
-      noFill();
-      stroke(255, alpha);
-      circle(this.position.x, this.position.y, this.shacoR_maxRange * 2);
-    }
+    const strain = constrain(
+      map(distance, this.shacoR_maxRange / 2, this.shacoR_maxRange, 0, 1),
+      0,
+      1
+    );
+    push();
+    noFill();
+    stroke(255, 255, 255, 70 + 150 * strain);
+    strokeWeight(1 + 2 * strain);
+    circle(this.position.x, this.position.y, this.animatedValues.displaySize + 12);
+    pop();
   }
 
   /** The parting gift: `Pet.expire()` calls this, whatever ended the clone. */

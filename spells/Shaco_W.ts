@@ -35,6 +35,13 @@ export const BOX_HEALTH = 30;
 /** Points on the jester's coil chain, drawn every frame it is triggered. */
 const COIL_LINKS = 8;
 
+/**
+ * How much of a buried box is drawn — the same whisper this pack's other
+ * hidden trap is drawn at. Enough that a player who already knows where it is
+ * can pick it out; never enough to read at a glance in a fight.
+ */
+const HIDDEN_ALPHA = 25;
+
 
 export default class Shaco_W extends Spell {
   targetingMode = 'POINT' as const;
@@ -196,18 +203,38 @@ export class Shaco_W_Box extends Pet {
 
   /**
    * A jack-in-the-box, not a champion portrait: a lidded wind-up box while it
-   * waits, the jester flung out on a coil once it pops. No range ring — the toy
-   * itself is the whole telegraph.
+   * waits, the jester flung out on a coil once it pops.
+   *
+   * Nothing is drawn while it is hidden but a ghost of the crate itself — a
+   * trap whose trigger radius the enemy can read is not a trap. Once it has
+   * popped the box is a revealed unit shooting everything inside `ATTACK_RANGE`
+   * for four seconds, and *that* reach is drawn: without it, "am I out of it
+   * yet" has no answer on screen.
    */
   drawAvatar(): void {
     if (this.hidden) {
-      // Owner-only hint at the buried box; enemies see nothing at all because
-      // `Stealthed` keeps the whole unit out of their render pass.
+      // The buried crate, in silhouette. Everyone sees this much, which is the
+      // same deal the other hidden trap in this pack offers — and the claim
+      // that used to stand here, that "enemies see nothing at all because
+      // `Stealthed` keeps the whole unit out of their render pass", was simply
+      // false: `Stealthed` fades a body to alpha 20, it does not cull it.
+      //
+      // What actually gave the box away was never this picture but everything
+      // painted around it — the health badge, the facing line, and above all
+      // `Untargetable`'s three pulsing rings, which were drawn at a fixed
+      // alpha and so stayed bright while the crate under them faded. A buried
+      // box was a ring of light on an empty patch of ground. `Pet.draw` now
+      // paints none of that while a summon is hidden, so this is the whole of
+      // what a buried box looks like.
       push();
       translate(this.position.x, this.position.y);
       noStroke();
-      fill(255, 26);
-      rect(-9, -9, 18, 18, 3);
+      fill(150, 40, 60, HIDDEN_ALPHA);
+      rect(-14, -12, 28, 24, 4);
+      fill(240, 200, 70, HIDDEN_ALPHA);
+      rect(-14, 2, 28, 8, 0, 0, 3, 3);
+      fill(120, 30, 50, HIDDEN_ALPHA);
+      rect(-15, -16, 30, 6, 3);
       pop();
       return;
     }
@@ -215,6 +242,14 @@ export class Shaco_W_Box extends Pet {
     const bob = this.triggered ? 6 + 4 * Math.sin(this.age / 90) : 0;
     push();
     translate(this.position.x, this.position.y);
+
+    // The barrage's reach, drawn only once the box has popped.
+    if (this.triggered) {
+      noFill();
+      stroke(240, 200, 70, 120);
+      strokeWeight(2);
+      circle(0, 0, ATTACK_RANGE * 2);
+    }
 
     // the crate body — jester red with a yellow front band and a diamond, so it
     // reads as a toy box rather than a plain barrel
@@ -297,9 +332,10 @@ export class Shaco_W_Box extends Pet {
   }
 
   getDisplayBoundingBox() {
-    // Covers the crate and the jester at the top of its coil; the bolts it fires
-    // are their own SpellObjects with their own boxes.
-    return this.squareDisplayBoundingBox(120);
+    // Covers the crate, the jester at the top of its coil and the barrage ring
+    // it paints once popped; the bolts it fires are their own SpellObjects with
+    // their own boxes.
+    return this.squareDisplayBoundingBox((ATTACK_RANGE + 20) * 2);
   }
 }
 
