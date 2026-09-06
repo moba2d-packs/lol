@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { buildTestApi } from '@moba2d/core/testing';
 import {
   createGame,
@@ -8,6 +8,14 @@ import {
   pressSpell,
   type TestGame,
 } from '@moba2d/core/testing/spell';
+import Item_Voltaic, {
+  Item_Voltaic_Charge,
+  VOLTAIC_BONUS_DAMAGE,
+  VOLTAIC_CHARGE_DISTANCE,
+  VOLTAIC_MOVEMENT_EPSILON,
+  VOLTAIC_SLOW_MS,
+  VOLTAIC_SLOW_PERCENT,
+} from '../../spells/Item_Voltaic';
 import Item_Serylda, {
   SERYLDA_SLOW_MS,
   SERYLDA_SLOW_PERCENT,
@@ -127,5 +135,105 @@ describe('Thương Phục Hận Serylda', () => {
 
     expect(slowsOn(victim)).toHaveLength(1);
     expect(victim.stats.speed.value).toBeCloseTo(unslowed * (1 - SERYLDA_SLOW_PERCENT), 6);
+  });
+});
+
+describe('Kiếm Điện Phong', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+    vi.stubGlobal('deltaTime', 100);
+  });
+
+  const armed = (holder: ReturnType<typeof createUnit>): Item_Voltaic_Charge => {
+    expect(pressSpell(new Item_Voltaic(holder))).toBe(true);
+    return live(holder)[0] as Item_Voltaic_Charge;
+  };
+
+  /** Walk `steps` frames of `perFrame` units, ticking the buff each frame. */
+  const walk = (
+    holder: ReturnType<typeof createUnit>,
+    charge: Item_Voltaic_Charge,
+    steps: number,
+    perFrame: number
+  ): void => {
+    for (let i = 0; i < steps; i++) {
+      holder.position.set(holder.position.x + perFrame, holder.position.y);
+      charge.update();
+    }
+  };
+
+  const swing = (attacker: unknown, victim: unknown, echo = false) =>
+    api.combat.applyOnHitEffects({
+      attacker,
+      victim,
+      damage: 10,
+      ranged: false,
+      crit: false,
+      echo,
+    } as never);
+
+  it('banks the distance walked, and stops at the threshold', () => {
+    const holder = createUnit(game, 0);
+    const charge = armed(holder);
+
+    walk(holder, charge, 100, 10);
+
+    expect(charge.travelled).toBe(VOLTAIC_CHARGE_DISTANCE);
+    expect(charge.charged()).toBe(true);
+  });
+
+  it('counts a frame of standing still as nothing', () => {
+    const holder = createUnit(game, 0);
+    const charge = armed(holder);
+
+    walk(holder, charge, 40, VOLTAIC_MOVEMENT_EPSILON / 2);
+
+    expect(charge.travelled).toBe(0);
+  });
+
+  it('adds nothing to a swing thrown before the blade is full', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 120, 'red');
+    const charge = armed(holder);
+    walk(holder, charge, 2, 10);
+
+    const hurt = vi.spyOn(victim, 'takeDamage');
+    swing(holder, victim);
+
+    expect(hurt).not.toHaveBeenCalled();
+    expect(slowsOn(victim)).toHaveLength(0);
+  });
+
+  it('spends the whole blade on one swing: a flat bite and a hard stagger', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 120, 'red');
+    const charge = armed(holder);
+    walk(holder, charge, 100, 10);
+
+    const hurt = vi.spyOn(victim, 'takeDamage');
+    swing(holder, victim);
+
+    expect(hurt.mock.calls.map(call => call[0])).toEqual([VOLTAIC_BONUS_DAMAGE]);
+    expect(hurt.mock.calls[0][2]).toBe('PHYSICAL');
+    const arc = slowsOn(victim);
+    expect(arc).toHaveLength(1);
+    expect((arc[0] as unknown as { percent: number }).percent).toBe(VOLTAIC_SLOW_PERCENT);
+    expect(arc[0].duration).toBe(VOLTAIC_SLOW_MS);
+    expect(charge.travelled).toBe(0);
+  });
+
+  it('never discharges off an echoed application', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 120, 'red');
+    const charge = armed(holder);
+    walk(holder, charge, 100, 10);
+
+    const hurt = vi.spyOn(victim, 'takeDamage');
+    swing(holder, victim, true);
+
+    expect(hurt).not.toHaveBeenCalled();
+    expect(charge.travelled).toBe(VOLTAIC_CHARGE_DISTANCE);
   });
 });

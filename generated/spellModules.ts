@@ -176,6 +176,7 @@ export const spellModules: Record<string, () => Promise<SpellModule>> = {
   "Item_Tiamat": () => import('../spells/Item_Tiamat'),
   "Item_TitanicHydra": () => import('../spells/Item_TitanicHydra'),
   "Item_TrinityForce": () => import('../spells/Item_TrinityForce'),
+  "Item_Voltaic": () => import('../spells/Item_Voltaic'),
   "Item_WitsEnd": () => import('../spells/Item_WitsEnd'),
   "Item_Zeke": () => import('../spells/Item_Zeke'),
   "Item_Zhonyas": () => import('../spells/Item_Zhonyas'),

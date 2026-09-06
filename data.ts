@@ -2379,6 +2379,19 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { attackDamage: 19, armorPenetration: 0.25, abilityHaste: 10 },
     passive: 'Item_Serylda',
   },
+  voltaic_cyclosword: {
+    id: 'voltaic_cyclosword',
+    name: 'Kiếm Điện Phong',
+    icon: 'item_voltaic_cyclosword',
+    cost: 1750,
+    buildsFrom: ['serrated_dirk', 'phage'],
+    description:
+      'Nội tại: di chuyển tích điện; khi tích đầy, đòn đánh kế tiếp gây thêm ' +
+      '<span class="damage physical" data-flat="none">8 sát thương vật lý</span> và làm chậm ' +
+      '<span class="buff">40%</span> trong <span class="time">1 giây</span>.',
+    stats: { attackDamage: 17, armorPenetration: 0.12, maxHealth: 30, speedPercent: 0.05 },
+    passive: 'Item_Voltaic',
+  },
 });
 
 /**

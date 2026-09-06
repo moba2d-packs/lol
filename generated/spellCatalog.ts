@@ -1356,6 +1356,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_Voltaic": {
+    name: "Kiếm Điện Phong (Item_Voltaic)",
+    description: "Nội tại: di chuyển tích điện; khi tích đầy, đòn đánh kế tiếp gây thêm 8 sát thương vật lý và làm chậm 40% trong 1 giây",
+    iconKey: "item_voltaic_cyclosword",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_WitsEnd": {
     name: "Đao Tím (Item_WitsEnd)",
     description: "Nội tại: đòn đánh gây thêm sát thương phép bằng 18% công và tăng 0.45 tốc chạy trong 1.5 giây",
