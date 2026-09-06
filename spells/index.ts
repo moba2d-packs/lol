@@ -394,3 +394,8 @@ export { default as Jax_Q } from './Jax_Q';
 export { default as Jax_W } from './Jax_W';
 export { default as Jax_E } from './Jax_E';
 export { default as Jax_R } from './Jax_R';
+
+export { default as Lucian_Q } from './Lucian_Q';
+export { default as Lucian_W } from './Lucian_W';
+export { default as Lucian_E } from './Lucian_E';
+export { default as Lucian_R } from './Lucian_R';

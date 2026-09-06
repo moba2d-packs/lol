@@ -272,6 +272,13 @@ const ROSTER: {
     spells: ['Jax_Q', 'Jax_W', 'Jax_E', 'Jax_R'],
   },
   {
+    name: 'Lucian',
+    attack: { ...ATTACK.MARKSMAN, boltUnitsPerSecond: 1800 },
+    image: 'champ_lucian',
+
+    spells: ['Lucian_Q', 'Lucian_W', 'Lucian_E', 'Lucian_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',
