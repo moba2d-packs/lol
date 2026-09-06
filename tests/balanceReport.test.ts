@@ -153,12 +153,33 @@ describe('gold-for-gold, the two builds this shop sells', () => {
     // build ≈ 5.7x damage, 1.5x rate" note predated the crit line entirely.
     //
     // The 2026-08-28 rebalance raised the six ability items' fractions to a
-    // best-six sum of 7.9 (`items.test.ts` pins the table), which measures:
+    // best-six sum of 7.9 (`items.test.ts` pins the table), which measured:
     // attack 20.23x for 8600g (+2.24x/1000g), ability 11.87x for 8800g
     // (+1.23x/1000g), **ratio 1.81** — the deliberate target band of 1.5-2,
     // slightly attack-favoured on stats because the attack path's on-hit
     // passives are not in this floor while the ability path's item actives
     // are not either, and the two roughly wash.
+    //
+    // **That 1.81 went stale and nobody noticed.** Every attack shelf added
+    // after it moved this number and none of them re-read it: by 2026-09-06
+    // the measurement was **2.062** — attack 27.26x for 9650g (+2.72x/1000g)
+    // against ability 12.48x for 8700g (+1.32x/1000g) — which is 0.038 from
+    // the `< 2.1` line below, on a test that was green every single run. The
+    // band did the job it was written for and the *comment* was the part
+    // that failed, which is worth saying out loud: a number in prose beside
+    // an assertion is documentation, and documentation rots.
+    //
+    // The mage/lethality shelf of 2026-09-06 was sized against that
+    // measurement rather than against the note: five of its rows sell
+    // ability power and seven sell ability haste, and not one of its attack
+    // rows is strong enough to enter the best attack six (which is
+    // byte-identical before and after). It measures **1.82** — attack
+    // 27.26x for 9650g (+2.72x/1000g), ability 15.12x for 9450g
+    // (+1.49x/1000g) — back on the band's own target.
+    //
+    // If you are reading this after adding a shelf: re-run it and update
+    // these three figures. That is the maintenance this comment costs, and
+    // the alternative is what happened above.
     expect(
       ratio,
       `attack:ability per-gold ratio drifted to ${ratio.toFixed(2)}`

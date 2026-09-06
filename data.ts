@@ -2493,6 +2493,24 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { abilityPower: 0.9, maxHealth: 35, abilityHaste: 20 },
     passive: 'Item_ImperialMandate',
   },
+  experimental_hexplate: {
+    id: 'experimental_hexplate',
+    name: 'Khiên Hextech Thử Nghiệm',
+    icon: 'item_experimental_hexplate',
+    cost: 1600,
+    buildsFrom: ['caulfields_warhammer', 'recurve_bow'],
+    // The only row bought for one key. Four seconds rather than live's eight:
+    // this pack's ultimates are on ten-second cooldowns or less, so an
+    // eight-second window is ~80% uptime — a permanent buff wearing a
+    // cooldown's clothes. And a 20% shave off the ultimate's own remaining
+    // cooldown rather than ability haste, which would speed the whole kit.
+    description:
+      'Nội tại: sau khi dùng chiêu cuối, tăng <span class="buff">30%</span> tốc đánh và ' +
+      '<span class="buff">15%</span> tốc chạy trong <span class="time">4 giây</span>, đồng thời ' +
+      'giảm <span class="buff">20%</span> thời gian hồi còn lại của chiêu cuối.',
+    stats: { attackDamage: 10, maxHealth: 45, attackSpeed: 0.15, abilityHaste: 15, onHitDamage: 1 },
+    passive: 'Item_Hexplate',
+  },
 });
 
 /**

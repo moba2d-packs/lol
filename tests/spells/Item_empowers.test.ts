@@ -8,6 +8,14 @@ import {
   pressSpell,
   type TestGame,
 } from '@moba2d/core/testing/spell';
+import Item_Hexplate, {
+  HEXPLATE_ATTACK_SPEED,
+  HEXPLATE_COOLDOWN_REFUND,
+  HEXPLATE_DURATION_MS,
+  HEXPLATE_MOVE_SPEED,
+  HEXPLATE_SURGE_STACK_ID,
+} from '../../spells/Item_Hexplate';
+import Nasus_R from '../../spells/Nasus_R';
 import Item_ImperialMandate, {
   Item_ImperialMandate_Mark,
   Item_ImperialMandate_Order,
@@ -170,5 +178,111 @@ describe('Trát Lệnh Đế Vương', () => {
     enemy.takeDamage(5, holder, 'MAGIC');
 
     expect(markOn(enemy)).toBeTruthy();
+  });
+});
+
+describe('Khiên Hextech Thử Nghiệm', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+    vi.stubGlobal('deltaTime', 100);
+  });
+
+  const champion = (x: number, teamId: string) =>
+    new Champion({ game, position: createVector(x, 0), teamId } as never);
+
+  /**
+   * A real ultimate in the real slot. `SpellSlot.R` is **4** — slot 0 is the
+   * basic attack — and identity against `spells[4]` is the whole test: the
+   * kit row deliberately excludes Hồi Thành, the passive and every item
+   * active, which is what stops the plate powering itself.
+   */
+  const withUltimate = (holder: ReturnType<typeof champion>) => {
+    const ultimate = new Nasus_R(holder);
+    (holder as unknown as { spells: unknown[] }).spells = [null, null, null, null, ultimate];
+    return ultimate;
+  };
+
+  it('goes hot when the ultimate goes off, and hands the stats back after', () => {
+    const holder = champion(0, 'blue');
+    game.setPlayer(holder);
+    const ultimate = withUltimate(holder);
+    expect(pressSpell(new Item_Hexplate(holder))).toBe(true);
+    const swingRate = holder.stats.attackSpeed.value;
+    const runSpeed = holder.stats.speed.value;
+
+    expect(pressSpell(ultimate)).toBe(true);
+
+    expect(holder.stats.attackSpeed.value).toBeCloseTo(
+      swingRate * (1 + HEXPLATE_ATTACK_SPEED),
+      6
+    );
+    expect(holder.stats.speed.value).toBeCloseTo(runSpeed * (1 + HEXPLATE_MOVE_SPEED), 6);
+
+    const surge = live(holder).find(buff => buff.stackId === HEXPLATE_SURGE_STACK_ID);
+    expect(surge?.duration).toBe(HEXPLATE_DURATION_MS);
+    vi.stubGlobal('deltaTime', HEXPLATE_DURATION_MS + 100);
+    surge?.update();
+    expect(holder.stats.attackSpeed.value).toBeCloseTo(swingRate, 6);
+    expect(holder.stats.speed.value).toBeCloseTo(runSpeed, 6);
+  });
+
+  /**
+   * `ON_POST_CAST_SPELL` fires inside the runtime's release step and
+   * `startCooldown` runs before it, for both `startAt: 'start'` and
+   * `startAt: 'release'` — so there is a real clock here to file off. If that
+   * ordering ever flips, this assertion is what says so.
+   */
+  it('files a fifth off the ultimate it just watched', () => {
+    // Measured against the same ultimate on a champion who is not wearing
+    // the plate, rather than against a number this file works out for itself
+    // — `reducedCooldown` is core's, and the haste curve is not this test's
+    // business.
+    const bare = champion(0, 'blue');
+    game.setPlayer(bare);
+    const bareUltimate = withUltimate(bare);
+    expect(pressSpell(bareUltimate)).toBe(true);
+    const full = bareUltimate.currentCooldown;
+    expect(full).toBeGreaterThan(0);
+
+    const holder = champion(200, 'blue');
+    const ultimate = withUltimate(holder);
+    pressSpell(new Item_Hexplate(holder));
+
+    pressSpell(ultimate);
+
+    expect(ultimate.currentCooldown).toBeCloseTo(full * (1 - HEXPLATE_COOLDOWN_REFUND), 3);
+    expect(ultimate.currentCooldown).toBeLessThan(full);
+  });
+
+  it('cannot power itself off its own arming press, or off a basic ability', () => {
+    const holder = champion(0, 'blue');
+    game.setPlayer(holder);
+    const basic = new Nasus_R(holder);
+    // The kit's R slot is somebody else entirely; this instance sits in a
+    // basic slot, exactly as a Q would.
+    (holder as unknown as { spells: unknown[] }).spells = [null, basic, null, null, null];
+
+    pressSpell(new Item_Hexplate(holder));
+    const swingRate = holder.stats.attackSpeed.value;
+    pressSpell(basic);
+
+    expect(live(holder).some(buff => buff.stackId === HEXPLATE_SURGE_STACK_ID)).toBe(false);
+    expect(holder.stats.attackSpeed.value).toBe(swingRate);
+  });
+
+  it('stops listening when the plate is sold', () => {
+    const holder = champion(0, 'blue');
+    game.setPlayer(holder);
+    const ultimate = withUltimate(holder);
+    pressSpell(new Item_Hexplate(holder));
+    const swingRate = holder.stats.attackSpeed.value;
+
+    // What `Spell.onRemoved` does to a buff naming it as `sourceSpell`.
+    live(holder)[0].deactivateBuff();
+    pressSpell(ultimate);
+
+    expect(holder.stats.attackSpeed.value).toBe(swingRate);
   });
 });

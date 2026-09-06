@@ -1076,6 +1076,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_Hexplate": {
+    name: "Khiên Hextech Thử Nghiệm (Item_Hexplate)",
+    description: "Nội tại: sau khi dùng chiêu cuối, tăng 30% tốc đánh và 15% tốc chạy trong 4 giây, đồng thời giảm 20% thời gian hồi còn lại của chiêu cuối",
+    iconKey: "item_experimental_hexplate",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_Hullbreaker": {
     name: "Búa Tiến Công (Item_Hullbreaker)",
     description: "Nội tại: khi không có đồng minh nào đứng gần, tăng 25% giáp và kháng phép",
