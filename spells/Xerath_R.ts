@@ -107,9 +107,13 @@ export default class Xerath_R extends Spell {
     if (this.shotsFired >= R_SHOTS || this.owner.isDead) return;
     this.shotsFired += 1;
 
+    // `aimPoint` is a `p5.Vector`; `context.cursorWorld` is a frozen plain
+    // `{x, y}`. The fallback mixed the two shapes, so the cursor half has to be
+    // rebuilt into a vector rather than handed straight to a p5 helper.
+    const aim = this.aimPoint ?? context.cursorWorld;
     const { to } = VectorUtils.getVectorWithMaxRange(
       this.owner.position,
-      this.aimPoint ?? context.cursorWorld,
+      createVector(aim.x, aim.y),
       effectiveRange(R_RANGE, this.owner)
     );
     this.game.objectManager.addObject(new Xerath_R_Shell(this.owner, to.x, to.y));
