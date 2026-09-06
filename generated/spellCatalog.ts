@@ -940,6 +940,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_Cryptbloom": {
+    name: "Hoa Tử Linh (Item_Cryptbloom)",
+    description: "Nội tại: khi bạn hạ gục một tướng địch, hồi 8% máu tối đa cho bản thân và các đồng minh xung quanh",
+    iconKey: "item_cryptbloom",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_DeadMansPlate": {
     name: "Giáp Người Chết (Item_DeadMansPlate)",
     description: "Nội tại: di chuyển tích lực, tối đa tăng 30% tốc chạy; đòn đánh kế tiếp xả toàn bộ lực, gây tới 8 + 5% máu tối đa sát thương vật lý và làm chậm 50% khi tích đầy",

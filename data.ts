@@ -2303,6 +2303,23 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { abilityPower: 1.3, magicPenetration: 0.25 },
     passive: 'Item_Shadowflame',
   },
+  cryptbloom: {
+    id: 'cryptbloom',
+    name: 'Hoa Tử Linh',
+    icon: 'item_cryptbloom',
+    cost: 1800,
+    buildsFrom: ['blighting_jewel', 'blasting_wand'],
+    // Kills, not takedowns: assists are not observable from a pack —
+    // `payAssists` and the participation ledger are private, and
+    // `UnitDeathEvent` carries the killer and the credit and nothing else. So
+    // the card says "hạ gục" and deliberately not "hạ gục hoặc hỗ trợ".
+    description:
+      'Nội tại: khi bạn hạ gục một tướng địch, hồi ' +
+      '<span class="heal" data-flat="none">8% máu tối đa</span> cho bản thân và các đồng minh ' +
+      'xung quanh.',
+    stats: { abilityPower: 1.4, magicPenetration: 0.22, abilityHaste: 10 },
+    passive: 'Item_Cryptbloom',
+  },
 });
 
 /**

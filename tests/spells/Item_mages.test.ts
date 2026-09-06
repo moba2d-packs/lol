@@ -9,6 +9,10 @@ import {
   type TestGame,
 } from '@moba2d/core/testing/spell';
 import Item_Rylai, { RYLAI_SLOW_MS, RYLAI_SLOW_PERCENT } from '../../spells/Item_Rylai';
+import Item_Cryptbloom, {
+  CRYPTBLOOM_HEAL_PERCENT,
+  CRYPTBLOOM_RADIUS,
+} from '../../spells/Item_Cryptbloom';
 import Item_Shadowflame, {
   SHADOWFLAME_BONUS,
   SHADOWFLAME_THRESHOLD,
@@ -33,6 +37,7 @@ installSpellObjectGlobals();
 
 const api = buildTestApi();
 const { Slow } = api.buffs;
+const { Champion } = api.units;
 
 /**
  * The mage shelf added on 2026-09-06 — the passives that ride a caster's own
@@ -426,5 +431,82 @@ describe('Ngọn Lửa Hắc Hóa', () => {
     victim.takeDamage(4, holder, 'MAGIC');
 
     expect(hurt).toHaveBeenCalledTimes(2);
+  });
+});
+
+describe('Hoa Tử Linh', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+  });
+
+  const champion = (x: number, teamId: string) =>
+    new Champion({ game, position: createVector(x, 0), teamId } as never);
+
+  it('blooms on a champion kill credited to the wearer, over everyone standing with them', () => {
+    const holder = champion(0, 'blue');
+    const ally = champion(CRYPTBLOOM_RADIUS / 2, 'blue');
+    const far = champion(CRYPTBLOOM_RADIUS * 3, 'blue');
+    const victim = champion(60, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, ally, far, victim]);
+    expect(pressSpell(new Item_Cryptbloom(holder))).toBe(true);
+
+    for (const unit of [holder, ally, far]) unit.stats.health.baseValue = 10;
+    victim.takeDamage(10_000, holder, 'MAGIC');
+
+    const share = CRYPTBLOOM_HEAL_PERCENT;
+    expect(holder.stats.health.baseValue).toBe(10 + Math.round(holder.stats.maxHealth.value * share));
+    expect(ally.stats.health.baseValue).toBe(10 + Math.round(ally.stats.maxHealth.value * share));
+    expect(far.stats.health.baseValue, 'the bloom reached past its own radius').toBe(10);
+  });
+
+  it('pays nothing for a kill somebody else took', () => {
+    const holder = champion(0, 'blue');
+    const other = champion(40, 'blue');
+    const victim = champion(60, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, other, victim]);
+    pressSpell(new Item_Cryptbloom(holder));
+    holder.stats.health.baseValue = 10;
+
+    victim.takeDamage(10_000, other, 'MAGIC');
+
+    expect(holder.stats.health.baseValue).toBe(10);
+  });
+
+  /**
+   * `credit` is the victim's own `killCredit` — 'minion' for a lane creep and
+   * a camp — so the item asks "was that a champion" without the pack knowing
+   * core's unit classes. A jungler healing to full off a camp is the thing
+   * this closes.
+   */
+  it('pays nothing for a minion or a camp', () => {
+    const holder = champion(0, 'blue');
+    game.setPlayer(holder);
+    const creep = createUnit(game, 60, 'red');
+    indexObjects(game, [holder, creep]);
+    pressSpell(new Item_Cryptbloom(holder));
+    holder.stats.health.baseValue = 10;
+
+    creep.takeDamage(10_000, holder, 'MAGIC');
+
+    expect(holder.stats.health.baseValue).toBe(10);
+  });
+
+  it('stops listening when the item is sold', () => {
+    const holder = champion(0, 'blue');
+    const victim = champion(60, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, victim]);
+    pressSpell(new Item_Cryptbloom(holder));
+    holder.stats.health.baseValue = 10;
+
+    // What `Spell.onRemoved` does to a buff naming it as `sourceSpell`.
+    live(holder)[0].deactivateBuff();
+    victim.takeDamage(10_000, holder, 'MAGIC');
+
+    expect(holder.stats.health.baseValue).toBe(10);
   });
 });

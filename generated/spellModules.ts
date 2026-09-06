@@ -124,6 +124,7 @@ export const spellModules: Record<string, () => Promise<SpellModule>> = {
   "Item_BlackCleaver": () => import('../spells/Item_BlackCleaver'),
   "Item_BrambleVest": () => import('../spells/Item_BrambleVest'),
   "Item_Collector": () => import('../spells/Item_Collector'),
+  "Item_Cryptbloom": () => import('../spells/Item_Cryptbloom'),
   "Item_DeadMansPlate": () => import('../spells/Item_DeadMansPlate'),
   "Item_DivineSunderer": () => import('../spells/Item_DivineSunderer'),
   "Item_DuskAndDawn": () => import('../spells/Item_DuskAndDawn'),
