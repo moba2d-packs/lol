@@ -41,6 +41,9 @@ export const E_SLOW_PERCENT = 0.4;
 /** How often the aura re-checks who is standing in it. */
 export const E_SLOW_REAPPLY_MS = 200;
 
+/** How long the eruption's shove is painted for. Art only; the shove is instant. */
+export const E_SHOVE_FLASH_MS = 300;
+
 /** Both debuffs outlive one tick, so they never flicker off between them. */
 const E_SLOW_BUFF_MS = E_SLOW_REAPPLY_MS + 200;
 
@@ -277,6 +280,19 @@ export class Trundle_E_Object extends SpellObject implements DynamicWall {
     stroke(150, 205, 240, 90 * fade);
     strokeWeight(2);
     circle(0, 0, E_SLOW_RADIUS * 2 * this.growth);
+
+    // The eruption's shove, which is a different rule from the aura standing
+    // around it: a one-shot throw, spent on the frame the pillar arrived. A
+    // wave races out to exactly the radius that threw people and holds there
+    // while it fades, so the two zones are never read as one.
+    if (this.age < E_SHOVE_FLASH_MS) {
+      const spent = constrain(this.age / E_SHOVE_FLASH_MS, 0, 1);
+      const raced = constrain(spent / 0.55, 0, 1);
+      const wave = 1 - (1 - raced) * (1 - raced);
+      stroke(225, 245, 255, 235 * (1 - spent));
+      strokeWeight(4 * (1 - spent) + 1);
+      circle(0, 0, E_KNOCKBACK_RADIUS * 2 * wave);
+    }
 
     rotate(this.angle);
 

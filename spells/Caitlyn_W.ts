@@ -226,14 +226,16 @@ export class Caitlyn_W_Trap extends SpellObject {
     // the plate turns as it beds in, then holds still once armed
     rotate(armed ? 0 : (1 - settle) * 1.2);
 
-    // brass hexagon body
+    // Brass hexagon body, its corners on the trigger radius exactly. The plate
+    // used to stop at 0.84 of it, so the trap sprang on a champion who had
+    // walked clear of every brass edge on screen.
     stroke(96, 68, 30, 235);
     strokeWeight(3);
     fill(168, 124, 52, 210);
     beginShape();
     for (let i = 0; i < 6; i++) {
       const a = (TWO_PI / 6) * i;
-      vertex(cos(a) * d * 0.42 * settle, sin(a) * d * 0.42 * settle);
+      vertex(cos(a) * d * 0.5 * settle, sin(a) * d * 0.5 * settle);
     }
     endShape(CLOSE);
 
@@ -277,16 +279,17 @@ export class Caitlyn_W_Trap extends SpellObject {
     noFill();
     stroke(120, 235, 240, 235 * fade);
     strokeWeight(4 * fade + 1.5);
-    circle(0, 0, d * (0.6 + 0.5 * snap));
+    circle(0, 0, d * (0.6 + 0.4 * snap));
 
     stroke(215, 250, 250, 230 * fade);
     strokeWeight(3);
     for (const bar of this._bars) {
       const a = bar.angle + bar.lean;
-      const base = d * 0.24;
-      const top = d * 0.24 + d * 0.42 * snap;
-      // bars lean inward as they rise, so it closes over the victim
-      line(cos(a) * base, sin(a) * base, cos(a) * top * 0.82, sin(a) * top * 0.82 - 16 * snap);
+      const base = d * 0.2;
+      // The jaws close on the trigger radius and no further — the ring above
+      // is the same number, so the cage encloses exactly what the trap caught.
+      const top = d * 0.2 + d * 0.3 * snap;
+      line(cos(a) * base, sin(a) * base, cos(a) * top, sin(a) * top - 16 * snap);
     }
 
     const flash = 1 - constrain(t / 0.18, 0, 1);

@@ -72,8 +72,8 @@
       "asset": {
         "key": "spell_shen_q2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Shen_Twilight_Assault.png?ae337",
-        "sha1": "6adb65b4daa3fa599b6da942f4de036451a4424b"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Shen_Twilight_Assault_2.png?faf30",
+        "sha1": "e7c1bf963855aebeeae35cfe6ec51eec654de63a"
       },
       "fields": {
         "casttime": "none",
@@ -133,8 +133,8 @@
       "asset": {
         "key": "spell_shen_q3",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Shen_Twilight_Assault.png?ae337",
-        "sha1": "6adb65b4daa3fa599b6da942f4de036451a4424b"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Shen_Twilight_Assault_3.png?468e4",
+        "sha1": "ae7abc4bbaf73a94e710e1cd99411620fcf77a6c"
       },
       "fields": {
         "casttime": "none",
@@ -195,7 +195,7 @@
   "slot": "Q",
   "source": {
     "contentHash": "8fdf3ec78058356f1a6746d30aa361e308299c8aafd56aaae069c2ab0c6d11e9",
-    "fetchedAt": "2026-08-26T19:29:02.718Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Shen/Twilight_Assault",
     "revisionId": 4008038,
     "sourceTimestamp": "2026-04-13T04:23:20Z"

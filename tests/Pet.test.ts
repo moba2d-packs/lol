@@ -15,7 +15,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { buildTestApi } from '@moba2d/core/testing';
 import { createGame, createUnit, installSpellObjectGlobals, pressSpell } from '@moba2d/core/testing/spell';
-import Shaco_R from '../spells/Shaco_R';
+import Shaco_R, { Shaco_R_Clone } from '../spells/Shaco_R';
 import { ARM_TIME_MS } from '../spells/Shaco_W';
 import Shaco_W, { Shaco_W_Box } from '../spells/Shaco_W';
 import { CHOMPED_STACK_ID, LAND_TIME_MS, ARM_TIME_MS as CHOMPER_ARM_MS } from '../spells/Jinx_E';
@@ -280,5 +280,66 @@ describe('a summoned pet obeys the recast', () => {
 
     expect(tibbers.underOrders).toBe(false);
     expect(tibbers.basicAttack.target).toBe(enemy);
+  });
+});
+
+/**
+ * The disguise.
+ *
+ * A decoy that reads as a summon is a decoy nobody has ever been fooled by:
+ * the enemy reads the bar before they read the body, and a narrow badge with a
+ * lifetime clock ticking under it says "fake" from across the screen.
+ * `Pet.disguisedAsChampion` hands back the champion frame; the numbers drawn
+ * inside that frame have to be copied here, because only this spell knows who
+ * is being impersonated.
+ */
+describe("Shaco R's clone is dressed as Shaco, not as a summon", () => {
+  const summonClone = (dress: (shaco: Champion) => void = () => {}) => {
+    const game = createGame();
+    const shaco = new Champion({ game, position: createVector(0, 0), teamId: 'blue' });
+    (game as unknown as { worldMouse: unknown }).worldMouse = shaco.position.copy();
+    game.objectManager.queryObjects = vi.fn(() => []) as never;
+    dress(shaco);
+
+    pressSpell(new Shaco_R(shaco), { at: shaco.position });
+    const clone = game.objectManager._objectToBeAdd.find(
+      (object: unknown): object is Shaco_R_Clone => object instanceof Shaco_R_Clone
+    );
+    return { game, shaco, clone: clone! };
+  };
+
+  it('wears the champion frame rather than the summon badge', () => {
+    const { clone } = summonClone();
+
+    expect(clone.disguisedAsChampion).toBe(true);
+  });
+
+  it('copies the pool the bar is drawn from, at the fill its champion is on', () => {
+    // Tick marks are drawn off `maxHealth` and the bar is filled off health, so
+    // a stock pet's 100/100 beside a hurt champion's 210/640 is two different
+    // pictures before anybody looks at the bodies.
+    const { shaco, clone } = summonClone(source => {
+      source.stats.maxHealth.baseValue = 640;
+      source.stats.health.baseValue = 210;
+    });
+
+    expect(clone.stats.maxHealth.value).toBe(shaco.stats.maxHealth.value);
+    expect(clone.stats.health.value).toBe(shaco.stats.health.value);
+  });
+
+  it('swings the way its champion swings, so its first attack does not give it away', () => {
+    const { clone } = summonClone(source => {
+      source.stats.attackRange.baseValue = 120;
+      source.stats.attackDamage.baseValue = 47;
+    });
+
+    expect(clone.stats.attackRange.value).toBe(120);
+    expect(clone.stats.attackDamage.value).toBe(47);
+  });
+
+  it('prints its summoner’s score in the frame’s score box', () => {
+    const { shaco, clone } = summonClone();
+
+    expect(clone.score).toBe(shaco.score);
   });
 });

@@ -50,8 +50,8 @@
       "asset": {
         "key": "spell_sett_q2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Sett_Knuckle_Down.png?a7444",
-        "sha1": "a947f9a3dbe6ffb9315d995464db56ab51b3a5e3"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Sett_Looking_for_a_Fight.png?577fd",
+        "sha1": "b874ecf231221db4f8f5eb6454f62cb517d9797b"
       },
       "fields": {
         "casttime": "none",
@@ -90,7 +90,7 @@
   "slot": "Q",
   "source": {
     "contentHash": "4c8ba474fb1418b73aae2ea4a7fa739d78853d141a24fcb97c24722d84ceb944",
-    "fetchedAt": "2026-08-17T14:38:03.922Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Sett/Knuckle_Down",
     "revisionId": 4024545,
     "sourceTimestamp": "2026-06-01T14:02:44Z"

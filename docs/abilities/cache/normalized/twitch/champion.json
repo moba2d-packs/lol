@@ -11,7 +11,7 @@
     "alttype": "Assassin",
     "apiname": "Twitch",
     "be": 1575,
-    "changes": "V26.09",
+    "changes": "V26.16",
     "client_positions": [
       "Bottom"
     ],
@@ -85,8 +85,8 @@
       "mp5_lvl": 0.7,
       "mp_base": 300,
       "mp_lvl": 40,
-      "mr_base": 30,
-      "mr_lvl": 1.3,
+      "mr_base": 33,
+      "mr_lvl": 1.1,
       "ms": 330,
       "ofa": {
         "dmg_dealt": 0.98
@@ -107,10 +107,10 @@
   },
   "schemaVersion": 1,
   "source": {
-    "contentHash": "c3c475b2b7d7d7dd9f49829894d57330c35c04e472545f4c67dae85050b25320",
-    "fetchedAt": "2026-08-13T10:47:18.264Z",
+    "contentHash": "0a8cbedff99329340a654496b622d10e4691d79b12c732c10f50733d87dc03af",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
-    "revisionId": 4051472,
-    "sourceTimestamp": "2026-08-12T18:33:05Z"
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
   }
 }

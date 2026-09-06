@@ -53,6 +53,26 @@ export const BONUS_HEALTH = 50;
 
 export const SPEED_PERCENT = 0.3;
 
+/**
+ * The stat the potion is *for*, and the one this pack shipped without.
+ *
+ * `docs/abilities/singed/r.json` lists what Insanity Potion grants and ability
+ * power is first on the list; ours granted health, speed and attack damage —
+ * three stats that do nothing for the poison trail, which is where nearly all
+ * of Singed's damage lives. So the ultimate of a damage-over-time champion was
+ * the one cast that did not touch his damage over time.
+ *
+ * `abilityPower` is a **fraction** in this engine (core's
+ * `combat/Amplification.ts`), so 0.6 is +60% on every ability he owns, for the
+ * nine seconds it is up. Sized at roughly one mid-shelf item out of a six-item
+ * ceiling of 7.9 — enough that the trail is a different ability while it burns,
+ * short of a second build.
+ *
+ * It is also the half a tank Singed can never buy, which is the point: the
+ * ultimate is where a champion who spends his gold on health gets to scale.
+ */
+export const ABILITY_POWER = 0.6;
+
 
 /** He drinks it before anything happens — the flask empties, then the gas comes. */
 export const CHUG_MS = 420;
@@ -92,7 +112,8 @@ export default class Singed_R extends Spell {
   description =
     `Uống thuốc trong <span class="time">${secs(DURATION)} giây</span>:` +
     ` <span class="buff">+${BONUS_HEALTH} máu tối đa</span>, <span class="buff">+${pct(SPEED_PERCENT)}% tốc chạy</span>` +
-    ` và <span class="buff">+6 sát thương đánh thường</span>.` +
+    `, <span class="buff">+6 sát thương đánh thường</span>` +
+    ` và <span class="buff">+${pct(ABILITY_POWER)}% sát thương phép</span>.` +
     ` Trong lúc đó, vệt độc còn đặt <span class="buff">Vết Thương Sâu ${pct(POISON_WOUND_PERCENT)}%</span> lên kẻ dính độc`;
   coolDown = 10000;
   manaCost = 50;
@@ -106,6 +127,7 @@ export default class Singed_R extends Spell {
       maxHealth: { baseBonus: BONUS_HEALTH },
       speed: { percentBaseBonus: SPEED_PERCENT },
       attackDamage: { baseBonus: 6 },
+      abilityPower: { baseBonus: ABILITY_POWER },
     };
     this.owner.addBuff(amp);
 

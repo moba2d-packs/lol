@@ -49,8 +49,8 @@
       "asset": {
         "key": "spell_jinx_e2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jinx_Flame_Chompers%21.png?e0b49",
-        "sha1": "dec50d28b664768f6f11294104ec020a99d17a70"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jinx_Flame_Chompers%21_2.png?95c76",
+        "sha1": "ccb03db4c250e9e8c1941bd5236ff1b5cd12d5c6"
       },
       "fields": {
         "casttime": "none",
@@ -88,7 +88,7 @@
   "slot": "E",
   "source": {
     "contentHash": "89dcc1d38197118b19a36ef5bff2db93d210683817ca13672c79104b19806d1f",
-    "fetchedAt": "2026-08-16T08:10:14.032Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Jinx/Flame_Chompers!",
     "revisionId": 3993368,
     "sourceTimestamp": "2026-02-21T15:35:19Z"

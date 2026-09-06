@@ -115,9 +115,9 @@
   "schemaVersion": 1,
   "source": {
     "contentHash": "866978f11ae7142263e58e5c509d41e69e135b076843f47e658ad6b21b06c961",
-    "fetchedAt": "2026-08-17T14:38:03.922Z",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
-    "revisionId": 4052219,
-    "sourceTimestamp": "2026-08-16T02:35:56Z"
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
   }
 }

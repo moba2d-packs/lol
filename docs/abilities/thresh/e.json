@@ -35,8 +35,8 @@
           "text": "Minimum Bonus Magic Damage:1.7 per Soul collected (+ 0% AD)\nMaximum Bonus Magic Damage:1.7 per Soul collected (+ 90 / 120 / 150 / 180 / 210% AD)"
         },
         "leveling2": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 120 / 165 / 210 / 255 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 70% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
-          "text": "Magic Damage:75 / 120 / 165 / 210 / 255 (+ 70% AP)Slow:20 / 25 / 30 / 35 / 40%"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>65 / 110 / 155 / 200 / 245 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
+          "text": "Magic Damage:65 / 110 / 155 / 200 / 245 (+ 60% AP)Slow:20 / 25 / 30 / 35 / 40%"
         },
         "name": "Flay",
         "notes": {
@@ -80,8 +80,8 @@
           "text": "Minimum Bonus Magic Damage:1.7 per Soul collected (+ 0% AD)\nMaximum Bonus Magic Damage:1.7 per Soul collected (+ 90 / 120 / 150 / 180 / 210% AD)"
         },
         "leveling2": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 120 / 165 / 210 / 255 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 70% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
-          "text": "Magic Damage:75 / 120 / 165 / 210 / 255 (+ 70% AP)Slow:20 / 25 / 30 / 35 / 40%"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>65 / 110 / 155 / 200 / 245 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
+          "text": "Magic Damage:65 / 110 / 155 / 200 / 245 (+ 60% AP)Slow:20 / 25 / 30 / 35 / 40%"
         },
         "name": "Flay",
         "notes": {
@@ -125,8 +125,8 @@
           "text": "Minimum Bonus Magic Damage:1.7 per Soul collected (+ 0% AD)\nMaximum Bonus Magic Damage:1.7 per Soul collected (+ 90 / 120 / 150 / 180 / 210% AD)"
         },
         "leveling2": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 120 / 165 / 210 / 255 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 70% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
-          "text": "Magic Damage:75 / 120 / 165 / 210 / 255 (+ 70% AP)Slow:20 / 25 / 30 / 35 / 40%"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>65 / 110 / 155 / 200 / 245 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
+          "text": "Magic Damage:65 / 110 / 155 / 200 / 245 (+ 60% AP)Slow:20 / 25 / 30 / 35 / 40%"
         },
         "name": "Flay",
         "notes": {
@@ -170,8 +170,8 @@
           "text": "Minimum Bonus Magic Damage:1.7 per Soul collected (+ 0% AD)\nMaximum Bonus Magic Damage:1.7 per Soul collected (+ 90 / 120 / 150 / 180 / 210% AD)"
         },
         "leveling2": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 120 / 165 / 210 / 255 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 70% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
-          "text": "Magic Damage:75 / 120 / 165 / 210 / 255 (+ 70% AP)Slow:20 / 25 / 30 / 35 / 40%"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>65 / 110 / 155 / 200 / 245 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
+          "text": "Magic Damage:65 / 110 / 155 / 200 / 245 (+ 60% AP)Slow:20 / 25 / 30 / 35 / 40%"
         },
         "name": "Flay",
         "notes": {
@@ -215,8 +215,8 @@
           "text": "Minimum Bonus Magic Damage:1.7 per Soul collected (+ 0% AD)\nMaximum Bonus Magic Damage:1.7 per Soul collected (+ 90 / 120 / 150 / 180 / 210% AD)"
         },
         "leveling2": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 120 / 165 / 210 / 255 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 70% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
-          "text": "Magic Damage:75 / 120 / 165 / 210 / 255 (+ 70% AP)Slow:20 / 25 / 30 / 35 / 40%"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>65 / 110 / 155 / 200 / 245 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
+          "text": "Magic Damage:65 / 110 / 155 / 200 / 245 (+ 60% AP)Slow:20 / 25 / 30 / 35 / 40%"
         },
         "name": "Flay",
         "notes": {
@@ -236,10 +236,10 @@
   "schemaVersion": 1,
   "slot": "E",
   "source": {
-    "contentHash": "87b2b315f14b15c4c727cbae1c0ddce7a8e3c55332971d4e57f9d762134dfae4",
-    "fetchedAt": "2026-08-16T06:56:28.042Z",
+    "contentHash": "b9caa360cdc1c9d38053f5ec4666e660c68117708dea5849fe552231dd9fd19b",
+    "fetchedAt": "2026-09-06T10:56:45.093Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Thresh/Flay",
-    "revisionId": 4008203,
-    "sourceTimestamp": "2026-04-14T05:35:49Z"
+    "revisionId": 4057474,
+    "sourceTimestamp": "2026-08-27T09:13:55Z"
   }
 }

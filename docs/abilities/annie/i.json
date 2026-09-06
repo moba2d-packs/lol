@@ -1,0 +1,51 @@
+{
+  "asset": {
+    "key": "spell_annie_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Annie_Pyromania.png?d17e0",
+    "sha1": "b55ea2f9eb3f749825c60ca857f34f36f3ee7ae4"
+  },
+  "champion": "Annie",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_annie_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Annie_Pyromania.png?d17e0",
+        "sha1": "b55ea2f9eb3f749825c60ca857f34f36f3ee7ae4"
+      },
+      "fields": {
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate - Pyromania:'''</span> '''Annie''' generates a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stack\">[[File:Stack icon.png|20px|link=Stack|An icon representing the keyword Stack]] [[:Stack|stack]]</span> of ''Pyromania'' whenever she hits an enemy with ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Annie\" data-ability=\"Disintegrate\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Annie Disintegrate.png|20xpx|border|link=Annie#Disintegrate|An icon for Annie's ability Disintegrate]]</span> <span style=\"white-space:normal;\">[[Annie#Disintegrate|Disintegrate]]</span></span>'' or casts her other <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Abilities\">[[File:Champion ability.svg|20px|link=Champion ability|An icon representing the keyword Champion ability]] [[:Champion ability|abilities]]</span>, stacking up to 4 times, at which she gains ''Energized''.",
+          "text": "Innate - Pyromania: Annie generates a stack of Pyromania whenever she hits an enemy with Disintegrate or casts her other abilities, stacking up to 4 times, at which she gains Energized."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Energized:'''</span> '''Annie''' empowers her next cast of ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Annie\" data-ability=\"Disintegrate\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Annie Disintegrate.png|20xpx|border|link=Annie#Disintegrate|An icon for Annie's ability Disintegrate]]</span> <span style=\"white-space:normal;\">[[Annie#Disintegrate|Disintegrate]]</span></span>'', ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Annie\" data-ability=\"Incinerate\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Annie Incinerate.png|20xpx|border|link=Annie#Incinerate|An icon for Annie's ability Incinerate]]</span> <span style=\"white-space:normal;\">[[Annie#Incinerate|Incinerate]]</span></span>'', or ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Annie\" data-ability=\"Summon: Tibbers\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Annie Summon- Tibbers.png|20xpx|border|link=Annie#Summon: Tibbers|An icon for Annie's ability Summon: Tibbers]]</span> <span style=\"white-space:normal;\">[[Annie#Summon: Tibbers|Summon: Tibbers]]</span></span>'' to consume all ''Pyromania'' stacks to <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stun\">[[File:Stun icon.png|20px|link=Stun|An icon representing the keyword Stun]] [[:Stun|stun]]</span> enemies hit for <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"1.25;1.5;1.75\" data-top-values=\"1;6;11\">1.<small>25</small> / 1.<small>5</small> / 1.<small>75</small> (based on level)</span> seconds.",
+          "text": "Energized: Annie empowers her next cast of Disintegrate, Incinerate, or Summon: Tibbers to consume all Pyromania stacks to stun enemies hit for 1.25 / 1.5 / 1.75 (based on level) seconds."
+        },
+        "description3": {
+          "raw": "'''Annie''' gains maximum stacks of ''Pyromania'' when the game starts and upon [[death|respawning]]. She will lose ''Energized'' and all ''Pyromania'' stacks upon [[death]].",
+          "text": "Annie gains maximum stacks of Pyromania when the game starts and upon respawning. She will lose Energized and all Pyromania stacks upon death."
+        },
+        "icon": "Pyromania.png",
+        "name": "Pyromania",
+        "notes": {
+          "raw": "* '''Annie''' does not lose any stacks upon entering or exiting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Resurrection\">[[File:Revival icon.png|20px|link=Death#Ways to prevent death when reaching zero health|An icon representing the keyword Resurrection]] [[:Death#Ways to prevent death when reaching zero health|resurrection]]</span>.\n* Stacks are gained even if the ability is blocked by <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|spell shield]]</span>.\n* ''Pyromania's'' current stacks are represented by a counter under '''Annie's''' [[health bar]], visible to all players. It lights up when the empowered effect is available.",
+          "text": "Annie does not lose any stacks upon entering or exiting resurrection.\nStacks are gained even if the ability is blocked by spell shield.\nPyromania's current stacks are represented by a counter under Annie's health bar, visible to all players. It lights up when the empowered effect is available."
+        },
+        "spellshield": true,
+        "targeting": "Passive"
+      },
+      "name": "Pyromania"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "01a83e2e5d7dcf5d0b4e411fd09c4f88e69b0027db07619e5cd0dd2677911679",
+    "fetchedAt": "2026-09-06T10:54:24.254Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Annie/Pyromania",
+    "revisionId": 3932255,
+    "sourceTimestamp": "2025-07-18T21:06:25Z"
+  }
+}

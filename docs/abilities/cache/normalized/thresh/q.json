@@ -37,6 +37,7 @@
         },
         "effectradius": "Global • 3000",
         "icon": "Death Sentence.png",
+        "icon4": "Deathly Leap.png",
         "leveling2": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>100 / 150 / 200 / 250 / 300 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
           "text": "Magic Damage:100 / 150 / 200 / 250 / 300 (+ 90% AP)"
@@ -59,8 +60,8 @@
       "asset": {
         "key": "spell_thresh_q2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Thresh_Death_Sentence.png?a1373",
-        "sha1": "20004122ef11761fdf48d343dd69af2e697e7b1c"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Thresh_Deathly_Leap.png?4a3f4",
+        "sha1": "9e6faa4eeea7f1c61d076c652c8baee5ae193545"
       },
       "fields": {
         "casttime": "0.5 • None",
@@ -85,6 +86,7 @@
         },
         "effectradius": "Global • 3000",
         "icon": "Death Sentence.png",
+        "icon4": "Deathly Leap.png",
         "leveling2": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>100 / 150 / 200 / 250 / 300 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
           "text": "Magic Damage:100 / 150 / 200 / 250 / 300 (+ 90% AP)"
@@ -107,8 +109,8 @@
   "schemaVersion": 1,
   "slot": "Q",
   "source": {
-    "contentHash": "33d02521fcef4ee82871f596bf4be1f2bd108534e0513b983dfcda473339fcda",
-    "fetchedAt": "2026-08-13T16:18:51.440Z",
+    "contentHash": "f674f3a0fc97645a8a2cb783f8bbc51468ec18f9882da22f79ecb1c54e8cb5ef",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Thresh/Death_Sentence",
     "revisionId": 4008201,
     "sourceTimestamp": "2026-04-14T05:33:05Z"

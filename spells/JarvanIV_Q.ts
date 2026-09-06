@@ -103,6 +103,10 @@ export default class JarvanIV_Q extends Spell {
     const hitTargets = new Set<any>();
 
     const charge = new JarvanIV_Q_ChargeObject(this.owner, flagPos.copy());
+    // The drag knocks up everything it passes within this much of him, and the
+    // lance alone showed none of it — the ring rides with him so the player can
+    // see how wide the charge is before deciding to stand next to it.
+    charge.hitRadius = JARVAN_Q_DASH_HIT_RADIUS;
     this.game.objectManager.addObject(charge);
 
     // Perform fast, smooth EQ Combo Dash
@@ -321,6 +325,8 @@ export class JarvanIV_Q_ChargeObject extends SpellObject {
   charging = true;
   fade = 1;
   impacts: ChargeImpact[] = [];
+  /** The reach the drag knocks up at; written by the spell that owns the dash. */
+  hitRadius = JARVAN_Q_DASH_HIT_RADIUS;
 
   trailSystem: TrailSystem;
 
@@ -371,6 +377,15 @@ export class JarvanIV_Q_ChargeObject extends SpellObject {
   }
 
   draw() {
+    // The width of the drag, on the ground, travelling with him.
+    if (this.fade > 0) {
+      const shown = Math.min(1, this.fade);
+      noFill();
+      stroke(255, 200, 60, 150 * shown);
+      strokeWeight(2);
+      circle(this.position.x, this.position.y, this.hitRadius * 2);
+    }
+
     if (this.charging && this.owner) {
       push();
       translate(this.position.x, this.position.y);
@@ -426,11 +441,13 @@ export class JarvanIV_Q_ChargeObject extends SpellObject {
       maxX = Math.max(maxX, impact.x);
       maxY = Math.max(maxY, impact.y);
     }
+    // Wide enough for the knock-up ring around him, not just the bursts.
+    const margin = Math.max(70, this.hitRadius + 20);
     return new Rectangle({
-      x: minX - 70,
-      y: minY - 70,
-      w: maxX - minX + 140,
-      h: maxY - minY + 140,
+      x: minX - margin,
+      y: minY - margin,
+      w: maxX - minX + margin * 2,
+      h: maxY - minY + margin * 2,
       data: this,
     });
   }

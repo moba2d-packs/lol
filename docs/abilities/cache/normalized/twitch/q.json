@@ -8,6 +8,12 @@
   "champion": "Twitch",
   "forms": [
     {
+      "asset": {
+        "key": "spell_twitch_q",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twitch_Ambush.png?f924b",
+        "sha1": "2fcf088fb97f32dbf3c1133c4a6d520217224943"
+      },
       "fields": {
         "casttime": "none",
         "cooldown": "16",
@@ -30,6 +36,7 @@
         },
         "icon": "Ambush.png",
         "icon2": "Ambush 2.png",
+        "icon3": "Ambush 3.png",
         "leveling": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Stealth Duration:'''</span></dt><dd>10 / 11 / 12 / 13 / 14 seconds</dd></dl>",
           "text": "Stealth Duration:10 / 11 / 12 / 13 / 14 seconds"
@@ -48,6 +55,12 @@
       "name": "Ambush"
     },
     {
+      "asset": {
+        "key": "spell_twitch_q2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twitch_Ambush_2.png?4066a",
+        "sha1": "6407eb860cc75aad5d4f28d3a5335662c20d14e6"
+      },
       "fields": {
         "casttime": "none",
         "cooldown": "16",
@@ -70,6 +83,7 @@
         },
         "icon": "Ambush.png",
         "icon2": "Ambush 2.png",
+        "icon3": "Ambush 3.png",
         "leveling": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Stealth Duration:'''</span></dt><dd>10 / 11 / 12 / 13 / 14 seconds</dd></dl>",
           "text": "Stealth Duration:10 / 11 / 12 / 13 / 14 seconds"
@@ -88,6 +102,12 @@
       "name": "Ambush 2"
     },
     {
+      "asset": {
+        "key": "spell_twitch_q3",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twitch_Ambush_3.png?cb228",
+        "sha1": "67e48a45d545741db50a84be1c3b7e45fad6689d"
+      },
       "fields": {
         "casttime": "none",
         "cooldown": "16",
@@ -110,6 +130,7 @@
         },
         "icon": "Ambush.png",
         "icon2": "Ambush 2.png",
+        "icon3": "Ambush 3.png",
         "leveling": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Stealth Duration:'''</span></dt><dd>10 / 11 / 12 / 13 / 14 seconds</dd></dl>",
           "text": "Stealth Duration:10 / 11 / 12 / 13 / 14 seconds"
@@ -131,8 +152,8 @@
   "schemaVersion": 1,
   "slot": "Q",
   "source": {
-    "contentHash": "e4e13db0d0b6eb0ad8b4653c83d29e506891ac4dbbb3864488c7bc32180ba6d0",
-    "fetchedAt": "2026-08-13T10:47:18.264Z",
+    "contentHash": "9e2000ba8d6a2e9ecccca81822f0762b5c9382ebf38075782c51d42f74bbca6e",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Twitch/Ambush",
     "revisionId": 3982645,
     "sourceTimestamp": "2026-01-09T14:39:30Z"

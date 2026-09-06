@@ -62,18 +62,38 @@ export default class Vayne_Q extends Spell {
       activation: 'PRESS',
       targeting: 'DIRECTION',
       resource: { commitAt: 'start', refundOn: [] },
-      cooldown: { startAt: 'release', durationMs: this.coolDown * this.cooldownScale },
+      // Constant, because `Spell.runtime` freezes this getter on the opening
+      // press (`src/seams/castSpecFrozen.ts`). `cooldownScale` here meant the
+      // *first Q of the match* decided whether Final Hour's reduction applied
+      // for the rest of it — and since a Vayne almost always Qs before she
+      // ults, the answer it froze was "no". The ultimate's whole cooldown
+      // clause did nothing, all game. `onSpellCast` applies the scale now, and
+      // `effectiveCoolDownMs` below keeps the HUD ring reading the live one.
+      cooldown: { startAt: 'release', durationMs: this.coolDown },
     };
   }
 
   /**
-   * Final Hour's cooldown reduction, expressed where the runtime already reads
-   * it: `Spell.effectiveCoolDownMs` runs `castSpec.cooldown.durationMs` through
-   * `reducedCooldown`, so writing it here keeps the match-wide CDR rule stacked
-   * on top of it and leaves `coolDown` as the tuning number it is.
+   * Final Hour's cooldown reduction. Read by `onSpellCast` and by
+   * `effectiveCoolDownMs`, both of which run every cast — never from
+   * `castSpec`, which is resolved once and frozen.
+   *
+   * It used to live in the spec, on the reasoning that `effectiveCoolDownMs`
+   * reads `castSpec.cooldown.durationMs` and so the scale would ride along.
+   * That half is true; the other half is that the *runtime* reads the same
+   * getter exactly once, and the runtime is what actually starts the countdown.
+   * Both halves have to be served, and they are served in different places.
    */
   private get cooldownScale(): number {
     return this.owner?.hasBuff?.(Vayne_R_Buff) ? VAYNE_R_Q_CDR : 1;
+  }
+
+  /**
+   * The HUD asks this fresh every frame, so the ring can read the live scale
+   * even though the spec above may not.
+   */
+  get effectiveCoolDownMs(): number {
+    return this.reducedCooldown(this.coolDown * this.cooldownScale);
   }
 
   checkCastCondition(): boolean {
@@ -87,6 +107,10 @@ export default class Vayne_Q extends Spell {
       this.aimPoint,
       VAYNE_Q_DISTANCE
     );
+
+    // The runtime started the frozen spec's cooldown on release; this is where
+    // Final Hour's reduction actually reaches it.
+    this.currentCooldown = this.reducedCooldown(this.coolDown * this.cooldownScale);
 
     const roll = new Dash(ROLL_MS + 140, this.owner, this.owner);
     roll.dashDestination = to;

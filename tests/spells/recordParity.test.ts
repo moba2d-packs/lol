@@ -21,7 +21,7 @@ import { Nasus_E_Object, SHRED_PERCENT as NASUS_SHRED } from '../../spells/Nasus
 import { Varus_E_Object, WOUND_PERCENT as VARUS_WOUND } from '../../spells/Varus_E';
 import Vi_W, { W_SHRED } from '../../spells/Vi_W';
 import { Singed_Q_Cloud } from '../../spells/Singed_Q';
-import Singed_R, { POISON_WOUND_PERCENT } from '../../spells/Singed_R';
+import Singed_R, { ABILITY_POWER, POISON_WOUND_PERCENT } from '../../spells/Singed_R';
 
 installSketchMathGlobals();
 installSpellObjectGlobals();
@@ -277,6 +277,28 @@ describe('the missing debuffs', () => {
    * Grievous Wounds" — so the poison alone must not, which is the half that
    * makes the ultimate worth pressing against a healer.
    */
+  /**
+   * `singed/r.json` lists what the potion grants and **ability power is first
+   * on it**. This pack shipped health, speed and attack damage — three stats
+   * that do nothing at all for the poison trail, which is where nearly all of
+   * Singed's damage lives. So a damage-over-time champion's ultimate was the
+   * one cast that did not touch his damage over time, and he fell off a cliff
+   * the moment anyone bought health.
+   */
+  it('Singed’s potion is what makes his poison scale', () => {
+    const { owner } = facing();
+    game.setPlayer(owner);
+    const before = owner.stats.abilityPower.value;
+
+    pressSpell(new Singed_R(owner));
+
+    expect(owner.stats.abilityPower.value).toBeCloseTo(before + ABILITY_POWER, 5);
+    // A fraction, not points (core's `combat/Amplification.ts`) — so this is
+    // the multiplier every ability he owns is worth while it burns.
+    expect(ABILITY_POWER).toBeGreaterThan(0);
+    expect(ABILITY_POWER).toBeLessThan(1);
+  });
+
   it('Singed’s poison wounds only while Insanity Potion is up', () => {
     const { owner, victim } = facing();
     const cloud = new Singed_Q_Cloud(owner);

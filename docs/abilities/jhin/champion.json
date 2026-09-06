@@ -11,7 +11,7 @@
     "alttype": "Mage",
     "apiname": "Jhin",
     "be": 1234,
-    "changes": "V26.05",
+    "changes": "V26.16",
     "client_positions": [
       "Bottom"
     ],
@@ -90,8 +90,8 @@
       "mp5_lvl": 0.8,
       "mp_base": 300,
       "mp_lvl": 50,
-      "mr_base": 30,
-      "mr_lvl": 1.3,
+      "mr_base": 33,
+      "mr_lvl": 1.1,
       "ms": 330,
       "pathing_radius": 35,
       "range": 550,
@@ -109,10 +109,10 @@
   },
   "schemaVersion": 1,
   "source": {
-    "contentHash": "ec0f7ce06edf1ae276851fe1c4492a46f8c2d13b96a81ba92e0199711e34a728",
-    "fetchedAt": "2026-08-17T14:38:03.922Z",
+    "contentHash": "983ce46e2a3f21066e22f76e2d4bb307af6778a05fdf7ece64554335c205eba7",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
-    "revisionId": 4052219,
-    "sourceTimestamp": "2026-08-16T02:35:56Z"
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
   }
 }

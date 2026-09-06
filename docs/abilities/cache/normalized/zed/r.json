@@ -59,8 +59,8 @@
       "asset": {
         "key": "spell_zed_r2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Zed_Death_Mark.png?5f902",
-        "sha1": "4db247db7f0d1b7b2405c0be4f9fbe761f8b93bf"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Zed_Death_Mark_2.png?5f902",
+        "sha1": "4c2c13dfa983a423deb8d3b28b77ce4409067224"
       },
       "fields": {
         "casttime": "none",
@@ -108,7 +108,7 @@
   "slot": "R",
   "source": {
     "contentHash": "0a3e0281f0b3ff4c91b171e4ecbbd9e225de3d8637c75e07f5afa531daa5bad7",
-    "fetchedAt": "2026-09-01T05:17:39.358Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Zed/Death_Mark",
     "revisionId": 4050166,
     "sourceTimestamp": "2026-08-05T05:11:17Z"

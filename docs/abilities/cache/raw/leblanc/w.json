@@ -1,0 +1,74 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data LeBlanc/Distortion",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Distortion@@icon@@Distortion.png@@icon2@@Distortion 2.png@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''LeBlanc''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dashes\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> to the target location, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. ''Distortion'' can be recast after 0.<small>2</small> seconds of the dash ending for the pad's duration.@@description2@@<span class=\"template_sbc\">'''Recast:'''</span> '''LeBlanc''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blink\">[[File:Flash.png|20px|link=Blink|An icon representing the keyword Blink]] [[:Blink|blinks]]</span> to ''Distortion's'' return pad, regardless of range.@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 115 / 155 / 195 / 235 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cr\">[[File:Range center.png|20px|link=Range|An icon representing the keyword Centered range]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage radius around dash destination\">240</span>@@width@@{{{width}}}@@speed@@1450@@casttime@@none@@cost@@60 / 70 / 80 / 90 / 100@@cooldown@@15 / 13.<small>75</small> / 12.<small>5</small> / 11.<small>25</small> / 10@@targeting@@[[Location-targeted|Location]] • [[Auto-targeted|Auto]]@@damagetype@@Magic@@spellshield@@True@@projectile@@@@notes@@\n* ''Distortion'' has no minimum dash range.\n* ''Distortion'' will be buffered and cast as soon as the cooldown ends if the player attempts to cast it within 0.<small>5</small> seconds of the cooldown ending.\n** The <span class=\"template_sbc\">'''recast'''</span> will be buffered and cast as soon as it becomes available if the player attempts to cast it within 0.<small>3</small> seconds of it becoming available to cast.\n*The initial cast counts as an ability activation for the purposes of on-cast effects such as <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spellblade\">[[File:Sheen item.png|20px|link=Named item effect#Spellblade|An icon representing the keyword Spellblade]] [[:Named item effect#Spellblade|Spellblade]]</span> and triggering <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Kassadin\" data-ability=\"Force Pulse\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Kassadin Force Pulse.png|20xpx|border|link=Kassadin#Force Pulse|An icon for Kassadin's ability Force Pulse]]</span> <span style=\"white-space:normal;\">[[Kassadin#Force Pulse|Force Pulse's]]</span></span> passive.\n**Recasting the ability does not.\n**<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"LeBlanc\" data-ability=\"Mimic: Distortion\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:LeBlanc Mimic- Distortion.png|20xpx|border|link=LeBlanc#Mimic: Distortion|An icon for LeBlanc's ability Mimic: Distortion]]</span> <span style=\"white-space:normal;\">[[LeBlanc#Mimic: Distortion|Mimic: Distortion]]</span></span> has the same properties.\n* ''Distortion'' and <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"LeBlanc\" data-ability=\"Mimic: Distortion\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:LeBlanc Mimic- Distortion.png|20xpx|border|link=LeBlanc#Mimic: Distortion|An icon for LeBlanc's ability Mimic: Distortion]]</span> <span style=\"white-space:normal;\">[[LeBlanc#Mimic: Distortion|Mimic: Distortion]]</span></span> have independent return pads and '''LeBlanc''' can travel to both while they are active.\n* ''Distortion's'' pad duration starts once the dash ends.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1308151,
+                "revisions": [
+                  {
+                    "parentid": 4007638,
+                    "revid": 4057468,
+                    "timestamp": "2026-08-27T09:10:18Z"
+                  }
+                ],
+                "title": "Template:Data LeBlanc/Distortion"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4057468,
+      "timestamp": "2026-08-27T09:10:18Z"
+    },
+    {
+      "page": "Template:Data LeBlanc/Distortion 2",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Distortion@@icon@@Distortion.png@@icon2@@Distortion 2.png@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''LeBlanc''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dashes\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> to the target location, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to all nearby enemies upon arrival and leaving a return pad at the cast location for 4 seconds. ''Distortion'' can be recast after 0.<small>2</small> seconds of the dash ending for the pad's duration.@@description2@@<span class=\"template_sbc\">'''Recast:'''</span> '''LeBlanc''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blink\">[[File:Flash.png|20px|link=Blink|An icon representing the keyword Blink]] [[:Blink|blinks]]</span> to ''Distortion's'' return pad, regardless of range.@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 115 / 155 / 195 / 235 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cr\">[[File:Range center.png|20px|link=Range|An icon representing the keyword Centered range]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage radius around dash destination\">240</span>@@width@@{{{width}}}@@speed@@1450@@casttime@@none@@cost@@60 / 70 / 80 / 90 / 100@@cooldown@@15 / 13.<small>75</small> / 12.<small>5</small> / 11.<small>25</small> / 10@@targeting@@[[Location-targeted|Location]] • [[Auto-targeted|Auto]]@@damagetype@@Magic@@spellshield@@True@@projectile@@@@notes@@\n* ''Distortion'' has no minimum dash range.\n* ''Distortion'' will be buffered and cast as soon as the cooldown ends if the player attempts to cast it within 0.<small>5</small> seconds of the cooldown ending.\n** The <span class=\"template_sbc\">'''recast'''</span> will be buffered and cast as soon as it becomes available if the player attempts to cast it within 0.<small>3</small> seconds of it becoming available to cast.\n*The initial cast counts as an ability activation for the purposes of on-cast effects such as <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spellblade\">[[File:Sheen item.png|20px|link=Named item effect#Spellblade|An icon representing the keyword Spellblade]] [[:Named item effect#Spellblade|Spellblade]]</span> and triggering <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Kassadin\" data-ability=\"Force Pulse\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Kassadin Force Pulse.png|20xpx|border|link=Kassadin#Force Pulse|An icon for Kassadin's ability Force Pulse]]</span> <span style=\"white-space:normal;\">[[Kassadin#Force Pulse|Force Pulse's]]</span></span> passive.\n**Recasting the ability does not.\n**<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"LeBlanc\" data-ability=\"Mimic: Distortion\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:LeBlanc Mimic- Distortion.png|20xpx|border|link=LeBlanc#Mimic: Distortion|An icon for LeBlanc's ability Mimic: Distortion]]</span> <span style=\"white-space:normal;\">[[LeBlanc#Mimic: Distortion|Mimic: Distortion]]</span></span> has the same properties.\n* ''Distortion'' and <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"LeBlanc\" data-ability=\"Mimic: Distortion\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:LeBlanc Mimic- Distortion.png|20xpx|border|link=LeBlanc#Mimic: Distortion|An icon for LeBlanc's ability Mimic: Distortion]]</span> <span style=\"white-space:normal;\">[[LeBlanc#Mimic: Distortion|Mimic: Distortion]]</span></span> have independent return pads and '''LeBlanc''' can travel to both while they are active.\n* ''Distortion's'' pad duration starts once the dash ends.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1334359,
+                "revisions": [
+                  {
+                    "parentid": 2581153,
+                    "revid": 2581292,
+                    "timestamp": "2017-09-22T17:54:34Z"
+                  }
+                ],
+                "title": "Template:Data LeBlanc/Distortion 2"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 2581292,
+      "timestamp": "2017-09-22T17:54:34Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "be1d1686439ca7ec950def9232893a1ccfb34daf1ba59848438d4ecb60fd665a",
+    "fetchedAt": "2026-09-06T10:54:24.254Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_LeBlanc/Distortion",
+    "revisionId": 4057468,
+    "sourceTimestamp": "2026-08-27T09:10:18Z"
+  }
+}

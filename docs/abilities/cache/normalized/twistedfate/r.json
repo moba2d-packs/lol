@@ -47,8 +47,8 @@
       "asset": {
         "key": "spell_twistedfate_r2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twisted_Fate_Destiny.png?658f0",
-        "sha1": "3f35e3fe18240f65463e42124ccf037597ed7683"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twisted_Fate_Gate.png?85105",
+        "sha1": "0387deae179d7e01c472b47437d04e38301f9ff7"
       },
       "fields": {
         "casttime": "none",
@@ -84,7 +84,7 @@
   "slot": "R",
   "source": {
     "contentHash": "6f36d2667baca8cc1c799b037607f122b96d2021fcbc3294cf2de0fcee954047",
-    "fetchedAt": "2026-08-26T19:29:42.360Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Twisted_Fate/Destiny",
     "revisionId": 4017975,
     "sourceTimestamp": "2026-05-14T09:17:46Z"

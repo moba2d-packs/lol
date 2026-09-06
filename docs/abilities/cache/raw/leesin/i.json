@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Lee Sin/Flurry",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Flurry@@icon@@Flurry.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Innate:'''</span> After casting an <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ability\">[[File:Champion ability.svg|20px|link=Champion ability|An icon representing the keyword Champion ability]] [[:Champion ability|ability]]</span>, '''Lee Sin's''' next 2 <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attacks\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attacks]]</span> <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> within 3 seconds gain <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">40% '''bonus''' attack speed</span></span> and restore <span style=\"white-space:nowrap\">[[File:Energy icon.svg|15px|link=Energy]]&nbsp;<span style=\"color:yellow; white-space:normal\">energy</span></span>.<br><br>The first attack restores <span style=\"color:yellow; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"20;1\" data-finish=\"40;13\" data-top-fill=\"3\" data-bot-values=\"20;30;40\" data-top-values=\"1;7;13\">20 / 30 / 40 (based on level)</span> energy</span> and the second attack restores<span id=\"container\" class=\"container\" style=\"cursor:help;\"><span class=\"flipText1 active\">「&nbsp;<span style=\"color:yellow; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"10;1\" data-finish=\"20;13\" data-top-fill=\"3\" data-bot-values=\"10;15;20\" data-top-values=\"1;7;13\">10 / 15 / 20 (based on level)</span> energy</span>.&nbsp;」</span><span class=\"flipText2\">「&nbsp;half of the previous amount.&nbsp;」</span></span>@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@{{{leveling}}}@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@{{{cast time}}}@@cost@@{{{cost}}}@@cooldown@@{{{cooldown}}}@@targeting@@Passive@@damagetype@@@@spellshield@@@@projectile@@{{{projectile}}}@@notes@@@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1308162,
+                "revisions": [
+                  {
+                    "parentid": 4015077,
+                    "revid": 4015078,
+                    "timestamp": "2026-05-02T19:41:57Z"
+                  }
+                ],
+                "title": "Template:Data Lee Sin/Flurry"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4015078,
+      "timestamp": "2026-05-02T19:41:57Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "af2d290a55705bdd9596f139e50a9b99e284df0443d167b15f76bf0194eca8bd",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Lee_Sin/Flurry",
+    "revisionId": 4015078,
+    "sourceTimestamp": "2026-05-02T19:41:57Z"
+  }
+}

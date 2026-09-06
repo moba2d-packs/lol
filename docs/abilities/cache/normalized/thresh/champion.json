@@ -11,7 +11,7 @@
     "alttype": "Tank",
     "apiname": "Thresh",
     "be": 1575,
-    "changes": "V25.18",
+    "changes": "V26.17",
     "client_positions": [
       "Support"
     ],
@@ -127,10 +127,10 @@
   },
   "schemaVersion": 1,
   "source": {
-    "contentHash": "c971ebd372a1d3687a1852a00f7d0267df20cd9fbf776a815eac23ab116b67bd",
-    "fetchedAt": "2026-08-13T16:18:51.440Z",
+    "contentHash": "5cf5ce560d7f2e1fef17aa3da9c93b7ebf8472786f4cde83419a8818d7160c42",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
-    "revisionId": 4051472,
-    "sourceTimestamp": "2026-08-12T18:33:05Z"
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
   }
 }

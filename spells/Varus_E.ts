@@ -115,7 +115,11 @@ export class Varus_E_Object extends SpellObject {
     translate(this.position.x, this.position.y);
 
     if (!this.landed) {
-      // the volley in the air: shafts converging on the circle
+      // the volley in the air: shafts dropping onto the circle they will fill.
+      // They used to sweep *inward* from 1.8x the radius, which told the player
+      // the patch reached half again as far as it does — the arrows now fall
+      // from above onto points inside the ring, so the only thing claiming a
+      // reach is the ring itself.
       const t = this.age / FALL_TIME;
       noFill();
       stroke(200, 170, 255, 200);
@@ -123,10 +127,13 @@ export class Varus_E_Object extends SpellObject {
       circle(0, 0, this.radius * 2);
       stroke(220, 200, 255, 240);
       strokeWeight(2);
+      const drop = (1 - t) * 150;
       for (let i = 0; i < 12; i++) {
         const a = (i / 12) * TWO_PI;
-        const d = this.radius * (1 - t) * 1.6;
-        line(cos(a) * (d + 40), sin(a) * (d + 40) - 90 * (1 - t), cos(a) * d, sin(a) * d);
+        const d = this.radius * (0.3 + (0.58 * ((i * 5) % 7)) / 6);
+        const x = cos(a) * d;
+        const y = sin(a) * d - drop;
+        line(x, y, x, y + 26);
       }
       pop();
       return;
@@ -149,12 +156,14 @@ export class Varus_E_Object extends SpellObject {
     pop();
   }
 
+  /** Tall rather than square: the volley is still 150px above the ring when it
+   * starts, and the box is what decides whether any of it is drawn at all. */
   getDisplayBoundingBox() {
     return new Rectangle({
-      x: this.position.x - this.radius - 60,
-      y: this.position.y - this.radius - 100,
-      w: this.radius * 2 + 120,
-      h: this.radius * 2 + 160,
+      x: this.position.x - this.radius - 20,
+      y: this.position.y - this.radius - 180,
+      w: this.radius * 2 + 40,
+      h: this.radius * 2 + 220,
       data: this,
     });
   }

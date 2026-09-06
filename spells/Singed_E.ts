@@ -12,11 +12,30 @@ const Slow = api.buffs.Slow;
 const SpellObject = api.SpellObject;
 const PredefinedParticleSystems = api.helpers.PredefinedParticleSystems;
 const dmg = api.text.dmg;
+const tint = api.text.tint;
 
 
 export const RANGE = 160;
 
 export const DAMAGE = 28;
+
+/**
+ * The other half of Fling, and the half that keeps it worth casting once the
+ * other team has bought health.
+ *
+ * `docs/abilities/singed/e.json` states it plainly — the fling deals magic
+ * damage "based on the target's health ratio" — and this pack shipped only the
+ * flat half. A flat 28 is a third of a champion's pool on the first minute and
+ * a twelfth of it by the sixth item, so the ability quietly stopped existing in
+ * exactly the fights it is for. This half grows with what the victim bought,
+ * which is the only kind of number that does not need retuning every time the
+ * shop moves.
+ *
+ * 8% of a ~100 pool is 8, and of a fully-built ~375 pool is 30 — so Fling goes
+ * from 36 to 58 across a match against a target who did nothing but buy health.
+ */
+export const MAX_HEALTH_RATIO = 0.08;
+
 
 /** How far behind Singed the victim lands, measured from his own feet. */
 export const THROW_DISTANCE = 150;
@@ -38,6 +57,27 @@ const SPLAT_COUNT = 14;
 const FUME_COUNT = 12;
 
 
+/**
+ * What one fling takes off `target` — flat, plus a share of what they are made
+ * of. `docs/abilities/singed/e.json`.
+ *
+ * Both halves go through one `takeDamage`, so both are amplified by whatever
+ * Singed himself bought. That is this engine's model rather than League's (see
+ * core's `combat/Amplification.ts`): ability power here is a multiplier applied
+ * once at the funnel, and carving an exception for one term would make this the
+ * only ability in either pack that reads the stat itself.
+ *
+ * **No cap against monsters, though upstream has one.** League caps the health
+ * half at 300 because its camps carry thousands; the biggest camp in this pack
+ * has 260, so the share is 21 — less than the flat half beside it. A branch
+ * that can never change an outcome is a branch nobody can test and everybody
+ * has to read. Add it the day a camp is worth capping.
+ */
+export function flingDamage(target: AttackableUnit): number {
+  return DAMAGE + target.stats.maxHealth.value * MAX_HEALTH_RATIO;
+}
+
+
 export default class Singed_E extends Spell {
   /**
    * Told: it locks the nearest enemy, flings them, then damages and slows
@@ -52,7 +92,8 @@ export default class Singed_E extends Spell {
   description =
     `Túm kẻ địch gần nhất trong <span>${RANGE}px</span> và quăng qua đầu mình,` +
     ` <span class="buff">Hất Tung</span> chúng và đáp xuống <span>${THROW_DISTANCE}px</span> phía sau lưng Singed.` +
-    ` <i>Khi tiếp đất</i>: ${dmg(DAMAGE, 'MAGIC')} và` +
+    ` <i>Khi tiếp đất</i>: ${dmg(DAMAGE, 'MAGIC')} cộng` +
+    ` ${tint(`${pct(MAX_HEALTH_RATIO)}% máu tối đa của mục tiêu`, 'MAGIC')} và` +
     ` <span class="buff">Làm Chậm ${pct(SLOW_PERCENT)}%</span>`;
   coolDown = 9000;
   manaCost = 25;
@@ -113,7 +154,7 @@ export default class Singed_E extends Spell {
 
     if (target.isDead || target.toRemove) return;
 
-    target.takeDamage(DAMAGE, this.owner, 'MAGIC');
+    target.takeDamage(flingDamage(target), this.owner, 'MAGIC');
     const slow = new Slow(SLOW_DURATION, this.owner, target);
     slow.percent = SLOW_PERCENT;
     target.addBuff(slow);

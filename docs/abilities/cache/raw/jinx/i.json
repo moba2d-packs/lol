@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Jinx/Get Excited!",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Get Excited!@@icon@@Get Excited!.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Innate:'''</span> Whenever '''Jinx''' scores a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Takedown\">[[File:Damage rating.png|20px|link=Takedown|An icon representing the keyword Takedown]] [[:Takedown|takedown]]</span> against an enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span>, epic <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monster\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monster]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Turret\">[[File:Turret icon.png|20px|link=Turret|An icon representing the keyword Turret]] [[:Turret|turret]]</span>, or [[inhibitor]] within 3 seconds of damaging them, she gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">175% '''bonus''' movement speed</span></span> decaying over 6 seconds.@@description2@@Additionally, she is allowed to exceed the <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"normally 3.003 attacks per second\">attack speed cap</span> and gains a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stack\">[[File:Stack icon.png|20px|link=Stack|An icon representing the keyword Stack]] [[:Stack|stack]]</span> of ''Get Excited!'' for the same duration, stacking up to 5 times. Only <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Takedown\">[[File:Damage rating.png|20px|link=Takedown|An icon representing the keyword Takedown]] [[:Takedown|takedowns]]</span> against enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champions]]</span> can grant stacks beyond the first.@@description3@@<span class=\"template_sbc\">'''Get Excited!:'''</span> For each stack, '''Jinx''' gains <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">25% '''total''' attack speed</span></span>, up to a maximum of <span style=\"color:\n#F5EE99; white-space:normal\">125%</span>.@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@{{{leveling}}}@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@{{{cast time}}}@@cost@@{{{cost}}}@@cooldown@@{{{cooldown}}}@@targeting@@Passive@@damagetype@@{{{damagetype}}}@@spellshield@@{{{spellshield}}}@@projectile@@{{{projectile}}}@@notes@@\n* '''Jinx's''' ''attack speed cap'' is increased to 90.<small>0</small> for the duration, however this value is already beyond the technical limit for attack speed.\n* '''Jinx''' will still trigger ''Get Excited'' from killing a summoned <span class=\"inline-image unit-icon label-after\" style=\"display:inline;white-space:pre;\" data-param=\"\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Rift HeraldSquare.png|20xpx|border|link=Rift Herald|An icon representing Rift Herald]]</span> <span style=\"white-space:normal;\">[[Rift Herald]]</span></span>.\n* '''Jinx''' will fail to trigger ''Get Excited'' in the specific circumstance of killing <span class=\"inline-image unit-icon label-after\" style=\"display:inline;white-space:pre;\" data-param=\"\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Baron NashorSquare.png|20xpx|border|link=Baron Nashor|An icon representing Baron Nashor]]</span> <span style=\"white-space:normal;\">[[Baron Nashor]]</span></span> while more than ~2500 distance away.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This is not intended. \">(bug)</span></sup>@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1307591,
+                "revisions": [
+                  {
+                    "parentid": 3973630,
+                    "revid": 3973632,
+                    "timestamp": "2025-12-11T18:10:58Z"
+                  }
+                ],
+                "title": "Template:Data Jinx/Get Excited!"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 3973632,
+      "timestamp": "2025-12-11T18:10:58Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "656aed505220aefbca0b5f4af1075f9f3b2eab6736a9a07170c7e3da94402b61",
+    "fetchedAt": "2026-09-06T10:54:24.254Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Jinx/Get_Excited!",
+    "revisionId": 3973632,
+    "sourceTimestamp": "2025-12-11T18:10:58Z"
+  }
+}

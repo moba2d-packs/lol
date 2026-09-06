@@ -1,0 +1,42 @@
+{
+  "asset": {
+    "key": "spell_fizz_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Fizz_Nimble_Fighter.png?0eb06",
+    "sha1": "1b2cbeab932c23625ffd28554716fe66f01d1e83"
+  },
+  "champion": "Fizz",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_fizz_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Fizz_Nimble_Fighter.png?0eb06",
+        "sha1": "1b2cbeab932c23625ffd28554716fe66f01d1e83"
+      },
+      "fields": {
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate:'''</span> '''Fizz''' is permanently <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ghosted\">[[File:Ghost.png|20px|link=Unit collision|An icon representing the keyword Ghosted]] [[:Unit collision|ghosted]]</span> and reduces every instance of <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage calculated before modifiers\">pre-mitigation</span> damage taken by 4 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 1% AP)</span>, up to a maximum of 50% reduction. The damage reduction is increased to 14 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 1% AP)</span> against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monsters\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monsters]]</span>.",
+          "text": "Innate: Fizz is permanently ghosted and reduces every instance of pre-mitigation damage taken by 4 (+ 1% AP), up to a maximum of 50% reduction. The damage reduction is increased to 14 (+ 1% AP) against monsters."
+        },
+        "icon": "Nimble Fighter.png",
+        "name": "Nimble Fighter",
+        "notes": {
+          "raw": "* No additional notes.",
+          "text": "No additional notes."
+        },
+        "targeting": "Passive"
+      },
+      "name": "Nimble Fighter"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "f0b20493db26c265a1ac68e455528cbbf2afc995042c91eb79d3fdb863b2e0e6",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Fizz/Nimble_Fighter",
+    "revisionId": 4042251,
+    "sourceTimestamp": "2026-07-13T11:47:29Z"
+  }
+}

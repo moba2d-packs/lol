@@ -189,6 +189,19 @@ export class Shen_E_Trail extends SpellObject {
     const dy = this.to.y - this.from.y;
 
     push();
+
+    // The corridor his shoulder clears. A champion whose centre falls inside
+    // this band is cut and taunted, and the silhouettes below are a body-width
+    // narrower than that — they say where he went, not how wide he went.
+    const normal = Math.atan2(dy, dx) + HALF_PI;
+    const nx = Math.cos(normal) * SWEEP_RADIUS;
+    const ny = Math.sin(normal) * SWEEP_RADIUS;
+    noFill();
+    stroke(120, 160, 215, 95 * (1 - t));
+    strokeWeight(1.5);
+    line(this.from.x + nx, this.from.y + ny, this.to.x + nx, this.to.y + ny);
+    line(this.from.x - nx, this.from.y - ny, this.to.x - nx, this.to.y - ny);
+
     noStroke();
     for (let i = 0; i < this._steps.length; i++) {
       const along = this._steps[i];

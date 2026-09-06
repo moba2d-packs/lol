@@ -214,24 +214,31 @@ export default class Vi_Q extends Spell {
     const aimed = this.aimPoint;
     const origin = this.owner.position;
     const heading = Math.atan2(aimed.y - origin.y, aimed.x - origin.x);
-    const halfNear = 13;
-    const halfFar = 24 + 42 * this.charge;
+    // The gauntlet catches at one radius the whole way down — the same reach
+    // `bodyAgainstTheGauntlet` queries — so the corridor is a constant-width
+    // band with a rounded nose. Winding up makes it *longer*, never wider; the
+    // fan it used to draw promised 13px of width at her feet and 66 at the far
+    // end, and was wrong at both ends of the charge.
+    const gauntlet = effectiveRange(Q_HIT_RADIUS, this.owner);
 
     push();
     translate(origin.x, origin.y);
     rotate(heading);
+    rectMode(CORNER);
     noStroke();
     fill(HEXTECH[0], HEXTECH[1], HEXTECH[2], 26 + 44 * this.charge);
-    quad(0, -halfNear, reach, -halfFar, reach, halfFar, 0, halfNear);
-    // The hard rim sits exactly where the dash will stop.
+    rect(0, -gauntlet, reach, gauntlet * 2);
+    arc(reach, 0, gauntlet * 2, gauntlet * 2, -HALF_PI, HALF_PI, PIE);
+    // The hard rim sits exactly where the dash will stop, at the radius that
+    // actually connects.
+    noFill();
     stroke(BRASS[0], BRASS[1], BRASS[2], 150 + 90 * this.charge);
     strokeWeight(3);
-    line(reach, -halfFar, reach, halfFar);
-    noFill();
+    arc(reach, 0, gauntlet * 2, gauntlet * 2, -HALF_PI, HALF_PI);
     stroke(HEXTECH[0], HEXTECH[1], HEXTECH[2], 110 + 100 * this.charge);
     strokeWeight(2);
-    line(0, -halfNear, reach, -halfFar);
-    line(0, halfNear, reach, halfFar);
+    line(0, -gauntlet, reach, -gauntlet);
+    line(0, gauntlet, reach, gauntlet);
     pop();
   }
 

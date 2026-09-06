@@ -158,15 +158,25 @@ export default class Darius_R extends Spell implements ExecuteSpell {
     blade.executed = true;
     // A head taken resets the axe — the whole reason to hold it for a kill.
     this.resetCoolDown();
-    this.terrify();
+    this.terrify(blade);
   }
 
-  /** Everything nearby that is not a champion breaks and runs. */
-  private terrify(): void {
+  /**
+   * Everything nearby that is not a champion breaks and runs.
+   *
+   * The blade is handed the same centre and radius it routs from, because the
+   * rout is an area and an area nobody can see is one nobody can play around:
+   * a rout that catches a whole wave and a rout that catches one minion look
+   * identical otherwise.
+   */
+  private terrify(blade: Darius_R_Object): void {
+    const origin = this.owner.position.copy();
+    blade.fearOrigin = origin;
+
     const witnesses = this.game.objectManager.queryObjects({
       area: new Circle({
-        x: this.owner.position.x,
-        y: this.owner.position.y,
+        x: origin.x,
+        y: origin.y,
         r: FEAR_RADIUS,
       }),
       filters: [PredefinedFilters.canTakeDamageFromTeam(this.owner.teamId)],
@@ -210,6 +220,12 @@ export class Darius_R_Object extends SpellObject {
   damage = BASE_DAMAGE;
   executed = false;
   age = 0;
+
+  /** Where the rout went out from, once one has. Null until the head comes off. */
+  fearOrigin: p5.Vector | null = null;
+
+  /** The radius that routed, so the wave is painted on it rather than near it. */
+  fearRadius = FEAR_RADIUS;
 
   /** How far above the body the blade starts. */
   fallHeight = 260;
@@ -288,6 +304,21 @@ export class Darius_R_Object extends SpellObject {
       circle(cos(fleck.angle) * d, sin(fleck.angle) * d, fleck.size * fade + 1);
     }
 
+    // The rout going out from Darius himself: a wave that races to the radius
+    // that actually broke the wave and then holds there while it fades, so the
+    // size of the rout can be read off the ground after it has passed.
+    if (this.fearOrigin) {
+      const raced = constrain(after / 0.45, 0, 1);
+      const wave = 1 - (1 - raced) * (1 - raced);
+      push();
+      translate(this.fearOrigin.x - this.landingPoint.x, this.fearOrigin.y - this.landingPoint.y);
+      noFill();
+      stroke(214, 92, 62, 210 * fade);
+      strokeWeight(2.5);
+      circle(0, 0, this.fearRadius * 2 * wave);
+      pop();
+    }
+
     // an execution leaves a vertical column of light where the body was
     if (!this.executed) {
       pop();
@@ -300,8 +331,9 @@ export class Darius_R_Object extends SpellObject {
   }
 
   getDisplayBoundingBox() {
-    // covers the blade's whole fall, which starts well above the landing point
-    const r = this.fallHeight + 120;
+    // covers the blade's whole fall, which starts well above the landing point,
+    // and the rout, which goes out from Darius rather than from the body
+    const r = Math.max(this.fallHeight + 120, this.fearRadius + STRIKE_RADIUS);
     return new Rectangle({
       x: this.landingPoint.x - r,
       y: this.landingPoint.y - r,

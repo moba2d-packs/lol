@@ -45,8 +45,8 @@
       "asset": {
         "key": "spell_katarina_i2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Katarina_Voracity.png?03c2a",
-        "sha1": "8baa9801c8103a3f6b7abdc1255a0eabb22fbcfe"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Katarina_Sinister_Steel.png?6241f",
+        "sha1": "94718f6dbed67232d9cad2067dec4c5823dde79f"
       },
       "fields": {
         "damagetype": "Magic",
@@ -80,7 +80,7 @@
   "slot": "I",
   "source": {
     "contentHash": "1aa8a2aa67cbbb670fec0a1c1462d9302dcd13226bf2778b974f1aede8549efc",
-    "fetchedAt": "2026-08-17T14:37:44.748Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Katarina/Voracity",
     "revisionId": 4038392,
     "sourceTimestamp": "2026-06-30T09:24:30Z"

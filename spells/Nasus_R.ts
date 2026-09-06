@@ -97,6 +97,21 @@ export class Nasus_R_Object extends SpellObject {
     push();
     translate(this.owner.position.x, this.owner.position.y);
 
+    // The ground that burns, stated at the radius that burns it — as a **band
+    // at the edge, not a filled disc**.
+    //
+    // It was a disc for one day. A filled r=200 circle is 126k css pixels
+    // blended every frame for the whole ultimate, which on a phone at DPR 3 is
+    // 1.1M device pixels — over a third of the screen, for one aura, forever.
+    // Fill area is what a mobile GPU actually pays and alpha does not reduce
+    // it. The same trade was already made once here for the fountain's widest
+    // disc: a band is cheaper *and* says where the effect stops, which a haze
+    // never did. The three sandstorm arcs below carry the interior.
+    noFill();
+    stroke(255, 150, 50, 30 + 12 * Math.sin(this.age / 200));
+    strokeWeight(this.radius * 0.22);
+    circle(0, 0, this.radius * 2 - this.radius * 0.22);
+
     // A sandstorm reads as sweeping arcs, not as a ring of beads — the ring
     // is what every other aura in the game already is.
     noFill();
@@ -104,22 +119,24 @@ export class Nasus_R_Object extends SpellObject {
       const a = spin + (i / 3) * TWO_PI;
       stroke(255, 190 - i * 20, 80, 170);
       strokeWeight(11 - i * 2.5);
-      arc(0, 0, this.radius * (1.9 - i * 0.28), this.radius * (1.9 - i * 0.28), a, a + 1.5);
+      const d = this.radius * 2 * (0.94 - i * 0.16);
+      arc(0, 0, d, d, a, a + 1.5);
     }
 
-    // heat haze pooling at his feet
-    noStroke();
-    fill(255, 150, 50, 30 + 12 * Math.sin(this.age / 200));
-    circle(0, 0, this.radius * 1.1);
+    // the edge of the storm, on the exact radius the tick uses
+    stroke(255, 170, 60, 195);
+    strokeWeight(3);
+    circle(0, 0, this.radius * 2);
     pop();
   }
 
   getDisplayBoundingBox() {
+    const pad = this.radius + 6;
     return new Rectangle({
-      x: this.owner.position.x - this.radius,
-      y: this.owner.position.y - this.radius,
-      w: this.radius * 2,
-      h: this.radius * 2,
+      x: this.owner.position.x - pad,
+      y: this.owner.position.y - pad,
+      w: pad * 2,
+      h: pad * 2,
       data: this,
     });
   }

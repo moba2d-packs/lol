@@ -266,14 +266,15 @@ export class Jinx_E_Chomper extends Pet {
 
     translate(0, -lift);
 
-    // Armed and waiting: a low glow, so a chomper in grass is a thing you can
-    // still spot. They are not stealthed — the wiki is explicit — and a trap
-    // the enemy is meant to see has to actually be seeable.
+    // Armed and waiting: a hard ring on the radius that actually bites. They
+    // are not stealthed — the wiki is explicit — so a trap the enemy is meant
+    // to see has to show how far it reaches, or walking "around" one is a
+    // guess. Flat stroke, not a glow: the ring is the information.
     if (this.armed && !this.bitten) {
-      blendMode(ADD);
-      fill(255, 80, 140, 70 * pulse);
-      circle(0, 0, 62);
-      blendMode(BLEND);
+      noFill();
+      stroke(255, 80, 140, 110 + 80 * pulse);
+      strokeWeight(2);
+      circle(0, 0, TRIGGER_RADIUS * 2);
     }
 
     push();

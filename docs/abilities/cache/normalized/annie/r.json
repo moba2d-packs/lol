@@ -42,6 +42,7 @@
         "effectradius": "250 • 350",
         "icon": "false",
         "icon2": "Summon Tibbers.png",
+        "icon4": "Summon- Tibbers 2.png",
         "leveling": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Penetration:'''</span></dt><dd>10 / 15 / 20%</dd></dl>",
           "text": "Magic Penetration:10 / 15 / 20%"
@@ -64,8 +65,8 @@
       "asset": {
         "key": "spell_annie_r2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Annie_Summon-_Tibbers.png?e6cf9",
-        "sha1": "15e316811e2af0f77901bc19f3f52abb205caada"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Annie_Summon-_Tibbers_2.png?ad6db",
+        "sha1": "7a65a16a14ba3f22c9b01442b1257b4ce4ce8f87"
       },
       "fields": {
         "casttime": "0.25 • None",
@@ -95,6 +96,7 @@
         "effectradius": "250 • 350",
         "icon": "false",
         "icon2": "Summon Tibbers.png",
+        "icon4": "Summon- Tibbers 2.png",
         "leveling": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Penetration:'''</span></dt><dd>10 / 15 / 20%</dd></dl>",
           "text": "Magic Penetration:10 / 15 / 20%"
@@ -117,8 +119,8 @@
   "schemaVersion": 1,
   "slot": "R",
   "source": {
-    "contentHash": "1b6539502df803bf087a02f0b68a4302af9faf7034a8de784a9579f0d49af02c",
-    "fetchedAt": "2026-08-16T08:46:36.640Z",
+    "contentHash": "a5fb87b60dbff84d0bd19f4ebbba5de06e3f7d5d5e7691418f058782f20c92a8",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Annie/Summon:_Tibbers",
     "revisionId": 4012758,
     "sourceTimestamp": "2026-04-26T04:41:22Z"

@@ -1,0 +1,50 @@
+{
+  "asset": {
+    "key": "spell_leblanc_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Mirror_Image.png?f909f",
+    "sha1": "d16484e686ab8abb121fcb0e6b97e1168d7fc67c"
+  },
+  "champion": "LeBlanc",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_leblanc_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Mirror_Image.png?f909f",
+        "sha1": "d16484e686ab8abb121fcb0e6b97e1168d7fc67c"
+      },
+      "fields": {
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate:'''</span> Periodically, when '''LeBlanc''' is damaged to <span style=\"white-space:nowrap\">[[File:Health icon.png|15px|link=Health]]&nbsp;<span style=\"color:\n#21B053; white-space:normal\">40% '''maximum''' health</span></span>, she creates a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Clone\">[[File:Shaco Hallucinate 2.png|20px|link=Champion_summoned_units#decoys|An icon representing the keyword Clone]] [[:Champion_summoned_units#decoys|clone]]</span> of herself, after which they both instantly become <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Invisibility\">[[File:Twilight Shroud old2.png|20px|link=Stealth#Invisibility|An icon representing the keyword Invisibility]] [[:Stealth#Invisibility|invisible]]</span> for 1 second.",
+          "text": "Innate: Periodically, when LeBlanc is damaged to &nbsp;40% maximum health, she creates a clone of herself, after which they both instantly become invisible for 1 second."
+        },
+        "description2": {
+          "raw": "The clone can cast basic attacks with no effect and lasts 8 seconds. Upon spawning, it starts moving up to 1900 units toward a random direction in front of '''LeBlanc's''' movement, determined at the moment of its spawning.",
+          "text": "The clone can cast basic attacks with no effect and lasts 8 seconds. Upon spawning, it starts moving up to 1900 units toward a random direction in front of LeBlanc's movement, determined at the moment of its spawning."
+        },
+        "description3": {
+          "raw": "''See [[LeBlanc#Pets|Pets]] for more details about '''LeBlanc's''' clone.''",
+          "text": "See Pets for more details about LeBlanc's clone."
+        },
+        "icon": "Mirror Image.png",
+        "name": "Mirror Image",
+        "notes": {
+          "raw": "* The <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Clone\">[[File:Shaco Hallucinate 2.png|20px|link=Champion_summoned_units#decoys|An icon representing the keyword Clone]] [[:Champion_summoned_units#decoys|clone]]</span> has a [[Pets#Leash ranges|leash range]].\n* If ''Mirror Image'' triggers while '''LeBlanc''' is tethering to a target with <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"LeBlanc\" data-ability=\"Ethereal Chains\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:LeBlanc Ethereal Chains.png|20xpx|border|link=LeBlanc#Ethereal Chains|An icon for LeBlanc's ability Ethereal Chains]]</span> <span style=\"white-space:normal;\">[[LeBlanc#Ethereal Chains|Ethereal Chains]]</span></span> (or its <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"LeBlanc\" data-ability=\"Mimic: Ethereal Chains\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:LeBlanc Mimic- Ethereal Chains.png|20xpx|border|link=LeBlanc#Mimic: Ethereal Chains|An icon for LeBlanc's ability Mimic: Ethereal Chains]]</span> <span style=\"white-space:normal;\">[[LeBlanc#Mimic: Ethereal Chains|Mimicked]]</span></span> version), her clone will not produce a fake tether, giving away which is the real one. <sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This does not match expectations. \">(unexpected)</span></sup>\n* Using a basic attack breaks the stealth at the end of the attack windup.",
+          "text": "The clone has a leash range.\nIf Mirror Image triggers while LeBlanc is tethering to a target with Ethereal Chains (or its Mimicked version), her clone will not produce a fake tether, giving away which is the real one. (unexpected)\nUsing a basic attack breaks the stealth at the end of the attack windup."
+        },
+        "targeting": "Passive"
+      },
+      "name": "Mirror Image 2"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "c470462481792f335e3cad9edb77220e9217e735673f84a0395484dced243754",
+    "fetchedAt": "2026-09-06T10:54:24.254Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_LeBlanc/Mirror_Image_2",
+    "revisionId": 2688372,
+    "sourceTimestamp": "2018-05-25T10:28:35Z"
+  }
+}

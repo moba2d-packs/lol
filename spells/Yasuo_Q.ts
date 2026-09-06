@@ -47,6 +47,24 @@ export const Q3_FUNNEL_ARCS = 3;
 
 export default class Yasuo_Q extends Spell {
   targetingMode = 'DIRECTION' as const;
+  /**
+   * The three phase icons, and **why two of them are not named `q2`/`q3`.**
+   *
+   * `assets/images/spells/yasuo_q2.png` and `q3.png` exist and are owned by the
+   * wiki importer (`scripts/wiki/import-abilities.mjs`): Steel Tempest has three
+   * *forms* upstream, the importer writes one file per form, and the wiki serves
+   * **one image for all three** — every form in `docs/abilities/yasuo/q.json`
+   * carries the same sha1. So the importer honestly overwrote this pack's own
+   * phase art with three copies of the same square, and the swap below became
+   * invisible. `q1` survived only because the importer's suffix scheme is
+   * `_q`, `_q2`, `_q3` and it never emits `_q1`.
+   *
+   * `source-manifest.json` pins each of those paths to that one wiki hash and
+   * `npm run ability:check` enforces it, so the art cannot be put back there —
+   * it would be a lie about provenance and it would fail `verify`. Pack-local
+   * art lives outside that namespace instead (25 spell icons already do), under
+   * a non-numeric suffix the importer cannot generate.
+   */
   PHASES = {
     Q1: {
       image: api.asset('spell_yasuo_q1'),
@@ -71,6 +89,30 @@ export default class Yasuo_Q extends Spell {
   hitStackCount = 0;
   lastHitTime = 0;
   timeToResetHitStack = 3500;
+
+  /**
+   * The badge on the icon, and right now the *only* thing on the HUD that says
+   * which swing is loaded.
+   *
+   * The phase art says it too, now — see `PHASES` for why it stopped for a
+   * while — but a badge is worth having beside it: three small squares are a
+   * slower read than a number, and this is the same counter `Riven_Q` badges.
+   *
+   * `undefined` at rest rather than `0`: the HUD badges on
+   * `stackCount !== undefined`, so returning zero would park a "0" on the icon
+   * for the whole match.
+   */
+  get stackCount(): number | undefined {
+    return this.hitStackCount > 0 ? this.hitStackCount : undefined;
+  }
+
+  setStackCount(count: number): boolean {
+    this.hitStackCount = constrain(Math.floor(count), 0, 2);
+    // The phase is a reading of the counter, so it has to be re-read here or a
+    // synced count would sit behind art from before it.
+    this.syncPhase();
+    return true;
+  }
 
   changeState(newState: (typeof this.PHASES)[keyof typeof this.PHASES]) {
     this.phase = newState;
@@ -134,16 +176,14 @@ export default class Yasuo_Q extends Spell {
     }
   }
 
-  onUpdate() {
-    // the combo lapses if nothing has been hit for a while
-    if (this.lastHitTime + this.timeToResetHitStack < Date.now()) this.hitStackCount = 0;
-    this.hitStackCount = constrain(this.hitStackCount, 0, 2);
-
-    // The phase is a *reading* of the counter, never a second state that has to
-    // be stepped in lockstep with it. The old machine advanced on `== 1` from
-    // Q1 and `== 2` from Q2, so a counter sitting at 2 while the phase said Q1
-    // matched no transition at all and stayed there for the rest of the game.
-    // Derived, every counter value names a phase and no value is a dead end.
+  /**
+   * The phase is a *reading* of the counter, never a second state that has to
+   * be stepped in lockstep with it. The old machine advanced on `== 1` from Q1
+   * and `== 2` from Q2, so a counter sitting at 2 while the phase said Q1
+   * matched no transition at all and stayed there for the rest of the game.
+   * Derived, every counter value names a phase and no value is a dead end.
+   */
+  private syncPhase(): void {
     const next =
       this.hitStackCount >= 2
         ? this.PHASES.Q3
@@ -151,6 +191,13 @@ export default class Yasuo_Q extends Spell {
           ? this.PHASES.Q2
           : this.PHASES.Q1;
     if (this.phase !== next) this.changeState(next);
+  }
+
+  onUpdate() {
+    // the combo lapses if nothing has been hit for a while
+    if (this.lastHitTime + this.timeToResetHitStack < Date.now()) this.hitStackCount = 0;
+    this.hitStackCount = constrain(this.hitStackCount, 0, 2);
+    this.syncPhase();
   }
 }
 

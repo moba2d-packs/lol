@@ -35,13 +35,15 @@
         },
         "icon": "Mimic.png",
         "icon2": "Mimic Sigil of Malice.png",
+        "icon3": "Mimic Distortion.png",
+        "icon4": "Mimic Ethereal Chains.png",
         "leveling2": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Orb Magic Damage:'''</span></dt><dd>70 / 110 / 150 / 190 / 230 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd><dt><span class=\"template_lc\">'''Mark Magic Damage:'''</span></dt><dd>140 / 220 / 300 / 380 / 460 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 80% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>210 / 330 / 450 / 570 / 690 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 120% AP)</span></dd></dl>",
           "text": "Orb Magic Damage:70 / 110 / 150 / 190 / 230 (+ 40% AP)Mark Magic Damage:140 / 220 / 300 / 380 / 460 (+ 80% AP)Total Magic Damage:210 / 330 / 450 / 570 / 690 (+ 120% AP)"
         },
         "leveling3": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 232.<small>5</small> / 315 / 397.<small>5</small> / 480 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 80% AP)</span></dd></dl>",
-          "text": "Magic Damage:150 / 232.5 / 315 / 397.5 / 480 (+ 80% AP)"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 232.<small>5</small> / 315 / 397.<small>5</small> / 480 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Magic Damage:150 / 232.5 / 315 / 397.5 / 480 (+ 90% AP)"
         },
         "leveling4": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Application Magic Damage:'''</span></dt><dd>70 / 110 / 150 / 190 / 230 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd><dt><span class=\"template_lc\">'''Fracture Magic Damage:'''</span></dt><dd>140 / 220 / 300 / 380 / 460 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 85% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>210 / 330 / 450 / 570 / 690 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 125% AP)</span></dd></dl>",
@@ -60,8 +62,8 @@
       "asset": {
         "key": "spell_leblanc_r2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Mimic.png?98d5e",
-        "sha1": "9a01c24fa8ad5cac0149b2ec98a12f8eb9785c2c"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Mimic-_Sigil_of_Malice.png?8ce13",
+        "sha1": "57b4671b8940a761d422a923b58509cf3c7d7bc9"
       },
       "fields": {
         "cooldown": "45 / 40 / 35 / 30 / 25",
@@ -84,13 +86,15 @@
         },
         "icon": "Mimic.png",
         "icon2": "Mimic Sigil of Malice.png",
+        "icon3": "Mimic Distortion.png",
+        "icon4": "Mimic Ethereal Chains.png",
         "leveling2": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Orb Magic Damage:'''</span></dt><dd>70 / 110 / 150 / 190 / 230 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd><dt><span class=\"template_lc\">'''Mark Magic Damage:'''</span></dt><dd>140 / 220 / 300 / 380 / 460 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 80% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>210 / 330 / 450 / 570 / 690 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 120% AP)</span></dd></dl>",
           "text": "Orb Magic Damage:70 / 110 / 150 / 190 / 230 (+ 40% AP)Mark Magic Damage:140 / 220 / 300 / 380 / 460 (+ 80% AP)Total Magic Damage:210 / 330 / 450 / 570 / 690 (+ 120% AP)"
         },
         "leveling3": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 232.<small>5</small> / 315 / 397.<small>5</small> / 480 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 80% AP)</span></dd></dl>",
-          "text": "Magic Damage:150 / 232.5 / 315 / 397.5 / 480 (+ 80% AP)"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 232.<small>5</small> / 315 / 397.<small>5</small> / 480 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Magic Damage:150 / 232.5 / 315 / 397.5 / 480 (+ 90% AP)"
         },
         "leveling4": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Application Magic Damage:'''</span></dt><dd>70 / 110 / 150 / 190 / 230 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd><dt><span class=\"template_lc\">'''Fracture Magic Damage:'''</span></dt><dd>140 / 220 / 300 / 380 / 460 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 85% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>210 / 330 / 450 / 570 / 690 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 125% AP)</span></dd></dl>",
@@ -109,8 +113,8 @@
       "asset": {
         "key": "spell_leblanc_r3",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Mimic.png?98d5e",
-        "sha1": "9a01c24fa8ad5cac0149b2ec98a12f8eb9785c2c"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Mimic-_Distortion.png?1eb6c",
+        "sha1": "b37db58d6b8104fbf9b7fa8709b541da50d6b68d"
       },
       "fields": {
         "cooldown": "45 / 40 / 35 / 30 / 25",
@@ -133,13 +137,15 @@
         },
         "icon": "Mimic.png",
         "icon2": "Mimic Sigil of Malice.png",
+        "icon3": "Mimic Distortion.png",
+        "icon4": "Mimic Ethereal Chains.png",
         "leveling2": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Orb Magic Damage:'''</span></dt><dd>70 / 110 / 150 / 190 / 230 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd><dt><span class=\"template_lc\">'''Mark Magic Damage:'''</span></dt><dd>140 / 220 / 300 / 380 / 460 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 80% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>210 / 330 / 450 / 570 / 690 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 120% AP)</span></dd></dl>",
           "text": "Orb Magic Damage:70 / 110 / 150 / 190 / 230 (+ 40% AP)Mark Magic Damage:140 / 220 / 300 / 380 / 460 (+ 80% AP)Total Magic Damage:210 / 330 / 450 / 570 / 690 (+ 120% AP)"
         },
         "leveling3": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 232.<small>5</small> / 315 / 397.<small>5</small> / 480 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 80% AP)</span></dd></dl>",
-          "text": "Magic Damage:150 / 232.5 / 315 / 397.5 / 480 (+ 80% AP)"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 232.<small>5</small> / 315 / 397.<small>5</small> / 480 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Magic Damage:150 / 232.5 / 315 / 397.5 / 480 (+ 90% AP)"
         },
         "leveling4": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Application Magic Damage:'''</span></dt><dd>70 / 110 / 150 / 190 / 230 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd><dt><span class=\"template_lc\">'''Fracture Magic Damage:'''</span></dt><dd>140 / 220 / 300 / 380 / 460 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 85% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>210 / 330 / 450 / 570 / 690 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 125% AP)</span></dd></dl>",
@@ -158,8 +164,8 @@
       "asset": {
         "key": "spell_leblanc_r4",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Mimic.png?98d5e",
-        "sha1": "9a01c24fa8ad5cac0149b2ec98a12f8eb9785c2c"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Mimic-_Ethereal_Chains.png?56784",
+        "sha1": "e6da63a19dfafe0fc5869159cc0162edcc482358"
       },
       "fields": {
         "cooldown": "45 / 40 / 35 / 30 / 25",
@@ -182,13 +188,15 @@
         },
         "icon": "Mimic.png",
         "icon2": "Mimic Sigil of Malice.png",
+        "icon3": "Mimic Distortion.png",
+        "icon4": "Mimic Ethereal Chains.png",
         "leveling2": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Orb Magic Damage:'''</span></dt><dd>70 / 110 / 150 / 190 / 230 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd><dt><span class=\"template_lc\">'''Mark Magic Damage:'''</span></dt><dd>140 / 220 / 300 / 380 / 460 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 80% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>210 / 330 / 450 / 570 / 690 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 120% AP)</span></dd></dl>",
           "text": "Orb Magic Damage:70 / 110 / 150 / 190 / 230 (+ 40% AP)Mark Magic Damage:140 / 220 / 300 / 380 / 460 (+ 80% AP)Total Magic Damage:210 / 330 / 450 / 570 / 690 (+ 120% AP)"
         },
         "leveling3": {
-          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 232.<small>5</small> / 315 / 397.<small>5</small> / 480 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 80% AP)</span></dd></dl>",
-          "text": "Magic Damage:150 / 232.5 / 315 / 397.5 / 480 (+ 80% AP)"
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 232.<small>5</small> / 315 / 397.<small>5</small> / 480 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Magic Damage:150 / 232.5 / 315 / 397.5 / 480 (+ 90% AP)"
         },
         "leveling4": {
           "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Application Magic Damage:'''</span></dt><dd>70 / 110 / 150 / 190 / 230 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd><dt><span class=\"template_lc\">'''Fracture Magic Damage:'''</span></dt><dd>140 / 220 / 300 / 380 / 460 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 85% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>210 / 330 / 450 / 570 / 690 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 125% AP)</span></dd></dl>",
@@ -207,10 +215,10 @@
   "schemaVersion": 1,
   "slot": "R",
   "source": {
-    "contentHash": "35a8933909c63316a0e5a20c725b60107a6a094c25c2e4369cd5e456ca29526c",
-    "fetchedAt": "2026-08-13T16:24:13.273Z",
+    "contentHash": "fe78fc8447d4b442f7d46013e9cb56f65916a50889956a89485ab5e5d6b80365",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_LeBlanc/Mimic",
-    "revisionId": 4034699,
-    "sourceTimestamp": "2026-06-23T21:15:25Z"
+    "revisionId": 4057469,
+    "sourceTimestamp": "2026-08-27T09:10:24Z"
   }
 }

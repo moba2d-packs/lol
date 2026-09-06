@@ -244,11 +244,14 @@ export default class Vi_R extends Spell {
    */
   private land(punched: Set<AttackableUnit>, target: AttackableUnit): void {
     const at = this.owner.position.copy();
+    // Measured once and handed to the slam below, so the rim on screen and the
+    // circle that knocked people down cannot drift apart.
+    const blastRadius = effectiveRange(R_BLAST_RADIUS, this.owner);
     const found = this.game.objectManager.queryObjects({
       area: new Circle({
         x: at.x,
         y: at.y,
-        r: effectiveRange(R_BLAST_RADIUS, this.owner),
+        r: blastRadius,
       }),
       filters: [PredefinedFilters.canTakeDamageFromTeam(this.owner.teamId)],
     }) as AttackableUnit[];
@@ -271,7 +274,9 @@ export default class Vi_R extends Spell {
 
     const aim = { x: target.position.x - this.launchPoint(at).x, y: target.position.y - this.launchPoint(at).y };
     const heading = Math.atan2(aim.y, aim.x);
-    this.game.objectManager.addObject(new Vi_R_Impact(this.owner, at, heading));
+    const slam = new Vi_R_Impact(this.owner, at, heading);
+    slam.blastRadius = blastRadius;
+    this.game.objectManager.addObject(slam);
   }
 
   private launchPoint(fallback: p5.Vector): p5.Vector {
@@ -321,15 +326,25 @@ export class Vi_R_Streak extends SpellObject {
       translate(this.launch.x, this.launch.y);
       rotate(heading);
       noStroke();
-      // Widening toward her, so the bar reads as a direction and not a rope.
-      fill(HEXTECH[0], HEXTECH[1], HEXTECH[2], 90 * pulse);
-      quad(0, -5, flown, -15, flown, 15, 0, 5);
+      // The ground she has swept. Anything within R_PASS_RADIUS of her is
+      // thrown aside as she goes, so the band is drawn at that half-width
+      // rather than as the fifteen-pixel ribbon it used to be — the shove
+      // reached four times further than the picture that promised it.
+      const pass = effectiveRange(R_PASS_RADIUS, this.owner);
+      fill(HEXTECH[0], HEXTECH[1], HEXTECH[2], 34 * pulse);
+      quad(0, -pass, flown, -pass, flown, pass, 0, pass);
+      // The brass core stays narrow: it is the direction, not the reach.
       fill(BRASS[0], BRASS[1], BRASS[2], 200 * pulse);
       quad(0, -2, flown, -6, flown, 6, 0, 2);
       stroke(255, 255, 255, 150 * pulse);
       strokeWeight(2);
       line(flown * 0.55, -3, flown, 0);
       line(flown * 0.55, 3, flown, 0);
+      // The disc she is clearing right now — the rounded nose of that band.
+      noFill();
+      stroke(HEXTECH[0], HEXTECH[1], HEXTECH[2], 150 * pulse);
+      strokeWeight(2);
+      circle(flown, 0, pass * 2);
       pop();
     }
 
@@ -402,6 +417,8 @@ export class Vi_R_Impact extends SpellObject {
   lifeTime = 650;
   age = 0;
   radius = R_IMPACT_REACH;
+  /** The circle that actually knocked people down; the spell writes the real one. */
+  blastRadius = R_BLAST_RADIUS;
   heading: number;
   private fractures: { spread: number; length: number; kink: number }[] = [];
 
@@ -459,11 +476,13 @@ export class Vi_R_Impact extends SpellObject {
       // Massive ground crater slam
       rotate(this.heading);
 
-      // 1. Hextech shockwave ring
+      // 1. Hextech shockwave ring, stopping on the blast's own radius. It used
+      //    to run out to 1.5x the crack reach — half again past anything the
+      //    slam touched — so the ring taught the wrong distance every cast.
       noFill();
       stroke(HEXTECH[0], HEXTECH[1], HEXTECH[2], 230 * (1 - slamProgress));
       strokeWeight(5 * (1 - slamProgress) + 2);
-      circle(0, 0, (this.radius * 1.5) * slamOpen);
+      circle(0, 0, this.blastRadius * 2 * slamOpen);
 
       // 2. Heavy brass crater cracks
       stroke(BRASS[0], BRASS[1], BRASS[2], 250 * (1 - slamProgress));

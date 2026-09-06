@@ -64,8 +64,8 @@
       "asset": {
         "key": "spell_shaco_r2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Shaco_Hallucinate.png?3222c",
-        "sha1": "86c20e6e77373ca295c7c6ddfab142caf5423f7c"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Shaco_Hallucinate_2.png?0ccb9",
+        "sha1": "8209c474c062e52f9cb727b54b4ceab91ba3c164"
       },
       "fields": {
         "casttime": "0.25",
@@ -118,7 +118,7 @@
   "slot": "R",
   "source": {
     "contentHash": "39b3a0f7fa8deb829462e7a33372c42b27d1b3241ebba955f01b35ddb6407687",
-    "fetchedAt": "2026-09-01T05:17:15.273Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Shaco/Hallucinate",
     "revisionId": 4013796,
     "sourceTimestamp": "2026-04-30T07:59:32Z"

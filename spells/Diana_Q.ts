@@ -322,6 +322,14 @@ export class Diana_Q_Sweep extends SpellObject {
     const samples = 28;
     const stepCount = Math.max(2, Math.floor(progress * samples));
 
+    // The corridor it really cuts. The blade takes every body within Q_BAND of
+    // the path at any point along it, and the beam below is four pixels wide —
+    // without these two edges the player reads a thread and eats a band.
+    stroke(MOON_NIGHT[0], MOON_NIGHT[1], MOON_NIGHT[2], 150 * tail);
+    strokeWeight(1.5);
+    this.drawBandEdge(1, samples, stepCount, progress);
+    this.drawBandEdge(-1, samples, stepCount, progress);
+
     // Outer soft lunar aura
     stroke(MOON_CORE[0], MOON_CORE[1], MOON_CORE[2], 90 * tail);
     strokeWeight(14);
@@ -373,6 +381,23 @@ export class Diana_Q_Sweep extends SpellObject {
     pop();
 
     pop();
+  }
+
+  /**
+   * One side of the swept corridor, offset `Q_BAND` off the curve's own normal.
+   *
+   * Its own method, and named `draw…` on purpose: the two edges are the picture
+   * of the hitbox, and `reach-scan` reads a drawing only out of a `draw*` body.
+   */
+  private drawBandEdge(side: number, samples: number, stepCount: number, progress: number): void {
+    beginShape();
+    for (let i = 0; i <= stepCount; i++) {
+      const k = (i / samples) * progress;
+      const pt = this.pointAt(k);
+      const normal = this.tangentAt(k) + HALF_PI;
+      vertex(pt.x + Math.cos(normal) * Q_BAND * side, pt.y + Math.sin(normal) * Q_BAND * side);
+    }
+    endShape();
   }
 
   getDisplayBoundingBox() {

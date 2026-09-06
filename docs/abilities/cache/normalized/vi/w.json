@@ -48,8 +48,8 @@
       "asset": {
         "key": "spell_vi_w2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Vi_Denting_Blows.png?69ddf",
-        "sha1": "62d8f498da9bb3472605d7f4b54fd3a78553242a"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Vi_Denting_Blows_2.png?59d0a",
+        "sha1": "e491fe3f712969a26c0891827270b57f4e60d0b7"
       },
       "fields": {
         "damagetype": "Physical",
@@ -86,7 +86,7 @@
   "slot": "W",
   "source": {
     "contentHash": "aa5ca57c944b75d48883f34db9824b3d1591661246ad4ce9b030d1c389d208c9",
-    "fetchedAt": "2026-08-17T14:38:03.922Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Vi/Denting_Blows",
     "revisionId": 3932548,
     "sourceTimestamp": "2025-07-19T01:58:33Z"

@@ -1,0 +1,62 @@
+{
+  "asset": {
+    "key": "spell_leblanc_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Ethereal_Chains.png?81d59",
+    "sha1": "006a3e2605a79adb650b71bd6bbc66e08bb66658"
+  },
+  "champion": "LeBlanc",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_leblanc_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/LeBlanc_Ethereal_Chains.png?81d59",
+        "sha1": "006a3e2605a79adb650b71bd6bbc66e08bb66658"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "14 / 13.25 / 12.5 / 11.75 / 11",
+        "cost": "50",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''LeBlanc''' flings an illusory chain in the target direction that deals <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to the first enemy it hits and forms a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Tether\">[[File:Focused Resolve.png|20px|link=Tether|An icon representing the keyword Tether]] [[:Tether|tether]]</span> between '''LeBlanc''' and the target for 1.<small>5</small> seconds, during which they are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"True sight\">[[File:True Sight icon.png|20px|link=Sight#True_sight|An icon representing the keyword True sight]] [[:Sight#True_sight|revealed]]</span>.",
+          "text": "Active: LeBlanc flings an illusory chain in the target direction that deals magic damage to the first enemy it hits and forms a tether between LeBlanc and the target for 1.5 seconds, during which they are revealed."
+        },
+        "description2": {
+          "raw": "If the tether is not broken by the end of its duration, it fractures to deal <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to the target and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Root\">[[File:Root icon.png|20px|link=Root|An icon representing the keyword Root]] [[:Root|root]]</span> them for 1.<small>5</small> seconds, during which they are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"True sight\">[[File:True Sight icon.png|20px|link=Sight#True_sight|An icon representing the keyword True sight]] [[:Sight#True_sight|revealed]]</span>.",
+          "text": "If the tether is not broken by the end of its duration, it fractures to deal magic damage to the target and root them for 1.5 seconds, during which they are revealed."
+        },
+        "icon": "Ethereal Chains.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>50 / 70 / 90 / 110 / 130 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 40% AP)</span></dd></dl>",
+          "text": "Magic Damage:50 / 70 / 90 / 110 / 130 (+ 40% AP)"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Fracture Magic Damage:'''</span></dt><dd>80 / 120 / 160 / 200 / 240 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 85% AP)</span></dd><dt><span class=\"template_lc\">'''Total Damage:'''</span></dt><dd>130 / 190 / 250 / 310 / 370 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 125% AP)</span></dd></dl>",
+          "text": "Fracture Magic Damage:80 / 120 / 160 / 200 / 240 (+ 85% AP)Total Damage:130 / 190 / 250 / 310 / 370 (+ 125% AP)"
+        },
+        "name": "Ethereal Chains",
+        "notes": {
+          "raw": "* Both the initial and the delayed damage can detonate <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"LeBlanc\" data-ability=\"Sigil of Malice\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:LeBlanc Sigil of Malice.png|20xpx|border|link=LeBlanc#Sigil of Malice|An icon for LeBlanc's ability Sigil of Malice]]</span> <span style=\"white-space:normal;\">[[LeBlanc#Sigil of Malice|Sigil of Malice]]</span></span>.\n* ''Ethereal Chains'' and <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"LeBlanc\" data-ability=\"Mimic: Ethereal Chains\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:LeBlanc Mimic- Ethereal Chains.png|20xpx|border|link=LeBlanc#Mimic: Ethereal Chains|An icon for LeBlanc's ability Mimic: Ethereal Chains]]</span> <span style=\"white-space:normal;\">[[LeBlanc#Mimic: Ethereal Chains|Mimic: Ethereal Chains]]</span></span> are separate debuffs, and can both be tethered to the same target without overriding each other. The <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Root\">[[File:Root icon.png|20px|link=Root|An icon representing the keyword Root]] [[:Root|root]]</span> duration for either one are unchanged.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will block the tether's application and initial damage but not the aftereffects of one already applied.\n* The tether remains for a minimum of 0.<small>25</small> seconds regardless of distance. \n* This ability will cast from wherever the caster is at the end of the cast time.",
+          "text": "Both the initial and the delayed damage can detonate Sigil of Malice.\nEthereal Chains and Mimic: Ethereal Chains are separate debuffs, and can both be tethered to the same target without overriding each other. The root duration for either one are unchanged.\nSpell shield will block the tether's application and initial damage but not the aftereffects of one already applied.\nThe tether remains for a minimum of 0.25 seconds regardless of distance.\nThis ability will cast from wherever the caster is at the end of the cast time."
+        },
+        "projectile": true,
+        "speed": "1750",
+        "spellshield": false,
+        "targeting": "Direction",
+        "width": "110"
+      },
+      "name": "Ethereal Chains"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "90b1dfcad56ce916848ddd3a8d13bc46e946f3a2624a14702f6a8e8a42c3e251",
+    "fetchedAt": "2026-09-06T10:55:39.277Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_LeBlanc/Ethereal_Chains",
+    "revisionId": 3954748,
+    "sourceTimestamp": "2025-09-22T05:22:08Z"
+  }
+}

@@ -229,11 +229,17 @@ export class Vladimir_R_Object extends SpellObject {
       strokeWeight(2.5);
       circle(0, 0, this.radius * 2 * form);
     } else if (burstFade > 0) {
-      // the detonation: one bright ring sweeping past the radius, then gone
+      // The detonation: a ring racing outward and stopping dead on the radius
+      // that burst, with the rim still lit under it. It used to sweep 30% past
+      // the zone — the plague only ever touches bodies marked at cast, but the
+      // ring is the last thing on screen and it was drawing the wrong circle.
       noFill();
+      stroke(20, 26, 6, 200 * burstFade);
+      strokeWeight(6);
+      circle(0, 0, this.radius * 2);
       stroke(235, 255, 170, 230 * burstFade);
       strokeWeight(5 + 10 * (1 - burstFade));
-      circle(0, 0, this.radius * 2 * (1 + (1 - burstFade) * 0.3));
+      circle(0, 0, this.radius * 2 * (0.55 + 0.45 * (1 - burstFade)));
     }
 
     pop();

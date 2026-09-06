@@ -178,7 +178,11 @@ export class Nautilus_R_Object extends MissileSpellObject {
 
   /** Everything a blast does to the bodies standing in it, wherever it is. */
   private blastAt(at: p5.Vector, radius: number, damage: number, knockupMs: number): void {
-    this.game.objectManager.addObject(new Nautilus_R_Rim(this.owner, at.copy()));
+    // The rim is handed the same `radius` the query below uses. It used to draw
+    // `R_BLAST_RADIUS` whatever it was given, so each of the five-odd steps
+    // along the path painted a 200 ring over a blast that only reached 95 —
+    // four times the area, announced every 90px of travel.
+    this.game.objectManager.addObject(new Nautilus_R_Rim(this.owner, at.copy(), radius));
 
     const caught = this.game.objectManager.queryObjects({
       area: new Circle({ x: at.x, y: at.y, r: radius }),
@@ -276,15 +280,23 @@ export class Nautilus_R_Object extends MissileSpellObject {
 }
 
 
-/** The blast radius, drawn on the ground where it actually landed. */
+/**
+ * The blast radius, drawn on the ground where it actually landed.
+ *
+ * The radius comes in through the constructor rather than being read off a
+ * module constant: one charge lays down two different sizes of blast, and the
+ * only way the rim cannot drift from the circle that hurt is to be given it.
+ */
 export class Nautilus_R_Rim extends SpellObject {
   zIndex = GROUND_Z_INDEX;
   lifeTime = R_RIM_MS;
   age = 0;
+  radius: number;
 
-  constructor(owner: AttackableUnit, at: p5.Vector) {
+  constructor(owner: AttackableUnit, at: p5.Vector, radius: number) {
     super(owner);
     this.position = at;
+    this.radius = radius;
   }
 
   update(): void {
@@ -300,16 +312,16 @@ export class Nautilus_R_Rim extends SpellObject {
     noFill();
     stroke(FOAM[0], FOAM[1], FOAM[2], 200 * fade);
     strokeWeight(6 * fade + 1);
-    circle(this.position.x, this.position.y, R_BLAST_RADIUS * 2 * opened);
+    circle(this.position.x, this.position.y, this.radius * 2 * opened);
     // The hard rim on the radius that really hit, not on the wash.
     stroke(RUST[0], RUST[1], RUST[2], 190 * fade + 30);
     strokeWeight(3);
-    circle(this.position.x, this.position.y, R_BLAST_RADIUS * 2);
+    circle(this.position.x, this.position.y, this.radius * 2);
     pop();
   }
 
   getDisplayBoundingBox(): Rectangle {
-    return this.squareDisplayBoundingBox((R_BLAST_RADIUS + 14) * 2);
+    return this.squareDisplayBoundingBox((this.radius + 14) * 2);
   }
 }
 

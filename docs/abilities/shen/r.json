@@ -44,8 +44,8 @@
       "asset": {
         "key": "spell_shen_r2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Shen_Stand_United.png?b107c",
-        "sha1": "2dcb8b865eaaf711e02584e2d9ff5328eda52ff3"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Shen_Stand_United_2.png?7f577",
+        "sha1": "56eb10125f6097b6f327c718e7a2215dbc3257f3"
       },
       "fields": {
         "casttime": "none",
@@ -78,7 +78,7 @@
   "slot": "R",
   "source": {
     "contentHash": "445b85a8fb55b3f476f46634d7c02c3d8c7574ac5c2402de921d9408b29e2274",
-    "fetchedAt": "2026-08-26T19:29:02.718Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Shen/Stand_United",
     "revisionId": 4004939,
     "sourceTimestamp": "2026-04-02T19:26:56Z"

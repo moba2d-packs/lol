@@ -123,16 +123,46 @@ export class Singed_Q_Cloud extends SpellObject {
     const fade = 1 - t;
     push();
     translate(this.position.x, this.position.y);
+
+    // The gas covers the circle it poisons. `this.radius` is the query radius,
+    // so the fill, the puffs and the rim all come off that one number and none
+    // of them can drift from what the tick actually catches — the old cloud was
+    // painted at just over half of it and poisoned a body standing well clear
+    // of any visible gas.
     noStroke();
-    for (let i = 0; i < 4; i++) {
-      const a = this.seed + i * 1.6 + this.age / 600;
-      fill(160, 110, 210, 70 * fade);
-      circle(cos(a) * 18, sin(a) * 18, this.radius * (1.1 + 0.2 * i * t));
+    fill(148, 100, 205, 44 * fade);
+    circle(0, 0, this.radius * 2);
+
+    // Rolling gas, as strokes rather than as more discs.
+    //
+    // These were four filled circles sitting *inside* the body above — they
+    // could not reach past its edge, so every pixel of them was drawn twice and
+    // told the player nothing the body had not. That is **53% of this cloud's
+    // fill**, and the trail keeps eight clouds alive at a time (1800ms of life,
+    // one dropped every 220ms), so the whole thing was blending 1.34x the area
+    // of a phone screen every frame for one champion. Fill area is what a
+    // mobile GPU pays; alpha does not reduce it, and only area does.
+    //
+    // An arc costs its perimeter instead, which is the same swirl for a
+    // fortieth of the pixels.
+    noFill();
+    stroke(185, 140, 235, 70 * fade);
+    strokeWeight(3);
+    for (let i = 0; i < 3; i++) {
+      const a = this.seed + i * 2.1 + this.age / 600;
+      const d = this.radius * (0.9 + 0.22 * i);
+      arc(0, 0, d, d, a, a + 1.7);
     }
+
+    // the hard edge: where the poison stops
+    noFill();
+    stroke(120, 70, 180, 185 * fade);
+    strokeWeight(2.5);
+    circle(0, 0, this.radius * 2);
     pop();
   }
 
   getDisplayBoundingBox() {
-    return this.squareDisplayBoundingBox(this.radius * 2);
+    return this.squareDisplayBoundingBox((this.radius + 4) * 2);
   }
 }

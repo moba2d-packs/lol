@@ -8,6 +8,12 @@
   "champion": "Lee Sin",
   "forms": [
     {
+      "asset": {
+        "key": "spell_leesin_w",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lee_Sin_Safeguard.png?877d3",
+        "sha1": "71c40539b31ca8855c36e5597de72861e0eb6061"
+      },
       "fields": {
         "casttime": "none",
         "cooldown": "7",
@@ -40,6 +46,12 @@
       "name": "Safeguard"
     },
     {
+      "asset": {
+        "key": "spell_leesin_w2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lee_Sin_Iron_Will.png?c4bd4",
+        "sha1": "e1d559511a2641a898b41dc8ec728ecf505442d9"
+      },
       "fields": {
         "casttime": "none",
         "cost": "25",
@@ -66,7 +78,7 @@
   "slot": "W",
   "source": {
     "contentHash": "bae6b6fa256783ba66cc92c459fff4218a015688206c7192e77829aacb07c9e0",
-    "fetchedAt": "2026-08-13T10:47:04.843Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Lee_Sin/Safeguard",
     "revisionId": 4024314,
     "sourceTimestamp": "2026-05-30T23:34:12Z"

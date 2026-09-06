@@ -44,8 +44,8 @@
       "asset": {
         "key": "spell_orianna_i2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Orianna_Clockwork_Windup.png?b6f79",
-        "sha1": "75c2b346bee3aab2fcfba6ac9b7c75836152d0e7"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Orianna_Clockwork_Winding.png?682d4",
+        "sha1": "88e932c4fef80010863385f1212a3dc70bdcaf1c"
       },
       "fields": {
         "damagetype": "Magic",
@@ -78,7 +78,7 @@
   "slot": "I",
   "source": {
     "contentHash": "1bd71036aa959fe6983bc7f9bba5766238a0dc6e37df711c0362486a678ec1ad",
-    "fetchedAt": "2026-08-26T19:29:34.663Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Orianna/Clockwork_Windup",
     "revisionId": 4026443,
     "sourceTimestamp": "2026-06-09T21:56:08Z"

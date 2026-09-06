@@ -56,8 +56,8 @@
       "asset": {
         "key": "spell_zed_w2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Zed_Living_Shadow.png?20068",
-        "sha1": "7b02dc4118d330c9b072453c808cb78df988d8a6"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Zed_Living_Shadow_2.png?20068",
+        "sha1": "b5179e36b40d637455abd7f2b49969747f1dc65f"
       },
       "fields": {
         "casttime": "none",
@@ -102,7 +102,7 @@
   "slot": "W",
   "source": {
     "contentHash": "78eecb0a11c9d710ded4ff0723ea6ba25b956a37b5d7452214e4c63bbb2137b8",
-    "fetchedAt": "2026-09-01T05:17:39.358Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Zed/Living_Shadow",
     "revisionId": 4053262,
     "sourceTimestamp": "2026-08-23T06:15:22Z"

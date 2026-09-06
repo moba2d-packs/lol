@@ -48,8 +48,8 @@
       "asset": {
         "key": "spell_pyke_r2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Pyke_Death_from_Below.png?1cebd",
-        "sha1": "e3dd26f6dfecc92568efcafa352abd820f4d6bb0"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Death_from_Below_2.png?fe0d2",
+        "sha1": "ddd0ff3934214b354f1008df9bb72952d2a00aac"
       },
       "fields": {
         "casttime": "0.5",
@@ -86,7 +86,7 @@
   "slot": "R",
   "source": {
     "contentHash": "cda6ec0e3057ed6e68717943e2508d82cd67693953ee42d31397e70442166d90",
-    "fetchedAt": "2026-08-26T19:29:26.049Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Pyke/Death_from_Below",
     "revisionId": 4007995,
     "sourceTimestamp": "2026-04-13T02:47:13Z"

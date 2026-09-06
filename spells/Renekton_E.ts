@@ -258,10 +258,26 @@ export class Renekton_E_Object extends SpellObject {
         line(nx * spread * 0.35, ny * spread * 0.35, dx + nx * spread, dy + ny * spread);
       }
 
+      // The corridor the pass really cuts. The blade takes every body within
+      // HIT_RADIUS of the line, and three grooves thirteen pixels apart said a
+      // fifth of that — so both edges of the sweep are marked on the real
+      // half-width, dim enough that the grooves stay the subject.
+      stroke(r, g, b, 80 * fade);
+      strokeWeight(1.5);
+      line(nx * HIT_RADIUS, ny * HIT_RADIUS, dx + nx * HIT_RADIUS, dy + ny * HIT_RADIUS);
+      line(-nx * HIT_RADIUS, -ny * HIT_RADIUS, dx - nx * HIT_RADIUS, dy - ny * HIT_RADIUS);
+
       // a bright leading edge right at the head of the furrow
       stroke(255, 235, 220, 220 * fade);
       strokeWeight(4);
       line(dx - (dx / length) * 26, dy - (dy / length) * 26, dx, dy);
+
+      // and the disc he is sweeping right now, which is the same radius rounded
+      // off the end of that corridor
+      noFill();
+      stroke(r, g, b, 110 * fade);
+      strokeWeight(2);
+      circle(dx, dy, HIT_RADIUS * 2);
     }
     pop();
 
@@ -276,7 +292,8 @@ export class Renekton_E_Object extends SpellObject {
   }
 
   getDisplayBoundingBox() {
-    const margin = 60;
+    // wide enough for the swept corridor, which is HIT_RADIUS either side
+    const margin = HIT_RADIUS + 20;
     const minX = Math.min(this.origin.x, this.head.x) - margin;
     const minY = Math.min(this.origin.y, this.head.y) - margin;
     return new Rectangle({

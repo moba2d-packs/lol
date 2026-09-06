@@ -1,0 +1,49 @@
+{
+  "asset": {
+    "key": "spell_twitch_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twitch_Deadly_Venom.png?4f526",
+    "sha1": "1c8f384653d108deb2c230fc20f45e13224c3505"
+  },
+  "champion": "Twitch",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_twitch_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twitch_Deadly_Venom.png?4f526",
+        "sha1": "1c8f384653d108deb2c230fc20f45e13224c3505"
+      },
+      "fields": {
+        "damagetype": "True",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate:'''</span> '''Twitch's''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attacks\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attacks]]</span> <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> apply a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stack\">[[File:Stack icon.png|20px|link=Stack|An icon representing the keyword Stack]] [[:Stack|stack]]</span> of ''Deadly Venom'' for 6 seconds, refreshing on subsequent applications and stacking up to 6 times.",
+          "text": "Innate: Twitch's basic attacks on-hit apply a stack of Deadly Venom for 6 seconds, refreshing on subsequent applications and stacking up to 6 times."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Deadly Venom:'''</span> For each stack, the target is dealt<span id=\"container\" class=\"container\" style=\"cursor:help;\"><span class=\"flipText1 active\">「&nbsp;<span style=\"white-space:nowrap\">[[File:Hybrid penetration icon.png|15px|link=True damage]]&nbsp;<span style=\"color:\n#F9966B; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"1 every 4 levels\" data-bot-values=\"1;2;3;4;5\" data-top-values=\"1;5;9;13;17\">1 / 2 / 3 / 4 / 5 (based on level)</span></span></span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 3% AP)</span> <span style=\"color:\n#F9966B; white-space:normal\">true damage</span> per second over the duration,&nbsp;」</span><span class=\"flipText2\">「&nbsp;<span style=\"white-space:nowrap\">[[File:Hybrid penetration icon.png|15px|link=True damage]]&nbsp;<span style=\"color:\n#F9966B; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"1, +1 every 4 levels\" data-bot-values=\"6;12;18;24;30\" data-top-values=\"1;5;9;13;17\">6 / 12 / 18 / 24 / 30 (based on level)</span></span></span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 18% AP)</span> <span style=\"color:\n#F9966B; white-space:normal\">'''total''' true damage</span> over the duration,&nbsp;」</span></span>for a maximum of<span id=\"container\" class=\"container\" style=\"cursor:help;\"><span class=\"flipText1 active\">「&nbsp;<span style=\"color:\n#F9966B; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"6 every 4 levels\" data-bot-values=\"6;12;18;24;30\" data-top-values=\"1;5;9;13;17\">6 / 12 / 18 / 24 / 30 (based on level)</span></span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 18% AP)</span> <span style=\"color:\n#F9966B; white-space:normal\">true damage</span> with each tick.&nbsp;」</span><span class=\"flipText2\">「&nbsp;<span style=\"color:\n#F9966B; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"6 every 4 levels\" data-bot-values=\"36;72;108;144;180\" data-top-values=\"1;5;9;13;17\">36 / 72 / 108 / 144 / 180 (based on level)</span></span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 108% AP)</span> <span style=\"color:\n#F9966B; white-space:normal\">'''total''' true damage</span> over the duration.&nbsp;」</span></span>This effect is considered a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Poison\">[[File:Poison icon.png|20px|link=Cassiopeia/LoL|An icon representing the keyword Poison]] [[:Cassiopeia/LoL|poison]]</span>.",
+          "text": "Deadly Venom: For each stack, the target is dealt「&nbsp;&nbsp;1 / 2 / 3 / 4 / 5 (based on level) (+ 3% AP) true damage per second over the duration,&nbsp;」「&nbsp;&nbsp;6 / 12 / 18 / 24 / 30 (based on level) (+ 18% AP) total true damage over the duration,&nbsp;」for a maximum of「&nbsp;6 / 12 / 18 / 24 / 30 (based on level) (+ 18% AP) true damage with each tick.&nbsp;」「&nbsp;36 / 72 / 108 / 144 / 180 (based on level) (+ 108% AP) total true damage over the duration.&nbsp;」This effect is considered a poison."
+        },
+        "icon": "false",
+        "icon2": "Deadly Venom.png",
+        "name": "Deadly Venom",
+        "notes": {
+          "raw": "* ''Deadly Venom'' deals <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Proc damage\">[[File:Wit's End item.png|20px|link=Damage|An icon representing the keyword Proc damage]] [[:Damage|proc]]</span> <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|damage over time]]</span>, and does not trigger <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell effects\">[[File:Blackfire Torch item.png|20px|link=Ability effects|An icon representing the keyword Ability effects]] [[:Ability effects|spell effects]]</span>.\n* The first 5 stacks on a target are indicated each by a small mark around them, while a target affected by the maximum stacks of 6 is indicated by a single large mark above them instead.\n* ''Deadly Venom'' does not affect <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Structures\">[[File:Structure icon.png|20px|link=Category:Structure|An icon representing the keyword Structure]] [[:Category:Structure|structures]]</span>.\n* <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Runaan&#39;s Hurricane\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Runaan's Hurricane item.png|20xpx|border|link=Runaan's Hurricane|An icon for the item Runaan's Hurricane]]</span> <span style=\"white-space:normal;\">[[Runaan's Hurricane|Runaan's Hurricane's]]</span></span> [[Named item effect#Wind's Fury|Wind's Fury]] bolts are special-cased to generate one ''Deadly Venom'' stack per enemy hit.",
+          "text": "Deadly Venom deals proc damage over time, and does not trigger spell effects.\nThe first 5 stacks on a target are indicated each by a small mark around them, while a target affected by the maximum stacks of 6 is indicated by a single large mark above them instead.\nDeadly Venom does not affect structures.\nRunaan's Hurricane's Wind's Fury bolts are special-cased to generate one Deadly Venom stack per enemy hit."
+        },
+        "spellshield": false,
+        "targeting": "Passive"
+      },
+      "name": "Deadly Venom"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "6cc7240c473557f7c4d816f19b0ea7674cfd46c2dc58fa4cb4448a4fde6572b8",
+    "fetchedAt": "2026-09-06T10:54:24.254Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Twitch/Deadly_Venom",
+    "revisionId": 4013286,
+    "sourceTimestamp": "2026-04-28T22:22:17Z"
+  }
+}

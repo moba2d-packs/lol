@@ -23,6 +23,9 @@ export const EXPLODE_RADIUS = 250;
 
 export const EXPLODE_ANIMATION_MS = 1_000;
 
+/** How long the shatter takes to reach `EXPLODE_RADIUS`, which is where it stops. */
+export const EXPLODE_GROW_MS = 170;
+
 
 /**
  * `docs/abilities/ashe/r.json`: range **Global**, speed 1500 rising to 2100,
@@ -158,7 +161,6 @@ export class Ashe_R_Object extends SpellObject {
     // explode phase
     else {
       this.explodeAge += deltaTime;
-      this.size = lerp(this.size, this.explodeSize, 0.2);
       if (this.explodeAge > EXPLODE_ANIMATION_MS) {
         this.toRemove = true;
       }
@@ -171,14 +173,20 @@ export class Ashe_R_Object extends SpellObject {
     // explode
     if (this.exploding) {
       let alpha = Math.min(EXPLODE_ANIMATION_MS - this.explodeAge, 150);
+      // Painted off `explodeSize`, the number the stun query itself used. It
+      // used to grow `this.size` toward it instead, which left one field
+      // meaning the arrow while it flew and the blast once it landed — and the
+      // arrow's own collision is read off that field.
+      const grow = constrain(this.explodeAge / EXPLODE_GROW_MS, 0, 1);
+      const bloom = 1 - (1 - grow) * (1 - grow);
 
       stroke(200, alpha);
       fill(100, 100, 200, alpha);
-      circle(this.position.x, this.position.y, this.size);
+      circle(this.position.x, this.position.y, this.explodeSize * bloom);
 
       fill(200, alpha);
       for (let i = 0; i < 5; i++) {
-        let randPos = p5.Vector.random2D().mult(random(this.size / 2));
+        let randPos = p5.Vector.random2D().mult(random((this.explodeSize / 2) * bloom));
         circle(this.position.x + randPos.x, this.position.y + randPos.y, random(10, 20));
       }
     }
@@ -199,6 +207,13 @@ export class Ashe_R_Object extends SpellObject {
         -this._randSize(),
         this._randSize() / 2
       );
+
+      // The head's frozen core, at exactly `this.size / 4` — the radius that
+      // decides whether a champion has been hit. The shaft and the crackling
+      // ice around it are longer than that; this is the part that shatters.
+      noStroke();
+      fill(225, 245, 255);
+      circle(0, 0, this.size / 2);
     }
     pop();
   }
@@ -207,12 +222,16 @@ export class Ashe_R_Object extends SpellObject {
     return random(this.size / 1.5, this.size * 1.5);
   }
 
+  /** The arrow paints 60px behind its own centre and the shatter reaches
+   * `explodeSize / 2`; the box has to cover whichever phase is running, and it
+   * no longer grows on its own now that `size` holds still. */
   getDisplayBoundingBox() {
+    const reach = this.exploding ? this.explodeSize / 2 + 20 : this.size * 2;
     return new Rectangle({
-      x: this.position.x - this.size / 2,
-      y: this.position.y - this.size / 2,
-      w: this.size,
-      h: this.size,
+      x: this.position.x - reach,
+      y: this.position.y - reach,
+      w: reach * 2,
+      h: reach * 2,
       data: this,
     });
   }

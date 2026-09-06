@@ -1,0 +1,50 @@
+{
+  "asset": {
+    "key": "spell_jinx_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jinx_Get_Excited%21.png?d984d",
+    "sha1": "8fb5a9d1ce2cba46a67a662fe069a645c9f1036f"
+  },
+  "champion": "Jinx",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_jinx_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jinx_Get_Excited%21.png?d984d",
+        "sha1": "8fb5a9d1ce2cba46a67a662fe069a645c9f1036f"
+      },
+      "fields": {
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate:'''</span> Whenever '''Jinx''' scores a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Takedown\">[[File:Damage rating.png|20px|link=Takedown|An icon representing the keyword Takedown]] [[:Takedown|takedown]]</span> against an enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span>, epic <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monster\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monster]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Turret\">[[File:Turret icon.png|20px|link=Turret|An icon representing the keyword Turret]] [[:Turret|turret]]</span>, or [[inhibitor]] within 3 seconds of damaging them, she gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">175% '''bonus''' movement speed</span></span> decaying over 6 seconds.",
+          "text": "Innate: Whenever Jinx scores a takedown against an enemy champion, epic monster, turret, or inhibitor within 3 seconds of damaging them, she gains &nbsp;175% bonus movement speed decaying over 6 seconds."
+        },
+        "description2": {
+          "raw": "Additionally, she is allowed to exceed the <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"normally 3.003 attacks per second\">attack speed cap</span> and gains a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stack\">[[File:Stack icon.png|20px|link=Stack|An icon representing the keyword Stack]] [[:Stack|stack]]</span> of ''Get Excited!'' for the same duration, stacking up to 5 times. Only <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Takedown\">[[File:Damage rating.png|20px|link=Takedown|An icon representing the keyword Takedown]] [[:Takedown|takedowns]]</span> against enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champions]]</span> can grant stacks beyond the first.",
+          "text": "Additionally, she is allowed to exceed the attack speed cap and gains a stack of Get Excited! for the same duration, stacking up to 5 times. Only takedowns against enemy champions can grant stacks beyond the first."
+        },
+        "description3": {
+          "raw": "<span class=\"template_sbc\">'''Get Excited!:'''</span> For each stack, '''Jinx''' gains <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">25% '''total''' attack speed</span></span>, up to a maximum of <span style=\"color:\n#F5EE99; white-space:normal\">125%</span>.",
+          "text": "Get Excited!: For each stack, Jinx gains &nbsp;25% total attack speed, up to a maximum of 125%."
+        },
+        "icon": "Get Excited!.png",
+        "name": "Get Excited!",
+        "notes": {
+          "raw": "* '''Jinx's''' ''attack speed cap'' is increased to 90.<small>0</small> for the duration, however this value is already beyond the technical limit for attack speed.\n* '''Jinx''' will still trigger ''Get Excited'' from killing a summoned <span class=\"inline-image unit-icon label-after\" style=\"display:inline;white-space:pre;\" data-param=\"\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Rift HeraldSquare.png|20xpx|border|link=Rift Herald|An icon representing Rift Herald]]</span> <span style=\"white-space:normal;\">[[Rift Herald]]</span></span>.\n* '''Jinx''' will fail to trigger ''Get Excited'' in the specific circumstance of killing <span class=\"inline-image unit-icon label-after\" style=\"display:inline;white-space:pre;\" data-param=\"\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Baron NashorSquare.png|20xpx|border|link=Baron Nashor|An icon representing Baron Nashor]]</span> <span style=\"white-space:normal;\">[[Baron Nashor]]</span></span> while more than ~2500 distance away.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This is not intended. \">(bug)</span></sup>",
+          "text": "Jinx's attack speed cap is increased to 90.0 for the duration, however this value is already beyond the technical limit for attack speed.\nJinx will still trigger Get Excited from killing a summoned Rift Herald.\nJinx will fail to trigger Get Excited in the specific circumstance of killing Baron Nashor while more than ~2500 distance away.(bug)"
+        },
+        "targeting": "Passive"
+      },
+      "name": "Get Excited!"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "30c5cbdcb726f79db1a4cfbcae022b8c90265140dac735cf5450dae894d35185",
+    "fetchedAt": "2026-09-06T10:54:24.254Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Jinx/Get_Excited!",
+    "revisionId": 3973632,
+    "sourceTimestamp": "2025-12-11T18:10:58Z"
+  }
+}

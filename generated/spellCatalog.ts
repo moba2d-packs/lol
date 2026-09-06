@@ -1918,11 +1918,11 @@ export const spellCatalog = {
   },
   "Riven_Q": {
     name: "Tam Bộ Kiếm (Riven_Q)",
-    description: "Lao 160 về phía trước rồi chém một hình quạt 90° bán kính 130, gây <span class=\"damage physical\" data-base=\"14\">14 sát thương vật lý</span>. Có 3 lần đánh trong 4 giây; nhát thứ ba lao 200, gây <span class=\"damage physical\" data-base=\"18\">18 sát thương vật lý</span> và hất tung mục tiêu.",
+    description: "Lao 160 về phía trước, chém mọi kẻ địch <span class=\"buff\">trên đường lướt</span> rồi bung một hình quạt 120° bán kính 150 tại điểm đáp, gây <span class=\"damage physical\" data-base=\"14\">14 sát thương vật lý</span>. Có 3 lần đánh trong 4 giây; nhát thứ ba <span class=\"buff\">nhảy lên không</span> rồi bổ kiếm xuống đất, gây <span class=\"damage physical\" data-base=\"18\">18 sát thương vật lý</span> và hất tung mọi kẻ địch trong bán kính 190 quanh chỗ đáp.",
     iconKey: "spell_riven_q",
-    coolDownMs: 3500,
+    coolDownMs: 9000,
     manaCost: 0,
-    specCoolDownMs: 260,
+    specCoolDownMs: 9000,
   },
   "Riven_R": {
     name: "Lưỡi Kiếm Lưu Đày (Riven_R)",
@@ -2038,7 +2038,7 @@ export const spellCatalog = {
   },
   "Singed_E": {
     name: "Hất (Singed_E)",
-    description: "Túm kẻ địch gần nhất trong <span>160px</span> và quăng qua đầu mình, <span class=\"buff\">Hất Tung</span> chúng và đáp xuống <span>150px</span> phía sau lưng Singed. <i>Khi tiếp đất</i>: <span class=\"damage magic\" data-base=\"28\">28 sát thương phép</span> và <span class=\"buff\">Làm Chậm 40%</span>",
+    description: "Túm kẻ địch gần nhất trong <span>160px</span> và quăng qua đầu mình, <span class=\"buff\">Hất Tung</span> chúng và đáp xuống <span>150px</span> phía sau lưng Singed. <i>Khi tiếp đất</i>: <span class=\"damage magic\" data-base=\"28\">28 sát thương phép</span> cộng <span class=\"damage magic\" data-flat=\"none\">8% máu tối đa của mục tiêu</span> và <span class=\"buff\">Làm Chậm 40%</span>",
     iconKey: "spell_singed_e",
     coolDownMs: 9000,
     manaCost: 25,
@@ -2054,7 +2054,7 @@ export const spellCatalog = {
   },
   "Singed_R": {
     name: "Thuốc Hóa Điên (Singed_R)",
-    description: "Uống thuốc trong <span class=\"time\">9 giây</span>: <span class=\"buff\">+50 máu tối đa</span>, <span class=\"buff\">+30% tốc chạy</span> và <span class=\"buff\">+6 sát thương đánh thường</span>. Trong lúc đó, vệt độc còn đặt <span class=\"buff\">Vết Thương Sâu 40%</span> lên kẻ dính độc",
+    description: "Uống thuốc trong <span class=\"time\">9 giây</span>: <span class=\"buff\">+50 máu tối đa</span>, <span class=\"buff\">+30% tốc chạy</span>, <span class=\"buff\">+6 sát thương đánh thường</span> và <span class=\"buff\">+60% sát thương phép</span>. Trong lúc đó, vệt độc còn đặt <span class=\"buff\">Vết Thương Sâu 40%</span> lên kẻ dính độc",
     iconKey: "spell_singed_r",
     coolDownMs: 10000,
     manaCost: 50,

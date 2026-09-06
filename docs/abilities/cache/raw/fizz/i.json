@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Fizz/Nimble Fighter",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Nimble Fighter@@icon@@Nimble Fighter.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Innate:'''</span> '''Fizz''' is permanently <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ghosted\">[[File:Ghost.png|20px|link=Unit collision|An icon representing the keyword Ghosted]] [[:Unit collision|ghosted]]</span> and reduces every instance of <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage calculated before modifiers\">pre-mitigation</span> damage taken by 4 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 1% AP)</span>, up to a maximum of 50% reduction. The damage reduction is increased to 14 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 1% AP)</span> against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monsters\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monsters]]</span>.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@{{{leveling}}}@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@{{{cast time}}}@@cost@@{{{cost}}}@@cooldown@@{{{cooldown}}}@@targeting@@Passive@@damagetype@@@@spellshield@@@@projectile@@@@notes@@\n* No additional notes.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1307183,
+                "revisions": [
+                  {
+                    "parentid": 3972157,
+                    "revid": 4042251,
+                    "timestamp": "2026-07-13T11:47:29Z"
+                  }
+                ],
+                "title": "Template:Data Fizz/Nimble Fighter"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4042251,
+      "timestamp": "2026-07-13T11:47:29Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "093b0a9286d97f066b7a1dc9209bae9228433fa421de98827171fd0bc9ff06b6",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Fizz/Nimble_Fighter",
+    "revisionId": 4042251,
+    "sourceTimestamp": "2026-07-13T11:47:29Z"
+  }
+}

@@ -8,6 +8,12 @@
   "champion": "Fizz",
   "forms": [
     {
+      "asset": {
+        "key": "spell_fizz_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Fizz_Playful.png?4d944",
+        "sha1": "95aabb28835c59fd6390837ba7e5edabaf4d6c1d"
+      },
       "fields": {
         "casttime": "none",
         "cooldown": "16 / 14 / 12 / 10 / 8",
@@ -42,6 +48,12 @@
       "name": "Playful"
     },
     {
+      "asset": {
+        "key": "spell_fizz_e2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Fizz_Trickster.png?3735d",
+        "sha1": "419bdb6186a2132f0fe61c0a1e8001fded1ad8df"
+      },
       "fields": {
         "damagetype": "Magic",
         "description": {
@@ -69,7 +81,7 @@
   "slot": "E",
   "source": {
     "contentHash": "8b41a627ebf6a400ea8fabc88331ea46930c1ba8852281b7d0653de68d3b7f76",
-    "fetchedAt": "2026-08-13T10:47:42.485Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Fizz/Playful",
     "revisionId": 4008451,
     "sourceTimestamp": "2026-04-14T19:15:38Z"

@@ -294,15 +294,18 @@ export class Ekko_W_Object extends SpellObject {
     strokeWeight(5);
     arc(0, 0, (this.radius - 20) * 2, (this.radius - 20) * 2, -HALF_PI, -HALF_PI + TWO_PI * left);
 
-    // the arming flash
+    // The arming flash, which fills out to the shell and stops dead on it. It
+    // used to keep going to 1.35x the sphere, so the one frame the player looks
+    // at hardest — "it is live now" — was also the one claiming the slow
+    // reached fifty pixels further than it does.
     if (this.armFlash > 0) {
       noStroke();
       fill(255, 255, 255, 190 * this.armFlash);
-      circle(0, 0, d * (1.15 - 0.15 * this.armFlash));
+      circle(0, 0, d * (0.85 + 0.15 * (1 - this.armFlash)));
       noFill();
       stroke(255, 255, 255, 245 * this.armFlash);
       strokeWeight(6 * this.armFlash + 1);
-      circle(0, 0, d * (1 + (1 - this.armFlash) * 0.35));
+      circle(0, 0, d * (0.6 + 0.4 * (1 - this.armFlash)));
     }
     pop();
   }

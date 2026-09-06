@@ -76,8 +76,8 @@
       "asset": {
         "key": "spell_twistedfate_w2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twisted_Fate_Pick_a_Card.png?021d4",
-        "sha1": "03e72e3b270eacfacef68f7768012a8acac9f95a"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twisted_Fate_Blue_Card.png?d3dd5",
+        "sha1": "4e1993576cddc734a2fdc4bc02ced4a37bd82b28"
       },
       "fields": {
         "casttime": "none",
@@ -141,8 +141,8 @@
       "asset": {
         "key": "spell_twistedfate_w3",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twisted_Fate_Pick_a_Card.png?021d4",
-        "sha1": "03e72e3b270eacfacef68f7768012a8acac9f95a"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Twisted_Fate_Red_Card.png?91f27",
+        "sha1": "030254c5def1e23291a82196d7d1ee58744f8429"
       },
       "fields": {
         "casttime": "none",
@@ -272,7 +272,7 @@
   "slot": "W",
   "source": {
     "contentHash": "5cd13f1e01ac58cd8d92f50077611ce7f09a31ecb3c7280e169f867b0fa567b6",
-    "fetchedAt": "2026-08-26T19:29:42.360Z",
+    "fetchedAt": "2026-09-06T10:46:39.895Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Twisted_Fate/Pick_a_Card",
     "revisionId": 4004668,
     "sourceTimestamp": "2026-04-02T01:25:16Z"

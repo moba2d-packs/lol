@@ -210,10 +210,12 @@ export class Diana_W_Orbit extends SpellObject {
       const spin = (this.age / W_ORBIT_PERIOD_MS) * Math.PI * 2 + sphere.angleOffset;
       const breathe = 1 + 0.15 * sin(this.age / 180 + sphere.angleOffset);
 
-      // Outer soft moonlight aura
+      // The disc that pops it. A body reaching this far sets the crescent off,
+      // so the halo is drawn *at* the contact radius rather than at a size
+      // picked to look right — the blade used to read half the width it caught.
       noStroke();
-      fill(MOON_CORE[0], MOON_CORE[1], MOON_CORE[2], 75);
-      circle(at.x, at.y, 36 * breathe);
+      fill(MOON_CORE[0], MOON_CORE[1], MOON_CORE[2], 55);
+      circle(at.x, at.y, W_CONTACT_RADIUS * 2);
 
       // Bright lunar halo
       stroke(MOON_PALE[0], MOON_PALE[1], MOON_PALE[2], 220);

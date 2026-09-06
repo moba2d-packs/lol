@@ -55,8 +55,8 @@
       "asset": {
         "key": "spell_vladimir_q2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Vladimir_Transfusion.png?774cf",
-        "sha1": "005786cdeae4b3907f8fe8a67cd87dba6789f3ce"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Vladimir_Crimson_Rush.png?f1401",
+        "sha1": "0b975b27d7f4f626914ae457588730e29ed81213"
       },
       "fields": {
         "casttime": "0.25",
@@ -100,7 +100,7 @@
   "slot": "Q",
   "source": {
     "contentHash": "44fa754bb66a9a36db5624f6471a892fb9fed6c476c2cd7805119da117e05081",
-    "fetchedAt": "2026-09-01T04:16:19.465Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Vladimir/Transfusion",
     "revisionId": 3997094,
     "sourceTimestamp": "2026-03-06T17:23:54Z"

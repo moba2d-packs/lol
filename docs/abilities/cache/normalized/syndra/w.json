@@ -62,8 +62,8 @@
       "asset": {
         "key": "spell_syndra_w2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Syndra_Force_of_Will.png?4a25e",
-        "sha1": "f822effc600f297ea7f299673951a4a54a29cedf"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Syndra_Force_of_Will_2.png?b3a63",
+        "sha1": "5a13d0ccf9463993c118ce326eeda4e1cfa2ffc6"
       },
       "fields": {
         "casttime": "none",
@@ -114,7 +114,7 @@
   "slot": "W",
   "source": {
     "contentHash": "af7d6413cbc55c95d3599c2b459014c279f216b353ed364413aab2b7e0399ed6",
-    "fetchedAt": "2026-08-17T14:38:03.922Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Syndra/Force_of_Will",
     "revisionId": 4035699,
     "sourceTimestamp": "2026-06-25T03:45:51Z"

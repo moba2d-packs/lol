@@ -1,0 +1,86 @@
+{
+  "asset": {
+    "key": "spell_leesin_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lee_Sin_Tempest.png?e95a9",
+    "sha1": "f5e964f28640b832ec1f66eacbe3b79e1481df18"
+  },
+  "champion": "Lee Sin",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_leesin_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lee_Sin_Tempest.png?e95a9",
+        "sha1": "f5e964f28640b832ec1f66eacbe3b79e1481df18"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "8",
+        "cost": "50",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Lee Sin''' smashes the ground beneath him, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to nearby enemies, marking them for 4 seconds and, if they are not <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Invisible\">[[File:Twilight Shroud old2.png|20px|link=Stealth#Invisibility|An icon representing the keyword Invisibility]] [[:Stealth#Invisibility|invisible]]</span> when struck, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"True sight\">[[File:True Sight icon.png|20px|link=Sight#True_sight|An icon representing the keyword True sight]] [[:Sight#True_sight|revealing]]</span> them for the same duration.",
+          "text": "Active: Lee Sin smashes the ground beneath him, dealing magic damage to nearby enemies, marking them for 4 seconds and, if they are not invisible when struck, revealing them for the same duration."
+        },
+        "description2": {
+          "raw": "If ''Tempest'' hits an enemy, '''Lee Sin''' can cast ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lee Sin\" data-ability=\"Cripple\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lee Sin Cripple.png|20xpx|border|link=Lee Sin#Cripple|An icon for Lee Sin's ability Cripple]]</span> <span style=\"white-space:normal;\">[[Lee Sin#Cripple|Cripple]]</span></span>'' within the next 3 seconds after a 0.<small>1</small>-second delay.",
+          "text": "If Tempest hits an enemy, Lee Sin can cast Cripple within the next 3 seconds after a 0.1-second delay."
+        },
+        "effectradius": "450",
+        "icon": "Tempest.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>35 / 60 / 85 / 110 / 135 <span style=\"color:orange; white-space:normal\">(+ 90% AD)</span></dd></dl>",
+          "text": "Magic Damage:35 / 60 / 85 / 110 / 135 (+ 90% AD)"
+        },
+        "name": "Tempest",
+        "notes": {
+          "raw": "* ''Tempest's'' sight reveal only reveals the affected targets, but visually also lights up the Fog of War in a 400 radius.\n* ''Tempest's'' sight reveal is not removed when ''Lee Sin'' casts ''Cripple'' (unlike <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lee Sin\" data-ability=\"Sonic Wave\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lee Sin Sonic Wave.png|20xpx|border|link=Lee Sin#Sonic Wave|An icon for Lee Sin's ability Sonic Wave]]</span> <span style=\"white-space:normal;\">[[Lee Sin#Sonic Wave|Sonic Wave's]]</span></span>).\n* This ability will cast from wherever the caster is at the end of the cast time.",
+          "text": "Tempest's sight reveal only reveals the affected targets, but visually also lights up the Fog of War in a 400 radius.\nTempest's sight reveal is not removed when Lee Sin casts Cripple (unlike Sonic Wave's).\nThis ability will cast from wherever the caster is at the end of the cast time."
+        },
+        "spellshield": true,
+        "targeting": "Auto"
+      },
+      "name": "Tempest"
+    },
+    {
+      "asset": {
+        "key": "spell_leesin_e2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lee_Sin_Cripple.png?80aee",
+        "sha1": "2b5c98d42d11a2c0325a757d36921576310f0fa7"
+      },
+      "fields": {
+        "casttime": "none",
+        "cost": "25",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Lee Sin''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slows]]</span> nearby enemies marked by ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lee Sin\" data-ability=\"Tempest\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lee Sin Tempest.png|20xpx|border|link=Lee Sin#Tempest|An icon for Lee Sin's ability Tempest]]</span> <span style=\"white-space:normal;\">[[Lee Sin#Tempest|Tempest]]</span></span>'', decaying in strength over 4 seconds.",
+          "text": "Active: Lee Sin slows nearby enemies marked by Tempest, decaying in strength over 4 seconds."
+        },
+        "description2": {
+          "raw": "''A nearby marked enemy is required to cast this ability.''",
+          "text": "A nearby marked enemy is required to cast this ability."
+        },
+        "effectradius": "550",
+        "icon": "Cripple.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>35 / 45 / 55 / 65 / 75%</dd></dl>",
+          "text": "Slow:35 / 45 / 55 / 65 / 75%"
+        },
+        "name": "Cripple",
+        "spellshield": true,
+        "targeting": "Proximity"
+      },
+      "name": "Cripple"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "2ad20ab467aa8c25723f7d817fcbc6efb133f008368e89de32e71947d1749479",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Lee_Sin/Tempest",
+    "revisionId": 4016969,
+    "sourceTimestamp": "2026-05-13T14:29:37Z"
+  }
+}

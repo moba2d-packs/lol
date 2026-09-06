@@ -40,8 +40,8 @@
       "asset": {
         "key": "spell_xinzhao_i2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Xin_Zhao_Determination.png?2ed90",
-        "sha1": "6afc5d41519f033ce279caf655622161cb5c7b10"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Xin_Zhao_Challenged_Mark.png?04c59",
+        "sha1": "534cb6ffb85a46d2405b4e3868e27de4d5414a94"
       },
       "fields": {
         "damagetype": "Physical",
@@ -70,7 +70,7 @@
   "slot": "I",
   "source": {
     "contentHash": "3acd7fc012cdeb5ce43af6b91b881d99205a78b22626b82bfeb7c827110d1087",
-    "fetchedAt": "2026-08-16T21:32:17.622Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Xin_Zhao/Determination",
     "revisionId": 4051470,
     "sourceTimestamp": "2026-08-12T18:22:02Z"

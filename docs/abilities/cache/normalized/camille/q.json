@@ -60,8 +60,8 @@
       "asset": {
         "key": "spell_camille_q2",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Camille_Precision_Protocol.png?80293",
-        "sha1": "3870bf12b52f5fee455b790acb65362d39da61fd"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Camille_Precision_Protocol_2.png?93bbc",
+        "sha1": "1b16aded38a0667729247396c69fc049846e7053"
       },
       "fields": {
         "casttime": "none",
@@ -109,8 +109,8 @@
       "asset": {
         "key": "spell_camille_q3",
         "mime": "image/png",
-        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Camille_Precision_Protocol.png?80293",
-        "sha1": "3870bf12b52f5fee455b790acb65362d39da61fd"
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Camille_Precision_Protocol_3.png?7135c",
+        "sha1": "8d329b54d1b6814ee164efc206666eb107cb1bb9"
       },
       "fields": {
         "casttime": "none",
@@ -159,7 +159,7 @@
   "slot": "Q",
   "source": {
     "contentHash": "36f767436918bc14b4e507bac4ea744fa24a6885c41bda24b5dbaba423cd39f8",
-    "fetchedAt": "2026-08-16T14:45:22.975Z",
+    "fetchedAt": "2026-09-06T10:51:36.718Z",
     "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Camille/Precision_Protocol",
     "revisionId": 3972807,
     "sourceTimestamp": "2025-12-07T12:15:40Z"

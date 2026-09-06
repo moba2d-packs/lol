@@ -18,12 +18,38 @@ export const TRYNDAMERE_E_RANGE = 300;
 export const TRYNDAMERE_E_DAMAGE = 28;
 
 /** How wide the whirling blade reaches off his body while he travels. */
-export const TRYNDAMERE_E_HIT_RADIUS = 70;
+export const TRYNDAMERE_E_HIT_RADIUS = 85;
+
+/**
+ * Radians per ms the blades turn.
+ *
+ * ~0.27rad (15°) a frame at 60fps, a little under one full turn across the
+ * dash. Higher than this and the four blades cross more than a quarter-turn
+ * between frames, which stops reading as rotation and starts reading as a
+ * strobe: 0.038 was tried and was "xoay nhanh quá".
+ *
+ * The *body* deliberately does not turn with them. Rotating the portrait was
+ * tried and rejected on sight — a round avatar spinning in place reads as a
+ * joke, and at any speed fast enough to say "whirlwind" it reads as nothing at
+ * all. The blades and their motion fans carry the spin.
+ */
+export const TRYNDAMERE_E_SPIN_RATE = 0.016;
 
 export const TRYNDAMERE_E_DASH_SPEED = 15;
 
 /** Cutting a champion on the way through shortens the next spin. */
 export const TRYNDAMERE_E_COOLDOWN_REFUND_MS = 1_000;
+
+
+/**
+ * The radius the whirl actually covers: the blade's own reach off a body plus
+ * half that body. Both the hit query and the drawing call it, because they used
+ * to disagree — the query added the size term and the picture did not, so the
+ * blades were drawn a champion-radius shorter than they cut.
+ */
+export function whirlReach(unit: AttackableUnit): number {
+  return TRYNDAMERE_E_HIT_RADIUS + (unit.stats.size.value ?? 0) / 2;
+}
 
 
 export default class Tryndamere_E extends Spell {
@@ -54,7 +80,6 @@ export default class Tryndamere_E extends Spell {
     spin.dashDestination = destination;
 
     const blades = new Tryndamere_E_Object(this.owner);
-    blades.attachTo(this.owner, spin);
     this.game.objectManager.addObject(blades);
 
     // One pass, one hit each: without the set a slow-moving target takes the
@@ -67,7 +92,7 @@ export default class Tryndamere_E extends Spell {
         area: new Circle({
           x: this.owner.position.x,
           y: this.owner.position.y,
-          r: TRYNDAMERE_E_HIT_RADIUS + (this.owner.stats.size.value ?? 0) / 2,
+          r: whirlReach(this.owner),
         }),
         filters: [PredefinedFilters.canTakeDamageFromTeam(this.owner.teamId)],
       }) as AttackableUnit[];
@@ -87,6 +112,12 @@ export default class Tryndamere_E extends Spell {
     };
 
     this.owner.addBuff(spin);
+    // AFTER `addBuff`, never before. `attachTo` resolves the instance the unit
+    // actually ticks (`SpellObject.liveBuffOn`), and before the buff is on him
+    // there is nothing to resolve: `_anchorBuff` came back null, `attachmentLost`
+    // latched true on the first frame, and the whirl stopped following him — it
+    // played out at the point of the cast while he dashed away from it.
+    blades.attachTo(this.owner, spin);
   }
 }
 
@@ -98,13 +129,30 @@ interface BladeCut {
 }
 
 
+const BLADES = 4;
+
+const FAN_STEPS = 3;
+
 /**
- * The whirl itself: two sword arcs spinning around him for the length of the
- * dash, and a spark of steel at every body they open.
+ * Three of these is how far the motion fan trails behind each blade — kept
+ * under half the 90° gap between blades, so the four stay countable instead of
+ * smearing into one disc.
+ */
+const FAN_STEP_RAD = 0.24;
+
+const RIM_DASHES = 10;
+
+const RIM_DASH_RAD = 0.38;
+
+
+/**
+ * The whirl itself: four blades turning around him for the length of the dash,
+ * the wedge each has just swept still solid behind it, and a spark of steel at
+ * every body they open.
  *
- * A `SpellObject` rather than caster VFX because the arcs reach 70px past his
- * body and the cuts are left behind him — `Champion.draw` is skipped the moment
- * he is culled, which would take the whole spin with it.
+ * A `SpellObject` rather than caster VFX because the blades reach past his body
+ * and the cuts are left behind him — `Champion.draw` is skipped the moment he
+ * is culled, which would take the whole spin with it.
  */
 export class Tryndamere_E_Object extends SpellObject {
   age = 0;
@@ -151,32 +199,58 @@ export class Tryndamere_E_Object extends SpellObject {
   draw(): void {
     if (this.spinning || this.fade > 0) {
       const alpha = this.spinning ? 1 : Math.max(0, this.fade);
-      const spin = this.age * 0.03;
-      const reach = TRYNDAMERE_E_HIT_RADIUS;
+      const spin = this.age * TRYNDAMERE_E_SPIN_RATE;
+      const reach = whirlReach(this.owner);
 
       push();
       translate(this.position.x, this.position.y);
-      noFill();
-      // two blades on opposite sides, on the real hit radius so the reach reads
-      for (let i = 0; i < 2; i++) {
-        const angle = spin + Math.PI * i;
-        stroke(255, 240, 240, 235 * alpha);
-        strokeWeight(4);
-        arc(0, 0, reach * 2, reach * 2, angle - 0.9, angle);
-        // the sword itself at the leading edge of its own arc
-        stroke(220, 230, 255, 245 * alpha);
-        strokeWeight(6);
-        line(
-          cos(angle) * reach * 0.35,
-          sin(angle) * reach * 0.35,
-          cos(angle) * reach,
-          sin(angle) * reach
-        );
-      }
-      // a dim ghost arc trailing behind, so the spin has a direction
-      stroke(200, 120, 120, 110 * alpha);
-      strokeWeight(3);
+
+      // The disc he sweeps. A filled ring rather than a line, because one
+      // stroke at this radius is what made the reach unreadable — the eye had
+      // nothing to measure. Flat fill, no glow (docs/VFX_STANDARD.md).
+      noStroke();
+      fill(228, 236, 255, 34 * alpha);
       circle(0, 0, reach * 2);
+
+      // Four motion fans: the wedge each blade has just swept, solid and
+      // fading behind it. This is the part that reads as rotation.
+      for (let i = 0; i < BLADES; i++) {
+        const angle = spin + (Math.PI * 2 * i) / BLADES;
+        for (let step = 0; step < FAN_STEPS; step++) {
+          const behind = (step + 1) * FAN_STEP_RAD;
+          fill(235, 242, 255, (78 - step * 22) * alpha);
+          beginShape();
+          vertex(0, 0);
+          vertex(cos(angle - behind) * reach, sin(angle - behind) * reach);
+          vertex(cos(angle - behind + FAN_STEP_RAD) * reach, sin(angle - behind + FAN_STEP_RAD) * reach);
+          endShape(CLOSE);
+        }
+      }
+
+      // The blades themselves, on the real hit radius so the reach is the
+      // thing the picture is about.
+      noFill();
+      for (let i = 0; i < BLADES; i++) {
+        const angle = spin + (Math.PI * 2 * i) / BLADES;
+        stroke(30, 39, 46, 235 * alpha);
+        strokeWeight(9);
+        line(cos(angle) * reach * 0.3, sin(angle) * reach * 0.3, cos(angle) * reach, sin(angle) * reach);
+        stroke(232, 240, 255, 250 * alpha);
+        strokeWeight(5);
+        line(cos(angle) * reach * 0.3, sin(angle) * reach * 0.3, cos(angle) * reach, sin(angle) * reach);
+        // the tip, so the outer edge of the disc has a hard mark on it
+        stroke(255, 120, 110, 250 * alpha);
+        strokeWeight(6);
+        point(cos(angle) * reach, sin(angle) * reach);
+      }
+
+      // The rim: dashes that turn with him, so the circle itself is moving.
+      stroke(255, 235, 235, 200 * alpha);
+      strokeWeight(3);
+      for (let i = 0; i < RIM_DASHES; i++) {
+        const from = spin * 0.5 + (Math.PI * 2 * i) / RIM_DASHES;
+        arc(0, 0, reach * 2, reach * 2, from, from + RIM_DASH_RAD);
+      }
       pop();
     }
 
@@ -206,7 +280,7 @@ export class Tryndamere_E_Object extends SpellObject {
       maxX = Math.max(maxX, cut.x);
       maxY = Math.max(maxY, cut.y);
     }
-    const pad = TRYNDAMERE_E_HIT_RADIUS + 60;
+    const pad = whirlReach(this.owner) + 60;
     return new Rectangle({
       x: minX - pad,
       y: minY - pad,

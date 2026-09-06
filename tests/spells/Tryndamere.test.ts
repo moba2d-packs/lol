@@ -12,7 +12,7 @@ import { TRYNDAMERE_Q_AD_BONUS_MAX, TRYNDAMERE_Q_BASE_HEAL, TRYNDAMERE_Q_MAX_HEA
 import Tryndamere_Q from '../../spells/Tryndamere_Q';
 import { TRYNDAMERE_W_AD_REDUCTION, TRYNDAMERE_W_RADIUS, TRYNDAMERE_W_STACK_ID } from '../../spells/Tryndamere_W';
 import Tryndamere_W from '../../spells/Tryndamere_W';
-import { TRYNDAMERE_E_DAMAGE } from '../../spells/Tryndamere_E';
+import { TRYNDAMERE_E_DAMAGE, Tryndamere_E_Object } from '../../spells/Tryndamere_E';
 import Tryndamere_E from '../../spells/Tryndamere_E';
 import { TRYNDAMERE_R_STACK_ID } from '../../spells/Tryndamere_R';
 import Tryndamere_R from '../../spells/Tryndamere_R';
@@ -103,6 +103,43 @@ describe('Tryndamere', () => {
     spin.onDashUpdate?.();
 
     expect(victim.stats.health.value).toBe(100 - TRYNDAMERE_E_DAMAGE);
+  });
+
+  /** The whirl object, still in the pending queue right after the cast. */
+  function findBlades(): Tryndamere_E_Object {
+    for (const candidate of game.objectManager._objectToBeAdd as unknown[]) {
+      if (candidate instanceof Tryndamere_E_Object) return candidate;
+    }
+    throw new Error('no Tryndamere_E_Object was spawned');
+  }
+
+  it('carries the whirl with him instead of leaving it where he cast it', () => {
+    // `attachTo` before `addBuff` resolved nothing — the anchor buff was not on
+    // him yet — so the blades detached on their first frame and played out at
+    // the cast point while he dashed away. Reported from a real match.
+    new Tryndamere_E(tryn).onSpellCast();
+    const blades = findBlades();
+    expect(blades.attachmentLost).toBe(false);
+
+    tryn.position.set(120, 0);
+    blades.update();
+
+    expect(blades.spinning).toBe(true);
+    expect(blades.position.x).toBe(120);
+  });
+
+  it('stops the whirl the moment the dash carrying it ends', () => {
+    new Tryndamere_E(tryn).onSpellCast();
+    const blades = findBlades();
+
+    blades.update();
+    expect(blades.spinning).toBe(true);
+
+    const spin = tryn.buffs.find(buff => buff instanceof Dash) as Dash;
+    spin.deactivateBuff();
+    blades.update();
+
+    expect(blades.spinning).toBe(false);
   });
 
   it('R makes him untouchable for its duration', () => {

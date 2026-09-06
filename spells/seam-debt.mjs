@@ -79,9 +79,7 @@ const GRANDFATHERED = new Set([
   'Pantheon_Q.ts',
   'Pyke_Q.ts',
   'Rammus_Q.ts',
-  'Riven_Q.ts',
   'Varus_Q.ts',
-  'Vayne_Q.ts',
 ]);
 
 /** `spell-object-display-box`: `SpellObject` subclasses reporting a

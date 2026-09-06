@@ -229,21 +229,68 @@ export async function importAbilities({
       }));
       const source = sourceRecord(templates[0], fetchedAt, normalizedForms);
 
-      // Each form is its own `Template:Data <Champion>/<Form>` page with its own
-      // icon fields, so every form's icon must be resolved and downloaded
-      // independently (falling back within that same form only).
-      //
       // The chain runs to `icon4` because the wiki does not use these slots as
-      // "first choice, then alternates" — it uses them positionally, and a
+      // "first choice, then alternates" — it uses them **positionally**, and a
       // template is free to leave the earlier ones as the literal string
       // `false`. `Template:Data Garen/Courage` is exactly that: `icon = false`
       // with the real art sitting in `icon3`. Stopping at `icon2` read that as
       // "no art exists" and refused the slot, which is why Garen W and
       // Warwick W shipped with placeholder icons for art the wiki had all along.
+      //
+      // **Positional first, then the chain as a fallback.** Each form is its own
+      // `Template:Data <Champion>/<Form>` page, and this used to take the first
+      // usable value on the theory that a page carries only its own icon. It
+      // does not: all three of Yasuo's Steel Tempest pages carry `icon`,
+      // `icon2` *and* `icon3`, so "first usable" handed every form
+      // `Steel Tempest.png` and the importer wrote three copies of one square
+      // over the three phase icons the wiki had all along — the same failure
+      // the Garen note above describes, one level up. Reported in play as
+      // Yasuo's Q icon never changing between Q1, Q2 and Q3.
       const formAssets = [];
       for (const [formIndex, form] of normalizedForms.entries()) {
-        const icon = [form.fields.icon, form.fields.icon2, form.fields.icon3, form.fields.icon4]
-          .find(value => typeof value === 'string' && value && value.toLowerCase() !== 'false');
+        const usable = value =>
+          typeof value === 'string' && value && value.toLowerCase() !== 'false';
+        // The **usable** icons, which is not the same as the raw slots: a
+        // template may leave `icon` as the literal `false` and start the real
+        // art at `icon2` (Zed's Living Shadow does exactly that).
+        const usableIcons = [
+          form.fields.icon,
+          form.fields.icon2,
+          form.fields.icon3,
+          form.fields.icon4,
+        ].filter(usable);
+        // Deliberately no "prefer stills" filter. `Twisted Fate Pick a Card.gif`
+        // does sit in this chain between the card art, but the name match below
+        // already passes it over — the form is called `Pick a Card` and the
+        // still is named for it exactly. Filtering gifs out as well swept up
+        // Thresh's Flay icons, which have always been animated here on purpose
+        // (`tests/build/runtimeBundle.test.ts` pins that the encoder leaves
+        // them alone), so the extra rule only cost art nobody asked to change.
+        const icons = usableIcons;
+        // **Matched to the form by name, not by position.** The chain is not one
+        // icon per form in order: Pick a Card's holds four entries for four
+        // forms but in a different order, and Xin Zhao's second is prefixed with
+        // his name. Position gave forms the wrong art — a gif for Blue Card, a
+        // diagram for a passive — which is worse than the duplicate it replaced.
+        // The wiki does name them the same thing, so ask that.
+        const normalise = value =>
+          value
+            .toLowerCase()
+            .replace(/\.(png|jpe?g|gif|svg|webp)$/, '')
+            .replace(/[^a-z0-9]+/g, ' ')
+            .trim();
+        const wanted = normalise(form.name ?? '');
+        // Exact first; then the *closest* containing name, not the first one.
+        // Ashe's chain is `["Ashe Ranger's Focus 2.png", "Ashe Ranger's
+        // Focus.png"]` — the "2" variant sits in `icon` — so "first match wins"
+        // hands form 0 the second form's art. The shortest match is the one
+        // with the least left over, which is the one that was meant.
+        const contains = icons
+          .filter(value => normalise(value).includes(wanted))
+          .sort((a, b) => normalise(a).length - normalise(b).length);
+        const icon =
+          (wanted && (icons.find(value => normalise(value) === wanted) ?? contains[0])) ||
+          icons[0];
         if (!icon) throw new Error(`${name} ${slot} (${form.name}): icon is missing`);
         const imageInfo = await client.fetchImageInfo(icon);
         const bytes = await client.fetchBytes(imageInfo.url);
