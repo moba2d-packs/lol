@@ -1100,6 +1100,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_Liandry": {
+    name: "Mặt Nạ Đọa Đày Liandry (Item_Liandry)",
+    description: "Nội tại: sát thương phép gây ra thiêu đốt mục tiêu, gây 1.2% máu tối đa của mục tiêu mỗi giây trong 3 giây",
+    iconKey: "item_liandrys_torment",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_LichBane": {
     name: "Kiếm Tai Ương (Item_LichBane)",
     description: "Nội tại: sau khi dùng chiêu, đòn đánh kế tiếp gây thêm 150% công cơ bản dưới dạng sát thương phép (hồi 1.5 giây)",

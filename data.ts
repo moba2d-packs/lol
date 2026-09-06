@@ -2255,6 +2255,22 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { abilityPower: 1.1, maxHealth: 50 },
     passive: 'Item_Rylai',
   },
+  liandrys_torment: {
+    id: 'liandrys_torment',
+    name: 'Mặt Nạ Đọa Đày Liandry',
+    icon: 'item_liandrys_torment',
+    cost: 1700,
+    buildsFrom: ['blasting_wand', 'giants_belt'],
+    // The only percent-health number in the shop that reads the *victim's*
+    // bar. Every other one (Thiêu Đốt, Trái Tim Khổng Thần, Giáp Người Chết)
+    // reads the wearer's, because those ride tank items.
+    description:
+      'Nội tại: sát thương phép bạn gây ra thiêu đốt mục tiêu, gây ' +
+      '<span class="damage magic" data-flat="none">1.2% máu tối đa của mục tiêu</span> mỗi giây ' +
+      'trong <span class="time">3 giây</span>.',
+    stats: { abilityPower: 1.1, maxHealth: 55 },
+    passive: 'Item_Liandry',
+  },
 });
 
 /**

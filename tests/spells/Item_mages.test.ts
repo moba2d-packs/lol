@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, it } from 'vitest';
+import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { buildTestApi } from '@moba2d/core/testing';
 import {
   createGame,
@@ -9,6 +9,13 @@ import {
   type TestGame,
 } from '@moba2d/core/testing/spell';
 import Item_Rylai, { RYLAI_SLOW_MS, RYLAI_SLOW_PERCENT } from '../../spells/Item_Rylai';
+import Item_Liandry, {
+  Item_Liandry_Burn,
+  LIANDRY_BURN_MS,
+  LIANDRY_BURN_STACK_ID,
+  LIANDRY_TICK_MS,
+  liandryTickRatio,
+} from '../../spells/Item_Liandry';
 
 installSketchMathGlobals();
 installSpellObjectGlobals();
@@ -104,5 +111,110 @@ describe('Trượng Pha Lê Rylai', () => {
 
     expect(slowsOn(victim)).toHaveLength(1);
     expect(victim.stats.speed.value).toBeCloseTo(unslowed * (1 - RYLAI_SLOW_PERCENT), 6);
+  });
+});
+
+describe('Mặt Nạ Đọa Đày Liandry', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+    // Stubbed, never unstubbed: `vi.unstubAllGlobals()` would take
+    // `createVector` and the rest of `installSketchMathGlobals`'s p5 shims
+    // with it, and the next `createUnit` throws inside core.
+    vi.stubGlobal('deltaTime', LIANDRY_TICK_MS);
+  });
+
+  const burnOn = (unit: { buffs: AnyBuff[] }): Item_Liandry_Burn | undefined =>
+    live(unit).find(buff => buff.stackId === LIANDRY_BURN_STACK_ID) as
+      | Item_Liandry_Burn
+      | undefined;
+
+  /** Drive one burn for `ms` of game time, in `LIANDRY_TICK_MS / 5` steps. */
+  const smoulder = (burn: Item_Liandry_Burn, ms: number): void => {
+    const step = LIANDRY_TICK_MS / 5;
+    vi.stubGlobal('deltaTime', step);
+    for (let elapsed = 0; elapsed < ms && !burn.toRemove; elapsed += step) burn.update();
+  };
+
+  it('sets a burn on whoever the holder hits with magic damage', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 120, 'red');
+    expect(pressSpell(new Item_Liandry(holder))).toBe(true);
+
+    victim.takeDamage(20, holder, 'MAGIC');
+
+    const burn = burnOn(victim);
+    expect(burn).toBeTruthy();
+    expect(burn?.duration).toBe(LIANDRY_BURN_MS);
+  });
+
+  it('leaves a physical hit, and an ally, alone', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 120, 'red');
+    const ally = createUnit(game, 200);
+    pressSpell(new Item_Liandry(holder));
+
+    victim.takeDamage(20, holder, 'PHYSICAL');
+    ally.takeDamage(20, holder, 'MAGIC');
+
+    expect(burnOn(victim)).toBeUndefined();
+    expect(burnOn(ally)).toBeUndefined();
+  });
+
+  it("bites a share of the VICTIM's own maximum health, not the wearer's", () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 120, 'red');
+    // A fat target, so the anti-tank claim is measured rather than asserted:
+    // the wearer's own bar is the fixture's default 100 and must not appear
+    // anywhere in the answer.
+    victim.stats.maxHealth.baseValue = 400;
+    pressSpell(new Item_Liandry(holder));
+    victim.takeDamage(20, holder, 'MAGIC');
+    const burn = burnOn(victim);
+    expect(burn).toBeTruthy();
+
+    const hurt = vi.spyOn(victim, 'takeDamage');
+    smoulder(burn as Item_Liandry_Burn, LIANDRY_TICK_MS);
+
+    expect(hurt).toHaveBeenCalledTimes(1);
+    expect(hurt.mock.calls[0][0]).toBeCloseTo(400 * liandryTickRatio(), 6);
+    expect(hurt.mock.calls[0][1]).toBe(holder);
+    expect(hurt.mock.calls[0][2]).toBe('MAGIC');
+  });
+
+  /**
+   * The one that would have shipped as a permanent burn. Each tick is magic
+   * damage credited to the wearer, so it comes straight back to the armed
+   * passive's `onDamageDealt` — and a `RENEW_EXISTING` refresh off it would
+   * rewind the three seconds every half-second, for ever.
+   */
+  it('does not refresh itself off its own tick, so it actually goes out', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 120, 'red');
+    victim.stats.maxHealth.baseValue = 4_000;
+    pressSpell(new Item_Liandry(holder));
+    victim.takeDamage(20, holder, 'MAGIC');
+    const burn = burnOn(victim) as Item_Liandry_Burn;
+
+    smoulder(burn, LIANDRY_BURN_MS * 2);
+
+    expect(burn.toRemove, 'the burn renewed itself off its own damage').toBe(true);
+    expect(burnOn(victim)).toBeUndefined();
+  });
+
+  it('is refreshed by the holder landing more magic on the same target', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 120, 'red');
+    pressSpell(new Item_Liandry(holder));
+    victim.takeDamage(20, holder, 'MAGIC');
+    const burn = burnOn(victim) as Item_Liandry_Burn;
+
+    smoulder(burn, LIANDRY_BURN_MS - LIANDRY_TICK_MS);
+    expect(burn.toRemove).toBe(false);
+    victim.takeDamage(20, holder, 'MAGIC');
+
+    expect(burn.timeElapsed).toBe(0);
+    expect(burnOn(victim)).toBe(burn);
   });
 });
