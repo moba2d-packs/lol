@@ -1037,8 +1037,12 @@ const displayData = (): Record<string, SpellDisplayData> => {
 };
 
 /**
- * The shop, as this pack declares it — six components and eight finished
- * items, keyed by local id exactly the way `ItemDef.id` requires.
+ * The shop, as this pack declares it — components and finished items, keyed
+ * by local id exactly the way `ItemDef.id` requires. The count is not written
+ * down here: it is `tests/items.test.ts`'s `SPEC`, which is a table somebody
+ * has to edit to change it, rather than a sentence that goes stale on its own
+ * (this one said "six components and eight finished items" right up to the
+ * day there were twenty-five and eighty-six).
  *
  * **None of these numbers is Riot's, and they are not meant to be.** A
  * champion in this engine has a 100-point health pool, 14 attack damage and 3

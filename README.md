@@ -114,7 +114,7 @@ their artwork. `assets/` holds champion portraits and ability icons imported
 from the League of Legends Wiki — `assets/source-manifest.json` records, for
 every one of them, the URL it came from, the revision it was, and a SHA-256 of
 the bytes, and `npm run ability:check` re-hashes each file against that record
-so the provenance stays true. The shop's fifty-seven item icons are the same
+so the provenance stays true. The shop's item icons are the same
 deal one ledger over: taken byte-for-byte off Data Dragon, recorded in
 `docs/items-source-manifest.json`, re-hashed by `npm run items:check`. The
 items' own stats, costs and build paths are *not* Riot's — they are written
