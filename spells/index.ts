@@ -409,3 +409,8 @@ export { default as Mordekaiser_Q } from './Mordekaiser_Q';
 export { default as Mordekaiser_W } from './Mordekaiser_W';
 export { default as Mordekaiser_E } from './Mordekaiser_E';
 export { default as Mordekaiser_R } from './Mordekaiser_R';
+
+export { default as Xerath_Q } from './Xerath_Q';
+export { default as Xerath_W } from './Xerath_W';
+export { default as Xerath_E } from './Xerath_E';
+export { default as Xerath_R } from './Xerath_R';

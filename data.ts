@@ -293,6 +293,13 @@ const ROSTER: {
     spells: ['Mordekaiser_Q', 'Mordekaiser_W', 'Mordekaiser_E', 'Mordekaiser_R'],
   },
   {
+    name: 'Xerath',
+    attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 1400 },
+    image: 'champ_xerath',
+
+    spells: ['Xerath_Q', 'Xerath_W', 'Xerath_E', 'Xerath_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',

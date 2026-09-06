@@ -464,8 +464,9 @@ describe("the pack's tests speak only published core surfaces", () => {
     // `tests/spells/Akali.test.ts`, `tests/spells/Braum.test.ts`,
     // `tests/spells/Draven.test.ts`, `tests/spells/Fiora.test.ts`,
     // `tests/spells/Jax.test.ts`, `tests/spells/Lucian.test.ts`,
-    // `tests/spells/MissFortune.test.ts`, `tests/spells/Mordekaiser.test.ts`.
-    expect(files.length).toBe(134);
+    // `tests/spells/MissFortune.test.ts`, `tests/spells/Mordekaiser.test.ts`,
+    // `tests/spells/Xerath.test.ts`.
+    expect(files.length).toBe(135);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {
