@@ -384,3 +384,8 @@ export { default as Draven_Q } from './Draven_Q';
 export { default as Draven_W } from './Draven_W';
 export { default as Draven_E } from './Draven_E';
 export { default as Draven_R } from './Draven_R';
+
+export { default as Fiora_Q } from './Fiora_Q';
+export { default as Fiora_W } from './Fiora_W';
+export { default as Fiora_E } from './Fiora_E';
+export { default as Fiora_R } from './Fiora_R';
