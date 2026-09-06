@@ -482,7 +482,11 @@ describe("the pack's tests speak only published core surfaces", () => {
     // 138, not 137: `tests/spells/Item_resists.test.ts`, the same day's rows
     // whose purchase is taking less damage — a ramp off swings, an aura, and
     // a mark on one champion. Same two published surfaces again.
-    expect(files.length).toBe(138);
+    //
+    // 139, not 138: `tests/spells/Item_empowers.test.ts`, the same shelf's
+    // two rows whose payout lands on somebody *acting* — an ally who commits
+    // to the marked target, and a wearer who has just spent an ultimate.
+    expect(files.length).toBe(139);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {

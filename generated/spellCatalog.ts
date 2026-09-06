@@ -1100,6 +1100,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_ImperialMandate": {
+    name: "Trát Lệnh Đế Vương (Item_ImperialMandate)",
+    description: "Nội tại: sát thương phép của bạn đánh dấu kẻ địch trong 4 giây; khi một đồng minh đánh trúng, dấu ấn nổ gây 12 sát thương phép và tăng 20% tốc chạy cho đồng minh đó trong 2 giây",
+    iconKey: "item_imperial_mandate",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_KaenicRookern": {
     name: "Vòng Sắt Cổ Tự (Item_KaenicRookern)",
     description: "Nội tại: sau 8 giây không nhận sát thương, nhận lá chắn phép bằng 20% máu tối đa — chỉ chặn sát thương phép, giữ đến khi vỡ",

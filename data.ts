@@ -2473,6 +2473,26 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { maxHealth: 55, abilityHaste: 20, tenacity: 0.2 },
     active: 'Item_Anathema',
   },
+  imperial_mandate: {
+    id: 'imperial_mandate',
+    name: 'Trát Lệnh Đế Vương',
+    icon: 'item_imperial_mandate',
+    cost: 1500,
+    buildsFrom: ['kindlegem', 'amplifying_tome'],
+    // Live marks off *your abilities that slow or immobilise*.
+    // `EventType.ON_BUFF_ADD` is declared in core's enum and emitted nowhere,
+    // so "I just applied a slow" is unanswerable from a pack; the mark comes
+    // off magic damage instead, which is the seam the rest of the mage shelf
+    // already rides. The spell file's header states it.
+    description:
+      'Nội tại: sát thương phép của bạn đánh dấu kẻ địch trong <span class="time">4 giây</span>; ' +
+      'khi một đồng minh đánh trúng mục tiêu bị đánh dấu, dấu ấn nổ gây ' +
+      '<span class="damage magic" data-flat="none">12 sát thương phép</span> và tăng ' +
+      '<span class="buff">20%</span> tốc chạy cho đồng minh đó trong ' +
+      '<span class="time">2 giây</span>.',
+    stats: { abilityPower: 0.9, maxHealth: 35, abilityHaste: 20 },
+    passive: 'Item_ImperialMandate',
+  },
 });
 
 /**

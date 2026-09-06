@@ -144,6 +144,7 @@ export const spellModules: Record<string, () => Promise<SpellModule>> = {
   "Item_Hullbreaker": () => import('../spells/Item_Hullbreaker'),
   "Item_Iceborn": () => import('../spells/Item_Iceborn'),
   "Item_Immolate": () => import('../spells/Item_Immolate'),
+  "Item_ImperialMandate": () => import('../spells/Item_ImperialMandate'),
   "Item_KaenicRookern": () => import('../spells/Item_KaenicRookern'),
   "Item_Kraken": () => import('../spells/Item_Kraken'),
   "Item_Liandry": () => import('../spells/Item_Liandry'),
