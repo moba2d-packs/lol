@@ -2430,6 +2430,23 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { attackSpeed: 0.2, magicResist: 40, onHitDamage: 2, armorPenetration: 0.1 },
     passive: 'Item_Terminus',
   },
+  unending_despair: {
+    id: 'unending_despair',
+    name: 'Áo Choàng Diệt Vong',
+    icon: 'item_unending_despair',
+    cost: 1650,
+    buildsFrom: ['kindlegem', 'chain_vest'],
+    // Thiêu Đốt makes standing beside you cost something; this makes standing
+    // beside somebody else earn something. Champions only, unlike the burn —
+    // a jungler pulsing a six-body camp would heal to full every four seconds.
+    description:
+      'Nội tại: mỗi <span class="time">4 giây</span>, gây ' +
+      '<span class="damage magic" data-flat="none">2 + 1% máu tối đa của bản thân</span> ' +
+      'sát thương phép lên các tướng địch xung quanh và hồi ' +
+      '<span class="heal" data-flat="none">200%</span> lượng đã gây.',
+    stats: { maxHealth: 55, armor: 40, abilityHaste: 10 },
+    passive: 'Item_UnendingDespair',
+  },
 });
 
 /**

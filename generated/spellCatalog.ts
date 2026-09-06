@@ -1372,6 +1372,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_UnendingDespair": {
+    name: "Áo Choàng Diệt Vong (Item_UnendingDespair)",
+    description: "Nội tại: mỗi 4 giây, gây 2 + 1% máu tối đa của bản thân sát thương phép lên các tướng địch xung quanh và hồi 200% lượng đã gây",
+    iconKey: "item_unending_despair",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_Voltaic": {
     name: "Kiếm Điện Phong (Item_Voltaic)",
     description: "Nội tại: di chuyển tích điện; khi tích đầy, đòn đánh kế tiếp gây thêm 8 sát thương vật lý và làm chậm 40% trong 1 giây",

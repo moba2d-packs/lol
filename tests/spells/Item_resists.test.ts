@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { buildTestApi } from '@moba2d/core/testing';
+import { buildTestApi, indexObjects } from '@moba2d/core/testing';
 import {
   createGame,
   createUnit,
@@ -8,6 +8,14 @@ import {
   pressSpell,
   type TestGame,
 } from '@moba2d/core/testing/spell';
+import Item_UnendingDespair, {
+  Item_UnendingDespair_Cloak,
+  DESPAIR_BASE_PER_TICK,
+  DESPAIR_HEAL_RATIO,
+  DESPAIR_MAX_HEALTH_RATIO_PER_TICK,
+  DESPAIR_RADIUS,
+  DESPAIR_TICK_MS,
+} from '../../spells/Item_UnendingDespair';
 import Item_Terminus, {
   Item_Terminus_Juxtaposition,
   TERMINUS_MAX_STACKS,
@@ -20,6 +28,7 @@ installSketchMathGlobals();
 installSpellObjectGlobals();
 
 const api = buildTestApi();
+const { Champion } = api.units;
 
 /**
  * The rows added on 2026-09-06 whose purchase is **taking less damage** — a
@@ -135,5 +144,82 @@ describe('Cung Chạng Vạng', () => {
     expect(bow.stacks).toBe(0);
     expect(holder.stats.armorPenetration.value).toBe(0);
     expect(holder.stats.armor.value).toBe(40);
+  });
+});
+
+describe('Áo Choàng Diệt Vong', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+    vi.stubGlobal('deltaTime', DESPAIR_TICK_MS);
+  });
+
+  const champion = (x: number, teamId: string) =>
+    new Champion({ game, position: createVector(x, 0), teamId } as never);
+
+  const worn = (holder: ReturnType<typeof champion>): Item_UnendingDespair_Cloak => {
+    expect(pressSpell(new Item_UnendingDespair(holder))).toBe(true);
+    return live(holder)[0] as Item_UnendingDespair_Cloak;
+  };
+
+  /** What one pulse swings at each champion, off the wearer's own bar. */
+  const pulseFor = (holder: { stats: { maxHealth: { value: number } } }): number =>
+    DESPAIR_BASE_PER_TICK + holder.stats.maxHealth.value * DESPAIR_MAX_HEALTH_RATIO_PER_TICK;
+
+  it('pulses every enemy champion in reach and hands the wearer back double', () => {
+    const holder = champion(0, 'blue');
+    const near = champion(DESPAIR_RADIUS / 2, 'red');
+    const far = champion(DESPAIR_RADIUS * 3, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, near, far]);
+    const cloak = worn(holder);
+    holder.stats.health.baseValue = 10;
+
+    const onNear = vi.spyOn(near, 'takeDamage');
+    const onFar = vi.spyOn(far, 'takeDamage');
+    cloak.update();
+
+    const pulse = pulseFor(holder);
+    expect(onNear.mock.calls.map(call => call[0])).toEqual([pulse]);
+    expect(onNear.mock.calls[0][2]).toBe('MAGIC');
+    expect(onFar).not.toHaveBeenCalled();
+    expect(holder.stats.health.baseValue).toBe(10 + Math.round(pulse * DESPAIR_HEAL_RATIO));
+  });
+
+  /**
+   * The one that would have made a jungler unkillable: a camp is six bodies,
+   * and a pulse that counted them would hand back twelve times the tick every
+   * four seconds. `enemyChampionsAround` is the tank shelf's own sweep.
+   */
+  it('pays nothing for a minion or a camp standing in the same ring', () => {
+    const holder = champion(0, 'blue');
+    game.setPlayer(holder);
+    const creep = createUnit(game, DESPAIR_RADIUS / 2, 'red');
+    indexObjects(game, [holder, creep]);
+    const cloak = worn(holder);
+    holder.stats.health.baseValue = 10;
+
+    const onCreep = vi.spyOn(creep, 'takeDamage');
+    cloak.update();
+
+    expect(onCreep).not.toHaveBeenCalled();
+    expect(holder.stats.health.baseValue).toBe(10);
+  });
+
+  it('holds its clock: nothing happens between pulses', () => {
+    const holder = champion(0, 'blue');
+    const near = champion(DESPAIR_RADIUS / 2, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, near]);
+    const cloak = worn(holder);
+
+    const onNear = vi.spyOn(near, 'takeDamage');
+    vi.stubGlobal('deltaTime', DESPAIR_TICK_MS / 4);
+    for (let i = 0; i < 3; i++) cloak.update();
+    expect(onNear).not.toHaveBeenCalled();
+
+    cloak.update();
+    expect(onNear).toHaveBeenCalledTimes(1);
   });
 });
