@@ -251,6 +251,13 @@ const ROSTER: {
     spells: ['Braum_Q', 'Braum_W', 'Braum_E', 'Braum_R'],
   },
   {
+    name: 'Draven',
+    attack: { ...ATTACK.MARKSMAN, boltUnitsPerSecond: 1500 },
+    image: 'champ_draven',
+
+    spells: ['Draven_Q', 'Draven_W', 'Draven_E', 'Draven_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',

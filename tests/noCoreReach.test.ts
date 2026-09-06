@@ -461,8 +461,9 @@ describe("the pack's tests speak only published core surfaces", () => {
     // core's. Core owns the rule, this owns the ability that asked for it.
     //
     // And one more per champion added since: `tests/spells/Aatrox.test.ts`,
-    // `tests/spells/Akali.test.ts`, `tests/spells/Braum.test.ts`.
-    expect(files.length).toBe(128);
+    // `tests/spells/Akali.test.ts`, `tests/spells/Braum.test.ts`,
+    // `tests/spells/Draven.test.ts`.
+    expect(files.length).toBe(129);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {
