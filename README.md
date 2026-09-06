@@ -1,7 +1,7 @@
 # @moba2d/content-lol
 
 The League of Legends content pack for [`@moba2d/core`](https://github.com/moba2d-game/core):
-63 playable champions' worth of spells, monsters and the Summoner's Rift map,
+77 playable champions' worth of spells, monsters and the Summoner's Rift map,
 built entirely against core's public `ContentApi`. Until content-pack-and-
 repo-split batch 6 task 10, this pack lived inside the core monorepo, at
 `packs/riot/` (the pack id was `riot` then too, and is `lol` now — named
@@ -9,10 +9,12 @@ for the game it draws from rather than for the company that makes it); this repo
 same tests, same history from this point forward, now versioned on its own.
 
 (Checked, not rounded: `data.ts`'s own `ROSTER`/`championEntries()` produces
-exactly 63 entries with `playable: true`, one per file-name prefix under
+exactly 77 entries with `playable: true`, one per file-name prefix under
 `spells/` that carries a `_Q`/`_W`/`_E`/`_R` suffix — the same count
-`vite.config.ts` (in core) uses for its per-champion chunking. The pack's
-spell files total more than that: a handful — `Flash`, `Ghost`, `Heal`,
+`vite.config.ts` (in core) uses for its per-champion chunking. It said 63 for
+a long time and had been wrong by fourteen for most of it: the number is prose,
+nothing re-derives it, and every champion added since is one it did not count.
+The pack's spell files total more than that: a handful — `Flash`, `Ghost`, `Heal`,
 `Ignite`, `StealthWard` — carry no champion prefix at all and share one
 `spell-common` chunk, which is why "champions" and "spell chunks" are two
 different, both-correct numbers.)
