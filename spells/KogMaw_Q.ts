@@ -67,7 +67,7 @@ export const VOID_DARK: readonly [number, number, number] = [30, 18, 42];
  */
 export default class KogMaw_Q extends Spell {
   image = api.asset('spell_kogmaw_q');
-  name = 'Đờm Ăn Mòn (KogMaw_Q)';
+  name = 'Phun Axít (KogMaw_Q)';
   description =
     `Nhổ một búng đờm ăn mòn theo hướng chỉ định, gây ${dmg(Q_DAMAGE, 'MAGIC')}` +
     ` cho kẻ địch đầu tiên trúng chiêu và <span class="buff">giảm ${pct(Q_SHRED_PERCENT)}% giáp và kháng phép</span>` +

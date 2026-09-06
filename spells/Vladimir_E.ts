@@ -56,7 +56,7 @@ const BLOOD: [number, number, number] = [150, 15, 24];
 export default class Vladimir_E extends Spell {
   targetingMode = 'SELF' as const;
   image = api.asset('spell_vladimir_e');
-  name = 'Sóng Máu (Vladimir_E)';
+  name = 'Thủy Triều Máu (Vladimir_E)';
   description =
     `Tạo một đợt sóng máu quanh Vladimir, gây ${dmg(DAMAGE, 'MAGIC')} ` +
     `và <span class="buff">chậm ${pct(SLOW_PERCENT)}%</span> trong <span class="time">${secs(SLOW_MS)} giây</span> ` +

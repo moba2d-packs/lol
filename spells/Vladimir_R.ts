@@ -65,7 +65,7 @@ const PLAGUE: [number, number, number] = [150, 190, 40];
 export default class Vladimir_R extends Spell {
   targetingMode = 'POINT' as const;
   image = api.asset('spell_vladimir_r');
-  name = 'Ôn Dịch Máu (Vladimir_R)';
+  name = 'Máu Độc (Vladimir_R)';
   description =
     `Gieo rắc ôn dịch tại vị trí chỉ định trong <span>${RADIUS}px</span>. Kẻ địch trúng phải bị nhiễm ` +
     `<span class="buff">Ôn Dịch</span> trong <span class="time">${secs(MARK_DURATION_MS)} giây</span>, ` +

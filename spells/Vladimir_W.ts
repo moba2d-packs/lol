@@ -87,7 +87,7 @@ export const FORM_MS = 180;
 export default class Vladimir_W extends Spell {
   targetingMode = 'SELF' as const;
   image = api.asset('spell_vladimir_w');
-  name = 'Vũng Máu (Vladimir_W)';
+  name = 'Hồ Máu (Vladimir_W)';
   description =
     `Chìm vào vũng máu trong <span class="time">${secs(POOL_DURATION_MS)} giây</span>, ` +
     `<span class="buff">không thể bị chọn</span> và không thể tấn công hay dùng phép, nhưng vẫn di chuyển được. ` +

@@ -68,7 +68,7 @@ const FRAME_MS = 16.67;
 export default class Trundle_E extends Spell {
   targetingMode = 'POINT' as const;
   image = api.asset('spell_trundle_e');
-  name = 'Trụ Băng (Trundle_E)';
+  name = 'Cột Băng (Trundle_E)';
   description =
     `Dựng một trụ băng chắn ngang hướng chỉ định, tồn tại <span class="time">${secs(E_DURATION_MS)} giây</span>.` +
     ` Trụ băng <b>đặc</b> — chặn đường đi thật sự — và khi vừa hiện ra sẽ` +

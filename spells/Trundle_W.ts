@@ -42,7 +42,7 @@ const BUFF_REFRESH_MS = W_TICK_MS + 150;
 export default class Trundle_W extends Spell {
   targetingMode = 'POINT' as const;
   image = api.asset('spell_trundle_w');
-  name = 'Lãnh Địa Băng Giá (Trundle_W)';
+  name = 'Vương Quốc Băng Hàn (Trundle_W)';
   description =
     `Phủ băng lên khu vực bán kính <span>${W_RADIUS}px</span> trong <span class="time">${secs(W_DURATION_MS)} giây</span>.` +
     ` Khi đứng trong vùng băng, Trundle nhận <span class="buff">${pct(W_ATTACK_SPEED)}% tốc đánh</span>,` +

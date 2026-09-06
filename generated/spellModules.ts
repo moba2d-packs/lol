@@ -10,6 +10,10 @@ export interface SpellModule {
 }
 
 export const spellModules: Record<string, () => Promise<SpellModule>> = {
+  "Aatrox_E": () => import('../spells/Aatrox_E'),
+  "Aatrox_Q": () => import('../spells/Aatrox_Q'),
+  "Aatrox_R": () => import('../spells/Aatrox_R'),
+  "Aatrox_W": () => import('../spells/Aatrox_W'),
   "Ahri_E": () => import('../spells/Ahri_E'),
   "Ahri_Q": () => import('../spells/Ahri_Q'),
   "Ahri_R": () => import('../spells/Ahri_R'),

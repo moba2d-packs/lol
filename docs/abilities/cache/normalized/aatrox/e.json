@@ -1,0 +1,54 @@
+{
+  "asset": {
+    "key": "spell_aatrox_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_Umbral_Dash.png?9ed8d",
+    "sha1": "5f1395e05c27e3aa483e8003bcbfdcd9b6567410"
+  },
+  "champion": "Aatrox",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_aatrox_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_Umbral_Dash.png?9ed8d",
+        "sha1": "5f1395e05c27e3aa483e8003bcbfdcd9b6567410"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "9 / 8 / 7 / 6 / 5",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Passive:'''</span> '''Aatrox''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Heals\">[[File:Heal power icon.svg|20px|link=Healing|An icon representing the keyword Heal]] [[:Healing|heals]]</span> for 16% <span style=\"color:\n#21B053; white-space:normal\">(+ 1.<small>1</small>% per 100 '''bonus''' health)</span> of non-<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|persistent]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage calculated after modifiers\">post-mitigation damage</span> he deals against enemy champions.",
+          "text": "Passive: Aatrox heals for 16% (+ 1.1% per 100 bonus health) of non- persistent post-mitigation damage he deals against enemy champions."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Aatrox''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> in the target direction.",
+          "text": "Active: Aatrox dashes in the target direction."
+        },
+        "description3": {
+          "raw": "''Umbral Dash <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack reset\">[[File:Bladework.png|20px|link=Basic attack#Attack reset|An icon representing the keyword Basic attack reset]] [[:Basic attack#Attack reset|resets]]</span> '''Aatrox's''' basic attack timer and can be cast during his other abilities without cancelling them and vice versa.''",
+          "text": "Umbral Dash resets Aatrox's basic attack timer and can be cast during his other abilities without cancelling them and vice versa."
+        },
+        "icon": "false",
+        "icon2": "Umbral Dash.png",
+        "name": "Umbral Dash",
+        "notes": {
+          "raw": "* The <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dash]]</span> distance can be extended to up-to 500 units when targeting across terrain. It will only extend for the distance needed to cross the wall.\n** This may upscale his dash speed so that the dash takes the same total time as the standard maximum-range dash.\n* If ''Umbral Dash'' is cast towards a movement command's end point, ''Umbral Dash'' will re-issue a movement command to that point when the dash ends.\n** He will be unable to buffer any commands during the dash if it is casted this way. <sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This is not intended. \">(bug)</span></sup>\n* '''Aatrox's''' model darkens for 1.<small>5</small> seconds upon casting ''Umbral Dash'', which is a remnant of an <span style=\"color:orange; white-space:normal\">attack damage</span> buff he received before it got removed in [[V9.9]].",
+          "text": "The dash distance can be extended to up-to 500 units when targeting across terrain. It will only extend for the distance needed to cross the wall.\n* This may upscale his dash speed so that the dash takes the same total time as the standard maximum-range dash.\nIf Umbral Dash is cast towards a movement command's end point, Umbral Dash will re-issue a movement command to that point when the dash ends.\n* He will be unable to buffer any commands during the dash if it is casted this way. (bug)\nAatrox's model darkens for 1.5 seconds upon casting Umbral Dash, which is a remnant of an attack damage buff he received before it got removed in V9.9."
+        },
+        "speed": "800 • 1340",
+        "targeting": "Location"
+      },
+      "name": "Umbral Dash"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "4ac19f54833236d4a92f452fa1cba557ba960254924b5ba40b82eafa445d3c0b",
+    "fetchedAt": "2026-09-06T13:36:31.074Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Aatrox/Umbral_Dash",
+    "revisionId": 4007771,
+    "sourceTimestamp": "2026-04-12T14:42:20Z"
+  }
+}

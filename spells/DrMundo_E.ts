@@ -77,7 +77,7 @@ export const CLEAVE_DAMAGE_RATIO = 0.6;
 export default class DrMundo_E extends Spell {
   targetingMode = 'SELF' as const;
   image = api.asset('spell_drmundo_e');
-  name = 'Chấn Thương Cùn (DrMundo_E)';
+  name = 'Đập Bầm Dập (DrMundo_E)';
   description =
     `Tăng cường đòn đánh thường tiếp theo trong <span class="time">${secs(WINDOW_MS)} giây</span>: ` +
     `+<span class="buff">${BONUS_RANGE}</span> tầm đánh và ${dmgRange(BASE_BONUS_DAMAGE, MAX_BONUS_DAMAGE, 'PHYSICAL', '', '-')} ` +

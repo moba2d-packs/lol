@@ -1,0 +1,48 @@
+{
+  "asset": {
+    "key": "spell_aatrox_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_Deathbringer_Stance.png?e5b19",
+    "sha1": "ad21d0d3b1630a382d5826b90f7a56d2c8ea1cce"
+  },
+  "champion": "Aatrox",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_aatrox_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_Deathbringer_Stance.png?e5b19",
+        "sha1": "ad21d0d3b1630a382d5826b90f7a56d2c8ea1cce"
+      },
+      "fields": {
+        "damagetype": "magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate:'''</span> Periodically, '''Aatrox''' empowers his next <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attack]]</span> to gain <span style=\"white-space:nowrap\">[[File:Range icon.png|15px|link=Range]]&nbsp;50 '''bonus''' range</span> and deal <span style=\"color:\n#00B0F0; white-space:normal\">'''bonus''' magic damage</span> equal to <span style=\"color:\n#21B053; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"4;\" data-finish=\"10;\" data-top-fill=\"18\" data-bot-values=\"4;4.35;4.71;5.06;5.41;5.76;6.12;6.47;6.82;7.18;7.53;7.88;8.24;8.59;8.94;9.29;9.65;10;10.35;10.71;11.06;11.41;11.76;12.12;12.47;12.82;13.18;13.53;13.88;14.24;14.59;14.94;15.29;15.65;16;16.35;16.71;17.06;17.41;17.76;18.12|displayMaxColumn=18\" data-bot-key=\"%\">4% – 10% (based on level)</span> of the target's '''maximum''' health</span>, capped at <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"100;\" data-finish=\"320;\" data-top-fill=\"18\" data-bot-values=\"100;112.94;125.88;138.82;151.76;164.71;177.65;190.59;203.53;216.47;229.41;242.35;255.29;268.24;281.18;294.12;307.06;320;332.94;345.88;358.82;371.76;384.71;397.65;410.59;423.53;436.47;449.41;462.35;475.29;488.24;501.18;514.12;527.06;540;552.94;565.88;578.82;591.76;604.71;617.65|displayMaxColumn=18\">100 – 320 (based on level)</span> against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monsters\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monsters]]</span>. ''Deathbringer Stance's'' damage applies <span style=\"color:\n#CC2051; white-space:normal\"><span style=\"white-space:nowrap\">[[File:Life steal icon.svg|15px|link=Life steal]]&nbsp;life steal</span></span>.<br><br>'''Aatrox''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Heals\">[[File:Heal power icon.svg|20px|link=Healing|An icon representing the keyword Heal]] [[:Healing|heals]]</span> for the <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage calculated after modifiers\">post-mitigation '''bonus''' damage</span> dealt, reduced to 25% against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Minions\">[[File:Minion icon.png|20px|link=Minion|An icon representing the keyword Minion]] [[:Minion|minions]]</span>.",
+          "text": "Innate: Periodically, Aatrox empowers his next basic attack to gain &nbsp;50 bonus range and deal bonus magic damage equal to 4% – 10% (based on level) of the target's maximum health, capped at 100 – 320 (based on level) against monsters. Deathbringer Stance's damage applies &nbsp;life steal.\nAatrox heals for the post-mitigation bonus damage dealt, reduced to 25% against minions."
+        },
+        "description2": {
+          "raw": "Whenever '''Aatrox''' hits at least one enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span> or large <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monster\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monster]]</span> with a basic attack <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> or an <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ability\">[[File:Champion ability.svg|20px|link=Champion ability|An icon representing the keyword Champion ability]] [[:Champion ability|ability]]</span>, ''Deathbringer Stance's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;'''current''' cooldown</span> is reduced by 2 seconds, doubled to 4 if he hits with the <span style=\"color:\n#E34D4C; white-space:normal\">Sweetspot</span> of ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Aatrox\" data-ability=\"The Darkin Blade\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Aatrox The Darkin Blade.png|20xpx|border|link=Aatrox#The Darkin Blade|An icon for Aatrox's ability The Darkin Blade]]</span> <span style=\"white-space:normal;\">[[Aatrox#The Darkin Blade|The Darkin Blade]]</span></span>''.",
+          "text": "Whenever Aatrox hits at least one enemy champion or large monster with a basic attack on-hit or an ability, Deathbringer Stance's &nbsp;current cooldown is reduced by 2 seconds, doubled to 4 if he hits with the Sweetspot of The Darkin Blade."
+        },
+        "icon": "Deathbringer Stance.png",
+        "name": "Deathbringer Stance",
+        "notes": {
+          "raw": "* '''Aatrox''' will assume stance when an enemy champion is in range of <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Aatrox\" data-ability=\"Infernal Chains\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Aatrox Infernal Chains.png|20xpx|border|link=Aatrox#Infernal Chains|An icon for Aatrox's ability Infernal Chains]]</span> <span style=\"white-space:normal;\">[[Aatrox#Infernal Chains|Infernal Chains]]</span></span>.\n** The [[Emoting|toggle]] expression (default <span class=\"template_sbc\">'''CTRL + 5'''</span>) switches between stances manually.\n* If ''Deathbringer Stance'' becomes available during a standard attack's windup, it will not be consumed or trigger the '''bonus''' damage.\n* Even if the ability hit is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|spell shielded]]</span> ''Deathbringer Stance's'' cooldown will still be reduced.\n* This ability goes on cooldown on death and refreshes upon respawn.\n* The empowered attack will not trigger against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Structures\">[[File:Structure icon.png|20px|link=Category:Structure|An icon representing the keyword Structure]] [[:Category:Structure|structures]]</span> and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Wards\">[[File:Ward_icon.png|20px|link=Ward|An icon representing the keyword Ward]] [[:Ward|wards]]</span>.",
+          "text": "Aatrox will assume stance when an enemy champion is in range of Infernal Chains.\n* The toggle expression (default CTRL + 5) switches between stances manually.\nIf Deathbringer Stance becomes available during a standard attack's windup, it will not be consumed or trigger the bonus damage.\nEven if the ability hit is spell shielded Deathbringer Stance's cooldown will still be reduced.\nThis ability goes on cooldown on death and refreshes upon respawn.\nThe empowered attack will not trigger against structures and wards."
+        },
+        "spellshield": false,
+        "targeting": "Passive"
+      },
+      "name": "Deathbringer Stance"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "97d2901773e12234f69df5dd9110fdda3fec835140aa70b85cf21e3318ace821",
+    "fetchedAt": "2026-09-06T13:36:31.074Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Aatrox/Deathbringer_Stance",
+    "revisionId": 4038188,
+    "sourceTimestamp": "2026-06-30T04:46:06Z"
+  }
+}

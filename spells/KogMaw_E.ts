@@ -67,7 +67,7 @@ export const E_SLOW_STACK_ID = 'kogmaw_e_slow';
  */
 export default class KogMaw_E extends Spell {
   image = api.asset('spell_kogmaw_e');
-  name = 'Bùn Hư Không (KogMaw_E)';
+  name = 'Dung Dịch Hư Không (KogMaw_E)';
   description =
     `Phun một khối bùn Hư Không theo hướng chỉ định, xuyên qua mọi kẻ địch và gây` +
     ` ${dmg(E_DAMAGE, 'MAGIC')} cho mỗi kẻ trúng chiêu.` +

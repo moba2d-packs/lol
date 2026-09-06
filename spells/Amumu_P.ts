@@ -103,7 +103,7 @@ export class Amumu_P_CursedTouch extends Buff {
 export default class Amumu_P extends Spell {
   targetingMode = 'SELF' as const;
   image = api.asset('spell_amumu_w');
-  name = 'Chạm Nguyền (Amumu_P)';
+  name = 'Cú Đập Nguyền Rủa (Amumu_P)';
   description =
     `Nội tại: đòn đánh thường nguyền rủa mục tiêu trong ${secs(CURSE_MS)} giây,` +
     ` khiến mục tiêu nhận thêm ${tint(`${pct(AMP)}% sát thương phép`, 'MAGIC')} từ mọi nguồn`;

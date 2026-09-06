@@ -28,6 +28,38 @@ export interface GeneratedSpellDisplay {
 }
 
 export const spellCatalog = {
+  "Aatrox_E": {
+    name: "Bộ Pháp Hắc Ám (Aatrox_E)",
+    description: "<span class=\"buff\">Lướt</span> <span>170px</span> theo hướng chỉ định. Nội tại: mọi sát thương Aatrox gây ra <span class=\"buff\">hồi lại 16%</span> thành máu cho chính hắn.",
+    iconKey: "spell_aatrox_e",
+    coolDownMs: 6000,
+    manaCost: 20,
+    specCoolDownMs: 6000,
+  },
+  "Aatrox_Q": {
+    name: "Quỷ Kiếm Darkin (Aatrox_Q)",
+    description: "Bổ đại kiếm 3 lần trong <span class=\"time\">4 giây</span>: một <span class=\"buff\">đường thẳng</span>, một <span class=\"buff\">hình quạt</span> rộng, rồi một <span class=\"buff\">vòng tròn</span> đập xuống phía trước. Gây <span class=\"damage physical\" data-base=\"12\">12 sát thương vật lý</span> → <span class=\"damage physical\" data-base=\"15\">15 sát thương vật lý</span> → <span class=\"damage physical\" data-base=\"18\">18 sát thương vật lý</span> ở rìa lưỡi kiếm. Kẻ địch đứng đúng <span class=\"buff\">Điểm Hiểm</span> — mép ngoài của nhát chém — nhận <span class=\"damage physical\" data-base=\"21\">21 sát thương vật lý</span> → <span class=\"damage physical\" data-base=\"26\">26 sát thương vật lý</span> → <span class=\"damage physical\" data-base=\"32\">32 sát thương vật lý</span> và bị <span class=\"buff\">hất tung</span>.",
+    iconKey: "spell_aatrox_q",
+    coolDownMs: 9000,
+    manaCost: 0,
+    specCoolDownMs: 9000,
+  },
+  "Aatrox_R": {
+    name: "Chiến Binh Tận Thế (Aatrox_R)",
+    description: "Aatrox cởi bỏ hình hài phàm tục trong <span class=\"time\">6 giây</span>: <span class=\"buff\">+30% sát thương đánh thường</span>, <span class=\"buff\">+50% hồi máu nhận vào</span>, và <span class=\"buff\">+40% tốc chạy</span> tụt dần 10% mỗi <span class=\"time\">0.3 giây</span>. Lính và quái trong bán kính <span>250px</span> bỏ chạy <span class=\"time\">2 giây</span>. Mỗi lần hạ gục tướng địch, thời gian còn lại được đẩy lại lên <span class=\"time\">3 giây</span>.",
+    iconKey: "spell_aatrox_r",
+    coolDownMs: 10000,
+    manaCost: 60,
+    specCoolDownMs: 10000,
+  },
+  "Aatrox_W": {
+    name: "Xiềng Xích Địa Ngục (Aatrox_W)",
+    description: "Quăng một sợi xích thẳng về phía trước. Kẻ địch đầu tiên trúng phải nhận <span class=\"damage physical\" data-base=\"14\">14 sát thương vật lý</span> và bị <span class=\"buff\">Làm Chậm 30%</span> trong <span class=\"time\">1.5 giây</span>, đồng thời bị xích vào mặt đất <span class=\"time\">1.5 giây</span>. Nếu sau đó nó vẫn còn trong vòng <span>150px</span> quanh cọc xích, nó nhận thêm <span class=\"damage physical\" data-base=\"14\">14 sát thương vật lý</span> và bị <span class=\"buff\">kéo về</span> đúng chỗ bị xích.",
+    iconKey: "spell_aatrox_w",
+    coolDownMs: 9000,
+    manaCost: 40,
+    specCoolDownMs: 9000,
+  },
   "Ahri_E": {
     name: "Hôn Gió (Ahri_E)",
     description: "Hôn gió theo hướng chỉ định, gây <span class=\"damage magic\" data-base=\"15\">15 sát thương phép</span> và <span class=\"buff\">Mê Hoặc</span> kẻ địch trong <span class=\"time\">1.5 giây</span>",
@@ -101,7 +133,7 @@ export const spellCatalog = {
     specCoolDownMs: 6000,
   },
   "Amumu_P": {
-    name: "Chạm Nguyền (Amumu_P)",
+    name: "Cú Đập Nguyền Rủa (Amumu_P)",
     description: "Nội tại: đòn đánh thường nguyền rủa mục tiêu trong 3 giây, khiến mục tiêu nhận thêm <span class=\"damage magic\" data-flat=\"none\">10% sát thương phép</span> từ mọi nguồn",
     iconKey: "spell_amumu_w",
     coolDownMs: 0,
@@ -485,7 +517,7 @@ export const spellCatalog = {
     specCoolDownMs: 10000,
   },
   "DrMundo_E": {
-    name: "Chấn Thương Cùn (DrMundo_E)",
+    name: "Đập Bầm Dập (DrMundo_E)",
     description: "Tăng cường đòn đánh thường tiếp theo trong <span class=\"time\">4 giây</span>: +<span class=\"buff\">30</span> tầm đánh và <span class=\"damage physical\" data-base=\"10\" data-base-high=\"26\">10-26 sát thương vật lý</span> (càng ít máu, sát thương càng cao, tối đa khi mất 70% máu). Gây 140% sát thương lên lính và quái rừng, và làm kẻ địch xung quanh mục tiêu trúng <span class=\"damage physical\" data-flat=\"none\">60%</span> sát thương đó.",
     iconKey: "spell_drmundo_e",
     coolDownMs: 8000,
@@ -493,7 +525,7 @@ export const spellCatalog = {
     specCoolDownMs: 8000,
   },
   "DrMundo_Q": {
-    name: "Cưa Nhiễm Trùng (DrMundo_Q)",
+    name: "Cưa Nhiễm Khuẩn (DrMundo_Q)",
     description: "Ném một lưỡi cưa nhiễm trùng, gây <span class=\"damage magic\" data-flat=\"none\">22% máu hiện tại</span> của mục tiêu (tối thiểu <span class=\"damage magic\" data-base=\"16\">16</span>, giới hạn <span class=\"damage magic\" data-base=\"30\">30</span> lên quái rừng) làm <span class=\"damage magic\" data-flat=\"none\">sát thương phép</span> cho kẻ địch đầu tiên trúng chiêu và <span class=\"buff\">Làm Chậm 40%</span> trong <span class=\"time\">2 giây</span>. Trúng đích hồi lại cho Mundo một phần lượng máu đã trả: 50% máu đã trả (100% nếu trúng tướng địch hoặc quái rừng).",
     iconKey: "spell_drmundo_q",
     coolDownMs: 6000,
@@ -501,7 +533,7 @@ export const spellCatalog = {
     specCoolDownMs: 6000,
   },
   "DrMundo_R": {
-    name: "Liều Cực Mạnh (DrMundo_R)",
+    name: "Suýt Quá Liều (DrMundo_R)",
     description: "Tự tiêm hóa chất trong <span class=\"time\">6 giây</span>: hồi tổng cộng <span class=\"heal\" data-base=\"60\">60 máu</span>, tăng <span class=\"buff\">+10-30 máu tối đa</span> (theo lượng máu đã mất), <span class=\"buff\">+25% tốc chạy</span>, và <span class=\"buff\">+20% hiệu quả hồi máu nhận vào</span>.",
     iconKey: "spell_drmundo_r",
     coolDownMs: 10000,
@@ -509,7 +541,7 @@ export const spellCatalog = {
     specCoolDownMs: 10000,
   },
   "DrMundo_W": {
-    name: "Máy Sốc Tim (DrMundo_W)",
+    name: "Sốc Điện Tim (DrMundo_W)",
     description: "Sạc điện trong <span class=\"time\">2 giây</span>: mỗi 0.4 giây gây <span class=\"damage magic\" data-base=\"4\">4 sát thương phép</span> cho kẻ địch gần đó, và tích trữ <span class=\"buff\">60%</span> sát thương Mundo nhận vào. Khi kết thúc, kích nổ gây thêm <span class=\"damage magic\" data-base=\"12\">12 sát thương phép</span> quanh Mundo và hồi lại một phần sát thương đã hứng: bằng 50% lượng tích trữ (100% nếu kích nổ trúng tướng địch hoặc quái lớn).",
     iconKey: "spell_drmundo_w",
     coolDownMs: 10000,
@@ -1333,7 +1365,7 @@ export const spellCatalog = {
     specCoolDownMs: 9000,
   },
   "KogMaw_E": {
-    name: "Bùn Hư Không (KogMaw_E)",
+    name: "Dung Dịch Hư Không (KogMaw_E)",
     description: "Phun một khối bùn Hư Không theo hướng chỉ định, xuyên qua mọi kẻ địch và gây <span class=\"damage magic\" data-base=\"20\">20 sát thương phép</span> cho mỗi kẻ trúng chiêu. Vệt bùn để lại tồn tại <span class=\"time\">3 giây</span>, <span class=\"buff\">Làm Chậm 30%</span> kẻ địch đứng trong đó.",
     iconKey: "spell_kogmaw_e",
     coolDownMs: 9000,
@@ -1341,7 +1373,7 @@ export const spellCatalog = {
     specCoolDownMs: 9000,
   },
   "KogMaw_Q": {
-    name: "Đờm Ăn Mòn (KogMaw_Q)",
+    name: "Phun Axít (KogMaw_Q)",
     description: "Nhổ một búng đờm ăn mòn theo hướng chỉ định, gây <span class=\"damage magic\" data-base=\"25\">25 sát thương phép</span> cho kẻ địch đầu tiên trúng chiêu và <span class=\"buff\">giảm 20% giáp và kháng phép</span> của mục tiêu trong <span class=\"time\">4 giây</span>.",
     iconKey: "spell_kogmaw_q",
     coolDownMs: 7000,
@@ -1349,7 +1381,7 @@ export const spellCatalog = {
     specCoolDownMs: 7000,
   },
   "KogMaw_R": {
-    name: "Đại Bác Sinh Học (KogMaw_R)",
+    name: "Pháo Sinh Học (KogMaw_R)",
     description: "Bắn một quả cầu axit bay <span class=\"time\">0.9 giây</span> rồi rơi xuống điểm chỉ định, gây <span class=\"damage magic\" data-base=\"45\">45 sát thương phép</span> cho kẻ địch trong bán kính 85 và <span class=\"buff\">phát hiện</span> chúng trong <span class=\"time\">2 giây</span>. Sát thương tăng dần tới <span class=\"buff\">+50%</span> khi mục tiêu càng mất nhiều máu, hoặc <span class=\"buff\">+100%</span> nếu mục tiêu dưới 40% máu tối đa. Mỗi lần bắn cộng dồn một <span class=\"buff\">chồng chi phí</span> trong <span class=\"time\">8 giây</span>, mỗi chồng làm chiêu này tốn thêm 20 năng lượng.",
     iconKey: "spell_kogmaw_r",
     coolDownMs: 3000,
@@ -1357,7 +1389,7 @@ export const spellCatalog = {
     specCoolDownMs: 3000,
   },
   "KogMaw_W": {
-    name: "Pháo Kích Sinh Học (KogMaw_W)",
+    name: "Cao Xạ Ma Pháp (KogMaw_W)",
     description: "Kích hoạt trong <span class=\"time\">8 giây</span>: <span class=\"buff\">+130 tầm đánh</span> và mỗi đòn đánh thường gây thêm <span class=\"damage magic\" data-base=\"10\">10 sát thương phép</span>.",
     iconKey: "spell_kogmaw_w",
     coolDownMs: 10000,
@@ -2205,7 +2237,7 @@ export const spellCatalog = {
     specCoolDownMs: 10000,
   },
   "Trundle_E": {
-    name: "Trụ Băng (Trundle_E)",
+    name: "Cột Băng (Trundle_E)",
     description: "Dựng một trụ băng chắn ngang hướng chỉ định, tồn tại <span class=\"time\">5 giây</span>. Trụ băng <b>đặc</b> — chặn đường đi thật sự — và khi vừa hiện ra sẽ <span class=\"buff\">đẩy lùi</span> kẻ địch trong bán kính <span>150px</span> quanh tâm. Trong suốt thời gian tồn tại, kẻ địch đứng gần trụ băng (bán kính <span>170px</span>) bị <span class=\"buff\">Làm Chậm 40%</span>.",
     iconKey: "spell_trundle_e",
     coolDownMs: 10000,
@@ -2213,7 +2245,7 @@ export const spellCatalog = {
     specCoolDownMs: 10000,
   },
   "Trundle_Q": {
-    name: "Cắn Xé Băng Giá (Trundle_Q)",
+    name: "Nhai Nuốt (Trundle_Q)",
     description: "Cường hóa đòn đánh thường tiếp theo trong <span class=\"time\">4 giây</span>: gây thêm <span class=\"damage physical\" data-base=\"24\">24 sát thương vật lý</span> và <span class=\"buff\">Làm Chậm 60%</span> trong <span class=\"time\">0.4 giây</span>. Sau đó, Trundle nhận <span class=\"buff\">16 sát thương đánh thường</span> trong <span class=\"time\">5 giây</span>, còn mục tiêu mất <span class=\"buff\">8 sát thương đánh thường</span> trong cùng thời gian đó.",
     iconKey: "spell_trundle_q",
     coolDownMs: 3500,
@@ -2229,7 +2261,7 @@ export const spellCatalog = {
     specCoolDownMs: 10000,
   },
   "Trundle_W": {
-    name: "Lãnh Địa Băng Giá (Trundle_W)",
+    name: "Vương Quốc Băng Hàn (Trundle_W)",
     description: "Phủ băng lên khu vực bán kính <span>190px</span> trong <span class=\"time\">8 giây</span>. Khi đứng trong vùng băng, Trundle nhận <span class=\"buff\">35% tốc đánh</span>, <span class=\"buff\">12% tốc chạy</span> và hồi máu nhận vào mạnh hơn <span class=\"buff\">25%</span> từ mọi nguồn.",
     iconKey: "spell_trundle_w",
     coolDownMs: 10000,
@@ -2461,7 +2493,7 @@ export const spellCatalog = {
     specCoolDownMs: 10000,
   },
   "Vladimir_E": {
-    name: "Sóng Máu (Vladimir_E)",
+    name: "Thủy Triều Máu (Vladimir_E)",
     description: "Tạo một đợt sóng máu quanh Vladimir, gây <span class=\"damage magic\" data-base=\"24\">24 sát thương phép</span> và <span class=\"buff\">chậm 25%</span> trong <span class=\"time\">0.7 giây</span> cho kẻ địch trong <span>220px</span>",
     iconKey: "spell_vladimir_e",
     coolDownMs: 8000,
@@ -2469,7 +2501,7 @@ export const spellCatalog = {
     specCoolDownMs: 8000,
   },
   "Vladimir_Q": {
-    name: "Rút Máu (Vladimir_Q)",
+    name: "Truyền Máu (Vladimir_Q)",
     description: "Rút máu mục tiêu trong <span>500px</span>, gây <span class=\"damage magic\" data-base=\"26\">26 sát thương phép</span> và hồi <span class=\"heal\" data-base=\"12\">12 máu</span> cho Vladimir",
     iconKey: "spell_vladimir_q",
     coolDownMs: 5000,
@@ -2477,7 +2509,7 @@ export const spellCatalog = {
     specCoolDownMs: 5000,
   },
   "Vladimir_R": {
-    name: "Ôn Dịch Máu (Vladimir_R)",
+    name: "Máu Độc (Vladimir_R)",
     description: "Gieo rắc ôn dịch tại vị trí chỉ định trong <span>200px</span>. Kẻ địch trúng phải bị nhiễm <span class=\"buff\">Ôn Dịch</span> trong <span class=\"time\">4 giây</span>, nhận thêm <span class=\"buff\">10% sát thương</span> từ mọi nguồn. Khi hết hạn, ôn dịch nổ tung, gây <span class=\"damage magic\" data-base=\"45\">45 sát thương phép</span> cho mục tiêu nhiễm và hồi <span class=\"heal\" data-base=\"22\">22 máu</span> cho Vladimir với mỗi tướng địch bị nhiễm (hồi <span class=\"heal\" data-base=\"9\">9 máu</span> từ tướng thứ hai trở đi)",
     iconKey: "spell_vladimir_r",
     coolDownMs: 10000,
@@ -2485,7 +2517,7 @@ export const spellCatalog = {
     specCoolDownMs: 10000,
   },
   "Vladimir_W": {
-    name: "Vũng Máu (Vladimir_W)",
+    name: "Hồ Máu (Vladimir_W)",
     description: "Chìm vào vũng máu trong <span class=\"time\">2 giây</span>, <span class=\"buff\">không thể bị chọn</span> và không thể tấn công hay dùng phép, nhưng vẫn di chuyển được. Kẻ địch trong vũng bị <span class=\"damage magic\" data-base=\"8\">8 sát thương phép</span> mỗi 0.5s và <span class=\"buff\">chậm 30%</span>. Trong lúc này Vladimir nhận <span class=\"buff\">30% hút máu phép</span>",
     iconKey: "spell_vladimir_w",
     coolDownMs: 10000,

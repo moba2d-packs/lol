@@ -2,6 +2,14 @@
   "schemaVersion": 1,
   "sources": [
     {
+      "contentHash": "ccaac7f13e5eda5e34e812caf373ac8f123922b6f273352ae9dfdd8727d131ca",
+      "fetchedAt": "2026-09-06T13:36:31.074Z",
+      "localAssetKey": "champ_aatrox",
+      "localPath": "assets/images/champions/aatrox.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_OriginalSquare.png?c0f58"
+    },
+    {
       "contentHash": "e217088c6a7a0f21b339df42ca5736b31d8270992c81cd81e8442e82d3bc3175",
       "fetchedAt": "2026-09-01T05:17:23.565Z",
       "localAssetKey": "champ_ahri",
@@ -536,6 +544,62 @@
       "localPath": "assets/images/champions/ziggs.png",
       "revisionId": 4052219,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Ziggs_OriginalSquare.png?d44a6"
+    },
+    {
+      "contentHash": "9b67547fb1b3f9e97f896e0c1b51c84039b5c3b9daf591d347e1093a727519b0",
+      "fetchedAt": "2026-09-06T13:36:31.074Z",
+      "localAssetKey": "spell_aatrox_e",
+      "localPath": "assets/images/spells/aatrox_e.png",
+      "revisionId": 4007771,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_Umbral_Dash.png?9ed8d"
+    },
+    {
+      "contentHash": "4b9127bbde7e12ac355ff2e895adcf61275f511677055ef3e3a8cdf02ca1146e",
+      "fetchedAt": "2026-09-06T13:36:31.074Z",
+      "localAssetKey": "spell_aatrox_i",
+      "localPath": "assets/images/spells/aatrox_i.png",
+      "revisionId": 4038188,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_Deathbringer_Stance.png?e5b19"
+    },
+    {
+      "contentHash": "f152d2a2c71b40f21a83054fea3832af206c5ee111db31faf1e4e1cf9baa3871",
+      "fetchedAt": "2026-09-06T13:36:31.074Z",
+      "localAssetKey": "spell_aatrox_q",
+      "localPath": "assets/images/spells/aatrox_q.png",
+      "revisionId": 4027082,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_The_Darkin_Blade.png?348bb"
+    },
+    {
+      "contentHash": "74a39370d4454270e54801f3c8ee2985152fb1cf77029306730180efab84da99",
+      "fetchedAt": "2026-09-06T13:36:31.074Z",
+      "localAssetKey": "spell_aatrox_q2",
+      "localPath": "assets/images/spells/aatrox_q2.png",
+      "revisionId": 4027082,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_The_Darkin_Blade_2.png?2d659"
+    },
+    {
+      "contentHash": "f152d2a2c71b40f21a83054fea3832af206c5ee111db31faf1e4e1cf9baa3871",
+      "fetchedAt": "2026-09-06T13:36:31.074Z",
+      "localAssetKey": "spell_aatrox_q3",
+      "localPath": "assets/images/spells/aatrox_q3.png",
+      "revisionId": 4027082,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_The_Darkin_Blade.png?348bb"
+    },
+    {
+      "contentHash": "01c2e0a9c100dee55b25523557bbf6fd135c925f81e7f84b95609d58730e5800",
+      "fetchedAt": "2026-09-06T13:36:31.074Z",
+      "localAssetKey": "spell_aatrox_r",
+      "localPath": "assets/images/spells/aatrox_r.png",
+      "revisionId": 3959270,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_World_Ender.png?fb2c8"
+    },
+    {
+      "contentHash": "54f9d4c9dee37e0bd1241bcf0a0e76ea38e4afcf154a8bf251274105b9460fda",
+      "fetchedAt": "2026-09-06T13:36:31.074Z",
+      "localAssetKey": "spell_aatrox_w",
+      "localPath": "assets/images/spells/aatrox_w.png",
+      "revisionId": 4009173,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_Infernal_Chains.png?1acd8"
     },
     {
       "contentHash": "f4bbd65fc4c8a7469e386b2116ad71694b21d8166607fd9ae5d6824e65046ccd",

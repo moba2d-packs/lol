@@ -80,7 +80,7 @@ export const CHAMPION_HEAL_RATIO = 1.0;
 export default class DrMundo_Q extends Spell {
   targetingMode = 'DIRECTION' as const;
   image = api.asset('spell_drmundo_q');
-  name = 'Cưa Nhiễm Trùng (DrMundo_Q)';
+  name = 'Cưa Nhiễm Khuẩn (DrMundo_Q)';
   description =
     `Ném một lưỡi cưa nhiễm trùng, gây ${tint(`${pct(DAMAGE_PERCENT_CURRENT_HEALTH)}% máu hiện tại`, 'MAGIC')} ` +
     `của mục tiêu (tối thiểu ${dmgValue(MIN_DAMAGE, 'MAGIC')}, giới hạn ` +

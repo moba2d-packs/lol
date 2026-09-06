@@ -69,7 +69,7 @@ const FLASH_MS = 200;
 export default class DrMundo_W extends Spell {
   targetingMode = 'SELF' as const;
   image = api.asset('spell_drmundo_w');
-  name = 'Máy Sốc Tim (DrMundo_W)';
+  name = 'Sốc Điện Tim (DrMundo_W)';
   description =
     `Sạc điện trong <span class="time">${secs(DURATION_MS)} giây</span>: mỗi ${secs(TICK_MS)} giây gây ` +
     `${dmg(TICK_DAMAGE, 'MAGIC')} cho kẻ địch gần đó, và tích trữ ` +

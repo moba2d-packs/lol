@@ -59,7 +59,7 @@ export default class KogMaw_W extends Spell {
 
   targetingMode = 'SELF' as const;
   image = api.asset('spell_kogmaw_w');
-  name = 'Pháo Kích Sinh Học (KogMaw_W)';
+  name = 'Cao Xạ Ma Pháp (KogMaw_W)';
   description =
     `Kích hoạt trong <span class="time">${secs(W_DURATION_MS)} giây</span>:` +
     ` <span class="buff">+${W_BONUS_RANGE} tầm đánh</span> và mỗi đòn đánh thường gây thêm` +

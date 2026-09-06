@@ -1,0 +1,65 @@
+{
+  "asset": {
+    "key": "spell_aatrox_r",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_World_Ender.png?fb2c8",
+    "sha1": "649ad388dd2971ffe5e93723e7a23e1d1e0f9a30"
+  },
+  "champion": "Aatrox",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_aatrox_r",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Aatrox_World_Ender.png?fb2c8",
+        "sha1": "649ad388dd2971ffe5e93723e7a23e1d1e0f9a30"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "120 / 110 / 100 / 90 / 80",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Aatrox''' unleashes his true form for 10 seconds, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Fearing\">[[File:Flee icon.png|20px|link=Flee|An icon representing the keyword Flee]] [[:Flee|fearing]]</span> nearby enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Minions\">[[File:Minion icon.png|20px|link=Minion|An icon representing the keyword Minion]] [[:Minion|minions]]</span> and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monsters\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monsters]]</span> for 3 seconds, during which they are gradually <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowed]]</span> by up to 99% over the duration. He also gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> that decays by 10% of the '''current bonus''' every 0.<small>25</small> seconds, lasting until ''World Ender'' has ended.",
+          "text": "Active: Aatrox unleashes his true form for 10 seconds, fearing nearby enemy minions and monsters for 3 seconds, during which they are gradually slowed by up to 99% over the duration. He also gains &nbsp;bonus movement speed that decays by 10% of the current bonus every 0.25 seconds, lasting until World Ender has ended."
+        },
+        "description2": {
+          "raw": "Whenever '''Aatrox''' scores a champion <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Takedown\">[[File:Damage rating.png|20px|link=Takedown|An icon representing the keyword Takedown]] [[:Takedown|takedown]]</span>, he extends the duration by 5 seconds, up to its original length, and becomes unleashed again.",
+          "text": "Whenever Aatrox scores a champion takedown, he extends the duration by 5 seconds, up to its original length, and becomes unleashed again."
+        },
+        "description3": {
+          "raw": "During ''World Ender'', '''Aatrox''' gains <span style=\"color:orange; white-space:normal\"><span style=\"white-space:nowrap\">[[File:Attack damage icon.svg|15px|link=Attack damage]]&nbsp;'''bonus''' attack damage</span></span>, has 5% increased [[size]], is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ghosted\">[[File:Ghost.png|20px|link=Unit collision|An icon representing the keyword Ghosted]] [[:Unit collision|ghosted]]</span>, and receives increased <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Heal\">[[File:Heal power icon.svg|20px|link=Healing|An icon representing the keyword Heal]] [[:Healing|self-healing]]</span> from all sources.",
+          "text": "During World Ender, Aatrox gains &nbsp;bonus attack damage, has 5% increased size, is ghosted, and receives increased self-healing from all sources."
+        },
+        "description4": {
+          "raw": "'''''Aatrox''' can move during World Ender's cast time.''",
+          "text": "Aatrox can move during World Ender's cast time."
+        },
+        "effectradius": "600",
+        "icon": "World Ender.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>60 / 70 / 80 / 90 / 100%</dd></dl>",
+          "text": "Bonus Movement Speed:60 / 70 / 80 / 90 / 100%"
+        },
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Attack Damage:'''</span></dt><dd><span style=\"color:orange; white-space:normal\">20 / 25 / 30 / 35 / 40% AD</span></dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Increased Healing:'''</span></dt><dd>50 / 62.<small>5</small> / 75 / 87.<small>5</small> / 100%</dd></dl>",
+          "text": "Bonus Attack Damage:20 / 25 / 30 / 35 / 40% AD\nIncreased Healing:50 / 62.5 / 75 / 87.5 / 100%"
+        },
+        "name": "World Ender",
+        "notes": {
+          "raw": "* His resource bar indicates the remaining duration of ''World Ender''.\n* While ''World Ender'' is active, the screen will have a red tint. Near the end of the duration, the tint is intensified.\n* ''World Ender'' persists through <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Resurrection\">[[File:Revival icon.png|20px|link=Death#Ways to prevent death when reaching zero health|An icon representing the keyword Resurrection]] [[:Death#Ways to prevent death when reaching zero health|resurrection]]</span> effects.\n** ''World Ender's'' healing amplification applies to the health gained by resurrecting.\n* ''World Ender'' will cast from wherever '''Aatrox''' is at the end of the cast time.\n* Casting ''World Ender'' while it is still active removes the timer on the resource bar. <sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This is not intended. \">(bug)</span></sup>\n** If this happens while using <span style=\"white-space:pre\"><span class=\"inline-image label-after skin-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-skin=\"Primordian\" data-champion=\"Aatrox\" data-game=\"lol\"><span style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Aatrox PrimordianCircle.png|20xpx|link=Aatrox/Cosmetics|An icon representing Aatrox's Primordian skin in League of Legends]]</span> <span style=\"white-space:normal;\">[[Aatrox/Cosmetics|Primordian Aatrox]]</span></span></span>, the intensified tint effect of ''World Ender'' will stay on the screen for the rest of the game. <sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This is not intended. \">(bug)</span></sup>",
+          "text": "His resource bar indicates the remaining duration of World Ender.\nWhile World Ender is active, the screen will have a red tint. Near the end of the duration, the tint is intensified.\nWorld Ender persists through resurrection effects.\n* World Ender's healing amplification applies to the health gained by resurrecting.\nWorld Ender will cast from wherever Aatrox is at the end of the cast time.\nCasting World Ender while it is still active removes the timer on the resource bar. (bug)\n* If this happens while using Primordian Aatrox, the intensified tint effect of World Ender will stay on the screen for the rest of the game. (bug)"
+        },
+        "targeting": "Auto"
+      },
+      "name": "World Ender"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "R",
+  "source": {
+    "contentHash": "2435af48ec5c13ead81b526fee9ae7450b22740b1af4fcc07c89261aca483caf",
+    "fetchedAt": "2026-09-06T13:36:31.074Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Aatrox/World_Ender",
+    "revisionId": 3959270,
+    "sourceTimestamp": "2025-10-13T14:36:07Z"
+  }
+}

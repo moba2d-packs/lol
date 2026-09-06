@@ -108,7 +108,7 @@ export const R_REVEAL_STACK_ID = 'kogmaw_r_reveal';
  */
 export default class KogMaw_R extends Spell {
   image = api.asset('spell_kogmaw_r');
-  name = 'Đại Bác Sinh Học (KogMaw_R)';
+  name = 'Pháo Sinh Học (KogMaw_R)';
   description =
     `Bắn một quả cầu axit bay <span class="time">${secs(R_FLIGHT_MS)} giây</span> rồi rơi xuống điểm chỉ định,` +
     ` gây ${dmg(R_DAMAGE, 'MAGIC')} cho kẻ địch trong bán kính` +

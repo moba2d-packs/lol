@@ -44,7 +44,7 @@ const BLOOD: [number, number, number] = [168, 18, 30];
  */
 export default class Vladimir_Q extends Spell {
   image = api.asset('spell_vladimir_q');
-  name = 'Rút Máu (Vladimir_Q)';
+  name = 'Truyền Máu (Vladimir_Q)';
   description =
     `Rút máu mục tiêu trong <span>${RANGE}px</span>, gây ${dmg(DAMAGE, 'MAGIC')} ` +
     `và hồi ${heal(HEAL, ' máu')} cho Vladimir`;

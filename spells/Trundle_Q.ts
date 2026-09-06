@@ -67,7 +67,7 @@ export default class Trundle_Q extends Spell {
   // Nothing is aimed: the bite goes wherever the standing attack order goes.
   targetingMode = 'SELF' as const;
   image = api.asset('spell_trundle_q');
-  name = 'Cắn Xé Băng Giá (Trundle_Q)';
+  name = 'Nhai Nuốt (Trundle_Q)';
   description =
     `Cường hóa đòn đánh thường tiếp theo trong <span class="time">${secs(Q_WINDOW_MS)} giây</span>:` +
     ` gây thêm ${dmg(Q_BONUS_DAMAGE, 'PHYSICAL')} và` +

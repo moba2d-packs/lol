@@ -230,6 +230,13 @@ const ROSTER: {
     spells: ['Shaco_Q', 'Shaco_W', 'Shaco_E', 'Shaco_R'],
   },
   {
+    name: 'Aatrox',
+    attack: ATTACK.BRUISER,
+    image: 'champ_aatrox',
+
+    spells: ['Aatrox_Q', 'Aatrox_W', 'Aatrox_E', 'Aatrox_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',

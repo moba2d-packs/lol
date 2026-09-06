@@ -364,3 +364,8 @@ export { default as KogMaw_Q } from './KogMaw_Q';
 export { default as KogMaw_W } from './KogMaw_W';
 export { default as KogMaw_E } from './KogMaw_E';
 export { default as KogMaw_R } from './KogMaw_R';
+
+export { default as Aatrox_Q } from './Aatrox_Q';
+export { default as Aatrox_W } from './Aatrox_W';
+export { default as Aatrox_E } from './Aatrox_E';
+export { default as Aatrox_R } from './Aatrox_R';

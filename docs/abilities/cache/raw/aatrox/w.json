@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Aatrox/Infernal Chains",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Infernal Chains@@icon@@Infernal Chains.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Aatrox''' sends a chain in the target direction that deals <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> to the first enemy hit, doubled against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Minions\">[[File:Minion icon.png|20px|link=Minion|An icon representing the keyword Minion]] [[:Minion|minions]]</span>, and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowing]]</span> them for 1.<small>5</small> seconds.@@description2@@If this hits an enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span> or large <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monster\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monster]]</span>, a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Tether\">[[File:Focused Resolve.png|20px|link=Tether|An icon representing the keyword Tether]] [[:Tether|tether]]</span> is formed between the target and the ground beneath them for 1.<small>5</small> seconds, during which they are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"True sight\">[[File:True Sight icon.png|20px|link=Sight#True_sight|An icon representing the keyword True sight]] [[:Sight#True_sight|revealed]]</span>.@@description3@@If the tether is not broken by the end of its duration, the target is dealt the same <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> again and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|pulled]]</span> to the center of the area.@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>30 / 40 / 50 / 60 / 70 <span style=\"color:orange; white-space:normal\">(+ 40% AD)</span></dd><dt><span class=\"template_lc\">'''Minion Damage:'''</span></dt><dd>60 / 80 / 100 / 120 / 140 <span style=\"color:orange; white-space:normal\">(+ 80% AD)</span></dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>25 / 27.<small>5</small> / 30 / 32.<small>5</small> / 35%</dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Total Damage:'''</span></dt><dd>60 / 80 / 100 / 120 / 140 <span style=\"color:orange; white-space:normal\">(+ 80% AD)</span></dd></dl>@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cr\">[[File:Range center.png|20px|link=Range|An icon representing the keyword Centered range]]</span> 825 • <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> 765@@radius@@{{{radius}}}@@effectradius@@@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> 160@@speed@@1800@@casttime@@0.<small>25</small>@@cost@@{{{cost}}}@@cooldown@@20 / 18 / 16 / 14 / 12@@targeting@@Direction@@damagetype@@Physical@@spellshield@@Special@@projectile@@True@@notes@@\n* The impact area is oriented relative to '''Aatrox's''' position when the projectile hits, not where the projectile originated from.\n* The location that the target is dragged to is not at the target's original location, but slightly closer towards '''Aatrox's''' position when the zone expires.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will block the chain's application and initial damage but not the aftereffects of one already applied.\n* This ability's damage is calculated based on the caster's current stats and changes dynamically.\n* This ability will cast from wherever the caster is at the end of the cast time.\n* ''Infernal Chains'' maintains its casting angle direction in relation to '''Aatrox''' if he moves during the cast time.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1363717,
+                "revisions": [
+                  {
+                    "parentid": 4007383,
+                    "revid": 4009173,
+                    "timestamp": "2026-04-15T23:36:48Z"
+                  }
+                ],
+                "title": "Template:Data Aatrox/Infernal Chains"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4009173,
+      "timestamp": "2026-04-15T23:36:48Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "bbbe5e77369215d6c000ab75bdc98b37f73510f4b22de8fc59ae29e5e964fecc",
+    "fetchedAt": "2026-09-06T13:36:31.074Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Aatrox/Infernal_Chains",
+    "revisionId": 4009173,
+    "sourceTimestamp": "2026-04-15T23:36:48Z"
+  }
+}

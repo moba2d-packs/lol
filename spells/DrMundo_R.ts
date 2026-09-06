@@ -72,7 +72,7 @@ export const HEALING_RECEIVED_BONUS = 0.2;
 export default class DrMundo_R extends Spell {
   targetingMode = 'SELF' as const;
   image = api.asset('spell_drmundo_r');
-  name = 'Liều Cực Mạnh (DrMundo_R)';
+  name = 'Suýt Quá Liều (DrMundo_R)';
   description =
     `Tự tiêm hóa chất trong <span class="time">${secs(DURATION_MS)} giây</span>: hồi tổng cộng ` +
     `${heal(HEAL_TOTAL, ' máu')}, tăng <span class="buff">+${MAX_HEALTH_BASE}-${MAX_HEALTH_BASE + MAX_HEALTH_MISSING_SCALE} máu tối đa</span> ` +

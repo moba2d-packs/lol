@@ -19,6 +19,7 @@ export interface ChampionRecordStats {
 }
 
 export const championRecordStats: Readonly<Record<string, ChampionRecordStats>> = {
+  "Aatrox": { hp: 650, armor: 38, magicResist: 32, damage: 60, attackSpeed: 0.651, range: 175 },
   "Ahri": { hp: 590, armor: 21, magicResist: 30, damage: 53, attackSpeed: 0.668, range: 550 },
   "Alistar": { hp: 685, armor: 40, magicResist: 32, damage: 62, attackSpeed: 0.625, range: 125 },
   "Amumu": { hp: 685, armor: 33, magicResist: 32, damage: 57, attackSpeed: 0.736, range: 125 },
