@@ -1,0 +1,74 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Akali/Five Point Strike",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Five Point Strike@@icon@@Five Point Strike.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Akali''' unleashes kunai in a cone in the target direction, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit. Targets beyond a certain range are also <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowed]]</span> by 50% for 0.<small>5</small> seconds.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>45 / 70 / 95 / 120 / 145 <span style=\"color:orange; white-space:normal\">(+ 65% AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Maximum width. Estimated.\">350</span>@@speed@@{{{speed}}}@@casttime@@<span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"0.25;0.225;0.2;0.175\" data-top-values=\"1;6;11;16\">0.<small>25</small> / 0.<small>225</small> / 0.<small>2</small> / 0.<small>175</small> (based on level)</span>@@cost@@110 / 100 / 90 / 80 / 70@@cooldown@@1.<small>5</small>@@targeting@@Direction@@damagetype@@Magic@@spellshield@@True@@projectile@@True@@notes@@\n* ''Five Point Strike'' will hit enemies after only <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"0.188;0.169;0.15;0.131\" data-top-values=\"1;6;11;16\">0.<small>188</small> / 0.<small>169</small> / 0.<small>15</small> / 0.<small>131</small> (based on level)</span> seconds (75% of cast time) into the cast time.\n** Due to [[tick and updates|any actions only starting on integer game ticks]], the effective cast time rounds up to <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"0.264;0.231;0.231;0.198\" data-top-values=\"1;6;11;16\">0.<small>264</small> / 0.<small>231</small> / 0.<small>231</small> / 0.<small>198</small> (based on level)</span> and the hit will occur at <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"0.198;0.198;0.165;0.132\" data-top-values=\"1;6;11;16\">0.<small>198</small> / 0.<small>198</small> / 0.<small>165</small> / 0.<small>132</small> (based on level)</span> seconds into it.\n* This ability's damage is calculated based on the caster's stats at the time of its initial application and does not change dynamically.\n* This ability will cast from wherever the caster is at the end of the cast time.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1367762,
+                "revisions": [
+                  {
+                    "parentid": 4007315,
+                    "revid": 4007404,
+                    "timestamp": "2026-04-11T16:40:36Z"
+                  }
+                ],
+                "title": "Template:Data Akali/Five Point Strike"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4007404,
+      "timestamp": "2026-04-11T16:40:36Z"
+    },
+    {
+      "page": "Template:Data Akali/Five Point Strike 2",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Five Point Strike@@icon@@Five Point Strike.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Akali''' unleashes kunai in a cone in the target direction, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit. Targets beyond a certain range are also <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowed]]</span> by 50% for 0.<small>5</small> seconds.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>45 / 70 / 95 / 120 / 145 <span style=\"color:orange; white-space:normal\">(+ 65% AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Maximum width. Estimated.\">350</span>@@speed@@{{{speed}}}@@casttime@@<span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"0.25;0.225;0.2;0.175\" data-top-values=\"1;6;11;16\">0.<small>25</small> / 0.<small>225</small> / 0.<small>2</small> / 0.<small>175</small> (based on level)</span>@@cost@@110 / 100 / 90 / 80 / 70@@cooldown@@1.<small>5</small>@@targeting@@Direction@@damagetype@@Magic@@spellshield@@True@@projectile@@True@@notes@@\n* ''Five Point Strike'' will hit enemies after only <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"0.188;0.169;0.15;0.131\" data-top-values=\"1;6;11;16\">0.<small>188</small> / 0.<small>169</small> / 0.<small>15</small> / 0.<small>131</small> (based on level)</span> seconds (75% of cast time) into the cast time.\n** Due to [[tick and updates|any actions only starting on integer game ticks]], the effective cast time rounds up to <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"0.264;0.231;0.231;0.198\" data-top-values=\"1;6;11;16\">0.<small>264</small> / 0.<small>231</small> / 0.<small>231</small> / 0.<small>198</small> (based on level)</span> and the hit will occur at <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"0.198;0.198;0.165;0.132\" data-top-values=\"1;6;11;16\">0.<small>198</small> / 0.<small>198</small> / 0.<small>165</small> / 0.<small>132</small> (based on level)</span> seconds into it.\n* This ability's damage is calculated based on the caster's stats at the time of its initial application and does not change dynamically.\n* This ability will cast from wherever the caster is at the end of the cast time.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1370359,
+                "revisions": [
+                  {
+                    "parentid": 0,
+                    "revid": 2715534,
+                    "timestamp": "2018-08-17T16:38:32Z"
+                  }
+                ],
+                "title": "Template:Data Akali/Five Point Strike 2"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 2715534,
+      "timestamp": "2018-08-17T16:38:32Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "d5d4c26b31e17632010a26a5176baabcf5ac98e3bc61eab718d4a10597da8beb",
+    "fetchedAt": "2026-09-06T13:51:16.204Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Akali/Five_Point_Strike",
+    "revisionId": 4007404,
+    "sourceTimestamp": "2026-04-11T16:40:36Z"
+  }
+}

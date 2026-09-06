@@ -1,0 +1,60 @@
+{
+  "asset": {
+    "key": "spell_xerath_w",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Eye_of_Destruction.png?8e4d6",
+    "sha1": "ae5d139a6dedf809ec5ac5f6c443054f12e94d80"
+  },
+  "champion": "Xerath",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_xerath_w",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Eye_of_Destruction.png?8e4d6",
+        "sha1": "ae5d139a6dedf809ec5ac5f6c443054f12e94d80"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "14 / 13 / 12 / 11 / 10",
+        "cost": "80 / 90 / 100 / 110 / 120",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Xerath''' casts down a blast of arcane energy that strikes the target location after <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"0.5 seconds, but rounded up to the next game tick.\">0.<small>528</small> seconds</span>, briefly granting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area and dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowing]]</span> them by 25% for 2.<small>5</small> seconds.",
+          "text": "Active: Xerath casts down a blast of arcane energy that strikes the target location after 0.528 seconds, briefly granting sight of the area and dealing magic damage to enemies hit and slowing them by 25% for 2.5 seconds."
+        },
+        "description2": {
+          "raw": "Enemies in the epicenter take 66.<small>7</small>% increased damage and are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowed]]</span> by a greater amount, decaying to 25% over the duration.",
+          "text": "Enemies in the epicenter take 66.7% increased damage and are slowed by a greater amount, decaying to 25% over the duration."
+        },
+        "effectradius": "275 • 125 • 250",
+        "icon": "Eye of Destruction.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>50 / 85 / 120 / 155 / 190 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 65% AP)</span></dd></dl>",
+          "text": "Magic Damage:50 / 85 / 120 / 155 / 190 (+ 65% AP)"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Increased Damage:'''</span></dt><dd>83.<small>35</small> / 141.<small>695</small> / 200.<small>04</small> / 258.<small>385</small> / 316.<small>73</small> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 108.<small>355</small>% AP)</span></dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Increased Slow:'''</span></dt><dd>60 / 65 / 70 / 75 / 80%</dd></dl>",
+          "text": "Increased Damage:83.35 / 141.695 / 200.04 / 258.385 / 316.73 (+ 108.355% AP)\nIncreased Slow:60 / 65 / 70 / 75 / 80%"
+        },
+        "name": "Eye of Destruction",
+        "notes": {
+          "raw": "* '''Xerath's''' location gets <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|revealed]]</span> to the enemy (400 radius for 4.5 seconds) if ''Eye of Destruction's'' cast location is within 100 units of a valid enemy at the start of the cast time due to something related to targeting types.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This is not intended. \">(bug)</span></sup>\n* ''Eye of Destruction'''s [[targeting]] indicator appears on the player's minimap, despite the ability not having the longer range of others with this quality.\n* ''Eye of Destruction'' will not fire and deal damage if '''Xerath''' dies during the 0.25s cast time.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This does not match expectations. \">(unexpected)</span></sup>",
+          "text": "Xerath's location gets revealed to the enemy (400 radius for 4.5 seconds) if Eye of Destruction's cast location is within 100 units of a valid enemy at the start of the cast time due to something related to targeting types.(bug)\nEye of Destructions targeting indicator appears on the player's minimap, despite the ability not having the longer range of others with this quality.\nEye of Destruction will not fire and deal damage if Xerath dies during the 0.25s cast time.(unexpected)"
+        },
+        "spellshield": true,
+        "targeting": "Location"
+      },
+      "name": "Eye of Destruction"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "W",
+  "source": {
+    "contentHash": "8d83a95c9d9a7697deaf1742809758ebc5f4ab1e99446a7f2b1549d743e52e9a",
+    "fetchedAt": "2026-09-06T13:52:50.875Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Xerath/Eye_of_Destruction",
+    "revisionId": 4008622,
+    "sourceTimestamp": "2026-04-15T00:28:09Z"
+  }
+}

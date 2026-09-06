@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Miss Fortune/Love Tap",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Love Tap@@icon@@Love Tap.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Innate:'''</span> '''Miss Fortune's''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attacks\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attacks]]</span> are empowered to apply a mark that expires upon attacking a new enemy. If the enemy was unmarked, this also deals <span style=\"color:orange; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"50% + 10% every 3 levels up to 7, then + 10% every 2 levels up to 13\" data-bot-values=\"50;60;70;80;90;100\" data-top-values=\"1;4;7;9;11;13\" data-bot-key=\"%\">50% – 100% (based on level)</span> AD</span> <span style=\"color:\n#FF8C34; white-space:normal\">'''bonus''' physical damage</span>, halved to <span style=\"color:orange; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"25% + 5% every 3 levels up to 7, then + 5% every 2 levels up to 13\" data-bot-values=\"25;30;35;40;45;50\" data-top-values=\"1;4;7;9;11;13\" data-bot-key=\"%\">25% – 50% (based on level)</span> AD</span> against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Minion\">[[File:Minion icon.png|20px|link=Minion|An icon representing the keyword Minion]] [[:Minion|minions]]</span>.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@{{{leveling}}}@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@{{{cast time}}}@@cost@@{{{cost}}}@@cooldown@@{{{cooldown}}}@@targeting@@Passive@@damagetype@@Physical@@spellshield@@@@projectile@@{{{projectile}}}@@notes@@\n* With <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Runaan&#39;s Hurricane\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Runaan's Hurricane item.png|20xpx|border|link=Runaan's Hurricane|An icon for the item Runaan's Hurricane]]</span> <span style=\"white-space:normal;\">[[Runaan's Hurricane]]</span></span>, ''Love Tap'' only applies to the primary target.\n* The bonus damage applies <span style=\"white-space:nowrap\">[[File:Life steal icon.svg|15px|link=Life steal]]&nbsp;[[Life steal|life steal]]</span>.\n* The empowered attack will not trigger against [[buildings]].@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1308249,
+                "revisions": [
+                  {
+                    "parentid": 4027988,
+                    "revid": 4027989,
+                    "timestamp": "2026-06-13T08:29:13Z"
+                  }
+                ],
+                "title": "Template:Data Miss Fortune/Love Tap"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4027989,
+      "timestamp": "2026-06-13T08:29:13Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "8e7fece8a845ebca561a944e845c1d8ea17307ec1a5d59e5b1844b044ec2c24e",
+    "fetchedAt": "2026-09-06T13:53:06.544Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Miss_Fortune/Love_Tap",
+    "revisionId": 4027989,
+    "sourceTimestamp": "2026-06-13T08:29:13Z"
+  }
+}

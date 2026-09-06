@@ -1,0 +1,146 @@
+{
+  "asset": {
+    "key": "spell_missfortune_w",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Strut.png?95eec",
+    "sha1": "63d637106d46a6127110461d803872da8a0f49b1"
+  },
+  "champion": "Miss Fortune",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_missfortune_w",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Strut.png?95eec",
+        "sha1": "63d637106d46a6127110461d803872da8a0f49b1"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "12",
+        "cost": "45",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Passive:'''</span> '''Miss Fortune''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> after 4 seconds without taking non-<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|periodic]]</span> damage. This bonus is increased after another 3 seconds, and is granted instantly whenever ''Strut'' is cast.",
+          "text": "Passive: Miss Fortune gains &nbsp;bonus movement speed after 4 seconds without taking non- periodic damage. This bonus is increased after another 3 seconds, and is granted instantly whenever Strut is cast."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Miss Fortune''' gains <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">'''bonus''' attack speed</span></span> for 4 seconds.",
+          "text": "Active: Miss Fortune gains &nbsp;bonus attack speed for 4 seconds."
+        },
+        "description3": {
+          "raw": "Marking a new target with ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Miss Fortune\" data-ability=\"Love Tap\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Miss Fortune Love Tap.png|20xpx|border|link=Miss Fortune#Love Tap|An icon for Miss Fortune's ability Love Tap]]</span> <span style=\"white-space:normal;\">[[Miss Fortune#Love Tap|Love Tap]]</span></span>'' reduces ''Strut's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;'''current''' cooldown</span> by <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Affected by ability haste\">2 seconds</span>.",
+          "text": "Marking a new target with Love Tap reduces Strut's &nbsp;current cooldown by 2 seconds."
+        },
+        "icon": "Strut.png",
+        "icon2": "Guns Blazing.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>30 / 35 / 40 / 45 / 50</dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Increased Bonus Movement Speed:'''</span></dt><dd>60 / 70 / 80 / 90 / 100</dd></dl>",
+          "text": "Bonus Movement Speed:30 / 35 / 40 / 45 / 50\nIncreased Bonus Movement Speed:60 / 70 / 80 / 90 / 100"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Attack Speed:'''</span></dt><dd>40 / 55 / 70 / 85 / 100%</dd></dl>",
+          "text": "Bonus Attack Speed:40 / 55 / 70 / 85 / 100%"
+        },
+        "name": "Strut",
+        "notes": {
+          "raw": "* The bonus movement speed is not lost from taking [[Damage#0_Damage_Instances|0 damage instances]].",
+          "text": "The bonus movement speed is not lost from taking 0 damage instances."
+        },
+        "targeting": "Auto"
+      },
+      "name": "Strut"
+    },
+    {
+      "asset": {
+        "key": "spell_missfortune_w2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Guns_Blazing.png?87aba",
+        "sha1": "39d9a7b4234907be092f8ee8e1bfc8f0d00f565e"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "12",
+        "cost": "45",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Passive:'''</span> '''Miss Fortune''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> after 4 seconds without taking non-<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|periodic]]</span> damage. This bonus is increased after another 3 seconds, and is granted instantly whenever ''Strut'' is cast.",
+          "text": "Passive: Miss Fortune gains &nbsp;bonus movement speed after 4 seconds without taking non- periodic damage. This bonus is increased after another 3 seconds, and is granted instantly whenever Strut is cast."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Miss Fortune''' gains <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">'''bonus''' attack speed</span></span> for 4 seconds.",
+          "text": "Active: Miss Fortune gains &nbsp;bonus attack speed for 4 seconds."
+        },
+        "description3": {
+          "raw": "Marking a new target with ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Miss Fortune\" data-ability=\"Love Tap\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Miss Fortune Love Tap.png|20xpx|border|link=Miss Fortune#Love Tap|An icon for Miss Fortune's ability Love Tap]]</span> <span style=\"white-space:normal;\">[[Miss Fortune#Love Tap|Love Tap]]</span></span>'' reduces ''Strut's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;'''current''' cooldown</span> by <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Affected by ability haste\">2 seconds</span>.",
+          "text": "Marking a new target with Love Tap reduces Strut's &nbsp;current cooldown by 2 seconds."
+        },
+        "icon": "Strut.png",
+        "icon2": "Guns Blazing.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>30 / 35 / 40 / 45 / 50</dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Increased Bonus Movement Speed:'''</span></dt><dd>60 / 70 / 80 / 90 / 100</dd></dl>",
+          "text": "Bonus Movement Speed:30 / 35 / 40 / 45 / 50\nIncreased Bonus Movement Speed:60 / 70 / 80 / 90 / 100"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Attack Speed:'''</span></dt><dd>40 / 55 / 70 / 85 / 100%</dd></dl>",
+          "text": "Bonus Attack Speed:40 / 55 / 70 / 85 / 100%"
+        },
+        "name": "Strut",
+        "notes": {
+          "raw": "* The bonus movement speed is not lost from taking [[Damage#0_Damage_Instances|0 damage instances]].",
+          "text": "The bonus movement speed is not lost from taking 0 damage instances."
+        },
+        "targeting": "Auto"
+      },
+      "name": "Guns Blazing"
+    },
+    {
+      "asset": {
+        "key": "spell_missfortune_w3",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Strut.png?95eec",
+        "sha1": "63d637106d46a6127110461d803872da8a0f49b1"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "12",
+        "cost": "45",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Passive:'''</span> '''Miss Fortune''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> after 4 seconds without taking non-<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|periodic]]</span> damage. This bonus is increased after another 3 seconds, and is granted instantly whenever ''Strut'' is cast.",
+          "text": "Passive: Miss Fortune gains &nbsp;bonus movement speed after 4 seconds without taking non- periodic damage. This bonus is increased after another 3 seconds, and is granted instantly whenever Strut is cast."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Miss Fortune''' gains <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">'''bonus''' attack speed</span></span> for 4 seconds.",
+          "text": "Active: Miss Fortune gains &nbsp;bonus attack speed for 4 seconds."
+        },
+        "description3": {
+          "raw": "Marking a new target with ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Miss Fortune\" data-ability=\"Love Tap\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Miss Fortune Love Tap.png|20xpx|border|link=Miss Fortune#Love Tap|An icon for Miss Fortune's ability Love Tap]]</span> <span style=\"white-space:normal;\">[[Miss Fortune#Love Tap|Love Tap]]</span></span>'' reduces ''Strut's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;'''current''' cooldown</span> by <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Affected by ability haste\">2 seconds</span>.",
+          "text": "Marking a new target with Love Tap reduces Strut's &nbsp;current cooldown by 2 seconds."
+        },
+        "icon": "Strut.png",
+        "icon2": "Guns Blazing.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>30 / 35 / 40 / 45 / 50</dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Increased Bonus Movement Speed:'''</span></dt><dd>60 / 70 / 80 / 90 / 100</dd></dl>",
+          "text": "Bonus Movement Speed:30 / 35 / 40 / 45 / 50\nIncreased Bonus Movement Speed:60 / 70 / 80 / 90 / 100"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Attack Speed:'''</span></dt><dd>40 / 55 / 70 / 85 / 100%</dd></dl>",
+          "text": "Bonus Attack Speed:40 / 55 / 70 / 85 / 100%"
+        },
+        "name": "Strut",
+        "notes": {
+          "raw": "* The bonus movement speed is not lost from taking [[Damage#0_Damage_Instances|0 damage instances]].",
+          "text": "The bonus movement speed is not lost from taking 0 damage instances."
+        },
+        "targeting": "Auto"
+      },
+      "name": "Impure Shots"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "W",
+  "source": {
+    "contentHash": "dbc2967a56a8eebf54ed959f0e1182ddfc91f957620aa1a8916ef5aa929d3537",
+    "fetchedAt": "2026-09-06T13:53:06.544Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Miss_Fortune/Strut",
+    "revisionId": 4015416,
+    "sourceTimestamp": "2026-05-04T14:29:06Z"
+  }
+}

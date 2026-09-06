@@ -1,0 +1,118 @@
+{
+  "asset": {
+    "key": "champ_missfortune",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_OriginalSquare.png?47a40",
+    "sha1": "aeb74f8b3f481d8b05d0959c4d808e5b2e8ae54c"
+  },
+  "champion": "Miss Fortune",
+  "data": {
+    "adaptivetype": "Physical",
+    "alttype": "Mage",
+    "apiname": "MissFortune",
+    "be": 225,
+    "changes": "V26.16",
+    "client_positions": [
+      "Bottom"
+    ],
+    "client_tags": [
+      "AoE",
+      "Burst",
+      "Physical"
+    ],
+    "control": 1,
+    "damage": 3,
+    "date": "2010-09-08",
+    "difficulty": 1,
+    "external_positions": [
+      "Bottom"
+    ],
+    "fullname": "Sarah Fortune",
+    "herotype": "Marksman",
+    "id": 21,
+    "mobility": 1,
+    "nickname": "MF",
+    "patch": "V1.0.0.100",
+    "rangetype": "Ranged",
+    "resource": "Mana",
+    "role": [
+      "Marksman"
+    ],
+    "rp": 260,
+    "skill_e": {
+      "1": "Make It Rain"
+    },
+    "skill_i": {
+      "1": "Love Tap"
+    },
+    "skill_q": {
+      "1": "Double Up"
+    },
+    "skill_r": {
+      "1": "Bullet Time"
+    },
+    "skill_w": {
+      "1": "Strut",
+      "2": "Guns Blazing",
+      "3": "Impure Shots"
+    },
+    "skills": {
+      "1": "Love Tap",
+      "2": "Double Up",
+      "3": "Strut",
+      "4": "Make It Rain",
+      "5": "Bullet Time"
+    },
+    "stats": {
+      "acquisition_radius": 800,
+      "ar": {
+        "dam_lvl": 1.2,
+        "hp_lvl": 10
+      },
+      "aram": {
+        "dmg_dealt": 0.95,
+        "dmg_taken": 1.05
+      },
+      "arm_base": 25,
+      "arm_lvl": 4,
+      "as_base": 0.656,
+      "as_lvl": 3,
+      "as_ratio": 0.656000018119812,
+      "attack_delay_offset": -0.151993364095687,
+      "dam_base": 55,
+      "dam_lvl": 2.4,
+      "hp5_base": 3.75,
+      "hp5_lvl": 0.65,
+      "hp_base": 625,
+      "hp_lvl": 100,
+      "missile_speed": 2000,
+      "mp5_base": 8,
+      "mp5_lvl": 0.8,
+      "mp_base": 300,
+      "mp_lvl": 40,
+      "mr_base": 33,
+      "mr_lvl": 1.1,
+      "ms": 325,
+      "pathing_radius": 35,
+      "range": 550,
+      "selection_height": 122.22219848632812,
+      "selection_radius": 100,
+      "usb": {
+        "dmg_dealt": 1.05,
+        "dmg_taken": 0.95
+      }
+    },
+    "style": 30,
+    "title": "The Bounty Hunter",
+    "toughness": 1,
+    "utility": 1
+  },
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "875923b652d1f250e231bd10baadad81c760283ed02ddc0e24b2f8357e11312f",
+    "fetchedAt": "2026-09-06T13:53:06.544Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Draven/Blood Rush",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Blood Rush@@icon@@Blood Rush.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Draven''' enters an adrenaline rush, gaining <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">'''bonus''' attack speed</span></span> for 3 seconds as well as decaying <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ghosting\">[[File:Ghost.png|20px|link=Unit collision|An icon representing the keyword Ghosted]] [[:Unit collision|ghosting]]</span> for 1.<small>5</small> seconds.@@description2@@Catching a ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Draven\" data-ability=\"Spinning Axe\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Draven Spinning Axe.png|20xpx|border|link=Draven#Spinning Axe|An icon for Draven's ability Spinning Axe]]</span> <span style=\"white-space:normal;\">[[Draven#Spinning Axe|Spinning Axe]]</span></span>'' resets ''Blood Rush's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;cooldown</span>.@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Attack Speed:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>50 / 55 / 60 / 65 / 70%</dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@none@@cost@@40 / 35 / 30 / 25 / 20@@cooldown@@12@@targeting@@Auto@@damagetype@@@@spellshield@@@@projectile@@{{{projectile}}}@@notes@@\n* Activating ''Blood Rush'' while the effect is already active will refresh the duration.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1307068,
+                "revisions": [
+                  {
+                    "parentid": 3955154,
+                    "revid": 3982566,
+                    "timestamp": "2026-01-09T09:06:22Z"
+                  }
+                ],
+                "title": "Template:Data Draven/Blood Rush"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 3982566,
+      "timestamp": "2026-01-09T09:06:22Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "ae466facc87dc3f08870348a27332594bb6b6eb9b99ac19f567ea7fbd032f338",
+    "fetchedAt": "2026-09-06T13:51:42.198Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Draven/Blood_Rush",
+    "revisionId": 3982566,
+    "sourceTimestamp": "2026-01-09T09:06:22Z"
+  }
+}

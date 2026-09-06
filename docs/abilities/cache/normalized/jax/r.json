@@ -1,0 +1,65 @@
+{
+  "asset": {
+    "key": "spell_jax_r",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Grandmaster-at-Arms.png?c4f84",
+    "sha1": "43a43cd4d76938e63facd75495280db88ba0533e"
+  },
+  "champion": "Jax",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_jax_r",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Grandmaster-at-Arms.png?c4f84",
+        "sha1": "43a43cd4d76938e63facd75495280db88ba0533e"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "110 / 105 / 100 / 95 / 90",
+        "cost": "100",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Passive:'''</span> '''Jax's''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attacks\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attacks]]</span> generate a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stack\">[[File:Stack icon.png|20px|link=Stack|An icon representing the keyword Stack]] [[:Stack|stack]]</span> of ''Grandmaster-at-Arms'' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> for 2.<small>5</small> seconds, refreshing on subsequent hits and stacking up to 2 times. At 2 stacks, his next basic attack <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> is empowered to have an <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Uncancellable windup\">[[File:Relentless Force 2.png|20px|link=Basic attack#Uncancellable Windup|An icon representing the keyword Uncancellable windup]] [[:Basic attack#Uncancellable Windup|uncancellable windup]]</span> and consume all stacks to deal <span style=\"color:\n#00B0F0; white-space:normal\">'''additional''' magic damage</span>, reduced to 50% against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Structures\">[[File:Structure icon.png|20px|link=Category:Structure|An icon representing the keyword Structure]] [[:Category:Structure|structures]]</span>. While ''Grandmaster-at-Arms'' is active, the empowered attack triggers at 1 stack instead.",
+          "text": "Passive: Jax's basic attacks generate a stack of Grandmaster-at-Arms on-hit for 2.5 seconds, refreshing on subsequent hits and stacking up to 2 times. At 2 stacks, his next basic attack on-hit is empowered to have an uncancellable windup and consume all stacks to deal additional magic damage, reduced to 50% against structures. While Grandmaster-at-Arms is active, the empowered attack triggers at 1 stack instead."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Jax''' swings his lantern around, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to nearby enemies. If this hits a champion, he gains <span style=\"white-space:nowrap\">[[File:Armor icon.svg|15px|link=Armor]]&nbsp;<span style=\"color:yellow; white-space:normal\">'''bonus''' armor</span></span>, increased for each champion hit beyond the first, and <span style=\"white-space:nowrap\">[[File:Magic resistance icon.svg|15px|link=Magic resistance]]&nbsp;<span style=\"color:\n#00FFFF; white-space:normal\">'''bonus''' magic resistance</span></span> equal to 60% of that amount as well as 10% increased <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Size\">[[File:Gameplay radius.png|20px|link=Unit size|An icon representing the keyword Gameplay radius]] [[:Unit size|size]]</span> for 8 seconds.",
+          "text": "Active: Jax swings his lantern around, dealing magic damage to nearby enemies. If this hits a champion, he gains &nbsp;bonus armor, increased for each champion hit beyond the first, and &nbsp;bonus magic resistance equal to 60% of that amount as well as 10% increased size for 8 seconds."
+        },
+        "description3": {
+          "raw": "'''''Jax''' can move during Grandmaster-at-Arms' cast time.''",
+          "text": "Jax can move during Grandmaster-at-Arms' cast time."
+        },
+        "effectradius": "375",
+        "icon": "false",
+        "icon2": "Jax Grandmaster-at-Arms.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Additional Magic Damage:'''</span></dt><dd>75 / 102.<small>5</small> / 130 / 157.<small>5</small> / 185 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl>",
+          "text": "Additional Magic Damage:75 / 102.5 / 130 / 157.5 / 185 (+ 60% AP)"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>100 / 137.<small>5</small> / 175 / 212.<small>5</small> / 250 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 100% AP)</span></dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Armor:'''</span></dt><dd>45 / 52.<small>5</small> / 60 / 67.<small>5</small> / 75 <span style=\"color:orange; white-space:normal\">(+ 40% '''bonus''' AD)</span></dd><dt><span class=\"template_lc\">'''Bonus Magic Resistance:'''</span></dt><dd>27 / 31.<small>5</small> / 36 / 40.<small>5</small> / 45 <span style=\"color:orange; white-space:normal\">(+ 24% '''bonus''' AD)</span></dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Armor per Champion Hit:'''</span></dt><dd>20 / 22.<small>5</small> / 25 / 27.<small>5</small> / 30 <span style=\"color:orange; white-space:normal\">(+ 10% '''bonus''' AD)</span></dd><dt><span class=\"template_lc\">'''Bonus Magic Resistance per Champion Hit:'''</span></dt><dd>12 / 13.<small>5</small> / 15 / 16.<small>5</small> / 18 <span style=\"color:orange; white-space:normal\">(+ 6% '''bonus''' AD)</span></dd></dl>",
+          "text": "Magic Damage:100 / 137.5 / 175 / 212.5 / 250 (+ 100% AP)\nBonus Armor:45 / 52.5 / 60 / 67.5 / 75 (+ 40% bonus AD)Bonus Magic Resistance:27 / 31.5 / 36 / 40.5 / 45 (+ 24% bonus AD)\nBonus Armor per Champion Hit:20 / 22.5 / 25 / 27.5 / 30 (+ 10% bonus AD)Bonus Magic Resistance per Champion Hit:12 / 13.5 / 15 / 16.5 / 18 (+ 6% bonus AD)"
+        },
+        "name": "Grandmaster-at-Arms",
+        "notes": {
+          "raw": "* The on-hit deals <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Proc damage\">[[File:Wit's End item.png|20px|link=Damage|An icon representing the keyword Proc damage]] [[:Damage|proc damage]]</span>. The swing deals <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Area damage\">[[File:Mega Inferno Bomb.png|20px|link=Damage|An icon representing the keyword Area damage]] [[:Damage|area damage]]</span>.\n* The bonus resistances are represented by a glowing aura around '''Jax''' that grows with each enemy champion hit beyond the first.\n* The <span style=\"color:\n#00B0F0; white-space:normal\">'''additional''' magic damage</span> can be <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span> and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span> but it cannot <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|miss]]</span>.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will only block the additional damage from the third attack if it is <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Jax\" data-ability=\"Empower\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Jax Empower.png|20xpx|border|link=Jax#Empower|An icon for Jax's ability Empower]]</span> <span style=\"white-space:normal;\">[[Jax#Empower|empowered]]</span></span>.\n* The empowered attack will trigger but not be consumed nor apply its effects against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Wards\">[[File:Ward_icon.png|20px|link=Ward|An icon representing the keyword Ward]] [[:Ward|wards]]</span>.\n** Stacks will still be generated when attacking them.\n* The empowered attack is applied in a separate damage instance from '''Jax's''' basic attacks.\n** This causes effects like <span class=\"inline-image label-after rune-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-rune=\"Bone Plating\" data-game=\"lol\"><span style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Bone Plating rune.png|20xpx|link=Bone Plating|An icon representing Bone Plating]]</span> <span style=\"word-break: keep-all;\">[[Bone Plating]]</span></span> to be applied twice.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This does not match expectations. \">(unexpected)</span></sup>\n* \n* This ability will cast from wherever the caster is at the end of the cast time.",
+          "text": "The on-hit deals proc damage. The swing deals area damage.\nThe bonus resistances are represented by a glowing aura around Jax that grows with each enemy champion hit beyond the first.\nThe additional magic damage can be dodged and blocked but it cannot miss.\nSpell shield will only block the additional damage from the third attack if it is empowered.\nThe empowered attack will trigger but not be consumed nor apply its effects against wards.\n* Stacks will still be generated when attacking them.\nThe empowered attack is applied in a separate damage instance from Jax's basic attacks.\n* This causes effects like Bone Plating to be applied twice.(unexpected)\nThis ability will cast from wherever the caster is at the end of the cast time."
+        },
+        "spellshield": false,
+        "targeting": "Auto"
+      },
+      "name": "Grandmaster-at-Arms"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "R",
+  "source": {
+    "contentHash": "0e7328c90827b506467e0721dc43e3b08d87c33c60d76a47a8b94e19921c3d8e",
+    "fetchedAt": "2026-09-06T13:52:09.005Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Jax/Grandmaster-at-Arms",
+    "revisionId": 3973573,
+    "sourceTimestamp": "2025-12-11T05:37:32Z"
+  }
+}

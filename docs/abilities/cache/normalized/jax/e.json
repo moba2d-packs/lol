@@ -1,0 +1,56 @@
+{
+  "asset": {
+    "key": "spell_jax_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Counter_Strike.png?a3a78",
+    "sha1": "6f0e4ffb3f02ce9c2148fd65c44728f6cce6e8ba"
+  },
+  "champion": "Jax",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_jax_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Counter_Strike.png?a3a78",
+        "sha1": "6f0e4ffb3f02ce9c2148fd65c44728f6cce6e8ba"
+      },
+      "fields": {
+        "casttime": "None",
+        "cooldown": "17 / 15 / 13 / 11 / 9",
+        "cost": "50 / 60 / 70 / 80 / 90",
+        "damagetype": "magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Jax''' enters ''Evasion'' for 2 seconds: a defensive stance that causes him to <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodge]]</span> all incoming non-<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Turret\">[[File:Turret icon.png|20px|link=Turret|An icon representing the keyword Turret]] [[:Turret|turret]]</span> basic attacks and take 25% reduced damage from all <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Area of effect\">[[File:Mega Inferno Bomb.png|20px|link=Damage|An icon representing the keyword Area damage]] [[:Damage|area of effect]]</span> <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Abilities\">[[File:Champion ability.svg|20px|link=Champion ability|An icon representing the keyword Champion ability]] [[:Champion ability|abilities]]</span> sourced from <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champions\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champions]]</span>. <br/><br/> ''Counter Strike'' can be recast after 1 second, and does so automatically after the duration.",
+          "text": "Active: Jax enters Evasion for 2 seconds: a defensive stance that causes him to dodge all incoming non- turret basic attacks and take 25% reduced damage from all area of effect abilities sourced from champions.\nCounter Strike can be recast after 1 second, and does so automatically after the duration."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Recast:'''</span> '''Jax''' deals <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to nearby enemies, with the '''total''' damage increased by 20% for each attack dodged, up to a 100% increase, and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stun\">[[File:Stun icon.png|20px|link=Stun|An icon representing the keyword Stun]] [[:Stun|stuns]]</span> them for 1 second.",
+          "text": "Recast: Jax deals magic damage to nearby enemies, with the total damage increased by 20% for each attack dodged, up to a 100% increase, and stuns them for 1 second."
+        },
+        "effectradius": "375",
+        "icon": "Counter Strike.png",
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Minimum Magic Damage:'''</span></dt><dd>40 / 70 / 100 / 130 / 160 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 70% AP)</span> <span style=\"color:\n#21B053; white-space:normal\">(+ 4% of target's '''maximum''' health)</span></dd><dt><span class=\"template_lc\">'''Maximum Magic Damage:'''</span></dt><dd>80 / 140 / 200 / 260 / 320 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 140% AP)</span> <span style=\"color:\n#21B053; white-space:normal\">(+ 8% of target's '''maximum''' health)</span></dd></dl>",
+          "text": "Minimum Magic Damage:40 / 70 / 100 / 130 / 160 (+ 70% AP) (+ 4% of target's maximum health)Maximum Magic Damage:80 / 140 / 200 / 260 / 320 (+ 140% AP) (+ 8% of target's maximum health)"
+        },
+        "name": "Counter Strike",
+        "notes": {
+          "raw": "* The initial cast and the manual recast count as ability activations for the purposes of on-cast effects such as <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spellblade\">[[File:Sheen item.png|20px|link=Named item effect#Spellblade|An icon representing the keyword Spellblade]] [[:Named item effect#Spellblade|Spellblade]]</span> and triggering <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Kassadin\" data-ability=\"Force Pulse\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Kassadin Force Pulse.png|20xpx|border|link=Kassadin#Force Pulse|An icon for Kassadin's ability Force Pulse]]</span> <span style=\"white-space:normal;\">[[Kassadin#Force Pulse|Force Pulse's]]</span></span> passive.\n* ''Counter Strike'' will also dodge abilities that can trigger <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> effects (<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Gangplank\" data-ability=\"Parrrley\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Gangplank Parrrley.png|20xpx|border|link=Gangplank#Parrrley|An icon for Gangplank's ability Parrrley]]</span> <span style=\"white-space:normal;\">[[Gangplank#Parrrley|Parrrley]]</span></span>, <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Ezreal\" data-ability=\"Mystic Shot\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Ezreal Mystic Shot.png|20xpx|border|link=Ezreal#Mystic Shot|An icon for Ezreal's ability Mystic Shot]]</span> <span style=\"white-space:normal;\">[[Ezreal#Mystic Shot|Mystic Shot]]</span></span>) which will count towards ''Counter Strike's'' increased damage. There are exceptions of abilities that ''Counter Strike'' will not dodge but will dodge the damage from <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> effects that they trigger (<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Master Yi\" data-ability=\"Alpha Strike\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Master Yi Alpha Strike.png|20xpx|border|link=Master Yi#Alpha Strike|An icon for Master Yi's ability Alpha Strike]]</span> <span style=\"white-space:normal;\">[[Master Yi#Alpha Strike|Alpha Strike]]</span></span>, <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Senna\" data-ability=\"Piercing Darkness\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Senna Piercing Darkness.png|20xpx|border|link=Senna#Piercing Darkness|An icon for Senna's ability Piercing Darkness]]</span> <span style=\"white-space:normal;\">[[Senna#Piercing Darkness|Piercing Darkness]]</span></span>).\n* The damage based on the target's maximum health is capped at 9000 against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Monsters\">[[File:Monster icon.png|20px|link=Monster|An icon representing the keyword Monster]] [[:Monster|monsters]]</span>. This is a placeholder value and impossible to reach because it requires a monster to have over <span style=\"color:\n#21B053; white-space:normal\">128571 health</span>.",
+          "text": "The initial cast and the manual recast count as ability activations for the purposes of on-cast effects such as Spellblade and triggering Force Pulse's passive.\nCounter Strike will also dodge abilities that can trigger on-hit effects ( Parrrley, Mystic Shot) which will count towards Counter Strike's increased damage. There are exceptions of abilities that Counter Strike will not dodge but will dodge the damage from on-hit effects that they trigger ( Alpha Strike, Piercing Darkness).\nThe damage based on the target's maximum health is capped at 9000 against monsters. This is a placeholder value and impossible to reach because it requires a monster to have over 128571 health."
+        },
+        "spellshield": true,
+        "targeting": "Auto"
+      },
+      "name": "Counter Strike"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "3b96c4435e916c5184f5177f849b3175d41b1cc4b55a1733bd56be0344f68b2c",
+    "fetchedAt": "2026-09-06T13:52:09.005Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Jax/Counter_Strike",
+    "revisionId": 4026415,
+    "sourceTimestamp": "2026-06-09T21:52:38Z"
+  }
+}

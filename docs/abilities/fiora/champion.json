@@ -1,0 +1,121 @@
+{
+  "asset": {
+    "key": "champ_fiora",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_OriginalSquare.png?0b643",
+    "sha1": "7a0220f742dca882f84f3a18158aef76f44d2e88"
+  },
+  "champion": "Fiora",
+  "data": {
+    "adaptivetype": "Physical",
+    "alttype": "Assassin",
+    "apiname": "Fiora",
+    "be": 2400,
+    "changes": "V25.16",
+    "client_positions": [
+      "Top"
+    ],
+    "client_tags": [
+      "Duelist",
+      "Mobile",
+      "Physical"
+    ],
+    "control": 2,
+    "damage": 3,
+    "date": "2012-02-29",
+    "difficulty": 3,
+    "external_positions": [
+      "Top"
+    ],
+    "fullname": "Fiora Laurent",
+    "herotype": "Fighter",
+    "id": 114,
+    "mobility": 2,
+    "patch": "V1.0.0.135",
+    "rangetype": "Melee",
+    "resource": "Mana",
+    "role": [
+      "Skirmisher"
+    ],
+    "rp": 880,
+    "skill_e": {
+      "1": "Bladework"
+    },
+    "skill_i": {
+      "1": "Duelist's Dance",
+      "2": "Duelist's Dance 2"
+    },
+    "skill_q": {
+      "1": "Lunge"
+    },
+    "skill_r": {
+      "1": "Grand Challenge",
+      "2": "Grand Challenge 2"
+    },
+    "skill_w": {
+      "1": "Riposte"
+    },
+    "skills": {
+      "1": "Duelist's Dance",
+      "2": "Lunge",
+      "3": "Riposte",
+      "4": "Bladework",
+      "5": "Grand Challenge"
+    },
+    "stats": {
+      "acquisition_radius": 600,
+      "ar": {
+        "dam_lvl": -0.5,
+        "hp_lvl": -10
+      },
+      "aram": {
+        "dmg_taken": 0.95
+      },
+      "arm_base": 33,
+      "arm_lvl": 4.7,
+      "as_base": 0.69,
+      "as_lvl": 3.2,
+      "as_ratio": 0.689999997615814,
+      "attack_cast_time": 0.200000002980232,
+      "attack_total_time": 1.45000004768371,
+      "dam_base": 66,
+      "dam_lvl": 3.3,
+      "hp5_base": 8.5,
+      "hp5_lvl": 0.55,
+      "hp_base": 620,
+      "hp_lvl": 99,
+      "mp5_base": 8,
+      "mp5_lvl": 0.7,
+      "mp_base": 300,
+      "mp_lvl": 60,
+      "mr_base": 32,
+      "mr_lvl": 2.05,
+      "ms": 345,
+      "pathing_radius": 35,
+      "range": 150,
+      "selection_height": 100,
+      "selection_radius": 100,
+      "urf": {
+        "dmg_dealt": 0.9,
+        "dmg_taken": 1.1,
+        "healing": 0.65
+      },
+      "usb": {
+        "dmg_dealt": 0.95,
+        "dmg_taken": 1.05
+      }
+    },
+    "style": 20,
+    "title": "The Grand Duelist",
+    "toughness": 2,
+    "utility": 2
+  },
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "c820b3a88a8e082cb5297d46bc739d0cb3afb7baa542cf668db16d66d18a712c",
+    "fetchedAt": "2026-09-06T13:51:55.254Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
+  }
+}

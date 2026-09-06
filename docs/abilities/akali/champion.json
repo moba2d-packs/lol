@@ -1,0 +1,126 @@
+{
+  "asset": {
+    "key": "champ_akali",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_OriginalSquare.png?55774",
+    "sha1": "4368d8675474917716d1e831030b9991b0f14e61"
+  },
+  "champion": "Akali",
+  "data": {
+    "adaptivetype": "Physical",
+    "apiname": "Akali",
+    "be": 1575,
+    "changes": "V26.17",
+    "client_positions": [
+      "Top",
+      "Middle"
+    ],
+    "client_tags": [
+      "Mobile",
+      "Burst",
+      "Magic"
+    ],
+    "control": 1,
+    "damage": 3,
+    "date": "2010-05-11",
+    "difficulty": 3,
+    "external_positions": [
+      "Top",
+      "Middle"
+    ],
+    "fullname": "Akali Jhomen Tethi",
+    "herotype": "Assassin",
+    "id": 84,
+    "mobility": 3,
+    "patch": "V1.0.0.85",
+    "rangetype": "Melee",
+    "resource": "Energy",
+    "role": [
+      "Assassin"
+    ],
+    "rp": 790,
+    "skill_e": {
+      "1": "Shuriken Flip",
+      "2": "Shuriken Flip 2"
+    },
+    "skill_i": {
+      "1": "Assassin's Mark"
+    },
+    "skill_q": {
+      "1": "Five Point Strike",
+      "2": "Five Point Strike 2"
+    },
+    "skill_r": {
+      "1": "Perfect Execution",
+      "2": "Perfect Execution 2"
+    },
+    "skill_w": {
+      "1": "Twilight Shroud"
+    },
+    "skills": {
+      "1": "Assassin's Mark",
+      "2": "Five Point Strike",
+      "3": "Twilight Shroud",
+      "4": "Shuriken Flip",
+      "5": "Perfect Execution"
+    },
+    "stats": {
+      "acquisition_radius": 400,
+      "ar": {
+        "hp_lvl": 2
+      },
+      "aram": {
+        "dmg_dealt": 1,
+        "dmg_taken": 0.95,
+        "energyregen_mod": 1.2,
+        "tenacity": 1.2
+      },
+      "arm_base": 23,
+      "arm_lvl": 4.7,
+      "as_base": 0.625,
+      "as_lvl": 3.2,
+      "as_ratio": 0.625,
+      "attack_delay_offset": -0.160999998450279,
+      "dam_base": 62,
+      "dam_lvl": 3.3,
+      "hp5_base": 9,
+      "hp5_lvl": 0.9,
+      "hp_base": 600,
+      "hp_lvl": 119,
+      "mp5_base": 50,
+      "mp5_lvl": 0,
+      "mp_base": 200,
+      "mp_lvl": 0,
+      "mr_base": 37,
+      "mr_lvl": 2.05,
+      "ms": 345,
+      "nb": {
+        "ability_haste": 20,
+        "dmg_taken": 0.9
+      },
+      "ofa": {
+        "dmg_dealt": 1.05,
+        "dmg_taken": 0.97
+      },
+      "pathing_radius": 30,
+      "range": 125,
+      "selection_height": 138.88890075683594,
+      "selection_radius": 100,
+      "urf": {
+        "dmg_taken": 0.9
+      }
+    },
+    "style": 65,
+    "title": "The Rogue Assassin",
+    "toughness": 1,
+    "utility": 1
+  },
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "1029532c5e7ab9d534cfe0652725db07566338fd9b2c5eca5125faf8a5c16a85",
+    "fetchedAt": "2026-09-06T13:51:16.204Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
+  }
+}

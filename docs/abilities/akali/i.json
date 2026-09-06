@@ -1,0 +1,53 @@
+{
+  "asset": {
+    "key": "spell_akali_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Assassin%27s_Mark.png?e4038",
+    "sha1": "faac9573b1f24236dc0f258bd59e90e488b6130e"
+  },
+  "champion": "Akali",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_akali_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Assassin%27s_Mark.png?e4038",
+        "sha1": "faac9573b1f24236dc0f258bd59e90e488b6130e"
+      },
+      "fields": {
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate:'''</span> When '''Akali''' damages an enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span> with an <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ability\">[[File:Champion ability.svg|20px|link=Champion ability|An icon representing the keyword Champion ability]] [[:Champion ability|ability]]</span>, she creates a ring around them for 4 seconds, refreshing on subsequent damaging abilities against champions. For 2 seconds, she gains <span style=\"color:\n#9FFF4D; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"30;1\" data-finish=\"60;16\" data-top-fill=\"4\" data-bot-values=\"30;40;50;60\" data-top-values=\"1;6;11;16\" data-bot-key=\"%\">30% / 40% / 50% / 60% (based on level)</span> <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;'''bonus''' movement speed</span></span> while moving away from the center of the ring. Only one ring may be active at a time.",
+          "text": "Innate: When Akali damages an enemy champion with an ability, she creates a ring around them for 4 seconds, refreshing on subsequent damaging abilities against champions. For 2 seconds, she gains 30% / 40% / 50% / 60% (based on level) &nbsp;bonus movement speed while moving away from the center of the ring. Only one ring may be active at a time."
+        },
+        "description2": {
+          "raw": "When '''Akali''' exits the ring, for 2 seconds, she regains the <span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span> while facing nearby enemy champions and becomes empowered with ''Swinging Kama'' for 4 seconds, during which she cannot create another ring.",
+          "text": "When Akali exits the ring, for 2 seconds, she regains the bonus movement speed while facing nearby enemy champions and becomes empowered with Swinging Kama for 4 seconds, during which she cannot create another ring."
+        },
+        "description3": {
+          "raw": "<span class=\"template_sbc\">'''Swinging Kama:'''</span> '''Akali's''' next <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attack]]</span> is empowered to have an <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Uncancellable windup\">[[File:Relentless Force 2.png|20px|link=Basic attack#Uncancellable Windup|An icon representing the keyword Uncancellable windup]] [[:Basic attack#Uncancellable Windup|uncancellable windup]]</span>, gain <span style=\"white-space:nowrap\">[[File:Range icon.png|15px|link=Range]]&nbsp;<span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Not necessarily increased by 125, check notes\">'''doubled''' range</span></span> and deal <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help; color:#00B0F0;\" data-displayformula=\"+3 per level until lvl 7; then +9 until lvl 13, then +15\" data-bot-values=\"35;38;41;44;47;50;53;62;71;80;89;98;107;122;137;152;167;182;197;212;227;242;257;272;287;302;317;332;347;362;377;392;407;422;437;452;467;482;497;512;527|displayMaxColumn=18\">35 – 182 (based on level)</span> <span style=\"color:orange; white-space:normal\">(+ 60% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 55% AP)</span> <span style=\"color:\n#00B0F0; white-space:normal\">'''bonus''' magic damage</span>.",
+          "text": "Swinging Kama: Akali's next basic attack is empowered to have an uncancellable windup, gain &nbsp;doubled range and deal 35 – 182 (based on level) (+ 60% bonus AD) (+ 55% AP) bonus magic damage."
+        },
+        "effectradius": "500",
+        "icon": "Assassin's Mark.png",
+        "name": "Assassin's Mark",
+        "notes": {
+          "raw": "* Enemies cannot see the ring, but can see the empower effect.\n* ''Swinging Kama'' gives a static '''bonus''' range which doesn't change if '''Akali's''' range changes during it (i.e <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Rapid Firecannon\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Rapid Firecannon item.png|20xpx|border|link=Rapid Firecannon|An icon for the item Rapid Firecannon]]</span> <span style=\"white-space:normal;\">[[Rapid Firecannon]]</span></span>):\n** If ''Rapid Firecannon'' fully charges within ''Swinging Kama's'' duration, '''Akali's''' total range increases to <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"(125 + 125 (which is the bonus range Swinging Kama gives))&nbsp;&times;&nbsp;1.35\">337.5</span>.\n** If ''Rapid Firecannon'' fully charges before gaining ''Swinging Kama'', '''Akali's''' total range is increased to <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"125&nbsp;&times;&nbsp;1.35 + 125&nbsp;&times;&nbsp;1.35 (which is the bonus range Swinging Kama gives)&nbsp;&times;&nbsp;1.35 (further increased by Rapid Firecannon)\">395</span>.\n* The ring will be created around the last target hit by ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Akali\" data-ability=\"Five Point Strike\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Akali Five Point Strike.png|20xpx|border|link=Akali#Five Point Strike|An icon for Akali's ability Five Point Strike]]</span> <span style=\"white-space:normal;\">[[Akali#Five Point Strike|Five Point Strike]]</span></span>''.\n* The ring's center is offset 120 units away from the enemy's center, towards Akali.\n* The empowered attack can be <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span> and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, and will be mitigated by <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blinds]]</span>.\n* The empowered attack will trigger but not be consumed nor apply its effects against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Structures\">[[File:Structure icon.png|20px|link=Category:Structure|An icon representing the keyword Structure]] [[:Category:Structure|structures]]</span> and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Wards\">[[File:Ward_icon.png|20px|link=Ward|An icon representing the keyword Ward]] [[:Ward|wards]]</span>.\n* This ability's damage is calculated based on the caster's stats at the time of its application.",
+          "text": "Enemies cannot see the ring, but can see the empower effect.\nSwinging Kama gives a static bonus range which doesn't change if Akali's range changes during it (i.e Rapid Firecannon):\n* If Rapid Firecannon fully charges within Swinging Kama's duration, Akali's total range increases to 337.5.\n* If Rapid Firecannon fully charges before gaining Swinging Kama, Akali's total range is increased to 395.\nThe ring will be created around the last target hit by Five Point Strike.\nThe ring's center is offset 120 units away from the enemy's center, towards Akali.\nThe empowered attack can be dodged and blocked, and will be mitigated by blinds.\nThe empowered attack will trigger but not be consumed nor apply its effects against structures and wards.\nThis ability's damage is calculated based on the caster's stats at the time of its application."
+        },
+        "spellshield": false,
+        "targeting": "Passive"
+      },
+      "name": "Assassin's Mark"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "330551d885cb62611e71523abce5b57a31db2ab847098135db91b6c26fac0877",
+    "fetchedAt": "2026-09-06T13:51:16.204Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Akali/Assassin's_Mark",
+    "revisionId": 4038192,
+    "sourceTimestamp": "2026-06-30T04:56:39Z"
+  }
+}

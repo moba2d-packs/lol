@@ -1,0 +1,50 @@
+{
+  "asset": {
+    "key": "spell_xerath_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Mana_Surge.png?b637b",
+    "sha1": "5e88691fa699790fec6e2d9c7e241c93bfcc2bcb"
+  },
+  "champion": "Xerath",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_xerath_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Mana_Surge.png?b637b",
+        "sha1": "5e88691fa699790fec6e2d9c7e241c93bfcc2bcb"
+      },
+      "fields": {
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate:'''</span> Periodically, '''Xerath''' empowers his next <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attack]]</span> <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> to restore <span style=\"white-space:nowrap\">[[File:Mana icon.svg|15px|link=Mana]]&nbsp;<span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help; color:#0099CC;\" data-displayformula=\"27 + 3 at each level up to 3, then + 6 at each level up to 6, then + 9 at each level up to 10, 12 at each level up to 15, then + 15 at each level\" data-bot-values=\"30;33;36;42;48;54;63;72;81;90;102;114;126;138;150;165;180;195;210;225\">30 – 225 (based on level)</span>[[Category:Debug]] <span style=\"color:\n#0099CC; white-space:normal\">mana</span></span>, doubled to <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help; color:#0099CC;\" data-displayformula=\"54 + 6 at each level up to 3, then + 12 at each level up to 6, then + 18 at each level up to 10, then + 24 at each level up to 15, then + 30 at each level\" data-bot-values=\"60;66;72;84;96;108;126;144;162;180;204;228;252;276;300;330;360;390;420;450\">60 – 450 (based on level)</span>[[Category:Debug]] against enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champions\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champions]]</span>.",
+          "text": "Innate: Periodically, Xerath empowers his next basic attack on-hit to restore &nbsp;30 – 225 (based on level)Category:Debug mana, doubled to 60 – 450 (based on level)Category:Debug against enemy champions."
+        },
+        "description2": {
+          "raw": "''Mana Surge's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;cooldown</span> is reduced by 3.<small>5</small> seconds whenever '''Xerath''' kills an enemy.",
+          "text": "Mana Surge's &nbsp;cooldown is reduced by 3.5 seconds whenever Xerath kills an enemy."
+        },
+        "description3": {
+          "raw": "''Mana Surge does not trigger if '''Xerath''' would restore above <span style=\"color:\n#0099CC; white-space:normal\">his '''maximum''' mana</span>.''",
+          "text": "Mana Surge does not trigger if Xerath would restore above his maximum mana."
+        },
+        "icon": "Mana Surge.png",
+        "name": "Mana Surge",
+        "notes": {
+          "raw": "* ''Mana Surge'' will trigger even if the attack is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blocked\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, but not if it misses due to <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blind]]</span>.\n* The empowered attack will trigger against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Structures\">[[File:Structure icon.png|20px|link=Category:Structure|An icon representing the keyword Structure]] [[:Category:Structure|structures]]</span>.\n* <span style=\"color:red; font-family:math; font-weight:bold; font-size:1em;\" title=\"Pending for test\"><span class=\"fas fa-vial\"></span>PENDING FOR TEST:</span>: ''Mana Surge's '' interactions with <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodging]]</span> effects.",
+          "text": "Mana Surge will trigger even if the attack is blocked, but not if it misses due to blind.\nThe empowered attack will trigger against structures.\nPENDING FOR TEST:: Mana Surge's interactions with dodging effects."
+        },
+        "targeting": "Passive"
+      },
+      "name": "Mana Surge"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "731add58797b4026f26985202669583a2afff25bc61152d75c71544110f3466d",
+    "fetchedAt": "2026-09-06T13:52:50.875Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Xerath/Mana_Surge",
+    "revisionId": 3986753,
+    "sourceTimestamp": "2026-01-23T03:41:50Z"
+  }
+}

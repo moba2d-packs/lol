@@ -1,0 +1,59 @@
+{
+  "asset": {
+    "key": "spell_jax_q",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Leap_Strike.png?0e517",
+    "sha1": "706e5bbb03218d42e0caab60174e2bca7053b183"
+  },
+  "champion": "Jax",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_jax_q",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Leap_Strike.png?0e517",
+        "sha1": "706e5bbb03218d42e0caab60174e2bca7053b183"
+      },
+      "fields": {
+        "casttime": "false",
+        "cooldown": "8 / 7.5 / 7 / 6.5 / 6",
+        "cost": "50",
+        "damagetype": "physical",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Jax''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dashes\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> to the target unit's location.",
+          "text": "Active: Jax dashes to the target unit's location."
+        },
+        "description2": {
+          "raw": "If the target is an enemy and they are in range  upon arrival, '''Jax''' deals <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> to them.",
+          "text": "If the target is an enemy and they are in range upon arrival, Jax deals physical damage to them."
+        },
+        "description3": {
+          "raw": "'''''Jax''' can cast any of his <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Abilities\">[[File:Champion ability.svg|20px|link=Champion ability|An icon representing the keyword Champion ability]] [[:Champion ability|abilities]]</span> during the dash.''",
+          "text": "Jax can cast any of his abilities during the dash."
+        },
+        "icon": "Leap Strike.png",
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>65 / 105 / 145 / 185 / 225 <span style=\"color:orange; white-space:normal\">(+ 100% '''bonus''' AD)</span></dd></dl>",
+          "text": "Physical Damage:65 / 105 / 145 / 185 / 225 (+ 100% bonus AD)"
+        },
+        "name": "Leap Strike",
+        "notes": {
+          "raw": "* ''Leap Strike'' cannot be cast on <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Structures\">[[File:Structure icon.png|20px|link=Category:Structure|An icon representing the keyword Structure]] [[:Category:Structure|structures]]</span>.\n* If the target is an enemy champion, '''Jax''' will be ordered to <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attack]]</span> them after the dash ends.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will block the damage, including when <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Jax\" data-ability=\"Empower\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Jax Empower.png|20xpx|border|link=Jax#Empower|An icon for Jax's ability Empower]]</span> <span style=\"white-space:normal;\">[[Jax#Empower|empowered]]</span></span>.",
+          "text": "Leap Strike cannot be cast on structures.\nIf the target is an enemy champion, Jax will be ordered to basic attack them after the dash ends.\nSpell shield will block the damage, including when empowered."
+        },
+        "spellshield": true,
+        "targeting": "Unit"
+      },
+      "name": "Leap Strike"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "Q",
+  "source": {
+    "contentHash": "54f9d736f553de16158221df943300ae15011e21b220c09eac1478685367097f",
+    "fetchedAt": "2026-09-06T13:52:09.005Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Jax/Leap_Strike",
+    "revisionId": 4026413,
+    "sourceTimestamp": "2026-06-09T21:52:26Z"
+  }
+}

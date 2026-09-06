@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Jax/Relentless Assault",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Relentless Assault@@icon@@Relentless Assault.png@@icon2@@{{{icon2}}}@@icon3@@Jax Grandmaster at Angling.png@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Innate:'''</span> '''Jax's''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attacks\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attacks]]</span> generate a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stack\">[[File:Stack icon.png|20px|link=Stack|An icon representing the keyword Stack]] [[:Stack|stack]]</span> of ''Relentless Assault'' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-attack\">[[File:On-attack icon.svg|20px|link=Attack_effects#On_Attacking|An icon representing the keyword On-attack]] [[:Attack_effects#On_Attacking|on-attack]]</span> for 2.<small>5</small> seconds, refreshing on subsequent attacks and stacking up to 8 times. Stacks expire one by one every 0.<small>25</small> seconds when the duration ends.@@description2@@<span class=\"template_sbc\">'''Relentless Assault:'''</span> For each stack, '''Jax''' gains <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"5;1\" data-finish=\"14;19\" data-top-fill=\"7\" data-bot-values=\"5;6.5;8;9.5;11;12.5;14|displayMaxColumn=6\" data-top-values=\"1;4;7;10;13;16;19\" data-bot-key=\"%\">5% – 12.<small>5</small>% (based on level)</span>[[Category:Debug]] '''bonus''' attack speed</span></span>, up to a maximum of <span style=\"color:\n#F5EE99; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"40;1\" data-finish=\"112;19\" data-top-fill=\"7\" data-bot-values=\"40;52;64;76;88;100;112|displayMaxColumn=6\" data-top-values=\"1;4;7;10;13;16;19\" data-bot-key=\"%\">40% – 100% (based on level)</span>[[Category:Debug]]</span>.@@description3@@<span class=\"template_sbc\">'''Grandmaster at Angling:'''</span> While out-of-combat with champions and idle in the river for 10 seconds, '''Jax''' will occasionally catch a fish, granting him <span class=\"inline-image label-after\" style=\"display:inline;color:#E2BA3D&#59;white-space:pre&#59;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;\" data-param=\"\"><span style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Gold colored icon.svg|20xpx|link=Gold|An icon representing Gold]]</span> <span style=\"white-space:normal;\">1</span></span> and <span style=\"color:\n#7A6DFF; white-space:normal\">1 ability power</span> for 5 seconds. He catches a fish at an average rate of one every 15 seconds. He also has a 5% chance to catch a [[File:Jax Grandmaster at Angling 2.png|link=|20 px]] rare fish that grants <span class=\"inline-image label-after\" style=\"display:inline;color:#E2BA3D&#59;white-space:pre&#59;text-shadow:-1px 0 black,0 1px black,1px 0 black,0 -1px black;\" data-param=\"\"><span style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Gold colored icon.svg|20xpx|link=Gold|An icon representing Gold]]</span> <span style=\"white-space:normal;\">10</span></span> and <span style=\"color:\n#7A6DFF; white-space:normal\">10 ability power</span> for 5 seconds.@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@{{{leveling}}}@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@{{{cast time}}}@@cost@@{{{cost}}}@@cooldown@@{{{cooldown}}}@@targeting@@Passive@@damagetype@@@@spellshield@@@@projectile@@{{{projectile}}}@@notes@@\n* '''Jax''' will start fishing while idle in the river if he is in-combat with only monsters (e.g. Epic monsters).<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This is not intended. \">(bug)</span></sup>\n* '''Jax''' catching a fish is a random event and will play a special animation.\n* The total number of fish caught during the game is displayed when fishing as <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Jax\" data-ability=\"Relentless Assault\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Grandmaster at Angling.png|20xpx|border|link=Jax#Relentless Assault|An icon for Jax's ability Relentless Assault]]</span> <span style=\"white-space:normal;\">[[Jax#Relentless Assault|Grandmaster at Angling]]</span></span> passive.\n* ''Relentless Assault'' uses its [[File:Jax Relentless Assault old2.png|link=|20 px]] old icon in the [[Death Recap]].@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1307313,
+                "revisions": [
+                  {
+                    "parentid": 4000158,
+                    "revid": 4038387,
+                    "timestamp": "2026-06-30T09:20:04Z"
+                  }
+                ],
+                "title": "Template:Data Jax/Relentless Assault"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4038387,
+      "timestamp": "2026-06-30T09:20:04Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "af4cc0fe8a7dc1dec6066d985e632b1ade992c663f63e55c539237c375923361",
+    "fetchedAt": "2026-09-06T13:52:09.005Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Jax/Relentless_Assault",
+    "revisionId": 4038387,
+    "sourceTimestamp": "2026-06-30T09:20:04Z"
+  }
+}

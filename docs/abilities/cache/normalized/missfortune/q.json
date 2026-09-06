@@ -1,0 +1,62 @@
+{
+  "asset": {
+    "key": "spell_missfortune_q",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Double_Up.png?8df3d",
+    "sha1": "70c9c2ecdaa25e6bd848c5ab509dc5d76fc3d8e6"
+  },
+  "champion": "Miss Fortune",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_missfortune_q",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Double_Up.png?8df3d",
+        "sha1": "70c9c2ecdaa25e6bd848c5ab509dc5d76fc3d8e6"
+      },
+      "fields": {
+        "casttime": "Basic Attack Timer",
+        "cooldown": "7 / 6 / 5 / 4 / 3",
+        "cost": "40",
+        "damagetype": "Physical",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Miss Fortune''' fires a shot at the target enemy that deals <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> and bounces to hit another enemy behind them, applying <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-attack\">[[File:On-attack icon.svg|20px|link=Attack_effects#On_Attacking|An icon representing the keyword On-attack]] [[:Attack_effects#On_Attacking|on-attack]]</span> effects to the primary target and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> effects to both enemies hit.",
+          "text": "Active: Miss Fortune fires a shot at the target enemy that deals physical damage and bounces to hit another enemy behind them, applying on-attack effects to the primary target and on-hit effects to both enemies hit."
+        },
+        "description2": {
+          "raw": "''Double Up's'' bounce can <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Critically strike\">[[File:Critical strike icon.png|20px|link=Critical strike|An icon representing the keyword Critical strike]] [[:Critical strike|critically strike]]</span> for<span id=\"container\" class=\"container\" style=\"cursor:help;\"><span class=\"flipText1 active\">「&nbsp;<span style=\"color:\n#B4814C; white-space:normal\">(150%&nbsp;+&nbsp;<span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Infinity Edge\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Infinity Edge item.png|20xpx|border|link=Infinity Edge|An icon for the item Infinity Edge]]</span> <span style=\"white-space:normal;\">[[Infinity Edge|15%]]</span></span>)</span> damage.&nbsp;」</span><span class=\"flipText2\">「&nbsp;<span style=\"white-space:nowrap\">[[File:Critical strike damage icon.png|15px|link=Critical strike]]&nbsp;<span style=\"color:\n#B4814C; white-space:normal\">50% '''bonus''' critical damage</span></span>.&nbsp;」</span></span>If ''Double Up'' kills the primary target, the bounce will <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Critically strike\">[[File:Critical strike icon.png|20px|link=Critical strike|An icon representing the keyword Critical strike]] [[:Critical strike|critically strike]]</span>.",
+          "text": "Double Up's bounce can critically strike for「&nbsp;(150%&nbsp;+&nbsp; 15%) damage.&nbsp;」「&nbsp;&nbsp;50% bonus critical damage.&nbsp;」If Double Up kills the primary target, the bounce will critically strike."
+        },
+        "description3": {
+          "raw": "''The bounce prioritizes units directly behind the primary target. A target does not have to be <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|visible]]</span> to be hit by the bounce.''",
+          "text": "The bounce prioritizes units directly behind the primary target. A target does not have to be visible to be hit by the bounce."
+        },
+        "effectradius": "500",
+        "icon": "Double Up.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>20 / 45 / 70 / 95 / 120 <span style=\"color:orange; white-space:normal\">(+ 100% AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 35% AP)</span></dd></dl>",
+          "text": "Physical Damage:20 / 45 / 70 / 95 / 120 (+ 100% AD) (+ 35% AP)"
+        },
+        "name": "Double Up",
+        "notes": {
+          "raw": "* ''Double Up'' deals <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic damage\">[[File:Basic Attack.png|20px|link=Damage|An icon representing the keyword Basic damage]] [[:Damage|basic damage]]</span> to both targets, but also triggers spell effects by also being tagged as <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell damage\">[[File:Disintegrate.png|20px|link=Damage|An icon representing the keyword Ability damage]] [[:Damage|spell damage]]</span>.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shields]]</span> can be used by either target. If it is on the primary target, the spell shield will not prevent the shot from bouncing. \n* Neutral units count as valid targets to bounce.\n* The bounce follows a priority order on targets behind in a certain angle:\n*# 500 units in 20º.\n*# 500 units in 40º.\n*# 500 units in 110º.\n*# <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Estimated\">150 units</span> in 160º.\n* ''Double Up's'' cast range adjusts based on '''Miss Fortune's''' <span style=\"white-space:nowrap\">[[File:Range icon.png|15px|link=Range]]&nbsp;attack range</span>, which can be increased by items such as <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Rapid Firecannon\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Rapid Firecannon item.png|20xpx|border|link=Rapid Firecannon|An icon for the item Rapid Firecannon]]</span> <span style=\"white-space:normal;\">[[Rapid Firecannon]]</span></span>.\n* The damage of a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Critical strike\">[[File:Critical strike icon.png|20px|link=Critical strike|An icon representing the keyword Critical strike]] [[:Critical strike|critically striking]]</span> shot is 30 / 67.<small>5</small> / 105 / 142.<small>5</small> / 180 <span style=\"color:orange; white-space:normal\">(+ 150% AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 52.5% AP)</span> <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span>, increased to 33 / 74.<small>25</small> / 115.<small>5</small> / 156.<small>75</small> / 198 <span style=\"color:orange; white-space:normal\">(+ 165% AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 57.75% AP)</span> <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> by <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Infinity Edge\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Infinity Edge item.png|20xpx|border|link=Infinity Edge|An icon for the item Infinity Edge]]</span> <span style=\"white-space:normal;\">[[Infinity Edge|Infinity Edge's]]</span></span> bonus critical damage.\n* If there is no secondary target, the shot will not bounce and the dud will instead fall to the ground.\n** The dud lands on the ground 176 units behind the primary target and has a missile speed of 400 on its way there.\n\n* If the target becomes <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Untargetable\">[[File:Untargetable icon.png|20px|link=Untargetable|An icon representing the keyword Untargetable]] [[:Untargetable|untargetable]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Death\">[[File:Death icon.svg|20px|link=Death|An icon representing the keyword Death]] [[:Death|dies]]</span>, or is too far away or no longer in <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> during the cast time, this ability will cancel but does not go on <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;cooldown</span> nor pay its cost (if applicable).",
+          "text": "Double Up deals basic damage to both targets, but also triggers spell effects by also being tagged as spell damage.\nSpell shields can be used by either target. If it is on the primary target, the spell shield will not prevent the shot from bouncing.\nNeutral units count as valid targets to bounce.\nThe bounce follows a priority order on targets behind in a certain angle:\n# 500 units in 20º.\n# 500 units in 40º.\n# 500 units in 110º.\n# 150 units in 160º.\nDouble Up's cast range adjusts based on Miss Fortune's &nbsp;attack range, which can be increased by items such as Rapid Firecannon.\nThe damage of a critically striking shot is 30 / 67.5 / 105 / 142.5 / 180 (+ 150% AD) (+ 52.5% AP) physical damage, increased to 33 / 74.25 / 115.5 / 156.75 / 198 (+ 165% AD) (+ 57.75% AP) physical damage by Infinity Edge's bonus critical damage.\nIf there is no secondary target, the shot will not bounce and the dud will instead fall to the ground.\n* The dud lands on the ground 176 units behind the primary target and has a missile speed of 400 on its way there.\nIf the target becomes untargetable, dies, or is too far away or no longer in sight during the cast time, this ability will cancel but does not go on &nbsp;cooldown nor pay its cost (if applicable)."
+        },
+        "projectile": true,
+        "speed": "1400",
+        "spellshield": false,
+        "targeting": "Unit"
+      },
+      "name": "Double Up"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "Q",
+  "source": {
+    "contentHash": "a12b8d346acc9e660c7873a750d6faa6c6d8610fb1de1ec8e2eb4431bc0ce287",
+    "fetchedAt": "2026-09-06T13:53:06.544Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Miss_Fortune/Double_Up",
+    "revisionId": 3993572,
+    "sourceTimestamp": "2026-02-22T16:04:29Z"
+  }
+}

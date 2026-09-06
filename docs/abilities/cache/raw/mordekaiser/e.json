@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Mordekaiser/Death's Grasp",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Death's Grasp@@icon@@false@@icon2@@Death's Grasp.png@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Passive:'''</span> '''Mordekaiser''' gains <span style=\"white-space:nowrap\">[[File:Magic penetration icon.svg|15px|link=Magic penetration]]&nbsp;<span style=\"color:violet; white-space:normal\">magic penetration</span></span>.@@description2@@<span class=\"template_sbc\">'''Active:'''</span> '''Mordekaiser''' summons a claw in the target direction that grants <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area. After 0.<small>5</small> seconds, it deals <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies within and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|pulls]]</span> them over 250 units.@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Penetration:'''</span></dt><dd>5 / 7.<small>5</small> / 10 / 12.<small>5</small> / 15%</dd></dl>@@leveling2@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>60 / 80 / 100 / 120 / 140 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 45% AP)</span></dd></dl>@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@<span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Claw range\">800</span> • <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Claw offset from cast origin\">200</span>@@width@@200@@speed@@3000@@casttime@@0.<small>25</small>@@cost@@{{{cost}}}@@cooldown@@16 / 14 / 12 / 10 / 8@@targeting@@Location@@damagetype@@Magic@@spellshield@@True@@projectile@@false@@notes@@\n* ''Death's Grasp'' will still <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|pull]]</span> even if '''Mordekaiser''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Death\">[[File:Death icon.svg|20px|link=Death|An icon representing the keyword Death]] [[:Death|dies]]</span>.\n* ''Death's Grasp'' will only be visible from the enemy team's perspective if it is at least 300 units into their <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span>.\n* This ability will cast from wherever the caster is at the start of the cast time.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1395198,
+                "revisions": [
+                  {
+                    "parentid": 4058990,
+                    "revid": 4058991,
+                    "timestamp": "2026-09-06T05:18:55Z"
+                  }
+                ],
+                "title": "Template:Data Mordekaiser/Death's Grasp"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4058991,
+      "timestamp": "2026-09-06T05:18:55Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "d691b5d637a2e45a631514f170bdbbfd382907a74c8fa4cd3f68d5a49492f746",
+    "fetchedAt": "2026-09-06T13:52:37.292Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Mordekaiser/Death's_Grasp",
+    "revisionId": 4058991,
+    "sourceTimestamp": "2026-09-06T05:18:55Z"
+  }
+}

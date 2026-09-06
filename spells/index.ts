@@ -369,3 +369,8 @@ export { default as Aatrox_Q } from './Aatrox_Q';
 export { default as Aatrox_W } from './Aatrox_W';
 export { default as Aatrox_E } from './Aatrox_E';
 export { default as Aatrox_R } from './Aatrox_R';
+
+export { default as Akali_Q } from './Akali_Q';
+export { default as Akali_W } from './Akali_W';
+export { default as Akali_E } from './Akali_E';
+export { default as Akali_R } from './Akali_R';

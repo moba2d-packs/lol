@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Mordekaiser/Obliterate",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Obliterate@@icon@@Obliterate.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Mordekaiser''' strikes his mace down in a line in the target direction, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies within, [[File:Successfully enhanced damage magic icon.png|20px|link=Damage#Successful_ability_casts]] <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Cosmetic critical strike\">increased</span> if only one enemy is hit.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"0 at level 1, then +5 every level starting at level 10\" data-bot-values=\"0;5;10;15;20;25;30;35;40;45;50;55\" data-top-values=\"1;10;11;12;13;14;15;16;17;18;19;20\">0 – 55 (based on level)</span>[[Category:Debug]] (+ 80 / 115 / 150 / 185 / 220) <span style=\"color:orange; white-space:normal\">(+ 120% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 70% AP)</span></dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Isolated Damage Increase:'''</span></dt><dd>30 / 35 / 40 / 45 / 50%</dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Starts 22.5 units in front of Mordekaiser\">22.5 - 625</span>@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"90 at start, 150 at end.\">90 - 150</span>@@speed@@{{{speed}}}@@casttime@@0.<small>5</small>@@cost@@{{{cost}}}@@cooldown@@8 / 7 / 6 / 5 / 4@@targeting@@Direction@@damagetype@@Magic@@spellshield@@True@@projectile@@False@@notes@@\n* This ability always employs [[Quick cast]].\n* This ability will cast from wherever the caster is at the end of the cast time.\n* The ability will cast to wherever the caster's cursor was at the start of the cast time.\n** If '''Mordekaiser's''' location changes during the cast time, the visual effects of ''Obliterate'' will be divided into three sections: one forming toward the caster's cursor at the start of the cast, one forming toward the original cast direction, and one following '''Mordekaiser's''' facing direction. Only the first will portray the spell's effect accurately.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This is not intended. \">(bug)</span></sup>[https://youtu.be/77NJdwW2TPQ][[Category:Unexpected behaviours]]\n* Applies <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell damage\">[[File:Disintegrate.png|20px|link=Damage|An icon representing the keyword Ability damage]] [[:Damage|spell damage]]</span> if it hits one target and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Area damage\">[[File:Mega Inferno Bomb.png|20px|link=Damage|An icon representing the keyword Area damage]] [[:Damage|area damage]]</span> to multiple targets.\n* ''Obliterate's'' damage against isolated enemies at:\n** Rank 1: <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"104;110.5;117;123.5;130;136.5;143;149.5;156;162.5;169;175.5\" data-top-values=\"1;10;11;12;13;14;15;16;17;18;19;20\">104 – 175.<small>5</small> (based on level)</span>[[Category:Debug]] <span style=\"color:orange; white-space:normal\">(+ 156% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 91% AP)</span>\n** Rank 2: <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"155.25;162;168.75;175.5;182.25;189;195.75;202.5;209.25;216;222.75;229.5\" data-top-values=\"1;10;11;12;13;14;15;16;17;18;19;20\">155.<small>25</small> – 229.<small>5</small> (based on level)</span>[[Category:Debug]] <span style=\"color:orange; white-space:normal\">(+ 162% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 94.5% AP)</span>\n** Rank 3: <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"210;217;224;231;238;245;252;259;266;273;280;287\" data-top-values=\"1;10;11;12;13;14;15;16;17;18;19;20\">210 – 287 (based on level)</span>[[Category:Debug]] <span style=\"color:orange; white-space:normal\">(+ 168% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 98% AP)</span>\n** Rank 4: <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"268.25;275.5;282.75;290;297.25;304.5;311.75;319;326.25;333.5;340.75;348\" data-top-values=\"1;10;11;12;13;14;15;16;17;18;19;20\">268.<small>25</small> – 348 (based on level)</span>[[Category:Debug]] <span style=\"color:orange; white-space:normal\">(+ 174% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 101.5% AP)</span>\n** Rank 5: <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"330;337.5;345;352.5;360;367.5;375;382.5;390;397.5;405;412.5\" data-top-values=\"1;10;11;12;13;14;15;16;17;18;19;20\">330 – 412.<small>5</small> (based on level)</span>[[Category:Debug]] <span style=\"color:orange; white-space:normal\">(+ 180% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 105% AP)</span>@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1395197,
+                "revisions": [
+                  {
+                    "parentid": 4001627,
+                    "revid": 4016684,
+                    "timestamp": "2026-05-12T13:54:23Z"
+                  }
+                ],
+                "title": "Template:Data Mordekaiser/Obliterate"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4016684,
+      "timestamp": "2026-05-12T13:54:23Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "bd4f1d8e8781b575b9571b7cf92eb57b2ad9ba8ec77aa457f3b11cb65b38e9c7",
+    "fetchedAt": "2026-09-06T13:52:37.292Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Mordekaiser/Obliterate",
+    "revisionId": 4016684,
+    "sourceTimestamp": "2026-05-12T13:54:23Z"
+  }
+}

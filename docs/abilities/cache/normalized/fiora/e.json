@@ -1,0 +1,63 @@
+{
+  "asset": {
+    "key": "spell_fiora_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Bladework.png?1fcc5",
+    "sha1": "c128aecc51e8e63e42ef521cb8dacc326a59805e"
+  },
+  "champion": "Fiora",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_fiora_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Bladework.png?1fcc5",
+        "sha1": "c128aecc51e8e63e42ef521cb8dacc326a59805e"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "11 / 10 / 9 / 8 / 7",
+        "cost": "40",
+        "damagetype": "Physical",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Fiora''' empowers her next two [[basic attack]]s <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-attack\">[[File:On-attack icon.svg|20px|link=Attack_effects#On_Attacking|An icon representing the keyword On-attack]] [[:Attack_effects#On_Attacking|on-attack]]</span> within 4 seconds to gain <span style=\"white-space:nowrap\">[[File:Range icon.png|15px|link=Range]]&nbsp;25 '''bonus''' range</span> and <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">'''bonus''' attack speed</span></span>.",
+          "text": "Active: Fiora empowers her next two basic attacks on-attack within 4 seconds to gain &nbsp;25 bonus range and &nbsp;bonus attack speed."
+        },
+        "description2": {
+          "raw": "The first attack <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slows]]</span> the target by 30% for 1 second but cannot <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Critically strike\">[[File:Critical strike icon.png|20px|link=Critical strike|An icon representing the keyword Critical strike]] [[:Critical strike|critically strike]]</span>. The second attack will <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Critically strike\">[[File:Critical strike icon.png|20px|link=Critical strike|An icon representing the keyword Critical strike]] [[:Critical strike|critically strike]]</span> for <span style=\"white-space:nowrap\">[[File:Critical strike damage icon.png|15px|link=Critical strike]]&nbsp;<span style=\"color:\n#B4814C; white-space:normal\">'''modified''' critical damage</span></span>, including to <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Turrets\">[[File:Turret icon.png|20px|link=Turret|An icon representing the keyword Turret]] [[:Turret|structures]]</span>.",
+          "text": "The first attack slows the target by 30% for 1 second but cannot critically strike. The second attack will critically strike for &nbsp;modified critical damage, including to structures."
+        },
+        "description3": {
+          "raw": "''Bladework <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack reset\">[[File:Bladework.png|20px|link=Basic attack#Attack reset|An icon representing the keyword Basic attack reset]] [[:Basic attack#Attack reset|resets]]</span> '''Fiora's''' basic attack timer.''",
+          "text": "Bladework resets Fiora's basic attack timer."
+        },
+        "icon": "Bladework.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Attack Speed:'''</span></dt><dd>50 / 60 / 70 / 80 / 90%</dd></dl>",
+          "text": "Bonus Attack Speed:50 / 60 / 70 / 80 / 90%"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Critical damage:'''</span></dt><dd>160 / 170 / 180 / 190 / 200%</dd></dl>",
+          "text": "Critical damage:160 / 170 / 180 / 190 / 200%"
+        },
+        "name": "Bladework",
+        "notes": {
+          "raw": "* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will only block the slow from the first hit.\n* <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Sundered Sky\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Sundered Sky item.png|20xpx|border|link=Sundered Sky|An icon for the item Sundered Sky]]</span> <span style=\"white-space:normal;\">[[Sundered Sky|Sundered Sky's]]</span></span> Lightshield Strike's critical damage will override ''Bladework's'' if the resulting damage would be higher.\n** This does not account for any critical damage bonuses that may affect Lightshield Strike.\n* ''Bladework's'' first basic attack will slow even if it is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span> or <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|missed]]</span>.\n* Neither ''Bladework'' attack will deal damage if it is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span> or <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|missed]]</span>.",
+          "text": "Spell shield will only block the slow from the first hit.\nSundered Sky's Lightshield Strike's critical damage will override Bladework's if the resulting damage would be higher.\n* This does not account for any critical damage bonuses that may affect Lightshield Strike.\nBladework's first basic attack will slow even if it is dodged, blocked or missed.\nNeither Bladework attack will deal damage if it is dodged, blocked or missed."
+        },
+        "spellshield": false,
+        "targeting": "Auto"
+      },
+      "name": "Bladework"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "3eb710109006811729d6c5294a489b28c5a82409cba3a21f5ddaac7326fb2f33",
+    "fetchedAt": "2026-09-06T13:51:55.254Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Fiora/Bladework",
+    "revisionId": 3906658,
+    "sourceTimestamp": "2025-06-06T04:37:00Z"
+  }
+}

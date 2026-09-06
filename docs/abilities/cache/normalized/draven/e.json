@@ -1,0 +1,54 @@
+{
+  "asset": {
+    "key": "spell_draven_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Stand_Aside.png?69289",
+    "sha1": "c95de5f7c8e2ae9b905822c23cfeb521edf24991"
+  },
+  "champion": "Draven",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_draven_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Stand_Aside.png?69289",
+        "sha1": "c95de5f7c8e2ae9b905822c23cfeb521edf24991"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "16 / 15 / 14 / 13 / 12",
+        "cost": "70",
+        "damagetype": "Physical",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Draven''' throws a fan of axes in a line in the target direction, dealing <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> to enemies hit, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|knocking them aside]]</span>, though not through terrain, and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowing]]</span> them for 2 seconds.",
+          "text": "Active: Draven throws a fan of axes in a line in the target direction, dealing physical damage to enemies hit, knocking them aside, though not through terrain, and slowing them for 2 seconds."
+        },
+        "icon": "Stand Aside.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>75 / 110 / 145 / 180 / 215 <span style=\"color:orange; white-space:normal\">(+ 50% '''bonus''' AD)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>",
+          "text": "Physical Damage:75 / 110 / 145 / 180 / 215 (+ 50% bonus AD)Slow:20 / 25 / 30 / 35 / 40%"
+        },
+        "name": "Stand Aside",
+        "notes": {
+          "raw": "* This ability will cast from wherever the caster is at the end of the cast time.",
+          "text": "This ability will cast from wherever the caster is at the end of the cast time."
+        },
+        "projectile": true,
+        "speed": "1400",
+        "spellshield": true,
+        "targeting": "Direction",
+        "width": "260"
+      },
+      "name": "Stand Aside"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "9cf9be7de5ecc6babff0ddbd9a3656d3b7a599c949ff9643d92e0aba0f2ff50b",
+    "fetchedAt": "2026-09-06T13:51:42.198Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Draven/Stand_Aside",
+    "revisionId": 4034694,
+    "sourceTimestamp": "2026-06-23T21:12:57Z"
+  }
+}

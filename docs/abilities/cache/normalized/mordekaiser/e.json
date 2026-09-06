@@ -1,0 +1,63 @@
+{
+  "asset": {
+    "key": "spell_mordekaiser_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Death%27s_Grasp.png?6237d",
+    "sha1": "51d070045fdbbd87ecf89688ca04d4307194f5ab"
+  },
+  "champion": "Mordekaiser",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_mordekaiser_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Death%27s_Grasp.png?6237d",
+        "sha1": "51d070045fdbbd87ecf89688ca04d4307194f5ab"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "16 / 14 / 12 / 10 / 8",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Passive:'''</span> '''Mordekaiser''' gains <span style=\"white-space:nowrap\">[[File:Magic penetration icon.svg|15px|link=Magic penetration]]&nbsp;<span style=\"color:violet; white-space:normal\">magic penetration</span></span>.",
+          "text": "Passive: Mordekaiser gains &nbsp;magic penetration."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Mordekaiser''' summons a claw in the target direction that grants <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area. After 0.<small>5</small> seconds, it deals <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies within and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|pulls]]</span> them over 250 units.",
+          "text": "Active: Mordekaiser summons a claw in the target direction that grants sight of the area. After 0.5 seconds, it deals magic damage to enemies within and pulls them over 250 units."
+        },
+        "effectradius": "800 • 200",
+        "icon": "false",
+        "icon2": "Death's Grasp.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Penetration:'''</span></dt><dd>5 / 7.<small>5</small> / 10 / 12.<small>5</small> / 15%</dd></dl>",
+          "text": "Magic Penetration:5 / 7.5 / 10 / 12.5 / 15%"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>60 / 80 / 100 / 120 / 140 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 45% AP)</span></dd></dl>",
+          "text": "Magic Damage:60 / 80 / 100 / 120 / 140 (+ 45% AP)"
+        },
+        "name": "Death's Grasp",
+        "notes": {
+          "raw": "* ''Death's Grasp'' will still <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|pull]]</span> even if '''Mordekaiser''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Death\">[[File:Death icon.svg|20px|link=Death|An icon representing the keyword Death]] [[:Death|dies]]</span>.\n* ''Death's Grasp'' will only be visible from the enemy team's perspective if it is at least 300 units into their <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span>.\n* This ability will cast from wherever the caster is at the start of the cast time.",
+          "text": "Death's Grasp will still pull even if Mordekaiser dies.\nDeath's Grasp will only be visible from the enemy team's perspective if it is at least 300 units into their sight.\nThis ability will cast from wherever the caster is at the start of the cast time."
+        },
+        "projectile": false,
+        "speed": "3000",
+        "spellshield": true,
+        "targeting": "Location",
+        "width": "200"
+      },
+      "name": "Death's Grasp"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "f0625be297541d2a4289a3d5bd001f4ff144be2b766fedeed65884ce79156621",
+    "fetchedAt": "2026-09-06T13:52:37.292Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Mordekaiser/Death's_Grasp",
+    "revisionId": 4058991,
+    "sourceTimestamp": "2026-09-06T05:18:55Z"
+  }
+}

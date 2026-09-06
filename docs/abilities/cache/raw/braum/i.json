@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Braum/Concussive Blows",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Concussive Blows@@icon@@Concussive Blows.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Innate:'''</span> '''Braum's''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attacks\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attacks]]</span> and ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Braum\" data-ability=\"Winter&#39;s Bite\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Braum Winter's Bite.png|20xpx|border|link=Braum#Winter's Bite|An icon for Braum's ability Winter's Bite]]</span> <span style=\"white-space:normal;\">[[Braum#Winter's Bite|Winter's Bite]]</span></span>'' each apply a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stack\">[[File:Stack icon.png|20px|link=Stack|An icon representing the keyword Stack]] [[:Stack|stack]]</span> of ''Concussive Blows'' to their target for 4 seconds, refreshing on subsequent applications and stacking up to 4 times. Once the first stack has been applied, any allied <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion's]]</span> basic attack applies an additional stack to the target <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span>.@@description2@@The fourth stack against a target consumes them all to deal <span style=\"color:\n#00B0F0; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-top-label=\"level\" data-start=\"26;\" data-finish=\"196;\" data-top-fill=\"18\" data-bot-values=\"26;36;46;56;66;76;86;96;106;116;126;136;146;156;166;176;186;196;206;216;226;236;246;256;266;276;286;296;306;316;326;336;346;356;366;376;386;396;406;416;426|displayMaxColumn=18\">26 – 196 (based on his level)</span></span> <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stun\">[[File:Stun icon.png|20px|link=Stun|An icon representing the keyword Stun]] [[:Stun|stun]]</span> them for <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-top-label=\"level\" data-start=\"1.25;1\" data-finish=\"1.75;13\" data-top-fill=\"3\" data-bot-values=\"1.25;1.5;1.75\" data-top-values=\"1;7;13\">1.<small>25</small> – 1.<small>75</small> (based on his level)</span> seconds.@@description3@@This effect cannot apply to the same target more than once every few seconds. During this immunity period, affected targets take<span id=\"container\" class=\"container\" style=\"cursor:help;\"><span class=\"flipText1 active\">「&nbsp;<span style=\"color:\n#00B0F0; white-space:normal\">'''bonus''' magic damage</span> equal to 40% of the trigger damage&nbsp;」</span><span class=\"flipText2\">「&nbsp;<span style=\"color:\n#00B0F0; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"10.4;\" data-finish=\"78.4;\" data-top-fill=\"18\" data-bot-values=\"10.4;14.4;18.4;22.4;26.4;30.4;34.4;38.4;42.4;46.4;50.4;54.4;58.4;62.4;66.4;70.4;74.4;78.4;82.4;86.4;90.4;94.4;98.4;102.4;106.4;110.4;114.4;118.4;122.4;126.4;130.4;134.4;138.4;142.4;146.4;150.4;154.4;158.4;162.4;166.4;170.4|displayMaxColumn=18\">10.<small>4</small> – 78.<small>4</small> (based on level)</span> '''bonus''' magic damage</span>&nbsp;」</span></span>from '''Braum's''' basic attacks.@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@{{{leveling}}}@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@{{{cast time}}}@@cost@@{{{cost}}}@@cooldown@@{{{cooldown}}}@@targeting@@Passive@@damagetype@@Magic@@spellshield@@True@@projectile@@{{{projectile}}}@@notes@@\n* ''Concussive Blows'' won't be applied if the attack is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span> or <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span> or if the attack <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|misses]]</span>.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1306896,
+                "revisions": [
+                  {
+                    "parentid": 3985278,
+                    "revid": 4038222,
+                    "timestamp": "2026-06-30T07:37:06Z"
+                  }
+                ],
+                "title": "Template:Data Braum/Concussive Blows"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4038222,
+      "timestamp": "2026-06-30T07:37:06Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "a120a78e384a6cd04ff719b77c4f78ccb2185f5e9405c1126f67e687b97cc673",
+    "fetchedAt": "2026-09-06T13:51:31.384Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Braum/Concussive_Blows",
+    "revisionId": 4038222,
+    "sourceTimestamp": "2026-06-30T07:37:06Z"
+  }
+}

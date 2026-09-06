@@ -1,0 +1,108 @@
+{
+  "asset": {
+    "key": "spell_akali_r",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Perfect_Execution.png?7d0a9",
+    "sha1": "def983d6937fbb4623002d2e4765dd6a23530b7b"
+  },
+  "champion": "Akali",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_akali_r",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Perfect_Execution.png?7d0a9",
+        "sha1": "def983d6937fbb4623002d2e4765dd6a23530b7b"
+      },
+      "fields": {
+        "casttime": "0.25 • None",
+        "cooldown": "120 / 105 / 90 / 75 / 60",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Akali''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> 750 units in the direction of the target enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span>, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies she passes through. If this hits an enemy, she flips over them to continue the dash up to the normal range but for at least another 150 units.",
+          "text": "Active: Akali dashes 750 units in the direction of the target enemy champion, dealing magic damage to enemies she passes through. If this hits an enemy, she flips over them to continue the dash up to the normal range but for at least another 150 units."
+        },
+        "description2": {
+          "raw": "''Perfect Execution'' can be recast after a 2.<small>5</small>-second <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Unaffected by ability haste\">static cooldown</span> within 10 seconds of the first activation.",
+          "text": "Perfect Execution can be recast after a 2.5-second static cooldown within 10 seconds of the first activation."
+        },
+        "description3": {
+          "raw": "<span class=\"template_sbc\">'''Recast:'''</span> '''Akali''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Estimated\">800</span> units in the target direction, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies she passes through, increased by <span style=\"color:\n#21B053; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-top-label=\"target's missing health\" data-displayformula=\"2.86% per 1% of target's '''missing''' health, capped at 70% '''missing''' health\" data-bot-values=\"0;20;40;60;80;100;120;140;160;180;200\" data-top-values=\"0;7;14;21;28;35;42;49;56;63;70\" data-bot-key=\"%\" data-top-key=\"%\">0% – 200% (based on target's '''missing''' health)</span>[[Category:Debug]]</span>.",
+          "text": "Recast: Akali dashes 800 units in the target direction, dealing magic damage to enemies she passes through, increased by 0% – 200% (based on target's missing health)Category:Debug."
+        },
+        "icon": "Perfect Execution.png",
+        "icon3": "Perfect Execution 2.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>110 / 165 / 220 / 275 / 330 <span style=\"color:orange; white-space:normal\">(+ 50% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 30% AP)</span></dd></dl>",
+          "text": "Magic Damage:110 / 165 / 220 / 275 / 330 (+ 50% bonus AD) (+ 30% AP)"
+        },
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Minimum Magic Damage:'''</span></dt><dd>70 / 105 / 140 / 175 / 210 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 30% AP)</span></dd><dt><span class=\"template_lc\">'''Maximum Magic Damage:'''</span></dt><dd>210 / 315 / 420 / 525 / 630 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Minimum Magic Damage:70 / 105 / 140 / 175 / 210 (+ 30% AP)Maximum Magic Damage:210 / 315 / 420 / 525 / 630 (+ 90% AP)"
+        },
+        "name": "Perfect Execution",
+        "notes": {
+          "raw": "*Both casts count as ability activations for the purposes of on-cast effects such as <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spellblade\">[[File:Sheen item.png|20px|link=Named item effect#Spellblade|An icon representing the keyword Spellblade]] [[:Named item effect#Spellblade|Spellblade]]</span> and triggering <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Kassadin\" data-ability=\"Force Pulse\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Kassadin Force Pulse.png|20xpx|border|link=Kassadin#Force Pulse|An icon for Kassadin's ability Force Pulse]]</span> <span style=\"white-space:normal;\">[[Kassadin#Force Pulse|Force Pulse's]]</span></span> passive.\n* With the first cast, '''Akali''' can dash up to a maximum of 900 units if the first enemy she hit was at the maximum dash range.\n* Casting <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Flash\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Flash.png|20xpx|border|link=Flash|An icon representing Flash]]</span> <span style=\"white-space:normal;\">[[Flash]]</span></span> during either dashes will interrupt them, but '''Akali''' will deal damage to any enemies she comes in contact with at the new location.\n** Enemies already hit by either of ''Perfect Execution's'' casts cannot be affected more than once by the same cast.\n* <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Akali\" data-ability=\"Shuriken Flip\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Akali Shuriken Flip.png|20xpx|border|link=Akali#Shuriken Flip|An icon for Akali's ability Shuriken Flip]]</span> <span style=\"white-space:normal;\">[[Akali#Shuriken Flip|Shuriken Flip]]</span></span> can be used during the initial dash if it is cast after ''Perfect Execution's'' cast time finishes.\n* This ability's damage is calculated based on the caster's stats at the start of cast and does not change dynamically.",
+          "text": "Both casts count as ability activations for the purposes of on-cast effects such as Spellblade and triggering Force Pulse's passive.\nWith the first cast, Akali can dash up to a maximum of 900 units if the first enemy she hit was at the maximum dash range.\nCasting Flash during either dashes will interrupt them, but Akali will deal damage to any enemies she comes in contact with at the new location.\n* Enemies already hit by either of Perfect Execution's casts cannot be affected more than once by the same cast.\nShuriken Flip can be used during the initial dash if it is cast after Perfect Execution's cast time finishes.\nThis ability's damage is calculated based on the caster's stats at the start of cast and does not change dynamically."
+        },
+        "speed": "1500 • 3000",
+        "spellshield": true,
+        "targeting": "Unit • Direction"
+      },
+      "name": "Perfect Execution"
+    },
+    {
+      "asset": {
+        "key": "spell_akali_r2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Perfect_Execution_2.png?fed02",
+        "sha1": "d079a0b2bfd8ac81702d2c9f5b1eb3a283ac8b4c"
+      },
+      "fields": {
+        "casttime": "0.25 • None",
+        "cooldown": "120 / 105 / 90 / 75 / 60",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Akali''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> 750 units in the direction of the target enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span>, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies she passes through. If this hits an enemy, she flips over them to continue the dash up to the normal range but for at least another 150 units.",
+          "text": "Active: Akali dashes 750 units in the direction of the target enemy champion, dealing magic damage to enemies she passes through. If this hits an enemy, she flips over them to continue the dash up to the normal range but for at least another 150 units."
+        },
+        "description2": {
+          "raw": "''Perfect Execution'' can be recast after a 2.<small>5</small>-second <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Unaffected by ability haste\">static cooldown</span> within 10 seconds of the first activation.",
+          "text": "Perfect Execution can be recast after a 2.5-second static cooldown within 10 seconds of the first activation."
+        },
+        "description3": {
+          "raw": "<span class=\"template_sbc\">'''Recast:'''</span> '''Akali''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Estimated\">800</span> units in the target direction, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies she passes through, increased by <span style=\"color:\n#21B053; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-top-label=\"target's missing health\" data-displayformula=\"2.86% per 1% of target's '''missing''' health, capped at 70% '''missing''' health\" data-bot-values=\"0;20;40;60;80;100;120;140;160;180;200\" data-top-values=\"0;7;14;21;28;35;42;49;56;63;70\" data-bot-key=\"%\" data-top-key=\"%\">0% – 200% (based on target's '''missing''' health)</span>[[Category:Debug]]</span>.",
+          "text": "Recast: Akali dashes 800 units in the target direction, dealing magic damage to enemies she passes through, increased by 0% – 200% (based on target's missing health)Category:Debug."
+        },
+        "icon": "Perfect Execution.png",
+        "icon3": "Perfect Execution 2.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>110 / 165 / 220 / 275 / 330 <span style=\"color:orange; white-space:normal\">(+ 50% '''bonus''' AD)</span> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 30% AP)</span></dd></dl>",
+          "text": "Magic Damage:110 / 165 / 220 / 275 / 330 (+ 50% bonus AD) (+ 30% AP)"
+        },
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Minimum Magic Damage:'''</span></dt><dd>70 / 105 / 140 / 175 / 210 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 30% AP)</span></dd><dt><span class=\"template_lc\">'''Maximum Magic Damage:'''</span></dt><dd>210 / 315 / 420 / 525 / 630 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Minimum Magic Damage:70 / 105 / 140 / 175 / 210 (+ 30% AP)Maximum Magic Damage:210 / 315 / 420 / 525 / 630 (+ 90% AP)"
+        },
+        "name": "Perfect Execution",
+        "notes": {
+          "raw": "*Both casts count as ability activations for the purposes of on-cast effects such as <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spellblade\">[[File:Sheen item.png|20px|link=Named item effect#Spellblade|An icon representing the keyword Spellblade]] [[:Named item effect#Spellblade|Spellblade]]</span> and triggering <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Kassadin\" data-ability=\"Force Pulse\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Kassadin Force Pulse.png|20xpx|border|link=Kassadin#Force Pulse|An icon for Kassadin's ability Force Pulse]]</span> <span style=\"white-space:normal;\">[[Kassadin#Force Pulse|Force Pulse's]]</span></span> passive.\n* With the first cast, '''Akali''' can dash up to a maximum of 900 units if the first enemy she hit was at the maximum dash range.\n* Casting <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Flash\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Flash.png|20xpx|border|link=Flash|An icon representing Flash]]</span> <span style=\"white-space:normal;\">[[Flash]]</span></span> during either dashes will interrupt them, but '''Akali''' will deal damage to any enemies she comes in contact with at the new location.\n** Enemies already hit by either of ''Perfect Execution's'' casts cannot be affected more than once by the same cast.\n* <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Akali\" data-ability=\"Shuriken Flip\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Akali Shuriken Flip.png|20xpx|border|link=Akali#Shuriken Flip|An icon for Akali's ability Shuriken Flip]]</span> <span style=\"white-space:normal;\">[[Akali#Shuriken Flip|Shuriken Flip]]</span></span> can be used during the initial dash if it is cast after ''Perfect Execution's'' cast time finishes.\n* This ability's damage is calculated based on the caster's stats at the start of cast and does not change dynamically.",
+          "text": "Both casts count as ability activations for the purposes of on-cast effects such as Spellblade and triggering Force Pulse's passive.\nWith the first cast, Akali can dash up to a maximum of 900 units if the first enemy she hit was at the maximum dash range.\nCasting Flash during either dashes will interrupt them, but Akali will deal damage to any enemies she comes in contact with at the new location.\n* Enemies already hit by either of Perfect Execution's casts cannot be affected more than once by the same cast.\nShuriken Flip can be used during the initial dash if it is cast after Perfect Execution's cast time finishes.\nThis ability's damage is calculated based on the caster's stats at the start of cast and does not change dynamically."
+        },
+        "speed": "1500 • 3000",
+        "spellshield": true,
+        "targeting": "Unit • Direction"
+      },
+      "name": "Perfect Execution 2"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "R",
+  "source": {
+    "contentHash": "5cf6df472f315055663f8f0300b34c63c55612dc16ddaa15dbf7d91c814f226b",
+    "fetchedAt": "2026-09-06T13:51:16.204Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Akali/Perfect_Execution",
+    "revisionId": 4011498,
+    "sourceTimestamp": "2026-04-22T14:24:17Z"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Lucian/Piercing Light",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Piercing Light@@icon@@Piercing Light.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' fires a laser in a line in the direction of the target enemy that deals <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> to enemies hit.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>80 / 115 / 150 / 185 / 220 <span style=\"color:orange; white-space:normal\">(+ 100% '''bonus''' AD)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> 1000@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> 120@@speed@@{{{speed}}}@@casttime@@<span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"0.4;\" data-finish=\"0.25;\" data-top-fill=\"18\" data-bot-values=\"0.4;0.39;0.38;0.37;0.36;0.36;0.35;0.34;0.33;0.32;0.31;0.3;0.29;0.29;0.28;0.27;0.26;0.25\">0.<small>4</small> – 0.<small>25</small> (based on level)</span>@@cost@@48 / 56 / 64 / 72 / 80@@cooldown@@9 / 8 / 7 / 6 / 5@@targeting@@Unit@@damagetype@@Physical@@spellshield@@True@@projectile@@False@@notes@@\n* ''Piercing Light'' will attempt to lead the target if it is moving but does not adjust further during the cast time (enemies can dodge the laser if they change their position by a sufficient amount during the cast time).\n* '''Lucian''' can buffer <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Ardent Blaze\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Ardent Blaze.png|20xpx|border|link=Lucian#Ardent Blaze|An icon for Lucian's ability Ardent Blaze]]</span> <span style=\"white-space:normal;\">[[Lucian#Ardent Blaze|Ardent Blaze]]</span></span> or <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"The Culling\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian The Culling.png|20xpx|border|link=Lucian#The Culling|An icon for Lucian's ability The Culling]]</span> <span style=\"white-space:normal;\">[[Lucian#The Culling|The Culling]]</span></span> during the cast time. <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Relentless Pursuit\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Relentless Pursuit.png|20xpx|border|link=Lucian#Relentless Pursuit|An icon for Lucian's ability Relentless Pursuit]]</span> <span style=\"white-space:normal;\">[[Lucian#Relentless Pursuit|Relentless Pursuit]]</span></span> is locked out.\n** This is why '''Lucian''' can use them early if the cast time prematurely ends.\n* ''Piercing Light's cast time ends prematurely if the initial target dies, allowing '''Lucian''' to attack and move freely, or to immediately begin casting either <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Ardent Blaze\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Ardent Blaze.png|20xpx|border|link=Lucian#Ardent Blaze|An icon for Lucian's ability Ardent Blaze]]</span> <span style=\"white-space:normal;\">[[Lucian#Ardent Blaze|Ardent Blaze]]</span></span> or <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"The Culling\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian The Culling.png|20xpx|border|link=Lucian#The Culling|An icon for Lucian's ability The Culling]]</span> <span style=\"white-space:normal;\">[[Lucian#The Culling|The Culling]]</span></span>.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This does not match expectations. \">(unexpected)</span></sup>''@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1308176,
+                "revisions": [
+                  {
+                    "parentid": 3885435,
+                    "revid": 3982579,
+                    "timestamp": "2026-01-09T09:22:29Z"
+                  }
+                ],
+                "title": "Template:Data Lucian/Piercing Light"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 3982579,
+      "timestamp": "2026-01-09T09:22:29Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "19478f35faa4125a7b0c0f3b8e655325cea731254189721916bbde1c701ae9dc",
+    "fetchedAt": "2026-09-06T13:52:21.444Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Lucian/Piercing_Light",
+    "revisionId": 3982579,
+    "sourceTimestamp": "2026-01-09T09:22:29Z"
+  }
+}

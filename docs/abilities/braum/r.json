@@ -1,0 +1,72 @@
+{
+  "asset": {
+    "key": "spell_braum_r",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Glacial_Fissure.png?0a5eb",
+    "sha1": "86f5515322ea8c607bbaceb90b7f4a27bf62c45c"
+  },
+  "champion": "Braum",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_braum_r",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Glacial_Fissure.png?0a5eb",
+        "sha1": "86f5515322ea8c607bbaceb90b7f4a27bf62c45c"
+      },
+      "fields": {
+        "casttime": "0.5",
+        "cooldown": "130 / 122.5 / 115 / 107.5 / 100",
+        "cost": "100",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Braum''' leaps into the air and slams his shield into the ground, creating a fissure from the impact that travels forth in the target direction, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies within its path as well as those around '''Braum'''.",
+          "text": "Active: Braum leaps into the air and slams his shield into the ground, creating a fissure from the impact that travels forth in the target direction, dealing magic damage to enemies within its path as well as those around Braum."
+        },
+        "description2": {
+          "raw": "The first target hit is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|knocked up]]</span> for at least 0.<small>6</small> seconds, increased if they are further away from '''Braum'''. All other enemies hit are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|knocked up]]</span> for 0.<small>6</small> seconds.",
+          "text": "The first target hit is knocked up for at least 0.6 seconds, increased if they are further away from Braum. All other enemies hit are knocked up for 0.6 seconds."
+        },
+        "description3": {
+          "raw": "A field of ice is created along the fissure's path, lasting for 4 seconds and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowing]]</span> enemies within the area every 0.<small>25</small> seconds. The field disappears after the duration ends in the same order and speed it was created with.",
+          "text": "A field of ice is created along the fissure's path, lasting for 4 seconds and slowing enemies within the area every 0.25 seconds. The field disappears after the duration ends in the same order and speed it was created with."
+        },
+        "effectradius": "300 • 60&nbsp;&times;&nbsp;10",
+        "icon": "Glacial Fissure.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>150 / 200 / 250 / 300 / 350 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl>",
+          "text": "Magic Damage:150 / 200 / 250 / 300 / 350 (+ 60% AP)"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Maximum Knock up Duration:'''</span></dt><dd>1 / 1.<small>25</small> / 1.<small>5</small> / 1.<small>75</small> / 2 seconds</dd></dl>",
+          "text": "Maximum Knock up Duration:1 / 1.25 / 1.5 / 1.75 / 2 seconds"
+        },
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>40 / 45 / 50 / 55 / 60%</dd></dl>",
+          "text": "Slow:40 / 45 / 50 / 55 / 60%"
+        },
+        "name": "Glacial Fissure",
+        "notes": {
+          "raw": "* This ability will cast from wherever the caster is at the end of the cast time.\n\n{| class=\"article-table\" style=\"font-size:small; width:475px; padding: 1em; box-shadow: #0a1827 0px 0px 25px 15px;\"\n! colspan=\"2\"| Type\n| style=\"width:275px;\" | Cast time\n|-\n! colspan=\"2\"| Attacking\n| Disabled\n|-\n! colspan=\"2\" | Abilities\n| Disabled\n|-\n! colspan=\"2\" | Movement\n| Disabled\n|-\n! rowspan=\"3\" | Items\n! Usable\n| <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Shurelya&#39;s Battlesong\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Shurelya's Battlesong item.png|20xpx|border|link=Shurelya's Battlesong|An icon for the item Shurelya's Battlesong]]</span> <span style=\"white-space:normal;\">[[Shurelya's Battlesong]]</span></span> <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Youmuu&#39;s Ghostblade\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Youmuu's Ghostblade item.png|20xpx|border|link=Youmuu's Ghostblade|An icon for the item Youmuu's Ghostblade]]</span> <span style=\"white-space:normal;\">[[Youmuu's Ghostblade]]</span></span> <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Randuin&#39;s Omen\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Randuin's Omen item.png|20xpx|border|link=Randuin's Omen|An icon for the item Randuin's Omen]]</span> <span style=\"white-space:normal;\">[[Randuin's Omen]]</span></span>\n|-\n! Disabled\n| All the other item-actives are disabled\n|-\n! Interrupted by\n| N/A\n|-\n\n! colspan=\"2\" | Consumables\n| Usable\n|-\n! rowspan=\"3\" | Spells\n! Usable\n| <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Barrier\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Barrier.png|20xpx|border|link=Barrier|An icon representing Barrier]]</span> <span style=\"white-space:normal;\">[[Barrier]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Clarity\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Clarity.png|20xpx|border|link=Clarity|An icon representing Clarity]]</span> <span style=\"white-space:normal;\">[[Clarity]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Cleanse\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Cleanse.png|20xpx|border|link=Cleanse|An icon representing Cleanse]]</span> <span style=\"white-space:normal;\">[[Cleanse]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Exhaust\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Exhaust.png|20xpx|border|link=Exhaust|An icon representing Exhaust]]</span> <span style=\"white-space:normal;\">[[Exhaust]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Ghost\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Ghost.png|20xpx|border|link=Ghost|An icon representing Ghost]]</span> <span style=\"white-space:normal;\">[[Ghost]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Heal\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Heal.png|20xpx|border|link=Heal|An icon representing Heal]]</span> <span style=\"white-space:normal;\">[[Heal]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Ignite\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Ignite.png|20xpx|border|link=Ignite|An icon representing Ignite]]</span> <span style=\"white-space:normal;\">[[Ignite]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Smite\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Smite.png|20xpx|border|link=Smite|An icon representing Smite]]</span> <span style=\"white-space:normal;\">[[Smite]]</span></span>\n|-\n! Disabled\n| <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Flash\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Flash.png|20xpx|border|link=Flash|An icon representing Flash]]</span> <span style=\"white-space:normal;\">[[Flash]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Teleport\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Teleport.png|20xpx|border|link=Teleport|An icon representing Teleport]]</span> <span style=\"white-space:normal;\">[[Teleport]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Recall\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Recall.png|20xpx|border|link=Recall|An icon representing Recall]]</span> <span style=\"white-space:normal;\">[[Recall]]</span></span> <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Hexflash\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Hexflash.png|20xpx|border|link=Hextech Flashtraption#Hexflash|An icon representing Hextech Flashtraption#Hexflash]]</span> <span style=\"white-space:normal;\">[[Hextech Flashtraption#Hexflash|Hexflash]]</span></span>\n|-\n! Interrupted by\n| N/A\n|-\n\n! colspan=\"2\" | Interrupted by\n| <ul style=\"margin-left:1em;\"><li>Death, unless protected by <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Resurrection\">[[File:Revival icon.png|20px|link=Death#Ways to prevent death when reaching zero health|An icon representing the keyword Resurrection]] [[:Death#Ways to prevent death when reaching zero health|Resurrection]]</span></li></ul>\n|}",
+          "text": "This ability will cast from wherever the caster is at the end of the cast time.\n{| class=\"article-table\" style=\"font-size:small; width:475px; padding: 1em; box-shadow: #0a1827 0px 0px 25px 15px;\"\n! colspan=\"2\"| Type\n| style=\"width:275px;\" | Cast time\n|-\n! colspan=\"2\"| Attacking\n| Disabled\n|-\n! colspan=\"2\" | Abilities\n| Disabled\n|-\n! colspan=\"2\" | Movement\n| Disabled\n|-\n! rowspan=\"3\" | Items\n! Usable\n| Shurelya's Battlesong Youmuu's Ghostblade Randuin's Omen\n|-\n! Disabled\n| All the other item-actives are disabled\n|-\n! Interrupted by\n| N/A\n|-\n! colspan=\"2\" | Consumables\n| Usable\n|-\n! rowspan=\"3\" | Spells\n! Usable\n| Barrier Clarity Cleanse Exhaust Ghost Heal Ignite Smite\n|-\n! Disabled\n| Flash Teleport Recall Hexflash\n|-\n! Interrupted by\n| N/A\n|-\n! colspan=\"2\" | Interrupted by\n| Death, unless protected by Resurrection\n|}"
+        },
+        "projectile": true,
+        "range": "1200 • 1200",
+        "speed": "1400",
+        "spellshield": true,
+        "targeting": "Direction",
+        "width": "230 • 170"
+      },
+      "name": "Glacial Fissure"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "R",
+  "source": {
+    "contentHash": "c15375784a6a3fff9a0cea9f5fd4b0ab9c34e8c29879c670320d6ab4d0099f97",
+    "fetchedAt": "2026-09-06T13:51:31.384Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Braum/Glacial_Fissure",
+    "revisionId": 4007580,
+    "sourceTimestamp": "2026-04-12T06:44:16Z"
+  }
+}

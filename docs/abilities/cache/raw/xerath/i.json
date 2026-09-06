@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Xerath/Mana Surge",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Mana Surge@@icon@@Mana Surge.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Innate:'''</span> Periodically, '''Xerath''' empowers his next <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attack]]</span> <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"On-hit\">[[File:On-hit icon.png|20px|link=Attack_effects#On_Hitting|An icon representing the keyword On-hit]] [[:Attack_effects#On_Hitting|on-hit]]</span> to restore <span style=\"white-space:nowrap\">[[File:Mana icon.svg|15px|link=Mana]]&nbsp;<span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help; color:#0099CC;\" data-displayformula=\"27 + 3 at each level up to 3, then + 6 at each level up to 6, then + 9 at each level up to 10, 12 at each level up to 15, then + 15 at each level\" data-bot-values=\"30;33;36;42;48;54;63;72;81;90;102;114;126;138;150;165;180;195;210;225\">30 – 225 (based on level)</span>[[Category:Debug]] <span style=\"color:\n#0099CC; white-space:normal\">mana</span></span>, doubled to <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help; color:#0099CC;\" data-displayformula=\"54 + 6 at each level up to 3, then + 12 at each level up to 6, then + 18 at each level up to 10, then + 24 at each level up to 15, then + 30 at each level\" data-bot-values=\"60;66;72;84;96;108;126;144;162;180;204;228;252;276;300;330;360;390;420;450\">60 – 450 (based on level)</span>[[Category:Debug]] against enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champions\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champions]]</span>.@@description2@@''Mana Surge's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;cooldown</span> is reduced by 3.<small>5</small> seconds whenever '''Xerath''' kills an enemy.@@description3@@''Mana Surge does not trigger if '''Xerath''' would restore above <span style=\"color:\n#0099CC; white-space:normal\">his '''maximum''' mana</span>.''@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@{{{leveling}}}@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@{{{cast time}}}@@cost@@{{{cost}}}@@cooldown@@{{{cooldown}}}@@targeting@@Passive@@damagetype@@{{{damagetype}}}@@spellshield@@{{{spellshield}}}@@projectile@@{{{projectile}}}@@notes@@\n* ''Mana Surge'' will trigger even if the attack is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blocked\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, but not if it misses due to <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blind]]</span>.\n* The empowered attack will trigger against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Structures\">[[File:Structure icon.png|20px|link=Category:Structure|An icon representing the keyword Structure]] [[:Category:Structure|structures]]</span>.\n* <span style=\"color:red; font-family:math; font-weight:bold; font-size:1em;\" title=\"Pending for test\"><span class=\"fas fa-vial\"></span>PENDING FOR TEST:</span>: ''Mana Surge's '' interactions with <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodging]]</span> effects.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1309311,
+                "revisions": [
+                  {
+                    "parentid": 3986752,
+                    "revid": 3986753,
+                    "timestamp": "2026-01-23T03:41:50Z"
+                  }
+                ],
+                "title": "Template:Data Xerath/Mana Surge"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 3986753,
+      "timestamp": "2026-01-23T03:41:50Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "3e123462ab84e9fef12aaae210e7f0f4f9e477690d02f4c78b495d6b655d2ad9",
+    "fetchedAt": "2026-09-06T13:52:50.875Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Xerath/Mana_Surge",
+    "revisionId": 3986753,
+    "sourceTimestamp": "2026-01-23T03:41:50Z"
+  }
+}

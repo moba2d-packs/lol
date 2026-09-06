@@ -1,0 +1,96 @@
+{
+  "asset": {
+    "key": "spell_mordekaiser_w",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Indestructible.png?a5722",
+    "sha1": "eee35c515e75add377d51aef9520efae34438751"
+  },
+  "champion": "Mordekaiser",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_mordekaiser_w",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Indestructible.png?a5722",
+        "sha1": "eee35c515e75add377d51aef9520efae34438751"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "12 / 11 / 10 / 9 / 8",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Passive:'''</span> '''Mordekaiser''' stores 45% of the <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage calculated after modifiers\">post-mitigation</span> damage he deals and 7.<small>5</small>% of the <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage calculated before modifiers\">pre-mitigation</span> damage he takes,<span id=\"container\" class=\"container\" style=\"cursor:help;\"><span class=\"flipText1 active\">「&nbsp;reduced by 75% for non-champion sources,&nbsp;」</span><span class=\"flipText2\">「&nbsp;reduced to 11.<small>25</small>% of damage dealt and 1.<small>875</small>% of damage taken for non-champion sources,&nbsp;」</span></span>as ''Potential Shield'' on his secondary resource bar, up to <span style=\"white-space:nowrap\">[[File:Health icon.png|15px|link=Health]]&nbsp;<span style=\"color:\n#21B053; white-space:normal\">30% of his '''maximum''' health</span></span>. The ''Potential Shield'' decays by <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"8;\" data-finish=\"25;\" data-top-fill=\"18\" data-bot-values=\"8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25\">8 – 25 (based on level)</span> every second after not dealing or taking damage for 1 second. While ''Indestructible'' is not on cooldown, the ''Potential Shield'' will not decay below a minimum of <span style=\"color:\n#21B053; white-space:normal\">5% of his '''maximum''' health</span>, and it will be set to that amount when it comes off cooldown if it was previously below it.",
+          "text": "Passive: Mordekaiser stores 45% of the post-mitigation damage he deals and 7.5% of the pre-mitigation damage he takes,「&nbsp;reduced by 75% for non-champion sources,&nbsp;」「&nbsp;reduced to 11.25% of damage dealt and 1.875% of damage taken for non-champion sources,&nbsp;」as Potential Shield on his secondary resource bar, up to &nbsp;30% of his maximum health. The Potential Shield decays by 8 – 25 (based on level) every second after not dealing or taking damage for 1 second. While Indestructible is not on cooldown, the Potential Shield will not decay below a minimum of 5% of his maximum health, and it will be set to that amount when it comes off cooldown if it was previously below it."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Mordekaiser''' consumes his ''Potential Shield'' to grant himself a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Shield\">[[File:Hybrid resistances icon.png|20px|link=Shield|An icon representing the keyword Shield]] [[:Shield|shield]]</span> for the same amount for 4 seconds. The shield decays exponentially over the duration. ''Indestructible'' can be recast after 0.<small>5</small> seconds while the shield is active.",
+          "text": "Active: Mordekaiser consumes his Potential Shield to grant himself a shield for the same amount for 4 seconds. The shield decays exponentially over the duration. Indestructible can be recast after 0.5 seconds while the shield is active."
+        },
+        "description3": {
+          "raw": "<span class=\"template_sbc\">'''Recast:'''</span> '''Mordekaiser''' consumes the remaining shield, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Healing\">[[File:Heal power icon.svg|20px|link=Healing|An icon representing the keyword Heal]] [[:Healing|healing]]</span> for a portion of the amount.",
+          "text": "Recast: Mordekaiser consumes the remaining shield, healing for a portion of the amount."
+        },
+        "icon": "false",
+        "icon2": "Indestructible.png",
+        "icon3": "Indestructible 2.png",
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Shield to Healing:'''</span></dt><dd>35 / 37.<small>5</small> / 40 / 42.<small>5</small> / 45%</dd></dl>",
+          "text": "Shield to Healing:35 / 37.5 / 40 / 42.5 / 45%"
+        },
+        "name": "Indestructible",
+        "notes": {
+          "raw": "* Both casts count as ability activations for the purposes of on-cast effects such as <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spellblade\">[[File:Sheen item.png|20px|link=Named item effect#Spellblade|An icon representing the keyword Spellblade]] [[:Named item effect#Spellblade|Spellblade]]</span> and triggering <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Kassadin\" data-ability=\"Force Pulse\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Kassadin Force Pulse.png|20xpx|border|link=Kassadin#Force Pulse|An icon for Kassadin's ability Force Pulse]]</span> <span style=\"white-space:normal;\">[[Kassadin#Force Pulse|Force Pulse's]]</span></span> passive.\n* The recast will heal '''Mordekaiser''' for a minimum of <span style=\"color:\n#21B053; white-space:normal\">1.<small>75</small> / 1.<small>875</small> / 2 / 2.<small>125</small> / 2.<small>25</small>%</span> and up to <span style=\"color:\n#21B053; white-space:normal\">10.<small>5</small> / 11.<small>25</small> / 12 / 12.<small>75</small> / 13.<small>5</small>% of his '''maximum''' health</span>.\n** It also effectively converts 15.<small>75</small> / 16.<small>875</small> / 18 / 19.<small>125</small> / 20.<small>25</small>% of damage dealt and 2.<small>625</small> / 2.<small>8125</small> / 3 / 3.<small>1875</small> / 3.<small>375</small>% of damage taken, reduced to 3.<small>9375</small> / 4.<small>2188</small> / 4.<small>5</small> / 4.<small>7813</small> / 5.<small>0625</small>% and 0.<small>6563</small> / 0.<small>7031</small> / 0.<small>75</small> / 0.<small>7969</small> / 0.<small>8438</small>% for non-champion sources respectively.",
+          "text": "Both casts count as ability activations for the purposes of on-cast effects such as Spellblade and triggering Force Pulse's passive.\nThe recast will heal Mordekaiser for a minimum of 1.75 / 1.875 / 2 / 2.125 / 2.25% and up to 10.5 / 11.25 / 12 / 12.75 / 13.5% of his maximum health.\n* It also effectively converts 15.75 / 16.875 / 18 / 19.125 / 20.25% of damage dealt and 2.625 / 2.8125 / 3 / 3.1875 / 3.375% of damage taken, reduced to 3.9375 / 4.2188 / 4.5 / 4.7813 / 5.0625% and 0.6563 / 0.7031 / 0.75 / 0.7969 / 0.8438% for non-champion sources respectively."
+        },
+        "targeting": "Auto"
+      },
+      "name": "Indestructible"
+    },
+    {
+      "asset": {
+        "key": "spell_mordekaiser_w2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Indestructible_2.png?b82d0",
+        "sha1": "0d883ecde43e8f83e45e7dd1ae659f92113717ba"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "12 / 11 / 10 / 9 / 8",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Passive:'''</span> '''Mordekaiser''' stores 45% of the <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage calculated after modifiers\">post-mitigation</span> damage he deals and 7.<small>5</small>% of the <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"Damage calculated before modifiers\">pre-mitigation</span> damage he takes,<span id=\"container\" class=\"container\" style=\"cursor:help;\"><span class=\"flipText1 active\">「&nbsp;reduced by 75% for non-champion sources,&nbsp;」</span><span class=\"flipText2\">「&nbsp;reduced to 11.<small>25</small>% of damage dealt and 1.<small>875</small>% of damage taken for non-champion sources,&nbsp;」</span></span>as ''Potential Shield'' on his secondary resource bar, up to <span style=\"white-space:nowrap\">[[File:Health icon.png|15px|link=Health]]&nbsp;<span style=\"color:\n#21B053; white-space:normal\">30% of his '''maximum''' health</span></span>. The ''Potential Shield'' decays by <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-start=\"8;\" data-finish=\"25;\" data-top-fill=\"18\" data-bot-values=\"8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25\">8 – 25 (based on level)</span> every second after not dealing or taking damage for 1 second. While ''Indestructible'' is not on cooldown, the ''Potential Shield'' will not decay below a minimum of <span style=\"color:\n#21B053; white-space:normal\">5% of his '''maximum''' health</span>, and it will be set to that amount when it comes off cooldown if it was previously below it.",
+          "text": "Passive: Mordekaiser stores 45% of the post-mitigation damage he deals and 7.5% of the pre-mitigation damage he takes,「&nbsp;reduced by 75% for non-champion sources,&nbsp;」「&nbsp;reduced to 11.25% of damage dealt and 1.875% of damage taken for non-champion sources,&nbsp;」as Potential Shield on his secondary resource bar, up to &nbsp;30% of his maximum health. The Potential Shield decays by 8 – 25 (based on level) every second after not dealing or taking damage for 1 second. While Indestructible is not on cooldown, the Potential Shield will not decay below a minimum of 5% of his maximum health, and it will be set to that amount when it comes off cooldown if it was previously below it."
+        },
+        "description2": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Mordekaiser''' consumes his ''Potential Shield'' to grant himself a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Shield\">[[File:Hybrid resistances icon.png|20px|link=Shield|An icon representing the keyword Shield]] [[:Shield|shield]]</span> for the same amount for 4 seconds. The shield decays exponentially over the duration. ''Indestructible'' can be recast after 0.<small>5</small> seconds while the shield is active.",
+          "text": "Active: Mordekaiser consumes his Potential Shield to grant himself a shield for the same amount for 4 seconds. The shield decays exponentially over the duration. Indestructible can be recast after 0.5 seconds while the shield is active."
+        },
+        "description3": {
+          "raw": "<span class=\"template_sbc\">'''Recast:'''</span> '''Mordekaiser''' consumes the remaining shield, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Healing\">[[File:Heal power icon.svg|20px|link=Healing|An icon representing the keyword Heal]] [[:Healing|healing]]</span> for a portion of the amount.",
+          "text": "Recast: Mordekaiser consumes the remaining shield, healing for a portion of the amount."
+        },
+        "icon": "false",
+        "icon2": "Indestructible.png",
+        "icon3": "Indestructible 2.png",
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Shield to Healing:'''</span></dt><dd>35 / 37.<small>5</small> / 40 / 42.<small>5</small> / 45%</dd></dl>",
+          "text": "Shield to Healing:35 / 37.5 / 40 / 42.5 / 45%"
+        },
+        "name": "Indestructible",
+        "notes": {
+          "raw": "* Both casts count as ability activations for the purposes of on-cast effects such as <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spellblade\">[[File:Sheen item.png|20px|link=Named item effect#Spellblade|An icon representing the keyword Spellblade]] [[:Named item effect#Spellblade|Spellblade]]</span> and triggering <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Kassadin\" data-ability=\"Force Pulse\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Kassadin Force Pulse.png|20xpx|border|link=Kassadin#Force Pulse|An icon for Kassadin's ability Force Pulse]]</span> <span style=\"white-space:normal;\">[[Kassadin#Force Pulse|Force Pulse's]]</span></span> passive.\n* The recast will heal '''Mordekaiser''' for a minimum of <span style=\"color:\n#21B053; white-space:normal\">1.<small>75</small> / 1.<small>875</small> / 2 / 2.<small>125</small> / 2.<small>25</small>%</span> and up to <span style=\"color:\n#21B053; white-space:normal\">10.<small>5</small> / 11.<small>25</small> / 12 / 12.<small>75</small> / 13.<small>5</small>% of his '''maximum''' health</span>.\n** It also effectively converts 15.<small>75</small> / 16.<small>875</small> / 18 / 19.<small>125</small> / 20.<small>25</small>% of damage dealt and 2.<small>625</small> / 2.<small>8125</small> / 3 / 3.<small>1875</small> / 3.<small>375</small>% of damage taken, reduced to 3.<small>9375</small> / 4.<small>2188</small> / 4.<small>5</small> / 4.<small>7813</small> / 5.<small>0625</small>% and 0.<small>6563</small> / 0.<small>7031</small> / 0.<small>75</small> / 0.<small>7969</small> / 0.<small>8438</small>% for non-champion sources respectively.",
+          "text": "Both casts count as ability activations for the purposes of on-cast effects such as Spellblade and triggering Force Pulse's passive.\nThe recast will heal Mordekaiser for a minimum of 1.75 / 1.875 / 2 / 2.125 / 2.25% and up to 10.5 / 11.25 / 12 / 12.75 / 13.5% of his maximum health.\n* It also effectively converts 15.75 / 16.875 / 18 / 19.125 / 20.25% of damage dealt and 2.625 / 2.8125 / 3 / 3.1875 / 3.375% of damage taken, reduced to 3.9375 / 4.2188 / 4.5 / 4.7813 / 5.0625% and 0.6563 / 0.7031 / 0.75 / 0.7969 / 0.8438% for non-champion sources respectively."
+        },
+        "targeting": "Auto"
+      },
+      "name": "Indestructible 2"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "W",
+  "source": {
+    "contentHash": "b930a8408a8cc57a6996f0866e985f497b83211d73ecfe79b56842eef64172c6",
+    "fetchedAt": "2026-09-06T13:52:37.292Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Mordekaiser/Indestructible",
+    "revisionId": 4016354,
+    "sourceTimestamp": "2026-05-10T19:48:19Z"
+  }
+}

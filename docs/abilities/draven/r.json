@@ -1,0 +1,130 @@
+{
+  "asset": {
+    "key": "spell_draven_r",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Whirling_Death.png?2e649",
+    "sha1": "61943cde930458ffd18ed61a33278c14a8c861cb"
+  },
+  "champion": "Draven",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_draven_r",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Whirling_Death.png?2e649",
+        "sha1": "61943cde930458ffd18ed61a33278c14a8c861cb"
+      },
+      "fields": {
+        "casttime": "0.5",
+        "cooldown": "100 / 95 / 90 / 85 / 80",
+        "cost": "100",
+        "damagetype": "Physical",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Draven''' hurls two massive axes in the target direction that briefly grant <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of their surroundings and deal <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> to enemies hit. Enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champions\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champions]]</span> that are damaged to or while below a <span style=\"white-space:nowrap\">[[File:Health icon.png|15px|link=Health]]&nbsp;<span style=\"color:\n#21B053; white-space:normal\">health</span></span> threshold equal to the number of ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Draven\" data-ability=\"League of Draven\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Draven League of Draven.png|20xpx|border|link=Draven#League of Draven|An icon for Draven's ability League of Draven]]</span> <span style=\"white-space:normal;\">[[Draven#League of Draven|Adoration]]</span></span>'' stacks are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Execute\">[[File:Death from Below.png|20px|link=Kill#Execute|An icon representing the keyword Execute]] [[:Kill#Execute|executed]]</span>.",
+          "text": "Active: Draven hurls two massive axes in the target direction that briefly grant sight of their surroundings and deal physical damage to enemies hit. Enemy champions that are damaged to or while below a &nbsp;health threshold equal to the number of Adoration stacks are executed."
+        },
+        "description2": {
+          "raw": "''Whirling Death'' can be recast after 1 second while the axes are traveling, and does so automatically after the axes hit an enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span> or the edge of the [[Map (League of Legends)|map]].",
+          "text": "Whirling Death can be recast after 1 second while the axes are traveling, and does so automatically after the axes hit an enemy champion or the edge of the map."
+        },
+        "description3": {
+          "raw": "<span class=\"template_sbc\">'''Recast:'''</span> '''Draven''' forces the axes to reverse direction, slowly coming to a stop before homing back to him, dealing the same damage to enemies hit.",
+          "text": "Recast: Draven forces the axes to reverse direction, slowly coming to a stop before homing back to him, dealing the same damage to enemies hit."
+        },
+        "description4": {
+          "raw": "''Whirling Death'' deals <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-top-label=\"enemies hit\" data-displayformula=\"(100%-5%)^(1 per enemy hit). ''This is capped at 50% damage.''\" data-bot-values=\"100;95;90.25;85.74;81.45;77.38;73.51;69.83;66.34;63.02;59.87;56.88;54.04;51.33;50\" data-top-values=\"0;1;2;3;4;5;6;7;8;9;10;11;12;13;14\" data-bot-key=\"%\">100% – 50% (based on enemies hit)</span> damage, resetting upon reversing direction.",
+          "text": "Whirling Death deals 100% – 50% (based on enemies hit) damage, resetting upon reversing direction."
+        },
+        "description5": {
+          "raw": "''Enemies can be hit only once per pass.''",
+          "text": "Enemies can be hit only once per pass."
+        },
+        "icon": "Whirling Death.png",
+        "icon3": "Whirling Death 2.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>200 / 250 / 300 / 350 / 400 <span style=\"color:orange; white-space:normal\">(+ 110 / 120 / 130 / 140 / 150% '''bonus''' AD)</span></dd><dt><span class=\"template_lc\">'''Total Physical Damage:'''</span></dt><dd>400 / 500 / 600 / 700 / 800 <span style=\"color:orange; white-space:normal\">(+ 220 / 240 / 260 / 280 / 300% '''bonus''' AD)</span></dd></dl>",
+          "text": "Physical Damage:200 / 250 / 300 / 350 / 400 (+ 110 / 120 / 130 / 140 / 150% bonus AD)Total Physical Damage:400 / 500 / 600 / 700 / 800 (+ 220 / 240 / 260 / 280 / 300% bonus AD)"
+        },
+        "leveling4": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Minimum Physical Damage:'''</span></dt><dd>100 / 125 / 150 / 175 / 200 <span style=\"color:orange; white-space:normal\">(+ 55 / 60 / 65 / 70 / 75% '''bonus''' AD)</span></dd><dt><span class=\"template_lc\">'''Minimum Total Damage:'''</span></dt><dd>200 / 250 / 300 / 350 / 400 <span style=\"color:orange; white-space:normal\">(+ 110 / 120 / 130 / 140 / 150% '''bonus''' AD)</span></dd></dl>",
+          "text": "Minimum Physical Damage:100 / 125 / 150 / 175 / 200 (+ 55 / 60 / 65 / 70 / 75% bonus AD)Minimum Total Damage:200 / 250 / 300 / 350 / 400 (+ 110 / 120 / 130 / 140 / 150% bonus AD)"
+        },
+        "name": "Whirling Death",
+        "notes": {
+          "raw": "* ''Whirling Death's'' projectile has an [[File:Whirling Death Minimap.png|40px|link=]] icon on the mini-map while it is in flight. It can be seen by only '''Draven''' and his allies.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will block one instance of damage.\n* This ability will cast from wherever the caster is at the end of the cast time.",
+          "text": "Whirling Death's projectile has an icon on the mini-map while it is in flight. It can be seen by only Draven and his allies.\nSpell shield will block one instance of damage.\nThis ability will cast from wherever the caster is at the end of the cast time."
+        },
+        "projectile": true,
+        "speed": "2000",
+        "spellshield": false,
+        "targeting": "Direction / Auto",
+        "width": "320"
+      },
+      "name": "Whirling Death"
+    },
+    {
+      "asset": {
+        "key": "spell_draven_r2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Whirling_Death_2.png?743a1",
+        "sha1": "4dd68ec1401f34b3f85c25144bfe28d84670b3bc"
+      },
+      "fields": {
+        "casttime": "0.5",
+        "cooldown": "100 / 95 / 90 / 85 / 80",
+        "cost": "100",
+        "damagetype": "Physical",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Draven''' hurls two massive axes in the target direction that briefly grant <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of their surroundings and deal <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> to enemies hit. Enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champions\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champions]]</span> that are damaged to or while below a <span style=\"white-space:nowrap\">[[File:Health icon.png|15px|link=Health]]&nbsp;<span style=\"color:\n#21B053; white-space:normal\">health</span></span> threshold equal to the number of ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Draven\" data-ability=\"League of Draven\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Draven League of Draven.png|20xpx|border|link=Draven#League of Draven|An icon for Draven's ability League of Draven]]</span> <span style=\"white-space:normal;\">[[Draven#League of Draven|Adoration]]</span></span>'' stacks are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Execute\">[[File:Death from Below.png|20px|link=Kill#Execute|An icon representing the keyword Execute]] [[:Kill#Execute|executed]]</span>.",
+          "text": "Active: Draven hurls two massive axes in the target direction that briefly grant sight of their surroundings and deal physical damage to enemies hit. Enemy champions that are damaged to or while below a &nbsp;health threshold equal to the number of Adoration stacks are executed."
+        },
+        "description2": {
+          "raw": "''Whirling Death'' can be recast after 1 second while the axes are traveling, and does so automatically after the axes hit an enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span> or the edge of the [[Map (League of Legends)|map]].",
+          "text": "Whirling Death can be recast after 1 second while the axes are traveling, and does so automatically after the axes hit an enemy champion or the edge of the map."
+        },
+        "description3": {
+          "raw": "<span class=\"template_sbc\">'''Recast:'''</span> '''Draven''' forces the axes to reverse direction, slowly coming to a stop before homing back to him, dealing the same damage to enemies hit.",
+          "text": "Recast: Draven forces the axes to reverse direction, slowly coming to a stop before homing back to him, dealing the same damage to enemies hit."
+        },
+        "description4": {
+          "raw": "''Whirling Death'' deals <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-top-label=\"enemies hit\" data-displayformula=\"(100%-5%)^(1 per enemy hit). ''This is capped at 50% damage.''\" data-bot-values=\"100;95;90.25;85.74;81.45;77.38;73.51;69.83;66.34;63.02;59.87;56.88;54.04;51.33;50\" data-top-values=\"0;1;2;3;4;5;6;7;8;9;10;11;12;13;14\" data-bot-key=\"%\">100% – 50% (based on enemies hit)</span> damage, resetting upon reversing direction.",
+          "text": "Whirling Death deals 100% – 50% (based on enemies hit) damage, resetting upon reversing direction."
+        },
+        "description5": {
+          "raw": "''Enemies can be hit only once per pass.''",
+          "text": "Enemies can be hit only once per pass."
+        },
+        "icon": "Whirling Death.png",
+        "icon3": "Whirling Death 2.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>200 / 250 / 300 / 350 / 400 <span style=\"color:orange; white-space:normal\">(+ 110 / 120 / 130 / 140 / 150% '''bonus''' AD)</span></dd><dt><span class=\"template_lc\">'''Total Physical Damage:'''</span></dt><dd>400 / 500 / 600 / 700 / 800 <span style=\"color:orange; white-space:normal\">(+ 220 / 240 / 260 / 280 / 300% '''bonus''' AD)</span></dd></dl>",
+          "text": "Physical Damage:200 / 250 / 300 / 350 / 400 (+ 110 / 120 / 130 / 140 / 150% bonus AD)Total Physical Damage:400 / 500 / 600 / 700 / 800 (+ 220 / 240 / 260 / 280 / 300% bonus AD)"
+        },
+        "leveling4": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Minimum Physical Damage:'''</span></dt><dd>100 / 125 / 150 / 175 / 200 <span style=\"color:orange; white-space:normal\">(+ 55 / 60 / 65 / 70 / 75% '''bonus''' AD)</span></dd><dt><span class=\"template_lc\">'''Minimum Total Damage:'''</span></dt><dd>200 / 250 / 300 / 350 / 400 <span style=\"color:orange; white-space:normal\">(+ 110 / 120 / 130 / 140 / 150% '''bonus''' AD)</span></dd></dl>",
+          "text": "Minimum Physical Damage:100 / 125 / 150 / 175 / 200 (+ 55 / 60 / 65 / 70 / 75% bonus AD)Minimum Total Damage:200 / 250 / 300 / 350 / 400 (+ 110 / 120 / 130 / 140 / 150% bonus AD)"
+        },
+        "name": "Whirling Death",
+        "notes": {
+          "raw": "* ''Whirling Death's'' projectile has an [[File:Whirling Death Minimap.png|40px|link=]] icon on the mini-map while it is in flight. It can be seen by only '''Draven''' and his allies.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will block one instance of damage.\n* This ability will cast from wherever the caster is at the end of the cast time.",
+          "text": "Whirling Death's projectile has an icon on the mini-map while it is in flight. It can be seen by only Draven and his allies.\nSpell shield will block one instance of damage.\nThis ability will cast from wherever the caster is at the end of the cast time."
+        },
+        "projectile": true,
+        "speed": "2000",
+        "spellshield": false,
+        "targeting": "Direction / Auto",
+        "width": "320"
+      },
+      "name": "Whirling Death 2"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "R",
+  "source": {
+    "contentHash": "5b69bbb9196e0db62fcff41c943e2e604831169432188b9ab71fd938be571b22",
+    "fetchedAt": "2026-09-06T13:51:42.198Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Draven/Whirling_Death",
+    "revisionId": 4040576,
+    "sourceTimestamp": "2026-07-06T14:27:37Z"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "asset": {
+    "key": "spell_lucian_q",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Piercing_Light.png?2df3c",
+    "sha1": "39e06be63ad402db38012176ef57ca59805f9b3c"
+  },
+  "champion": "Lucian",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_lucian_q",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Piercing_Light.png?2df3c",
+        "sha1": "39e06be63ad402db38012176ef57ca59805f9b3c"
+      },
+      "fields": {
+        "casttime": "0.4 – 0.25 (based on level)",
+        "cooldown": "9 / 8 / 7 / 6 / 5",
+        "cost": "48 / 56 / 64 / 72 / 80",
+        "damagetype": "Physical",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' fires a laser in a line in the direction of the target enemy that deals <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> to enemies hit.",
+          "text": "Active: Lucian fires a laser in a line in the direction of the target enemy that deals physical damage to enemies hit."
+        },
+        "icon": "Piercing Light.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>80 / 115 / 150 / 185 / 220 <span style=\"color:orange; white-space:normal\">(+ 100% '''bonus''' AD)</span></dd></dl>",
+          "text": "Physical Damage:80 / 115 / 150 / 185 / 220 (+ 100% bonus AD)"
+        },
+        "name": "Piercing Light",
+        "notes": {
+          "raw": "* ''Piercing Light'' will attempt to lead the target if it is moving but does not adjust further during the cast time (enemies can dodge the laser if they change their position by a sufficient amount during the cast time).\n* '''Lucian''' can buffer <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Ardent Blaze\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Ardent Blaze.png|20xpx|border|link=Lucian#Ardent Blaze|An icon for Lucian's ability Ardent Blaze]]</span> <span style=\"white-space:normal;\">[[Lucian#Ardent Blaze|Ardent Blaze]]</span></span> or <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"The Culling\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian The Culling.png|20xpx|border|link=Lucian#The Culling|An icon for Lucian's ability The Culling]]</span> <span style=\"white-space:normal;\">[[Lucian#The Culling|The Culling]]</span></span> during the cast time. <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Relentless Pursuit\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Relentless Pursuit.png|20xpx|border|link=Lucian#Relentless Pursuit|An icon for Lucian's ability Relentless Pursuit]]</span> <span style=\"white-space:normal;\">[[Lucian#Relentless Pursuit|Relentless Pursuit]]</span></span> is locked out.\n** This is why '''Lucian''' can use them early if the cast time prematurely ends.\n* ''Piercing Light's cast time ends prematurely if the initial target dies, allowing '''Lucian''' to attack and move freely, or to immediately begin casting either <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Ardent Blaze\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Ardent Blaze.png|20xpx|border|link=Lucian#Ardent Blaze|An icon for Lucian's ability Ardent Blaze]]</span> <span style=\"white-space:normal;\">[[Lucian#Ardent Blaze|Ardent Blaze]]</span></span> or <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"The Culling\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian The Culling.png|20xpx|border|link=Lucian#The Culling|An icon for Lucian's ability The Culling]]</span> <span style=\"white-space:normal;\">[[Lucian#The Culling|The Culling]]</span></span>.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This does not match expectations. \">(unexpected)</span></sup>''",
+          "text": "Piercing Light will attempt to lead the target if it is moving but does not adjust further during the cast time (enemies can dodge the laser if they change their position by a sufficient amount during the cast time).\nLucian can buffer Ardent Blaze or The Culling during the cast time. Relentless Pursuit is locked out.\n* This is why Lucian can use them early if the cast time prematurely ends.\nPiercing Light's cast time ends prematurely if the initial target dies, allowing Lucian to attack and move freely, or to immediately begin casting either Ardent Blaze or The Culling.(unexpected)"
+        },
+        "projectile": false,
+        "range": "1000",
+        "spellshield": true,
+        "targeting": "Unit",
+        "width": "120"
+      },
+      "name": "Piercing Light"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "Q",
+  "source": {
+    "contentHash": "6d77eb45652ca2eb203655c4544f23faf05e5ad81209f1c9b569771e3ab3c927",
+    "fetchedAt": "2026-09-06T13:52:21.444Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Lucian/Piercing_Light",
+    "revisionId": 3982579,
+    "sourceTimestamp": "2026-01-09T09:22:29Z"
+  }
+}

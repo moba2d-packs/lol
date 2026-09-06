@@ -1,0 +1,114 @@
+{
+  "asset": {
+    "key": "champ_lucian",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_OriginalSquare.png?514f2",
+    "sha1": "f591bba13e57fda384702018c6ea4d131ca707ae"
+  },
+  "champion": "Lucian",
+  "data": {
+    "adaptivetype": "Physical",
+    "alttype": "Assassin",
+    "apiname": "Lucian",
+    "be": 675,
+    "changes": "V26.16",
+    "client_positions": [
+      "Bottom"
+    ],
+    "client_tags": [
+      "Mobile",
+      "Burst",
+      "Physical"
+    ],
+    "control": 1,
+    "damage": 3,
+    "date": "2013-08-22",
+    "difficulty": 2,
+    "external_positions": [
+      "Bottom"
+    ],
+    "herotype": "Marksman",
+    "id": 236,
+    "mobility": 3,
+    "patch": "V3.10a",
+    "rangetype": "Ranged",
+    "resource": "Mana",
+    "role": [
+      "Marksman"
+    ],
+    "rp": 585,
+    "skill_e": {
+      "1": "Relentless Pursuit"
+    },
+    "skill_i": {
+      "1": "Lightslinger"
+    },
+    "skill_q": {
+      "1": "Piercing Light"
+    },
+    "skill_r": {
+      "1": "The Culling"
+    },
+    "skill_w": {
+      "1": "Ardent Blaze",
+      "2": "Ardent Blaze 2",
+      "3": "Ardent Blaze 3"
+    },
+    "skills": {
+      "1": "Lightslinger",
+      "2": "Piercing Light",
+      "3": "Ardent Blaze",
+      "4": "Relentless Pursuit",
+      "5": "The Culling"
+    },
+    "stats": {
+      "acquisition_radius": 800,
+      "aram": {
+        "ability_haste": 10,
+        "dmg_dealt": 1.05,
+        "dmg_taken": 0.95,
+        "tenacity": 1.2
+      },
+      "arm_base": 28,
+      "arm_lvl": 4.2,
+      "as_base": 0.638,
+      "as_lvl": 2.5,
+      "as_ratio": 0.638000011444091,
+      "attack_delay_offset": -0.150000005960464,
+      "dam_base": 60,
+      "dam_lvl": 2.5,
+      "hp5_base": 3.75,
+      "hp5_lvl": 0.65,
+      "hp_base": 641,
+      "hp_lvl": 100,
+      "missile_speed": 2800,
+      "mp5_base": 7,
+      "mp5_lvl": 0.8,
+      "mp_base": 320,
+      "mp_lvl": 43,
+      "mr_base": 33,
+      "mr_lvl": 1.1,
+      "ms": 335,
+      "pathing_radius": 40.6800003051757,
+      "range": 500,
+      "selection_height": 122.22219848632812,
+      "selection_radius": 100,
+      "urf": {
+        "dmg_dealt": 0.95,
+        "dmg_taken": 1.05
+      }
+    },
+    "style": 30,
+    "title": "The Purifier",
+    "toughness": 1,
+    "utility": 1
+  },
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "bbe08c6f0847aee7267b6d73ef592800780de461a905e800653d87c3f9e7102c",
+    "fetchedAt": "2026-09-06T13:52:21.444Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
+  }
+}

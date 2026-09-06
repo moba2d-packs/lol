@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Braum/Winter's Bite",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Winter's Bite@@icon@@Winter's Bite.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Braum''' propels ice from his shield in the target direction, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to the first enemy hit and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowing]]</span> them by 70% decaying over 2 seconds.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 120 / 165 / 210 / 255 <span style=\"color:\n#21B053; white-space:normal\">(+ 2.<small>5</small>% of '''Braum's''' '''maximum''' health)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cr\">[[File:Range center.png|20px|link=Range|An icon representing the keyword Centered range]]</span> 1050 • <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> 990@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> 120@@speed@@1700@@casttime@@0.<small>25</small>@@cost@@45 / 50 / 55 / 60 / 65@@cooldown@@8 / 7.<small>5</small> / 7 / 6.<small>5</small> / 6@@targeting@@Direction@@damagetype@@Magic@@spellshield@@True@@projectile@@True@@notes@@\n* This ability will cast from wherever the caster is at the end of the cast time.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1306898,
+                "revisions": [
+                  {
+                    "parentid": 4007578,
+                    "revid": 4007579,
+                    "timestamp": "2026-04-12T06:43:14Z"
+                  }
+                ],
+                "title": "Template:Data Braum/Winter's Bite"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4007579,
+      "timestamp": "2026-04-12T06:43:14Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "b2eb5436516a2e1aa9c10d0754541c03760a62711fa268f6b6ca0e8fc533042d",
+    "fetchedAt": "2026-09-06T13:51:31.384Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Braum/Winter's_Bite",
+    "revisionId": 4007579,
+    "sourceTimestamp": "2026-04-12T06:43:14Z"
+  }
+}

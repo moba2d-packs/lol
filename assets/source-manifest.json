@@ -18,6 +18,14 @@
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Ahri_OriginalSquare.png?d60a2"
     },
     {
+      "contentHash": "9b21b76cdf5a1b814871bbd2d2e2c0d2229aa37e4e4ddca2933c5006dc0b9108",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "champ_akali",
+      "localPath": "assets/images/champions/akali.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_OriginalSquare.png?55774"
+    },
+    {
       "contentHash": "7dadcce12c4f1c43bf8d0e7e098c56f67f4ebc6d11c3acd9697265cc6310eb23",
       "fetchedAt": "2026-08-13T10:47:04.843Z",
       "localAssetKey": "champ_alistar",
@@ -74,6 +82,14 @@
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Brand_OriginalSquare.png?336d6"
     },
     {
+      "contentHash": "cd05b3e3cc525eb048ec8972e82a2154bd8ba76ee5ac3716e61fc206317d526e",
+      "fetchedAt": "2026-09-06T13:51:31.384Z",
+      "localAssetKey": "champ_braum",
+      "localPath": "assets/images/champions/braum.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_OriginalSquare.png?96d05"
+    },
+    {
       "contentHash": "f05bbf22409dbe264eeee2adb602599aad8eab1fd901cd5333a6ce370f07dc51",
       "fetchedAt": "2026-08-16T21:32:17.622Z",
       "localAssetKey": "champ_caitlyn",
@@ -122,6 +138,14 @@
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Diana_OriginalSquare.png?d5d54"
     },
     {
+      "contentHash": "c96190c54544676eb0082177ce0e5b3a823b7e709abb5ce70dbde4598578bcf2",
+      "fetchedAt": "2026-09-06T13:51:42.198Z",
+      "localAssetKey": "champ_draven",
+      "localPath": "assets/images/champions/draven.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_OriginalSquare.png?63957"
+    },
+    {
       "contentHash": "83aaaae60654ec90bea5157739898c63cf796357af8a899c6951aaa63344f6ff",
       "fetchedAt": "2026-09-01T04:16:47.752Z",
       "localAssetKey": "champ_drmundo",
@@ -144,6 +168,14 @@
       "localPath": "assets/images/champions/ezreal.png",
       "revisionId": 4052219,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Ezreal_OriginalSquare.png?fc667"
+    },
+    {
+      "contentHash": "85fbbe5487d12bed592c4621c4ee3884d63a7f878329acdbead82764b9025799",
+      "fetchedAt": "2026-09-06T13:51:55.254Z",
+      "localAssetKey": "champ_fiora",
+      "localPath": "assets/images/champions/fiora.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_OriginalSquare.png?0b643"
     },
     {
       "contentHash": "b55045fd48cd17cfb795f703d3ab95ed95fd7acce79dce72d7d38ce673f4fc0a",
@@ -192,6 +224,14 @@
       "localPath": "assets/images/champions/jarvaniv.png",
       "revisionId": 4052219,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Jarvan_IV_OriginalSquare.png?74a73"
+    },
+    {
+      "contentHash": "fa16657ff3fb7e8ca959a2e9e105b445ea00bdff7ad8411e6825c3e3992b9786",
+      "fetchedAt": "2026-09-06T13:52:09.005Z",
+      "localAssetKey": "champ_jax",
+      "localPath": "assets/images/champions/jax.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_OriginalSquare.png?6209d"
     },
     {
       "contentHash": "0e524d0daf2480855ef8a639d148f0f42ac72daffa61e7aa634159e06d39dc9a",
@@ -250,6 +290,14 @@
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lissandra_OriginalSquare.png?fe62c"
     },
     {
+      "contentHash": "be7b2d432b1c783d6f973381e34f30e19af012a37e74720516964776ae0a071a",
+      "fetchedAt": "2026-09-06T13:52:21.444Z",
+      "localAssetKey": "champ_lucian",
+      "localPath": "assets/images/champions/lucian.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_OriginalSquare.png?514f2"
+    },
+    {
       "contentHash": "453f1abd861dbdbf4878012ebe0cebee85be071748f1f6ec4497b2d479853b8c",
       "fetchedAt": "2026-08-12T18:53:49.922Z",
       "localAssetKey": "champ_lux",
@@ -280,6 +328,22 @@
       "localPath": "assets/images/champions/masteryi.png",
       "revisionId": 4052219,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Master_Yi_OriginalSquare.png?3d56a"
+    },
+    {
+      "contentHash": "2e1b8bd626740229f7c35e721e7b67ff5a85025027c7923cd53834d32d25b195",
+      "fetchedAt": "2026-09-06T13:53:06.544Z",
+      "localAssetKey": "champ_missfortune",
+      "localPath": "assets/images/champions/missfortune.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_OriginalSquare.png?47a40"
+    },
+    {
+      "contentHash": "c30cffaac91efc1a810dd9395f748dcafe3879259d76f0b626ffe889d7c5e560",
+      "fetchedAt": "2026-09-06T13:52:37.292Z",
+      "localAssetKey": "champ_mordekaiser",
+      "localPath": "assets/images/champions/mordekaiser.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_OriginalSquare.png?76c25"
     },
     {
       "contentHash": "c59a7f0292e2d55980c69cda0de6c74c20990f2bfd9856b2c10714e1b7ca2ddc",
@@ -514,6 +578,14 @@
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Warwick_OriginalSquare.png?cc8c7"
     },
     {
+      "contentHash": "7391035bca0c8a8b989bf57a29abe040b54a7eee1e4d5bbe97fbbafce06285b3",
+      "fetchedAt": "2026-09-06T13:52:50.875Z",
+      "localAssetKey": "champ_xerath",
+      "localPath": "assets/images/champions/xerath.png",
+      "revisionId": 4057479,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_OriginalSquare.png?ae665"
+    },
+    {
       "contentHash": "e0e8550768a44efad4c6a096643df3b292e6a9cbbb52ba854d7cc2164973e762",
       "fetchedAt": "2026-09-06T10:46:39.895Z",
       "localAssetKey": "champ_xinzhao",
@@ -640,6 +712,70 @@
       "localPath": "assets/images/spells/ahri_w.png",
       "revisionId": 4007399,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Ahri_Fox-Fire.png?e5c46"
+    },
+    {
+      "contentHash": "2bd5fbf75bd2fdfc1ce8ea293f1926a6dcf046b73e770cc79ebac65e0b1dbf48",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "spell_akali_e",
+      "localPath": "assets/images/spells/akali_e.png",
+      "revisionId": 4007568,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Shuriken_Flip.png?19858"
+    },
+    {
+      "contentHash": "b5f833fb15652098ddc578d5ad04c36ea3e2c4753338e67d6c96d1937e5d3dc2",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "spell_akali_e2",
+      "localPath": "assets/images/spells/akali_e2.png",
+      "revisionId": 4007568,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Shuriken_Flip_2.png?ead93"
+    },
+    {
+      "contentHash": "fa56b6d0524345915f136f90b3b26e4d28b1b140ed3c3da35cded60a26224797",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "spell_akali_i",
+      "localPath": "assets/images/spells/akali_i.png",
+      "revisionId": 4038192,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Assassin%27s_Mark.png?e4038"
+    },
+    {
+      "contentHash": "d1e4efd10a49773c547870f13cdabfe59c912c7c58650e2a1845a794c1f8dd90",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "spell_akali_q",
+      "localPath": "assets/images/spells/akali_q.png",
+      "revisionId": 4007404,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Five_Point_Strike.png?2fded"
+    },
+    {
+      "contentHash": "d1e4efd10a49773c547870f13cdabfe59c912c7c58650e2a1845a794c1f8dd90",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "spell_akali_q2",
+      "localPath": "assets/images/spells/akali_q2.png",
+      "revisionId": 4007404,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Five_Point_Strike.png?2fded"
+    },
+    {
+      "contentHash": "7826085195a0218bcb81dae9dee0f53744052254986debf66c4ce0b53afc150f",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "spell_akali_r",
+      "localPath": "assets/images/spells/akali_r.png",
+      "revisionId": 4011498,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Perfect_Execution.png?7d0a9"
+    },
+    {
+      "contentHash": "d070914aec73dd3f2893e75e1bf020be85544267c6d96c6f5d43234a41961917",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "spell_akali_r2",
+      "localPath": "assets/images/spells/akali_r2.png",
+      "revisionId": 4011498,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Perfect_Execution_2.png?fed02"
+    },
+    {
+      "contentHash": "69135f20e52f562496068738ad28917ad52acffcbc136eaeb55e7a97ad81c82e",
+      "fetchedAt": "2026-09-06T13:51:16.204Z",
+      "localAssetKey": "spell_akali_w",
+      "localPath": "assets/images/spells/akali_w.png",
+      "revisionId": 4007406,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Twilight_Shroud.png?e0c24"
     },
     {
       "contentHash": "2ea70d9c8bd1c8b1fa9868750f6c68a6eff562bd74495aac803eea824136e606",
@@ -922,6 +1058,46 @@
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Brand_Pillar_of_Flame.png?b08f8"
     },
     {
+      "contentHash": "5dd7fcf22cc00a57d102072b59d13262e71ac7bbecb2167e3ddf19eb83c7a02d",
+      "fetchedAt": "2026-09-06T13:51:31.384Z",
+      "localAssetKey": "spell_braum_e",
+      "localPath": "assets/images/spells/braum_e.png",
+      "revisionId": 4012056,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Unbreakable.png?af84d"
+    },
+    {
+      "contentHash": "9be9c9b1a7728a846176fd93ea768bb8204a93f7d01c69c62875405a20ee4266",
+      "fetchedAt": "2026-09-06T13:51:31.384Z",
+      "localAssetKey": "spell_braum_i",
+      "localPath": "assets/images/spells/braum_i.png",
+      "revisionId": 4038222,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Concussive_Blows.png?8ff77"
+    },
+    {
+      "contentHash": "feb1bfc93421a6685889ff151cdd5627f58cc3d36e53c7d3d383b90a4a197fc7",
+      "fetchedAt": "2026-09-06T13:51:31.384Z",
+      "localAssetKey": "spell_braum_q",
+      "localPath": "assets/images/spells/braum_q.png",
+      "revisionId": 4007579,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Winter%27s_Bite.png?34952"
+    },
+    {
+      "contentHash": "93dfb1d39cc9e4c4d7c44262ee97f57c5d61727c8f727ba952c2e876c503c1e7",
+      "fetchedAt": "2026-09-06T13:51:31.384Z",
+      "localAssetKey": "spell_braum_r",
+      "localPath": "assets/images/spells/braum_r.png",
+      "revisionId": 4007580,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Glacial_Fissure.png?0a5eb"
+    },
+    {
+      "contentHash": "7ddf746498b89e5e13d9ec64d39046269246a86bf0762dc24a953425560ef1a8",
+      "fetchedAt": "2026-09-06T13:51:31.384Z",
+      "localAssetKey": "spell_braum_w",
+      "localPath": "assets/images/spells/braum_w.png",
+      "revisionId": 3906582,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Stand_Behind_Me.png?3007b"
+    },
+    {
       "contentHash": "979594731e47ee853c32acbdb445c72d134877b5dfc094907aa073a9db8611d3",
       "fetchedAt": "2026-08-16T21:32:17.622Z",
       "localAssetKey": "spell_caitlyn_e",
@@ -1154,6 +1330,54 @@
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Diana_Pale_Cascade.png?08994"
     },
     {
+      "contentHash": "dc37b2b2aed33eb975b9672c2c6a2db9cbfc565e85f96f4e4cde3a69bf2c98ac",
+      "fetchedAt": "2026-09-06T13:51:42.198Z",
+      "localAssetKey": "spell_draven_e",
+      "localPath": "assets/images/spells/draven_e.png",
+      "revisionId": 4034694,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Stand_Aside.png?69289"
+    },
+    {
+      "contentHash": "be89e9a0e44de091c909f9b6ea712d85e08915dd277b2dec0920f157f96c4e37",
+      "fetchedAt": "2026-09-06T13:51:42.198Z",
+      "localAssetKey": "spell_draven_i",
+      "localPath": "assets/images/spells/draven_i.png",
+      "revisionId": 4040578,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_League_of_Draven.png?d4651"
+    },
+    {
+      "contentHash": "7aaec6718d02b92dda910e6048f1fea3213c2ad019518d9155d047281e6dfe6d",
+      "fetchedAt": "2026-09-06T13:51:42.198Z",
+      "localAssetKey": "spell_draven_q",
+      "localPath": "assets/images/spells/draven_q.png",
+      "revisionId": 3997560,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Spinning_Axe.png?28e8e"
+    },
+    {
+      "contentHash": "704b1b0e2091373f6c78843da4fd82af942689fae5def5a0c6a89b2bad87f2c6",
+      "fetchedAt": "2026-09-06T13:51:42.198Z",
+      "localAssetKey": "spell_draven_r",
+      "localPath": "assets/images/spells/draven_r.png",
+      "revisionId": 4040576,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Whirling_Death.png?2e649"
+    },
+    {
+      "contentHash": "9edd1ba3c00691ccbc2bf2c6fa0f56924b01bcac8f7dc5de75ecaf57d38596b3",
+      "fetchedAt": "2026-09-06T13:51:42.198Z",
+      "localAssetKey": "spell_draven_r2",
+      "localPath": "assets/images/spells/draven_r2.png",
+      "revisionId": 4040576,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Whirling_Death_2.png?743a1"
+    },
+    {
+      "contentHash": "d32b4c92012d65d60205147fa1ac7dbb239801c86657bd60fa527f9ae729e2b2",
+      "fetchedAt": "2026-09-06T13:51:42.198Z",
+      "localAssetKey": "spell_draven_w",
+      "localPath": "assets/images/spells/draven_w.png",
+      "revisionId": 3982566,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Blood_Rush.png?24d3a"
+    },
+    {
       "contentHash": "8a4dbabc2e3aa9c21dd85977fdeeffeeb7b58a8a05ee516aa8c5e2e2b2afc5aa",
       "fetchedAt": "2026-09-01T04:16:47.752Z",
       "localAssetKey": "spell_drmundo_e",
@@ -1272,6 +1496,62 @@
       "localPath": "assets/images/spells/ezreal_w.png",
       "revisionId": 4013234,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Ezreal_Essence_Flux.png?61864"
+    },
+    {
+      "contentHash": "815ac9f5884e131298e417583ca755540a5435c78e7aa83c6753b18f44f2709d",
+      "fetchedAt": "2026-09-06T13:51:55.254Z",
+      "localAssetKey": "spell_fiora_e",
+      "localPath": "assets/images/spells/fiora_e.png",
+      "revisionId": 3906658,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Bladework.png?1fcc5"
+    },
+    {
+      "contentHash": "9d15873f95e623a50ebb8c885c83cb7823c7fda8293170ed586dde91a6e05053",
+      "fetchedAt": "2026-09-06T13:51:55.254Z",
+      "localAssetKey": "spell_fiora_i",
+      "localPath": "assets/images/spells/fiora_i.png",
+      "revisionId": 4038335,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Duelist%27s_Dance.png?2ef93"
+    },
+    {
+      "contentHash": "e5de533e20636f438b02ed9ec6d4e18996e4c78889d93105ed0d6c96b4f5842f",
+      "fetchedAt": "2026-09-06T13:51:55.254Z",
+      "localAssetKey": "spell_fiora_i2",
+      "localPath": "assets/images/spells/fiora_i2.png",
+      "revisionId": 4038335,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Duelist%27s_Dance_2.png?0766e"
+    },
+    {
+      "contentHash": "b056144670777abf94d0bd578aa6434f8e65c69c1201f33a3945119bb8faf1c1",
+      "fetchedAt": "2026-09-06T13:51:55.254Z",
+      "localAssetKey": "spell_fiora_q",
+      "localPath": "assets/images/spells/fiora_q.png",
+      "revisionId": 4007770,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Lunge.png?7a90c"
+    },
+    {
+      "contentHash": "b3ecb496a3f16cf007246948b88892c2a55df99e95f6df442e668befe236c3a9",
+      "fetchedAt": "2026-09-06T13:51:55.254Z",
+      "localAssetKey": "spell_fiora_r",
+      "localPath": "assets/images/spells/fiora_r.png",
+      "revisionId": 4007516,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Grand_Challenge.png?e14dc"
+    },
+    {
+      "contentHash": "af888ecb95aca0a66ded2cba46349320e52efeefbd029c32b95bdbd903a937e9",
+      "fetchedAt": "2026-09-06T13:51:55.254Z",
+      "localAssetKey": "spell_fiora_r2",
+      "localPath": "assets/images/spells/fiora_r2.png",
+      "revisionId": 4007516,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Grand_Challenge_2.png?21afb"
+    },
+    {
+      "contentHash": "f236556266d0dae5812b1722fa92f29cd8d87d5ddf11443cf342e4e31d02138e",
+      "fetchedAt": "2026-09-06T13:51:55.254Z",
+      "localAssetKey": "spell_fiora_w",
+      "localPath": "assets/images/spells/fiora_w.png",
+      "revisionId": 4007365,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Fiora_Riposte.png?44ec0"
     },
     {
       "contentHash": "ed65b73d811d9afcef9f3b9be33fbbde60809169400f090b856e7fa83e48eccd",
@@ -1496,6 +1776,46 @@
       "localPath": "assets/images/spells/jarvaniv_w.png",
       "revisionId": 3906940,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Jarvan_IV_Golden_Aegis.png?9da7e"
+    },
+    {
+      "contentHash": "1243d0b9ac7413afd8151d76958fc631e7cc0c24923f1cd2609b065287e6b37d",
+      "fetchedAt": "2026-09-06T13:52:09.005Z",
+      "localAssetKey": "spell_jax_e",
+      "localPath": "assets/images/spells/jax_e.png",
+      "revisionId": 4026415,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Counter_Strike.png?a3a78"
+    },
+    {
+      "contentHash": "684f736faac09dc943d35184715ef2056a9531e65d2a2d34405e6df58c70fe79",
+      "fetchedAt": "2026-09-06T13:52:09.005Z",
+      "localAssetKey": "spell_jax_i",
+      "localPath": "assets/images/spells/jax_i.png",
+      "revisionId": 4038387,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Relentless_Assault.png?121fa"
+    },
+    {
+      "contentHash": "6058739cf0fdc4708af0b72bb24471b25d5bdc14e6c95deafbb2c987d84c1e19",
+      "fetchedAt": "2026-09-06T13:52:09.005Z",
+      "localAssetKey": "spell_jax_q",
+      "localPath": "assets/images/spells/jax_q.png",
+      "revisionId": 4026413,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Leap_Strike.png?0e517"
+    },
+    {
+      "contentHash": "ef0b94048a811f53bb3d99a0e467147e0295d8c3e93c802a136882da023aa9b0",
+      "fetchedAt": "2026-09-06T13:52:09.005Z",
+      "localAssetKey": "spell_jax_r",
+      "localPath": "assets/images/spells/jax_r.png",
+      "revisionId": 3973573,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Grandmaster-at-Arms.png?c4f84"
+    },
+    {
+      "contentHash": "9a9fc10a867250916ba113af3b1105d991cc58b1f0beff2db068fee9284eaa52",
+      "fetchedAt": "2026-09-06T13:52:09.005Z",
+      "localAssetKey": "spell_jax_w",
+      "localPath": "assets/images/spells/jax_w.png",
+      "revisionId": 3973571,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_Empower.png?40855"
     },
     {
       "contentHash": "f188497b1d538aeb727fdd129fc2e6109ab6faba775fc5db960666dee9fa4302",
@@ -1898,6 +2218,62 @@
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lissandra_Ring_of_Frost.png?4aca2"
     },
     {
+      "contentHash": "7ca3435e6fdd5add5f94bfe6e9589d0f24c8188cbffb2b527db78596cd07b593",
+      "fetchedAt": "2026-09-06T13:52:21.444Z",
+      "localAssetKey": "spell_lucian_e",
+      "localPath": "assets/images/spells/lucian_e.png",
+      "revisionId": 4008455,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Relentless_Pursuit.png?94182"
+    },
+    {
+      "contentHash": "9c31c9076fb158f9328d424f99836697b88a5d0205a63278ab60166eb01db925",
+      "fetchedAt": "2026-09-06T13:52:21.444Z",
+      "localAssetKey": "spell_lucian_i",
+      "localPath": "assets/images/spells/lucian_i.png",
+      "revisionId": 4041164,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Lightslinger.png?13169"
+    },
+    {
+      "contentHash": "ee17c2385b83a852f328040582f4adf260827eccc44a9632612ca6eeef34fd28",
+      "fetchedAt": "2026-09-06T13:52:21.444Z",
+      "localAssetKey": "spell_lucian_q",
+      "localPath": "assets/images/spells/lucian_q.png",
+      "revisionId": 3982579,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Piercing_Light.png?2df3c"
+    },
+    {
+      "contentHash": "1589ce9a1fe10e43527832f6173606eac9f3814345867867c017a78a50976090",
+      "fetchedAt": "2026-09-06T13:52:21.444Z",
+      "localAssetKey": "spell_lucian_r",
+      "localPath": "assets/images/spells/lucian_r.png",
+      "revisionId": 4007670,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_The_Culling.png?0d032"
+    },
+    {
+      "contentHash": "e3c616ab9eae2d8f5a018ce96807638d7397b8c99742c53d5cccda048ff84f64",
+      "fetchedAt": "2026-09-06T13:52:21.444Z",
+      "localAssetKey": "spell_lucian_w",
+      "localPath": "assets/images/spells/lucian_w.png",
+      "revisionId": 3594941,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Ardent_Blaze.png?dd440"
+    },
+    {
+      "contentHash": "93f729af7857ad0a0c0c3b01e77b01be4a61de462c8fdc0c6a4597642f6a6479",
+      "fetchedAt": "2026-09-06T13:52:21.444Z",
+      "localAssetKey": "spell_lucian_w2",
+      "localPath": "assets/images/spells/lucian_w2.png",
+      "revisionId": 3594941,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Ardent_Blaze_2.png?2c7b4"
+    },
+    {
+      "contentHash": "1e2a8476af69b6897872ed20f2d784dfefc89aa749dfcd4f697c6275edc89a24",
+      "fetchedAt": "2026-09-06T13:52:21.444Z",
+      "localAssetKey": "spell_lucian_w3",
+      "localPath": "assets/images/spells/lucian_w3.png",
+      "revisionId": 3594941,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Ardent_Blaze_3.png?995fa"
+    },
+    {
       "contentHash": "0b517a57410b08c33fbc349db1f3b520f90f15d7140d50e090c908699bf7e4b5",
       "fetchedAt": "2026-08-12T18:59:01.216Z",
       "localAssetKey": "spell_lux_r",
@@ -2008,6 +2384,110 @@
       "localPath": "assets/images/spells/masteryi_w.png",
       "revisionId": 4039653,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Master_Yi_Meditate.png?a3d63"
+    },
+    {
+      "contentHash": "81b43c98d1b7c59bce1c97184172ed7c968b7727cae4aa7514ec8834a5192622",
+      "fetchedAt": "2026-09-06T13:53:06.544Z",
+      "localAssetKey": "spell_missfortune_e",
+      "localPath": "assets/images/spells/missfortune_e.png",
+      "revisionId": 3936384,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Make_It_Rain.png?12f5a"
+    },
+    {
+      "contentHash": "00887e61c30a18a6150e7e4383959f63177317644a246bbfc319bac160ba4f10",
+      "fetchedAt": "2026-09-06T13:53:06.544Z",
+      "localAssetKey": "spell_missfortune_i",
+      "localPath": "assets/images/spells/missfortune_i.png",
+      "revisionId": 4027989,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Love_Tap.png?a8563"
+    },
+    {
+      "contentHash": "dd097bbc03049e29fe231461287480d9235f1d4eb5b68f3dfb69b974d8abea41",
+      "fetchedAt": "2026-09-06T13:53:06.544Z",
+      "localAssetKey": "spell_missfortune_q",
+      "localPath": "assets/images/spells/missfortune_q.png",
+      "revisionId": 3993572,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Double_Up.png?8df3d"
+    },
+    {
+      "contentHash": "b7a20322e1f9f5b1773b8923ac5aef8f74b477ad7033883b846c9ffbc8620dd6",
+      "fetchedAt": "2026-09-06T13:53:06.544Z",
+      "localAssetKey": "spell_missfortune_r",
+      "localPath": "assets/images/spells/missfortune_r.png",
+      "revisionId": 4050364,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Bullet_Time.png?f09a7"
+    },
+    {
+      "contentHash": "7516e0c5259306c62a1b322a78ee12c67b1bbd516f36c137ced6f36bfda1bca1",
+      "fetchedAt": "2026-09-06T13:53:06.544Z",
+      "localAssetKey": "spell_missfortune_w",
+      "localPath": "assets/images/spells/missfortune_w.png",
+      "revisionId": 4015416,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Strut.png?95eec"
+    },
+    {
+      "contentHash": "089e8e18fff1b9b43784e2c7007ad413bb3f4d7f1874effed259f69feceac898",
+      "fetchedAt": "2026-09-06T13:53:06.544Z",
+      "localAssetKey": "spell_missfortune_w2",
+      "localPath": "assets/images/spells/missfortune_w2.png",
+      "revisionId": 4015416,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Guns_Blazing.png?87aba"
+    },
+    {
+      "contentHash": "7516e0c5259306c62a1b322a78ee12c67b1bbd516f36c137ced6f36bfda1bca1",
+      "fetchedAt": "2026-09-06T13:53:06.544Z",
+      "localAssetKey": "spell_missfortune_w3",
+      "localPath": "assets/images/spells/missfortune_w3.png",
+      "revisionId": 4015416,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Strut.png?95eec"
+    },
+    {
+      "contentHash": "1546cb45880e11258309c3b345460dc10beb74099fc0ecbf2e682fc40a97020d",
+      "fetchedAt": "2026-09-06T13:52:37.292Z",
+      "localAssetKey": "spell_mordekaiser_e",
+      "localPath": "assets/images/spells/mordekaiser_e.png",
+      "revisionId": 4058991,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Death%27s_Grasp.png?6237d"
+    },
+    {
+      "contentHash": "a06d1f75f04e3b9d0d1b6a7a85cd9e50d758a856361d4b563f08a2a39e101b2b",
+      "fetchedAt": "2026-09-06T13:52:37.292Z",
+      "localAssetKey": "spell_mordekaiser_i",
+      "localPath": "assets/images/spells/mordekaiser_i.png",
+      "revisionId": 4057934,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Darkness_Rise.png?15395"
+    },
+    {
+      "contentHash": "41c0e8feacbb502816f66e0fc749a51d447e8171fbf0ac94a066238dec65bf6c",
+      "fetchedAt": "2026-09-06T13:52:37.292Z",
+      "localAssetKey": "spell_mordekaiser_q",
+      "localPath": "assets/images/spells/mordekaiser_q.png",
+      "revisionId": 4016684,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Obliterate.png?5da47"
+    },
+    {
+      "contentHash": "dd5b1357de914e6615c7f04d3f2a469015483831838409aad8f1bc9169aba1b6",
+      "fetchedAt": "2026-09-06T13:52:37.292Z",
+      "localAssetKey": "spell_mordekaiser_r",
+      "localPath": "assets/images/spells/mordekaiser_r.png",
+      "revisionId": 4053304,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Realm_of_Death.png?9696f"
+    },
+    {
+      "contentHash": "7c186ebe4a008d5fad738c4c0cef469f73ac8dc1295aa14b33b5b41934c48c27",
+      "fetchedAt": "2026-09-06T13:52:37.292Z",
+      "localAssetKey": "spell_mordekaiser_w",
+      "localPath": "assets/images/spells/mordekaiser_w.png",
+      "revisionId": 4016354,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Indestructible.png?a5722"
+    },
+    {
+      "contentHash": "ae6db1f36c138c08d0913eabe438654f12fbb3dbba95c338bafab2879e201702",
+      "fetchedAt": "2026-09-06T13:52:37.292Z",
+      "localAssetKey": "spell_mordekaiser_w2",
+      "localPath": "assets/images/spells/mordekaiser_w2.png",
+      "revisionId": 4016354,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Mordekaiser_Indestructible_2.png?b82d0"
     },
     {
       "contentHash": "a8f3e3dffce9516dd1bb0203efc82506b12e5bb24ccb8a52a4000f99ffe2773e",
@@ -3256,6 +3736,46 @@
       "localPath": "assets/images/spells/warwick_w.png",
       "revisionId": 3980738,
       "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Warwick_Blood_Hunt.png?3dce3"
+    },
+    {
+      "contentHash": "29ae950caa2d9ad9434e705422d62abd4a7055471d6bc731c0fef48d8ece507c",
+      "fetchedAt": "2026-09-06T13:52:50.875Z",
+      "localAssetKey": "spell_xerath_e",
+      "localPath": "assets/images/spells/xerath_e.png",
+      "revisionId": 3881560,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Shocking_Orb.png?17ed3"
+    },
+    {
+      "contentHash": "85031484f3baf2ffcc02450eb68397bd1d81228aac7209746b5577de51f27cfd",
+      "fetchedAt": "2026-09-06T13:52:50.875Z",
+      "localAssetKey": "spell_xerath_i",
+      "localPath": "assets/images/spells/xerath_i.png",
+      "revisionId": 3986753,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Mana_Surge.png?b637b"
+    },
+    {
+      "contentHash": "6f557663cd2d9c9705174b5976e7d5515c59fbe24e11d6516ba694d3d4b5c4c9",
+      "fetchedAt": "2026-09-06T13:52:50.875Z",
+      "localAssetKey": "spell_xerath_q",
+      "localPath": "assets/images/spells/xerath_q.png",
+      "revisionId": 4057478,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Arcanopulse.png?e606e"
+    },
+    {
+      "contentHash": "9f40442e8e1288d2eff84d6a4dd2bbe6b19b57f93ba30ca6419719a73c433427",
+      "fetchedAt": "2026-09-06T13:52:50.875Z",
+      "localAssetKey": "spell_xerath_r",
+      "localPath": "assets/images/spells/xerath_r.png",
+      "revisionId": 4002918,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Rite_of_the_Arcane.png?12fcf"
+    },
+    {
+      "contentHash": "c2264643b2da35b8cd8cca952eeb97596502a48cd31eccc35bba5442cb868c85",
+      "fetchedAt": "2026-09-06T13:52:50.875Z",
+      "localAssetKey": "spell_xerath_w",
+      "localPath": "assets/images/spells/xerath_w.png",
+      "revisionId": 4008622,
+      "sourceUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Eye_of_Destruction.png?8e4d6"
     },
     {
       "contentHash": "21797d04d946a4ad684f2b825f6831f8923b25025cbad6a670f07f9cc891bc0f",

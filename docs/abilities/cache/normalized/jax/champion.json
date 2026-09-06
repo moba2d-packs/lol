@@ -1,0 +1,123 @@
+{
+  "asset": {
+    "key": "champ_jax",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Jax_OriginalSquare.png?6209d",
+    "sha1": "451e044764bf444919fe2a0ec5500b65e7ad781d"
+  },
+  "champion": "Jax",
+  "data": {
+    "adaptivetype": "Physical",
+    "alttype": "Assassin",
+    "apiname": "Jax",
+    "be": 675,
+    "changes": "V26.12",
+    "client_positions": [
+      "Top",
+      "Jungle"
+    ],
+    "client_tags": [
+      "Duelist",
+      "Auto-attack",
+      "Physical"
+    ],
+    "control": 2,
+    "damage": 3,
+    "date": "2009-02-21",
+    "difficulty": 2,
+    "external_positions": [
+      "Top",
+      "Jungle"
+    ],
+    "fullname": "Saijax Cail-Rynx Kohari Icath’un",
+    "herotype": "Fighter",
+    "id": 24,
+    "mobility": 2,
+    "patch": "Alpha Week 2",
+    "rangetype": "Melee",
+    "resource": "Mana",
+    "role": [
+      "Skirmisher"
+    ],
+    "rp": 585,
+    "skill_e": {
+      "1": "Counter Strike"
+    },
+    "skill_i": {
+      "1": "Relentless Assault"
+    },
+    "skill_q": {
+      "1": "Leap Strike"
+    },
+    "skill_r": {
+      "1": "Grandmaster-at-Arms"
+    },
+    "skill_w": {
+      "1": "Empower"
+    },
+    "skills": {
+      "1": "Relentless Assault",
+      "2": "Leap Strike",
+      "3": "Empower",
+      "4": "Counter Strike",
+      "5": "Grandmaster-at-Arms"
+    },
+    "stats": {
+      "acquisition_radius": 400,
+      "ar": {
+        "dam_lvl": -0.25
+      },
+      "aram": {
+        "dmg_dealt": 1.05,
+        "dmg_taken": 0.97
+      },
+      "arm_base": 36,
+      "arm_lvl": 4.2,
+      "as_base": 0.638,
+      "as_lvl": 3.4,
+      "as_ratio": 0.638000011444091,
+      "attack_delay_offset": -0.0918904393911361,
+      "dam_base": 68,
+      "dam_lvl": 4.25,
+      "hp5_base": 8.5,
+      "hp5_lvl": 0.55,
+      "hp_base": 650,
+      "hp_lvl": 103,
+      "mp5_base": 8.2,
+      "mp5_lvl": 0.7,
+      "mp_base": 339,
+      "mp_lvl": 52,
+      "mr_base": 32,
+      "mr_lvl": 2.05,
+      "ms": 350,
+      "ofa": {
+        "dmg_dealt": 0.95,
+        "dmg_taken": 1.05
+      },
+      "pathing_radius": 35,
+      "range": 125,
+      "selection_height": 130,
+      "selection_radius": 120,
+      "urf": {
+        "dmg_dealt": 0.9,
+        "dmg_taken": 1.15
+      },
+      "usb": {
+        "dmg_dealt": 0.95,
+        "dmg_taken": 1.05
+      }
+    },
+    "style": 10,
+    "title": "Grandmaster at Arms",
+    "toughness": 2,
+    "utility": 1
+  },
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "064a760522e6b2f887bce58abfff2750b6f0f79a47ed9a84b22261a004384973",
+    "fetchedAt": "2026-09-06T13:52:09.005Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
+  }
+}

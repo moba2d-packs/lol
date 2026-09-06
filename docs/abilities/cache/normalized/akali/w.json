@@ -1,0 +1,65 @@
+{
+  "asset": {
+    "key": "spell_akali_w",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Twilight_Shroud.png?e0c24",
+    "sha1": "fcfb6734f73cfd8c004a03eb5410ac0210b348a0"
+  },
+  "champion": "Akali",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_akali_w",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Akali_Twilight_Shroud.png?e0c24",
+        "sha1": "fcfb6734f73cfd8c004a03eb5410ac0210b348a0"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "20 / 19 / 18 / 17 / 16",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Akali''' restores <span style=\"white-space:nowrap\">[[File:Energy icon.svg|15px|link=Energy]]&nbsp;<span style=\"color:yellow; white-space:normal\">100 energy</span></span> over 0.<small>4</small> seconds and gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> that decays over 2 seconds. She also detonates a smoke bomb a fixed distance away in the target direction, creating a circular shroud that expands over the next 5 seconds into a ring. The shroud does not permeate terrain, and will expand toward nearby enemy champions. While the shroud is active, '''Akali's''' <span style=\"color:yellow; white-space:normal\">'''maximum''' energy</span> is increased by <span style=\"color:yellow; white-space:normal\">100</span>.",
+          "text": "Active: Akali restores &nbsp;100 energy over 0.4 seconds and gains &nbsp;bonus movement speed that decays over 2 seconds. She also detonates a smoke bomb a fixed distance away in the target direction, creating a circular shroud that expands over the next 5 seconds into a ring. The shroud does not permeate terrain, and will expand toward nearby enemy champions. While the shroud is active, Akali's maximum energy is increased by 100."
+        },
+        "description2": {
+          "raw": "Entering the shroud renders '''Akali''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Invisibility\">[[File:Twilight Shroud old2.png|20px|link=Stealth#Invisibility|An icon representing the keyword Invisibility]] [[:Stealth#Invisibility|invisible]]</span>, unless she is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashing]]</span>.",
+          "text": "Entering the shroud renders Akali invisible, unless she is dashing."
+        },
+        "description3": {
+          "raw": "Declaring a basic attack or casting an ability will break the invisibility and prevent '''Akali''' from entering it again for <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-bot-values=\"1;0.9;0.825;0.725;0.625\" data-top-values=\"1;7;10;13;16\">1 – 0.<small>625</small> (based on level)</span> seconds, refreshing on subsequent attacks and casts.",
+          "text": "Declaring a basic attack or casting an ability will break the invisibility and prevent Akali from entering it again for 1 – 0.625 (based on level) seconds, refreshing on subsequent attacks and casts."
+        },
+        "description4": {
+          "raw": "''The <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Akali\" data-ability=\"Shuriken Flip\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Akali Shuriken Flip.png|20xpx|border|link=Akali#Shuriken Flip|An icon for Akali's ability Shuriken Flip]]</span> <span style=\"white-space:normal;\">[[Akali#Shuriken Flip|marked]]</span></span> section of Twilight Shroud will linger for the mark's duration, even after the shroud ends.''",
+          "text": "The marked section of Twilight Shroud will linger for the mark's duration, even after the shroud ends."
+        },
+        "description5": {
+          "raw": "'''''Akali''' can move during Twilight Shroud's cast time.''",
+          "text": "Akali can move during Twilight Shroud's cast time."
+        },
+        "effectradius": "350 • 1175",
+        "icon": "Twilight Shroud.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>30 / 35 / 40 / 45 / 50%</dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Shroud Duration:'''</span></dt><dd>5 / 5.<small>5</small> / 6 / 6.<small>5</small> / 7 seconds</dd></dl>",
+          "text": "Bonus Movement Speed:30 / 35 / 40 / 45 / 50%\nShroud Duration:5 / 5.5 / 6 / 6.5 / 7 seconds"
+        },
+        "name": "Twilight Shroud",
+        "notes": {
+          "raw": "* '''Akali''' will also not gain the <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Invisibility\">[[File:Twilight Shroud old2.png|20px|link=Stealth#Invisibility|An icon representing the keyword Invisibility]] [[:Stealth#Invisibility|invisibility]]</span> if she is <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Recall\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Recall.png|20xpx|border|link=Recall|An icon representing Recall]]</span> <span style=\"white-space:normal;\">[[Recall|Recalling]]</span></span>.\n* It is possible for '''Akali''' to detonate the smoke bomb on the far side of terrain from her current location.\n* ''Twilight Shroud's'' effects begin at the start of the cast time.\n* Using a basic attack breaks the stealth at the start of the attack windup.",
+          "text": "Akali will also not gain the invisibility if she is Recalling.\nIt is possible for Akali to detonate the smoke bomb on the far side of terrain from her current location.\nTwilight Shroud's effects begin at the start of the cast time.\nUsing a basic attack breaks the stealth at the start of the attack windup."
+        },
+        "targeting": "Direction"
+      },
+      "name": "Twilight Shroud"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "W",
+  "source": {
+    "contentHash": "ed4bd6e650fb9ae777a95712530de37c116a5a0a1bdbd16208b1bcf1077eb6ad",
+    "fetchedAt": "2026-09-06T13:51:16.204Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Akali/Twilight_Shroud",
+    "revisionId": 4007406,
+    "sourceTimestamp": "2026-04-11T16:41:19Z"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Xerath/Shocking Orb",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Shocking Orb@@icon@@Shocking Orb.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Xerath''' fires an orb of energy in the target direction that deals <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to the first enemy hit and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stuns\">[[File:Stun icon.png|20px|link=Stun|An icon representing the keyword Stun]] [[:Stun|stuns]]</span> them for <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-top-label=\"orb travel distance\" data-displayformula=\"0.75+(0.15 per 105 units). ''This is capped at 1050 units traveled.''\" data-bot-values=\"0.75;0.9;1.05;1.2;1.35;1.5;1.65;1.8;1.95;2.1;2.25\" data-top-values=\"0;105;210;315;420;525;630;735;840;945;1050\">0.<small>75</small> – 2.<small>25</small> (based on orb travel distance)</span>[[Category:Debug]] seconds.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>70 / 100 / 130 / 160 / 190 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 45% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cr\">[[File:Range center.png|20px|link=Range|An icon representing the keyword Centered range]]</span> 1125@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> 120@@speed@@1400@@casttime@@0.<small>25</small>@@cost@@60 / 65 / 70 / 75 / 80@@cooldown@@13 / 12.<small>5</small> / 12 / 11.<small>5</small> / 11@@targeting@@Direction@@damagetype@@Magic@@spellshield@@True@@projectile@@True@@notes@@\n* This ability will cast from wherever the caster is at the end of the cast time.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1309317,
+                "revisions": [
+                  {
+                    "parentid": 3431151,
+                    "revid": 3881560,
+                    "timestamp": "2025-04-02T23:32:29Z"
+                  }
+                ],
+                "title": "Template:Data Xerath/Shocking Orb"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 3881560,
+      "timestamp": "2025-04-02T23:32:29Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "ca1ba3de59ff5f55cd65d4e3caa17b6e226dd7602cce509c6e6f0b5df1784739",
+    "fetchedAt": "2026-09-06T13:52:50.875Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Xerath/Shocking_Orb",
+    "revisionId": 3881560,
+    "sourceTimestamp": "2025-04-02T23:32:29Z"
+  }
+}

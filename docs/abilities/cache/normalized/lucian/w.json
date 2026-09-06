@@ -1,0 +1,167 @@
+{
+  "asset": {
+    "key": "spell_lucian_w",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Ardent_Blaze.png?dd440",
+    "sha1": "ec984e707a600db6072b4a0825a560bc550ce228"
+  },
+  "champion": "Lucian",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_lucian_w",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Ardent_Blaze.png?dd440",
+        "sha1": "ec984e707a600db6072b4a0825a560bc550ce228"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "14 / 13 / 12 / 11 / 10",
+        "cost": "60",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit and granting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area for 1 second.",
+          "text": "Active: Lucian fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing magic damage to enemies hit and granting sight of the area for 1 second."
+        },
+        "description2": {
+          "raw": "Enemies hit are marked for 6 seconds.",
+          "text": "Enemies hit are marked for 6 seconds."
+        },
+        "description3": {
+          "raw": "'''Lucian''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant '''Lucian''' ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Lightslinger\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Lightslinger.png|20xpx|border|link=Lucian#Lightslinger|An icon for Lucian's ability Lightslinger]]</span> <span style=\"white-space:normal;\">[[Lucian#Lightslinger|Vigilance]]</span></span>''.",
+          "text": "Lucian gains &nbsp;bonus movement speed for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant Lucian Vigilance."
+        },
+        "icon": "Ardent Blaze.png",
+        "icon2": "Ardent Blaze 2.png",
+        "icon3": "Ardent Blaze 3.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 110 / 145 / 180 / 215 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Magic Damage:75 / 110 / 145 / 180 / 215 (+ 90% AP)"
+        },
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>60 / 65 / 70 / 75 / 80</dd></dl>",
+          "text": "Bonus Movement Speed:60 / 65 / 70 / 75 / 80"
+        },
+        "name": "Ardent Blaze",
+        "notes": {
+          "raw": "* This ability will cast from wherever the caster is at the end of the cast time.\n** Like most [[projectile|missiles]], it will not collide with enemies whose center is beyond the maximum range (not behind '''Lucian'''), but this determines only the center and timing of the explosion.\n* ''Ardent Blaze'' will cast from wherever '''Lucian''' is at the end of the cast time.\n* '''Lucian''' will not gain ''Ardent Blaze's'' bonus movement speed if attacks on <span style=\"color:\n#D929D9; white-space:normal\">marked</span> targets are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, or if missed while the attacker is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blinded]]</span>.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|DoTs]]</span> will proc ''Ardent Blaze'' only once.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will not prevent the mark.",
+          "text": "This ability will cast from wherever the caster is at the end of the cast time.\n* Like most missiles, it will not collide with enemies whose center is beyond the maximum range (not behind Lucian), but this determines only the center and timing of the explosion.\nArdent Blaze will cast from wherever Lucian is at the end of the cast time.\nLucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are dodged, blocked, or if missed while the attacker is blinded.\nDoTs will proc Ardent Blaze only once.\nSpell shield will not prevent the mark."
+        },
+        "projectile": true,
+        "range": "900",
+        "speed": "1600",
+        "spellshield": false,
+        "targeting": "Direction",
+        "width": "110"
+      },
+      "name": "Ardent Blaze"
+    },
+    {
+      "asset": {
+        "key": "spell_lucian_w2",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Ardent_Blaze_2.png?2c7b4",
+        "sha1": "0744ed3a3a2cafddeeac30fc4f3a13b4a72e4f4e"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "14 / 13 / 12 / 11 / 10",
+        "cost": "60",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit and granting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area for 1 second.",
+          "text": "Active: Lucian fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing magic damage to enemies hit and granting sight of the area for 1 second."
+        },
+        "description2": {
+          "raw": "Enemies hit are marked for 6 seconds.",
+          "text": "Enemies hit are marked for 6 seconds."
+        },
+        "description3": {
+          "raw": "'''Lucian''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant '''Lucian''' ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Lightslinger\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Lightslinger.png|20xpx|border|link=Lucian#Lightslinger|An icon for Lucian's ability Lightslinger]]</span> <span style=\"white-space:normal;\">[[Lucian#Lightslinger|Vigilance]]</span></span>''.",
+          "text": "Lucian gains &nbsp;bonus movement speed for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant Lucian Vigilance."
+        },
+        "icon": "Ardent Blaze.png",
+        "icon2": "Ardent Blaze 2.png",
+        "icon3": "Ardent Blaze 3.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 110 / 145 / 180 / 215 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Magic Damage:75 / 110 / 145 / 180 / 215 (+ 90% AP)"
+        },
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>60 / 65 / 70 / 75 / 80</dd></dl>",
+          "text": "Bonus Movement Speed:60 / 65 / 70 / 75 / 80"
+        },
+        "name": "Ardent Blaze",
+        "notes": {
+          "raw": "* This ability will cast from wherever the caster is at the end of the cast time.\n** Like most [[projectile|missiles]], it will not collide with enemies whose center is beyond the maximum range (not behind '''Lucian'''), but this determines only the center and timing of the explosion.\n* ''Ardent Blaze'' will cast from wherever '''Lucian''' is at the end of the cast time.\n* '''Lucian''' will not gain ''Ardent Blaze's'' bonus movement speed if attacks on <span style=\"color:\n#D929D9; white-space:normal\">marked</span> targets are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, or if missed while the attacker is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blinded]]</span>.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|DoTs]]</span> will proc ''Ardent Blaze'' only once.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will not prevent the mark.",
+          "text": "This ability will cast from wherever the caster is at the end of the cast time.\n* Like most missiles, it will not collide with enemies whose center is beyond the maximum range (not behind Lucian), but this determines only the center and timing of the explosion.\nArdent Blaze will cast from wherever Lucian is at the end of the cast time.\nLucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are dodged, blocked, or if missed while the attacker is blinded.\nDoTs will proc Ardent Blaze only once.\nSpell shield will not prevent the mark."
+        },
+        "projectile": true,
+        "range": "900",
+        "speed": "1600",
+        "spellshield": false,
+        "targeting": "Direction",
+        "width": "110"
+      },
+      "name": "Ardent Blaze 2"
+    },
+    {
+      "asset": {
+        "key": "spell_lucian_w3",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Lucian_Ardent_Blaze_3.png?995fa",
+        "sha1": "dfe01c537a390ba3d214175a26e770403d4f75f7"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "14 / 13 / 12 / 11 / 10",
+        "cost": "60",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit and granting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area for 1 second.",
+          "text": "Active: Lucian fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing magic damage to enemies hit and granting sight of the area for 1 second."
+        },
+        "description2": {
+          "raw": "Enemies hit are marked for 6 seconds.",
+          "text": "Enemies hit are marked for 6 seconds."
+        },
+        "description3": {
+          "raw": "'''Lucian''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant '''Lucian''' ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Lightslinger\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Lightslinger.png|20xpx|border|link=Lucian#Lightslinger|An icon for Lucian's ability Lightslinger]]</span> <span style=\"white-space:normal;\">[[Lucian#Lightslinger|Vigilance]]</span></span>''.",
+          "text": "Lucian gains &nbsp;bonus movement speed for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant Lucian Vigilance."
+        },
+        "icon": "Ardent Blaze.png",
+        "icon2": "Ardent Blaze 2.png",
+        "icon3": "Ardent Blaze 3.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 110 / 145 / 180 / 215 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>",
+          "text": "Magic Damage:75 / 110 / 145 / 180 / 215 (+ 90% AP)"
+        },
+        "leveling3": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>60 / 65 / 70 / 75 / 80</dd></dl>",
+          "text": "Bonus Movement Speed:60 / 65 / 70 / 75 / 80"
+        },
+        "name": "Ardent Blaze",
+        "notes": {
+          "raw": "* This ability will cast from wherever the caster is at the end of the cast time.\n** Like most [[projectile|missiles]], it will not collide with enemies whose center is beyond the maximum range (not behind '''Lucian'''), but this determines only the center and timing of the explosion.\n* ''Ardent Blaze'' will cast from wherever '''Lucian''' is at the end of the cast time.\n* '''Lucian''' will not gain ''Ardent Blaze's'' bonus movement speed if attacks on <span style=\"color:\n#D929D9; white-space:normal\">marked</span> targets are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, or if missed while the attacker is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blinded]]</span>.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|DoTs]]</span> will proc ''Ardent Blaze'' only once.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will not prevent the mark.",
+          "text": "This ability will cast from wherever the caster is at the end of the cast time.\n* Like most missiles, it will not collide with enemies whose center is beyond the maximum range (not behind Lucian), but this determines only the center and timing of the explosion.\nArdent Blaze will cast from wherever Lucian is at the end of the cast time.\nLucian will not gain Ardent Blaze's bonus movement speed if attacks on marked targets are dodged, blocked, or if missed while the attacker is blinded.\nDoTs will proc Ardent Blaze only once.\nSpell shield will not prevent the mark."
+        },
+        "projectile": true,
+        "range": "900",
+        "speed": "1600",
+        "spellshield": false,
+        "targeting": "Direction",
+        "width": "110"
+      },
+      "name": "Ardent Blaze 3"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "W",
+  "source": {
+    "contentHash": "7fb5724cfd3701d5df31518eadf99b735bfccdb5068a2946b4cfeee8a82f63b1",
+    "fetchedAt": "2026-09-06T13:52:21.444Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Lucian/Ardent_Blaze",
+    "revisionId": 3594941,
+    "sourceTimestamp": "2023-09-12T19:08:23Z"
+  }
+}

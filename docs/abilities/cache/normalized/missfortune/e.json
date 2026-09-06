@@ -1,0 +1,52 @@
+{
+  "asset": {
+    "key": "spell_missfortune_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Make_It_Rain.png?12f5a",
+    "sha1": "29457b072721c1d009bceaf05af104ab83d94cf9"
+  },
+  "champion": "Miss Fortune",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_missfortune_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Make_It_Rain.png?12f5a",
+        "sha1": "29457b072721c1d009bceaf05af104ab83d94cf9"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "18 / 17 / 16 / 15 / 14",
+        "cost": "80",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Miss Fortune''' casts a storm of bullets at the target location for 2 seconds, granting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> every 0.<small>25</small> seconds to enemies within, and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowing]]</span> them by 40% <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 6% per 100 AP)</span>.",
+          "text": "Active: Miss Fortune casts a storm of bullets at the target location for 2 seconds, granting sight of the area, dealing magic damage every 0.25 seconds to enemies within, and slowing them by 40% (+ 6% per 100 AP)."
+        },
+        "effectradius": "200",
+        "icon": "Make It Rain.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage Per Tick:'''</span></dt><dd>8.<small>75</small> / 12.<small>5</small> / 16.<small>25</small> / 20 / 23.<small>75</small> <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 15% AP)</span></dd><dt><span class=\"template_lc\">'''Total Magic Damage:'''</span></dt><dd>70 / 100 / 130 / 160 / 190 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 120% AP)</span></dd></dl>",
+          "text": "Magic Damage Per Tick:8.75 / 12.5 / 16.25 / 20 / 23.75 (+ 15% AP)Total Magic Damage:70 / 100 / 130 / 160 / 190 (+ 120% AP)"
+        },
+        "name": "Make It Rain",
+        "notes": {
+          "raw": "* ''Make It Rain's'' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slow]]</span> cannot be <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cleanse\">[[File:Remove Scurvy.png|20px|link=Crowd control#Removal|An icon representing the keyword Cleanse]] [[:Crowd control#Removal|cleansed]]</span>.",
+          "text": "Make It Rain's slow cannot be cleansed."
+        },
+        "spellshield": false,
+        "targeting": "Location"
+      },
+      "name": "Make It Rain"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "94026476025cc62b52b0b2c9287a69ce3886d93dd6b6bb3388661a7f23e52bfa",
+    "fetchedAt": "2026-09-06T13:53:06.544Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Miss_Fortune/Make_It_Rain",
+    "revisionId": 3936384,
+    "sourceTimestamp": "2025-07-24T15:45:56Z"
+  }
+}

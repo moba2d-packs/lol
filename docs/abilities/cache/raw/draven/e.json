@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Draven/Stand Aside",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Stand Aside@@icon@@Stand Aside.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Draven''' throws a fan of axes in a line in the target direction, dealing <span style=\"color:\n#FF8C34; white-space:normal\">physical damage</span> to enemies hit, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Airborne\">[[File:Airborne icon.png|20px|link=Airborne|An icon representing the keyword Airborne]] [[:Airborne|knocking them aside]]</span>, though not through terrain, and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Slow\">[[File:Slow icon.png|20px|link=Slow|An icon representing the keyword Slow]] [[:Slow|slowing]]</span> them for 2 seconds.@@description2@@{{{description2}}}@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Physical Damage:'''</span></dt><dd>75 / 110 / 145 / 180 / 215 <span style=\"color:orange; white-space:normal\">(+ 50% '''bonus''' AD)</span></dd></dl><dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Slow:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> 260@@speed@@1400@@casttime@@0.<small>25</small>@@cost@@70@@cooldown@@16 / 15 / 14 / 13 / 12@@targeting@@Direction@@damagetype@@Physical@@spellshield@@True@@projectile@@true@@notes@@\n* This ability will cast from wherever the caster is at the end of the cast time.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1307070,
+                "revisions": [
+                  {
+                    "parentid": 3983248,
+                    "revid": 4034694,
+                    "timestamp": "2026-06-23T21:12:57Z"
+                  }
+                ],
+                "title": "Template:Data Draven/Stand Aside"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4034694,
+      "timestamp": "2026-06-23T21:12:57Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "ae6d4e6a21e330846191abff1197a0a23fc84dd23f888913746d7d4a22283ae2",
+    "fetchedAt": "2026-09-06T13:51:42.198Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Draven/Stand_Aside",
+    "revisionId": 4034694,
+    "sourceTimestamp": "2026-06-23T21:12:57Z"
+  }
+}

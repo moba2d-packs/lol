@@ -1,0 +1,55 @@
+{
+  "asset": {
+    "key": "spell_xerath_e",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Shocking_Orb.png?17ed3",
+    "sha1": "b0e29f11e7d7d1382f06d7a48d8bea152731bfbf"
+  },
+  "champion": "Xerath",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_xerath_e",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Xerath_Shocking_Orb.png?17ed3",
+        "sha1": "b0e29f11e7d7d1382f06d7a48d8bea152731bfbf"
+      },
+      "fields": {
+        "casttime": "0.25",
+        "cooldown": "13 / 12.5 / 12 / 11.5 / 11",
+        "cost": "60 / 65 / 70 / 75 / 80",
+        "damagetype": "Magic",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Xerath''' fires an orb of energy in the target direction that deals <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to the first enemy hit and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stuns\">[[File:Stun icon.png|20px|link=Stun|An icon representing the keyword Stun]] [[:Stun|stuns]]</span> them for <span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-top-label=\"orb travel distance\" data-displayformula=\"0.75+(0.15 per 105 units). ''This is capped at 1050 units traveled.''\" data-bot-values=\"0.75;0.9;1.05;1.2;1.35;1.5;1.65;1.8;1.95;2.1;2.25\" data-top-values=\"0;105;210;315;420;525;630;735;840;945;1050\">0.<small>75</small> – 2.<small>25</small> (based on orb travel distance)</span>[[Category:Debug]] seconds.",
+          "text": "Active: Xerath fires an orb of energy in the target direction that deals magic damage to the first enemy hit and stuns them for 0.75 – 2.25 (based on orb travel distance)Category:Debug seconds."
+        },
+        "icon": "Shocking Orb.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>70 / 100 / 130 / 160 / 190 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 45% AP)</span></dd></dl>",
+          "text": "Magic Damage:70 / 100 / 130 / 160 / 190 (+ 45% AP)"
+        },
+        "name": "Shocking Orb",
+        "notes": {
+          "raw": "* This ability will cast from wherever the caster is at the end of the cast time.",
+          "text": "This ability will cast from wherever the caster is at the end of the cast time."
+        },
+        "projectile": true,
+        "range": "1125",
+        "speed": "1400",
+        "spellshield": true,
+        "targeting": "Direction",
+        "width": "120"
+      },
+      "name": "Shocking Orb"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "E",
+  "source": {
+    "contentHash": "ab17a9b1076aa970413fcec22a3b8595edef8979e26b7de22be5a6059ec26de5",
+    "fetchedAt": "2026-09-06T13:52:50.875Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Xerath/Shocking_Orb",
+    "revisionId": 3881560,
+    "sourceTimestamp": "2025-04-02T23:32:29Z"
+  }
+}

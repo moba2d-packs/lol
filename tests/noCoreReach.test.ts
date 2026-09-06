@@ -460,8 +460,9 @@ describe("the pack's tests speak only published core surfaces", () => {
     // is built that way — while the rule that fixes it (`Dash.unstoppable`) is
     // core's. Core owns the rule, this owns the ability that asked for it.
     //
-    // And one more per champion added since: `tests/spells/Aatrox.test.ts`.
-    expect(files.length).toBe(126);
+    // And one more per champion added since: `tests/spells/Aatrox.test.ts`,
+    // `tests/spells/Akali.test.ts`.
+    expect(files.length).toBe(127);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {

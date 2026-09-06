@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Jax/Empower",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Empower@@icon@@Empower.png@@icon2@@{{{icon2}}}@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Jax''' empowers his next <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attack]]</span> or ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Jax\" data-ability=\"Leap Strike\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Jax Leap Strike.png|20xpx|border|link=Jax#Leap Strike|An icon for Jax's ability Leap Strike]]</span> <span style=\"white-space:normal;\">[[Jax#Leap Strike|Leap Strike]]</span></span>'' against an enemy within 10 seconds to deal <span style=\"color:\n#00B0F0; white-space:normal\">'''additional''' magic damage</span>, reduced to 50% against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Structures\">[[File:Structure icon.png|20px|link=Category:Structure|An icon representing the keyword Structure]] [[:Category:Structure|structures]]</span>. If ''Empower'' is used on a basic attack, it will gain <span style=\"white-space:nowrap\">[[File:Range icon.png|15px|link=Range]]&nbsp;50 '''bonus''' range</span> and have an <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Uncancellable windup\">[[File:Relentless Force 2.png|20px|link=Basic attack#Uncancellable Windup|An icon representing the keyword Uncancellable windup]] [[:Basic attack#Uncancellable Windup|uncancellable windup]]</span>.@@description2@@''Empower <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack reset\">[[File:Bladework.png|20px|link=Basic attack#Attack reset|An icon representing the keyword Basic attack reset]] [[:Basic attack#Attack reset|resets]]</span> '''Jax's''' basic attack timer.''@@description3@@{{{description3}}}@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Additional Magic Damage:'''</span></dt><dd>50 / 85 / 120 / 155 / 190 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 60% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@{{{speed}}}@@casttime@@none@@cost@@30@@cooldown@@7 / 6 / 5 / 4 / 3@@targeting@@Auto@@damagetype@@magic@@spellshield@@true@@projectile@@{{{projectile}}}@@notes@@\n* ''Empower'' is applied in a separate damage instance from '''Jax's''' basic attacks.\n** This causes effects like <span class=\"inline-image label-after rune-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-rune=\"Bone Plating\" data-game=\"lol\"><span style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Bone Plating rune.png|20xpx|link=Bone Plating|An icon representing Bone Plating]]</span> <span style=\"word-break: keep-all;\">[[Bone Plating]]</span></span> to be applied twice.<sup><span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"This does not match expectations. \">(unexpected)</span></sup>@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1307317,
+                "revisions": [
+                  {
+                    "parentid": 3973566,
+                    "revid": 3973571,
+                    "timestamp": "2025-12-11T05:34:58Z"
+                  }
+                ],
+                "title": "Template:Data Jax/Empower"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 3973571,
+      "timestamp": "2025-12-11T05:34:58Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "74021dbb2ac14457cad86c3dc3013539844fe28883fadd3f5392f7b67ee44737",
+    "fetchedAt": "2026-09-06T13:52:09.005Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Jax/Empower",
+    "revisionId": 3973571,
+    "sourceTimestamp": "2025-12-11T05:34:58Z"
+  }
+}

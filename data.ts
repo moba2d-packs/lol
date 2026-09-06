@@ -237,6 +237,13 @@ const ROSTER: {
     spells: ['Aatrox_Q', 'Aatrox_W', 'Aatrox_E', 'Aatrox_R'],
   },
   {
+    name: 'Akali',
+    attack: ATTACK.ASSASSIN,
+    image: 'champ_akali',
+
+    spells: ['Akali_Q', 'Akali_W', 'Akali_E', 'Akali_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',

@@ -1,0 +1,105 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Lucian/Ardent Blaze",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Ardent Blaze@@icon@@Ardent Blaze.png@@icon2@@Ardent Blaze 2.png@@icon3@@Ardent Blaze 3.png@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit and granting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area for 1 second.@@description2@@Enemies hit are marked for 6 seconds.@@description3@@'''Lucian''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant '''Lucian''' ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Lightslinger\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Lightslinger.png|20xpx|border|link=Lucian#Lightslinger|An icon for Lucian's ability Lightslinger]]</span> <span style=\"white-space:normal;\">[[Lucian#Lightslinger|Vigilance]]</span></span>''.@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 110 / 145 / 180 / 215 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>60 / 65 / 70 / 75 / 80</dd></dl>@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cr\">[[File:Range center.png|20px|link=Range|An icon representing the keyword Centered range]]</span> 900@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"initial missile width\">110</span>@@speed@@1600@@casttime@@0.<small>25</small>@@cost@@60@@cooldown@@14 / 13 / 12 / 11 / 10@@targeting@@Direction@@damagetype@@Magic@@spellshield@@special@@projectile@@True@@notes@@\n* This ability will cast from wherever the caster is at the end of the cast time.\n** Like most [[projectile|missiles]], it will not collide with enemies whose center is beyond the maximum range (not behind '''Lucian'''), but this determines only the center and timing of the explosion.\n* ''Ardent Blaze'' will cast from wherever '''Lucian''' is at the end of the cast time.\n* '''Lucian''' will not gain ''Ardent Blaze's'' bonus movement speed if attacks on <span style=\"color:\n#D929D9; white-space:normal\">marked</span> targets are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, or if missed while the attacker is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blinded]]</span>.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|DoTs]]</span> will proc ''Ardent Blaze'' only once.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will not prevent the mark.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1308178,
+                "revisions": [
+                  {
+                    "parentid": 3592090,
+                    "revid": 3594941,
+                    "timestamp": "2023-09-12T19:08:23Z"
+                  }
+                ],
+                "title": "Template:Data Lucian/Ardent Blaze"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 3594941,
+      "timestamp": "2023-09-12T19:08:23Z"
+    },
+    {
+      "page": "Template:Data Lucian/Ardent Blaze 2",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Ardent Blaze@@icon@@Ardent Blaze.png@@icon2@@Ardent Blaze 2.png@@icon3@@Ardent Blaze 3.png@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit and granting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area for 1 second.@@description2@@Enemies hit are marked for 6 seconds.@@description3@@'''Lucian''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant '''Lucian''' ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Lightslinger\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Lightslinger.png|20xpx|border|link=Lucian#Lightslinger|An icon for Lucian's ability Lightslinger]]</span> <span style=\"white-space:normal;\">[[Lucian#Lightslinger|Vigilance]]</span></span>''.@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 110 / 145 / 180 / 215 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>60 / 65 / 70 / 75 / 80</dd></dl>@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cr\">[[File:Range center.png|20px|link=Range|An icon representing the keyword Centered range]]</span> 900@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"initial missile width\">110</span>@@speed@@1600@@casttime@@0.<small>25</small>@@cost@@60@@cooldown@@14 / 13 / 12 / 11 / 10@@targeting@@Direction@@damagetype@@Magic@@spellshield@@special@@projectile@@True@@notes@@\n* This ability will cast from wherever the caster is at the end of the cast time.\n** Like most [[projectile|missiles]], it will not collide with enemies whose center is beyond the maximum range (not behind '''Lucian'''), but this determines only the center and timing of the explosion.\n* ''Ardent Blaze'' will cast from wherever '''Lucian''' is at the end of the cast time.\n* '''Lucian''' will not gain ''Ardent Blaze's'' bonus movement speed if attacks on <span style=\"color:\n#D929D9; white-space:normal\">marked</span> targets are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, or if missed while the attacker is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blinded]]</span>.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|DoTs]]</span> will proc ''Ardent Blaze'' only once.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will not prevent the mark.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1314499,
+                "revisions": [
+                  {
+                    "parentid": 0,
+                    "revid": 2497758,
+                    "timestamp": "2017-02-17T19:14:32Z"
+                  }
+                ],
+                "title": "Template:Data Lucian/Ardent Blaze 2"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 2497758,
+      "timestamp": "2017-02-17T19:14:32Z"
+    },
+    {
+      "page": "Template:Data Lucian/Ardent Blaze 3",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Ardent Blaze@@icon@@Ardent Blaze.png@@icon2@@Ardent Blaze 2.png@@icon3@@Ardent Blaze 3.png@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' fires a missile in the target direction that explodes in a cross pattern upon hitting an enemy or reaching maximum range, dealing <span style=\"color:\n#00B0F0; white-space:normal\">magic damage</span> to enemies hit and granting <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|sight]]</span> of the area for 1 second.@@description2@@Enemies hit are marked for 6 seconds.@@description3@@'''Lucian''' gains <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> for 1 second when he or allied champions damage a marked target. Allied champions triggering this effect grant '''Lucian''' ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Lightslinger\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Lightslinger.png|20xpx|border|link=Lucian#Lightslinger|An icon for Lucian's ability Lightslinger]]</span> <span style=\"white-space:normal;\">[[Lucian#Lightslinger|Vigilance]]</span></span>''.@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Magic Damage:'''</span></dt><dd>75 / 110 / 145 / 180 / 215 <span style=\"color:\n#7A6DFF; white-space:normal\">(+ 90% AP)</span></dd></dl>@@leveling2@@{{{leveling2}}}@@leveling3@@<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>60 / 65 / 70 / 75 / 80</dd></dl>@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Cr\">[[File:Range center.png|20px|link=Range|An icon representing the keyword Centered range]]</span> 900@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@<span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Er\">[[File:Range model.png|20px|link=Range|An icon representing the keyword Edge range]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"initial missile width\">110</span>@@speed@@1600@@casttime@@0.<small>25</small>@@cost@@60@@cooldown@@14 / 13 / 12 / 11 / 10@@targeting@@Direction@@damagetype@@Magic@@spellshield@@special@@projectile@@True@@notes@@\n* This ability will cast from wherever the caster is at the end of the cast time.\n** Like most [[projectile|missiles]], it will not collide with enemies whose center is beyond the maximum range (not behind '''Lucian'''), but this determines only the center and timing of the explosion.\n* ''Ardent Blaze'' will cast from wherever '''Lucian''' is at the end of the cast time.\n* '''Lucian''' will not gain ''Ardent Blaze's'' bonus movement speed if attacks on <span style=\"color:\n#D929D9; white-space:normal\">marked</span> targets are <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dodge\">[[File:Jax Counter Strike old.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Dodge]] [[:Attack_effects#Parrying|dodged]]</span>, <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Block\">[[File:Spirit's Refuge.png|20px|link=Attack_effects#Parrying|An icon representing the keyword Block]] [[:Attack_effects#Parrying|blocked]]</span>, or if missed while the attacker is <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Blind\">[[File:Blind icon.png|20px|link=Blind|An icon representing the keyword Blind]] [[:Blind|blinded]]</span>.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Persistent damage\">[[File:Blaze.png|20px|link=Damage|An icon representing the keyword Persistent damage]] [[:Damage|DoTs]]</span> will proc ''Ardent Blaze'' only once.\n* <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Spell shield\">[[File:Spell Shield.png|20px|link=Spell shield|An icon representing the keyword Spell shield]] [[:Spell shield|Spell shield]]</span> will not prevent the mark.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1334434,
+                "revisions": [
+                  {
+                    "parentid": 2581371,
+                    "revid": 2583907,
+                    "timestamp": "2017-09-27T14:19:30Z"
+                  }
+                ],
+                "title": "Template:Data Lucian/Ardent Blaze 3"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 2583907,
+      "timestamp": "2017-09-27T14:19:30Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "9d7a0fd266447e08f8c353ad6a969b14faf07391b7b35588a2eb4f0451e41d48",
+    "fetchedAt": "2026-09-06T13:52:21.444Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Lucian/Ardent_Blaze",
+    "revisionId": 3594941,
+    "sourceTimestamp": "2023-09-12T19:08:23Z"
+  }
+}

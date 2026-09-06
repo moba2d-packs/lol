@@ -1,0 +1,61 @@
+{
+  "asset": {
+    "key": "spell_braum_w",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Stand_Behind_Me.png?3007b",
+    "sha1": "7d16caf17653c5b80847e41e867ef72f6bb2b6d5"
+  },
+  "champion": "Braum",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_braum_w",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Braum_Stand_Behind_Me.png?3007b",
+        "sha1": "7d16caf17653c5b80847e41e867ef72f6bb2b6d5"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "12 / 11 / 10 / 9 / 8",
+        "cost": "40",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Braum''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dashes\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> to put himself <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"150 units from his ally towards the closest enemy\">between</span> the target ally and the closest <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Sight\">[[File:Sight icon.png|20px|link=Sight|An icon representing the keyword Sight]] [[:Sight|visible]]</span> enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champion\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champion]]</span> <span class=\"basic-tooltip\" style=\"border-bottom:1px dotted gray;cursor:help;\" title=\"from the ally's location\">within 1500 units</span>, and upon arrival grants himself and the ally <span style=\"white-space:nowrap\">[[File:Armor icon.svg|15px|link=Armor]]&nbsp;<span style=\"color:yellow; white-space:normal\">'''bonus''' armor</span></span> and <span style=\"white-space:nowrap\">[[File:Magic resistance icon.svg|15px|link=Magic resistance]]&nbsp;<span style=\"color:\n#00FFFF; white-space:normal\">'''bonus''' magic resistance</span></span> for 3 seconds.",
+          "text": "Active: Braum dashes to put himself between the target ally and the closest visible enemy champion within 1500 units, and upon arrival grants himself and the ally &nbsp;bonus armor and &nbsp;bonus magic resistance for 3 seconds."
+        },
+        "description2": {
+          "raw": "''Stand Behind Me'' can be [[Self-targeted|self cast]] to instantly grant '''Braum''' the '''bonus''' resistances.",
+          "text": "Stand Behind Me can be self cast to instantly grant Braum the bonus resistances."
+        },
+        "description3": {
+          "raw": "''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Braum\" data-ability=\"Unbreakable\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Braum Unbreakable.png|20xpx|border|link=Braum#Unbreakable|An icon for Braum's ability Unbreakable]]</span> <span style=\"white-space:normal;\">[[Braum#Unbreakable|Unbreakable]]</span></span> can be cast during the dash.''",
+          "text": "Unbreakable can be cast during the dash."
+        },
+        "icon": "Stand Behind Me.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Ally Bonus Armor:'''</span></dt><dd>20 / 25 / 30 / 35 / 40 <span style=\"color:yellow; white-space:normal\">(+ 12% '''bonus''' armor)</span></dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Ally Bonus Magic Resistance:'''</span></dt><dd>20 / 25 / 30 / 35 / 40 <span style=\"color:\n#00FFFF; white-space:normal\">(+ 12% '''bonus''' magic resistance)</span></dd></dl>",
+          "text": "Ally Bonus Armor:20 / 25 / 30 / 35 / 40 (+ 12% bonus armor)\nAlly Bonus Magic Resistance:20 / 25 / 30 / 35 / 40 (+ 12% bonus magic resistance)"
+        },
+        "leveling2": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Self Bonus Armor:'''</span></dt><dd>20 / 25 / 30 / 35 / 40 <span style=\"color:yellow; white-space:normal\">(+ 36% '''bonus''' armor)</span></dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Self Bonus Magic Resistance:'''</span></dt><dd>20 / 25 / 30 / 35 / 40 <span style=\"color:\n#00FFFF; white-space:normal\">(+ 36% '''bonus''' magic resistance)</span></dd></dl>",
+          "text": "Self Bonus Armor:20 / 25 / 30 / 35 / 40 (+ 36% bonus armor)\nSelf Bonus Magic Resistance:20 / 25 / 30 / 35 / 40 (+ 36% bonus magic resistance)"
+        },
+        "name": "Stand Behind Me",
+        "notes": {
+          "raw": "* ''Stand Behind Me'' can be used on allied <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Minions\">[[File:Minion icon.png|20px|link=Minion|An icon representing the keyword Minion]] [[:Minion|minions]]</span> but not on <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ward\">[[File:Ward_icon.png|20px|link=Ward|An icon representing the keyword Ward]] [[:Ward|wards]]</span> nor <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Stealthed trap\">[[File:Noxious Trap.png|20px|link=Stealth#Stealthed_traps_and_wards|An icon representing the keyword Stealthed trap]] [[:Stealth#Stealthed_traps_and_wards|traps]]</span>.\n* ''Stand Behind Me'' has a <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Forgiveness radius\">[[File:Targeting forgiveness.svg|20px|link=Targeting#Targeting_Forgiveness|An icon representing the keyword Targeting forgiveness]] [[:Targeting#Targeting_Forgiveness|forgiveness radius]]</span> of 175 units.\n* If there are no nearby enemy champions, '''Braum''' will dash to land up-to 150 units on the far side of his target.\n* The maximum dash range without enemy champions present is ~650. An enemy champion on the far side of the ally will allow '''Braum''' to dash a total of up-to 800 units.\n* If <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Braum\" data-ability=\"Unbreakable\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Braum Unbreakable.png|20xpx|border|link=Braum#Unbreakable|An icon for Braum's ability Unbreakable]]</span> <span style=\"white-space:normal;\">[[Braum#Unbreakable|Unbreakable]]</span></span> is cast during the dash, <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Braum\" data-ability=\"Winter&#39;s Bite\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Braum Winter's Bite.png|20xpx|border|link=Braum#Winter's Bite|An icon for Braum's ability Winter's Bite]]</span> <span style=\"white-space:normal;\">[[Braum#Winter's Bite|Winter's Bite]]</span></span> and <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Braum\" data-ability=\"Glacial Fissure\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Braum Glacial Fissure.png|20xpx|border|link=Braum#Glacial Fissure|An icon for Braum's ability Glacial Fissure]]</span> <span style=\"white-space:normal;\">[[Braum#Glacial Fissure|Glacial Fissure]]</span></span> may also be cast.\n* If the <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dash]]</span> is interrupted, neither '''Braum''' nor his ally receive the bonus resistances.",
+          "text": "Stand Behind Me can be used on allied minions but not on wards nor traps.\nStand Behind Me has a forgiveness radius of 175 units.\nIf there are no nearby enemy champions, Braum will dash to land up-to 150 units on the far side of his target.\nThe maximum dash range without enemy champions present is ~650. An enemy champion on the far side of the ally will allow Braum to dash a total of up-to 800 units.\nIf Unbreakable is cast during the dash, Winter's Bite and Glacial Fissure may also be cast.\nIf the dash is interrupted, neither Braum nor his ally receive the bonus resistances."
+        },
+        "targeting": "Unit"
+      },
+      "name": "Stand Behind Me"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "W",
+  "source": {
+    "contentHash": "28d7b4b057a0c8ba613dab3c4de031a5a7602bc151a8ef430ad8cdcb27b77115",
+    "fetchedAt": "2026-09-06T13:51:31.384Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Braum/Stand_Behind_Me",
+    "revisionId": 3906582,
+    "sourceTimestamp": "2025-06-06T04:36:13Z"
+  }
+}

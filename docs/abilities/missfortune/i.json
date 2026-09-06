@@ -1,0 +1,43 @@
+{
+  "asset": {
+    "key": "spell_missfortune_i",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Love_Tap.png?a8563",
+    "sha1": "f04d57dd3d97268c07e29695ba122ef70a4bcf25"
+  },
+  "champion": "Miss Fortune",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_missfortune_i",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Miss_Fortune_Love_Tap.png?a8563",
+        "sha1": "f04d57dd3d97268c07e29695ba122ef70a4bcf25"
+      },
+      "fields": {
+        "damagetype": "Physical",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Innate:'''</span> '''Miss Fortune's''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attacks\">[[File:Basic attack cursor icon.png|20px|link=Basic attack|An icon representing the keyword Basic attack]] [[:Basic attack|basic attacks]]</span> are empowered to apply a mark that expires upon attacking a new enemy. If the enemy was unmarked, this also deals <span style=\"color:orange; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"50% + 10% every 3 levels up to 7, then + 10% every 2 levels up to 13\" data-bot-values=\"50;60;70;80;90;100\" data-top-values=\"1;4;7;9;11;13\" data-bot-key=\"%\">50% – 100% (based on level)</span> AD</span> <span style=\"color:\n#FF8C34; white-space:normal\">'''bonus''' physical damage</span>, halved to <span style=\"color:orange; white-space:normal\"><span class=\"pp-tooltip\" style=\"position:relative; border-bottom:1px dotted; cursor:help;\" data-displayformula=\"25% + 5% every 3 levels up to 7, then + 5% every 2 levels up to 13\" data-bot-values=\"25;30;35;40;45;50\" data-top-values=\"1;4;7;9;11;13\" data-bot-key=\"%\">25% – 50% (based on level)</span> AD</span> against <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Minion\">[[File:Minion icon.png|20px|link=Minion|An icon representing the keyword Minion]] [[:Minion|minions]]</span>.",
+          "text": "Innate: Miss Fortune's basic attacks are empowered to apply a mark that expires upon attacking a new enemy. If the enemy was unmarked, this also deals 50% – 100% (based on level) AD bonus physical damage, halved to 25% – 50% (based on level) AD against minions."
+        },
+        "icon": "Love Tap.png",
+        "name": "Love Tap",
+        "notes": {
+          "raw": "* With <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Runaan&#39;s Hurricane\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Runaan's Hurricane item.png|20xpx|border|link=Runaan's Hurricane|An icon for the item Runaan's Hurricane]]</span> <span style=\"white-space:normal;\">[[Runaan's Hurricane]]</span></span>, ''Love Tap'' only applies to the primary target.\n* The bonus damage applies <span style=\"white-space:nowrap\">[[File:Life steal icon.svg|15px|link=Life steal]]&nbsp;[[Life steal|life steal]]</span>.\n* The empowered attack will not trigger against [[buildings]].",
+          "text": "With Runaan's Hurricane, Love Tap only applies to the primary target.\nThe bonus damage applies &nbsp;life steal.\nThe empowered attack will not trigger against buildings."
+        },
+        "targeting": "Passive"
+      },
+      "name": "Love Tap"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "I",
+  "source": {
+    "contentHash": "ab6c99a74ed2b7b97af4e9935c0478895f0de6d38ff885fc7daad10b3cbee9fb",
+    "fetchedAt": "2026-09-06T13:53:06.544Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Miss_Fortune/Love_Tap",
+    "revisionId": 4027989,
+    "sourceTimestamp": "2026-06-13T08:29:13Z"
+  }
+}

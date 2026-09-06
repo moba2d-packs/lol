@@ -1,0 +1,43 @@
+{
+  "payload": [
+    {
+      "page": "Template:Data Lucian/Relentless Pursuit",
+      "response": {
+        "expanded": {
+          "expandtemplates": {
+            "wikitext": "@@name@@Relentless Pursuit@@icon@@false@@icon2@@Relentless Pursuit.png@@icon3@@{{{icon3}}}@@icon4@@{{{icon4}}}@@description@@<span class=\"template_sbc\">'''Passive:'''</span> ''Relentless Pursuit's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;'''current''' cooldown</span> is reduced by 1 second for each ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Lightslinger\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Lightslinger.png|20xpx|border|link=Lucian#Lightslinger|An icon for Lucian's ability Lightslinger]]</span> <span style=\"white-space:normal;\">[[Lucian#Lightslinger|Lightslinger]]</span></span>'' shot hit, doubled to 2 seconds against enemy <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Champions\">[[File:Champion icon.png|20px|link=Champion|An icon representing the keyword Champion]] [[:Champion|champions]]</span>.@@description2@@<span class=\"template_sbc\">'''Active:'''</span> '''Lucian''' <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Dash\">[[File:Dash.png|20px|link=Dash|An icon representing the keyword Dash]] [[:Dash|dashes]]</span> in the target direction.@@description3@@''Relentless Pursuit <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Basic attack reset\">[[File:Bladework.png|20px|link=Basic attack#Attack reset|An icon representing the keyword Basic attack reset]] [[:Basic attack#Attack reset|resets]]</span> '''Lucian's''' basic attack timer. '''Lucian''' can cast any of his [[champion ability|abilities]] during the dash. Relentless Pursuit can be cast during <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"Ardent Blaze\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian Ardent Blaze.png|20xpx|border|link=Lucian#Ardent Blaze|An icon for Lucian's ability Ardent Blaze]]</span> <span style=\"white-space:normal;\">[[Lucian#Ardent Blaze|Ardent Blaze's]]</span></span> cast time and during <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Lucian\" data-ability=\"The Culling\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Lucian The Culling.png|20xpx|border|link=Lucian#The Culling|An icon for Lucian's ability The Culling]]</span> <span style=\"white-space:normal;\">[[Lucian#The Culling|The Culling's]]</span></span> channel.''@@description4@@{{{description4}}}@@description5@@{{{description5}}}@@description6@@{{{description6}}}@@leveling@@{{{leveling}}}@@leveling2@@{{{leveling2}}}@@leveling3@@{{{leveling3}}}@@leveling4@@{{{leveling4}}}@@leveling5@@{{{leveling5}}}@@leveling6@@{{{leveling6}}}@@range@@{{{range}}}@@radius@@{{{radius}}}@@effectradius@@{{{effect radius}}}@@width@@{{{width}}}@@speed@@1350@@casttime@@none@@cost@@32 / 24 / 16 / 8 / 0@@cooldown@@16 / 15.<small>5</small> / 15 / 14.<small>5</small> / 14@@targeting@@Location@@damagetype@@{{{damagetype}}}@@spellshield@@{{{spellshield}}}@@projectile@@{{{projectile}}}@@notes@@\n* Additional on-hits during ''Lightslinger'' are not considered for the cooldown reduction (i.e <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Runaan&#39;s Hurricane\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Runaan's Hurricane item.png|20xpx|border|link=Runaan's Hurricane|An icon for the item Runaan's Hurricane]]</span> <span style=\"white-space:normal;\">[[Runaan's Hurricane]]</span></span>, <span class=\"inline-image item-icon label-after item-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-item=\"Guinsoo&#39;s Rageblade\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Guinsoo's Rageblade item.png|20xpx|border|link=Guinsoo's Rageblade|An icon for the item Guinsoo's Rageblade]]</span> <span style=\"white-space:normal;\">[[Guinsoo's Rageblade]]</span></span>).\n* Unlike some dashes, '''Lucian's''' dash speed does ''not'' scale with his <span style=\"color:\n#9FFF4D; white-space:normal\">movement speed</span>.\n* ''Relentless Pursuit's'' dash can go through terrain, but will not be extended further if the target location is within terrain, unlike other dashes, like <span class=\"inline-image label-after champion-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Ekko\" data-skin=\"Original\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Ekko OriginalSquare.png|20xpx|border|link=Ekko|An icon representing Ekko]]</span> <span style=\"white-space:normal;\">[[Ekko]]</span></span>'s <span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Ekko\" data-ability=\"Phase Dive\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Ekko Phase Dive.png|20xpx|border|link=Ekko#Phase Dive|An icon for Ekko's ability Phase Dive]]</span> <span style=\"white-space:normal;\">[[Ekko#Phase Dive|Phase Dive]]</span></span>.\n* Casting ''Relentless Pursuit'' directly after attacking with ''Lightslinger'' will reduce Relentless Pursuit's cooldown when the projectiles hit the target.\n* ''Relentless Pursuit'' can be cast during <span class=\"inline-image label-after spell-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-spell=\"Recall\" data-game=\"lol\"><span class=\"border icon-20\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Recall.png|20xpx|border|link=Recall|An icon representing Recall]]</span> <span style=\"white-space:normal;\">[[Recall|Recall's]]</span></span> cast time.\n** If ''Relentless Pursuit'' is cast just as the cast time ends, '''Lucian''' will not perform his Recall animation, instead staying idle. This allows '''Lucian''' to use his [[Emoting|emotes]] during his Recall.@@"
+          }
+        },
+        "revision": {
+          "batchcomplete": true,
+          "query": {
+            "pages": [
+              {
+                "ns": 10,
+                "pageid": 1308180,
+                "revisions": [
+                  {
+                    "parentid": 4007668,
+                    "revid": 4008455,
+                    "timestamp": "2026-04-14T19:17:14Z"
+                  }
+                ],
+                "title": "Template:Data Lucian/Relentless Pursuit"
+              }
+            ]
+          }
+        }
+      },
+      "revisionId": 4008455,
+      "timestamp": "2026-04-14T19:17:14Z"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "c58d1c0020915d97b486b5952199a1c83eb1966b0ffe2fd6885e5563391ca026",
+    "fetchedAt": "2026-09-06T13:52:21.444Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Lucian/Relentless_Pursuit",
+    "revisionId": 4008455,
+    "sourceTimestamp": "2026-04-14T19:17:14Z"
+  }
+}

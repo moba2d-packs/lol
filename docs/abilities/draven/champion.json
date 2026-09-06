@@ -1,0 +1,115 @@
+{
+  "asset": {
+    "key": "champ_draven",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_OriginalSquare.png?63957",
+    "sha1": "2feebf9e189622f176fa07f2a6434df30c82467b"
+  },
+  "champion": "Draven",
+  "data": {
+    "adaptivetype": "Physical",
+    "apiname": "Draven",
+    "be": 2400,
+    "changes": "V26.16",
+    "client_positions": [
+      "Bottom"
+    ],
+    "client_tags": [
+      "Auto-attack",
+      "Burst",
+      "Physical"
+    ],
+    "control": 1,
+    "damage": 3,
+    "date": "2012-06-06",
+    "difficulty": 3,
+    "external_positions": [
+      "Bottom"
+    ],
+    "herotype": "Marksman",
+    "id": 119,
+    "mobility": 2,
+    "patch": "V1.0.0.140b",
+    "rangetype": "Ranged",
+    "resource": "Mana",
+    "role": [
+      "Marksman"
+    ],
+    "rp": 880,
+    "skill_e": {
+      "1": "Stand Aside"
+    },
+    "skill_i": {
+      "1": "League of Draven"
+    },
+    "skill_q": {
+      "1": "Spinning Axe"
+    },
+    "skill_r": {
+      "1": "Whirling Death",
+      "2": "Whirling Death 2"
+    },
+    "skill_w": {
+      "1": "Blood Rush"
+    },
+    "skills": {
+      "1": "League of Draven",
+      "2": "Spinning Axe",
+      "3": "Blood Rush",
+      "4": "Stand Aside",
+      "5": "Whirling Death"
+    },
+    "stats": {
+      "acquisition_radius": 600,
+      "aram": {
+        "dmg_dealt": 1.05,
+        "dmg_taken": 0.95
+      },
+      "arm_base": 29,
+      "arm_lvl": 4.5,
+      "as_base": 0.679,
+      "as_lvl": 2.7,
+      "as_ratio": 0.67900002002716,
+      "attack_cast_time": 0.230000004172325,
+      "attack_delay_offset": -0.118840597569942,
+      "attack_total_time": 1.47300004959106,
+      "dam_base": 62,
+      "dam_lvl": 3.4,
+      "hp5_base": 3.75,
+      "hp5_lvl": 0.7,
+      "hp_base": 675,
+      "hp_lvl": 104,
+      "missile_speed": 1600,
+      "mp5_base": 8.05,
+      "mp5_lvl": 0.65,
+      "mp_base": 361,
+      "mp_lvl": 39,
+      "mr_base": 33,
+      "mr_lvl": 1.1,
+      "ms": 330,
+      "ofa": {
+        "dmg_taken": 0.95
+      },
+      "pathing_radius": 35,
+      "range": 550,
+      "selection_height": 191.6667022705078,
+      "selection_radius": 111.111099243164,
+      "urf": {
+        "dmg_dealt": 0.95,
+        "dmg_taken": 1.05
+      }
+    },
+    "style": 10,
+    "title": "The Glorious Executioner",
+    "toughness": 1,
+    "utility": 1
+  },
+  "schemaVersion": 1,
+  "source": {
+    "contentHash": "854a45858644937c5d2dc2f6fc0d7c7a0cde435cf998d289e81ac05b15f2af43",
+    "fetchedAt": "2026-09-06T13:51:42.198Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Module:ChampionData/data",
+    "revisionId": 4057479,
+    "sourceTimestamp": "2026-08-27T09:15:46Z"
+  }
+}

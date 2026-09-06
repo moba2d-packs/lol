@@ -129,12 +129,17 @@ const download = async () => {
       continue;
     }
     const detail = (await fetchJson(`${data}/champion/${key}.json`)).data[key];
+    // Trimmed, because four of Riot's own vi_VN names carry a trailing space
+    // ("Cưa Nhiễm Khuẩn ") and the writer below appends the debug tag straight
+    // onto whatever it is handed — so an untrimmed name ships as
+    // `Cưa Nhiễm Khuẩn  (DrMundo_Q)`, with a double space, and comes back on
+    // every run because the ledger and the file disagree by exactly that space.
     detail.spells.forEach((spell, i) => {
-      names[`${champion}_${SLOTS[i]}`] = spell.name;
+      names[`${champion}_${SLOTS[i]}`] = spell.name.trim();
     });
     // Passives have no spell file today, but recording them costs one field and
     // is what a passive slot would need the day one is added.
-    names[`${champion}_P`] = detail.passive.name;
+    names[`${champion}_P`] = detail.passive.name.trim();
     process.stdout.write(`  ${key}\n`);
   }
 

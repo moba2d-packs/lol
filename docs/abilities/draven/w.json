@@ -1,0 +1,53 @@
+{
+  "asset": {
+    "key": "spell_draven_w",
+    "mime": "image/png",
+    "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Blood_Rush.png?24d3a",
+    "sha1": "01a48050b32d721b15cf1d3c1f5897b446fdde7b"
+  },
+  "champion": "Draven",
+  "forms": [
+    {
+      "asset": {
+        "key": "spell_draven_w",
+        "mime": "image/png",
+        "originalUrl": "https://wiki.leagueoflegends.com/en-us/images/Draven_Blood_Rush.png?24d3a",
+        "sha1": "01a48050b32d721b15cf1d3c1f5897b446fdde7b"
+      },
+      "fields": {
+        "casttime": "none",
+        "cooldown": "12",
+        "cost": "40 / 35 / 30 / 25 / 20",
+        "description": {
+          "raw": "<span class=\"template_sbc\">'''Active:'''</span> '''Draven''' enters an adrenaline rush, gaining <span style=\"white-space:nowrap\">[[File:Attack speed icon.png|15px|link=Attack speed]]&nbsp;<span style=\"color:\n#F5EE99; white-space:normal\">'''bonus''' attack speed</span></span> for 3 seconds as well as decaying <span style=\"white-space:nowrap\">[[File:Movement speed icon.png|15px|link=Movement speed]]&nbsp;<span style=\"color:\n#9FFF4D; white-space:normal\">'''bonus''' movement speed</span></span> and <span class=\"glossary\" style=\"white-space:pre; position:relative; \" data-game=\"lol\" data-tip=\"Ghosting\">[[File:Ghost.png|20px|link=Unit collision|An icon representing the keyword Ghosted]] [[:Unit collision|ghosting]]</span> for 1.<small>5</small> seconds.",
+          "text": "Active: Draven enters an adrenaline rush, gaining &nbsp;bonus attack speed for 3 seconds as well as decaying &nbsp;bonus movement speed and ghosting for 1.5 seconds."
+        },
+        "description2": {
+          "raw": "Catching a ''<span class=\"inline-image label-after ability-icon\" style=\"display:inline;white-space:pre;\" data-param=\"\" data-champion=\"Draven\" data-ability=\"Spinning Axe\" data-game=\"lol\"><span class=\"border\" style=\"display:inline-block;position:relative;\" data-width=\"20\">[[File:Draven Spinning Axe.png|20xpx|border|link=Draven#Spinning Axe|An icon for Draven's ability Spinning Axe]]</span> <span style=\"white-space:normal;\">[[Draven#Spinning Axe|Spinning Axe]]</span></span>'' resets ''Blood Rush's'' <span style=\"white-space:nowrap\">[[File:Cooldown icon.png|15px|link=Cooldown]]&nbsp;cooldown</span>.",
+          "text": "Catching a Spinning Axe resets Blood Rush's &nbsp;cooldown."
+        },
+        "icon": "Blood Rush.png",
+        "leveling": {
+          "raw": "<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Attack Speed:'''</span></dt><dd>20 / 25 / 30 / 35 / 40%</dd></dl>\n<dl class=\"skill-tabs\" style=\"letter-spacing:0.02rem;\"><dt><span class=\"template_lc\">'''Bonus Movement Speed:'''</span></dt><dd>50 / 55 / 60 / 65 / 70%</dd></dl>",
+          "text": "Bonus Attack Speed:20 / 25 / 30 / 35 / 40%\nBonus Movement Speed:50 / 55 / 60 / 65 / 70%"
+        },
+        "name": "Blood Rush",
+        "notes": {
+          "raw": "* Activating ''Blood Rush'' while the effect is already active will refresh the duration.",
+          "text": "Activating Blood Rush while the effect is already active will refresh the duration."
+        },
+        "targeting": "Auto"
+      },
+      "name": "Blood Rush"
+    }
+  ],
+  "schemaVersion": 1,
+  "slot": "W",
+  "source": {
+    "contentHash": "75f7f3fa730872267051632c174c531c72ce189004b82a004d8f2925f2eea0e6",
+    "fetchedAt": "2026-09-06T13:51:42.198Z",
+    "pageUrl": "https://wiki.leagueoflegends.com/en-us/Template:Data_Draven/Blood_Rush",
+    "revisionId": 3982566,
+    "sourceTimestamp": "2026-01-09T09:06:22Z"
+  }
+}
