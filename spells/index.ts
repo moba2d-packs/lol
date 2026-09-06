@@ -399,3 +399,8 @@ export { default as Lucian_Q } from './Lucian_Q';
 export { default as Lucian_W } from './Lucian_W';
 export { default as Lucian_E } from './Lucian_E';
 export { default as Lucian_R } from './Lucian_R';
+
+export { default as MissFortune_Q } from './MissFortune_Q';
+export { default as MissFortune_W } from './MissFortune_W';
+export { default as MissFortune_E } from './MissFortune_E';
+export { default as MissFortune_R } from './MissFortune_R';

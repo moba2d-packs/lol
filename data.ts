@@ -279,6 +279,13 @@ const ROSTER: {
     spells: ['Lucian_Q', 'Lucian_W', 'Lucian_E', 'Lucian_R'],
   },
   {
+    name: 'Miss Fortune',
+    attack: { ...ATTACK.MARKSMAN, boltUnitsPerSecond: 1400 },
+    image: 'champ_missfortune',
+
+    spells: ['MissFortune_Q', 'MissFortune_W', 'MissFortune_E', 'MissFortune_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',
