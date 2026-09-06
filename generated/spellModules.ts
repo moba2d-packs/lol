@@ -173,6 +173,7 @@ export const spellModules: Record<string, () => Promise<SpellModule>> = {
   "Item_Steraks": () => import('../spells/Item_Steraks'),
   "Item_Stridebreaker": () => import('../spells/Item_Stridebreaker'),
   "Item_SunderedSky": () => import('../spells/Item_SunderedSky'),
+  "Item_Terminus": () => import('../spells/Item_Terminus'),
   "Item_Thornmail": () => import('../spells/Item_Thornmail'),
   "Item_Tiamat": () => import('../spells/Item_Tiamat'),
   "Item_TitanicHydra": () => import('../spells/Item_TitanicHydra'),

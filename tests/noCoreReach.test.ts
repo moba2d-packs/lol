@@ -478,7 +478,11 @@ describe("the pack's tests speak only published core surfaces", () => {
     // `tests/spells/Item_lethality.test.ts` drives the rows that stand on Dao
     // Hung Tàn. Same two published surfaces, so again the population moves
     // and the offender count does not.
-    expect(files.length).toBe(137);
+    //
+    // 138, not 137: `tests/spells/Item_resists.test.ts`, the same day's rows
+    // whose purchase is taking less damage — a ramp off swings, an aura, and
+    // a mark on one champion. Same two published surfaces again.
+    expect(files.length).toBe(138);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {

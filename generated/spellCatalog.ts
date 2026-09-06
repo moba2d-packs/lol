@@ -1332,6 +1332,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_Terminus": {
+    name: "Cung Chạng Vạng (Item_Terminus)",
+    description: "Nội tại: mỗi đòn đánh cộng 1 điểm trong 5 giây (tối đa 3): mỗi điểm cho 6% xuyên giáp và 5% giáp cùng kháng phép",
+    iconKey: "item_terminus",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_Thornmail": {
     name: "Giáp Gai (Item_Thornmail)",
     description: "Nội tại: phản <span class=\"buff\">25% sát thương</span> nhận vào về kẻ đã gây ra nó (tính trên đòn đánh gốc, trước khi khiên đỡ), và đặt Vết Thương Sâu giảm 40% lượng hồi máu của chúng trong 3 giây",

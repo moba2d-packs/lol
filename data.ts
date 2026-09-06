@@ -2410,6 +2410,26 @@ const itemEntries = (): Record<string, ItemDef> => ({
     passive: 'Item_Tiamat',
     active: 'Item_ProfaneHydra',
   },
+
+  // ---- On-hit, the wall and the enchanter (2026-09-06) ------------------
+  terminus: {
+    id: 'terminus',
+    name: 'Cung Chạng Vạng',
+    icon: 'item_terminus',
+    cost: 1700,
+    buildsFrom: ['recurve_bow', 'negatron_cloak'],
+    // The only row here whose offence and defence are the same three stacks.
+    // Live alternates Light and Dark; this does not — see the spell file's
+    // header for the three reasons, the loudest being that alternation needs
+    // two buff-bar rows to be legible at all.
+    description:
+      'Nội tại: mỗi đòn đánh cộng <span class="buff">1</span> điểm trong ' +
+      '<span class="time">5 giây</span> (tối đa <span class="buff">3</span>): mỗi điểm cho ' +
+      '<span class="buff">6%</span> xuyên giáp và <span class="buff">5%</span> giáp cùng ' +
+      'kháng phép.',
+    stats: { attackSpeed: 0.2, magicResist: 40, onHitDamage: 2, armorPenetration: 0.1 },
+    passive: 'Item_Terminus',
+  },
 });
 
 /**
