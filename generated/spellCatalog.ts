@@ -1124,6 +1124,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 15000,
   },
+  "Item_Ludens": {
+    name: "Vọng Âm Luden (Item_Ludens)",
+    description: "Nội tại: mỗi 8 giây, đòn phép kế tiếp phóng ra vọng âm gây <span class=\"damage magic\" data-base=\"12\">12 sát thương phép</span> lên mục tiêu và <span class=\"damage magic\" data-base=\"8\">8 sát thương phép</span> lên tối đa 3 kẻ địch gần đó",
+    iconKey: "item_ludens_echo",
+    coolDownMs: 0,
+    manaCost: 0,
+    specCoolDownMs: 0,
+  },
   "Item_Maw": {
     name: "Chùy Gai Malmortius (Item_Maw)",
     description: "Nội tại: khi sát thương phép đưa máu xuống dưới 35%, nhận lá chắn phép bằng 12% máu tối đa trong 4 giây (hồi lại sau 30 giây)",

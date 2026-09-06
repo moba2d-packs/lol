@@ -346,6 +346,7 @@ export { default as Item_Zeke } from './Item_Zeke';
 export { default as Item_GuardianAngel } from './Item_GuardianAngel';
 export { default as Item_Rylai } from './Item_Rylai';
 export { default as Item_Liandry } from './Item_Liandry';
+export { default as Item_Ludens } from './Item_Ludens';
 
 export { default as Vladimir_Q } from './Vladimir_Q';
 export { default as Vladimir_W } from './Vladimir_W';

@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { buildTestApi } from '@moba2d/core/testing';
+import { buildTestApi, indexObjects } from '@moba2d/core/testing';
 import {
   createGame,
   createUnit,
@@ -9,6 +9,13 @@ import {
   type TestGame,
 } from '@moba2d/core/testing/spell';
 import Item_Rylai, { RYLAI_SLOW_MS, RYLAI_SLOW_PERCENT } from '../../spells/Item_Rylai';
+import Item_Ludens, {
+  LUDENS_COOLDOWN_MS,
+  LUDENS_PRIMARY_DAMAGE,
+  LUDENS_SPLASH_DAMAGE,
+  LUDENS_SPLASH_RADIUS,
+  LUDENS_SPLASH_TARGETS,
+} from '../../spells/Item_Ludens';
 import Item_Liandry, {
   Item_Liandry_Burn,
   LIANDRY_BURN_MS,
@@ -216,5 +223,104 @@ describe('Mặt Nạ Đọa Đày Liandry', () => {
 
     expect(burn.timeElapsed).toBe(0);
     expect(burnOn(victim)).toBe(burn);
+  });
+});
+
+describe('Vọng Âm Luden', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+    vi.stubGlobal('deltaTime', 100);
+  });
+
+  it('echoes off the first magic hit, onto the victim and the clump around them', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 300, 'red');
+    const beside = createUnit(game, 300 + LUDENS_SPLASH_RADIUS / 2, 'red');
+    const far = createUnit(game, 300 + LUDENS_SPLASH_RADIUS * 3, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, victim, beside, far]);
+    expect(pressSpell(new Item_Ludens(holder))).toBe(true);
+
+    const onVictim = vi.spyOn(victim, 'takeDamage');
+    const onBeside = vi.spyOn(beside, 'takeDamage');
+    const onFar = vi.spyOn(far, 'takeDamage');
+    victim.takeDamage(5, holder, 'MAGIC');
+
+    // The 5 is the hit that armed it; the echo is the second call.
+    expect(onVictim.mock.calls.map(call => call[0])).toEqual([5, LUDENS_PRIMARY_DAMAGE]);
+    expect(onBeside.mock.calls.map(call => call[0])).toEqual([LUDENS_SPLASH_DAMAGE]);
+    expect(onFar, 'the echo reached past its own radius').not.toHaveBeenCalled();
+  });
+
+  it('reaches no more than the three others it advertises', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 300, 'red');
+    // One more than the cap, all well inside the radius.
+    const clump = [1, 2, 3, 4].map(i => createUnit(game, 300 + i * 20, 'red'));
+    game.setPlayer(holder);
+    indexObjects(game, [holder, victim, ...clump]);
+    pressSpell(new Item_Ludens(holder));
+
+    const spies = clump.map(unit => vi.spyOn(unit, 'takeDamage'));
+    victim.takeDamage(5, holder, 'MAGIC');
+
+    expect(spies.filter(spy => spy.mock.calls.length > 0)).toHaveLength(LUDENS_SPLASH_TARGETS);
+  });
+
+  /**
+   * The echo is magic damage credited to the wearer, so it arrives back at
+   * the same hook that fired it. `startRearm` is called before the first
+   * `takeDamage` precisely so the re-entrant call finds the clock already
+   * running — without that ordering this item is an infinite loop the first
+   * time it fires.
+   */
+  it('does not echo its own echo', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 300, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, victim]);
+    pressSpell(new Item_Ludens(holder));
+
+    const onVictim = vi.spyOn(victim, 'takeDamage');
+    victim.takeDamage(5, holder, 'MAGIC');
+
+    // The hit and one echo, and nothing after it: an echo of the echo would
+    // recurse until the stack gave out.
+    expect(onVictim.mock.calls.map(call => call[0])).toEqual([5, LUDENS_PRIMARY_DAMAGE]);
+  });
+
+  it('holds its clock: no second echo until the window is up', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 300, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, victim]);
+    pressSpell(new Item_Ludens(holder));
+    const armed = live(holder)[0];
+
+    victim.takeDamage(5, holder, 'MAGIC');
+    const quiet = vi.spyOn(victim, 'takeDamage');
+    victim.takeDamage(5, holder, 'MAGIC');
+    expect(quiet).toHaveBeenCalledTimes(1);
+
+    vi.stubGlobal('deltaTime', LUDENS_COOLDOWN_MS);
+    armed.update();
+    victim.takeDamage(5, holder, 'MAGIC');
+
+    expect(quiet.mock.calls.map(call => call[0])).toEqual([5, 5, LUDENS_PRIMARY_DAMAGE]);
+  });
+
+  it('never echoes off a physical hit', () => {
+    const holder = createUnit(game, 0);
+    const victim = createUnit(game, 300, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, victim]);
+    pressSpell(new Item_Ludens(holder));
+
+    const onVictim = vi.spyOn(victim, 'takeDamage');
+    victim.takeDamage(5, holder, 'PHYSICAL');
+
+    expect(onVictim).toHaveBeenCalledTimes(1);
   });
 });

@@ -2271,6 +2271,23 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { abilityPower: 1.1, maxHealth: 55 },
     passive: 'Item_Liandry',
   },
+  ludens_echo: {
+    id: 'ludens_echo',
+    name: 'Vọng Âm Luden',
+    icon: 'item_ludens_echo',
+    cost: 1550,
+    buildsFrom: ['blasting_wand'],
+    // One part with the rest as combine, like Đồng Hồ Cát Zhonya: the item is
+    // bought for the splash, and a second component would have priced it out
+    // of a mage's second back.
+    description:
+      'Nội tại: mỗi <span class="time">8 giây</span>, đòn phép kế tiếp phóng ra vọng âm gây ' +
+      '<span class="damage magic" data-flat="none">12</span> sát thương phép lên mục tiêu và ' +
+      '<span class="damage magic" data-flat="none">8</span> lên tối đa ' +
+      '<span class="buff">3</span> kẻ địch gần đó.',
+    stats: { abilityPower: 1.3, abilityHaste: 15 },
+    passive: 'Item_Ludens',
+  },
 });
 
 /**
