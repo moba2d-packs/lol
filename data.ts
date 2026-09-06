@@ -244,6 +244,13 @@ const ROSTER: {
     spells: ['Akali_Q', 'Akali_W', 'Akali_E', 'Akali_R'],
   },
   {
+    name: 'Braum',
+    attack: ATTACK.TANK,
+    image: 'champ_braum',
+
+    spells: ['Braum_Q', 'Braum_W', 'Braum_E', 'Braum_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',

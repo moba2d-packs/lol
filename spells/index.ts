@@ -374,3 +374,8 @@ export { default as Akali_Q } from './Akali_Q';
 export { default as Akali_W } from './Akali_W';
 export { default as Akali_E } from './Akali_E';
 export { default as Akali_R } from './Akali_R';
+
+export { default as Braum_Q } from './Braum_Q';
+export { default as Braum_W } from './Braum_W';
+export { default as Braum_E } from './Braum_E';
+export { default as Braum_R } from './Braum_R';
