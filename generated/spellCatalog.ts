@@ -1180,6 +1180,14 @@ export const spellCatalog = {
     manaCost: 0,
     specCoolDownMs: 0,
   },
+  "Item_ProfaneHydra": {
+    name: "Mãng Xà Kích (Item_ProfaneHydra)",
+    description: "Kích hoạt: gây <span class=\"damage physical\" data-base=\"18\">18 sát thương vật lý</span> quanh bạn, cộng thêm 40% lên mục tiêu còn dưới 35% máu tối đa (hồi lại sau 12 giây)",
+    iconKey: "item_profane_hydra",
+    coolDownMs: 12000,
+    manaCost: 0,
+    specCoolDownMs: 12000,
+  },
   "Item_Quicksilver": {
     name: "Khăn Giải Thuật (Item_Quicksilver)",
     description: "<span class=\"buff\">Gỡ bỏ mọi hiệu ứng khống chế</span> mà kẻ khác đã gây ra cho bạn (choáng, trói, câm lặng, khiêu khích...). <span>Làm chậm không bị gỡ.</span>",

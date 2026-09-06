@@ -2392,6 +2392,24 @@ const itemEntries = (): Record<string, ItemDef> => ({
     stats: { attackDamage: 17, armorPenetration: 0.12, maxHealth: 30, speedPercent: 0.05 },
     passive: 'Item_Voltaic',
   },
+  profane_hydra: {
+    id: 'profane_hydra',
+    name: 'Mãng Xà Kích',
+    icon: 'item_profane_hydra',
+    cost: 1750,
+    buildsFrom: ['tiamat', 'serrated_dirk'],
+    description:
+      'Nội tại: đòn đánh gây thêm <span class="buff">40%</span> công lên các kẻ địch khác quanh ' +
+      'mục tiêu. Kích hoạt: gây <span class="damage physical" data-flat="none">18 sát thương ' +
+      'vật lý</span> quanh bạn, cộng thêm <span class="buff">40%</span> lên mục tiêu còn dưới ' +
+      '<span class="buff">35%</span> máu tối đa.',
+    // Rìu Tiamat's own cleave rides along, exactly as Chùy Phản Kích's does:
+    // the hydra rule (a finished item never drops the component's mechanic),
+    // stated as data rather than as a second spell file.
+    stats: { attackDamage: 18, armorPenetration: 0.15 },
+    passive: 'Item_Tiamat',
+    active: 'Item_ProfaneHydra',
+  },
 });
 
 /**

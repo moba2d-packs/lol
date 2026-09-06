@@ -154,6 +154,7 @@ export const spellModules: Record<string, () => Promise<SpellModule>> = {
   "Item_Moonstone": () => import('../spells/Item_Moonstone'),
   "Item_Nashor": () => import('../spells/Item_Nashor'),
   "Item_Navori": () => import('../spells/Item_Navori'),
+  "Item_ProfaneHydra": () => import('../spells/Item_ProfaneHydra'),
   "Item_Quicksilver": () => import('../spells/Item_Quicksilver'),
   "Item_Rabadon": () => import('../spells/Item_Rabadon'),
   "Item_Randuin": () => import('../spells/Item_Randuin'),

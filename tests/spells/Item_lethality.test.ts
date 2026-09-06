@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { buildTestApi } from '@moba2d/core/testing';
+import { buildTestApi, indexObjects } from '@moba2d/core/testing';
 import {
   createGame,
   createUnit,
@@ -8,6 +8,13 @@ import {
   pressSpell,
   type TestGame,
 } from '@moba2d/core/testing/spell';
+import Item_ProfaneHydra, {
+  PROFANE_COOLDOWN_MS,
+  PROFANE_DAMAGE,
+  PROFANE_EXECUTE_BONUS,
+  PROFANE_EXECUTE_THRESHOLD,
+  PROFANE_RADIUS,
+} from '../../spells/Item_ProfaneHydra';
 import Item_Voltaic, {
   Item_Voltaic_Charge,
   VOLTAIC_BONUS_DAMAGE,
@@ -27,6 +34,7 @@ installSpellObjectGlobals();
 
 const api = buildTestApi();
 const { Slow } = api.buffs;
+const { Champion } = api.units;
 
 /**
  * The lethality shelf added on 2026-09-06 — the rows that stand on Dao Hung
@@ -235,5 +243,60 @@ describe('Kiếm Điện Phong', () => {
 
     expect(hurt).not.toHaveBeenCalled();
     expect(charge.travelled).toBe(VOLTAIC_CHARGE_DISTANCE);
+  });
+});
+
+describe('Mãng Xà Kích', () => {
+  let game: TestGame;
+
+  beforeEach(() => {
+    game = createGame();
+  });
+
+  const champion = (x: number, teamId: string) =>
+    new Champion({ game, position: createVector(x, 0), teamId } as never);
+
+  it('bites every enemy champion inside its reach, and nobody outside it', () => {
+    const holder = champion(0, 'blue');
+    const near = champion(PROFANE_RADIUS / 2, 'red');
+    const far = champion(PROFANE_RADIUS * 3, 'red');
+    const ally = champion(PROFANE_RADIUS / 3, 'blue');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, near, far, ally]);
+
+    const onNear = vi.spyOn(near, 'takeDamage');
+    const onFar = vi.spyOn(far, 'takeDamage');
+    const onAlly = vi.spyOn(ally, 'takeDamage');
+    expect(pressSpell(new Item_ProfaneHydra(holder))).toBe(true);
+
+    expect(onNear.mock.calls.map(call => call[0])).toEqual([PROFANE_DAMAGE]);
+    expect(onNear.mock.calls[0][2]).toBe('PHYSICAL');
+    expect(onFar).not.toHaveBeenCalled();
+    expect(onAlly).not.toHaveBeenCalled();
+  });
+
+  it('hits harder against a target already under the line', () => {
+    const holder = champion(0, 'blue');
+    const healthy = champion(40, 'red');
+    const dying = champion(80, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, healthy, dying]);
+    dying.stats.health.baseValue = dying.stats.maxHealth.value * (PROFANE_EXECUTE_THRESHOLD / 2);
+
+    const onHealthy = vi.spyOn(healthy, 'takeDamage');
+    const onDying = vi.spyOn(dying, 'takeDamage');
+    pressSpell(new Item_ProfaneHydra(holder));
+
+    expect(onHealthy.mock.calls[0][0]).toBe(PROFANE_DAMAGE);
+    expect(onDying.mock.calls[0][0]).toBeCloseTo(PROFANE_DAMAGE * (1 + PROFANE_EXECUTE_BONUS), 6);
+  });
+
+  it('comes back inside the practice room twenty-second ceiling', () => {
+    const holder = champion(0, 'blue');
+    game.setPlayer(holder);
+    const hydra = new Item_ProfaneHydra(holder);
+
+    expect(hydra.coolDown).toBe(PROFANE_COOLDOWN_MS);
+    expect(hydra.coolDown).toBeLessThanOrEqual(20_000);
   });
 });
