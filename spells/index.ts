@@ -389,3 +389,8 @@ export { default as Fiora_Q } from './Fiora_Q';
 export { default as Fiora_W } from './Fiora_W';
 export { default as Fiora_E } from './Fiora_E';
 export { default as Fiora_R } from './Fiora_R';
+
+export { default as Jax_Q } from './Jax_Q';
+export { default as Jax_W } from './Jax_W';
+export { default as Jax_E } from './Jax_E';
+export { default as Jax_R } from './Jax_R';

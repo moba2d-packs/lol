@@ -265,6 +265,13 @@ const ROSTER: {
     spells: ['Fiora_Q', 'Fiora_W', 'Fiora_E', 'Fiora_R'],
   },
   {
+    name: 'Jax',
+    attack: ATTACK.BRUISER,
+    image: 'champ_jax',
+
+    spells: ['Jax_Q', 'Jax_W', 'Jax_E', 'Jax_R'],
+  },
+  {
     name: 'Ahri',
     attack: { ...ATTACK.MAGE, boltUnitsPerSecond: 875 },
     image: 'champ_ahri',

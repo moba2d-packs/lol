@@ -462,8 +462,9 @@ describe("the pack's tests speak only published core surfaces", () => {
     //
     // And one more per champion added since: `tests/spells/Aatrox.test.ts`,
     // `tests/spells/Akali.test.ts`, `tests/spells/Braum.test.ts`,
-    // `tests/spells/Draven.test.ts`, `tests/spells/Fiora.test.ts`.
-    expect(files.length).toBe(130);
+    // `tests/spells/Draven.test.ts`, `tests/spells/Fiora.test.ts`,
+    // `tests/spells/Jax.test.ts`.
+    expect(files.length).toBe(131);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {
