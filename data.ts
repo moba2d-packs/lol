@@ -2294,7 +2294,7 @@ const itemEntries = (): Record<string, ItemDef> => ({
     icon: 'item_shadowflame',
     cost: 1600,
     buildsFrom: ['blighting_jewel'],
-    // 25% xuyên phép, deliberately under Gậy Hư Vô's 35% — that number is the
+    // 25% xuyên phép, deliberately under Trượng Hư Vô's 35% — that number is the
     // ceiling the whole magic-resist wall is priced against, and a second row
     // matching it would make the wall mean less.
     description:
@@ -2319,6 +2319,49 @@ const itemEntries = (): Record<string, ItemDef> => ({
       'xung quanh.',
     stats: { abilityPower: 1.4, magicPenetration: 0.22, abilityHaste: 10 },
     passive: 'Item_Cryptbloom',
+  },
+
+  // ---- The lethality shelf (2026-09-06) --------------------------------
+  //
+  // Before Dao Hung Tàn *the shop sold no lethality at all*. Cung Xanh
+  // and Nỏ Thần Dominik are the armour-**shred** shelf — bought against a
+  // wall — and nothing sold the cheap penetration an assassin opens with, so
+  // the four rows below could not exist.
+  //
+  // Deliberately absent from every one of them: crit chance and crit damage.
+  // Crit multiplies with attack damage and attack speed, which is the whole
+  // reason `balanceReport.test.ts` ran to 2.06, and a lethality row carrying
+  // it would be the seventh member of a best attack six that already has six.
+  serrated_dirk: {
+    id: 'serrated_dirk',
+    name: 'Dao Hung Tàn',
+    icon: 'item_serrated_dirk',
+    cost: 850,
+    // Deliberately not Cung Xanh's shape: that one (700g) sells 8 công
+    // and 15% xuyên giáp, this sells more of the damage and less of the
+    // penetration, so the two components lead to two different shelves
+    // rather than one being strictly the other's cheaper half.
+    stats: { attackDamage: 12, armorPenetration: 0.08 },
+  },
+  opportunity: {
+    id: 'opportunity',
+    name: 'Gươm Thức Thời',
+    icon: 'item_opportunity',
+    cost: 1400,
+    buildsFrom: ['serrated_dirk'],
+    // **Deliberately passive-free**, and this is the honest simplification.
+    // Live Gươm Thức Thời is two conditionals: bonus lethality *while out of
+    // combat*, and move speed *on a takedown*. This product is a phòng tập —
+    // a permanent fight — so an out-of-combat bonus is a stat the player
+    // essentially never holds, and a takedown-gated speed burst is already
+    // Hoa Tử Linh's trigger one shelf over. What is left is the shop's
+    // cheapest lethality finisher, which sells honestly on its own;
+    // Ngọn Giáo Shojin and Huyết Kiếm are the precedent for
+    // a finished row that is pure stats.
+    //
+    // `speedPercent`, not flat `speed`: this is a fourth-item purchase, and
+    // the flat one belongs to boots (see the note at the top of this table).
+    stats: { attackDamage: 14, armorPenetration: 0.2, speedPercent: 0.08 },
   },
 });
 

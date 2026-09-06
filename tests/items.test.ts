@@ -10,7 +10,7 @@ import { assetManifest } from '../generated/assetManifest';
 const api = buildTestApi();
 
 /**
- * The shop this pack ships: a hundred and one items, fifty-nine spells behind them, and the
+ * The shop this pack ships: a hundred and three items, fifty-nine spells behind them, and the
  * one thing about them that is easy to get wrong in a way nothing complains
  * about.
  *
@@ -723,6 +723,17 @@ const SPEC: Record<
     passive: 'Item_Cryptbloom',
     buildsFrom: ['blighting_jewel', 'blasting_wand'],
   },
+  serrated_dirk: {
+    name: 'Dao Hung Tàn',
+    cost: 850,
+    stats: { attackDamage: 12, armorPenetration: 0.08 },
+  },
+  opportunity: {
+    name: 'Gươm Thức Thời',
+    cost: 1400,
+    stats: { attackDamage: 14, armorPenetration: 0.2, speedPercent: 0.08 },
+    buildsFrom: ['serrated_dirk'],
+  },
 };
 
 describe('no Item_ spell leaks into spellDisplay', () => {
@@ -754,7 +765,7 @@ describe('no Item_ spell leaks into spellDisplay', () => {
 describe('the item set', () => {
   const items = data.items ?? {};
 
-  it('ships exactly the hundred and one specified, keyed by their own id', () => {
+  it('ships exactly the hundred and three specified, keyed by their own id', () => {
     expect(Object.keys(items).sort()).toEqual(Object.keys(SPEC).sort());
   });
 
@@ -886,7 +897,7 @@ describe('the item set', () => {
     const registry = new PackRegistry();
     registry.install(pack);
 
-    expect(registry.items()).toHaveLength(101);
+    expect(registry.items()).toHaveLength(103);
     const thornmail = registry.item('lol:thornmail');
     expect(thornmail?.passive).toBe('lol:Item_Thornmail');
     expect(thornmail?.icon).toBe('lol:item_thornmail');
@@ -940,6 +951,7 @@ describe('the build paths', () => {
     'caulfields_warhammer',
     'kindlegem',
     'blasting_wand',
+    'serrated_dirk',
   ];
 
   const finished = Object.values(items).filter(def => !COMPONENTS.includes(def.id));
