@@ -9,6 +9,7 @@ const BaseBuff = api.buffs.Buff;
 const Spell = api.Spell;
 const SpellObject = api.SpellObject;
 const MissileSpellObject = api.MissileSpellObject;
+const TrailSystem = api.helpers.TrailSystem;
 const dmg = api.text.dmg;
 
 
@@ -30,12 +31,20 @@ export const Q_DAMAGE = 20;
 
 export const Q_BOUNCE_DAMAGE = 20;
 
-export const Q_RANGE = 320;
+/**
+ * **400, not 320.** Her auto-attack reaches 300, so the poke she spends 35 mana
+ * and a five-second cooldown on used to out-range her right-click by twenty
+ * pixels — half a body. It is the shortest of the three reports about this
+ * champion ("tầm nó vừa ngắn"), and the cheapest to answer: still well inside
+ * the pack's long-range marksmen (Caitlyn 720, Ezreal 620), whose reach is
+ * their whole identity and not hers.
+ */
+export const Q_RANGE = 400;
 
 export const Q_SPEED = 20;
 
 /** How far past the first body the shot will look for a second. */
-export const Q_BOUNCE_RANGE = 190;
+export const Q_BOUNCE_RANGE = 230;
 
 export const Q_MANA = 35;
 
@@ -216,17 +225,53 @@ export class MissFortune_Q_Shot extends MissileSpellObject {
     return best;
   }
 
+  /**
+   * **The tracer, and it is `TrailSystem`'s job rather than this method's.**
+   *
+   * `MissileSpellObject` adds a declared `trailSystem` to the world and feeds
+   * it a point per frame — eight other missiles in this pack do it that way —
+   * and the trail lands in `ObjectManager`'s **decor** quadtree, which is the
+   * one that gets rationed under load. A streak hand-drawn in here would be a
+   * gameplay object as far as every query is concerned, would be drawn at full
+   * cost on a struggling phone, and would need its own display box for the part
+   * of it hanging behind the slug. All three are already solved.
+   */
+  trailSystem = new TrailSystem({
+    maxLength: 10,
+    trailSize: 6,
+    trailColor: '#E8BA60AA',
+  });
+
+  onArrive(): void {
+    // Cut it at the end of the flight rather than letting it hang in the air
+    // past the shot, the way the other missiles in this pack do.
+    if (this.trailSystem) this.trailSystem.toRemove = true;
+  }
+
+  /**
+   * The slug itself, which is the other half of "khó nhìn thấy quá".
+   *
+   * It used to be a 22x9 capsule in `LEATHER` — `(58, 36, 40)`, nearly black —
+   * crossing four hundred units in a third of a second: a dark speck on dark
+   * ground. **The body is bright now and the dark is the outline**, which is
+   * what makes a small shape read on light ground *and* on dark, and it is
+   * bigger: 28x11 against a body radius of ~20. No glow — this game has none
+   * anywhere.
+   */
   draw(): void {
     push();
     translate(this.position.x, this.position.y);
     rotate(this.heading);
-    noStroke();
+
     // A slug: a flat capsule with a gold nose, nothing soft about it.
-    fill(LEATHER[0], LEATHER[1], LEATHER[2], 240);
     rectMode(CENTER);
-    rect(0, 0, 22, 9, 4);
-    fill(GOLD[0], GOLD[1], GOLD[2], 245);
-    triangle(9, -4, 18, 0, 9, 4);
+    stroke(LEATHER[0], LEATHER[1], LEATHER[2], 245);
+    strokeWeight(3);
+    fill(CRIMSON[0], CRIMSON[1], CRIMSON[2], 250);
+    rect(0, 0, 28, 11, 5);
+    noStroke();
+    fill(GOLD[0], GOLD[1], GOLD[2], 250);
+    triangle(11, -5, 22, 0, 11, 5);
     pop();
   }
 
@@ -272,26 +317,26 @@ export class MissFortune_Q_Bounce extends SpellObject {
 
     push();
     noFill();
-    stroke(CRIMSON[0], CRIMSON[1], CRIMSON[2], 240 * fade);
-    strokeWeight(4);
-    circle(this.atX, this.atY, 34 * out);
+    stroke(CRIMSON[0], CRIMSON[1], CRIMSON[2], 245 * fade);
+    strokeWeight(5);
+    circle(this.atX, this.atY, 46 * out);
 
     if (this.toX !== null && this.toY !== null) {
       // The bounce drawn as it travels, so the second body reads as *the same
       // bullet* rather than a second cast.
       const gx = this.atX + (this.toX - this.atX) * out;
       const gy = this.atY + (this.toY - this.atY) * out;
-      stroke(GOLD[0], GOLD[1], GOLD[2], 235 * fade);
-      strokeWeight(3);
+      stroke(GOLD[0], GOLD[1], GOLD[2], 240 * fade);
+      strokeWeight(5);
       line(this.atX, this.atY, gx, gy);
       noStroke();
-      fill(GOLD[0], GOLD[1], GOLD[2], 245 * fade);
-      circle(gx, gy, 9);
+      fill(GOLD[0], GOLD[1], GOLD[2], 250 * fade);
+      circle(gx, gy, 13);
       if (out > 0.95) {
         noFill();
-        stroke(CRIMSON[0], CRIMSON[1], CRIMSON[2], 240 * fade);
-        strokeWeight(4);
-        circle(this.toX, this.toY, 30);
+        stroke(CRIMSON[0], CRIMSON[1], CRIMSON[2], 245 * fade);
+        strokeWeight(5);
+        circle(this.toX, this.toY, 40);
       }
     }
     pop();

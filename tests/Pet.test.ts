@@ -17,7 +17,7 @@ import { buildTestApi } from '@moba2d/core/testing';
 import { createGame, createUnit, installSpellObjectGlobals, pressSpell } from '@moba2d/core/testing/spell';
 import Shaco_R, { Shaco_R_Clone } from '../spells/Shaco_R';
 import { ARM_TIME_MS } from '../spells/Shaco_W';
-import Shaco_W, { Shaco_W_Box } from '../spells/Shaco_W';
+import Shaco_W, { ATTACK_DAMAGE, FEAR_RANGE, Shaco_W_Box, Shaco_W_Bullet_Object } from '../spells/Shaco_W';
 import { CHOMPED_STACK_ID, LAND_TIME_MS, ARM_TIME_MS as CHOMPER_ARM_MS } from '../spells/Jinx_E';
 import Jinx_E, { Jinx_E_Chomper } from '../spells/Jinx_E';
 import Annie_R from '../spells/Annie_R';
@@ -341,5 +341,101 @@ describe("Shaco R's clone is dressed as Shaco, not as a summon", () => {
     const { shaco, clone } = summonClone();
 
     expect(clone.score).toBe(shaco.score);
+  });
+});
+
+/**
+ * **A summon's damage is its summoner's ability damage.**
+ *
+ * Reported against this box: the tooltip promises `7 (+n)` — `Spell`
+ * rescales a `damage` span by the champion who owns the ability — and the
+ * bolts landed for a flat 7 however much ability power Shaco had bought.
+ * Two separate reasons, both in core and both silent: the box is the unit
+ * *dealing* the hit and it owns nothing, and nothing stamped an attribution
+ * on a pet, so `abilityPowerScales()` answered no and the amplifier was never
+ * reached at all. `@moba2d/core`'s `tests/game/combat/Pet.test.ts` holds both
+ * halves on the base class; this is the ability it was reported on.
+ *
+ * Driven through `objectManager.update()` rather than `box.update()`, and that
+ * is the point rather than a detail: the attribution a bolt is born with is the
+ * one the manager brackets its summoner's update in. A test that called the
+ * pet's `update()` by hand would be testing a path the game never takes.
+ */
+describe('the jester box hits for what its tooltip promises', () => {
+  const fireOneVolley = (abilityPower: number) => {
+    const game = createGame();
+    const shaco = createUnit(game, 0, 'blue');
+    shaco.stats.abilityPower.baseValue = abilityPower;
+    game.setPlayer(shaco as never);
+    (game as unknown as { worldMouse: unknown }).worldMouse = shaco.position.copy();
+
+    const victim = createUnit(game, FEAR_RANGE / 2, 'red');
+    victim.stats.maxHealth.baseValue = 500;
+    victim.stats.health.baseValue = 500;
+    game.objectManager.queryObjects = vi.fn(() => [victim]) as never;
+
+    pressSpell(new Shaco_W(shaco), { at: shaco.position });
+
+    // Arm and trigger: one long tick to reach ARM_TIME_MS, then ordinary ones
+    // for the reveal, the volley and the bolt's flight.
+    vi.stubGlobal('deltaTime', ARM_TIME_MS + 50);
+    game.objectManager.update();
+    game.objectManager.update();
+    vi.stubGlobal('deltaTime', 16);
+    // Enough ticks for the volley to be fired and its bolt to cross the gap,
+    // and comfortably fewer than the 500ms that would fire a second volley.
+    for (let tick = 0; tick < 12; tick++) game.objectManager.update();
+
+    const bolts = game.objectManager.objects.filter(
+      (object: unknown) => object instanceof Shaco_W_Bullet_Object
+    );
+    return { victim, bolts, spent: 500 - victim.stats.health.value };
+  };
+
+  it('deals its authored number for a Shaco who has bought nothing', () => {
+    const { bolts, spent } = fireOneVolley(0);
+
+    expect(bolts.length, 'the box never fired').toBeGreaterThan(0);
+    expect(spent).toBe(ATTACK_DAMAGE);
+  });
+
+  /**
+   * The decoy's parting explosion is the same fact one level up: it names Shaco
+   * as the attacker, so it always had the right stats, and it still did not
+   * scale — the hit is dealt from `Pet.expire()`, and nothing stamped an
+   * attribution on a pet, so `abilityPowerScales()` said no.
+   */
+  it('and the decoy’s parting explosion scales too', () => {
+    const game = createGame();
+    const shaco = createUnit(game, 0, 'blue');
+    shaco.stats.abilityPower.baseValue = 1;
+    game.setPlayer(shaco as never);
+    (game as unknown as { worldMouse: unknown }).worldMouse = shaco.position.copy();
+
+    const victim = createUnit(game, 40, 'red');
+    victim.stats.maxHealth.baseValue = 500;
+    victim.stats.health.baseValue = 500;
+    game.objectManager.queryObjects = vi.fn(() => [victim]) as never;
+
+    const spell = new Shaco_R(shaco);
+    expect(pressSpell(spell, { at: { x: 40, y: 0 } })).toBe(true);
+
+    // Run it out: the clone explodes when its own clock ends, through
+    // `Pet.expire()`, inside the manager's attribution bracket.
+    vi.stubGlobal('deltaTime', spell.cloneLifeTime + 100);
+    game.objectManager.update();
+    game.objectManager.update();
+    vi.stubGlobal('deltaTime', 16);
+
+    // 30 × (1 + 1.0), the figure `Shaco_R`'s description tags with `dmg`.
+    expect(500 - victim.stats.health.value).toBe(60);
+  });
+
+  it('scales with Shaco’s ability power, not the box’s empty stat block', () => {
+    // +100%: 7 × 2, by hand, which is exactly what the tooltip prints as
+    // `7 (+7)`.
+    const { spent } = fireOneVolley(1);
+
+    expect(spent).toBe(ATTACK_DAMAGE * 2);
   });
 });

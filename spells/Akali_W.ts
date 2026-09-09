@@ -124,10 +124,15 @@ export class Akali_W_Shroud extends SpellObject {
 
     if (this.breakMsLeft > 0) this.breakMsLeft = Math.max(0, this.breakMsLeft - deltaTime);
 
-    // She acted: core tore the cloak off (`combat/StealthBreak.ts`) while she
-    // was still standing in the smoke, so the smoke will not hang another one
-    // for a moment. Only a cloak *this* object hung counts — a stealth from
+    // She was found: core tore the cloak off (`combat/StealthBreak.ts`) while
+    // she was still standing in the smoke, so the smoke will not hang another
+    // one for a moment. Only a cloak *this* object hung counts — a stealth from
     // somewhere else ending is not her leaving cover.
+    //
+    // *What* tears it has changed underneath this and the shroud never needed
+    // editing, which is the whole reason it reads the cloak rather than
+    // subscribing to an action event: the rule used to be "she cast something"
+    // and is now "a hit landed, on either end of it".
     if (this.cloak && this.cloak.toRemove) {
       this.cloak = null;
       if (this.sheltering) this.breakMsLeft = W_BREAK_MS;

@@ -1,12 +1,13 @@
 import type { AttackableUnit, CastSpec, DamageType } from '@moba2d/core/content/types';
 import { api } from '../packApi';
-import { secs } from '../text';
+import { pct, secs } from '../text';
 
 const Spell = api.Spell;
 const Buff = api.buffs.Buff;
 const SpellObject = api.SpellObject;
 const PredefinedFilters = api.combat.PredefinedFilters;
 const dmg = api.text.dmg;
+const tint = api.text.tint;
 
 /**
  * Vọng Âm Luden — the mage's wave-clear, and the only splash in this shop
@@ -26,6 +27,28 @@ const dmg = api.text.dmg;
  * Statikk** (70% of attack, ~14-20 to the target, chaining to three), and
  * against **Vĩnh Sương**'s 30: 12 to the target and 8 to each of three others
  * is 36 across four bodies, on an eight-second clock.
+ *
+ * ## It scales with the wearer's ability power, and it is the only item here
+ * that says so
+ *
+ * The live item has always carried a ratio (100 **+10% AP**), and this one was
+ * a pair of flat numbers: an echo that was worth exactly as much on the last
+ * item as on the first, in the one shelf of the shop whose entire purpose is
+ * making abilities hit harder. Reported as exactly that.
+ *
+ * The engine will not do it for us and that is deliberate: `economy/ItemShop`
+ * switches `damageScalesWithAbilityPower` off for every item passive and
+ * active, because most of this shop's procs already read the wearer's *attack*
+ * damage and drawing from both stats at once would pay them twice. So the
+ * scaling is written out here, as arithmetic, with its own ratio — which is
+ * also how the source item states it, and it keeps the item honest against
+ * `Item_StatikkShiv.ts` and the rest of the AD procs, which are untouched.
+ *
+ * **A share of the multiplier, not the whole of it** (`LUDENS_ABILITY_RATIO`).
+ * `stats.abilityPower` here is a fraction that multiplies a *whole ability*, so
+ * handing the echo all of it would make a shop item scale exactly as hard as
+ * the spell that triggered it — the thing the source's 10% ratio is small
+ * precisely to avoid.
  *
  * ## The clock is also the re-entry guard
  *
@@ -47,6 +70,30 @@ export const LUDENS_PRIMARY_DAMAGE = 12;
 
 /** And to each other enemy standing with them. */
 export const LUDENS_SPLASH_DAMAGE = 8;
+
+/**
+ * How much of the wearer's ability power the echo takes — half of it.
+ *
+ * See the header on why this is written here rather than left to the engine,
+ * and why it is a share. At `+100%` ability power a 12 becomes an 18 and each
+ * 8 becomes a 12: the echo grows with the build that bought it without ever
+ * becoming the reason a mage buys the item.
+ */
+export const LUDENS_ABILITY_RATIO = 0.5;
+
+/**
+ * What the echo is worth out of this wearer, as a multiplier — `1` for a mage
+ * who has bought nothing, which is every mage until they do.
+ *
+ * Floored at zero for the reason `combat/Amplification.ts` floors its own: an
+ * ability-power suppression deep enough would otherwise turn the proc into a
+ * heal. Exported so the test does not restate the arithmetic.
+ */
+export const ludensScale = (wearer: AttackableUnit): number => {
+  const power = wearer.stats?.abilityPower?.value;
+  if (!Number.isFinite(power)) return 1;
+  return Math.max(0, 1 + LUDENS_ABILITY_RATIO * (power as number));
+};
 
 /** How many *others* it reaches. */
 export const LUDENS_SPLASH_TARGETS = 3;
@@ -83,11 +130,14 @@ export class Item_Ludens_Echo extends Buff {
     this.startRearm(LUDENS_COOLDOWN_MS);
 
     const wearer = this.targetUnit;
-    victim.takeDamage(LUDENS_PRIMARY_DAMAGE, wearer, 'MAGIC', LUDENS_SOURCE);
+    // One multiplier, read once, so the echo and its splash never disagree
+    // about what the build is worth.
+    const scale = ludensScale(wearer);
+    victim.takeDamage(Math.round(LUDENS_PRIMARY_DAMAGE * scale), wearer, 'MAGIC', LUDENS_SOURCE);
 
     const others = this.othersAround(victim);
     for (const other of others) {
-      other.takeDamage(LUDENS_SPLASH_DAMAGE, wearer, 'MAGIC', LUDENS_SOURCE);
+      other.takeDamage(Math.round(LUDENS_SPLASH_DAMAGE * scale), wearer, 'MAGIC', LUDENS_SOURCE);
     }
 
     this.game.objectManager.addObject(new Item_Ludens_Arc(wearer, victim, others));
@@ -177,7 +227,8 @@ export default class Item_Ludens extends Spell {
   description =
     `Nội tại: mỗi ${secs(LUDENS_COOLDOWN_MS)} giây, đòn phép kế tiếp phóng ra vọng âm gây` +
     ` ${dmg(LUDENS_PRIMARY_DAMAGE, 'MAGIC')} lên mục tiêu và` +
-    ` ${dmg(LUDENS_SPLASH_DAMAGE, 'MAGIC')} lên tối đa ${LUDENS_SPLASH_TARGETS} kẻ địch gần đó`;
+    ` ${dmg(LUDENS_SPLASH_DAMAGE, 'MAGIC')} lên tối đa ${LUDENS_SPLASH_TARGETS} kẻ địch gần đó.` +
+    ` Cả hai con số ${tint(`tăng theo ${pct(LUDENS_ABILITY_RATIO)}% sức mạnh phép`)} của người mang.`;
   coolDown = 0;
   manaCost = 0;
 

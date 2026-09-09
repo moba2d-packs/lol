@@ -89,6 +89,26 @@ export class Zed_W_Clone extends Champion {
    */
   killCredit: KillCredit = 'none';
 
+  /**
+   * **The shadow's copies are Zed's abilities, so they hit for what Zed's build
+   * says.**
+   *
+   * The same trap `killCredit` above is about, one field over. A shadow is a
+   * bare `Champion`: no inventory, no ability power, so every ability it
+   * mirrored was multiplied by exactly 1 while the tooltip the player read was
+   * rescaled by Zed's own build. Buy 200% ability power and the shadow — half
+   * the reason to press W — kept dealing first-frame damage, silently, in a
+   * kit whose whole point is that the copy counts.
+   *
+   * `AttackableUnit.abilityDamageOwner` is the seam and its comment carries the
+   * rest, including why the shadow stays the *attacker* of its own hits. Live
+   * rather than snapshotted, so an item bought while the shadow is standing
+   * counts on its next mirrored cast.
+   */
+  get abilityDamageOwner() {
+    return this.owner;
+  }
+
   lifeTime = 3000;
   age = 0;
   owner!: any;

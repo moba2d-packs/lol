@@ -1158,7 +1158,7 @@ export const spellCatalog = {
   },
   "Item_Ludens": {
     name: "Vọng Âm Luden (Item_Ludens)",
-    description: "Nội tại: mỗi 8 giây, đòn phép kế tiếp phóng ra vọng âm gây <span class=\"damage magic\" data-base=\"12\">12 sát thương phép</span> lên mục tiêu và <span class=\"damage magic\" data-base=\"8\">8 sát thương phép</span> lên tối đa 3 kẻ địch gần đó",
+    description: "Nội tại: mỗi 8 giây, đòn phép kế tiếp phóng ra vọng âm gây <span class=\"damage magic\" data-base=\"12\">12 sát thương phép</span> lên mục tiêu và <span class=\"damage magic\" data-base=\"8\">8 sát thương phép</span> lên tối đa 3 kẻ địch gần đó. Cả hai con số <span class=\"damage\" data-flat=\"none\">tăng theo 50% sức mạnh phép</span> của người mang.",
     iconKey: "item_ludens_echo",
     coolDownMs: 0,
     manaCost: 0,
@@ -1918,7 +1918,7 @@ export const spellCatalog = {
   },
   "MissFortune_E": {
     name: "Mưa Đạn (MissFortune_E)",
-    description: "Trút một trận mưa đạn xuống một điểm trong <span>340px</span>, bán kính <span>190px</span>, kéo dài <span class=\"time\">2 giây</span>. Mỗi <span class=\"time\">0.3 giây</span> gây <span class=\"damage magic\" data-base=\"4\">4 sát thương phép</span> (tổng <span class=\"damage magic\" data-base=\"32\">32 sát thương phép</span> nếu đứng yên trong đó) và <span class=\"buff\">Làm Chậm 40%</span> mọi kẻ địch bên trong.",
+    description: "Trút một trận mưa đạn xuống một điểm trong <span>430px</span>, bán kính <span>190px</span>, kéo dài <span class=\"time\">2 giây</span>. Mỗi <span class=\"time\">0.3 giây</span> gây <span class=\"damage magic\" data-base=\"4\">4 sát thương phép</span> (tổng <span class=\"damage magic\" data-base=\"32\">32 sát thương phép</span> nếu đứng yên trong đó) và <span class=\"buff\">Làm Chậm 40%</span> mọi kẻ địch bên trong.",
     iconKey: "spell_missfortune_e",
     coolDownMs: 10000,
     manaCost: 60,
@@ -1926,7 +1926,7 @@ export const spellCatalog = {
   },
   "MissFortune_Q": {
     name: "Bắn Một Được Hai (MissFortune_Q)",
-    description: "Bắn một phát xa <span>320px</span>: kẻ địch đầu tiên nhận <span class=\"damage physical\" data-base=\"20\">20 sát thương vật lý</span>, rồi viên đạn <span class=\"buff\">nảy tiếp</span> sang một kẻ địch <span class=\"buff\">đứng phía sau</span> trong <span>190px</span>, gây <span class=\"damage physical\" data-base=\"20\">20 sát thương vật lý</span>. Nội tại <span class=\"buff\">Đánh Yêu</span>: đòn đánh thường vào một mục tiêu <span class=\"buff\">chưa mang dấu</span> gây thêm <span class=\"damage physical\" data-base=\"12\">12 sát thương vật lý</span>.",
+    description: "Bắn một phát xa <span>400px</span>: kẻ địch đầu tiên nhận <span class=\"damage physical\" data-base=\"20\">20 sát thương vật lý</span>, rồi viên đạn <span class=\"buff\">nảy tiếp</span> sang một kẻ địch <span class=\"buff\">đứng phía sau</span> trong <span>230px</span>, gây <span class=\"damage physical\" data-base=\"20\">20 sát thương vật lý</span>. Nội tại <span class=\"buff\">Đánh Yêu</span>: đòn đánh thường vào một mục tiêu <span class=\"buff\">chưa mang dấu</span> gây thêm <span class=\"damage physical\" data-base=\"12\">12 sát thương vật lý</span>.",
     iconKey: "spell_missfortune_q",
     coolDownMs: 5000,
     manaCost: 35,
@@ -1934,7 +1934,7 @@ export const spellCatalog = {
   },
   "MissFortune_R": {
     name: "Bão Đạn (MissFortune_R)",
-    description: "Đứng yên nã <span>10</span> loạt đạn hình quạt 44° xa <span>380px</span> trong <span class=\"time\">2.5 giây</span>. Mỗi loạt gây <span class=\"damage physical\" data-base=\"5\">5 sát thương vật lý</span> cho mọi kẻ địch trong quạt — tổng cộng <span class=\"damage physical\" data-base=\"50\">50 sát thương vật lý</span> nếu đứng trong đó suốt. <span class=\"buff\">Di chuyển, choáng hay câm lặng đều ngắt kênh niệm.</span>",
+    description: "Đứng yên nã <span>10</span> loạt đạn hình quạt 44° xa <span>520px</span> trong <span class=\"time\">2.5 giây</span>. Mỗi loạt gây <span class=\"damage physical\" data-base=\"5\">5 sát thương vật lý</span> cho mọi kẻ địch trong quạt — tổng cộng <span class=\"damage physical\" data-base=\"50\">50 sát thương vật lý</span> nếu đứng trong đó suốt. <span class=\"buff\">Di chuyển, choáng hay câm lặng đều ngắt kênh niệm.</span>",
     iconKey: "spell_missfortune_r",
     coolDownMs: 10000,
     manaCost: 100,
@@ -2350,7 +2350,7 @@ export const spellCatalog = {
   },
   "Sett_R": {
     name: "Hủy Diệt Đấu Trường (Sett_R)",
-    description: "Sett bốc một tướng địch lên không trung (không thể bị chọn làm mục tiêu), bay vút lên và nện xuống đất: mục tiêu bị ném nhận <span class=\"damage physical\" data-base=\"45\">45 sát thương vật lý</span>, mọi kẻ địch khác trong bán kính 220 nhận <span class=\"damage physical\" data-base=\"30\">30 sát thương vật lý</span> và bị làm chậm 50% trong 1.5 giây.",
+    description: "Sett bốc một tướng địch lên không trung (không thể bị chọn làm mục tiêu), bay vút lên và nện xuống đất: mục tiêu bị ném nhận <span class=\"damage physical\" data-base=\"45\">45 sát thương vật lý</span>, mọi kẻ địch khác trong bán kính 220 nhận <span class=\"damage physical\" data-base=\"30\">30 sát thương vật lý</span> và bị làm chậm 50% trong 1.5 giây. Cả hai đều cộng thêm <span class=\"damage physical\" data-flat=\"none\">15% máu tối đa của mục tiêu bị bế</span> — bế càng to thì nện càng đau.",
     iconKey: "spell_sett_r",
     coolDownMs: 10000,
     manaCost: 100,

@@ -28,6 +28,7 @@ import MissFortune_W, {
   W_TAP_REFUND_MS,
 } from '../../spells/MissFortune_W';
 import MissFortune_E, {
+  E_CAST_MS,
   E_RADIUS,
   E_SLOW_PERCENT,
   E_TICK_DAMAGE,
@@ -232,6 +233,40 @@ describe('Miss Fortune', () => {
   });
 
   describe('Make It Rain', () => {
+    /**
+     * She plants for `E_CAST_MS` before the storm goes up — a cast time is a
+     * root (`Spell.holdStillWhileCasting`), and it is what she was missing:
+     * the storm used to appear behind a champion who never broke stride.
+     * Nothing spawns until the wind-up is spent, so every test here runs it.
+     */
+    const throwIt = (at: { x: number; y: number }) => {
+      const spell = new MissFortune_E(owner);
+      expect(pressSpell(spell, { at })).toBe(true);
+      // `pending` throws when it finds nothing, so the absence is asked for
+      // by hand.
+      const queue = (game.objectManager as unknown as { _objectToBeAdd: unknown[] })
+        ._objectToBeAdd;
+      expect(
+        queue.some(object => object instanceof MissFortune_E_Rain),
+        'it fell before the wind-up was over'
+      ).toBe(false);
+
+      vi.stubGlobal('deltaTime', E_CAST_MS + 20);
+      spell.update();
+      vi.stubGlobal('deltaTime', 16);
+      return spell;
+    };
+
+    it('plants her for the wind-up rather than letting her walk it off', () => {
+      owner.moveTo(600, 0);
+      expect(owner.destination.x, 'the fixture never started walking').toBe(600);
+
+      throwIt({ x: 200, y: 0 });
+
+      expect(owner.destination.x).toBe(owner.position.x);
+      expect(pending(game, MissFortune_E_Rain), 'the storm never fell').toBeTruthy();
+    });
+
     it('ticks its damage and renews one slow rather than stacking', () => {
       const standing = unit(game, 200, 'red');
       standing.stats.health.baseValue = 500;
@@ -239,7 +274,7 @@ describe('Miss Fortune', () => {
       game.objectManager.addObject(standing);
       game.objectManager.update();
 
-      expect(pressSpell(new MissFortune_E(owner), { at: { x: 200, y: 0 } })).toBe(true);
+      throwIt({ x: 200, y: 0 });
       const rain = pending(game, MissFortune_E_Rain);
 
       vi.stubGlobal('deltaTime', E_TICK_MS);
@@ -257,7 +292,7 @@ describe('Miss Fortune', () => {
       game.objectManager.addObject(outside);
       game.objectManager.update();
 
-      expect(pressSpell(new MissFortune_E(owner), { at: { x: 200, y: 0 } })).toBe(true);
+      throwIt({ x: 200, y: 0 });
       const rain = pending(game, MissFortune_E_Rain);
       vi.stubGlobal('deltaTime', E_TICK_MS);
       rain.update();
@@ -319,6 +354,31 @@ describe('Miss Fortune', () => {
       channel(r, 3);
 
       expect(victim.stats.health.value).toBe(100);
+    });
+
+    /**
+     * **The shape has to be on screen for the whole barrage.** It used to be
+     * painted by each wave at an alpha of 60 and faded inside 300ms, so the one
+     * thing both sides need to read — where the bullets are going — blinked ten
+     * times across one channel. `MissFortune_R_Field` holds it.
+     */
+    it('paints the cone for the whole channel and takes it away when interrupted', () => {
+      const r = new MissFortune_R(owner);
+      expect(pressSpell(r, { at: { x: 400, y: 0 } })).toBe(true);
+
+      const field = r.field;
+      expect(field, 'nothing held the cone on screen').toBeTruthy();
+      expect(field!.reach).toBeGreaterThanOrEqual(R_LENGTH);
+      expect(field!.toRemove).toBe(false);
+
+      channel(r, 2);
+      expect(field!.toRemove, 'the cone went away while she was still firing').toBe(false);
+
+      // Interrupted: the cone is a promise about the next wave, and there is
+      // not going to be one.
+      r.cancel('MOVE');
+      expect(field!.toRemove).toBe(true);
+      expect(r.field).toBeNull();
     });
 
     it('keeps the wedge it was aimed at when she turns to look elsewhere', () => {

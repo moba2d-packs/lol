@@ -150,10 +150,11 @@ describe('Akali', () => {
     });
 
     /**
-     * Core ends a stealth the moment its owner attacks or casts
-     * (`combat/StealthBreak.ts`). The shroud reads *that*, rather than
-     * subscribing to the two action events itself, so it can never disagree
-     * with core about what counts as acting.
+     * Core ends a stealth the moment a hit lands on either end of it
+     * (`combat/StealthBreak.ts`). The shroud reads *that* — the cloak going
+     * away — rather than subscribing to any event itself, so it cannot
+     * disagree with core about what counts, and it did not need editing when
+     * the rule moved off the cast seam onto the damage funnel.
      */
     it('refuses to hide her again for a moment after her own cloak is torn off', () => {
       const shroud = drop();

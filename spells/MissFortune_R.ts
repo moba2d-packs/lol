@@ -8,6 +8,7 @@ const PredefinedFilters = api.combat.PredefinedFilters;
 const SpellForm = api.enums.SpellForm;
 const Spell = api.Spell;
 const SpellObject = api.SpellObject;
+const GROUND_Z_INDEX = api.layers.GROUND_Z_INDEX;
 const dmg = api.text.dmg;
 
 
@@ -21,12 +22,26 @@ export const R_WAVES = Math.floor(R_DURATION_MS / R_WAVE_MS);
 
 export const R_TOTAL_DAMAGE = R_WAVES * R_WAVE_DAMAGE;
 
-export const R_LENGTH = 380;
+/**
+ * How far the fan reaches.
+ *
+ * **520, not 380.** Her auto-attack reaches 300 (`ATTACK.MARKSMAN` in
+ * `data.ts`), so the old cone out-ranged her own right-click by a quarter and
+ * the ultimate she stands still for read as a slightly longer punch — reported
+ * as "tầm nó vừa ngắn vừa khó thấy hiệu ứng". At 520 it is 1.7× her reach,
+ * which is the shape the ability is for: she plants herself out of the fight
+ * and covers a piece of the map with it. In band with the other ultimates that
+ * paint a lane of ground in this pack (Draven, Irelia, Xerath all sit at 520).
+ *
+ * The per-wave damage is untouched: a longer cone catches more people, it does
+ * not hit any of them harder.
+ */
+export const R_LENGTH = 520;
 
 export const R_ARC_DEG = 44;
 
 /** Six bullets a wave — the record's number, and what the picture draws. */
-export const R_BULLETS = 6;
+export const R_BULLETS = 9;
 
 export const R_MANA = 100;
 
@@ -83,10 +98,20 @@ export default class MissFortune_R extends Spell {
     };
   }
 
+  /** The cone held on screen for the whole channel. See `MissFortune_R_Field`. */
+  field: MissFortune_R_Field | null = null;
+
   onCastStart(context: CastContext): void {
     const aim = this.firingDirection(context);
     this.heading = Math.atan2(aim.y, aim.x);
     this.wavesFired = 0;
+
+    this.field = new MissFortune_R_Field(
+      this.owner,
+      this.heading,
+      effectiveRange(R_LENGTH, this.owner)
+    );
+    this.game.objectManager.addObject(this.field);
   }
 
   onChannelTick(): void {
@@ -96,8 +121,12 @@ export default class MissFortune_R extends Spell {
   }
 
   onCancel(_context: CastContext, _reason: CancelReason): void {
-    // Nothing to unwind: the ability *is* its waves, and a cancelled channel
-    // simply stops firing them. Stated so the next reader does not go looking.
+    // The waves need no unwinding — the ability *is* its waves, and a cancelled
+    // channel simply stops firing them. The cone on the ground does: it is a
+    // promise about where the next wave is going, and one left painted over a
+    // channel somebody interrupted is a lie about a barrage that is not coming.
+    if (this.field) this.field.toRemove = true;
+    this.field = null;
   }
 
   /** One wave: the whole wedge, everything standing in it. */
@@ -143,7 +172,96 @@ export default class MissFortune_R extends Spell {
 }
 
 
-/** One wave: six hard slugs fanning out, and a mark on what they caught. */
+/**
+ * The cone, held for the whole barrage.
+ *
+ * ## Why this object exists
+ *
+ * The shape used to be painted by each wave and faded inside 300ms, at an
+ * alpha of 60 — so the one thing a player on either side needs to know, *where
+ * the bullets are going*, blinked ten times across one channel and was never
+ * once at full strength. "Khó thấy hiệu ứng" was the report, and this is the
+ * half of it that is not the reach.
+ *
+ * Held steady instead: one fill, one hard outline, for as long as she is
+ * firing. That is also **cheaper** than what it replaces — two overlapping
+ * per-wave wedges were being blended at any moment (waves land every 250ms and
+ * lived 300ms), where this is one.
+ *
+ * ## Flat, and outlined rather than washed
+ *
+ * No glow and no blur anywhere in this game. The fill is deliberately weak and
+ * the *edge* is what carries the shape: two lines down the sides and an arc
+ * across the mouth, at full alpha. An edge is legible over any ground the map
+ * has; a wash is not.
+ *
+ * Ground art, so it draws under the bodies standing in it — a champion in the
+ * cone must stay readable, which is the whole reason they are looking at it.
+ */
+export class MissFortune_R_Field extends SpellObject {
+  zIndex = GROUND_Z_INDEX;
+  age = 0;
+
+  constructor(
+    owner: AttackableUnit,
+    readonly heading: number,
+    readonly reach: number
+  ) {
+    super(owner);
+    this.position = owner.position.copy();
+  }
+
+  update(): void {
+    this.age += deltaTime;
+    // The channel's own length is the ceiling; an interrupt takes it off
+    // earlier through `MissFortune_R.onCancel`, and a death takes it off here.
+    if (this.age >= R_DURATION_MS || this.owner.isDead || this.owner.toRemove) {
+      this.toRemove = true;
+      return;
+    }
+    // She is rooted while firing, but a displacement is not a move order — the
+    // cone belongs on her body wherever the body ends up.
+    this.position.set(this.owner.position.x, this.owner.position.y);
+  }
+
+  draw(): void {
+    const halfArc = (R_ARC_DEG * Math.PI) / 360;
+    // It opens over the first tenth of a second rather than appearing at full
+    // width, so the press has a beat of its own.
+    const opening = Math.min(1, this.age / 100);
+    const reach = this.reach * opening;
+
+    push();
+    translate(this.position.x, this.position.y);
+    rotate(this.heading);
+
+    noStroke();
+    fill(LEATHER[0], LEATHER[1], LEATHER[2], 70);
+    beginShape();
+    vertex(0, 0);
+    for (let i = 0; i <= 12; i++) {
+      const spin = -halfArc + (halfArc * 2 * i) / 12;
+      vertex(Math.cos(spin) * reach, Math.sin(spin) * reach);
+    }
+    endShape(CLOSE);
+
+    // The edge, which is what actually says "stand out of here".
+    noFill();
+    stroke(GOLD[0], GOLD[1], GOLD[2], 215);
+    strokeWeight(3);
+    line(0, 0, Math.cos(-halfArc) * reach, Math.sin(-halfArc) * reach);
+    line(0, 0, Math.cos(halfArc) * reach, Math.sin(halfArc) * reach);
+    arc(0, 0, reach * 2, reach * 2, -halfArc, halfArc);
+    pop();
+  }
+
+  getDisplayBoundingBox() {
+    return this.squareDisplayBoundingBox((this.reach + 40) * 2);
+  }
+}
+
+
+/** One wave: nine hard slugs fanning out, and a mark on what they caught. */
 export class MissFortune_R_Wave extends SpellObject {
   lifeTime = 300;
   age = 0;
@@ -181,28 +299,39 @@ export class MissFortune_R_Wave extends SpellObject {
     translate(this.position.x, this.position.y);
     rotate(this.heading);
 
-    // The wedge, faint, so the shape a player has to stand out of is legible
-    // from the first wave rather than inferred from where the slugs went.
+    // **The wedge is not drawn here.** It used to be, at an alpha of 60 and a
+    // 300ms fade, so the shape a player had to stand out of flickered in and
+    // out ten times across one channel and was never on screen at full
+    // strength. `MissFortune_R_Field` holds it steady for the whole barrage
+    // instead; this object is the barrage.
+
+    // The muzzle: a hard flare at her hip on the frame the wave leaves, so the
+    // rhythm of the channel is readable from her body as well as from the
+    // slugs.
     noStroke();
-    fill(LEATHER[0], LEATHER[1], LEATHER[2], 60 * fade);
-    beginShape();
-    vertex(0, 0);
-    for (let i = 0; i <= 10; i++) {
-      const spin = -halfArc + (halfArc * 2 * i) / 10;
-      vertex(Math.cos(spin) * this.reach, Math.sin(spin) * this.reach);
+    const flare = Math.max(0, 1 - t * 3);
+    if (flare > 0) {
+      fill(GOLD[0], GOLD[1], GOLD[2], 245 * flare);
+      triangle(6, -9 * flare, 34 * flare, 0, 6, 9 * flare);
     }
-    endShape(CLOSE);
 
     rectMode(CENTER);
     for (let i = 0; i < R_BULLETS; i++) {
       const spin = -halfArc + (halfArc * 2 * i) / (R_BULLETS - 1);
-      const gone = this.reach * flown;
+      // Staggered by a tenth of the flight so the volley reads as a spray
+      // rather than as a rigid comb; the slug at each edge still starts at the
+      // hip, so the shape of the fan is never in doubt.
+      const stagger = 1 - 0.1 * ((i * 5) % R_BULLETS) / R_BULLETS;
+      const gone = this.reach * flown * stagger;
       push();
       rotate(spin);
-      fill(LEATHER[0], LEATHER[1], LEATHER[2], 235 * fade);
-      rect(gone, 0, 16, 6, 3);
-      fill(GOLD[0], GOLD[1], GOLD[2], 245 * fade);
-      triangle(gone + 5, -3, gone + 12, 0, gone + 5, 3);
+      // Bigger than they were, and with a bright core: at 520 a 16x6 slug is
+      // three pixels of contrast on a lane of ground.
+      fill(LEATHER[0], LEATHER[1], LEATHER[2], 240 * fade);
+      rect(gone, 0, 24, 8, 3);
+      fill(GOLD[0], GOLD[1], GOLD[2], 250 * fade);
+      rect(gone + 2, 0, 14, 4, 2);
+      triangle(gone + 9, -4, gone + 18, 0, gone + 9, 4);
       pop();
     }
     pop();
@@ -210,9 +339,9 @@ export class MissFortune_R_Wave extends SpellObject {
     push();
     for (const mark of this.struck) {
       noFill();
-      stroke(CRIMSON[0], CRIMSON[1], CRIMSON[2], 225 * fade);
-      strokeWeight(3);
-      circle(mark.x, mark.y, 22 * (0.5 + 0.5 * flown));
+      stroke(CRIMSON[0], CRIMSON[1], CRIMSON[2], 235 * fade);
+      strokeWeight(4);
+      circle(mark.x, mark.y, 30 * (0.5 + 0.5 * flown));
     }
     pop();
   }

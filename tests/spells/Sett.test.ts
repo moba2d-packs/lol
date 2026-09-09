@@ -12,7 +12,7 @@ import { SETT_E_DAMAGE } from '../../spells/Sett_E';
 import Sett_E from '../../spells/Sett_E';
 import { SETT_Q_BONUS, SETT_Q_HITS } from '../../spells/Sett_Q';
 import Sett_Q from '../../spells/Sett_Q';
-import { SETT_R_BLAST, SETT_R_SLAM } from '../../spells/Sett_R';
+import { SETT_R_BLAST, SETT_R_SLAM, carriedBonus } from '../../spells/Sett_R';
 import Sett_R, { Sett_R_Carry } from '../../spells/Sett_R';
 import { SETT_W_BASE, SETT_W_GRIT_RATIO, SETT_W_GRIT_SCALE } from '../../spells/Sett_W';
 import Sett_W from '../../spells/Sett_W';
@@ -194,9 +194,38 @@ describe('Sett spells', () => {
     expect(carry).not.toBeNull();
     for (let step = 0; step < 6 && !carry!.toRemove; step++) carry!.update();
 
-    // 100 - 45 = 55 for the man he threw, 100 - 30 = 70 for the man beside the crater
-    expect(grabbed.stats.health.value).toBe(100 - SETT_R_SLAM);
-    expect(bystander.stats.health.value).toBe(100 - SETT_R_BLAST);
+    // Both figures carry the same share of the *thrown* man's pool — 15% of
+    // his 100 is 15 — so it is 45 + 15 for him and 30 + 15 for the bystander
+    // standing in the crater. See `SETT_R_CARRIED_HEALTH_SHARE`.
+    const share = carriedBonus(grabbed);
+    expect(share, 'the fixture stopped being a 100-health body').toBe(15);
+    expect(grabbed.stats.health.value).toBe(100 - SETT_R_SLAM - share);
+    expect(bystander.stats.health.value).toBe(100 - SETT_R_BLAST - share);
+  });
+
+  /**
+   * The half the ultimate was missing, stated on its own: **who he picked up
+   * decides what the landing is worth.** A flat 45 made grabbing the nearest
+   * body identical to grabbing the biggest one, which is the opposite of what
+   * the ability is for.
+   */
+  it('R hits harder for having thrown a bigger body', () => {
+    const r = new Sett_R(owner);
+    const tank = place(game, 500, 'red');
+    tank.stats.maxHealth.baseValue = 300;
+    tank.stats.health.baseValue = 300;
+    const bystander = place(game, 550, 'red');
+    game.objectManager.update();
+
+    r.onSpellCast({ ...context(300, 0), target: tank });
+    const carry = findCarry(game);
+    for (let step = 0; step < 6 && !carry!.toRemove; step++) carry!.update();
+
+    // 15% of 300 is 45, three times what the stock body was worth, and the
+    // bystander pays it too.
+    expect(carriedBonus(tank)).toBe(45);
+    expect(300 - tank.stats.health.value).toBe(SETT_R_SLAM + 45);
+    expect(100 - bystander.stats.health.value).toBe(SETT_R_BLAST + 45);
   });
 
   it('R refuses to target self or ally and does not carry or slam self', () => {

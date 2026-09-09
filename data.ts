@@ -3034,13 +3034,29 @@ export const data: ContentPackData = {
    * `turretPassives` replaces core's list, a `slotObjects` entry wins its role
    * — this pack simply has nothing to say through them now.
    *
+   * `>=1.23.0` is the silent kind, twice over, and neither half is an import
+   * this pack could have been caught missing:
+   *
+   *   - **a summon reads its summoner's build now**
+   *     (`AttackableUnit.abilityDamageOwner`, followed by
+   *     `combat/Amplification.ts`). On an older core Zed's shadow and Shaco's
+   *     boxes deal their authored numbers for ever while the tooltips over
+   *     them are rescaled by the champion who cast them — the exact shape of
+   *     "the shop works and the item does nothing", one class down. Zed's
+   *     shadow *declares* the field, so an older core simply ignores a getter
+   *     nobody reads;
+   *   - **a cast plants its caster** (`Spell.press` stopping a channel's feet,
+   *     and `castTimeMs` finally being a root). Miss Fortune's storm is
+   *     written against that: on an older core she throws it mid-stride and
+   *     Bão Đạn walks across the lane firing.
+   *
    * `satisfiesCoreRange` parses `*` and `>=X.Y.Z` and nothing else, which is
    * also why this is no longer the unparseable `'^1'` it used to be.
    */
   manifest: {
     id: 'lol',
     version: '1.1.0',
-    coreRange: '>=1.22.0',
+    coreRange: '>=1.23.0',
     assets: 'lol',
   },
   spellDisplay: displayData(),

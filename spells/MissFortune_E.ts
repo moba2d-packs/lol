@@ -1,8 +1,9 @@
-import type { AttackableUnit } from '@moba2d/core/content/types';
+import type { AttackableUnit, CastSpec } from '@moba2d/core/content/types';
 import { api } from '../packApi';
 import { pct, secs } from '../text';
 
 const Circle = api.utils.Quadtree.Circle;
+const Rectangle = api.utils.Quadtree.Rectangle;
 const effectiveRange = api.combat.Reach.effectiveRange;
 const PredefinedFilters = api.combat.PredefinedFilters;
 const BuffAddType = api.enums.BuffAddType;
@@ -29,9 +30,44 @@ export const E_TOTAL_DAMAGE = E_TICKS * E_TICK_DAMAGE;
 export const E_SLOW_PERCENT = 0.4;
 
 /** How far she can put it down. */
-export const E_CAST_RANGE = 340;
+/**
+ * **430, not 340.** Same report as Q and R: a zone she throws from 40 pixels
+ * past her own auto range is a zone she has to walk into a fight to place. The
+ * radius is untouched — the storm is the same size, she can just put it
+ * somewhere useful from where she is standing.
+ */
+export const E_CAST_RANGE = 430;
 
 export const E_MANA = 60;
+
+/** The wind-up she plants for before the storm goes up. See `castSpec`. */
+export const E_CAST_MS = 200;
+
+/** How many slugs are in the air at once. */
+export const E_DROPS = 16;
+
+/**
+ * How far above its landing point a slug starts, in screen pixels.
+ *
+ * This game is top-down and has no third axis, so height is *drawn* rather than
+ * simulated: a falling thing is one drawn above where it will land, with a
+ * ground mark under it. Zeus's bolt uses 280-300 for a lightning strike out of
+ * the clouds; a pistol volley is thrown, not summoned, so it comes from much
+ * lower.
+ */
+export const E_FALL_HEIGHT = 150;
+
+/**
+ * How far sideways a slug drifts per pixel of height — the lean that says the
+ * bullets were *fired* over the target rather than dropped on it.
+ *
+ * One direction for all of them, not a random per-drop angle: rain reads as
+ * rain because every drop falls the same way.
+ */
+export const E_FALL_LEAN = 0.28;
+
+/** The same lean, as the angle the slug is drawn at. */
+export const E_FALL_ANGLE = Math.atan(E_FALL_LEAN);
 
 
 const CRIMSON: [number, number, number] = [206, 44, 62];
@@ -57,6 +93,33 @@ export default class MissFortune_E extends Spell {
   coolDown = 10_000;
   manaCost = E_MANA;
   range = E_CAST_RANGE;
+
+  /**
+   * **A wind-up, so the cast is something her body does.**
+   *
+   * She used to throw this without breaking stride: a champion walking across
+   * a lane sprouted a storm behind her with nothing on her own body to say a
+   * cast had happened — reported as "chiêu vẫn xả đạn mà champ vẫn đi". A cast
+   * time is the genre's answer and the source ability carries one of about the
+   * same length; `Spell` holds the caster still for the whole of it, the way a
+   * swing's wind-up holds an attacker.
+   *
+   * Two-tenths of a second: a beat somebody can see and read, well under the
+   * quarter-second the source spends, because everything in this game is
+   * faster than the source.
+   *
+   * `cooldown.startAt: 'release'` rather than `'start'`, so a cast interrupted
+   * inside the wind-up does not bill her for a storm that never fell.
+   */
+  get castSpec(): Readonly<CastSpec> {
+    return {
+      activation: 'PRESS',
+      targeting: 'POINT',
+      castTimeMs: E_CAST_MS,
+      resource: { commitAt: 'release', refundOn: [] },
+      cooldown: { startAt: 'release', durationMs: this.coolDown },
+    };
+  }
 
   onSpellCast(): void {
     const { to } = VectorUtils.getVectorWithMaxRange(
@@ -97,6 +160,27 @@ export class MissFortune_E_Rain extends SpellObject {
     this.atX = atX;
     this.atY = atY;
   }
+
+  /**
+   * Where each slug lands, seeded once.
+   *
+   * `sqrt` on the reach because a uniform random radius clumps every drop in
+   * the middle of the circle; `jitter` is the few milliseconds of scatter that
+   * keeps a volley from landing as a perfect grid.
+   *
+   * Rolled at construction rather than in `draw` for the reason every seeded
+   * effect in this pack states: re-rolling per frame makes the rain crawl
+   * instead of fall.
+   */
+  private readonly drops = Array.from({ length: E_DROPS }, () => {
+    const angle = random(0, Math.PI * 2);
+    const reach = E_RADIUS * Math.sqrt(random(0.02, 1));
+    return {
+      x: Math.cos(angle) * reach,
+      y: Math.sin(angle) * reach,
+      jitter: random(0, 0.18),
+    };
+  });
 
   update(): void {
     this.age += deltaTime;
@@ -153,19 +237,46 @@ export class MissFortune_E_Rain extends SpellObject {
     // The clock, as an arc, so the zone needs no number beside it.
     arc(0, 0, E_RADIUS * 2, E_RADIUS * 2, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * left);
 
-    // The rain itself: twelve hard slugs on a fixed lattice, falling in step
-    // with the tick so the rhythm of the damage is visible.
-    noStroke();
+    // **The rain falls from above.** It used to crawl *outward* from the centre
+    // on a rotating lattice, which is the one thing a bullet storm must not
+    // look like — reported as "nhìn như đạn bay từ tâm ra chứ không phải rơi
+    // từ trên trời xuống". This is the same 2.5D trick every falling thing in
+    // this game uses: the drop is drawn in screen-space *up* from its landing
+    // point, and only the ground art stays flat. See Zeus's bolt.
     rectMode(CENTER);
-    for (let i = 0; i < 12; i++) {
-      const spin = (Math.PI * 2 * i) / 12 + i * 0.37;
-      const out = E_RADIUS * (0.25 + 0.7 * ((i / 12 + beat) % 1));
-      fill(GOLD[0], GOLD[1], GOLD[2], 220);
+    for (const drop of this.drops) {
+      // One volley, landing together on the tick the damage lands on, with a
+      // few milliseconds of scatter so it reads as rain and not as a comb.
+      const fall = (beat + drop.jitter) % 1;
+      const above = E_FALL_HEIGHT * (1 - fall);
+      const x = drop.x + E_FALL_LEAN * above;
+      const y = drop.y - above;
+
+      // The shadow: a flat mark on the ground that tightens as the slug nears
+      // it. This is what actually sells the height — without it a slug drawn
+      // above its landing point is just a slug somewhere else.
+      noStroke();
+      fill(LEATHER[0], LEATHER[1], LEATHER[2], 90 + 90 * fall);
+      ellipse(drop.x, drop.y, 10 - 4 * fall, 4 - 1.5 * fall);
+
+      // The slug, leaning the way it is falling.
       push();
-      translate(Math.cos(spin) * out, Math.sin(spin) * out);
-      rotate(spin + Math.PI / 2);
-      rect(0, 0, 4, 12, 2);
+      translate(x, y);
+      rotate(E_FALL_ANGLE);
+      stroke(LEATHER[0], LEATHER[1], LEATHER[2], 235);
+      strokeWeight(2);
+      fill(GOLD[0], GOLD[1], GOLD[2], 240);
+      rect(0, 0, 5, 15, 2);
       pop();
+
+      // …and the hit it leaves, for the first fifth of its next fall.
+      if (fall < 0.2) {
+        const splash = fall / 0.2;
+        noFill();
+        stroke(GOLD[0], GOLD[1], GOLD[2], 220 * (1 - splash));
+        strokeWeight(2);
+        ellipse(drop.x, drop.y, 6 + 16 * splash, 3 + 7 * splash);
+      }
     }
     pop();
 
@@ -180,7 +291,24 @@ export class MissFortune_E_Rain extends SpellObject {
     pop();
   }
 
+  /**
+   * **Not a centred square.** The slugs are drawn up to `E_FALL_HEIGHT` above
+   * the circle and lean sideways as they fall, so a square around the storm's
+   * own centre would let the display quadtree cull the rain the moment the
+   * circle itself left the top of the camera — and the rain is the effect.
+   *
+   * `data: this` is not optional: the display quadtree reads `entry.data.zIndex`
+   * back off this rectangle every frame.
+   */
   getDisplayBoundingBox() {
-    return this.squareDisplayBoundingBox((E_RADIUS + 40) * 2);
+    const pad = 40;
+    const lean = E_FALL_HEIGHT * E_FALL_LEAN;
+    return new Rectangle({
+      x: this.atX - E_RADIUS - pad,
+      y: this.atY - E_RADIUS - E_FALL_HEIGHT - pad,
+      w: (E_RADIUS + pad) * 2 + lean,
+      h: (E_RADIUS + pad) * 2 + E_FALL_HEIGHT,
+      data: this,
+    });
   }
 }

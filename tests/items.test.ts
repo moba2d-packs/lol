@@ -893,7 +893,15 @@ describe('the item set', () => {
     // step this one is loud — the buff is read at a spell module's top level
     // and would be `undefined` on an older core — and the floor is what turns
     // that into a refused install instead of a crash on the first purchase.
-    expect(data.manifest.coreRange).toBe('>=1.22.0');
+    //
+    // 1.23 is the newest step and the silent kind again, twice: a summon reads
+    // its summoner's build (`AttackableUnit.abilityDamageOwner`), and a cast
+    // plants its caster's feet. On an older core Zed's shadow deals its
+    // authored numbers under a tooltip that promises Zed's, and Miss Fortune
+    // walks across a lane firing an ultimate she is supposed to stand still
+    // for — neither of which is an import that could have been caught missing.
+    // `data.ts`'s own `coreRange` comment carries the long form.
+    expect(data.manifest.coreRange).toBe('>=1.23.0');
   });
 
   /**

@@ -486,7 +486,17 @@ describe("the pack's tests speak only published core surfaces", () => {
     // 139, not 138: `tests/spells/Item_empowers.test.ts`, the same shelf's
     // two rows whose payout lands on somebody *acting* — an ally who commits
     // to the marked target, and a wearer who has just spent an ultimate.
-    expect(files.length).toBe(139);
+    //
+    // 140, not 139: `tests/spells/Shaco.test.ts`, the report that moved core's
+    // stealth rule off the cast seam onto the damage funnel — asserted on the
+    // champion it was reported against as well as on core's own synthetic
+    // spells. Same two published surfaces, so the population moves and the
+    // offender count does not.
+    //
+    // 141, not 140: `tests/spells/Zed.test.ts`, the shadow that mirrored Zed's
+    // abilities at their authored numbers because it owns no build of its own.
+    // Same two published surfaces again.
+    expect(files.length).toBe(141);
   });
 
   it('reaches core only through @moba2d/core/content/types, /testing, /testing/spell, or /testing/spells', () => {

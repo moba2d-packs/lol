@@ -1,7 +1,18 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { createGame, createUnit, installSpellObjectGlobals } from '@moba2d/core/testing/spell';
+import {
+  createGame,
+  createUnit,
+  installSketchMathGlobals,
+  installSpellObjectGlobals,
+} from '@moba2d/core/testing/spell';
 import type { CastContext } from '@moba2d/core/content/types';
 import Twitch_Q, { Twitch_Q_Object } from '../../spells/Twitch_Q';
+import { POISON_PER_TICK } from '../../spells/Twitch_W';
+import { buildTestApi } from '@moba2d/core/testing';
+
+const api = buildTestApi();
+const { Champion, AttackableUnit } = api.units;
+const { DamageOverTime } = api.buffs;
 
 const context: CastContext = Object.freeze({
   spellId: 'twitch-q',
@@ -71,5 +82,58 @@ describe('Twitch Q stealth VFX does not survive death', () => {
     cloak.update();
 
     expect(cloak.toRemove).toBe(true);
+  });
+});
+
+
+/**
+ * **The rat's whole kit is a poison and a vanish, and core's stealth rule has
+ * to let him use both.**
+ *
+ * A hit ends a stealth on both ends of it (`combat/StealthBreak.ts`), which is
+ * right for a hit somebody is dealing and wrong for a poison that has been
+ * ticking on its own clock since before he vanished. He is the champion the
+ * carve-out was asked for, so it is asserted on him rather than only on core's
+ * synthetic buff: W the enemy, Q away, and stay gone while they burn.
+ */
+describe('Twitch Q — his own poison does not give him away', () => {
+  beforeEach(() => {
+    installSpellObjectGlobals();
+    // The burn paints flames, and they are rolled from p5's own maths.
+    installSketchMathGlobals();
+  });
+  afterEach(() => {
+    vi.unstubAllGlobals();
+  });
+
+  it('stays hidden while the poison he applied before vanishing keeps ticking', () => {
+    const game = createGame();
+    const twitch = new Champion({ game, teamId: 'blue' } as never) as never as InstanceType<
+      typeof AttackableUnit
+    >;
+    twitch.position.set(0, 0);
+    game.setPlayer(twitch as never);
+    const victim = createUnit(game, 120, 'red');
+
+    // The poison, applied while he is still visible — `Twitch_W_Object` builds
+    // exactly this buff for every body standing in the puddle.
+    const poison = new DamageOverTime(5_000, twitch, victim);
+    poison.damagePerTick = POISON_PER_TICK;
+    poison.tickInterval = 100;
+    victim.addBuff(poison);
+
+    // …and only then the vanish.
+    expect(new Twitch_Q(twitch).press(context)).toBe(true);
+    twitch.updateBuffs();
+    expect(twitch.isStealthed, 'Q did not hide him at all').toBe(true);
+
+    const before = victim.stats.health.value;
+    vi.stubGlobal('deltaTime', 300);
+    victim.updateBuffs();
+    vi.stubGlobal('deltaTime', 16);
+
+    expect(victim.stats.health.value, 'the poison never ticked').toBeLessThan(before);
+    twitch.updateBuffs();
+    expect(twitch.isStealthed).toBe(true);
   });
 });

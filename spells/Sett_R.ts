@@ -16,6 +16,9 @@ const Slow = api.buffs.Slow;
 const SpellObject = api.SpellObject;
 const GROUND_Z_INDEX = api.layers.GROUND_Z_INDEX;
 const dmg = api.text.dmg;
+// `api.text.pct`, renamed at the seam: this file already has a `pct` of its
+// own (`../text`), which formats a fraction as a number and writes no markup.
+const share = api.text.pct;
 
 
 export const SETT_R_RANGE = 250;
@@ -35,6 +38,40 @@ export const SETT_R_SLOW = 0.5;
 export const SETT_R_SLOW_MS = 1_500;
 
 export const SETT_R_CRATER_MS = 2_000;
+
+/**
+ * **The share of the carried champion's health that the landing is worth**, on
+ * top of both flat figures above.
+ *
+ * The ability was a pair of flat numbers, and that is not what The Show Stopper
+ * is: in the source game the slam is scaled by *whoever he picked up*, which is
+ * the entire reason the play is to grab the biggest body in the fight rather
+ * than the nearest one. Without it the ultimate reads as a 45 with a long
+ * animation — reported exactly that way, as "yếu so với LMHT".
+ *
+ * **Maximum health, not bonus health, and that is a deliberate divergence.**
+ * The source scales on the target's *bonus* health, which works there because
+ * everyone buys some. Here a champion's pool is ~100 and bonus health is
+ * frequently zero, so a bonus-health scaling would be an ultimate that behaves
+ * identically until somebody happens to buy one specific item. Maximum health
+ * is felt from the first fight and still rewards grabbing the tank.
+ *
+ * 15% of a stock pool is 15 — a third again on the slam and half again on the
+ * blast — and against a champion who has bought health it is double that. It
+ * is added to the blast as well as to the slam because in the source game
+ * *everyone at the landing point* pays for the body he threw.
+ */
+export const SETT_R_CARRIED_HEALTH_SHARE = 0.15;
+
+/**
+ * What the body he is carrying adds to every number this ultimate deals.
+ *
+ * Exported so the test does not restate the arithmetic, and read from the
+ * *carried* unit rather than from each victim — one figure, decided by who he
+ * grabbed, exactly as the card says.
+ */
+export const carriedBonus = (carried: AttackableUnit): number =>
+  Math.round(carried.stats.maxHealth.value * SETT_R_CARRIED_HEALTH_SHARE);
 
 /** How high the carried body is held while it flies. */
 export const SETT_R_LIFT = 70;
@@ -60,7 +97,9 @@ export default class Sett_R extends Spell {
     `Sett bốc một tướng địch lên không trung (không thể bị chọn làm mục tiêu), bay vút lên ` +
     `và nện xuống đất: mục tiêu bị ném nhận ${dmg(SETT_R_SLAM, 'PHYSICAL')}, ` +
     `mọi kẻ địch khác trong bán kính ${SETT_R_BLAST_RADIUS} nhận ${dmg(SETT_R_BLAST, 'PHYSICAL')} ` +
-    `và bị làm chậm ${pct(SETT_R_SLOW)}% trong ${secs(SETT_R_SLOW_MS)} giây.`;
+    `và bị làm chậm ${pct(SETT_R_SLOW)}% trong ${secs(SETT_R_SLOW_MS)} giây. ` +
+    `Cả hai đều cộng thêm ${share(SETT_R_CARRIED_HEALTH_SHARE * 100, 'PHYSICAL', ' máu tối đa của mục tiêu bị bế')} ` +
+    `— bế càng to thì nện càng đau.`;
   coolDown = 10_000;
   manaCost = 100;
   range = SETT_R_RANGE;
@@ -271,10 +310,15 @@ export class Sett_R_Carry extends SpellObject {
     const dropX = atX + Math.cos(this.heading) * SETT_R_DROP;
     const dropY = atY + Math.sin(this.heading) * SETT_R_DROP;
     const thrown = this.carried;
+    // Read once, off the body he actually threw, and paid by everyone at the
+    // landing point — see `SETT_R_CARRIED_HEALTH_SHARE`. Read *before* the slam
+    // lands, so a pool that a death or a shield changes mid-impact cannot make
+    // the two halves of one ultimate disagree.
+    const carriedShare = carriedBonus(thrown);
     const alive = !thrown.isDead && !thrown.toRemove;
     if (alive) {
       thrown.teleportTo(dropX, dropY);
-      thrown.takeDamage(SETT_R_SLAM, this.owner, 'PHYSICAL');
+      thrown.takeDamage(SETT_R_SLAM + carriedShare, this.owner, 'PHYSICAL');
     }
 
     // The rim the crater paints is the radius the damage really used.
@@ -290,7 +334,7 @@ export class Sett_R_Carry extends SpellObject {
     for (const unit of shaken) {
       if (unit === thrown || struck.has(unit)) continue;
       struck.add(unit);
-      unit.takeDamage(SETT_R_BLAST, this.owner, 'PHYSICAL');
+      unit.takeDamage(SETT_R_BLAST + carriedShare, this.owner, 'PHYSICAL');
       const slow = new Slow(SETT_R_SLOW_MS, this.owner, unit);
       slow.percent = SETT_R_SLOW;
       slow.stackId = 'sett_r_arena_slow';

@@ -18,11 +18,13 @@ import Item_Shadowflame, {
   SHADOWFLAME_THRESHOLD,
 } from '../../spells/Item_Shadowflame';
 import Item_Ludens, {
+  LUDENS_ABILITY_RATIO,
   LUDENS_COOLDOWN_MS,
   LUDENS_PRIMARY_DAMAGE,
   LUDENS_SPLASH_DAMAGE,
   LUDENS_SPLASH_RADIUS,
   LUDENS_SPLASH_TARGETS,
+  ludensScale,
 } from '../../spells/Item_Ludens';
 import Item_Liandry, {
   Item_Liandry_Burn,
@@ -261,6 +263,44 @@ describe('Vọng Âm Luden', () => {
     expect(onVictim.mock.calls.map(call => call[0])).toEqual([5, LUDENS_PRIMARY_DAMAGE]);
     expect(onBeside.mock.calls.map(call => call[0])).toEqual([LUDENS_SPLASH_DAMAGE]);
     expect(onFar, 'the echo reached past its own radius').not.toHaveBeenCalled();
+  });
+
+  /**
+   * **The echo grows with the build that bought it.** It was a pair of flat
+   * numbers on the one shelf of the shop whose whole purpose is making
+   * abilities hit harder — worth exactly as much on the last item as on the
+   * first. The live item has carried a ratio since it existed; the engine will
+   * not apply one to an item proc (`economy/ItemShop` switches item damage out
+   * of ability scaling on purpose), so the item states it itself.
+   */
+  it('scales both halves with the wearer’s ability power', () => {
+    const holder = createUnit(game, 0);
+    // +100%: a finished hat, in this engine's units.
+    holder.stats.abilityPower.baseValue = 1;
+    const victim = createUnit(game, 300, 'red');
+    const beside = createUnit(game, 300 + LUDENS_SPLASH_RADIUS / 2, 'red');
+    game.setPlayer(holder);
+    indexObjects(game, [holder, victim, beside]);
+    pressSpell(new Item_Ludens(holder));
+
+    const onVictim = vi.spyOn(victim, 'takeDamage');
+    const onBeside = vi.spyOn(beside, 'takeDamage');
+    victim.takeDamage(5, holder, 'MAGIC');
+
+    // 1 + 0.5 × 1 = 1.5, by hand: 12 → 18 and 8 → 12.
+    expect(ludensScale(holder)).toBeCloseTo(1 + LUDENS_ABILITY_RATIO, 10);
+    expect(onVictim.mock.calls.map(call => call[0])).toEqual([
+      5,
+      Math.round(LUDENS_PRIMARY_DAMAGE * 1.5),
+    ]);
+    expect(onBeside.mock.calls.map(call => call[0])).toEqual([
+      Math.round(LUDENS_SPLASH_DAMAGE * 1.5),
+    ]);
+  });
+
+  it('is worth its authored number to a mage who has bought nothing', () => {
+    const holder = createUnit(game, 0);
+    expect(ludensScale(holder)).toBe(1);
   });
 
   it('reaches no more than the three others it advertises', () => {
