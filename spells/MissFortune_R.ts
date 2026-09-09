@@ -315,34 +315,66 @@ export class MissFortune_R_Wave extends SpellObject {
       triangle(6, -9 * flare, 34 * flare, 0, 6, 9 * flare);
     }
 
-    rectMode(CENTER);
-    for (let i = 0; i < R_BULLETS; i++) {
-      const spin = -halfArc + (halfArc * 2 * i) / (R_BULLETS - 1);
+    // **Two passes over the fan, and the geometry is arithmetic rather than a
+    // transform.** `push/rotate/pop` around each slug plus a `fill` between
+    // its two halves is seven p5 calls per bullet, and p5 costs 6-10x the raw
+    // canvas call underneath it — nine bullets that way put this `draw()` at
+    // ~85 calls a frame and `perf-scan`'s `heavy-draw` rule refused the push.
+    // A rotated rectangle is four corners anybody can compute, so each slug is
+    // one `quad` and one `triangle`, and the two colours are set **once**
+    // outside the loops instead of eighteen times inside them.
+    const slug = (index: number): { x: number; y: number; ux: number; uy: number } => {
+      const spin = -halfArc + (halfArc * 2 * index) / (R_BULLETS - 1);
       // Staggered by a tenth of the flight so the volley reads as a spray
       // rather than as a rigid comb; the slug at each edge still starts at the
       // hip, so the shape of the fan is never in doubt.
-      const stagger = 1 - 0.1 * ((i * 5) % R_BULLETS) / R_BULLETS;
+      const stagger = 1 - (0.1 * ((index * 5) % R_BULLETS)) / R_BULLETS;
       const gone = this.reach * flown * stagger;
-      push();
-      rotate(spin);
-      // Bigger than they were, and with a bright core: at 520 a 16x6 slug is
-      // three pixels of contrast on a lane of ground.
-      fill(LEATHER[0], LEATHER[1], LEATHER[2], 240 * fade);
-      rect(gone, 0, 24, 8, 3);
-      fill(GOLD[0], GOLD[1], GOLD[2], 250 * fade);
-      rect(gone + 2, 0, 14, 4, 2);
-      triangle(gone + 9, -4, gone + 18, 0, gone + 9, 4);
-      pop();
+      const ux = Math.cos(spin);
+      const uy = Math.sin(spin);
+      return { x: ux * gone, y: uy * gone, ux, uy };
+    };
+
+    // The bodies: dark, so a slug reads over the cone's own fill.
+    fill(LEATHER[0], LEATHER[1], LEATHER[2], 240 * fade);
+    for (let i = 0; i < R_BULLETS; i++) {
+      const { x, y, ux, uy } = slug(i);
+      const alongX = ux * 12;
+      const alongY = uy * 12;
+      const sideX = -uy * 4;
+      const sideY = ux * 4;
+      quad(
+        x - alongX + sideX,
+        y - alongY + sideY,
+        x + alongX + sideX,
+        y + alongY + sideY,
+        x + alongX - sideX,
+        y + alongY - sideY,
+        x - alongX - sideX,
+        y - alongY - sideY
+      );
+    }
+
+    // The noses, bright, one pass.
+    fill(GOLD[0], GOLD[1], GOLD[2], 250 * fade);
+    for (let i = 0; i < R_BULLETS; i++) {
+      const { x, y, ux, uy } = slug(i);
+      const tipX = x + ux * 20;
+      const tipY = y + uy * 20;
+      const baseX = x + ux * 8;
+      const baseY = y + uy * 8;
+      triangle(baseX - uy * 4, baseY + ux * 4, tipX, tipY, baseX + uy * 4, baseY - ux * 4);
     }
     pop();
 
+    // One ring per body the volley caught. The three state calls are hoisted
+    // for the same reason the fills above are: they do not change per mark.
     push();
-    for (const mark of this.struck) {
-      noFill();
-      stroke(CRIMSON[0], CRIMSON[1], CRIMSON[2], 235 * fade);
-      strokeWeight(4);
-      circle(mark.x, mark.y, 30 * (0.5 + 0.5 * flown));
-    }
+    noFill();
+    stroke(CRIMSON[0], CRIMSON[1], CRIMSON[2], 235 * fade);
+    strokeWeight(4);
+    const ring = 30 * (0.5 + 0.5 * flown);
+    for (const mark of this.struck) circle(mark.x, mark.y, ring);
     pop();
   }
 
